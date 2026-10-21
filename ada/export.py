@@ -46,8 +46,12 @@ def export(con=None, out: pathlib.Path = OUT) -> dict:
     con = con or db.connect()
     out.mkdir(parents=True, exist_ok=True)
     trials = []
+    # Only papers whose latest screening says "randomized trial in metastatic CRC" are published.
+    # (Benchmark extractions of other papers stay private until screening includes them.)
     for t in con.execute("SELECT t.*, p.title, p.journal, p.year, p.authors, p.doi, p.nct_ids FROM trials t "
-                         "JOIN papers p ON p.pmid = t.pmid ORDER BY p.year DESC, t.pmid"):
+                         "JOIN papers p ON p.pmid = t.pmid "
+                         "JOIN screenings s ON s.pmid = t.pmid AND s.id = (SELECT MAX(id) FROM screenings WHERE pmid = t.pmid) "
+                         "WHERE s.decision = 'include' ORDER BY p.year DESC, t.pmid"):
         recs = []
         for r in con.execute("SELECT * FROM records WHERE pmid=? ORDER BY arm, measure", (t["pmid"],)):
             ch = json.loads(r["checks"] or "{}")
