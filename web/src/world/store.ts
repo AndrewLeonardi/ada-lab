@@ -23,7 +23,7 @@ export interface WorldState {
   board: Hypothesis[];
   log: LogEntry[];
   inspected: Inspectable;
-  mode: "scripted" | "replay" | "live";
+  mode: "loading" | "scripted" | "replay" | "live";
   follow: boolean;             // camera follows the researcher
   followZoom: number;          // how close the follow camera gets (x the whole-lab zoom)
   setFollow: (f: boolean) => void;
@@ -48,7 +48,7 @@ export const useWorld = create<WorldState>((set) => ({
   board: [],
   log: [],
   inspected: null,
-  mode: "scripted",
+  mode: "loading", // until the lab knows whether there is real work to replay
   follow: false,
   followZoom: 3.2,
   setFollow: (follow) => set({ follow }),

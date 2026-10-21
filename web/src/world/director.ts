@@ -152,6 +152,7 @@ export function startDirector(): () => void {
   const ctrl = new AbortController();
   const { signal } = ctrl;
   const emit = (e: WorldEvent) => useWorld.getState().dispatch(e);
+  useWorld.setState({ mode: "scripted" });
   (async () => {
     try {
       emit({ type: "log", entry: { t: Date.now(), text: "Scripted demo day started (the AI brain arrives in phase 2)", kind: "system" } });

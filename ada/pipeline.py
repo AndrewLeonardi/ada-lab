@@ -149,6 +149,7 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
     # On the server, publish to the website every N hours (set in the service); elsewhere publishing is manual.
     publish_every = float(os.environ.get("ADA_PUBLISH_HOURS") or 0) * 3600
     last_publish = 0.0
+    resting = None  # "budget" or "idle": shown once when it starts, so replays aren't hours of sleep
     log(con, f"Ada starts work (profile: {profile})", "system")
     while stop_at is None or time.time() < stop_at:
         if publish_every and time.time() - last_publish > publish_every:
@@ -170,14 +171,20 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
             from .export import export
             export(con)
             if not did:
-                act(con, "coffee", "drink_coffee", "happy", "Backlog clear - waiting for new papers",
-                    "All caught up. I'll check PubMed again later.")
+                if resting != "idle":
+                    act(con, "coffee", "drink_coffee", "happy", "Backlog clear - waiting for new papers",
+                        "All caught up. I'll check PubMed again later.")
+                    resting = "idle"
                 time.sleep(idle_seconds)
+            else:
+                resting = None
         except BudgetExceeded as e:
-            act(con, "desk", "sleep", "tired", "Daily budget used - resting until tomorrow", None)
-            log(con, f"Pausing: {e}", "system")
-            from .export import export
-            export(con)
+            if resting != "budget":
+                act(con, "desk", "sleep", "tired", "Daily budget used - resting until tomorrow", None)
+                log(con, f"Pausing: {e}", "system")
+                resting = "budget"
+                from .export import export
+                export(con)
             log_fn(f"[ada] {e}; sleeping 30 min")
             time.sleep(1800)
         except Refused as e:

@@ -40,7 +40,9 @@ function Header() {
         <button className="cam-btn" onClick={() => setFollow(!follow)}>
           {follow ? "Whole lab" : `Follow ${r.name}`}
         </button>
-        <span className={`badge ${mode}`}>{mode === "scripted" ? "Scripted demo" : mode === "replay" ? "Replay of real work" : "Live"}</span>
+        {mode !== "loading" && (
+          <span className={`badge ${mode}`}>{mode === "scripted" ? "Scripted demo" : mode === "replay" ? "Replay of real work" : "Live"}</span>
+        )}
         <span className="hud-clock">{now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</span>
       </div>
     </header>
@@ -72,6 +74,7 @@ function Inspector() {
   const r = useWorld((s) => s.researcher);
   const mood = useWorld((s) => s.mood);
   const thought = useWorld((s) => s.thought);
+  const mode = useWorld((s) => s.mode);
   const inspect = useWorld((s) => s.inspect);
   if (!inspected) return <div className="hint">Click the computer, the bookshelf, the whiteboard, the machines, or {r.name}</div>;
   let title = "";
@@ -106,8 +109,10 @@ function Inspector() {
         <p>{r.title}</p>
         <p>Feeling <b>{MOOD_WORD[mood]}</b>.</p>
         {thought && <p className="prof-thought">"{thought}"</p>}
-        <p className="muted">In this demo she follows a script. In phase 2 an AI model decides what she does,
-          within a hard daily budget.</p>
+        <p className="muted">{mode === "scripted"
+          ? "In this demo she follows a script."
+          : "This replays her real recorded work: every paper, screen and number is real. AI models (Claude Haiku "
+            + "and Sonnet) do the reading in a fixed, code-checked pipeline, within a hard daily budget."}</p>
       </div>
     );
   }
