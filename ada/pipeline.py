@@ -196,6 +196,10 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
         if state:  # the first publish waits until she knows whether she is working or resting
             maybe_publish()
         try:
+            if state in (None, "resting"):
+                claude.budget.check(con)  # raises while the day's budget is still used up, so she keeps resting
+                if become("working"):  # back at work: tell the website now, not after the first batch
+                    maybe_publish(soon=True)
             if time.time() - last_sync > 24 * 3600:
                 sync(con)
                 last_sync = time.time()
