@@ -1,6 +1,7 @@
 {
  "version": "2026-10-21",
- "updated": "2026-10-21 13:02",
+ "updated": "2026-10-21 13:46",
+ "updated_at": 1792590379.4835668,
  "counts": {
   "candidates": 3748,
   "screened": 1175,
@@ -12,6 +13,16 @@
  },
  "spend_usd_total": 3.0195,
  "spend_usd_today": 1.5063,
+ "status": {
+  "state": "resting",
+  "since": 1792590379.3577566,
+  "profile": "balanced",
+  "daily_usd": 1.5,
+  "total_usd": 30
+ },
+ "findings": {
+  "idea": 3
+ },
  "benchmark": {
   "date": "2026-10-20",
   "gold_numbers": 141,
