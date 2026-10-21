@@ -1,11 +1,11 @@
 {
  "name": "Open Metastatic Colorectal Cancer Trial Outcomes",
  "version": "2026-10-21",
- "generated": "2026-10-21T15:38:38",
+ "generated": "2026-10-21T15:39:14",
  "counts": {
   "candidates": 3748,
-  "screened": 1200,
-  "included": 123,
+  "screened": 1216,
+  "included": 126,
   "trials": 123,
   "verified_numbers": 793,
   "pending_numbers": 335,
