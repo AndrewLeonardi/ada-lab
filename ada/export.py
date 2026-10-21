@@ -4,6 +4,7 @@
   Only VERIFIED (or auditor-CORRECTED) numbers count as part of the dataset; others are shown as pending.
 - stats.json: counts, spend, benchmark and audit scores
 - events.json: her recent real activity, replayed by the 3D lab on the website
+- daily.json: a recap of each day's work (see daily.py)
 - notes.json: approved lab notes (drafts are never published without approval)
 """
 
@@ -12,9 +13,12 @@ from __future__ import annotations
 import csv
 import json
 import pathlib
+import re
 import time
+from collections import Counter
 
 from . import db
+from .daily import daily
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT = ROOT / "web" / "public" / "data"
@@ -96,12 +100,20 @@ def export(con=None, out: pathlib.Path = OUT) -> dict:
         p = ROOT / "data" / name
         if p.exists():
             extras[name.removesuffix(".json")] = json.loads(p.read_text())
-    stats = {"version": version, "updated": time.strftime("%Y-%m-%d %H:%M"), "counts": counts,
-             "spend_usd_total": round(db.spent(con), 4), "spend_usd_today": round(db.spent(con, version), 4),
+    state = db.DB_PATH.with_name("state.json")  # written by the work loop: working, resting or idle
+    findings = ROOT / "data" / "findings.md"
+    stats = {"version": version, "updated": time.strftime("%Y-%m-%d %H:%M"), "updated_at": time.time(),
+             "counts": counts, "spend_usd_total": round(db.spent(con), 4),
+             "spend_usd_today": round(db.spent(con, version), 4),
+             "status": json.loads(state.read_text()) if state.exists() else None,
+             # candidate findings by status (idea / supported / ready), from the auditor's register
+             "findings": dict(Counter(re.findall(r"status:\s*(idea|supported|ready)", findings.read_text())))
+                         if findings.exists() else {},
              **extras}
     (out / "stats.json").write_text(json.dumps(stats, indent=1))
     ev = [{"at": r["at"], **json.loads(r["event"])} for r in
           con.execute("SELECT * FROM (SELECT * FROM events ORDER BY id DESC LIMIT 400) ORDER BY id")]
     (out / "events.json").write_text(json.dumps(ev))
     (out / "notes.json").write_text(json.dumps(_notes(), indent=1))
+    (out / "daily.json").write_text(json.dumps(daily(con), indent=1))
     return counts

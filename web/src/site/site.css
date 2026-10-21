@@ -109,6 +109,30 @@ table.trials, table.outcomes { width: 100%; border-collapse: collapse; font-size
 .md blockquote { border-left: 3px solid var(--teal); margin: 12px 0; padding: 4px 14px; color: var(--ink2); }
 .md code { background: var(--teal-soft); padding: 1px 5px; border-radius: 5px; font-size: 0.9em; }
 
+/* budget meter (Budget.tsx) and daily log (Daily.tsx) */
+.meter { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; margin: 14px 0; }
+.meter-top { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.meter-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--ok); align-self: center; flex: none; }
+.meter.working .meter-dot { animation: pulse 1.6s ease-in-out infinite; }
+.meter.resting .meter-dot { background: var(--teal); }
+.meter.idle .meter-dot { background: var(--teal); }
+.meter.quiet .meter-dot { background: var(--warn); }
+@keyframes pulse { 50% { opacity: 0.35; } }
+.meter-bar { height: 8px; border-radius: 999px; background: var(--teal-soft); overflow: hidden; margin: 10px 0 6px; }
+.meter-bar > span { display: block; height: 100%; background: var(--teal); border-radius: 999px; }
+.meter-bar.small-bar { width: 140px; height: 6px; margin: 4px 0 0; }
+.prose.wide { max-width: 860px; }
+.findings-box { background: var(--teal-soft); border-radius: 16px; padding: 4px 18px 8px; margin: 18px 0 8px; }
+.findings-box h2 { margin-top: 14px; }
+.day { border-top: 1px solid var(--line); padding: 10px 0 18px; }
+.day-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; }
+.day-head h2 { margin: 16px 0 6px; }
+.day-spend { text-align: right; }
+.day h3 { font-size: 17px; margin: 14px 0 6px; }
+.day-trials { list-style: none; padding: 0; margin: 0 0 12px; }
+.day-trials li { padding: 8px 0; border-bottom: 1px solid var(--line); }
+.day-trials a { font-weight: 700; text-decoration: none; }
+
 @media (max-width: 820px) {
   .hero, .two { grid-template-columns: 1fr; }
   .tiles { grid-template-columns: repeat(2, 1fr); }

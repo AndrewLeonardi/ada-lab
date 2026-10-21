@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useWorld } from "../world/store";
 import { ScreenView } from "./ScreenView";
 import { HeadTag } from "./HeadTag";
+import { useBudget } from "../site/Budget";
 
 const SCREEN_NAMES = { computer: "Ada's computer", simulator: "Patient simulator", microscope: "Microscope display" };
 const MOOD_WORD: Record<string, string> = {
@@ -26,6 +27,7 @@ function Header() {
   const follow = useWorld((s) => s.follow);
   const setFollow = useWorld((s) => s.setFollow);
   const now = useNow();
+  const budget = useBudget();
   return (
     <header className="hud">
       <div className="hud-title">
@@ -40,6 +42,13 @@ function Header() {
         <button className="cam-btn" onClick={() => setFollow(!follow)}>
           {follow ? "Whole lab" : `Follow ${r.name}`}
         </button>
+        {budget && mode === "replay" && (
+          <span className={`hud-budget ${budget.tone}`} title={`${budget.headline}. ${budget.detail} Updated ${budget.updated}.`}>
+            <span className="hud-budget-l">{budget.short}</span>
+            <span className="hud-budget-bar"><span style={{ width: `${budget.frac * 100}%` }} /></span>
+            <span className="hud-budget-v">${budget.spend.toFixed(2)} / ${budget.cap.toFixed(2)}</span>
+          </span>
+        )}
         {mode !== "loading" && (
           <span className={`badge ${mode}`}>{mode === "scripted" ? "Scripted demo" : mode === "replay" ? "Replay of real work" : "Live"}</span>
         )}

@@ -8,6 +8,7 @@ import type { Activity, Mood, WorldEvent } from "./world/protocol";
 import { useRoute } from "./site/router";
 import { Layout } from "./site/Layout";
 import { AboutPage, DataPage, Home, MethodsPage, NotePage, NotesPage, TrialPage } from "./site/Pages";
+import { DailyPage } from "./site/Daily";
 import { DATA } from "./site/data";
 
 function LabView() {
@@ -64,6 +65,7 @@ export default function App() {
     case "note": page = <NotePage slug={route[1] ?? ""} />; break;
     case "methods": page = <MethodsPage />; break;
     case "about": page = <AboutPage />; break;
+    case "daily": page = <DailyPage />; break;
     default: page = <Home />;
   }
   return <Layout route={route}>{page}</Layout>;

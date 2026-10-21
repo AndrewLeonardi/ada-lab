@@ -1,6 +1,7 @@
 import { Fragment, useMemo, useState } from "react";
 import { SITE } from "./config";
 import { DATA, LINE_NAMES, fmtValue, useData, type Dataset, type Note, type Stats, type Trial } from "./data";
+import { BudgetMeter } from "./Budget";
 import { Markdown } from "./Markdown";
 import { href } from "./router";
 
@@ -57,7 +58,8 @@ export function Home() {
           </div>
         ))}
       </section>
-      <p className="muted center">{stats ? `Last updated ${stats.updated}` : stats === null ? "No data published yet." : ""}</p>
+      {stats === null ? <p className="muted center">No data published yet.</p> : <BudgetMeter />}
+      <p className="center small"><a href={href("daily")}>What she did today →</a></p>
 
       <section className="two">
         <div>

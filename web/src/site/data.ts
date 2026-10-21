@@ -62,8 +62,33 @@ export interface Stats {
   counts: Counts;
   spend_usd_total: number;
   spend_usd_today: number;
+  updated_at?: number; // epoch seconds of this export
+  status?: { state: "working" | "resting" | "idle"; since: number; profile: string; daily_usd: number; total_usd: number } | null;
+  findings?: Partial<Record<"idea" | "supported" | "ready", number>>;
   benchmark?: { date: string; gold_numbers_in_abstracts: number; recall_verified: number; recall_any: number };
   audit_scoreboard?: { audits: { date: string; sampled: number; correct: number; notes?: string }[] };
+}
+
+export interface DayTrial {
+  pmid: string;
+  name: string;
+  verified: number;
+  review: number;
+  headline: { label: string; items: (Pick<OutcomeRecord, "arm" | "comparator" | "value" | "unit" | "ci_low" | "ci_high" | "population">)[] } | null;
+}
+
+export interface Day {
+  date: string; // UTC
+  spend_usd: number;
+  screened: number;
+  included: number;
+  secondary: number;
+  excluded: number;
+  extracted: DayTrial[];
+  verified_numbers: number;
+  review_numbers: number;
+  held_because: { reason: string; n: number }[];
+  corrections: number;
 }
 
 export interface Note {
@@ -100,6 +125,7 @@ export const DATA = {
   stats: "data/stats.json",
   notes: "data/notes.json",
   events: "data/events.json",
+  daily: "data/daily.json",
   csv: "data/dataset.csv",
 };
 
@@ -108,7 +134,7 @@ export const LINE_NAMES: Record<string, string> = {
   mixed: "Mixed lines", unclear: "Line unclear",
 };
 
-export function fmtValue(r: OutcomeRecord): string {
+export function fmtValue(r: Pick<OutcomeRecord, "value" | "unit" | "ci_low" | "ci_high">): string {
   const u = r.unit === "percent" ? "%" : r.unit === "months" ? " mo" : r.unit === "weeks" ? " wk" : "";
   const ci = r.ci_low != null && r.ci_high != null ? ` (95% CI ${r.ci_low}–${r.ci_high})` : "";
   return `${r.value}${u}${ci}`;

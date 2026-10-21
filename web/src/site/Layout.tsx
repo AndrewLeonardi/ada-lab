@@ -5,6 +5,7 @@ import { href } from "./router";
 const NAV: [string, string][] = [
   ["", "Research"],
   ["data", "Dataset"],
+  ["daily", "Daily log"],
   ["notes", "Lab notes"],
   ["methods", "Methods & integrity"],
   ["about", "About"],

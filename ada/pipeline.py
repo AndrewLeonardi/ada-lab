@@ -19,6 +19,8 @@ from .llm import Budget, BudgetExceeded, Claude, Refused
 from .screen import screen_paper
 from .verify import verify_paper
 
+# Her current state ("working", "resting", "idle"), read by export for the website's budget meter.
+STATE_FILE = db.DB_PATH.with_name("state.json")
 PROFILES = yaml.safe_load((pathlib.Path(__file__).with_name("profiles.yaml")).read_text())
 LINE_COLORS = {"first": "#e07a6a", "second": "#3f9a96", "third_or_later": "#7aa6c2", "maintenance": "#e3c46a",
                "mixed": "#c9787a", "unclear": "#b8c2c6"}
@@ -146,21 +148,41 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
     claude = Claude(con, Budget(prof["daily_usd"], prof["total_usd"]), mock=mock)
     stop_at = time.time() + hours * 3600 if hours else None
     last_sync = 0.0
-    # On the server, publish to the website every N hours (set in the service); elsewhere publishing is manual.
+    # On the server, publish to the website every N hours (set in the service), and soon after she starts or
+    # stops working, so the site's budget meter is current. Elsewhere publishing is manual.
     publish_every = float(os.environ.get("ADA_PUBLISH_HOURS") or 0) * 3600
-    last_publish = 0.0
-    resting = None  # "budget" or "idle": shown once when it starts, so replays aren't hours of sleep
+    last_publish, publish_pending = 0.0, False
+    state = None  # "working", "resting" (daily budget used) or "idle" (backlog clear)
+
+    def become(new: str) -> bool:
+        """Record a change of state for the website; True if it changed (so it's shown once, not every loop)."""
+        nonlocal state
+        if new == state:
+            return False
+        state = new
+        STATE_FILE.write_text(json.dumps({"state": new, "since": time.time(), "profile": profile,
+                                          "daily_usd": prof["daily_usd"], "total_usd": prof["total_usd"]}))
+        return True
+
+    def maybe_publish(soon: bool = False):
+        nonlocal last_publish, publish_pending
+        publish_pending = publish_pending or soon
+        gap = time.time() - last_publish
+        if not publish_every or not (gap > publish_every or (publish_pending and gap > 1200)):
+            return
+        last_publish, publish_pending = time.time(), False
+        try:
+            from .publish import publish
+            msg = publish(con)
+            log(con, f"Website updated: {msg}" if msg else "Website already up to date", "system")
+        except Exception as e:  # a failed publish must not stop the work; it is retried next interval
+            log(con, f"Publishing failed: {type(e).__name__}: {str(e)[:200]}", "system")
+            log_fn(f"[ada] publish failed: {e!r}")
+
     log(con, f"Ada starts work (profile: {profile})", "system")
     while stop_at is None or time.time() < stop_at:
-        if publish_every and time.time() - last_publish > publish_every:
-            last_publish = time.time()
-            try:
-                from .publish import publish
-                msg = publish(con)
-                log(con, f"Website updated: {msg}" if msg else "Website already up to date", "system")
-            except Exception as e:  # a failed publish must not stop the work; it is retried next interval
-                log(con, f"Publishing failed: {type(e).__name__}: {str(e)[:200]}", "system")
-                log_fn(f"[ada] publish failed: {e!r}")
+        if state:  # the first publish waits until she knows whether she is working or resting
+            maybe_publish()
         try:
             if time.time() - last_sync > 24 * 3600:
                 sync(con)
@@ -171,20 +193,20 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
             from .export import export
             export(con)
             if not did:
-                if resting != "idle":
+                if become("idle"):
                     act(con, "coffee", "drink_coffee", "happy", "Backlog clear - waiting for new papers",
                         "All caught up. I'll check PubMed again later.")
-                    resting = "idle"
+                    maybe_publish(soon=True)
                 time.sleep(idle_seconds)
-            else:
-                resting = None
+            elif become("working"):
+                maybe_publish(soon=True)
         except BudgetExceeded as e:
-            if resting != "budget":
+            if become("resting"):
                 act(con, "desk", "sleep", "tired", "Daily budget used - resting until tomorrow", None)
                 log(con, f"Pausing: {e}", "system")
-                resting = "budget"
                 from .export import export
                 export(con)
+                maybe_publish(soon=True)
             log_fn(f"[ada] {e}; sleeping 30 min")
             time.sleep(1800)
         except Refused as e:

@@ -13,3 +13,4 @@ data/audits/*-sample.json
 data/notes/drafts/
 data/*.log
 data/*.pid
+data/state.json
