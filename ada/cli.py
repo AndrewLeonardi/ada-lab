@@ -112,22 +112,9 @@ def main(argv=None):
         print(json.dumps(tot))
         export(con)
     elif args.cmd == "publish":
-        import subprocess
-        import time as _t
-        from .export import ROOT
-        counts = export(con)
-        paths = ["web/public/data", "data/notes/published", "data/audits", "data/feedback",
-                 "data/audit_scoreboard.json", "data/benchmark.json", "data/findings.md"]
-        existing = [p for p in paths if (ROOT / p).exists()]
-        subprocess.run(["git", "add", *existing], cwd=ROOT, check=True)
-        if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
-            print("nothing new to publish")
-            return
-        msg = args.message or (f"Dataset update {_t.strftime('%Y-%m-%d')}: {counts['trials']} trials, "
-                               f"{counts['verified_numbers']} verified numbers")
-        subprocess.run(["git", "commit", "-q", "-m", msg], cwd=ROOT, check=True)
-        subprocess.run(["git", "push", "-q"], cwd=ROOT, check=True)
-        print(f"published: {msg}")
+        from .publish import publish
+        msg = publish(con, args.message)
+        print(f"published: {msg}" if msg else "nothing new to publish")
     elif args.cmd == "audit-sample":
         from .audit import sample
         print(sample(con, args.n, args.review))

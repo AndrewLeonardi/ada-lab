@@ -7,6 +7,7 @@ see her doing is what she is actually doing.
 from __future__ import annotations
 
 import json
+import os
 import pathlib
 import time
 
@@ -145,8 +146,20 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
     claude = Claude(con, Budget(prof["daily_usd"], prof["total_usd"]), mock=mock)
     stop_at = time.time() + hours * 3600 if hours else None
     last_sync = 0.0
+    # On the server, publish to the website every N hours (set in the service); elsewhere publishing is manual.
+    publish_every = float(os.environ.get("ADA_PUBLISH_HOURS") or 0) * 3600
+    last_publish = 0.0
     log(con, f"Ada starts work (profile: {profile})", "system")
     while stop_at is None or time.time() < stop_at:
+        if publish_every and time.time() - last_publish > publish_every:
+            last_publish = time.time()
+            try:
+                from .publish import publish
+                msg = publish(con)
+                log(con, f"Website updated: {msg}" if msg else "Website already up to date", "system")
+            except Exception as e:  # a failed publish must not stop the work; it is retried next interval
+                log(con, f"Publishing failed: {type(e).__name__}: {str(e)[:200]}", "system")
+                log_fn(f"[ada] publish failed: {e!r}")
         try:
             if time.time() - last_sync > 24 * 3600:
                 sync(con)
