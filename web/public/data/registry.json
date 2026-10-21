@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-21 16:54",
+ "updated": "2026-10-21 17:36",
  "due_months": 24,
  "registered": 732,
  "due": 355,
  "counts": {
-  "pending": 4,
-  "not_found": 3,
-  "linked": 7,
-  "found_by_number": 1,
-  "not_searched": 340
+  "pending": 46,
+  "not_found": 52,
+  "linked": 22,
+  "found_by_number": 67,
+  "posted": 168
  },
- "missing_patients": 556,
+ "missing_patients": 7170,
  "trials": [
   {
    "nct": "NCT02228785",
@@ -290,10 +290,12 @@
    "enrollment": 244,
    "primary_completion": "2005-11",
    "months": 251,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "26861604"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00069095",
@@ -306,10 +308,10 @@
    "enrollment": 2035,
    "primary_completion": "2006-01",
    "months": 249,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00126256",
@@ -322,10 +324,13 @@
    "enrollment": 570,
    "primary_completion": "2006-02",
    "months": 248,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "23490654",
+    "21903473"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00002716",
@@ -338,10 +343,14 @@
    "enrollment": 135,
    "primary_completion": "2006-03",
    "months": 247,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "16505413",
+    "12782596",
+    "11913730"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00094809",
@@ -354,10 +363,10 @@
    "enrollment": 252,
    "primary_completion": "2006-05-19",
    "months": 245,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00079872",
@@ -370,10 +379,10 @@
    "enrollment": 120,
    "primary_completion": null,
    "months": 245,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00063141",
@@ -386,10 +395,10 @@
    "enrollment": 1302,
    "primary_completion": "2006-06",
    "months": 244,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00069108",
@@ -402,10 +411,10 @@
    "enrollment": 627,
    "primary_completion": "2006-08",
    "months": 242,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00165568",
@@ -418,10 +427,10 @@
    "enrollment": 20,
    "primary_completion": null,
    "months": 240,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00079066",
@@ -434,10 +443,15 @@
    "enrollment": 572,
    "primary_completion": "2006-11-03",
    "months": 239,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "19273701",
+    "20603436",
+    "18946061",
+    "18003960"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00254137",
@@ -450,10 +464,10 @@
    "enrollment": 92,
    "primary_completion": null,
    "months": 239,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00154102",
@@ -466,10 +480,10 @@
    "enrollment": 1221,
    "primary_completion": "2006-12",
    "months": 238,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00077233",
@@ -482,10 +496,10 @@
    "enrollment": 238,
    "primary_completion": "2006-12",
    "months": 238,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00070122",
@@ -498,10 +512,10 @@
    "enrollment": 2200,
    "primary_completion": "2007-01",
    "months": 237,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00056459",
@@ -514,10 +528,12 @@
    "enrollment": 1168,
    "primary_completion": "2007-01",
    "months": 237,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "21464406"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00056446",
@@ -530,10 +546,12 @@
    "enrollment": 855,
    "primary_completion": "2007-01",
    "months": 237,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "21464401"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00125034",
@@ -546,10 +564,10 @@
    "enrollment": 344,
    "primary_completion": "2007-03",
    "months": 235,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00025337",
@@ -562,10 +580,10 @@
    "enrollment": 880,
    "primary_completion": "2007-04",
    "months": 234,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00115765",
@@ -578,10 +596,10 @@
    "enrollment": 1053,
    "primary_completion": "2007-05-31",
    "months": 233,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00514761",
@@ -594,10 +612,10 @@
    "enrollment": 64,
    "primary_completion": "2007-06",
    "months": 232,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00252564",
@@ -610,10 +628,10 @@
    "enrollment": 247,
    "primary_completion": "2007-06",
    "months": 232,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00043004",
@@ -626,10 +644,12 @@
    "enrollment": 119,
    "primary_completion": "2007-06",
    "months": 232,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "22431703"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00077298",
@@ -642,10 +662,10 @@
    "enrollment": 70,
    "primary_completion": "2007-07",
    "months": 231,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00294359",
@@ -658,10 +678,13 @@
    "enrollment": 333,
    "primary_completion": null,
    "months": 231,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "30247524",
+    "25954110"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00286130",
@@ -674,10 +697,10 @@
    "enrollment": 150,
    "primary_completion": null,
    "months": 228,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00278889",
@@ -690,10 +713,10 @@
    "enrollment": 215,
    "primary_completion": "2007-11",
    "months": 227,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00192075",
@@ -706,10 +729,10 @@
    "enrollment": 84,
    "primary_completion": null,
    "months": 227,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00332163",
@@ -722,10 +745,10 @@
    "enrollment": 95,
    "primary_completion": "2008-01",
    "months": 225,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00111761",
@@ -738,10 +761,10 @@
    "enrollment": 43,
    "primary_completion": "2008-02",
    "months": 224,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00396487",
@@ -754,10 +777,10 @@
    "enrollment": 1,
    "primary_completion": null,
    "months": 224,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00235898",
@@ -770,10 +793,10 @@
    "enrollment": 300,
    "primary_completion": "2008-03",
    "months": 223,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00314353",
@@ -786,10 +809,10 @@
    "enrollment": 7,
    "primary_completion": "2008-05",
    "months": 221,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00268463",
@@ -802,10 +825,10 @@
    "enrollment": 22,
    "primary_completion": "2008-06",
    "months": 220,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00423696",
@@ -818,10 +841,12 @@
    "enrollment": 145,
    "primary_completion": "2008-07-28",
    "months": 219,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "21825101"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00101686",
@@ -834,10 +859,10 @@
    "enrollment": 547,
    "primary_completion": "2008-10",
    "months": 216,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00212615",
@@ -850,10 +875,12 @@
    "enrollment": 116,
    "primary_completion": "2008-10",
    "months": 216,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "23864097"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00113763",
@@ -866,10 +893,10 @@
    "enrollment": 463,
    "primary_completion": "2008-10-01",
    "months": 216,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00305643",
@@ -882,10 +909,10 @@
    "enrollment": 11,
    "primary_completion": "2008-10",
    "months": 216,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00349336",
@@ -898,10 +925,10 @@
    "enrollment": 64,
    "primary_completion": "2008-11",
    "months": 215,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00019747",
@@ -914,10 +941,10 @@
    "enrollment": 39,
    "primary_completion": "2008-12",
    "months": 214,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00642603",
@@ -930,10 +957,10 @@
    "enrollment": 41,
    "primary_completion": "2009-03",
    "months": 211,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00503685",
@@ -946,10 +973,10 @@
    "enrollment": 65,
    "primary_completion": "2009-03",
    "months": 211,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00321100",
@@ -962,10 +989,10 @@
    "enrollment": 23,
    "primary_completion": "2009-04",
    "months": 210,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00339183",
@@ -978,10 +1005,10 @@
    "enrollment": 1186,
    "primary_completion": "2009-04-01",
    "months": 210,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00118755",
@@ -994,10 +1021,10 @@
    "enrollment": 435,
    "primary_completion": "2009-04",
    "months": 210,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00145314",
@@ -1010,10 +1037,16 @@
    "enrollment": 571,
    "primary_completion": "2009-05",
    "months": 209,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "39743478",
+    "31046124",
+    "26261061",
+    "24884501",
+    "23167843"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00103142",
@@ -1026,10 +1059,10 @@
    "enrollment": 74,
    "primary_completion": "2009-06",
    "months": 208,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00439517",
@@ -1042,10 +1075,10 @@
    "enrollment": 302,
    "primary_completion": "2009-06",
    "months": 208,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00602329",
@@ -1058,10 +1091,10 @@
    "enrollment": 5,
    "primary_completion": "2009-07",
    "months": 207,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00364013",
@@ -1074,10 +1107,10 @@
    "enrollment": 1183,
    "primary_completion": "2009-08-01",
    "months": 206,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00677443",
@@ -1090,10 +1123,13 @@
    "enrollment": 344,
    "primary_completion": "2009-09",
    "months": 205,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "25424120",
+    "23062232"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00598156",
@@ -1106,10 +1142,13 @@
    "enrollment": 249,
    "primary_completion": "2009-10",
    "months": 204,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "23922111",
+    "23788755"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00305188",
@@ -1122,10 +1161,22 @@
    "enrollment": 879,
    "primary_completion": "2009-10",
    "months": 204,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "36606664",
+    "32008218",
+    "32380454",
+    "31732876",
+    "31378656",
+    "31492988",
+    "30679026",
+    "30680449",
+    "30182209",
+    "30470591",
+    "30099922"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00494221",
@@ -1138,10 +1189,10 @@
    "enrollment": 172,
    "primary_completion": "2009-10",
    "months": 204,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00384176",
@@ -1154,10 +1205,10 @@
    "enrollment": 1814,
    "primary_completion": "2009-11-15",
    "months": 203,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00942292",
@@ -1170,10 +1221,12 @@
    "enrollment": 20,
    "primary_completion": "2009-12",
    "months": 202,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "23648075"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00103311",
@@ -1186,10 +1239,10 @@
    "enrollment": 64,
    "primary_completion": "2010-01",
    "months": 201,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00612586",
@@ -1202,10 +1255,10 @@
    "enrollment": 117,
    "primary_completion": "2010-01",
    "months": 201,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00255229",
@@ -1218,10 +1271,10 @@
    "enrollment": 130,
    "primary_completion": "2010-01",
    "months": 201,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00469443",
@@ -1234,10 +1287,12 @@
    "enrollment": 330,
    "primary_completion": "2010-02",
    "months": 200,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "22240792"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00399035",
@@ -1250,10 +1305,10 @@
    "enrollment": 1254,
    "primary_completion": "2010-03",
    "months": 199,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00457691",
@@ -1266,10 +1321,10 @@
    "enrollment": 768,
    "primary_completion": "2010-03",
    "months": 199,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00614393",
@@ -1282,10 +1337,10 @@
    "enrollment": 558,
    "primary_completion": "2010-06-01",
    "months": 196,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01212718",
@@ -1298,10 +1353,10 @@
    "enrollment": 168,
    "primary_completion": "2010-06",
    "months": 196,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00479752",
@@ -1314,10 +1369,10 @@
    "enrollment": 151,
    "primary_completion": "2010-06",
    "months": 196,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00640081",
@@ -1330,10 +1385,10 @@
    "enrollment": 169,
    "primary_completion": "2010-06",
    "months": 196,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00905047",
@@ -1346,10 +1401,10 @@
    "enrollment": 89,
    "primary_completion": "2010-06",
    "months": 196,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00788957",
@@ -1362,10 +1417,10 @@
    "enrollment": 177,
    "primary_completion": "2010-07-23",
    "months": 195,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00975897",
@@ -1378,10 +1433,10 @@
    "enrollment": 3240,
    "primary_completion": "2010-08",
    "months": 194,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00625651",
@@ -1394,10 +1449,12 @@
    "enrollment": 202,
    "primary_completion": "2010-08",
    "months": 194,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "24122767"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00752570",
@@ -1410,10 +1467,12 @@
    "enrollment": 144,
    "primary_completion": "2010-09",
    "months": 193,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "23361051"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00636610",
@@ -1426,10 +1485,10 @@
    "enrollment": 199,
    "primary_completion": "2010-12",
    "months": 190,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00398879",
@@ -1442,10 +1501,12 @@
    "enrollment": 381,
    "primary_completion": "2010-12",
    "months": 190,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "21969495"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01524094",
@@ -1458,10 +1519,12 @@
    "enrollment": 49,
    "primary_completion": "2010-12",
    "months": 190,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "26751236"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00642577",
@@ -1474,10 +1537,10 @@
    "enrollment": 214,
    "primary_completion": "2010-12",
    "months": 190,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00816777",
@@ -1490,10 +1553,10 @@
    "enrollment": 4,
    "primary_completion": "2011-01",
    "months": 189,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00303771",
@@ -1506,10 +1569,13 @@
    "enrollment": 282,
    "primary_completion": "2011-01",
    "months": 189,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "26487578",
+    "23460711"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00865709",
@@ -1522,10 +1588,10 @@
    "enrollment": 198,
    "primary_completion": "2011-01",
    "months": 189,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01032291",
@@ -1538,10 +1604,10 @@
    "enrollment": 51,
    "primary_completion": "2011-01",
    "months": 189,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00813605",
@@ -1554,10 +1620,10 @@
    "enrollment": 155,
    "primary_completion": "2011-01",
    "months": 189,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00845039",
@@ -1570,10 +1636,10 @@
    "enrollment": 4,
    "primary_completion": "2011-02",
    "months": 188,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00561470",
@@ -1586,10 +1652,10 @@
    "enrollment": 1226,
    "primary_completion": "2011-02",
    "months": 188,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01133990",
@@ -1602,10 +1668,10 @@
    "enrollment": 5,
    "primary_completion": "2011-02-18",
    "months": 188,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00615056",
@@ -1618,10 +1684,10 @@
    "enrollment": 171,
    "primary_completion": "2011-03",
    "months": 187,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01047475",
@@ -1634,10 +1700,10 @@
    "enrollment": 72,
    "primary_completion": "2011-04",
    "months": 186,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00851084",
@@ -1650,10 +1716,10 @@
    "enrollment": 268,
    "primary_completion": "2011-04",
    "months": 186,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00942266",
@@ -1666,10 +1732,10 @@
    "enrollment": 58,
    "primary_completion": "2011-05",
    "months": 185,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00522665",
@@ -1682,10 +1748,10 @@
    "enrollment": 41,
    "primary_completion": "2011-05",
    "months": 185,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00719797",
@@ -1698,10 +1764,25 @@
    "enrollment": 509,
    "primary_completion": "2011-05",
    "months": 185,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "40865392",
+    "35594613",
+    "35366570",
+    "32816630",
+    "30293873",
+    "31533552",
+    "29873679",
+    "29487697",
+    "27986363",
+    "26861604",
+    "26416897",
+    "26338525",
+    "25712456",
+    "25337750"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00440310",
@@ -1714,10 +1795,10 @@
    "enrollment": 483,
    "primary_completion": "2011-05",
    "months": 185,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00070213",
@@ -1730,10 +1811,12 @@
    "enrollment": 460,
    "primary_completion": "2011-06-01",
    "months": 184,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "21570111"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01103323",
@@ -1746,10 +1829,10 @@
    "enrollment": 760,
    "primary_completion": "2011-07",
    "months": 183,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00609622",
@@ -1762,10 +1845,10 @@
    "enrollment": 191,
    "primary_completion": "2011-07",
    "months": 183,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01205711",
@@ -1778,10 +1861,10 @@
    "enrollment": 111,
    "primary_completion": "2011-07",
    "months": 183,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01086267",
@@ -1794,10 +1877,10 @@
    "enrollment": 17,
    "primary_completion": "2011-08",
    "months": 182,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00640471",
@@ -1810,10 +1893,12 @@
    "enrollment": 750,
    "primary_completion": "2011-09-06",
    "months": 181,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "23690424"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00851045",
@@ -1826,10 +1911,10 @@
    "enrollment": 17,
    "primary_completion": "2011-09",
    "months": 181,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01070355",
@@ -1842,10 +1927,12 @@
    "enrollment": 88,
    "primary_completion": "2011-10",
    "months": 180,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "24470281"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00889343",
@@ -1858,10 +1945,10 @@
    "enrollment": 101,
    "primary_completion": "2011-11",
    "months": 179,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00950820",
@@ -1874,10 +1961,10 @@
    "enrollment": 9,
    "primary_completion": "2011-11",
    "months": 179,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01189227",
@@ -1890,10 +1977,10 @@
    "enrollment": 9,
    "primary_completion": "2011-12",
    "months": 178,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00969033",
@@ -1906,10 +1993,10 @@
    "enrollment": 8,
    "primary_completion": "2011-12",
    "months": 178,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00268398",
@@ -1922,10 +2009,13 @@
    "enrollment": 284,
    "primary_completion": "2011-12",
    "months": 178,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "27310205",
+    "25403578"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00904839",
@@ -1938,10 +2028,10 @@
    "enrollment": 128,
    "primary_completion": "2012-01",
    "months": 177,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00721916",
@@ -1954,10 +2044,10 @@
    "enrollment": 107,
    "primary_completion": "2012-03",
    "months": 175,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00265824",
@@ -1970,10 +2060,12 @@
    "enrollment": 700,
    "primary_completion": "2012-03",
    "months": 175,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "26474518"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01152437",
@@ -1986,10 +2078,10 @@
    "enrollment": 94,
    "primary_completion": "2012-03",
    "months": 175,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00460603",
@@ -2002,10 +2094,10 @@
    "enrollment": 187,
    "primary_completion": "2012-04",
    "months": 174,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01085331",
@@ -2018,10 +2110,10 @@
    "enrollment": 16,
    "primary_completion": "2012-04",
    "months": 174,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00623805",
@@ -2034,10 +2126,10 @@
    "enrollment": 123,
    "primary_completion": "2012-05",
    "months": 173,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00890305",
@@ -2050,10 +2142,10 @@
    "enrollment": 171,
    "primary_completion": "2012-05",
    "months": 173,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00418938",
@@ -2066,10 +2158,10 @@
    "enrollment": 266,
    "primary_completion": "2012-05-10",
    "months": 173,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00819780",
@@ -2082,10 +2174,10 @@
    "enrollment": 285,
    "primary_completion": "2012-05-30",
    "months": 173,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00335595",
@@ -2098,10 +2190,12 @@
    "enrollment": 480,
    "primary_completion": "2012-06",
    "months": 172,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "22234633"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01483443",
@@ -2114,10 +2208,10 @@
    "enrollment": 140,
    "primary_completion": "2012-08",
    "months": 170,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00932724",
@@ -2130,10 +2224,10 @@
    "enrollment": 77,
    "primary_completion": "2012-08",
    "months": 170,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00911170",
@@ -2146,10 +2240,10 @@
    "enrollment": 847,
    "primary_completion": "2012-09-17",
    "months": 169,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01243047",
@@ -2162,10 +2256,10 @@
    "enrollment": 60,
    "primary_completion": "2012-10",
    "months": 168,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01075048",
@@ -2178,10 +2272,10 @@
    "enrollment": 131,
    "primary_completion": "2012-10-12",
    "months": 168,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01703910",
@@ -2194,10 +2288,10 @@
    "enrollment": 29,
    "primary_completion": "2012-11",
    "months": 167,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01131078",
@@ -2210,10 +2304,10 @@
    "enrollment": 306,
    "primary_completion": "2012-11",
    "months": 167,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00499369",
@@ -2226,10 +2320,10 @@
    "enrollment": 72,
    "primary_completion": "2012-11",
    "months": 167,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00932438",
@@ -2242,10 +2336,10 @@
    "enrollment": 70,
    "primary_completion": "2012-12",
    "months": 166,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01550055",
@@ -2258,10 +2352,12 @@
    "enrollment": 512,
    "primary_completion": "2012-12-23",
    "months": 166,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "31126331"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00594984",
@@ -2274,10 +2370,10 @@
    "enrollment": 38,
    "primary_completion": "2012-12",
    "months": 166,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01060423",
@@ -2290,10 +2386,10 @@
    "enrollment": 8,
    "primary_completion": "2012-12",
    "months": 166,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00544700",
@@ -2306,10 +2402,12 @@
    "enrollment": 265,
    "primary_completion": "2013-01-21",
    "months": 165,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "25605741"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01086618",
@@ -2322,10 +2420,10 @@
    "enrollment": 500,
    "primary_completion": "2013-01",
    "months": 165,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00720512",
@@ -2338,10 +2436,12 @@
    "enrollment": 184,
    "primary_completion": "2013-02",
    "months": 164,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "25600568"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01001377",
@@ -2354,10 +2454,10 @@
    "enrollment": 1010,
    "primary_completion": "2013-02-05",
    "months": 164,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01087658",
@@ -2370,10 +2470,10 @@
    "enrollment": 200,
    "primary_completion": "2013-03",
    "months": 163,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00484939",
@@ -2386,10 +2486,10 @@
    "enrollment": 280,
    "primary_completion": "2013-03",
    "months": 163,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00967616",
@@ -2402,10 +2502,10 @@
    "enrollment": 100,
    "primary_completion": "2013-04",
    "months": 162,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01386242",
@@ -2418,10 +2518,12 @@
    "enrollment": 108,
    "primary_completion": "2013-05",
    "months": 161,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "25926350"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01418742",
@@ -2434,10 +2536,10 @@
    "enrollment": 11,
    "primary_completion": "2013-05",
    "months": 161,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00700102",
@@ -2450,10 +2552,10 @@
    "enrollment": 820,
    "primary_completion": "2013-05",
    "months": 161,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00394992",
@@ -2466,10 +2568,12 @@
    "enrollment": 79,
    "primary_completion": "2013-08",
    "months": 158,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "20937118"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01478594",
@@ -2482,10 +2586,10 @@
    "enrollment": 265,
    "primary_completion": "2013-09",
    "months": 157,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02204332",
@@ -2498,10 +2602,10 @@
    "enrollment": 38,
    "primary_completion": "2013-09",
    "months": 157,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01507545",
@@ -2514,10 +2618,10 @@
    "enrollment": 154,
    "primary_completion": "2013-10-20",
    "months": 156,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00778102",
@@ -2530,10 +2634,10 @@
    "enrollment": 80,
    "primary_completion": "2013-10",
    "months": 156,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01584830",
@@ -2546,10 +2650,14 @@
    "enrollment": 204,
    "primary_completion": "2013-11",
    "months": 155,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "34285574",
+    "31900959",
+    "25981818"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00098787",
@@ -2562,10 +2670,10 @@
    "enrollment": 247,
    "primary_completion": "2013-11",
    "months": 155,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01333475",
@@ -2578,10 +2686,10 @@
    "enrollment": 21,
    "primary_completion": "2013-11",
    "months": 155,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01523639",
@@ -2594,10 +2702,10 @@
    "enrollment": 8,
    "primary_completion": "2013-11",
    "months": 155,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01252628",
@@ -2610,10 +2718,10 @@
    "enrollment": 178,
    "primary_completion": "2013-11",
    "months": 155,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01326000",
@@ -2626,10 +2734,10 @@
    "enrollment": 169,
    "primary_completion": "2013-12",
    "months": 154,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01111604",
@@ -2642,10 +2750,10 @@
    "enrollment": 158,
    "primary_completion": "2013-12",
    "months": 154,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01229813",
@@ -2658,10 +2766,12 @@
    "enrollment": 233,
    "primary_completion": "2013-12",
    "months": 154,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "26483047"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01668680",
@@ -2674,10 +2784,10 @@
    "enrollment": 80,
    "primary_completion": "2013-12",
    "months": 154,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01607957",
@@ -2690,10 +2800,10 @@
    "enrollment": 800,
    "primary_completion": "2014-01-31",
    "months": 153,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01763307",
@@ -2706,10 +2816,10 @@
    "enrollment": 18,
    "primary_completion": "2014-01",
    "months": 153,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01399684",
@@ -2722,10 +2832,12 @@
    "enrollment": 127,
    "primary_completion": "2014-02",
    "months": 152,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "28275117"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01878422",
@@ -2738,10 +2850,16 @@
    "enrollment": 376,
    "primary_completion": "2014-03",
    "months": 151,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "38295317",
+    "33062063",
+    "31191000",
+    "26244985",
+    "25735317"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01975077",
@@ -2754,10 +2872,12 @@
    "enrollment": 62,
    "primary_completion": "2014-04",
    "months": 150,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "28103904"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02060669",
@@ -2770,10 +2890,10 @@
    "enrollment": 10,
    "primary_completion": "2014-05",
    "months": 149,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01375816",
@@ -2786,10 +2906,10 @@
    "enrollment": 55,
    "primary_completion": "2014-06",
    "months": 148,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01412957",
@@ -2802,10 +2922,10 @@
    "enrollment": 377,
    "primary_completion": "2014-06",
    "months": 148,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01183780",
@@ -2818,10 +2938,10 @@
    "enrollment": 1072,
    "primary_completion": "2014-07-17",
    "months": 147,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00856375",
@@ -2834,10 +2954,10 @@
    "enrollment": 83,
    "primary_completion": "2014-07",
    "months": 147,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02821559",
@@ -2850,10 +2970,12 @@
    "enrollment": 37,
    "primary_completion": "2014-08",
    "months": 146,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "32789966"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00748215",
@@ -2866,10 +2988,10 @@
    "enrollment": 100,
    "primary_completion": "2014-08-12",
    "months": 146,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01417494",
@@ -2882,10 +3004,12 @@
    "enrollment": 102,
    "primary_completion": "2014-09",
    "months": 145,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "29718089"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01413295",
@@ -2898,10 +3022,10 @@
    "enrollment": 52,
    "primary_completion": "2014-09",
    "months": 145,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01762293",
@@ -2914,10 +3038,12 @@
    "enrollment": 154,
    "primary_completion": "2014-09",
    "months": 145,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "29273089"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01479465",
@@ -2930,10 +3056,10 @@
    "enrollment": 266,
    "primary_completion": "2014-10",
    "months": 144,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01661270",
@@ -2946,10 +3072,10 @@
    "enrollment": 332,
    "primary_completion": "2014-10",
    "months": 144,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01652482",
@@ -2962,10 +3088,12 @@
    "enrollment": 135,
    "primary_completion": "2014-11",
    "months": 143,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "29506988"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01279681",
@@ -2978,10 +3106,10 @@
    "enrollment": 32,
    "primary_completion": "2014-11",
    "months": 143,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00973609",
@@ -2994,10 +3122,15 @@
    "enrollment": 853,
    "primary_completion": "2014-12",
    "months": 142,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "33257977",
+    "30036739",
+    "27753609",
+    "26361971"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01579357",
@@ -3010,10 +3143,10 @@
    "enrollment": 24,
    "primary_completion": "2014-12",
    "months": 142,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01609231",
@@ -3026,10 +3159,10 @@
    "enrollment": 11,
    "primary_completion": "2014-12-09",
    "months": 142,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01856322",
@@ -3042,10 +3175,10 @@
    "enrollment": 3,
    "primary_completion": "2015-01",
    "months": 141,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01522612",
@@ -3058,10 +3191,10 @@
    "enrollment": 5,
    "primary_completion": "2015-01",
    "months": 141,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00940316",
@@ -3074,10 +3207,10 @@
    "enrollment": 28,
    "primary_completion": "2015-01",
    "months": 141,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00265850",
@@ -3090,10 +3223,10 @@
    "enrollment": 2334,
    "primary_completion": "2015-02",
    "months": 140,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02295930",
@@ -3106,10 +3239,12 @@
    "enrollment": 143,
    "primary_completion": "2015-03",
    "months": 139,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "29450468"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01715441",
@@ -3122,10 +3257,12 @@
    "enrollment": 173,
    "primary_completion": "2015-03",
    "months": 139,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "32737004"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01008475",
@@ -3138,10 +3275,10 @@
    "enrollment": 232,
    "primary_completion": "2015-04",
    "months": 138,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01030042",
@@ -3154,10 +3291,10 @@
    "enrollment": 110,
    "primary_completion": "2015-04",
    "months": 138,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02196688",
@@ -3170,10 +3307,10 @@
    "enrollment": 71,
    "primary_completion": "2015-04",
    "months": 138,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01374425",
@@ -3186,10 +3323,10 @@
    "enrollment": 376,
    "primary_completion": "2015-05",
    "months": 137,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02176746",
@@ -3202,10 +3339,12 @@
    "enrollment": 40,
    "primary_completion": "2015-05",
    "months": 137,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "22473314"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01347645",
@@ -3218,10 +3357,10 @@
    "enrollment": 82,
    "primary_completion": "2015-06-22",
    "months": 136,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01161316",
@@ -3234,10 +3373,13 @@
    "enrollment": 194,
    "primary_completion": "2015-06",
    "months": 136,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "31803504",
+    "30054049"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01937715",
@@ -3250,10 +3392,10 @@
    "enrollment": 18,
    "primary_completion": "2015-08",
    "months": 134,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01931150",
@@ -3266,10 +3408,10 @@
    "enrollment": 11,
    "primary_completion": "2015-09",
    "months": 133,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01483638",
@@ -3282,10 +3424,10 @@
    "enrollment": 84,
    "primary_completion": "2015-09",
    "months": 133,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01442649",
@@ -3298,10 +3440,12 @@
    "enrollment": 133,
    "primary_completion": "2015-10",
    "months": 132,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "30422156"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01858662",
@@ -3314,10 +3458,10 @@
    "enrollment": 4,
    "primary_completion": "2015-11",
    "months": 131,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01919879",
@@ -3330,10 +3474,10 @@
    "enrollment": 75,
    "primary_completion": "2015-11",
    "months": 131,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01523431",
@@ -3346,10 +3490,10 @@
    "enrollment": 583,
    "primary_completion": "2015-11-23",
    "months": 131,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01918852",
@@ -3362,10 +3506,13 @@
    "enrollment": 161,
    "primary_completion": "2015-12",
    "months": 130,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "30782413",
+    "28383633"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01718873",
@@ -3378,10 +3525,10 @@
    "enrollment": 230,
    "primary_completion": "2015-12",
    "months": 130,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01437514",
@@ -3394,10 +3541,12 @@
    "enrollment": 410,
    "primary_completion": "2015-12",
    "months": 130,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "31599809"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01669720",
@@ -3410,10 +3559,10 @@
    "enrollment": 10,
    "primary_completion": "2015-12",
    "months": 130,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01442935",
@@ -3426,10 +3575,12 @@
    "enrollment": 256,
    "primary_completion": "2015-12",
    "months": 130,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "31142037"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01718808",
@@ -3442,10 +3593,10 @@
    "enrollment": 24,
    "primary_completion": "2015-12",
    "months": 130,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00952029",
@@ -3458,10 +3609,13 @@
    "enrollment": 492,
    "primary_completion": "2015-12",
    "months": 130,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "29346040",
+    "32015513"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01228734",
@@ -3474,10 +3628,10 @@
    "enrollment": 553,
    "primary_completion": "2016-01-25",
    "months": 129,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02119676",
@@ -3490,10 +3644,10 @@
    "enrollment": 396,
    "primary_completion": "2016-02",
    "months": 128,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01955837",
@@ -3506,10 +3660,10 @@
    "enrollment": 406,
    "primary_completion": "2016-02-16",
    "months": 128,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01765582",
@@ -3522,10 +3676,10 @@
    "enrollment": 280,
    "primary_completion": "2016-03-14",
    "months": 127,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01619423",
@@ -3538,10 +3692,10 @@
    "enrollment": 186,
    "primary_completion": "2016-03",
    "months": 127,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01545141",
@@ -3554,10 +3708,10 @@
    "enrollment": 15,
    "primary_completion": "2016-04-08",
    "months": 126,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01925274",
@@ -3570,10 +3724,10 @@
    "enrollment": 19,
    "primary_completion": "2016-04-06",
    "months": 126,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02149108",
@@ -3586,10 +3740,10 @@
    "enrollment": 768,
    "primary_completion": "2016-05-13",
    "months": 125,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01532804",
@@ -3602,10 +3756,12 @@
    "enrollment": 83,
    "primary_completion": "2016-05-12",
    "months": 125,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "41537257"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT00730158",
@@ -3618,10 +3774,10 @@
    "enrollment": 33,
    "primary_completion": "2016-06",
    "months": 124,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01362361",
@@ -3634,10 +3790,12 @@
    "enrollment": 54,
    "primary_completion": "2016-06",
    "months": 124,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "32930387"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02141295",
@@ -3650,10 +3808,10 @@
    "enrollment": 197,
    "primary_completion": "2016-07-29",
    "months": 123,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02332499",
@@ -3666,10 +3824,10 @@
    "enrollment": 419,
    "primary_completion": "2016-08-18",
    "months": 122,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01939223",
@@ -3682,10 +3840,10 @@
    "enrollment": 25,
    "primary_completion": "2016-08-29",
    "months": 122,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02780700",
@@ -3698,10 +3856,10 @@
    "enrollment": 1,
    "primary_completion": "2016-09-09",
    "months": 121,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01321957",
@@ -3714,10 +3872,15 @@
    "enrollment": 250,
    "primary_completion": "2016-09",
    "months": 121,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "40865392",
+    "37996507",
+    "32816630",
+    "22897915"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01508000",
@@ -3730,10 +3893,10 @@
    "enrollment": 44,
    "primary_completion": "2016-09",
    "months": 121,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01975454",
@@ -3746,10 +3909,10 @@
    "enrollment": 62,
    "primary_completion": "2016-09",
    "months": 121,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02083653",
@@ -3762,10 +3925,10 @@
    "enrollment": 254,
    "primary_completion": "2016-10-24",
    "months": 120,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01298570",
@@ -3778,10 +3941,10 @@
    "enrollment": 181,
    "primary_completion": "2016-11-15",
    "months": 119,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01721954",
@@ -3794,10 +3957,10 @@
    "enrollment": 209,
    "primary_completion": "2016-12-23",
    "months": 118,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01345526",
@@ -3810,10 +3973,10 @@
    "enrollment": 124,
    "primary_completion": "2016-12",
    "months": 118,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01993472",
@@ -3826,10 +3989,10 @@
    "enrollment": 308,
    "primary_completion": "2016-12",
    "months": 118,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01622543",
@@ -3842,10 +4005,10 @@
    "enrollment": 109,
    "primary_completion": "2017-01-18",
    "months": 117,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02448810",
@@ -3858,10 +4021,10 @@
    "enrollment": 115,
    "primary_completion": "2017-02-15",
    "months": 116,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01836653",
@@ -3874,10 +4037,12 @@
    "enrollment": 122,
    "primary_completion": "2017-03",
    "months": 115,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "31285591"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02337946",
@@ -3890,10 +4055,10 @@
    "enrollment": 164,
    "primary_completion": "2017-03-31",
    "months": 115,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02271464",
@@ -3906,10 +4071,14 @@
    "enrollment": 232,
    "primary_completion": "2017-03",
    "months": 115,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "30735919",
+    "29792754",
+    "27986363"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01490996",
@@ -3922,10 +4091,13 @@
    "enrollment": 41,
    "primary_completion": "2017-05-31",
    "months": 113,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "31132111",
+    "25979230"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01328171",
@@ -3938,10 +4110,13 @@
    "enrollment": 93,
    "primary_completion": "2017-06",
    "months": 112,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "42743885",
+    "31609637"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04425564",
@@ -3954,10 +4129,10 @@
    "enrollment": 70,
    "primary_completion": "2017-06-30",
    "months": 112,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01767857",
@@ -3970,10 +4145,10 @@
    "enrollment": 643,
    "primary_completion": "2017-06-30",
    "months": 112,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02119026",
@@ -3986,10 +4161,10 @@
    "enrollment": 120,
    "primary_completion": "2017-08-31",
    "months": 110,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02305758",
@@ -4002,10 +4177,10 @@
    "enrollment": 130,
    "primary_completion": "2017-09-22",
    "months": 109,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02368886",
@@ -4018,10 +4193,10 @@
    "enrollment": 123,
    "primary_completion": "2017-09-01",
    "months": 109,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02164916",
@@ -4034,10 +4209,10 @@
    "enrollment": 106,
    "primary_completion": "2017-11-13",
    "months": 107,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01996306",
@@ -4050,10 +4225,12 @@
    "enrollment": 650,
    "primary_completion": "2017-11-20",
    "months": 107,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "29555258"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03008499",
@@ -4066,10 +4243,10 @@
    "enrollment": 20,
    "primary_completion": "2017-12-01",
    "months": 106,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02605044",
@@ -4082,10 +4259,10 @@
    "enrollment": 123,
    "primary_completion": "2017-12",
    "months": 106,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02743221",
@@ -4098,10 +4275,10 @@
    "enrollment": 154,
    "primary_completion": "2018-01-15",
    "months": 105,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02314182",
@@ -4114,10 +4291,12 @@
    "enrollment": 5,
    "primary_completion": "2018-02",
    "months": 104,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "linked",
+   "pmids": [
+    "25849254"
+   ],
+   "detail": "Results publication linked in the registry.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02788279",
@@ -4130,10 +4309,10 @@
    "enrollment": 363,
    "primary_completion": "2018-03-09",
    "months": 103,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02316340",
@@ -4146,10 +4325,10 @@
    "enrollment": 42,
    "primary_completion": "2018-03-07",
    "months": 103,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02096354",
@@ -4162,10 +4341,10 @@
    "enrollment": 62,
    "primary_completion": "2018-04-13",
    "months": 102,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01632722",
@@ -4178,10 +4357,10 @@
    "enrollment": 79,
    "primary_completion": "2018-05",
    "months": 101,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03288987",
@@ -4194,10 +4373,10 @@
    "enrollment": 126,
    "primary_completion": "2018-07-30",
    "months": 99,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02216149",
@@ -4210,10 +4389,10 @@
    "enrollment": 20,
    "primary_completion": "2018-08",
    "months": 98,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02453490",
@@ -4226,10 +4405,10 @@
    "enrollment": 360,
    "primary_completion": "2018-09-11",
    "months": 97,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02835924",
@@ -4242,10 +4421,13 @@
    "enrollment": 299,
    "primary_completion": "2018-09",
    "months": 97,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "36335783",
+    "28712102"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03357276",
@@ -4258,10 +4440,10 @@
    "enrollment": 30,
    "primary_completion": "2018-11-30",
    "months": 95,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01640444",
@@ -4274,10 +4456,14 @@
    "enrollment": 240,
    "primary_completion": "2018-11",
    "months": 95,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "40259317",
+    "36944559",
+    "32278676"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01640405",
@@ -4290,10 +4476,14 @@
    "enrollment": 350,
    "primary_completion": "2018-11",
    "months": 95,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "40259317",
+    "36944559",
+    "32278676"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04355156",
@@ -4306,10 +4496,10 @@
    "enrollment": 52,
    "primary_completion": "2019-02-22",
    "months": 92,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02928224",
@@ -4322,10 +4512,10 @@
    "enrollment": 702,
    "primary_completion": "2019-02-11",
    "months": 92,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02390947",
@@ -4338,10 +4528,10 @@
    "enrollment": 543,
    "primary_completion": "2019-02",
    "months": 92,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03549338",
@@ -4354,10 +4544,10 @@
    "enrollment": 2,
    "primary_completion": "2019-03-01",
    "months": 91,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03898102",
@@ -4370,10 +4560,12 @@
    "enrollment": 65,
    "primary_completion": "2019-03",
    "months": 91,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "37968194"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01867697",
@@ -4386,10 +4578,10 @@
    "enrollment": 173,
    "primary_completion": "2019-03",
    "months": 91,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02292758",
@@ -4402,10 +4594,10 @@
    "enrollment": 36,
    "primary_completion": "2019-03-20",
    "months": 91,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03563157",
@@ -4418,10 +4610,10 @@
    "enrollment": 2,
    "primary_completion": "2019-04-21",
    "months": 90,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01858649",
@@ -4434,10 +4626,10 @@
    "enrollment": 60,
    "primary_completion": "2019-05",
    "months": 89,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02291289",
@@ -4450,10 +4642,10 @@
    "enrollment": 1044,
    "primary_completion": "2019-05-31",
    "months": 89,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02414009",
@@ -4466,10 +4658,10 @@
    "enrollment": 82,
    "primary_completion": "2019-07-30",
    "months": 87,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02705300",
@@ -4482,10 +4674,10 @@
    "enrollment": 70,
    "primary_completion": "2019-08",
    "months": 86,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01896856",
@@ -4498,10 +4690,10 @@
    "enrollment": 118,
    "primary_completion": "2019-08-26",
    "months": 86,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03300609",
@@ -4514,10 +4706,10 @@
    "enrollment": 4,
    "primary_completion": "2019-10-03",
    "months": 84,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01516216",
@@ -4530,10 +4722,10 @@
    "enrollment": 139,
    "primary_completion": "2019-11-09",
    "months": 83,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03368859",
@@ -4546,10 +4738,10 @@
    "enrollment": 70,
    "primary_completion": "2019-12-18",
    "months": 82,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02484833",
@@ -4562,10 +4754,12 @@
    "enrollment": 607,
    "primary_completion": "2019-12",
    "months": 82,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "38181312"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02753127",
@@ -4578,10 +4772,10 @@
    "enrollment": 1253,
    "primary_completion": "2020-04-28",
    "months": 78,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02870582",
@@ -4594,10 +4788,10 @@
    "enrollment": 536,
    "primary_completion": "2020-04-30",
    "months": 78,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03511963",
@@ -4610,10 +4804,13 @@
    "enrollment": 677,
    "primary_completion": "2020-04-15",
    "months": 78,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "34086067",
+    "34014555"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02469480",
@@ -4626,10 +4823,10 @@
    "enrollment": 64,
    "primary_completion": "2020-05",
    "months": 77,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01750918",
@@ -4642,10 +4839,10 @@
    "enrollment": 166,
    "primary_completion": "2020-06-18",
    "months": 76,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03654729",
@@ -4658,10 +4855,10 @@
    "enrollment": 291,
    "primary_completion": "2020-08-31",
    "months": 74,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02842580",
@@ -4674,10 +4871,10 @@
    "enrollment": 21,
    "primary_completion": "2020-10",
    "months": 72,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02404935",
@@ -4690,10 +4887,12 @@
    "enrollment": 139,
    "primary_completion": "2020-11-01",
    "months": 71,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "37721754"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT05316818",
@@ -4706,10 +4905,10 @@
    "enrollment": 64,
    "primary_completion": "2020-12-01",
    "months": 70,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03556956",
@@ -4722,10 +4921,10 @@
    "enrollment": 219,
    "primary_completion": "2020-12",
    "months": 70,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03647839",
@@ -4738,10 +4937,10 @@
    "enrollment": 90,
    "primary_completion": "2021-01-29",
    "months": 69,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03414983",
@@ -4754,10 +4953,10 @@
    "enrollment": 196,
    "primary_completion": "2021-02-01",
    "months": 68,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03158610",
@@ -4770,10 +4969,10 @@
    "enrollment": 20,
    "primary_completion": "2021-04-28",
    "months": 66,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04247984",
@@ -4786,10 +4985,10 @@
    "enrollment": 264,
    "primary_completion": "2021-04-01",
    "months": 66,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03473925",
@@ -4802,10 +5001,10 @@
    "enrollment": 107,
    "primary_completion": "2021-05-19",
    "months": 65,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03631407",
@@ -4818,10 +5017,10 @@
    "enrollment": 41,
    "primary_completion": "2021-06-08",
    "months": 64,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01307878",
@@ -4834,10 +5033,10 @@
    "enrollment": 320,
    "primary_completion": "2021-06",
    "months": 64,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02384759",
@@ -4850,10 +5049,10 @@
    "enrollment": 117,
    "primary_completion": "2021-06",
    "months": 64,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03721653",
@@ -4866,10 +5065,14 @@
    "enrollment": 218,
    "primary_completion": "2021-06-15",
    "months": 64,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "38865678",
+    "35636444",
+    "32698790"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04425239",
@@ -4882,10 +5085,12 @@
    "enrollment": 151,
    "primary_completion": "2021-07-02",
    "months": 63,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "39576946"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03164655",
@@ -4898,10 +5103,12 @@
    "enrollment": 20,
    "primary_completion": "2021-07-15",
    "months": 63,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "41118066"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03981614",
@@ -4914,10 +5121,10 @@
    "enrollment": 102,
    "primary_completion": "2021-08-23",
    "months": 62,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03050814",
@@ -4930,10 +5137,10 @@
    "enrollment": 30,
    "primary_completion": "2021-08-25",
    "months": 62,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04021589",
@@ -4946,10 +5153,10 @@
    "enrollment": 40,
    "primary_completion": "2021-10-30",
    "months": 60,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03426371",
@@ -4962,10 +5169,10 @@
    "enrollment": 52,
    "primary_completion": "2021-11-27",
    "months": 59,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02394795",
@@ -4978,10 +5185,10 @@
    "enrollment": 823,
    "primary_completion": "2022-01-14",
    "months": 57,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03326791",
@@ -4994,10 +5201,12 @@
    "enrollment": 466,
    "primary_completion": "2022-02-01",
    "months": 56,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "42777749"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03043313",
@@ -5010,10 +5219,10 @@
    "enrollment": 117,
    "primary_completion": "2022-03-28",
    "months": 55,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT05468892",
@@ -5026,10 +5235,14 @@
    "enrollment": 68,
    "primary_completion": "2022-05-31",
    "months": 53,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "38592721",
+    "37391938",
+    "37200022"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03206151",
@@ -5042,10 +5255,13 @@
    "enrollment": 520,
    "primary_completion": "2022-05-06",
    "months": 53,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "42583165",
+    "40328753"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03186326",
@@ -5058,10 +5274,13 @@
    "enrollment": 132,
    "primary_completion": "2022-05-31",
    "months": 53,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "40531517",
+    "37535388"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03231722",
@@ -5074,10 +5293,15 @@
    "enrollment": 435,
    "primary_completion": "2022-06-15",
    "months": 52,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "41505697",
+    "36822922",
+    "35666229",
+    "30018814"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04854434",
@@ -5090,10 +5314,10 @@
    "enrollment": 13,
    "primary_completion": "2022-06-24",
    "months": 52,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04737187",
@@ -5106,10 +5330,10 @@
    "enrollment": 492,
    "primary_completion": "2022-07-19",
    "months": 51,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04322539",
@@ -5122,10 +5346,10 @@
    "enrollment": 691,
    "primary_completion": "2022-07-29",
    "months": 51,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03555149",
@@ -5138,10 +5362,10 @@
    "enrollment": 96,
    "primary_completion": "2022-09-26",
    "months": 49,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03678428",
@@ -5154,10 +5378,10 @@
    "enrollment": 92,
    "primary_completion": "2022-10-31",
    "months": 48,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03365882",
@@ -5170,10 +5394,10 @@
    "enrollment": 240,
    "primary_completion": "2022-11-01",
    "months": 47,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04744831",
@@ -5186,10 +5410,10 @@
    "enrollment": 122,
    "primary_completion": "2022-11-01",
    "months": 47,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03477019",
@@ -5202,10 +5426,10 @@
    "enrollment": 17,
    "primary_completion": "2022-12-31",
    "months": 46,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03519295",
@@ -5218,10 +5442,13 @@
    "enrollment": 97,
    "primary_completion": "2023-02-07",
    "months": 44,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "38547895",
+    "32334548"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04607668",
@@ -5234,10 +5461,10 @@
    "enrollment": 326,
    "primary_completion": "2023-02-13",
    "months": 44,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03279289",
@@ -5250,10 +5477,12 @@
    "enrollment": 170,
    "primary_completion": "2023-02-09",
    "months": 44,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "39608305"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01991873",
@@ -5266,10 +5495,22 @@
    "enrollment": 387,
    "primary_completion": "2023-02-18",
    "months": 44,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "41489691",
+    "41252656",
+    "40877636",
+    "40736443",
+    "39802302",
+    "38996519",
+    "38289994",
+    "37454537",
+    "37018649",
+    "36399909",
+    "34533973"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04456699",
@@ -5282,10 +5523,10 @@
    "enrollment": 335,
    "primary_completion": "2023-03-27",
    "months": 43,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04835142",
@@ -5298,10 +5539,13 @@
    "enrollment": 688,
    "primary_completion": "2023-03-22",
    "months": 43,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "42583165",
+    "40737898"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT02873195",
@@ -5314,10 +5558,10 @@
    "enrollment": 133,
    "primary_completion": "2023-03-06",
    "months": 43,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT05223673",
@@ -5330,10 +5574,10 @@
    "enrollment": 7,
    "primary_completion": "2023-06-21",
    "months": 40,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT06509880",
@@ -5346,10 +5590,10 @@
    "enrollment": 187,
    "primary_completion": "2023-07-25",
    "months": 39,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04068896",
@@ -5362,10 +5606,10 @@
    "enrollment": 89,
    "primary_completion": "2023-09-21",
    "months": 37,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT05004350",
@@ -5378,10 +5622,10 @@
    "enrollment": 107,
    "primary_completion": "2023-12-19",
    "months": 34,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03530267",
@@ -5394,10 +5638,10 @@
    "enrollment": 124,
    "primary_completion": "2024-02-01",
    "months": 32,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03547999",
@@ -5410,10 +5654,10 @@
    "enrollment": 17,
    "primary_completion": "2024-03-13",
    "months": 31,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03388190",
@@ -5426,10 +5670,10 @@
    "enrollment": 80,
    "primary_completion": "2024-03-18",
    "months": 31,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04786600",
@@ -5442,10 +5686,10 @@
    "enrollment": 6,
    "primary_completion": "2024-03-19",
    "months": 31,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04450836",
@@ -5458,10 +5702,10 @@
    "enrollment": 234,
    "primary_completion": "2024-03-23",
    "months": 31,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04907539",
@@ -5474,10 +5718,10 @@
    "enrollment": 25,
    "primary_completion": "2024-04-02",
    "months": 30,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04856787",
@@ -5490,10 +5734,12 @@
    "enrollment": 62,
    "primary_completion": "2024-04-17",
    "months": 30,
-   "verdict": "not_searched",
-   "pmids": [],
-   "detail": null,
-   "searched": null
+   "verdict": "found_by_number",
+   "pmids": [
+    "39676137"
+   ],
+   "detail": "PubMed records cite its registration number.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04472429",
@@ -5506,10 +5752,10 @@
    "enrollment": 308,
    "primary_completion": "2024-04-15",
    "months": 30,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04554836",
@@ -5522,10 +5768,10 @@
    "enrollment": 6,
    "primary_completion": "2024-06-11",
    "months": 28,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT05330429",
@@ -5538,10 +5784,10 @@
    "enrollment": 77,
    "primary_completion": "2024-06-26",
    "months": 28,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT05551117",
@@ -5554,10 +5800,10 @@
    "enrollment": 192,
    "primary_completion": "2024-07-04",
    "months": 27,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03520946",
@@ -5570,10 +5816,10 @@
    "enrollment": 430,
    "primary_completion": "2024-07-30",
    "months": 27,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04457297",
@@ -5586,10 +5832,10 @@
    "enrollment": 243,
    "primary_completion": "2024-07-18",
    "months": 27,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT01312857",
@@ -5602,10 +5848,10 @@
    "enrollment": 75,
    "primary_completion": "2024-07-15",
    "months": 27,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT05600309",
@@ -5618,10 +5864,10 @@
    "enrollment": 94,
    "primary_completion": "2024-08-15",
    "months": 26,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03117972",
@@ -5634,10 +5880,10 @@
    "enrollment": 54,
    "primary_completion": "2024-08-07",
    "months": 26,
-   "verdict": "not_searched",
+   "verdict": "pending",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Candidate papers await checking.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT05064059",
@@ -5650,10 +5896,10 @@
    "enrollment": 441,
    "primary_completion": "2024-08-15",
    "months": 26,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT05678257",
@@ -5666,10 +5912,10 @@
    "enrollment": 180,
    "primary_completion": "2024-08-29",
    "months": 26,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT04776148",
@@ -5682,10 +5928,10 @@
    "enrollment": 563,
    "primary_completion": "2024-09-27",
    "months": 25,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT03841305",
@@ -5698,10 +5944,10 @@
    "enrollment": 64,
    "primary_completion": "2024-10-10",
    "months": 24,
-   "verdict": "not_searched",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "No posted results, no linked or citing publication, and no candidate paper in PubMed.",
+   "searched": "2026-10-21"
   },
   {
    "nct": "NCT05091346",
@@ -5714,10 +5960,10 @@
    "enrollment": 89,
    "primary_completion": "2024-10-15",
    "months": 24,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-10-21"
   }
  ],
  "crosscheck": {
