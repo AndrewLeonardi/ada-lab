@@ -99,8 +99,8 @@
    {
     "pmid": "32164906",
     "name": "TRIBE2",
-    "verified": 5,
-    "review": 6,
+    "verified": 4,
+    "review": 7,
     "headline": null
    },
    {
@@ -1239,18 +1239,18 @@
    {
     "pmid": "28735067",
     "name": "Italian Group for the Study of Gastrointestinal Cancer phase III trial",
-    "verified": 8,
-    "review": 0,
+    "verified": 5,
+    "review": 3,
     "headline": {
-     "label": "OS hazard ratio",
+     "label": "PFS hazard ratio",
      "items": [
       {
        "arm": "A",
        "comparator": "B",
-       "value": 0.84,
+       "value": 1.04,
        "unit": "ratio",
-       "ci_low": 0.55,
-       "ci_high": 1.28,
+       "ci_low": 0.69,
+       "ci_high": 1.56,
        "population": "overall"
       }
      ]
@@ -1326,12 +1326,20 @@
     }
    }
   ],
-  "verified_numbers": 437,
-  "review_numbers": 190,
+  "verified_numbers": 433,
+  "review_numbers": 194,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
     "n": 185
+   },
+   {
+    "reason": "its unit did not fit the measure",
+    "n": 27
+   },
+   {
+    "reason": "it contradicted the trial's other numbers",
+    "n": 14
    },
    {
     "reason": "the number was not in its quote",
@@ -1363,22 +1371,9 @@
    {
     "pmid": "31268481",
     "name": "Maintenance Therapy With Panitumumab Alone vs Panitumumab Plus Fluorouracil-Leucovorin \u2026",
-    "verified": 3,
-    "review": 6,
-    "headline": {
-     "label": "PFS hazard ratio",
-     "items": [
-      {
-       "arm": "arm A",
-       "comparator": "arm B",
-       "value": 1.51,
-       "unit": "ratio",
-       "ci_low": 1.11,
-       "ci_high": 2.07,
-       "population": "overall"
-      }
-     ]
-    }
+    "verified": 2,
+    "review": 7,
+    "headline": null
    },
    {
     "pmid": "34533973",
@@ -1546,8 +1541,8 @@
    {
     "pmid": "42859101",
     "name": "EGFR Targeting With Afatinib and Cetuximab Versus Cetuximab Alone in Chemorefractory Wi\u2026",
-    "verified": 7,
-    "review": 1,
+    "verified": 6,
+    "review": 2,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -1803,19 +1798,37 @@
    {
     "pmid": "41980919",
     "name": "STRATEGIC-1",
-    "verified": 11,
-    "review": 1,
+    "verified": 8,
+    "review": 4,
     "headline": {
-     "label": "OS hazard ratio",
+     "label": "Objective response rate",
      "items": [
       {
        "arm": "A",
        "comparator": "B",
-       "value": 1.3,
-       "unit": "ratio",
-       "ci_low": 0.99,
-       "ci_high": 1.72,
-       "population": "overall"
+       "value": 82.4,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "first-line group"
+      },
+      {
+       "arm": "A",
+       "comparator": "B",
+       "value": 20.7,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "second-line group"
+      },
+      {
+       "arm": "B",
+       "comparator": "A",
+       "value": 65.4,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "first-line group"
       }
      ]
     }
@@ -2116,8 +2129,8 @@
    {
     "pmid": "39632230",
     "name": "KH903",
-    "verified": 11,
-    "review": 1,
+    "verified": 8,
+    "review": 4,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -2492,8 +2505,8 @@
    {
     "pmid": "38438735",
     "name": "CAPability-01",
-    "verified": 6,
-    "review": 7,
+    "verified": 4,
+    "review": 9,
     "headline": {
      "label": "Median PFS",
      "items": [
@@ -3084,8 +3097,8 @@
    {
     "pmid": "35739299",
     "name": "NCT02316340",
-    "verified": 4,
-    "review": 0,
+    "verified": 2,
+    "review": 2,
     "headline": {
      "label": "Median PFS",
      "items": [
@@ -3133,8 +3146,8 @@
    {
     "pmid": "35666229",
     "name": "TRIPLETE",
-    "verified": 7,
-    "review": 4,
+    "verified": 5,
+    "review": 6,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -3570,8 +3583,8 @@
    {
     "pmid": "34957976",
     "name": "Effect of pentoxifylline on colon cancer patients treated with chemotherapy (Part I).",
-    "verified": 4,
-    "review": 1,
+    "verified": 1,
+    "review": 4,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -3816,12 +3829,20 @@
     }
    }
   ],
-  "verified_numbers": 773,
-  "review_numbers": 336,
+  "verified_numbers": 756,
+  "review_numbers": 353,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
     "n": 329
+   },
+   {
+    "reason": "its unit did not fit the measure",
+    "n": 60
+   },
+   {
+    "reason": "it contradicted the trial's other numbers",
+    "n": 35
    },
    {
     "reason": "the number was not in its quote",
