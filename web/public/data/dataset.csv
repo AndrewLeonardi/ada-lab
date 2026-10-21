@@ -11,16 +11,6 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 41443411,CAVE-2 GOIM,2026,unclear,RAS/BRAF wild-type (plasma ctDNA CGP-selected),arm B,,overall,n_randomized,52.0,count,,,,verified,"cetuximab (arm B, 52 patients)"
 41443411,CAVE-2 GOIM,2026,unclear,RAS/BRAF wild-type (plasma ctDNA CGP-selected),arm B,,overall,os_median,12.9,months,11.0,,,verified,versus 12.9 months (95% CI 11 months-not evaluable) in arm B
 41443411,CAVE-2 GOIM,2026,unclear,RAS/BRAF wild-type (plasma ctDNA CGP-selected),arm B,,overall,pfs_median,4.3,months,3.5,5.5,,verified,versus 4.3 months (95% CI 3.5-5.5 months) in arm B
-41499716,NCI9673 Part B,2026,third_or_later,,nivolumab,,overall,grade3plus_ae_rate,12.0,percent,,,grade >=3 treatment-related adverse events,verified,Grade ≥3 treatment-related AEs occurred in 6 patients (12%) receiving nivolumab alone
-41499716,NCI9673 Part B,2026,third_or_later,,nivolumab,,overall,orr,17.4,percent,,,,verified,Response rates were similar for nivolumab (17.4%)
-41499716,NCI9673 Part B,2026,third_or_later,,nivolumab,,overall,os_median,15.9,months,,,,verified,The median OS was 15.9 months for nivolumab
-41499716,NCI9673 Part B,2026,third_or_later,,nivolumab,,overall,pfs_median,2.9,months,1.9,3.8,,verified,"The median PFS for nivolumab versus nivolumab plus ipilimumab were 2.9 months (90% CI, 1.9 to 3.8)"
-41499716,NCI9673 Part B,2026,third_or_later,,nivolumab plus ipilimumab,,overall,grade3plus_ae_rate,25.0,percent,,,grade >=3 treatment-related adverse events,verified,and in 12 patients (25%) receiving nivolumab plus ipilimumab
-41499716,NCI9673 Part B,2026,third_or_later,,nivolumab plus ipilimumab,,overall,orr,21.5,percent,,,,verified,nivolumab plus ipilimumab (21.5%; P = .89)
-41499716,NCI9673 Part B,2026,third_or_later,,nivolumab plus ipilimumab,nivolumab,overall,os_hr,0.98,ratio,0.63,1.51,,verified,"HR, 0.98 [90% CI, 0.63 to 1.51]"
-41499716,NCI9673 Part B,2026,third_or_later,,nivolumab plus ipilimumab,,overall,os_median,20.0,months,,,,verified,and 20.0 months for nivolumab plus ipilimumab
-41499716,NCI9673 Part B,2026,third_or_later,,nivolumab plus ipilimumab,nivolumab,overall,pfs_hr,0.86,ratio,0.6,1.23,,verified,"hazard ratio [HR], 0.86 [95% CI, 0.60 to 1.23]; P = .25"
-41499716,NCI9673 Part B,2026,third_or_later,,nivolumab plus ipilimumab,,overall,pfs_median,3.7,months,2.0,5.6,,verified,"and 3.7 months (90% CI, 2.0 to 5.6), respectively"
 41537257,BEVATOMOX,2026,second,,control,,overall,n_randomized,33.0,count,,,,verified,33 in the control and 50 in the experimental arms
 41537257,BEVATOMOX,2026,second,,control,,overall,os_median,11.1,months,9.5,16.4,,verified,"median overall survival were 51.5 (95% CI, 36-67) and 11.1 months (9.5-16.4) in the control arm"
 41537257,BEVATOMOX,2026,second,,experimental,,overall,n_randomized,50.0,count,,,,verified,33 in the control and 50 in the experimental arms
@@ -196,17 +186,6 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 40328753,CMAB009,2025,first,RAS/BRAF wild-type,cetuximab β plus FOLFIRI,FOLFIRI alone,overall,os_median,28.3,months,,,overall survival,verified,median OS (28.3 vs. 23.1 months
 40328753,CMAB009,2025,first,RAS/BRAF wild-type,cetuximab β plus FOLFIRI,FOLFIRI alone,overall,pfs_hr,0.639,ratio,0.468,0.872,progression-free survival hazard ratio,verified,"hazard ratio [HR], 0.639; 95% CI, 0.468 to 0.872"
 40328753,CMAB009,2025,first,RAS/BRAF wild-type,cetuximab β plus FOLFIRI,FOLFIRI alone,overall,pfs_median,13.1,months,,,blinded independent review committee-assessed progression-free survival,verified,median PFS (13.1 vs. 9.6 months
-40517007,POD1UM-303/InterAACT-2,2025,first,,Placebo plus carboplatin-paclitaxel,,overall,grade3plus_ae_rate,75.0,percent,,,any grade 3 or worse adverse event,verified,"83·1% vs 75·0%, respectively"
-40517007,POD1UM-303/InterAACT-2,2025,first,,Placebo plus carboplatin-paclitaxel,,overall,grade3plus_ae_rate,29.6,percent,,,neutropenia,verified,29·6% for placebo plus carboplatin-paclitaxel
-40517007,POD1UM-303/InterAACT-2,2025,first,,Placebo plus carboplatin-paclitaxel,,overall,grade3plus_ae_rate,20.4,percent,,,anaemia,verified,anaemia (19·5% vs 20·4%)
-40517007,POD1UM-303/InterAACT-2,2025,first,,Placebo plus carboplatin-paclitaxel,,overall,n_randomized,154.0,count,,,,verified,placebo plus carboplatin-paclitaxel (n=154)
-40517007,POD1UM-303/InterAACT-2,2025,first,,Placebo plus carboplatin-paclitaxel,,overall,pfs_median,7.4,months,7.1,7.7,,verified,7·4 months (7·1-7·7) in the placebo group
-40517007,POD1UM-303/InterAACT-2,2025,first,,Retifanlimab plus carboplatin-paclitaxel,,overall,grade3plus_ae_rate,83.1,percent,,,any grade 3 or worse adverse event,verified,"grade 3 or worse adverse events were more frequent in the retifanlimab plus carboplatin-paclitaxel group compared with the placebo plus carboplatin-paclitaxel group (47·4% vs 38·8% and 83·1% vs 75·0%, respectively)"
-40517007,POD1UM-303/InterAACT-2,2025,first,,Retifanlimab plus carboplatin-paclitaxel,,overall,grade3plus_ae_rate,35.1,percent,,,neutropenia,verified,neutropenia (35·1% for retifanlimab plus carboplatin-paclitaxel vs 29·6% for placebo plus carboplatin-paclitaxel)
-40517007,POD1UM-303/InterAACT-2,2025,first,,Retifanlimab plus carboplatin-paclitaxel,,overall,grade3plus_ae_rate,19.5,percent,,,anaemia,verified,anaemia (19·5% vs 20·4%)
-40517007,POD1UM-303/InterAACT-2,2025,first,,Retifanlimab plus carboplatin-paclitaxel,,overall,n_randomized,154.0,count,,,,verified,retifanlimab plus carboplatin-paclitaxel (n=154)
-40517007,POD1UM-303/InterAACT-2,2025,first,,Retifanlimab plus carboplatin-paclitaxel,Placebo plus carboplatin-paclitaxel,overall,pfs_hr,0.63,ratio,0.47,0.84,,verified,hazard ratio 0·63 [95% CI 0·47-0·84]
-40517007,POD1UM-303/InterAACT-2,2025,first,,Retifanlimab plus carboplatin-paclitaxel,,overall,pfs_median,9.3,months,7.5,11.3,,verified,Median progression-free survival was 9·3 months (95% CI 7·5-11·3) in the retifanlimab group
 40557341,JCOG1107,2025,unclear,,LAP,,overall,n_randomized,100.0,count,,,,verified,"OP, n = 95, LAP, n = 100"
 40557341,JCOG1107,2025,unclear,,LAP,OP,overall,os_hr,0.99,ratio,0.72,1.36,,verified,"HR = 0.99; 95% CI, 0.72-1.36"
 40557341,JCOG1107,2025,unclear,,LAP,,overall,os_median,25.4,months,19.4,29.0,,verified,25.4 months (19.4-29.0) for LAP
@@ -261,10 +240,6 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 38485190,CheckMate 9X8,2024,first,,SOC,,overall,n_randomized,68.0,count,,,,verified,or SOC (n=68)
 38485190,CheckMate 9X8,2024,first,,SOC,,overall,orr,46.0,percent,,,,verified,higher ORR (60% vs 46%)
 38485190,CheckMate 9X8,2024,first,,SOC,,overall,pfs_median,11.9,months,,,PFS by BICR,verified,median PFS by BICR was 11.9 months in both arms
-38547895,SCARCE C17-02 PRODIGE 60,2024,first,,group A,,overall,grade3plus_ae_rate,61.0,percent,,,grade 3 or higher adverse events,verified,Adverse events of grade 3 or higher were observed in 39 (61%) participants in group A and 14 (42%) in group B
-38547895,SCARCE C17-02 PRODIGE 60,2024,first,,group A,,overall,n_randomized,64.0,count,,,,verified,97 evaluable participants (64 in group A and 33 in group B) were enrolled
-38547895,SCARCE C17-02 PRODIGE 60,2024,first,,group B,,overall,grade3plus_ae_rate,42.0,percent,,,grade 3 or higher adverse events,verified,Adverse events of grade 3 or higher were observed in 39 (61%) participants in group A and 14 (42%) in group B
-38547895,SCARCE C17-02 PRODIGE 60,2024,first,,group B,,overall,n_randomized,33.0,count,,,,verified,97 evaluable participants (64 in group A and 33 in group B) were enrolled
 38565886,,2024,first,,Control group,,overall,grade3plus_ae_rate,23.5,percent,,,grade 3 or higher adverse events,verified,23.5% in the control groups
 38565886,,2024,first,,Control group,,overall,n_randomized,102.0,count,,,,verified,"the control group, n = 102"
 38565886,,2024,first,,Control group,,overall,os_median,25.6,months,18.3,32.8,,verified,"25.6 months (95% CI, 18.3-32.8) for the control group"

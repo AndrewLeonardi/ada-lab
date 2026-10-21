@@ -2,10 +2,10 @@
  {
   "date": "2026-10-21",
   "spend_usd": 1.5113,
-  "screened": 641,
+  "screened": 644,
   "included": 102,
   "secondary": 138,
-  "excluded": 401,
+  "excluded": 404,
   "extracted": [
    {
     "pmid": "32379280",
@@ -1861,26 +1861,6 @@
     }
    },
    {
-    "pmid": "41499716",
-    "name": "NCI9673 Part B",
-    "verified": 10,
-    "review": 0,
-    "headline": {
-     "label": "OS hazard ratio",
-     "items": [
-      {
-       "arm": "nivolumab plus ipilimumab",
-       "comparator": "nivolumab",
-       "value": 0.98,
-       "unit": "ratio",
-       "ci_low": 0.63,
-       "ci_high": 1.51,
-       "population": "overall"
-      }
-     ]
-    }
-   },
-   {
     "pmid": "41537257",
     "name": "BEVATOMOX",
     "verified": 4,
@@ -2003,26 +1983,6 @@
        "unit": "percent",
        "ci_low": null,
        "ci_high": null,
-       "population": "overall"
-      }
-     ]
-    }
-   },
-   {
-    "pmid": "40517007",
-    "name": "POD1UM-303/InterAACT-2",
-    "verified": 11,
-    "review": 0,
-    "headline": {
-     "label": "PFS hazard ratio",
-     "items": [
-      {
-       "arm": "Retifanlimab plus carboplatin-paclitaxel",
-       "comparator": "Placebo plus carboplatin-paclitaxel",
-       "value": 0.63,
-       "unit": "ratio",
-       "ci_low": 0.47,
-       "ci_high": 0.84,
        "population": "overall"
       }
      ]
@@ -2494,13 +2454,6 @@
       }
      ]
     }
-   },
-   {
-    "pmid": "38547895",
-    "name": "SCARCE C17-02 PRODIGE 60",
-    "verified": 4,
-    "review": 12,
-    "headline": null
    },
    {
     "pmid": "38438735",
@@ -3829,16 +3782,16 @@
     }
    }
   ],
-  "verified_numbers": 756,
-  "review_numbers": 353,
+  "verified_numbers": 731,
+  "review_numbers": 341,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
-    "n": 329
+    "n": 317
    },
    {
     "reason": "its unit did not fit the measure",
-    "n": 60
+    "n": 56
    },
    {
     "reason": "it contradicted the trial's other numbers",
