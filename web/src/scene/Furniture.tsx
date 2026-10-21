@@ -6,6 +6,7 @@ import { C } from "./palette";
 import { ScreenMesh } from "./ScreenMesh";
 import { useWorld, type Inspectable } from "../world/store";
 import type { Hypothesis } from "../world/protocol";
+import { COUCH, atCouch } from "../world/stations";
 
 type V3 = [number, number, number];
 
@@ -70,7 +71,7 @@ function Desk() {
 function Chair() {
   // sits at the desk station; the researcher's seated pose matches its height
   return (
-    <group position={[1.0, 0, -2.55]} rotation={[0, Math.PI, 0]}>
+    <group position={[1.0, 0, -2.55]}>
       <Box args={[0.55, 0.08, 0.52]} position={[0, 0.48, 0]} color={C.teal} radius={0.04} />
       <Box args={[0.5, 0.42, 0.06]} position={[0, 0.74, 0.27]} color={C.teal} radius={0.04} />
       <mesh position={[0, 0.25, 0]}>
@@ -382,24 +383,71 @@ function CoffeeCorner() {
   );
 }
 
-function Stool({ position }: { position: V3 }) {
+// ------------------------------------------------------------------ the lounge (where she rests when the day's budget is used)
+function RecordPlayer() {
+  const disc = useRef<THREE.Group>(null!);
+  const playing = useWorld((s) => s.activity === "listen_music" && s.arrived === "couch");
+  useFrame((_, dt) => { if (playing) disc.current.rotation.y -= dt * 3.5; });
   return (
-    <group position={position}>
-      <mesh position={[0, 0.62, 0]} castShadow>
-        <cylinderGeometry args={[0.24, 0.24, 0.08, 24]} />
-        <meshStandardMaterial color={C.pink} />
-      </mesh>
-      {[0, 1, 2].map((i) => (
-        <mesh key={i} position={[Math.sin(i * 2.09) * 0.14, 0.3, Math.cos(i * 2.09) * 0.14]}
-          rotation={[Math.cos(i * 2.09) * 0.18, 0, -Math.sin(i * 2.09) * 0.18]}>
-          <cylinderGeometry args={[0.018, 0.018, 0.62, 8]} />
-          <meshStandardMaterial color={C.steel} metalness={0.5} roughness={0.3} />
+    <group position={[0, 0.56, 0]}>
+      <Box args={[0.38, 0.08, 0.32]} position={[0, 0.04, 0]} color={C.woodDark} radius={0.02} />
+      <group ref={disc} position={[-0.03, 0.09, 0]}>
+        <mesh><cylinderGeometry args={[0.13, 0.13, 0.012, 28]} /><meshStandardMaterial color="#1d1a1f" roughness={0.3} /></mesh>
+        <mesh position={[0.05, 0.008, 0]}><cylinderGeometry args={[0.045, 0.045, 0.004, 16]} /><meshStandardMaterial color={C.coral} /></mesh>
+      </group>
+      <Box args={[0.02, 0.02, 0.18]} position={[0.14, 0.11, 0.02]} color={C.steel} radius={0.005} rotation={[0, 0.5, 0]} />
+    </group>
+  );
+}
+
+function Lounge() {
+  const [wx, wz] = atCouch(-1.3, 0.05);
+  const [lx, lz] = atCouch(-1.3, -0.6);
+  const [rx, rz] = atCouch(0, 0.35);
+  const yaw = Math.PI / 4;
+  return (
+    <group>
+      {/* rug */}
+      <group position={[rx, 0, rz]} rotation={[0, yaw, 0]}>
+        <Box args={[2.2, 0.02, 1.3]} position={[0, 0.01, 0]} color="#e9d9c3" radius={0.008} rough={0.95} />
+        <Box args={[1.9, 0.022, 1.0]} position={[0, 0.012, 0]} color="#d9a78f" radius={0.008} rough={0.95} />
+      </group>
+      {/* couch: local +x runs along it, +z is its front (toward the viewer) */}
+      <group position={[COUCH[0], 0, COUCH[1]]} rotation={[0, yaw, 0]}>
+        <Box args={[1.9, 0.26, 0.86]} position={[0, 0.22, -0.05]} color={C.rose} radius={0.06} />
+        {[-0.42, 0.42].map((x) => (
+          <Box key={x} args={[0.82, 0.13, 0.64]} position={[x, 0.43, 0.04]} color={C.pink} radius={0.05} />
+        ))}
+        <Box args={[1.9, 0.52, 0.2]} position={[0, 0.6, -0.38]} color={C.rose} radius={0.08} />
+        {[-0.95, 0.95].map((x) => (
+          <Box key={x} args={[0.18, 0.5, 0.86]} position={[x, 0.35, -0.05]} color={C.rose} radius={0.07} />
+        ))}
+        {[[-0.85, -0.4], [0.85, -0.4], [-0.85, 0.3], [0.85, 0.3]].map(([x, z]) => (
+          <mesh key={`${x}${z}`} position={[x, 0.05, z]}>
+            <cylinderGeometry args={[0.03, 0.025, 0.1, 8]} />
+            <meshStandardMaterial color={C.woodDark} />
+          </mesh>
+        ))}
+        {/* pillow at the left end, blanket over the right arm */}
+        <Box args={[0.34, 0.12, 0.42]} position={[-0.68, 0.56, -0.02]} color={C.offWhite} radius={0.06} rotation={[0, 0, 0.35]} />
+        <Box args={[0.22, 0.05, 0.62]} position={[0.95, 0.62, -0.02]} color={C.teal} radius={0.02} />
+      </group>
+      {/* side table with a record player */}
+      <group position={[wx, 0, wz]}>
+        <mesh position={[0, 0.27, 0]}><cylinderGeometry args={[0.04, 0.06, 0.54, 10]} /><meshStandardMaterial color={C.woodDark} /></mesh>
+        <mesh position={[0, 0.54, 0]} castShadow><cylinderGeometry args={[0.27, 0.27, 0.04, 28]} /><meshStandardMaterial color={C.wood} /></mesh>
+        <mesh position={[0, 0.02, 0]}><cylinderGeometry args={[0.16, 0.18, 0.04, 20]} /><meshStandardMaterial color={C.woodDark} /></mesh>
+        <RecordPlayer />
+      </group>
+      {/* floor lamp */}
+      <group position={[lx, 0, lz]}>
+        <mesh position={[0, 0.02, 0]}><cylinderGeometry args={[0.15, 0.17, 0.04, 20]} /><meshStandardMaterial color={C.ink} /></mesh>
+        <mesh position={[0, 0.75, 0]}><cylinderGeometry args={[0.018, 0.018, 1.5, 8]} /><meshStandardMaterial color={C.ink} /></mesh>
+        <mesh position={[0, 1.55, 0]}>
+          <cylinderGeometry args={[0.14, 0.24, 0.26, 24, 1, true]} />
+          <meshStandardMaterial color="#ffe6bf" emissive="#ffcf86" emissiveIntensity={0.7} side={THREE.DoubleSide} />
         </mesh>
-      ))}
-      <mesh position={[0, 0.25, 0]} rotation={[Math.PI / 2, 0, 0]}>
-        <torusGeometry args={[0.15, 0.012, 8, 24]} />
-        <meshStandardMaterial color={C.steel} metalness={0.5} />
-      </mesh>
+      </group>
     </group>
   );
 }
@@ -414,9 +462,9 @@ export function Furniture() {
       <Bench />
       <Whiteboard />
       <CoffeeCorner />
-      <Plant position={[3.55, 0, 3.4]} scale={1.3} />
+      <Plant position={[3.6, 0, 0.5]} scale={1.3} />
       <Plant position={[3.8, 0.92, -3.85]} scale={0.6} />
-      <Stool position={[2.0, 0, 1.6]} />
+      <Lounge />
     </group>
   );
 }

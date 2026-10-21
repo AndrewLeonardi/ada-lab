@@ -42,7 +42,7 @@ function Header() {
         <button className="cam-btn" onClick={() => setFollow(!follow)}>
           {follow ? "Whole lab" : `Follow ${r.name}`}
         </button>
-        {budget && mode === "replay" && (
+        {budget && (mode === "replay" || mode === "live") && (
           <span className={`hud-budget ${budget.tone}`} title={`${budget.headline}. ${budget.detail} Updated ${budget.updated}.`}>
             <span className="hud-budget-l">{budget.short}</span>
             <span className="hud-budget-bar"><span style={{ width: `${budget.frac * 100}%` }} /></span>

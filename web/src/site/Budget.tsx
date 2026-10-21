@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { liveBase } from "../world/live";
 import { DATA, useData, type Stats } from "./data";
 
 // Ada's spending and state, as of her server's last update (it publishes when she starts or stops working,
@@ -13,6 +14,27 @@ function useMinuteClock() {
     return () => clearInterval(id);
   }, []);
   return now;
+}
+
+interface LiveState {
+  state: "working" | "resting" | "idle" | null; daily_usd: number | null; total_usd: number | null;
+  spend_today: number; spend_total: number; budget_day: string; resets_at: number; now: number;
+}
+
+/** Her state straight from her server, refreshed every 30 seconds (null if it can't be reached). */
+function useLiveState(): LiveState | null {
+  const [s, setS] = useState<LiveState | null>(null);
+  useEffect(() => {
+    const base = liveBase();
+    if (!base) return;
+    let alive = true;
+    const poll = () => fetch(`${base}/live/state`, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null))
+      .catch(() => null).then((v) => alive && setS(v));
+    poll();
+    const id = setInterval(poll, 30_000);
+    return () => { alive = false; clearInterval(id); };
+  }, []);
+  return s;
 }
 
 export function ago(seconds: number): string {
@@ -44,8 +66,15 @@ export interface BudgetView {
 }
 
 export function useBudget(): BudgetView | null {
-  const stats = useData<Stats>(DATA.stats);
+  const published = useData<Stats>(DATA.stats);
+  const live = useLiveState();
   const now = useMinuteClock();
+  // the live state, when her server answers, in the same shape as the published stats
+  const stats: Stats | null | undefined = live ? {
+    ...(published ?? {} as Stats), version: live.budget_day, budget_day: live.budget_day, budget_resets_at: live.resets_at,
+    updated_at: live.now, spend_usd_today: live.spend_today, spend_usd_total: live.spend_total,
+    status: live.state ? { state: live.state, since: 0, profile: "", daily_usd: live.daily_usd ?? 1.5, total_usd: live.total_usd ?? 30 } : null,
+  } : published;
   if (!stats) return null;
   const cap = stats.status?.daily_usd ?? 1.5;
   const age = stats.updated_at ? now / 1000 - stats.updated_at : Infinity;
@@ -82,7 +111,7 @@ export function useBudget(): BudgetView | null {
     frac: Math.min(1, (sameDay ? spend : 0) / cap),
     totalSpend: stats.spend_usd_total,
     totalCap: stats.status?.total_usd ?? 30,
-    updated: stats.updated_at ? ago(age) : stats.updated,
+    updated: live ? "live" : stats.updated_at ? ago(age) : stats.updated,
   };
 }
 
@@ -101,7 +130,8 @@ export function BudgetMeter() {
       </div>
       <div className="meter-bar"><span style={{ width: `${b.frac * 100}%` }} /></div>
       <div className="meter-foot muted small">
-        Today (from 9 AM Eastern): {usd(b.spend)} of {usd(b.cap)} · all time: {usd(b.totalSpend)} of {usd(b.totalCap)} · updated {b.updated}
+        Today (from 9 AM Eastern): {usd(b.spend)} of {usd(b.cap)} · all time: {usd(b.totalSpend)} of {usd(b.totalCap)} ·{" "}
+        {b.updated === "live" ? "live from her server" : `updated ${b.updated}`}
       </div>
     </div>
   );

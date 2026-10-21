@@ -28,13 +28,16 @@ export function HeadTag() {
     return () => cancelAnimationFrame(id);
   }, []);
 
-  const asleep = activity === "sleep" && arrived === station;
+  const asleep = (activity === "sleep" || activity === "nap") && arrived === station;
+  const music = activity === "listen_music" && arrived === station;
   const emote = EMOTE[mood];
   return (
     <div ref={ref} className="head-tag">
       <div className="above-head">
         {asleep ? (
           <div className="zzz"><span>z</span><span>z</span><span>Z</span></div>
+        ) : music ? (
+          <div className="zzz notes"><span>♪</span><span>♫</span><span>♪</span></div>
         ) : (
           <>
             {emote && <div className={`emote mood-${mood}`}>{emote}</div>}

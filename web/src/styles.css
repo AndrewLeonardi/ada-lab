@@ -36,6 +36,8 @@ html, body, #root { margin: 0; }
 .badge { font-size: 11px; font-weight: 800; padding: 3px 9px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.6px; }
 .badge.scripted { background: #3b4f2f; color: #c7f08f; }
 .badge.live { background: #19463b; color: #7ff0c3; }
+.badge.live::before { content: "● "; animation: blink 1.6s ease-in-out infinite; }
+@keyframes blink { 50% { opacity: 0.25; } }
 .badge.replay { background: #1d3f5c; color: #9fd4ff; }
 
 /* panels */
@@ -112,6 +114,7 @@ html, body, #root { margin: 0; }
 .nametag { font-size: 11px; font-weight: 800; background: rgba(9,32,40,0.75); padding: 2px 8px; border-radius: 999px; color: var(--ink); }
 .zzz { font-weight: 800; color: #cfe3ea; font-size: 18px; display: flex; gap: 2px; }
 .zzz span { animation: float 2.4s ease-in-out infinite; }
+.zzz.notes { color: #ffd38a; }
 .zzz span:nth-child(2) { animation-delay: 0.4s; font-size: 22px; } .zzz span:nth-child(3) { animation-delay: 0.8s; font-size: 26px; }
 @keyframes float { 0% { opacity: 0; transform: translateY(6px); } 50% { opacity: 1; } 100% { opacity: 0; transform: translateY(-14px); } }
 

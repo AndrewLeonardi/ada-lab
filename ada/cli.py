@@ -12,6 +12,7 @@
   audit-sample [--n 20]          draw an audit sample (for /audit-ada in Claude Code)
   apply-audit <file.yaml>        apply an audit's verdicts and corrections
   profiles                       list run profiles
+  live [--port 8787]             stream her activity to the 3D lab as it happens (read-only; runs on the server)
   (add --mock to run or benchmark for a free offline test)
 """
 
@@ -45,6 +46,8 @@ def main(argv=None):
     a = sub.add_parser("approve")
     a.add_argument("slug")
     sub.add_parser("reverify")
+    lv = sub.add_parser("live")
+    lv.add_argument("--port", type=int, default=8787)
     rs = sub.add_parser("rescreen")
     rs.add_argument("--profile", default="balanced", choices=list(PROFILES))
     pub = sub.add_parser("publish")
@@ -79,6 +82,9 @@ def main(argv=None):
         export(con)
     elif args.cmd == "export":
         print(json.dumps(export(con), indent=1))
+    elif args.cmd == "live":
+        from .live import serve
+        serve(args.port)
     elif args.cmd == "rescreen":
         from .llm import Budget, Claude
         from .pipeline import _paper

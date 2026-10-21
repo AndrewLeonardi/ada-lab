@@ -87,6 +87,9 @@ export function Character() {
     face: { ...FACES.neutral, mouthW: { smile: 1, grin: 0, flat: 0, frown: 0, o: 0 } as Record<MouthShape, number> },
     blinkT: 2,
     seat: 0,
+    lie: 0, // 1 = lying on the couch
+    bodyY: 0,
+    bodyZ: 0,
   });
 
   const tmp = useMemo(() => new THREE.Vector3(), []);
@@ -107,13 +110,15 @@ export function Character() {
 
     // ---- path planning when the target station changes
     if (n.target !== station) {
+      // leave a station by its route only if she was actually there (not when redirected mid-walk)
+      const leave = n.arrived ? STATIONS[n.target as keyof typeof STATIONS]?.route : undefined;
       n.target = station;
       n.arrived = false;
-      n.path = planPath([n.pos.x, n.pos.y], st.pos).map((p) => new THREE.Vector2(p[0], p[1]));
+      n.path = planPath([n.pos.x, n.pos.y], st.pos, leave, st.route).map((p) => new THREE.Vector2(p[0], p[1]));
       useWorld.setState({ arrived: null });
     }
     let act: Activity = n.arrived ? activity : "walk";
-    if (!n.arrived && n.seat > 0.02) act = "idle"; // stand up before walking
+    if (!n.arrived && (n.seat > 0.02 || n.lie > 0.02)) act = "idle"; // get up before walking
 
     // ---- walking
     if (act === "walk" && n.path.length) {
@@ -141,8 +146,10 @@ export function Character() {
     root.current.rotation.y = n.yaw;
 
     // ---- pose targets for the current activity
-    const seated = n.arrived && !!st.seated;
+    const lying = n.arrived && act === "nap";
+    const seated = n.arrived && !!st.seated && !lying;
     n.seat = damp(n.seat, seated ? 1 : 0, 6, dt);
+    n.lie = damp(n.lie, lying ? 1 : 0, 3, dt);
     const P = pose(act, t, n.seat);
     const k = 12;
     legL.current.rotation.x = damp(legL.current.rotation.x, P.legL, k, dt);
@@ -156,8 +163,11 @@ export function Character() {
     torso.current.rotation.x = damp(torso.current.rotation.x, P.lean, 8, dt);
     head.current.rotation.x = damp(head.current.rotation.x, P.headPitch, 8, dt);
     head.current.rotation.y = damp(head.current.rotation.y, P.headYaw, 6, dt);
-    body.current.position.y = damp(body.current.position.y, P.bodyY + n.seat * 0.02, 14, dt);
-    body.current.position.z = damp(body.current.position.z, n.seat * 0.08, 8, dt);
+    n.bodyY = damp(n.bodyY, P.bodyY + n.seat * 0.02, 14, dt);
+    n.bodyZ = damp(n.bodyZ, n.seat * 0.08, 8, dt);
+    // lying: on her side along the couch, head on the pillow at its left end, face toward the viewer
+    body.current.position.set(n.lie * 0.8, n.bodyY * (1 - n.lie) + n.lie * 0.74, n.bodyZ * (1 - n.lie));
+    body.current.rotation.z = n.lie * (Math.PI / 2);
 
     // ---- face
     const F = FACES[mood];
@@ -183,7 +193,7 @@ export function Character() {
     n.blinkT -= dt;
     if (n.blinkT < -0.12) n.blinkT = 2 + Math.random() * 3;
     const blink = n.blinkT < 0 ? 0.1 : 1;
-    const open = act === "sleep" ? 0.06 : F.eyeOpen * blink * (act === "drink_coffee" && Math.sin(t * 0.9) > 0.7 ? 0.2 : 1);
+    const open = act === "sleep" || act === "nap" ? 0.06 : act === "listen_music" ? 0.3 : F.eyeOpen * blink * (act === "drink_coffee" && Math.sin(t * 0.9) > 0.7 ? 0.2 : 1);
     eyeL.current.scale.y = damp(eyeL.current.scale.y, open, 25, dt);
     eyeR.current.scale.y = eyeL.current.scale.y;
     // eyes scan text when reading
@@ -202,6 +212,7 @@ export function Character() {
     show("mug", act === "drink_coffee");
     show("marker", act === "write_board");
     show("pipette", act === "pipette");
+    show("headphones", act === "listen_music");
   });
 
   return (
@@ -310,6 +321,17 @@ export function Character() {
               <mesh material={m.hair} position={[0, -0.18, -0.04]} castShadow>
                 <capsuleGeometry args={[0.07, 0.26, 8, 12]} />
               </mesh>
+            </group>
+            {/* headphones (for music on the couch) */}
+            <group ref={(o) => { props.current.headphones = o; }} visible={false}>
+              <mesh material={m.dark} position={[0, -0.02, -0.01]}>
+                <torusGeometry args={[0.315, 0.022, 8, 28, Math.PI]} />
+              </mesh>
+              {[-1, 1].map((s) => (
+                <mesh key={s} material={m.tie} position={[0.3 * s, -0.03, 0]} rotation={[0, 0, Math.PI / 2]}>
+                  <cylinderGeometry args={[0.075, 0.075, 0.07, 18]} />
+                </mesh>
+              ))}
             </group>
             {/* ears + nose */}
             {[-1, 1].map((s) => (
@@ -437,6 +459,14 @@ function pose(a: Activity, t: number, seat: number): Pose {
     case "sleep":
       return { ...p, armL: -1.3, armR: -1.3, foreL: -1.3, foreR: -1.3, armLz: 0.5, armRz: -0.5,
         lean: 0.75 + Math.sin(t * 1.2) * 0.02, headPitch: 0.3 };
+    case "nap": // lying on her side (the body is rotated by the caller): knees drawn up a little, hands together
+      return { ...base, legL: -0.45, legR: -0.35, armL: -0.9, armR: -0.75, foreL: -1.1, foreR: -1.2, armLz: 0.1,
+        armRz: -0.1, lean: 0.05 + Math.sin(t * 1.1) * 0.015, headPitch: 0.15, bodyY: 0 };
+    case "listen_music": { // leaning back, head bobbing, a foot tapping
+      const beat = Math.sin(t * 4.2);
+      return { ...p, legR: p.legR + Math.max(0, beat) * 0.12, armL: -0.45, armR: -0.45, foreL: -0.7, foreR: -0.7,
+        armLz: 0.3, armRz: -0.3, lean: -0.12, headPitch: -0.05 + beat * 0.07, headYaw: Math.sin(t * 2.1) * 0.08 };
+    }
     default:
       return p;
   }

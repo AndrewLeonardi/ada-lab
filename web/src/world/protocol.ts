@@ -12,7 +12,8 @@ export type StationId =
   | "microscope"
   | "simulator"
   | "coffee"
-  | "center";
+  | "center"
+  | "couch";
 
 export type Activity =
   | "idle"
@@ -28,7 +29,9 @@ export type Activity =
   | "drink_coffee"
   | "think"
   | "celebrate"
-  | "sleep";
+  | "sleep"
+  | "nap" // lying on the couch
+  | "listen_music";
 
 export type Mood =
   | "neutral"

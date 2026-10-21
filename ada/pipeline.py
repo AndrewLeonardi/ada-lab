@@ -19,6 +19,17 @@ from .llm import Budget, BudgetExceeded, Claude, Refused
 from .screen import screen_paper
 from .verify import verify_paper
 
+# What she does in the lounge while the day's budget is used up, in turn, about 20 minutes each.
+REST = [
+    ("listen_music", "happy", "Off the clock: listening to records", "Good day's work. Time for some music."),
+    ("read_book", "curious", "Off the clock: reading for fun", None),
+    ("nap", "tired", "Napping until her budget resets", None),
+    ("listen_music", "happy", "Off the clock: listening to records", None),
+    ("nap", "tired", "Napping until her budget resets", None),
+    ("nap", "tired", "Napping until her budget resets", None),
+]
+REST_SECONDS = 1200
+
 # Her current state ("working", "resting", "idle"), read by export for the website's budget meter.
 STATE_FILE = db.DB_PATH.with_name("state.json")
 PROFILES = yaml.safe_load((pathlib.Path(__file__).with_name("profiles.yaml")).read_text())
@@ -153,6 +164,7 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
     publish_every = float(os.environ.get("ADA_PUBLISH_HOURS") or 0) * 3600
     last_publish, publish_pending = 0.0, False
     state = None  # "working", "resting" (daily budget used) or "idle" (backlog clear)
+    rest_i = 0
 
     def become(new: str) -> bool:
         """Record a change of state for the website; True if it changed (so it's shown once, not every loop)."""
@@ -202,13 +214,19 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
                 maybe_publish(soon=True)
         except BudgetExceeded as e:
             if become("resting"):
-                act(con, "desk", "sleep", "tired", "Daily budget used - resting until tomorrow", None)
                 log(con, f"Pausing: {e}", "system")
+                rest_i = 0
+            activity, mood, status, thought = REST[rest_i % len(REST)]
+            if "total cap" in str(e):
+                status = "Paused: her total budget is used up"
+            act(con, "couch", activity, mood, status, thought)
+            if rest_i == 0:
                 from .export import export
                 export(con)
                 maybe_publish(soon=True)
-            log_fn(f"[ada] {e}; sleeping 30 min")
-            time.sleep(1800)
+            rest_i += 1
+            log_fn(f"[ada] {e}; resting {REST_SECONDS // 60} min")
+            time.sleep(REST_SECONDS)
         except Refused as e:
             log(con, f"A request was declined by a safety filter: {e}", "system")
         except Exception as e:  # keep the lab alive; record the problem
