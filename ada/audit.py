@@ -99,8 +99,10 @@ def apply(con, path: pathlib.Path) -> dict:
          "review_confirmed": stats["review_confirmed"], "review_corrected": stats["review_corrected"],
          "review_rejected": stats["review_rejected"], "notes": audit.get("summary", "")}]
     SCOREBOARD.write_text(json.dumps(board, indent=1))
+    # re-applying an amended audit file replaces that audit's log line instead of adding another
+    con.execute("DELETE FROM events WHERE event LIKE ?", (f'%"text": "Audit {day}:%',))
     db.emit(con, {"type": "log", "entry": {"t": int(time.time() * 1000), "kind": "finding",
-                                           "text": f"Audit {day}: {stats['correct']}/{stats['sampled']} published numbers "
+                                           "text": f"Audit {day}: {stats['correct']}/{stats['sampled']} verified numbers "
                                                    f"confirmed; {stats['review_corrected']} corrected, "
                                                    f"{stats['review_rejected']} rejected"}})
     return stats
