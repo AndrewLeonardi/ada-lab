@@ -1,0 +1,14 @@
+{
+ "audits": [
+  {
+   "date": "2026-10-20",
+   "auditor": "Claude (Opus 5.5) via Claude Code",
+   "sampled": 100,
+   "correct": 96,
+   "review_confirmed": 10,
+   "review_corrected": 7,
+   "review_rejected": 0,
+   "notes": "First audit, on the 19-trial benchmark: every number matching the hand-verified file, a random sample, and 16 review-queue items. 96/100 published numbers correct. Systematic error found: non-standard time endpoints (second PFS, PFS on treatment, failure-free survival, duration of disease control) filed as PFS/TTP; fixed with a new measure and a code check on the quote and the record's detail."
+  }
+ ]
+}

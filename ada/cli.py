@@ -6,6 +6,7 @@
   benchmark --profile P          accuracy against hand-verified trials (costs cents)
   export                         rebuild the website data files
   approve <slug>                 publish a drafted lab note
+  reverify                       re-run the code checks on all stored extractions (free; after checks improve)
   publish [-m MESSAGE]           export, commit and push to GitHub (the website updates in ~1 minute)
   audit-sample [--n 20]          draw an audit sample (for /audit-ada in Claude Code)
   apply-audit <file.yaml>        apply an audit's verdicts and corrections
@@ -42,6 +43,7 @@ def main(argv=None):
     sub.add_parser("export")
     a = sub.add_parser("approve")
     a.add_argument("slug")
+    sub.add_parser("reverify")
     pub = sub.add_parser("publish")
     pub.add_argument("-m", "--message", default=None)
     asm = sub.add_parser("audit-sample")
@@ -74,6 +76,21 @@ def main(argv=None):
         export(con)
     elif args.cmd == "export":
         print(json.dumps(export(con), indent=1))
+    elif args.cmd == "reverify":
+        from .pipeline import _paper
+        from .verify import verify_paper
+        tot = {"verified": 0, "needs_review": 0}
+        for row in con.execute("SELECT DISTINCT pmid FROM extractions").fetchall():
+            ex = {r["pass"]: json.loads(r["result"]) for r in con.execute(
+                "SELECT pass, result FROM extractions WHERE pmid=? AND id IN (SELECT MAX(id) FROM extractions "
+                "WHERE pmid=? GROUP BY pass)", (row["pmid"], row["pmid"]))}
+            if 1 not in ex:
+                continue
+            paper = _paper(con.execute("SELECT * FROM papers WHERE pmid=?", (row["pmid"],)).fetchone())
+            for k, v in verify_paper(con, paper, ex[1], ex.get(2)).items():
+                tot[k] += v
+        print(json.dumps(tot))
+        export(con)
     elif args.cmd == "publish":
         import subprocess
         import time as _t

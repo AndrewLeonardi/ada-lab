@@ -1,8 +1,8 @@
 {
  "version": "2026-10-20",
- "updated": "2026-10-20 21:44",
+ "updated": "2026-10-20 22:15",
  "counts": {
-  "candidates": 0,
+  "candidates": 19,
   "screened": 0,
   "included": 0,
   "trials": 0,
@@ -10,6 +10,62 @@
   "pending_numbers": 0,
   "corrected_numbers": 0
  },
- "spend_usd_total": 0.0,
- "spend_usd_today": 0.0
+ "spend_usd_total": 0.3685,
+ "spend_usd_today": 0.3685,
+ "benchmark": {
+  "date": "2026-10-20",
+  "gold_numbers": 141,
+  "gold_numbers_in_abstracts": 101,
+  "recall_verified": 0.792,
+  "recall_any": 0.97,
+  "missed": [
+   {
+    "pmid": "30476968",
+    "trial": "cricket_ctdna_subgroups",
+    "arm": "ctDNA RAS mutated",
+    "measure": "n_randomized",
+    "unit": "count",
+    "value": 12.0,
+    "in_abstract": true,
+    "found_verified": false,
+    "found_any": false
+   },
+   {
+    "pmid": "35915157",
+    "trial": "chronos_ctdna_guided_panitumumab_rechallenge",
+    "arm": "panitumumab rechallenge",
+    "measure": "pfs_median",
+    "unit": "weeks",
+    "value": 16.0,
+    "in_abstract": true,
+    "found_verified": false,
+    "found_any": false
+   },
+   {
+    "pmid": "35915157",
+    "trial": "chronos_ctdna_guided_panitumumab_rechallenge",
+    "arm": "panitumumab rechallenge",
+    "measure": "n_randomized",
+    "unit": "count",
+    "value": 27.0,
+    "in_abstract": true,
+    "found_verified": false,
+    "found_any": false
+   }
+  ]
+ },
+ "audit_scoreboard": {
+  "audits": [
+   {
+    "date": "2026-10-20",
+    "auditor": "Claude (Opus 5.5) via Claude Code",
+    "sampled": 100,
+    "correct": 96,
+    "review_confirmed": 10,
+    "review_corrected": 7,
+    "review_rejected": 0,
+    "notes": "First audit, on the 19-trial benchmark: every number matching the hand-verified file, a random sample, and 16 review-queue items. 96/100 published numbers correct. Systematic error found: non-standard time endpoints (second PFS, PFS on treatment, failure-free survival, duration of disease control) filed as PFS/TTP; fixed with a new measure and a code check on the quote and the record's detail."
+   }
+  ]
+ }
 }

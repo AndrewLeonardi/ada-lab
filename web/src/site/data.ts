@@ -17,6 +17,7 @@ export interface OutcomeRecord {
   quote: string;
   status: "verified" | "corrected" | "needs_review" | "rejected";
   failed_checks: string[];
+  audit_note?: string | null;
 }
 
 export interface Trial {

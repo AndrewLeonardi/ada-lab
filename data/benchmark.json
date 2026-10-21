@@ -1,0 +1,42 @@
+{
+ "date": "2026-10-20",
+ "gold_numbers": 141,
+ "gold_numbers_in_abstracts": 101,
+ "recall_verified": 0.792,
+ "recall_any": 0.97,
+ "missed": [
+  {
+   "pmid": "30476968",
+   "trial": "cricket_ctdna_subgroups",
+   "arm": "ctDNA RAS mutated",
+   "measure": "n_randomized",
+   "unit": "count",
+   "value": 12.0,
+   "in_abstract": true,
+   "found_verified": false,
+   "found_any": false
+  },
+  {
+   "pmid": "35915157",
+   "trial": "chronos_ctdna_guided_panitumumab_rechallenge",
+   "arm": "panitumumab rechallenge",
+   "measure": "pfs_median",
+   "unit": "weeks",
+   "value": 16.0,
+   "in_abstract": true,
+   "found_verified": false,
+   "found_any": false
+  },
+  {
+   "pmid": "35915157",
+   "trial": "chronos_ctdna_guided_panitumumab_rechallenge",
+   "arm": "panitumumab rechallenge",
+   "measure": "n_randomized",
+   "unit": "count",
+   "value": 27.0,
+   "in_abstract": true,
+   "found_verified": false,
+   "found_any": false
+  }
+ ]
+}

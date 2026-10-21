@@ -1,5 +1,6 @@
 """The verification rules are what make Ada's numbers trustworthy; test them directly."""
-from ada.verify import check_record, number_in
+from ada import db
+from ada.verify import check_record, number_in, verify_paper
 
 ABSTRACT = ("RESULTS: The response rate was 57.3% (95% CI, 51.6 to 62.8) with FOLFIRI plus cetuximab and 39·7% with "
             "FOLFIRI alone. Median progression-free survival was 9.9 months versus 8.4 months (hazard ratio, 0.696).")
@@ -43,3 +44,31 @@ def test_implausible_value_flagged():
 
 def test_number_in():
     assert number_in("HR 0.696", 0.696) and not number_in("HR 0.696", 0.69) and number_in("1,234 patients", 1234)
+
+
+def test_second_pfs_cannot_pass_as_pfs():
+    abstract = "Median second progression-free survival (PFS) was 14.2 months in arm A versus 10.9 in arm B."
+    r = rec(measure="pfs_median", value=14.2, unit="months", ci_low=None, ci_high=None,
+            quote="Median second progression-free survival (PFS) was 14.2 months in arm A")
+    assert check_record(r, abstract, None)["standard_endpoint"] is False
+    assert check_record({**r, "measure": "other_time_median"}, abstract, None)["standard_endpoint"] is True
+
+
+def test_detail_reveals_nonstandard_endpoint():
+    # audit 1: the quote "14.3 months (10.7-20.4)" names no endpoint, but the record's detail does
+    abstract = "median failure-free survival was 12.2 months (95% CI 8.8-15.6) and 14.3 months (10.7-20.4), respectively."
+    r = rec(measure="pfs_median", value=14.3, unit="months", ci_low=10.7, ci_high=20.4, quote="14.3 months (10.7-20.4)",
+            detail="failure-free survival")
+    assert check_record(r, abstract, None)["standard_endpoint"] is False
+
+
+def test_audit_verdict_survives_reverify(tmp_path):
+    # audit 1: re-running the checks must not undo an auditor's confirmation of a record
+    con = db.connect(tmp_path / "t.sqlite")
+    p = {"pmid": "1", "abstract": ABSTRACT, "nct_ids": []}
+    o = rec()
+    run = {"trial": {"acronym": None, "phase": "3", "line": "first"}, "arms": [], "outcomes": [o]}
+    verify_paper(con, p, run, {"outcomes": []})  # pass 2 disagrees -> needs_review
+    con.execute("UPDATE records SET status='verified', checks=json_set(checks, '$.audit', json('{\"verdict\": \"correct\"}'))")
+    verify_paper(con, p, run, {"outcomes": []})
+    assert con.execute("SELECT status FROM records").fetchone()["status"] == "verified"

@@ -1,0 +1,510 @@
+date: '2026-10-20'
+auditor: Claude (Opus 5.5) via Claude Code
+summary: 'First audit, on the 19-trial benchmark: every number matching the hand-verified file, a random sample,
+  and 16 review-queue items. 96/100 published numbers correct. Systematic error found: non-standard time endpoints
+  (second PFS, PFS on treatment, failure-free survival, duration of disease control) filed as PFS/TTP; fixed with
+  a new measure and a code check on the quote and the record''s detail.'
+items:
+- id: 10944126:lv5fu2-+-oxaliplatin|pfs-median|overall|progression-free-survival|lv5fu2
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 10944126:lv5fu2|pfs-median|overall|progression-free-survival|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 10944126:lv5fu2-+-oxaliplatin|orr|overall|response-rate|lv5fu2
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 10944126:lv5fu2|orr|overall|response-rate|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 10944126:lv5fu2-+-oxaliplatin|os-median|overall|overall-survival-not-statistically-significant|lv5fu2
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 10944126:lv5fu2|os-median|overall|overall-survival-not-statistically-significant|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 14657227:arm-a|os-median|overall|median-survival|arm-b
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 14657227:arm-b|os-median|overall|median-survival|arm-a
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 14657227:arm-a|n-randomized|overall|patients-allocated-to-folfiri-then-folfox6|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 14657227:arm-b|n-randomized|overall|patients-allocated-to-folfox6-then-folfiri|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 16421419:arm-a|pfs-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 16421419:arm-b|pfs-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 16421419:arm-a|os-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 16421419:arm-b|os-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 16421419:arm-a|orr|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 16421419:arm-b|orr|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 17470858:panitumumab-plus-bsc|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 17470858:bsc-alone|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 17470858:panitumumab-plus-bsc|pfs-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 17470858:bsc-alone|pfs-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 17470858:panitumumab-plus-bsc|orr|overall|after-12-month-minimum-follow-up|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 17470858:bsc-alone|orr|overall|after-12-month-minimum-follow-up|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18003960:cetuximab-plus-best-supportive-care|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18003960:best-supportive-care-alone|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18003960:cetuximab-plus-best-supportive-care|os-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18003960:best-supportive-care-alone|os-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18003960:cetuximab-plus-best-supportive-care|orr|overall|partial-responses|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18316791:panitumumab|pfs-median|kras-wild-type|progression-free-survival|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18316791:bsc|pfs-median|kras-wild-type|progression-free-survival|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18316791:panitumumab|orr|kras-wild-type|response-rate|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18316791:panitumumab|orr|kras-mutant|response-rate|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18946061:cetuximab-plus-best-supportive-care|os-median|k-ras-wild-type||best-supportive-care-alone
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18946061:best-supportive-care-alone|os-median|k-ras-wild-type||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18946061:cetuximab-plus-best-supportive-care|pfs-median|k-ras-wild-type||best-supportive-care-alone
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 18946061:best-supportive-care-alone|pfs-median|k-ras-wild-type||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 19339720:cetuximab-+-folfiri|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 19339720:folfiri|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 19786657:arm-1-maintenance-|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 19786657:arm-1-maintenance-|pfs-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 19786657:arm-2-cfi-|pfs-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 19786657:arm-1-maintenance-|os-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 19786657:arm-2-cfi-|os-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 21502544:folfiri-plus-cetuximab|os-median|kras-wild-type||folfiri
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 21502544:folfiri|os-median|kras-wild-type||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 21502544:folfiri-plus-cetuximab|pfs-median|kras-wild-type||folfiri
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 21502544:folfiri|pfs-median|kras-wild-type||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 21502544:folfiri-plus-cetuximab|orr|kras-wild-type|response-rate|folfiri
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 21502544:folfiri|orr|kras-wild-type|response-rate|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 21641867:a|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 21641867:c|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 24703531:intermittent-cetuximab|n-randomized|kras-wild-type||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 24703531:continuous-cetuximab|n-randomized|kras-wild-type||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 24739896:panitumumab|os-median|overall||cetuximab
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 24739896:cetuximab|os-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 30476968:cetuximab-plus-irinotecan-rechallenge|orr|overall|response-rate-partial-responses-confirmed-and-unconfirmed|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 31268481:arm-a|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 31268481:arm-b|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 34533973:fu-fa-plus-pmab|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 34533973:fu-fa-alone|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 34533973:fu-fa-plus-pmab|pfs-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 34533973:fu-fa-alone|pfs-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 34533973:fu-fa-plus-pmab|os-median|overall||fu-fa-alone
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 34533973:fu-fa-alone|os-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 34533973:fu-fa-plus-pmab|orr|overall|objective-response-rate-of-maintenance-therapy|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 34533973:fu-fa-alone|orr|overall|objective-response-rate-of-maintenance-therapy|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 37721754:cetuximab-maintenance|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 37721754:observation|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 37721754:cetuximab-maintenance|pfs-median|overall|from-randomization|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 37721754:observation|pfs-median|overall|from-randomization|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 37721754:cetuximab-maintenance|os-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 37721754:observation|os-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 39576946:arm-a|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 39576946:arm-b|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 39576946:arm-a|orr|overall|overall-response-rate|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 39576946:arm-b|orr|overall|overall-response-rate|
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 39576946:arm-a|os-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 39576946:arm-b|os-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: Matches the hand-verified value (research/gold_trials.yaml).
+- id: 21641867:a|os-median|per-protocol||
+  pre_status: verified
+  verdict: correct
+  note: Per-protocol OS, correctly labelled per-protocol (hand-verified file has it).
+- id: 21641867:c|os-median|per-protocol||
+  pre_status: verified
+  verdict: correct
+  note: Per-protocol OS, correctly labelled per-protocol.
+- id: 14657227:arm-a|pfs-median|overall|median-second-progression-free-survival|
+  pre_status: verified
+  verdict: wrong
+  note: Abstract reports SECOND progression-free survival (after second-line therapy), not PFS. Both passes made
+    this error.
+  corrected:
+    measure: other_time_median
+    detail: second progression-free survival (PFS2)
+- id: 14657227:arm-b|pfs-median|overall|median-second-progression-free-survival|
+  pre_status: verified
+  verdict: wrong
+  note: 'Same as above: PFS2, not PFS.'
+  corrected:
+    measure: other_time_median
+    detail: second progression-free survival (PFS2)
+- id: 39576946:arm-b|pfs-median|overall|progression-free-survival-on-treatment-pfsot-|
+  pre_status: verified
+  verdict: wrong
+  note: Value correct, but PFS on treatment is not standard PFS (it was in the random sample).
+  corrected:
+    measure: other_time_median
+    detail: progression-free survival on treatment (PFSot)
+- id: 39576946:arm-a|pfs-median|overall|progression-free-survival-on-treatment-pfsot-|
+  pre_status: verified
+  verdict: wrong
+  note: Was marked verified before the endpoint check existed; found by that check (targeted). PFS on treatment
+    is not standard PFS.
+  corrected:
+    measure: other_time_median
+    detail: progression-free survival on treatment (PFSot)
+- id: 24703531:intermittent-cetuximab|pfs-median|kras-wild-type|failure-free-survival|
+  pre_status: needs_review
+  verdict: wrong
+  note: 'Found by the new standard-endpoint check: failure-free survival is not PFS (targeted).'
+  corrected:
+    measure: other_time_median
+    detail: failure-free survival (FFS)
+- id: 19339720:cetuximab-+-folfiri|pfs-hr|overall||folfiri
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 17470858:panitumumab-plus-bsc|pfs-hr|overall||bsc-alone
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 19339720:cetuximab-+-folfiri|grade3plus-ae-rate|overall|infusion-related-reactions|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 24703531:intermittent-cetuximab|grade3plus-ae-rate|kras-wild-type|neutropenia|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 10944126:lv5fu2-+-oxaliplatin|grade3plus-ae-rate|overall|neurosensory-toxicity|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 10944126:lv5fu2|grade3plus-ae-rate|overall|neurosensory-toxicity|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 24739896:cetuximab|grade3plus-ae-rate|overall|hypomagnesaemia|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 21641867:c|grade3plus-ae-rate|per-protocol|nausea-and-vomiting|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 16421419:arm-b|grade3plus-ae-rate|overall|any-nci-ctc-grade-3-or-4-toxicity|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 19339720:cetuximab-+-folfiri|grade3plus-ae-rate|overall|skin-reactions-grade-3-only-|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 21641867:a|grade3plus-ae-rate|per-protocol|hand-foot-syndrome|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 34533973:fu-fa-plus-pmab|grade3plus-ae-rate|overall|skin-rash|fu-fa-alone
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 21641867:a|grade3plus-ae-rate|per-protocol|haematological-toxic-effects|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 18003960:cetuximab-plus-best-supportive-care|grade3plus-ae-rate|overall|any-adverse-event-grade-3-or-higher|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 10944126:lv5fu2|grade3plus-ae-rate|overall|neutropenia|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 16421419:arm-a|grade3plus-ae-rate|overall|any-nci-ctc-grade-3-or-4-toxicity|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 19339720:cetuximab-+-folfiri|grade3plus-ae-rate|overall|diarrhea|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: value, arm, measure and population checked against the source sentence.'
+- id: 24703531:continuous-cetuximab|pfs-median|kras-wild-type|failure-free-survival|
+  pre_status: needs_review
+  verdict: wrong
+  note: Failure-free survival, not PFS. The quote names no endpoint; the record's own detail does (check now reads
+    detail).
+  corrected:
+    measure: other_time_median
+    detail: failure-free survival (FFS)
+- id: 19786657:arm-1-maintenance-|ttp-median|overall|duration-of-disease-control|
+  pre_status: needs_review
+  verdict: wrong
+  note: Duration of disease control (the primary endpoint) is not time to progression.
+  corrected:
+    measure: other_time_median
+    detail: duration of disease control (DDC)
+- id: 19786657:arm-2-cfi-|ttp-median|overall|duration-of-disease-control|
+  pre_status: needs_review
+  verdict: wrong
+  note: Same as above.
+  corrected:
+    measure: other_time_median
+    detail: duration of disease control (DDC)
+- id: 19786657:arm-2-cfi-|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: Value right; quote was not verbatim (abstract writes '[CFI] arm').
+  corrected:
+    quote: chemotherapy-free interval [CFI] arm, n = 104
+- id: 19786657:arm-1-maintenance-|orr|overall|initial-folfox-chemotherapy|
+  pre_status: needs_review
+  verdict: correct
+  note: Response to initial FOLFOX, as stated.
+- id: 19786657:arm-2-cfi-|orr|overall|initial-folfox-chemotherapy|
+  pre_status: needs_review
+  verdict: correct
+  note: Response to initial FOLFOX, as stated.
+- id: 19786657:arm-1-maintenance-|orr|overall|folfox-reintroduction|
+  pre_status: needs_review
+  verdict: correct
+  note: Response to FOLFOX reintroduction, as stated.
+- id: 19786657:arm-2-cfi-|orr|overall|folfox-reintroduction|
+  pre_status: needs_review
+  verdict: correct
+  note: Response to FOLFOX reintroduction, as stated.
+- id: 14657227:folfiri|orr|first-line|response-rate|folfox6
+  pre_status: needs_review
+  verdict: correct
+  note: First-line FOLFIRI response, as stated.
+- id: 14657227:folfiri|pfs-median|first-line|median-pfs-first-line|folfox6
+  pre_status: needs_review
+  verdict: correct
+  note: First-line PFS from randomization, as stated.
+- id: 14657227:folfox6|orr|first-line|response-rate|folfiri
+  pre_status: needs_review
+  verdict: correct
+  note: First-line FOLFOX6 response, as stated.
+- id: 14657227:folfox6|pfs-median|first-line|median-pfs-first-line|folfiri
+  pre_status: needs_review
+  verdict: correct
+  note: First-line PFS from randomization, as stated.
+- id: 14657227:folfiri|orr|second-line|response-rate-second-line|folfox6
+  pre_status: needs_review
+  verdict: correct
+  note: Second-line response, as stated.
+- id: 14657227:folfox6|orr|second-line|response-rate-second-line|folfiri
+  pre_status: needs_review
+  verdict: correct
+  note: Second-line response, as stated.
+- id: 14657227:folfiri|pfs-median|second-line|median-pfs-second-line|folfox6
+  pre_status: needs_review
+  verdict: wrong
+  note: PFS of second-line therapy, not PFS from randomization.
+  corrected:
+    measure: other_time_median
+    detail: second-line PFS (PFS of second-line therapy)
+- id: 14657227:folfox6|pfs-median|second-line|median-pfs-second-line|folfiri
+  pre_status: needs_review
+  verdict: wrong
+  note: Same as above.
+  corrected:
+    measure: other_time_median
+    detail: second-line PFS (PFS of second-line therapy)

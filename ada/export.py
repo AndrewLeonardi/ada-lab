@@ -21,7 +21,7 @@ OUT = ROOT / "web" / "public" / "data"
 NOTES = ROOT / "data" / "notes"
 MEASURE_LABEL = {
     "n_randomized": "Patients randomized", "orr": "Objective response rate", "dcr": "Disease control rate",
-    "pfs_median": "Median PFS", "ttp_median": "Median time to progression", "os_median": "Median OS",
+    "pfs_median": "Median PFS", "ttp_median": "Median time to progression", "os_median": "Median OS", "other_time_median": "Other median time",
     "pfs_hr": "PFS hazard ratio", "os_hr": "OS hazard ratio", "grade3plus_ae_rate": "Grade >=3 adverse events",
 }
 
@@ -59,7 +59,8 @@ def export(con=None, out: pathlib.Path = OUT) -> dict:
                          "value": r["value"], "unit": r["unit"], "ci_low": r["ci_low"], "ci_high": r["ci_high"],
                          "comparator": r["comparator"], "population": ch.get("population"),
                          "detail": ch.get("detail"), "quote": r["quote"], "status": r["status"],
-                         "failed_checks": [k for k, v in ch.items() if v is False]})
+                         "failed_checks": [] if r["status"] == "corrected" else [k for k, v in ch.items() if v is False],
+                         "audit_note": (ch.get("audit") or {}).get("note")})
         trials.append({"pmid": t["pmid"], "title": t["title"], "journal": t["journal"], "year": t["year"],
                        "authors": t["authors"], "doi": t["doi"], "nct_ids": json.loads(t["nct_ids"] or "[]"),
                        "acronym": t["acronym"], "phase": t["phase"], "line": t["line"], "biomarker": t["biomarker"],

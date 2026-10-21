@@ -74,9 +74,17 @@ def apply(con, path: pathlib.Path) -> dict:
             status = "corrected"
             stats["review_corrected"] += pre != "verified"
             for field, new in it["corrected"].items():
+                old = checks.get(field) if field in ("detail", "population") else row[field]
+                if str(old) == str(new):
+                    continue  # already applied (an amended audit file can be applied again)
+                if field in ("detail", "population"):
+                    con.execute("INSERT INTO corrections(record_id, field, old, new, reason, auditor, at) "
+                                "VALUES(?,?,?,?,?,?,?)", (it["id"], field, str(old), str(new),
+                                                          it.get("note", ""), who, time.time()))
+                    checks[field] = new
                 if field in ("value", "ci_low", "ci_high", "unit", "arm", "measure", "quote", "comparator"):
                     con.execute("INSERT INTO corrections(record_id, field, old, new, reason, auditor, at) "
-                                "VALUES(?,?,?,?,?,?,?)", (it["id"], field, str(row[field]), str(new),
+                                "VALUES(?,?,?,?,?,?,?)", (it["id"], field, str(old), str(new),
                                                           it.get("note", ""), who, time.time()))
                     con.execute(f"UPDATE records SET {field}=? WHERE id=?", (new, it["id"]))
         else:

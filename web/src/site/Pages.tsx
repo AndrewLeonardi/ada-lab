@@ -206,6 +206,7 @@ export function TrialPage({ pmid }: { pmid: string }) {
                       <td colSpan={3}>
                         Source sentence: “{r.quote}”
                         {r.failed_checks.length ? <div className="small">Failed checks: {r.failed_checks.join(", ")}</div> : null}
+                        {r.audit_note ? <div className="small">Auditor: {r.audit_note}</div> : null}
                       </td>
                     </tr>
                   )}
@@ -281,6 +282,8 @@ export function MethodsPage() {
         <li>the quoted sentence occurs, word for word, in the source abstract;</li>
         <li>the number (and its confidence limits) literally appear in that sentence;</li>
         <li>the value is plausible for its measure and its confidence interval brackets it;</li>
+        <li>a median PFS, OS or time to progression is not about a different endpoint (such as second PFS, PFS on
+          treatment or failure-free survival; those are kept as "other median time", named);</li>
         <li>the independent second pass recorded the same measure with the same value.</li>
       </ul>
       <p>These checks prove that a number exists in the source. They cannot fully prove it <em>means</em> what the
@@ -294,12 +297,13 @@ export function MethodsPage() {
         <p>Benchmark ({b.date}): of {b.gold_numbers_in_abstracts} hand-verified trial results that appear in PubMed
           abstracts, {pct(b.recall_verified)} were extracted and verified automatically ({pct(b.recall_any)} extracted at all).</p>
       ) : <p className="muted">The benchmark against hand-verified trials has not been published yet.</p>}
-      {audits.length ? (
+      {audits.length ? (<>
         <table className="outcomes">
           <thead><tr><th>Audit</th><th>Numbers checked</th><th>Correct</th></tr></thead>
           <tbody>{audits.map((a) => <tr key={a.date}><td>{a.date}</td><td>{a.sampled}</td><td>{a.correct} ({pct(a.correct / Math.max(1, a.sampled))})</td></tr>)}</tbody>
         </table>
-      ) : <p className="muted">No audits published yet.</p>}
+        {audits.map((a) => a.notes ? <p key={a.date} className="small muted">{a.date}: {a.notes}</p> : null)}
+      </>) : <p className="muted">No audits published yet.</p>}
       <h2>Limitations</h2>
       <ul>
         <li>Only abstracts are read. Results reported only in full texts or supplements are missing.</li>

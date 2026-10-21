@@ -12,10 +12,10 @@ import time
 from . import db
 from .screen import render
 
-PROMPT_VERSION = "extract-v1"
+PROMPT_VERSION = "extract-v2"  # v2: non-standard time endpoints separated (audit 1)
 
-MEASURES = ["n_randomized", "orr", "dcr", "pfs_median", "ttp_median", "os_median", "pfs_hr", "os_hr",
-            "grade3plus_ae_rate"]
+MEASURES = ["n_randomized", "orr", "dcr", "pfs_median", "ttp_median", "os_median", "other_time_median", "pfs_hr",
+            "os_hr", "grade3plus_ae_rate"]
 
 COMMON = """You extract data for an open, auditable dataset of randomized trials in metastatic colorectal \
 cancer. Use ONLY the title and abstract given. Never compute, convert, round or infer a number: record a value \
@@ -30,7 +30,11 @@ Measures (use these names):
 - orr: objective response rate (percent)
 - dcr: disease control rate (percent)
 - pfs_median / ttp_median / os_median: median progression-free survival / time to progression / overall \
-survival, in the unit stated (months or weeks)
+survival, in the unit stated (months or weeks). pfs_median means time from randomization to the FIRST progression \
+or death, nothing else.
+- other_time_median: any other median time-to-event endpoint, such as second progression-free survival (PFS2), PFS \
+on treatment, time to treatment failure, time to strategy failure, or duration of disease control. Name the \
+endpoint exactly in "detail".
 - pfs_hr / os_hr: hazard ratio of this arm versus the comparator arm; put the comparator's label in \
 "comparator" (unit "ratio")
 - grade3plus_ae_rate: percent of patients with grade 3 or worse adverse events, overall or for a named event \
