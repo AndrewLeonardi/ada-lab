@@ -7,6 +7,7 @@
   export                         rebuild the website data files
   approve <slug>                 publish a drafted lab note
   reverify                       re-run the code checks on all stored extractions (free; after checks improve)
+  rescreen --profile P           re-screen papers last screened with an older screening prompt (fractions of a cent each)
   publish [-m MESSAGE]           export, commit and push to GitHub (the website updates in ~1 minute)
   audit-sample [--n 20]          draw an audit sample (for /audit-ada in Claude Code)
   apply-audit <file.yaml>        apply an audit's verdicts and corrections
@@ -44,6 +45,8 @@ def main(argv=None):
     a = sub.add_parser("approve")
     a.add_argument("slug")
     sub.add_parser("reverify")
+    rs = sub.add_parser("rescreen")
+    rs.add_argument("--profile", default="balanced", choices=list(PROFILES))
     pub = sub.add_parser("publish")
     pub.add_argument("-m", "--message", default=None)
     asm = sub.add_parser("audit-sample")
@@ -76,6 +79,23 @@ def main(argv=None):
         export(con)
     elif args.cmd == "export":
         print(json.dumps(export(con), indent=1))
+    elif args.cmd == "rescreen":
+        from .llm import Budget, Claude
+        from .pipeline import _paper
+        from .screen import PROMPT_VERSION, screen_paper
+        prof = PROFILES[args.profile]
+        claude = Claude(con, Budget(prof["daily_usd"], prof["total_usd"]))
+        rows = con.execute("SELECT p.* FROM papers p JOIN screenings s ON s.pmid = p.pmid AND s.id = (SELECT MAX(id) "
+                           "FROM screenings WHERE pmid = p.pmid) WHERE s.prompt_version != ?", (PROMPT_VERSION,)).fetchall()
+        changed = []
+        for row in rows:
+            old = con.execute("SELECT decision FROM screenings WHERE pmid=? ORDER BY id DESC LIMIT 1", (row["pmid"],)).fetchone()[0]
+            new = screen_paper(con, claude, prof["screen_model"], _paper(row))["decision"]
+            if new != old:
+                changed.append(f"{row['pmid']} {old} -> {new}: {row['title'][:90]}")
+        print(f"re-screened {len(rows)} papers with {PROMPT_VERSION}; {len(changed)} decisions changed")
+        print("\n".join(changed))
+        export(con)
     elif args.cmd == "reverify":
         from .pipeline import _paper
         from .verify import verify_paper

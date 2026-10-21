@@ -12,3 +12,4 @@ data/audits/*-sample.json
 # lab-note drafts stay private until approved (`ada approve <slug>` publishes them)
 data/notes/drafts/
 data/*.log
+data/*.pid

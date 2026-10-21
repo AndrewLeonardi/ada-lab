@@ -1,17 +1,17 @@
 {
  "version": "2026-10-20",
- "updated": "2026-10-20 22:18",
+ "updated": "2026-10-20 22:41",
  "counts": {
-  "candidates": 19,
-  "screened": 0,
-  "included": 0,
-  "trials": 0,
-  "verified_numbers": 0,
-  "pending_numbers": 0,
-  "corrected_numbers": 0
+  "candidates": 3748,
+  "screened": 250,
+  "included": 26,
+  "trials": 21,
+  "verified_numbers": 143,
+  "pending_numbers": 61,
+  "corrected_numbers": 2
  },
- "spend_usd_total": 0.3685,
- "spend_usd_today": 0.3685,
+ "spend_usd_total": 1.0384,
+ "spend_usd_today": 1.0384,
  "benchmark": {
   "date": "2026-10-20",
   "gold_numbers": 141,
