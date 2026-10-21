@@ -50,6 +50,7 @@ def main(argv=None):
     lv.add_argument("--port", type=int, default=8787)
     rs = sub.add_parser("rescreen")
     rs.add_argument("--profile", default="balanced", choices=list(PROFILES))
+    rs.add_argument("--rules-only", action="store_true", help="re-apply the code rules to current inclusions (free)")
     pub = sub.add_parser("publish")
     pub.add_argument("-m", "--message", default=None)
     asm = sub.add_parser("audit-sample")
@@ -85,6 +86,11 @@ def main(argv=None):
     elif args.cmd == "live":
         from .live import serve
         serve(args.port)
+    elif args.cmd == "rescreen" and args.rules_only:
+        from .screen import apply_rules
+        changed = apply_rules(con)
+        print(f"{len(changed)} inclusions changed by the rules: {', '.join(changed)}")
+        export(con)
     elif args.cmd == "rescreen":
         from .llm import Budget, Claude
         from .pipeline import _paper

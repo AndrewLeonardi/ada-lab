@@ -24,3 +24,10 @@ def test_follow_up_report_becomes_secondary():
 
 def test_exclude_is_never_upgraded():
     assert enforce(res(decision="exclude"))["decision"] == "exclude"
+
+
+def test_anal_cancer_is_not_colorectal():
+    # night shift: three anal cancer trials had been included
+    anal = "Retifanlimab in squamous cell carcinoma of the anal canal (SCAC): a randomised phase 3 trial"
+    assert enforce(res(), anal)["decision"] == "exclude"
+    assert enforce(res(), "Metastatic colorectal cancer, including patients with anal canal involvement")["decision"] == "include"
