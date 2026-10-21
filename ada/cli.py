@@ -6,6 +6,7 @@
   benchmark --profile P          accuracy against hand-verified trials (costs cents)
   export                         rebuild the website data files
   approve <slug>                 publish a drafted lab note
+  publish [-m MESSAGE]           export, commit and push to GitHub (the website updates in ~1 minute)
   audit-sample [--n 20]          draw an audit sample (for /audit-ada in Claude Code)
   apply-audit <file.yaml>        apply an audit's verdicts and corrections
   profiles                       list run profiles
@@ -41,6 +42,8 @@ def main(argv=None):
     sub.add_parser("export")
     a = sub.add_parser("approve")
     a.add_argument("slug")
+    pub = sub.add_parser("publish")
+    pub.add_argument("-m", "--message", default=None)
     asm = sub.add_parser("audit-sample")
     asm.add_argument("--n", type=int, default=20)
     asm.add_argument("--review", type=int, default=30)
@@ -71,6 +74,23 @@ def main(argv=None):
         export(con)
     elif args.cmd == "export":
         print(json.dumps(export(con), indent=1))
+    elif args.cmd == "publish":
+        import subprocess
+        import time as _t
+        from .export import ROOT
+        counts = export(con)
+        paths = ["web/public/data", "data/notes/published", "data/audits", "data/feedback",
+                 "data/audit_scoreboard.json", "data/benchmark.json", "data/findings.md"]
+        existing = [p for p in paths if (ROOT / p).exists()]
+        subprocess.run(["git", "add", *existing], cwd=ROOT, check=True)
+        if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
+            print("nothing new to publish")
+            return
+        msg = args.message or (f"Dataset update {_t.strftime('%Y-%m-%d')}: {counts['trials']} trials, "
+                               f"{counts['verified_numbers']} verified numbers")
+        subprocess.run(["git", "commit", "-q", "-m", msg], cwd=ROOT, check=True)
+        subprocess.run(["git", "push", "-q"], cwd=ROOT, check=True)
+        print(f"published: {msg}")
     elif args.cmd == "audit-sample":
         from .audit import sample
         print(sample(con, args.n, args.review))
