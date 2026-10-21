@@ -1,7 +1,90 @@
 [
  {
+  "date": "2026-10-21",
+  "spend_usd": 0.0668,
+  "screened": 25,
+  "included": 3,
+  "secondary": 3,
+  "excluded": 19,
+  "extracted": [
+   {
+    "pmid": "32379280",
+    "name": "CO.26",
+    "verified": 8,
+    "review": 2,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "durvalumab plus tremelimumab",
+       "comparator": "best supportive care alone",
+       "value": 0.72,
+       "unit": "ratio",
+       "ci_low": 0.54,
+       "ci_high": 0.97,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "32089455",
+    "name": "GOIM 2802",
+    "verified": 13,
+    "review": 1,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "Arm B",
+       "comparator": "Arm A",
+       "value": 1.21,
+       "unit": "ratio",
+       "ci_low": 0.77,
+       "ci_high": 1.92,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "32334845",
+    "name": "BE1040V",
+    "verified": 2,
+    "review": 2,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "BE1040V (biosimilar bevacizumab) + FOLFIRI-3",
+       "comparator": "Reference bevacizumab + FOLFIRI-3",
+       "value": 0.99,
+       "unit": "ratio",
+       "ci_low": 0.55,
+       "ci_high": 1.8,
+       "population": "intention-to-treat"
+      }
+     ]
+    }
+   }
+  ],
+  "verified_numbers": 23,
+  "review_numbers": 5,
+  "held_because": [
+   {
+    "reason": "the two independent extractions disagreed",
+    "n": 4
+   },
+   {
+    "reason": "the number was not in its quote",
+    "n": 1
+   }
+  ],
+  "corrections": 0
+ },
+ {
   "date": "2026-10-20",
-  "spend_usd": 1.5132,
+  "spend_usd": 3.0195,
   "screened": 1175,
   "included": 120,
   "secondary": 221,

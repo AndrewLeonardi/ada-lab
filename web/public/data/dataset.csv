@@ -700,6 +700,29 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 34957976,,2021,unclear,,Control,,overall,os_median,13.2,months,,,,verified,as compared to 13.2 months in the control group
 34957976,,2021,unclear,,Full-dose pentoxifylline,,overall,n_randomized,17.0,count,,,,verified,17 patients were treated with a full dose of PTX (400 mg TID)
 34957976,,2021,unclear,,Reduced-dose pentoxifylline,,overall,n_randomized,9.0,count,,,,verified,9 patients with a reduced dose PTX (200 mg TID)
+32089455,GOIM 2802,2020,first,,Arm A,,overall,grade3plus_ae_rate,15.0,percent,,,neutropenia,verified,neutropenia 15/3 and nausea 9/5
+32089455,GOIM 2802,2020,first,,Arm A,,overall,grade3plus_ae_rate,9.0,percent,,,nausea,verified,neutropenia 15/3 and nausea 9/5
+32089455,GOIM 2802,2020,first,,Arm A,,overall,orr,55.6,percent,,,,verified,an ORR of 55.6% versus 48.3% (P = .43)
+32089455,GOIM 2802,2020,first,,Arm A,,overall,os_median,29.8,months,,,,verified,overall survival was 29.8 versus 25.0 months
+32089455,GOIM 2802,2020,first,,Arm A,,overall,pfs_median,10.0,months,,,,verified,progression-free survival was 10.0 versus 9.9 months
+32089455,GOIM 2802,2020,first,,Arm B,,overall,grade3plus_ae_rate,3.0,percent,,,neutropenia,verified,neutropenia 15/3 and nausea 9/5
+32089455,GOIM 2802,2020,first,,Arm B,,overall,grade3plus_ae_rate,5.0,percent,,,nausea,verified,neutropenia 15/3 and nausea 9/5
+32089455,GOIM 2802,2020,first,,Arm B,,overall,n_randomized,87.0,count,,,,verified,87 in arm B
+32089455,GOIM 2802,2020,first,,Arm B,,overall,orr,48.3,percent,,,,verified,an ORR of 55.6% versus 48.3% (P = .43)
+32089455,GOIM 2802,2020,first,,Arm B,Arm A,overall,os_hr,1.21,ratio,0.77,1.92,,verified,"hazard ratio, 1.21; 95% confidence interval, 0.77-1.92"
+32089455,GOIM 2802,2020,first,,Arm B,,overall,os_median,25.0,months,,,,verified,overall survival was 29.8 versus 25.0 months
+32089455,GOIM 2802,2020,first,,Arm B,Arm A,overall,pfs_hr,0.96,ratio,0.65,1.41,,verified,"hazard ratio, 0.96; 95% confidence interval, 0.65-1.41"
+32089455,GOIM 2802,2020,first,,Arm B,,overall,pfs_median,9.9,months,,,,verified,progression-free survival was 10.0 versus 9.9 months
+32334845,BE1040V,2020,unclear,,BE1040V (biosimilar bevacizumab) + FOLFIRI-3,Reference bevacizumab + FOLFIRI-3,intention-to-treat,os_hr,0.99,ratio,0.55,1.8,"hazard ratio for overall survival, biosimilar vs reference",verified,"The hazard ratio for overall survival in the intent-to-treat population was 0.99 (95% CI, 0.55-1.80; P = 0.99)"
+32334845,BE1040V,2020,unclear,,BE1040V (biosimilar bevacizumab) + FOLFIRI-3,Reference bevacizumab + FOLFIRI-3,per-protocol,pfs_hr,0.79,ratio,0.46,1.35,"hazard ratio, biosimilar vs reference",verified,"The hazard ratio of the biosimilar arm versus the reference arm was 0.79 in the per-protocol population (90% CI, 0.46-1.35; P = 0.47)"
+32379280,CO.26,2020,third_or_later,,best supportive care alone,,overall,grade3plus_ae_rate,20.0,percent,,,any grade 3 or higher adverse event,verified,12 [20%] in the BSC group
+32379280,CO.26,2020,third_or_later,,best supportive care alone,,overall,os_median,4.1,months,,,,verified,and 4.1 months for BSC
+32379280,CO.26,2020,third_or_later,,best supportive care alone,,overall,pfs_median,1.9,months,,,,verified,Progression-free survival was 1.8 months and 1.9 months respectively
+32379280,CO.26,2020,third_or_later,,durvalumab plus tremelimumab,,overall,grade3plus_ae_rate,64.0,percent,,,any grade 3 or higher adverse event,verified,75 [64%] patients in the treatment group had at least 1 grade 3 or higher adverse event
+32379280,CO.26,2020,third_or_later,,durvalumab plus tremelimumab,best supportive care alone,overall,os_hr,0.72,ratio,0.54,0.97,,verified,"(hazard ratio [HR], 0.72; 90% CI, 0.54-0.97; P = .07)"
+32379280,CO.26,2020,third_or_later,,durvalumab plus tremelimumab,,overall,os_median,6.6,months,,,,verified,the median OS was 6.6 months for durvalumab and tremelimumab
+32379280,CO.26,2020,third_or_later,,durvalumab plus tremelimumab,best supportive care alone,overall,pfs_hr,1.01,ratio,0.76,1.34,,verified,"(HR, 1.01; 90% CI, 0.76-1.34)"
+32379280,CO.26,2020,third_or_later,,durvalumab plus tremelimumab,,overall,pfs_median,1.8,months,,,,verified,Progression-free survival was 1.8 months and 1.9 months respectively
 32402681,,2020,first,,overall,,overall,pfs_median,37.4,months,,,median PFS of all patients at 5.4 years follow-up,verified,The median PFS of all patients was 37.4 months at 5.4 years follow-up
 32402681,,2020,first,,perioperative,postoperative,overall,os_hr,0.6,ratio,0.35,1.02,"overall survival, perioperative vs postoperative",verified,"The OS was significantly better in the perioperative group (hazard ratio [HR], 0.60; 95% confidence interval [CI],) 0.35-1.02; P = .049)"
 32402681,,2020,first,,perioperative,postoperative,CEA ≥ 5 ng/mL,os_hr,0.49,ratio,0.25,0.93,overall survival in CEA subgroup,verified,"CEA: HR, 0.49; 95% CI, 0.25-0.93; P = .030"
