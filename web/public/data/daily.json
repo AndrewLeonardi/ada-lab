@@ -1,11 +1,11 @@
 [
  {
   "date": "2026-10-21",
-  "spend_usd": 0.072,
-  "screened": 41,
-  "included": 6,
-  "secondary": 4,
-  "excluded": 31,
+  "spend_usd": 1.5113,
+  "screened": 641,
+  "included": 102,
+  "secondary": 138,
+  "excluded": 401,
   "extracted": [
    {
     "pmid": "32379280",
@@ -66,17 +66,1287 @@
       }
      ]
     }
+   },
+   {
+    "pmid": "32372960",
+    "name": "Traditional Chinese Medicine Combined With Chemotherapy and Cetuximab or Bevacizumab fo\u2026",
+    "verified": 6,
+    "review": 0,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "Huangci Granule + chemotherapy + CET or BV",
+       "comparator": "Placebo + chemotherapy + CET or BV",
+       "value": 0.69,
+       "unit": "ratio",
+       "ci_low": 0.5,
+       "ci_high": 0.97,
+       "population": "first-line"
+      },
+      {
+       "arm": "Huangci Granule + chemotherapy + CET or BV",
+       "comparator": "Placebo + chemotherapy + CET or BV",
+       "value": 0.65,
+       "unit": "ratio",
+       "ci_low": 0.45,
+       "ci_high": 0.95,
+       "population": "second-line"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "32164906",
+    "name": "TRIBE2",
+    "verified": 5,
+    "review": 6,
+    "headline": null
+   },
+   {
+    "pmid": "32162804",
+    "name": "McCAVE",
+    "verified": 7,
+    "review": 2,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "vanucizumab + mFOLFOX-6",
+       "comparator": "bevacizumab + mFOLFOX-6",
+       "value": 1.0,
+       "unit": "ratio",
+       "ci_low": 0.64,
+       "ci_high": 1.58,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "31999946",
+    "name": "null",
+    "verified": 7,
+    "review": 0,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "TAS-102 plus bevacizumab",
+       "comparator": "TAS-102 monotherapy",
+       "value": 0.45,
+       "unit": "ratio",
+       "ci_low": 0.29,
+       "ci_high": 0.72,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "31740551",
+    "name": "CAPTEM",
+    "verified": 10,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "arm A",
+       "comparator": "arm B",
+       "value": 0.97,
+       "unit": "ratio",
+       "ci_low": 0.58,
+       "ci_high": 1.61,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "32679021",
+    "name": "The JPJDF has Synergistic Effect with Fluoropyrimidine in the Maintenance Therapy for M\u2026",
+    "verified": 6,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "Flu-F-treated group",
+       "comparator": "Flu-treated group",
+       "value": 15.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "Flu-treated group",
+       "comparator": null,
+       "value": 9.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "32474564",
+    "name": "Oral S-1 with 24-h Infusion of Irinotecan plus Bevacizumab versus FOLFIRI plus Bevacizu\u2026",
+    "verified": 9,
+    "review": 2,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "24h-SIRI/B",
+       "comparator": "FOLFIRI/B",
+       "value": 0.312,
+       "unit": "ratio",
+       "ci_low": 0.13,
+       "ci_high": 0.78,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "31831062",
+    "name": "PulMiCC",
+    "verified": 1,
+    "review": 3,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "Metastasectomy",
+       "comparator": "Control",
+       "value": 0.82,
+       "unit": "ratio",
+       "ci_low": 0.43,
+       "ci_high": 1.56,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "31609637",
+    "name": "VOLFI",
+    "verified": 5,
+    "review": 2,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "mFOLFOXIRI plus panitumumab",
+       "comparator": "FOLFOXIRI",
+       "value": 0.67,
+       "unit": "ratio",
+       "ci_low": 0.41,
+       "ci_high": 1.11,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "31810943",
+    "name": "Resection or Stenting in the Treatment of Symptomatic Advanced Metastatic Rectal Cancer\u2026",
+    "verified": 2,
+    "review": 0,
+    "headline": null
+   },
+   {
+    "pmid": "31566309",
+    "name": "BEACON CRC",
+    "verified": 10,
+    "review": 1,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "doublet",
+       "comparator": "control",
+       "value": 0.6,
+       "unit": "ratio",
+       "ci_low": 0.45,
+       "ci_high": 0.79,
+       "population": "overall"
+      },
+      {
+       "arm": "triplet",
+       "comparator": "control",
+       "value": 0.52,
+       "unit": "ratio",
+       "ci_low": 0.39,
+       "ci_high": 0.7,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "31445198",
+    "name": "SAPPHIRE",
+    "verified": 4,
+    "review": 4,
+    "headline": {
+     "label": "Median PFS",
+     "items": [
+      {
+       "arm": "group A",
+       "comparator": null,
+       "value": 9.1,
+       "unit": "months",
+       "ci_low": 8.6,
+       "ci_high": 11.1,
+       "population": "overall"
+      },
+      {
+       "arm": "group B",
+       "comparator": null,
+       "value": 9.3,
+       "unit": "months",
+       "ci_low": 6.0,
+       "ci_high": 13.0,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "31273511",
+    "name": "HEARTO",
+    "verified": 6,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "HAI raltitrexed plus oxaliplatin",
+       "comparator": "Standard of care",
+       "value": 0.86,
+       "unit": "ratio",
+       "ci_low": 0.36,
+       "ci_high": 2.04,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "31555481",
+    "name": "RAVELLO",
+    "verified": 2,
+    "review": 0,
+    "headline": null
+   },
+   {
+    "pmid": "31390590",
+    "name": "TES",
+    "verified": 2,
+    "review": 0,
+    "headline": null
+   },
+   {
+    "pmid": "30607677",
+    "name": "FDX104 4%",
+    "verified": 0,
+    "review": 0,
+    "headline": null
+   },
+   {
+    "pmid": "31132111",
+    "name": "CUFOX",
+    "verified": 0,
+    "review": 8,
+    "headline": null
+   },
+   {
+    "pmid": "30552157",
+    "name": "STEAM",
+    "verified": 11,
+    "review": 0,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "pooled FOLFOXIRI-BEV",
+       "comparator": "FOLFOX-BEV",
+       "value": 0.7,
+       "unit": "ratio",
+       "ci_low": 0.5,
+       "ci_high": 0.9,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "31183190",
+    "name": "Phase II trial of levocetirizine with capecitabine and bevacizumab to overcome the resi\u2026",
+    "verified": 4,
+    "review": 0,
+    "headline": null
+   },
+   {
+    "pmid": "31003911",
+    "name": "IMblaze370",
+    "verified": 11,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "atezolizumab monotherapy",
+       "comparator": "regorafenib",
+       "value": 1.19,
+       "unit": "ratio",
+       "ci_low": 0.83,
+       "ci_high": 1.71,
+       "population": "overall"
+      },
+      {
+       "arm": "atezolizumab plus cobimetinib",
+       "comparator": "regorafenib",
+       "value": 1.0,
+       "unit": "ratio",
+       "ci_low": 0.73,
+       "ci_high": 1.38,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30048216",
+    "name": "The Effect of Telephone-Based Follow-Up on Adherence, Efficacy, and Toxicity of Oral Ca\u2026",
+    "verified": 2,
+    "review": 0,
+    "headline": null
+   },
+   {
+    "pmid": "31126331",
+    "name": "CMAB009 plus irinotecan trial (NCT01550055)",
+    "verified": 0,
+    "review": 13,
+    "headline": null
+   },
+   {
+    "pmid": "30224341",
+    "name": "MAVERICC",
+    "verified": 4,
+    "review": 2,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "FOLFIRI-BV",
+       "comparator": "mFOLFOX6-BV",
+       "value": 0.76,
+       "unit": "ratio",
+       "ci_low": 0.56,
+       "ci_high": 1.04,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30852136",
+    "name": "NORDIC9",
+    "verified": 5,
+    "review": 4,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "Reduced-dose S-1 plus oxaliplatin",
+       "comparator": "Full-dose S-1 monotherapy",
+       "value": 0.72,
+       "unit": "ratio",
+       "ci_low": 0.52,
+       "ci_high": 0.99,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "31020480",
+    "name": "PACIFIC",
+    "verified": 4,
+    "review": 2,
+    "headline": {
+     "label": "Median PFS",
+     "items": [
+      {
+       "arm": "IRI + Pmab",
+       "comparator": null,
+       "value": 190.0,
+       "unit": "weeks",
+       "ci_low": 159.0,
+       "ci_high": 213.0,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30964527",
+    "name": "SUNSHINE",
+    "verified": 13,
+    "review": 0,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "High-dose vitamin D3",
+       "comparator": "Standard-dose vitamin D3",
+       "value": 0.64,
+       "unit": "ratio",
+       "ci_low": 0.0,
+       "ci_high": 0.9,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30735919",
+    "name": "MOMA",
+    "verified": 8,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "B",
+       "comparator": "A",
+       "value": 1.16,
+       "unit": "ratio",
+       "ci_low": 0.99,
+       "ci_high": 1.37,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30559073",
+    "name": "SAKK 41/10",
+    "verified": 4,
+    "review": 2,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "cetuximab monotherapy",
+       "comparator": null,
+       "value": 9.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "cetuximab plus capecitabine",
+       "comparator": null,
+       "value": 38.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30508156",
+    "name": "REVERCE",
+    "verified": 3,
+    "review": 2,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "R-C",
+       "comparator": "C-R",
+       "value": 0.61,
+       "unit": "ratio",
+       "ci_low": 0.39,
+       "ci_high": 0.96,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30585257",
+    "name": "Pharmacogenetic clinical randomised phase II trial to evaluate the efficacy and safety \u2026",
+    "verified": 4,
+    "review": 0,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "FOLFIRI",
+       "comparator": "HD-FOLFIRI",
+       "value": 43.6,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "HD-FOLFIRI",
+       "comparator": "FOLFIRI",
+       "value": 67.5,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30531832",
+    "name": "A phase 2 randomised study of veliparib plus FOLFIRI\u00b1bevacizumab versus placebo plus FO\u2026",
+    "verified": 14,
+    "review": 1,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "veliparib",
+       "comparator": "placebo",
+       "value": 1.26,
+       "unit": "ratio",
+       "ci_low": 0.74,
+       "ci_high": 2.16,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30422156",
+    "name": "PRODIGE18",
+    "verified": 6,
+    "review": 4,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "A",
+       "comparator": "B",
+       "value": 0.69,
+       "unit": "ratio",
+       "ci_low": 0.46,
+       "ci_high": 1.04,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30388045",
+    "name": "XELAVIRI",
+    "verified": 2,
+    "review": 3,
+    "headline": null
+   },
+   {
+    "pmid": "30463680",
+    "name": "ICECREAM",
+    "verified": 5,
+    "review": 0,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "Cetuximab monotherapy",
+       "comparator": "Cetuximab plus irinotecan",
+       "value": 0.39,
+       "unit": "ratio",
+       "ci_low": 0.2,
+       "ci_high": 0.78,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30262136",
+    "name": "BEVZ92",
+    "verified": 2,
+    "review": 8,
+    "headline": null
+   },
+   {
+    "pmid": "30123970",
+    "name": "Randomized, double-blind, phase two study of ruxolitinib plus regorafenib in patients w\u2026",
+    "verified": 0,
+    "review": 8,
+    "headline": null
+   },
+   {
+    "pmid": "30199311",
+    "name": "TAILOR",
+    "verified": 0,
+    "review": 8,
+    "headline": null
+   },
+   {
+    "pmid": "30054049",
+    "name": "MACRO2",
+    "verified": 17,
+    "review": 1,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "Arm-A",
+       "comparator": "Arm-B",
+       "value": 1.24,
+       "unit": "ratio",
+       "ci_low": 0.85,
+       "ci_high": 1.79,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30010751",
+    "name": "LUME-Colon 1",
+    "verified": 10,
+    "review": 3,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "nintedanib",
+       "comparator": "placebo",
+       "value": 1.01,
+       "unit": "ratio",
+       "ci_low": 0.86,
+       "ci_high": 1.19,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29653857",
+    "name": "IND.210",
+    "verified": 10,
+    "review": 1,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "FOLFOX/BEV + pelareorep",
+       "comparator": "FOLFOX/BEV",
+       "value": 1.22,
+       "unit": "ratio",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30117334",
+    "name": "NCT01661270",
+    "verified": 1,
+    "review": 0,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "aflibercept plus FOLFIRI",
+       "comparator": "placebo plus FOLFIRI",
+       "value": 0.629,
+       "unit": "ratio",
+       "ci_low": 0.488,
+       "ci_high": 0.812,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "30049885",
+    "name": "CCOG-1201",
+    "verified": 12,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "CapIRI/BEV",
+       "comparator": null,
+       "value": 28.7,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "CapOX/BEV",
+       "comparator": null,
+       "value": 26.7,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29905927",
+    "name": "null",
+    "verified": 8,
+    "review": 1,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "regorafenib-FOLFIRI",
+       "comparator": "placebo-FOLFIRI",
+       "value": 1.01,
+       "unit": "ratio",
+       "ci_low": 0.71,
+       "ci_high": 1.44,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29946728",
+    "name": "FRESCO",
+    "verified": 10,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "fruquintinib",
+       "comparator": "placebo",
+       "value": 0.65,
+       "unit": "ratio",
+       "ci_low": 0.51,
+       "ci_high": 0.83,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "31331137",
+    "name": "A Prospective, Randomized, Multiple-Dose, Multi-Center, Comparative Clinical Study to E\u2026",
+    "verified": 0,
+    "review": 8,
+    "headline": null
+   },
+   {
+    "pmid": "29551560",
+    "name": "A Randomized Phase II Study of Axitinib as Maintenance Therapy After First-line Treatme\u2026",
+    "verified": 10,
+    "review": 2,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "arm A",
+       "comparator": "arm B",
+       "value": 0.68,
+       "unit": "ratio",
+       "ci_low": 0.31,
+       "ci_high": 1.48,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29555258",
+    "name": "AXEPT",
+    "verified": 9,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "mXELIRI with or without bevacizumab",
+       "comparator": "FOLFIRI with or without bevacizumab",
+       "value": 0.85,
+       "unit": "ratio",
+       "ci_low": 0.71,
+       "ci_high": 1.02,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "28902669",
+    "name": "LIGRO",
+    "verified": 2,
+    "review": 8,
+    "headline": null
+   },
+   {
+    "pmid": "29423521",
+    "name": "Sym004",
+    "verified": 0,
+    "review": 7,
+    "headline": null
+   },
+   {
+    "pmid": "29533115",
+    "name": "Vitamin D Supplementation and Survival in Metastatic Colorectal Cancer.",
+    "verified": 0,
+    "review": 1,
+    "headline": null
+   },
+   {
+    "pmid": "29450468",
+    "name": "null",
+    "verified": 0,
+    "review": 9,
+    "headline": null
+   },
+   {
+    "pmid": "29397354",
+    "name": "NCT01830621",
+    "verified": 10,
+    "review": 2,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "napabucasin",
+       "comparator": "placebo",
+       "value": 1.13,
+       "unit": "ratio",
+       "ci_low": 0.88,
+       "ci_high": 1.46,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29346040",
+    "name": "PRODIGE 9",
+    "verified": 4,
+    "review": 8,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "bevacizumab maintenance",
+       "comparator": null,
+       "value": 21.7,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "observation",
+       "comparator": null,
+       "value": 22.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29293874",
+    "name": "TRICOLORE",
+    "verified": 5,
+    "review": 2,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "experimental",
+       "comparator": "control",
+       "value": 0.84,
+       "unit": "ratio",
+       "ci_low": 0.7,
+       "ci_high": 1.02,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29254887",
+    "name": "FOCUS4-D",
+    "verified": 5,
+    "review": 2,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "AZD8931",
+       "comparator": "placebo",
+       "value": 1.1,
+       "unit": "ratio",
+       "ci_low": 0.47,
+       "ci_high": 3.57,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29140155",
+    "name": "PLIANT",
+    "verified": 3,
+    "review": 0,
+    "headline": null
+   },
+   {
+    "pmid": "28840585",
+    "name": "Quxie Capsule",
+    "verified": 2,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "Placebo + conventional therapy",
+       "comparator": null,
+       "value": 14.0,
+       "unit": "months",
+       "ci_low": 11.0,
+       "ci_high": 22.0,
+       "population": "overall"
+      },
+      {
+       "arm": "Quxie Capsule + conventional therapy",
+       "comparator": null,
+       "value": 23.0,
+       "unit": "months",
+       "ci_low": 15.0,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29211295",
+    "name": "E4203",
+    "verified": 0,
+    "review": 10,
+    "headline": null
+   },
+   {
+    "pmid": "29215955",
+    "name": "TERRA",
+    "verified": 7,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "trifluridine/tipiracil",
+       "comparator": "placebo",
+       "value": 0.79,
+       "unit": "ratio",
+       "ci_low": 0.62,
+       "ci_high": 0.99,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29145602",
+    "name": "SETICC",
+    "verified": 8,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "control",
+       "comparator": null,
+       "value": 16.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "experimental",
+       "comparator": null,
+       "value": 19.1,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29084918",
+    "name": "MORAb-004 (ontuxizumab) phase II",
+    "verified": 5,
+    "review": 0,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "ontuxizumab",
+       "comparator": "placebo",
+       "value": 1.13,
+       "unit": "ratio",
+       "ci_low": 0.76,
+       "ci_high": 1.67,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29514163",
+    "name": "KSCC1402/HGCSG1402",
+    "verified": 0,
+    "review": 8,
+    "headline": null
+   },
+   {
+    "pmid": "29045659",
+    "name": "PRODIGE 20",
+    "verified": 8,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "BEV",
+       "comparator": null,
+       "value": 21.7,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "CT",
+       "comparator": null,
+       "value": 19.8,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29273089",
+    "name": "Famitinib versus placebo (NCT01762293)",
+    "verified": 15,
+    "review": 0,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "famitinib",
+       "comparator": "placebo",
+       "value": 0.6,
+       "unit": "ratio",
+       "ci_low": 0.41,
+       "ci_high": 0.86,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29043412",
+    "name": "Randomized study of etirinotecan pegol versus irinotecan as second-line treatment for m\u2026",
+    "verified": 14,
+    "review": 8,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "EP",
+       "comparator": "irinotecan",
+       "value": 0.91,
+       "unit": "ratio",
+       "ci_low": 0.56,
+       "ci_high": 1.49,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "28880972",
+    "name": "MVA-5T4",
+    "verified": 4,
+    "review": 8,
+    "headline": null
+   },
+   {
+    "pmid": "28874797",
+    "name": "ITACa",
+    "verified": 0,
+    "review": 8,
+    "headline": null
+   },
+   {
+    "pmid": "28979818",
+    "name": "Erlotinib in combination with bevacizumab and FOLFOX4 as second-line chemotherapy for p\u2026",
+    "verified": 10,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "ER + BV + FOLFOX4",
+       "comparator": "BV + FOLFOX4",
+       "value": 0.63,
+       "unit": "ratio",
+       "ci_low": 0.34,
+       "ci_high": 1.02,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "28735067",
+    "name": "Italian Group for the Study of Gastrointestinal Cancer phase III trial",
+    "verified": 8,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "A",
+       "comparator": "B",
+       "value": 0.84,
+       "unit": "ratio",
+       "ci_low": 0.55,
+       "ci_high": 1.28,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "28633089",
+    "name": "PLANET-TTD",
+    "verified": 20,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "Pmab-FOLFIRI",
+       "comparator": "Pmab-FOLFOX4",
+       "value": 1.0,
+       "unit": "ratio",
+       "ci_low": 0.6,
+       "ci_high": 1.8,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "29798953",
+    "name": "BevaciRel",
+    "verified": 4,
+    "review": 2,
+    "headline": {
+     "label": "Median PFS",
+     "items": [
+      {
+       "arm": "reference bevacizumab",
+       "comparator": null,
+       "value": 4.6,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "study bevacizumab (BevaciRel)",
+       "comparator": null,
+       "value": 3.83,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "28632865",
+    "name": "CALGB/SWOG 80405",
+    "verified": 9,
+    "review": 1,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "Cetuximab",
+       "comparator": "Bevacizumab",
+       "value": 0.88,
+       "unit": "ratio",
+       "ci_low": 0.77,
+       "ci_high": 1.01,
+       "population": "overall"
+      }
+     ]
+    }
    }
   ],
-  "verified_numbers": 23,
-  "review_numbers": 5,
+  "verified_numbers": 437,
+  "review_numbers": 190,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
-    "n": 4
+    "n": 185
    },
    {
     "reason": "the number was not in its quote",
+    "n": 7
+   },
+   {
+    "reason": "the value was implausible",
+    "n": 6
+   },
+   {
+    "reason": "the confidence limits were not in the quote",
+    "n": 1
+   },
+   {
+    "reason": "the quote was not found word for word",
     "n": 1
    }
   ],
@@ -90,6 +1360,26 @@
   "secondary": 221,
   "excluded": 828,
   "extracted": [
+   {
+    "pmid": "31268481",
+    "name": "Maintenance Therapy With Panitumumab Alone vs Panitumumab Plus Fluorouracil-Leucovorin \u2026",
+    "verified": 3,
+    "review": 6,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "arm A",
+       "comparator": "arm B",
+       "value": 1.51,
+       "unit": "ratio",
+       "ci_low": 1.11,
+       "ci_high": 2.07,
+       "population": "overall"
+      }
+     ]
+    }
+   },
    {
     "pmid": "34533973",
     "name": "PANAMA",
@@ -2526,12 +3816,12 @@
     }
    }
   ],
-  "verified_numbers": 770,
-  "review_numbers": 330,
+  "verified_numbers": 773,
+  "review_numbers": 336,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
-    "n": 323
+    "n": 329
    },
    {
     "reason": "the number was not in its quote",

@@ -700,6 +700,23 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 34957976,,2021,unclear,,Control,,overall,os_median,13.2,months,,,,verified,as compared to 13.2 months in the control group
 34957976,,2021,unclear,,Full-dose pentoxifylline,,overall,n_randomized,17.0,count,,,,verified,17 patients were treated with a full dose of PTX (400 mg TID)
 34957976,,2021,unclear,,Reduced-dose pentoxifylline,,overall,n_randomized,9.0,count,,,,verified,9 patients with a reduced dose PTX (200 mg TID)
+31740551,CAPTEM,2020,second,"RAS-mutated, MGMT-methylated",arm A,,overall,grade3plus_ae_rate,16.3,percent,,,grade >=3 treatment-related adverse events,verified,Grade ≥3 treatment-related adverse events had higher incidence in arm B versus A (47.6% vs 16.3%)
+31740551,CAPTEM,2020,second,"RAS-mutated, MGMT-methylated",arm A,,overall,n_randomized,43.0,count,,,,verified,86 patients were randomly assigned to arm A (n = 43)
+31740551,CAPTEM,2020,second,"RAS-mutated, MGMT-methylated",arm A,arm B,overall,os_hr,0.97,ratio,0.58,1.61,,verified,HR = 0.97 (0.58-1.61)
+31740551,CAPTEM,2020,second,"RAS-mutated, MGMT-methylated",arm A,,overall,os_median,9.5,months,8.2,25.8,,verified,9.5 (8.2-25.8) in arm A
+31740551,CAPTEM,2020,second,"RAS-mutated, MGMT-methylated",arm A,arm B,overall,pfs_hr,1.19,ratio,0.82,1.72,,verified,HR = 1.19 (0.82-1.72)
+31740551,CAPTEM,2020,second,"RAS-mutated, MGMT-methylated",arm A,,overall,pfs_median,3.5,months,2.0,5.0,,verified,Progression-free survival and overall survival were 3.5 (2.0-5.0) and 9.5 (8.2-25.8) in arm A
+31740551,CAPTEM,2020,second,"RAS-mutated, MGMT-methylated",arm B,,overall,grade3plus_ae_rate,47.6,percent,,,grade >=3 treatment-related adverse events,verified,Grade ≥3 treatment-related adverse events had higher incidence in arm B versus A (47.6% vs 16.3%)
+31740551,CAPTEM,2020,second,"RAS-mutated, MGMT-methylated",arm B,,overall,n_randomized,43.0,count,,,,verified,arm B (n = 43)
+31740551,CAPTEM,2020,second,"RAS-mutated, MGMT-methylated",arm B,,overall,os_median,10.6,months,8.5,20.8,,verified,10.6 (8.5-20.8) in arm B
+31740551,CAPTEM,2020,second,"RAS-mutated, MGMT-methylated",arm B,,overall,pfs_median,3.5,months,2.3,6.1,,verified,3.5 (2.3-6.1) and 10.6 (8.5-20.8) in arm B
+31999946,,2020,third_or_later,,TAS-102 monotherapy,,overall,grade3plus_ae_rate,38.0,percent,,,neutropenia,verified,neutropenia (18 [38%] of 47 in the TAS-102 monotherapy group
+31999946,,2020,third_or_later,,TAS-102 monotherapy,,overall,n_randomized,47.0,count,,,,verified,TAS-102 (n=47)
+31999946,,2020,third_or_later,,TAS-102 monotherapy,,overall,pfs_median,2.6,months,1.6,3.5,,verified,Median progression-free survival was 2·6 months (95% CI 1·6-3·5) in the TAS-102 group
+31999946,,2020,third_or_later,,TAS-102 plus bevacizumab,,overall,grade3plus_ae_rate,67.0,percent,,,neutropenia,verified,31 [67%] of 46 in the TAS-102 plus bevacizumab group
+31999946,,2020,third_or_later,,TAS-102 plus bevacizumab,,overall,n_randomized,46.0,count,,,,verified,TAS-102 plus bevacizumab (n=46)
+31999946,,2020,third_or_later,,TAS-102 plus bevacizumab,TAS-102 monotherapy,overall,pfs_hr,0.45,ratio,0.29,0.72,,verified,hazard ratio 0·45 [95% CI 0·29-0·72]
+31999946,,2020,third_or_later,,TAS-102 plus bevacizumab,TAS-102 monotherapy,overall,pfs_median,4.6,months,3.5,6.5,,verified,4·6 months (3·5-6·5) in the TAS-102 plus bevacizumab group
 32089455,GOIM 2802,2020,first,,Arm A,,overall,grade3plus_ae_rate,15.0,percent,,,neutropenia,verified,neutropenia 15/3 and nausea 9/5
 32089455,GOIM 2802,2020,first,,Arm A,,overall,grade3plus_ae_rate,9.0,percent,,,nausea,verified,neutropenia 15/3 and nausea 9/5
 32089455,GOIM 2802,2020,first,,Arm A,,overall,orr,55.6,percent,,,,verified,an ORR of 55.6% versus 48.3% (P = .43)
@@ -713,8 +730,26 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 32089455,GOIM 2802,2020,first,,Arm B,,overall,os_median,25.0,months,,,,verified,overall survival was 29.8 versus 25.0 months
 32089455,GOIM 2802,2020,first,,Arm B,Arm A,overall,pfs_hr,0.96,ratio,0.65,1.41,,verified,"hazard ratio, 0.96; 95% confidence interval, 0.65-1.41"
 32089455,GOIM 2802,2020,first,,Arm B,,overall,pfs_median,9.9,months,,,,verified,progression-free survival was 10.0 versus 9.9 months
+32162804,McCAVE,2020,first,,bevacizumab + mFOLFOX-6,,overall,grade3plus_ae_rate,82.1,percent,,,adverse events of grade 3 or higher,verified,The incidence of adverse events of grade ≥3 was similar between treatment arms (83.9% vs. 82.1%)
+32162804,McCAVE,2020,first,,bevacizumab + mFOLFOX-6,,overall,n_randomized,95.0,count,,,,verified,"bevacizumab, n = 95"
+32162804,McCAVE,2020,first,,bevacizumab + mFOLFOX-6,,overall,orr,57.9,percent,,,,verified,"Objective response rate was 52.1% and 57.9% in the vanucizumab and bevacizumab arm, respectively"
+32162804,McCAVE,2020,first,,vanucizumab + mFOLFOX-6,,overall,grade3plus_ae_rate,83.9,percent,,,adverse events of grade 3 or higher,verified,The incidence of adverse events of grade ≥3 was similar between treatment arms (83.9% vs. 82.1%)
+32162804,McCAVE,2020,first,,vanucizumab + mFOLFOX-6,,overall,n_randomized,94.0,count,,,,verified,"vanucizumab, n = 94"
+32162804,McCAVE,2020,first,,vanucizumab + mFOLFOX-6,,overall,orr,52.1,percent,,,,verified,"Objective response rate was 52.1% and 57.9% in the vanucizumab and bevacizumab arm, respectively"
+32162804,McCAVE,2020,first,,vanucizumab + mFOLFOX-6,bevacizumab + mFOLFOX-6,overall,pfs_hr,1.0,ratio,0.64,1.58,stratified analysis based on number of metastatic sites and region,verified,"The hazard ratio was 1.00 (95% confidence interval, 0.64-1.58; p = .98)"
+32164906,TRIBE2,2020,first,,control,,overall,n_randomized,340.0,count,,,,verified,340 in the control group and 339 in the experimental group
+32164906,TRIBE2,2020,first,,control,,overall,other_time_median,16.4,months,15.1,17.5,progression-free survival 2,verified,16·4 months (15·1-17·5) in the control group
+32164906,TRIBE2,2020,first,,experimental,,overall,n_randomized,339.0,count,,,,verified,340 in the control group and 339 in the experimental group
+32164906,TRIBE2,2020,first,,experimental,,overall,other_time_median,19.2,months,17.3,21.4,progression-free survival 2,verified,Median progression-free survival 2 was 19·2 months (95% CI 17·3-21·4) in the experimental group
+32164906,TRIBE2,2020,first,,experimental,control,overall,other_time_median,0.74,ratio,0.63,0.88,progression-free survival 2 hazard ratio,verified,"hazard ratio [HR] 0·74, 95% CI 0·63-0·88"
 32334845,BE1040V,2020,unclear,,BE1040V (biosimilar bevacizumab) + FOLFIRI-3,Reference bevacizumab + FOLFIRI-3,intention-to-treat,os_hr,0.99,ratio,0.55,1.8,"hazard ratio for overall survival, biosimilar vs reference",verified,"The hazard ratio for overall survival in the intent-to-treat population was 0.99 (95% CI, 0.55-1.80; P = 0.99)"
 32334845,BE1040V,2020,unclear,,BE1040V (biosimilar bevacizumab) + FOLFIRI-3,Reference bevacizumab + FOLFIRI-3,per-protocol,pfs_hr,0.79,ratio,0.46,1.35,"hazard ratio, biosimilar vs reference",verified,"The hazard ratio of the biosimilar arm versus the reference arm was 0.79 in the per-protocol population (90% CI, 0.46-1.35; P = 0.47)"
+32372960,,2020,mixed,,Huangci Granule + chemotherapy + CET or BV,Placebo + chemotherapy + CET or BV,first-line,pfs_hr,0.69,ratio,0.5,0.97,,verified,"HR, 0.69; 95% CI, 0.50-0.97; P = 0.027"
+32372960,,2020,mixed,,Huangci Granule + chemotherapy + CET or BV,Placebo + chemotherapy + CET or BV,second-line,pfs_hr,0.65,ratio,0.45,0.95,,verified,"HR, 0.65; 95% CI, 0.45-0.95; P = 0.020"
+32372960,,2020,mixed,,Huangci Granule + chemotherapy + CET or BV,Placebo + chemotherapy + CET or BV,first-line,pfs_median,9.59,months,6.94,13.25,,verified,"the median PFS was 9.59 months (95% CI, 6.94-13.25)"
+32372960,,2020,mixed,,Huangci Granule + chemotherapy + CET or BV,Placebo + chemotherapy + CET or BV,second-line,pfs_median,6.51,months,4.49,9.44,,verified,"the median PFS was 6.51 months (95% CI, 4.49-9.44)"
+32372960,,2020,mixed,,Placebo + chemotherapy + CET or BV,,first-line,pfs_median,6.89,months,4.99,9.52,,verified,"6.89 months (95% CI, 4.99-9.52) in treatment group and control group"
+32372960,,2020,mixed,,Placebo + chemotherapy + CET or BV,,second-line,pfs_median,4.53,months,3.12,6.57,,verified,"4.53 months (95% CI, 3.12-6.57)"
 32379280,CO.26,2020,third_or_later,,best supportive care alone,,overall,grade3plus_ae_rate,20.0,percent,,,any grade 3 or higher adverse event,verified,12 [20%] in the BSC group
 32379280,CO.26,2020,third_or_later,,best supportive care alone,,overall,os_median,4.1,months,,,,verified,and 4.1 months for BSC
 32379280,CO.26,2020,third_or_later,,best supportive care alone,,overall,pfs_median,1.9,months,,,,verified,Progression-free survival was 1.8 months and 1.9 months respectively
@@ -727,6 +762,15 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 32402681,,2020,first,,perioperative,postoperative,overall,os_hr,0.6,ratio,0.35,1.02,"overall survival, perioperative vs postoperative",verified,"The OS was significantly better in the perioperative group (hazard ratio [HR], 0.60; 95% confidence interval [CI],) 0.35-1.02; P = .049)"
 32402681,,2020,first,,perioperative,postoperative,CEA ≥ 5 ng/mL,os_hr,0.49,ratio,0.25,0.93,overall survival in CEA subgroup,verified,"CEA: HR, 0.49; 95% CI, 0.25-0.93; P = .030"
 32402681,,2020,first,,perioperative,postoperative,over 2 liver metastases,os_hr,0.55,ratio,0.3,0.99,overall survival in number of liver metastases subgroup,verified,"number of liver metastases: HR, 0.55; 95% CI, 0.30-0.99; P = .049"
+32474564,,2020,first,,24h-SIRI/B,,overall,n_randomized,61.0,count,,,,verified,61 patients to the 24h-SIRI/B and 59 patients to the FOLFIRI/B
+32474564,,2020,first,,24h-SIRI/B,,overall,orr,86.3,percent,,,overall response rate,verified,"The overall RR was 86.3 and 61.7%, respectively"
+32474564,,2020,first,,24h-SIRI/B,,overall,os_median,29.7,months,22.9,43.9,,verified,the median OS was 29.7 months (95%CI 22.9-43.9)
+32474564,,2020,first,,24h-SIRI/B,FOLFIRI/B,overall,pfs_hr,0.312,ratio,0.13,0.78,1-year PFS,verified,"HR = 0.312 [95%CI 0.13-0.78], p = 0.01"
+32474564,,2020,first,,24h-SIRI/B,,overall,pfs_median,10.2,months,8.8,14.3,,verified,The median PFS was 10.2 months (95%CI 8.8-14.3)
+32474564,,2020,first,,FOLFIRI/B,,overall,n_randomized,59.0,count,,,,verified,61 patients to the 24h-SIRI/B and 59 patients to the FOLFIRI/B
+32474564,,2020,first,,FOLFIRI/B,,overall,orr,61.7,percent,,,overall response rate,verified,"The overall RR was 86.3 and 61.7%, respectively"
+32474564,,2020,first,,FOLFIRI/B,,overall,os_median,28.8,months,18.4,,,verified,and 28.8 months (95%CI 18.4-ND)
+32474564,,2020,first,,FOLFIRI/B,,overall,pfs_median,10.0,months,7.4,11.0,,verified,and 10.0 months (95%CI 7.4-11.0)
 32497736,TASCO1,2020,first,,C-B,,overall,grade3plus_ae_rate,5.0,percent,,,neutropenia,verified,Patients receiving TT-B had more grade ≥3 neutropenia (47% versus 5% with C-B)
 32497736,TASCO1,2020,first,,C-B,,overall,grade3plus_ae_rate,12.0,percent,,,hand-foot syndrome,verified,Patients receiving C-B had more grade ≥3 hand-foot syndrome (12% versus 0% with TT-B)
 32497736,TASCO1,2020,first,,C-B,,overall,grade3plus_ae_rate,8.0,percent,,,diarrhea,verified,grade ≥3 diarrhea (8% versus 1% with TT-B)
@@ -749,6 +793,12 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 32526634,WJOG 6510G,2020,third_or_later,KRAS exon 2 wild-type,panitumumab arm,,overall,os_median,14.85,months,,,,verified,median OS was 14.85 and 11.53 months
 32526634,WJOG 6510G,2020,third_or_later,KRAS exon 2 wild-type,panitumumab arm,cetuximab arm,overall,pfs_hr,0.64,ratio,0.44,0.94,,verified,"HR = 0.64, 95% confidence interval [CI] = 0.44-0.94"
 32526634,WJOG 6510G,2020,third_or_later,KRAS exon 2 wild-type,panitumumab arm,,overall,pfs_median,5.42,months,,,,verified,The median PFS was 5.42 months in the panitumumab arm
+32679021,,2020,maintenance,,Flu-F-treated group,,overall,n_randomized,69.0,count,,,,verified,"Flu-F-treated group, n = 69"
+32679021,,2020,maintenance,,Flu-F-treated group,Flu-treated group,overall,os_median,15.0,months,,,,verified,"The OS was 15.0 months and 9.0 months in the Flu-F-treated and Flu-treated groups, respectively"
+32679021,,2020,maintenance,,Flu-F-treated group,Flu-treated group,overall,pfs_median,5.0,months,,,,verified,"The PFS was 5.0 months and 3.0 months in the Flu-F-treated and Flu-treated groups, respectively"
+32679021,,2020,maintenance,,Flu-treated group,,overall,n_randomized,68.0,count,,,,verified,"Flu-treated group, n = 68"
+32679021,,2020,maintenance,,Flu-treated group,,overall,os_median,9.0,months,,,,verified,"The OS was 15.0 months and 9.0 months in the Flu-F-treated and Flu-treated groups, respectively"
+32679021,,2020,maintenance,,Flu-treated group,,overall,pfs_median,3.0,months,,,,verified,"The PFS was 5.0 months and 3.0 months in the Flu-F-treated and Flu-treated groups, respectively"
 32737004,NEXIRI-2/PRODIGE 27,2020,third_or_later,RAS-mutated,IRI,,overall,n_randomized,57.0,count,,,,verified,"59 in NEXIRI, 57 in IRI, and 57 in NEX arms"
 32737004,NEXIRI-2/PRODIGE 27,2020,third_or_later,RAS-mutated,IRI,,overall,os_median,6.3,months,4.8,8.0,,verified,"the median OS was 7.2 (5.8-9.4), 6.3 (4.8-8), and 5.6 (3.9-7.7) months"
 32737004,NEXIRI-2/PRODIGE 27,2020,third_or_later,RAS-mutated,IRI,,overall,pfs_median,1.7,months,1.7,1.8,,verified,"Median PFS was 3.6 (95% CI: 2-4.2), 1.7 (1.7-1.8), and 2 (1.8-2.3) months"
@@ -792,3 +842,370 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 33371122,,2020,maintenance,,observation,,overall,n_randomized,23.0,count,,,,verified,or only observation (n = 23)
 33371122,,2020,maintenance,,observation,,overall,os_median,21.81,months,20.23,23.38,,verified,21.81 (95% CI 20.23-23.38) months in the observation group
 33371122,,2020,maintenance,,observation,,overall,pfs_median,3.98,months,3.71,4.24,,verified,vs 3.98 (95%CI 3.71-4.24) months in the observation group
+30048216,,2019,unclear,,control,,overall,n_randomized,38.0,count,,,,verified,control group (n = 38) and intervention group (n = 44)
+30048216,,2019,unclear,,intervention,,overall,n_randomized,44.0,count,,,,verified,control group (n = 38) and intervention group (n = 44)
+30224341,MAVERICC,2019,first,,FOLFIRI-BV,,overall,n_randomized,188.0,count,,,,verified,188 each received mFOLFOX6-BV and FOLFIRI-BV
+30224341,MAVERICC,2019,first,,FOLFIRI-BV,mFOLFOX6-BV,overall,os_hr,0.76,ratio,0.56,1.04,overall survival,verified,OS (HR = 0.76; 95% CI: 0.56-1.04; P = 0.09)
+30224341,MAVERICC,2019,first,,FOLFIRI-BV,mFOLFOX6-BV,overall,pfs_hr,0.79,ratio,0.61,1.01,progression-free survival,verified,HR = 0.79; 95% CI (confidence interval): 0.61-1.01; P = 0.06
+30224341,MAVERICC,2019,first,,mFOLFOX6-BV,,overall,n_randomized,188.0,count,,,,verified,188 each received mFOLFOX6-BV and FOLFIRI-BV
+30388045,XELAVIRI,2019,first,,A,,overall,n_randomized,212.0,count,,,,verified,arm A: n = 212
+30388045,XELAVIRI,2019,first,,B,,overall,n_randomized,209.0,count,,,,verified,arm B: n = 209
+30422156,PRODIGE18,2019,second,KRAS exon 2 wild-type,A,B,overall,os_hr,0.69,ratio,0.46,1.04,,verified,"hazard ratio, 0.69; 95% CI, 0.46-1.04; P = .08"
+30422156,PRODIGE18,2019,second,KRAS exon 2 wild-type,A,,overall,os_median,15.8,months,9.5,22.3,,verified,"the median overall survival was 15.8 months (95% CI, 9.5-22.3 months) in arm A"
+30422156,PRODIGE18,2019,second,KRAS exon 2 wild-type,A,B,overall,pfs_hr,0.71,ratio,0.5,1.02,,verified,"hazard ratio, 0.71; 95% CI, 0.50-1.02; P = .06"
+30422156,PRODIGE18,2019,second,KRAS exon 2 wild-type,A,,overall,pfs_median,7.1,months,5.7,8.2,,verified,"The median PFS was 7.1 months (95% CI, 5.7-8.2 months) in arm A"
+30422156,PRODIGE18,2019,second,KRAS exon 2 wild-type,B,,overall,os_median,10.4,months,7.0,16.2,,verified,"10.4 months (95% CI, 7.0-16.2 months) in arm B"
+30422156,PRODIGE18,2019,second,KRAS exon 2 wild-type,B,,overall,pfs_median,5.6,months,4.2,6.5,,verified,"5.6 months (95% CI, 4.2-6.5 months) in arm B"
+30508156,REVERCE,2019,third_or_later,KRAS exon 2 wild-type,C-R,,overall,os_median,11.6,months,,,,verified,"Median OS for R-C and C-R was 17.4 and 11.6 months, respectively"
+30508156,REVERCE,2019,third_or_later,KRAS exon 2 wild-type,R-C,C-R,overall,os_hr,0.61,ratio,0.39,0.96,,verified,with a hazard ratio (HR) of 0.61 for OS [95% confidence interval (CI) 0.39-0.96]
+30508156,REVERCE,2019,third_or_later,KRAS exon 2 wild-type,R-C,,overall,os_median,17.4,months,,,,verified,"Median OS for R-C and C-R was 17.4 and 11.6 months, respectively"
+30531832,,2019,first,,placebo,,overall,grade3plus_ae_rate,22.0,percent,,,"neutropenia (grade 3/4, common AEs ≥5%)",verified,"neutropenia (59% vs 22%, p < 0.001) for common Grade 3/4 AEs (≥5%)"
+30531832,,2019,first,,placebo,,overall,n_randomized,65.0,count,,,,verified,or placebo (n = 65)
+30531832,,2019,first,,placebo,,overall,orr,62.0,percent,,,,verified,Response rate was 57% vs 62%
+30531832,,2019,first,,placebo,,overall,os_median,27.0,months,,,,verified,Median OS was 25 vs 27 months
+30531832,,2019,first,,placebo,,overall,other_time_median,9.0,months,,,duration of response (DOR),verified,Median DOR was 11 vs 9 months
+30531832,,2019,first,,placebo,,overall,pfs_median,11.0,months,,,,verified,Median PFS was 12 vs 11 months (veliparib vs placebo)
+30531832,,2019,first,,veliparib,,overall,grade3plus_ae_rate,59.0,percent,,,"neutropenia (grade 3/4, common AEs ≥5%)",verified,"neutropenia (59% vs 22%, p < 0.001) for common Grade 3/4 AEs (≥5%)"
+30531832,,2019,first,,veliparib,,overall,n_randomized,65.0,count,,,,verified,Patients were randomised to receive veliparib (n = 65)
+30531832,,2019,first,,veliparib,,overall,orr,57.0,percent,,,,verified,Response rate was 57% vs 62%
+30531832,,2019,first,,veliparib,placebo,overall,os_hr,1.26,ratio,0.74,2.16,,verified,"[HR = 1.26 (95% CI: 0.74, 2.16)]"
+30531832,,2019,first,,veliparib,placebo,overall,os_median,25.0,months,,,,verified,Median OS was 25 vs 27 months
+30531832,,2019,first,,veliparib,placebo,overall,other_time_median,11.0,months,,,duration of response (DOR),verified,Median DOR was 11 vs 9 months
+30531832,,2019,first,,veliparib,placebo,overall,pfs_hr,0.94,ratio,0.6,1.48,,verified,"[HR = 0.94 (95% CI: 0.60, 1.48)]"
+30531832,,2019,first,,veliparib,placebo,overall,pfs_median,12.0,months,,,,verified,Median PFS was 12 vs 11 months (veliparib vs placebo)
+30552157,STEAM,2019,first,,FOLFOX-BEV,,overall,grade3plus_ae_rate,85.6,percent,,,grade >= 3 treatment-emergent adverse events,verified,85.6% (FOLFOX-BEV) of patients
+30552157,STEAM,2019,first,,FOLFOX-BEV,,overall,orr,62.1,percent,,,,verified,"ORR was 72.0%, 72.8%, and 62.1%"
+30552157,STEAM,2019,first,,FOLFOX-BEV,,overall,pfs_median,9.5,months,,,,verified,"median PFS was 11.9, 11.4, and 9.5 months"
+30552157,STEAM,2019,first,,cFOLFOXIRI-BEV,,overall,grade3plus_ae_rate,91.2,percent,,,grade >= 3 treatment-emergent adverse events,verified,Grade ≥ 3 treatment-emergent adverse events (TEAEs) were observed in 91.2% (cFOLFOXIRI-BEV)
+30552157,STEAM,2019,first,,cFOLFOXIRI-BEV,,overall,orr,72.0,percent,,,,verified,"ORR was 72.0%, 72.8%, and 62.1%"
+30552157,STEAM,2019,first,,cFOLFOXIRI-BEV,,overall,pfs_median,11.9,months,,,,verified,"median PFS was 11.9, 11.4, and 9.5 months"
+30552157,STEAM,2019,first,,pooled FOLFOXIRI-BEV,FOLFOX-BEV,overall,pfs_hr,0.7,ratio,0.5,0.9,pooled concurrent and sequential,verified,"hazard ratio, 0.7; 90% confidence interval, 0.5-0.9"
+30552157,STEAM,2019,first,,pooled FOLFOXIRI-BEV,FOLFOX-BEV,overall,pfs_median,11.7,months,,,pooled concurrent and sequential,verified,Median PFS was higher with pooled concurrent and sequential FOLFOXIRI-BEV versus FOLFOX-BEV (11.7 vs. 9.5 months
+30552157,STEAM,2019,first,,sFOLFOXIRI-BEV,,overall,grade3plus_ae_rate,86.7,percent,,,grade >= 3 treatment-emergent adverse events,verified,86.7% (sFOLFOXIRI-BEV)
+30552157,STEAM,2019,first,,sFOLFOXIRI-BEV,,overall,orr,72.8,percent,,,,verified,"ORR was 72.0%, 72.8%, and 62.1%"
+30552157,STEAM,2019,first,,sFOLFOXIRI-BEV,,overall,pfs_median,11.4,months,,,,verified,"median PFS was 11.9, 11.4, and 9.5 months"
+30559073,SAKK 41/10,2019,first,RAS and BRAF wild-type,cetuximab monotherapy,,overall,n_randomized,11.0,count,,,,verified,11 in the monotherapy arm
+30559073,SAKK 41/10,2019,first,RAS and BRAF wild-type,cetuximab monotherapy,,overall,orr,9.0,percent,,,,verified,Response rate was 9% in the monotherapy arm
+30559073,SAKK 41/10,2019,first,RAS and BRAF wild-type,cetuximab plus capecitabine,,overall,n_randomized,13.0,count,,,,verified,13 in the combination arm
+30559073,SAKK 41/10,2019,first,RAS and BRAF wild-type,cetuximab plus capecitabine,,overall,orr,38.0,percent,,,,verified,and 38% combination arm
+30585257,,2019,unclear,UGT1A1*1/*1 or *1/*28 genotype (UGT1A1*28/*28 excluded),FOLFIRI,HD-FOLFIRI,overall,grade3plus_ae_rate,20.5,percent,,,severe toxicity,verified,No differences were observed in severe toxicity (22.5% versus 20.5%)
+30585257,,2019,unclear,UGT1A1*1/*1 or *1/*28 genotype (UGT1A1*28/*28 excluded),FOLFIRI,HD-FOLFIRI,overall,orr,43.6,percent,,,,verified,The ORR was significantly higher in the HD-FOLFIRI group (67.5 versus 43.6%; p = 0.001 OR: 1.73 [95% CI:1.03-2.93])
+30585257,,2019,unclear,UGT1A1*1/*1 or *1/*28 genotype (UGT1A1*28/*28 excluded),HD-FOLFIRI,FOLFIRI,overall,grade3plus_ae_rate,22.5,percent,,,severe toxicity,verified,No differences were observed in severe toxicity (22.5% versus 20.5%)
+30585257,,2019,unclear,UGT1A1*1/*1 or *1/*28 genotype (UGT1A1*28/*28 excluded),HD-FOLFIRI,FOLFIRI,overall,orr,67.5,percent,,,,verified,The ORR was significantly higher in the HD-FOLFIRI group (67.5 versus 43.6%; p = 0.001 OR: 1.73 [95% CI:1.03-2.93])
+30735919,MOMA,2019,first,,A,,overall,orr,68.0,percent,,,response rate with FOLFOXIRI plus bevacizumab induction,verified,arm B/A: 58%/68%
+30735919,MOMA,2019,first,,A,,overall,os_median,28.0,months,,,,verified,median OS arm B/A: 22.5/28 months
+30735919,MOMA,2019,first,,A,,overall,pfs_median,9.4,months,,,,verified,"Median PFS was 10.3 and 9.4 months in arm B and A, respectively"
+30735919,MOMA,2019,first,,B,,overall,orr,58.0,percent,,,response rate with FOLFOXIRI plus bevacizumab induction,verified,arm B/A: 58%/68%
+30735919,MOMA,2019,first,,B,A,overall,os_hr,1.16,ratio,0.99,1.37,,verified,"HR: 1.16 [95%CI: 0.99-1.37], p = 0.336"
+30735919,MOMA,2019,first,,B,,overall,os_median,22.5,months,,,,verified,median OS arm B/A: 22.5/28 months
+30735919,MOMA,2019,first,,B,A,overall,pfs_hr,0.94,ratio,0.82,1.09,,verified,"HR: 0.94 [70% confidence interval {CI}: 0.82-1.09], p = 0.680"
+30735919,MOMA,2019,first,,B,,overall,pfs_median,10.3,months,,,,verified,"Median PFS was 10.3 and 9.4 months in arm B and A, respectively"
+30852136,NORDIC9,2019,first,,Full-dose S-1 monotherapy,,overall,n_randomized,83.0,count,,,,verified,randomly assigned to full-dose monotherapy (n=83)
+30852136,NORDIC9,2019,first,,Full-dose S-1 monotherapy,,overall,pfs_median,5.3,months,4.1,6.8,,verified,than with full-dose monotherapy (5·3 months [4·1-6·8]
+30852136,NORDIC9,2019,first,,Reduced-dose S-1 plus oxaliplatin,,overall,n_randomized,77.0,count,,,,verified,reduced-dose combination chemotherapy (n=77)
+30852136,NORDIC9,2019,first,,Reduced-dose S-1 plus oxaliplatin,Full-dose S-1 monotherapy,overall,pfs_hr,0.72,ratio,0.52,0.99,,verified,hazard ratio [HR] 0·72 [95% CI 0·52-0·99]
+30852136,NORDIC9,2019,first,,Reduced-dose S-1 plus oxaliplatin,Full-dose S-1 monotherapy,overall,pfs_median,6.2,months,5.3,8.3,,verified,Median progression-free survival was significantly longer with reduced-dose combination chemotherapy (6·2 months [95% CI 5·3-8·3]
+30964527,SUNSHINE,2019,first,,High-dose vitamin D3,,overall,grade3plus_ae_rate,35.0,percent,,,neutropenia,verified,"neutropenia (n = 24 [35%] vs n = 21 [31%], respectively)"
+30964527,SUNSHINE,2019,first,,High-dose vitamin D3,,overall,grade3plus_ae_rate,13.0,percent,,,hypertension,verified,hypertension (n = 9 [13%] vs n = 11 [16%])
+30964527,SUNSHINE,2019,first,,High-dose vitamin D3,,overall,n_randomized,69.0,count,,,,verified,high-dose vitamin D3 (n = 69)
+30964527,SUNSHINE,2019,first,,High-dose vitamin D3,,overall,orr,58.0,percent,,,,verified,"tumor ORR (58% vs 63%, respectively"
+30964527,SUNSHINE,2019,first,,High-dose vitamin D3,,overall,os_median,24.3,months,,,,verified,"median, 24.3 months vs 24.3 months"
+30964527,SUNSHINE,2019,first,,High-dose vitamin D3,Standard-dose vitamin D3,overall,pfs_hr,0.64,ratio,0.0,0.9,multivariable hazard ratio for PFS or death,verified,"multivariable hazard ratio for PFS or death was 0.64 (1-sided 95% CI, 0 to 0.90; P = .02)"
+30964527,SUNSHINE,2019,first,,High-dose vitamin D3,,overall,pfs_median,13.0,months,10.1,14.7,,verified,"the median PFS for high-dose vitamin D3 was 13.0 months (95% CI, 10.1 to 14.7; 49 PFS events)"
+30964527,SUNSHINE,2019,first,,Standard-dose vitamin D3,,overall,grade3plus_ae_rate,31.0,percent,,,neutropenia,verified,"neutropenia (n = 24 [35%] vs n = 21 [31%], respectively)"
+30964527,SUNSHINE,2019,first,,Standard-dose vitamin D3,,overall,grade3plus_ae_rate,16.0,percent,,,hypertension,verified,hypertension (n = 9 [13%] vs n = 11 [16%])
+30964527,SUNSHINE,2019,first,,Standard-dose vitamin D3,,overall,n_randomized,70.0,count,,,,verified,standard-dose vitamin D3 (n = 70)
+30964527,SUNSHINE,2019,first,,Standard-dose vitamin D3,,overall,orr,63.0,percent,,,,verified,"tumor ORR (58% vs 63%, respectively"
+30964527,SUNSHINE,2019,first,,Standard-dose vitamin D3,,overall,os_median,24.3,months,,,,verified,"median, 24.3 months vs 24.3 months"
+30964527,SUNSHINE,2019,first,,Standard-dose vitamin D3,,overall,pfs_median,11.0,months,9.5,14.0,,verified,"11.0 months (95% CI, 9.5 to 14.0; 62 PFS events) for standard-dose vitamin D3"
+31003911,IMblaze370,2019,third_or_later,,atezolizumab monotherapy,,safety population,grade3plus_ae_rate,31.0,percent,,,any grade 3-4 adverse event,verified,28 (31%) of 90 in the atezolizumab group
+31003911,IMblaze370,2019,third_or_later,,atezolizumab monotherapy,,overall,n_randomized,90.0,count,,,,verified,90 in the atezolizumab group
+31003911,IMblaze370,2019,third_or_later,,atezolizumab monotherapy,regorafenib,overall,os_hr,1.19,ratio,0.83,1.71,,verified,1·19 (0·83-1·71; p=0·34) for atezolizumab versus regorafenib
+31003911,IMblaze370,2019,third_or_later,,atezolizumab monotherapy,,overall,os_median,7.1,months,6.05,10.05,,verified,7·10 months (6·05-10·05) with atezolizumab
+31003911,IMblaze370,2019,third_or_later,,atezolizumab plus cobimetinib,,safety population,grade3plus_ae_rate,61.0,percent,,,any grade 3-4 adverse event,verified,Grade 3-4 adverse events were reported in 109 (61%) of 179 patients in the atezolizumab plus cobimetinib group
+31003911,IMblaze370,2019,third_or_later,,atezolizumab plus cobimetinib,,overall,n_randomized,183.0,count,,,,verified,183 patients in the atezolizumab plus cobimetinib group
+31003911,IMblaze370,2019,third_or_later,,atezolizumab plus cobimetinib,regorafenib,overall,os_hr,1.0,ratio,0.73,1.38,,verified,the hazard ratio was 1·00 (95% CI 0·73-1·38; p=0·99) for the combination versus regorafenib
+31003911,IMblaze370,2019,third_or_later,,atezolizumab plus cobimetinib,,overall,os_median,8.87,months,7.0,10.61,,verified,Median overall survival was 8·87 months (95% CI 7·00-10·61) with atezolizumab plus cobimetinib
+31003911,IMblaze370,2019,third_or_later,,regorafenib,,safety population,grade3plus_ae_rate,58.0,percent,,,any grade 3-4 adverse event,verified,46 (58%) of 80 in the regorafenib group
+31003911,IMblaze370,2019,third_or_later,,regorafenib,,overall,n_randomized,90.0,count,,,,verified,90 in the regorafenib group
+31003911,IMblaze370,2019,third_or_later,,regorafenib,,overall,os_median,8.51,months,6.41,10.71,,verified,8·51 months (6·41-10·71) with regorafenib
+31020480,PACIFIC,2019,second,KRAS wild-type,IRI + Pmab,,overall,orr,40.0,percent,,,,verified,40.0% (10/25) for IRI + Pmab
+31020480,PACIFIC,2019,second,KRAS wild-type,IRI + Pmab,,overall,pfs_median,190.0,weeks,159.0,213.0,,verified,"190 days (95% confidence interval, 159-213) for IRI + Pmab"
+31020480,PACIFIC,2019,second,KRAS wild-type,control,,overall,n_randomized,23.0,count,,,,verified,of which 23 were allocated to the control group
+31020480,PACIFIC,2019,second,KRAS wild-type,control,,overall,orr,21.7,percent,,,,verified,The response rate without confirmation was 21.7% (5/23) for control
+31183190,,2019,third_or_later,,Arm A,,overall,n_randomized,23.0,count,,,,verified,Arm A enrolled 23 patients
+31183190,,2019,third_or_later,,Arm A,,overall,ttp_median,3.4,months,,,time to progression,verified,Median time to progression was 3.4 months in Arm A
+31183190,,2019,third_or_later,,Arm B,,overall,n_randomized,24.0,count,,,,verified,Arm B enrolled 24 patients
+31183190,,2019,third_or_later,,Arm B,,overall,ttp_median,3.5,months,,,time to progression,verified,Median time to progression was 3.4 months in Arm A and 3.5 months in Arm B
+31268481,,2019,first,RAS wild-type,arm A,,overall,n_randomized,117.0,count,,,,verified,randomly assigned to arm A (n = 117)
+31268481,,2019,first,RAS wild-type,arm A,arm B,overall,pfs_hr,1.51,ratio,1.11,2.07,"10-month PFS, arm B vs arm A",verified,"HR, 1.51; 95% CI, 1.11-2.07; P = .01"
+31268481,,2019,first,RAS wild-type,arm B,,overall,n_randomized,112.0,count,,,,verified,arm B (n = 112)
+31273511,HEARTO,2019,third_or_later,,HAI raltitrexed plus oxaliplatin,Standard of care,overall,os_hr,0.86,ratio,0.36,2.04,hazard ratio for overall survival,verified,"[HR 0.86 (95% CI 0.36-2.04), p = 0.73]"
+31273511,HEARTO,2019,third_or_later,,HAI raltitrexed plus oxaliplatin,,overall,os_median,11.2,months,4.8,17.6,median overall survival,verified,11.2 months (95% CI 4.8-17.6) for the HAI group
+31273511,HEARTO,2019,third_or_later,,HAI raltitrexed plus oxaliplatin,Standard of care,overall,pfs_hr,0.32,ratio,0.14,0.76,hazard ratio for progression-free survival,verified,"[HR 0.32 (95% CI 0.14-0.76), p = 0.01]"
+31273511,HEARTO,2019,third_or_later,,HAI raltitrexed plus oxaliplatin,,overall,pfs_median,6.7,months,3.9,7.2,median progression-free survival,verified,Median progression-free survival was 6.7 months (95% Confidence Interval; 3.9-7.2) in the HAI group
+31273511,HEARTO,2019,third_or_later,,Standard of care,,overall,os_median,11.9,months,2.8,14.3,median overall survival,verified,11.9 months (95% CI 2.8-14.3) for standard of care
+31273511,HEARTO,2019,third_or_later,,Standard of care,,overall,pfs_median,2.2,months,1.2,4.3,median progression-free survival,verified,2.2 months (95% CI 1.2-4.3) with standard of care
+31390590,TES,2019,first,,Care as usual (CAU),,overall,n_randomized,165.0,count,,,,verified,165 received CAU
+31390590,TES,2019,first,,TES program,,overall,n_randomized,184.0,count,,,,verified,184 received the TES program
+31445198,SAPPHIRE,2019,first,RAS wild-type,group A,,overall,n_randomized,56.0,count,,,,verified,"group A, n = 56"
+31445198,SAPPHIRE,2019,first,RAS wild-type,group A,,overall,pfs_median,9.1,months,8.6,11.1,median progression-free survival,verified,"median PFS were 46.4% (80% confidence interval [CI], 38.1-54.9) and 9.1 months (95% CI, 8.6-11.1) in group A"
+31445198,SAPPHIRE,2019,first,RAS wild-type,group B,,overall,n_randomized,57.0,count,,,,verified,"group B, n = 57"
+31445198,SAPPHIRE,2019,first,RAS wild-type,group B,,overall,pfs_median,9.3,months,6.0,13.0,median progression-free survival,verified,"9.3 months (95% CI, 6.0-13.0) in group B"
+31555481,RAVELLO,2019,maintenance,RAS wild-type,placebo,,overall,n_randomized,10.0,count,,,,verified,10 in the placebo arm
+31555481,RAVELLO,2019,maintenance,RAS wild-type,regorafenib,,overall,n_randomized,11.0,count,,,,verified,11 in the regorafenib arm
+31566309,BEACON CRC,2019,mixed,BRAF V600E-mutated,control,,overall,grade3plus_ae_rate,61.0,percent,,,grade 3 or higher adverse events,verified,and in 61% in the control group
+31566309,BEACON CRC,2019,mixed,BRAF V600E-mutated,control,,overall,orr,2.0,percent,0.0,7.0,confirmed response rate,verified,"and 2% (95% CI, 0 to 7) in the control group"
+31566309,BEACON CRC,2019,mixed,BRAF V600E-mutated,control,triplet,overall,os_median,5.4,months,,,,verified,The median overall survival was 9.0 months in the triplet-therapy group and 5.4 months in the control group
+31566309,BEACON CRC,2019,mixed,BRAF V600E-mutated,doublet,,overall,grade3plus_ae_rate,50.0,percent,,,grade 3 or higher adverse events,verified,in 50% in the doublet-therapy group
+31566309,BEACON CRC,2019,mixed,BRAF V600E-mutated,doublet,control,overall,os_hr,0.6,ratio,0.45,0.79,,verified,"hazard ratio for death vs. control, 0.60; 95% CI, 0.45 to 0.79"
+31566309,BEACON CRC,2019,mixed,BRAF V600E-mutated,doublet,control,overall,os_median,8.4,months,,,,verified,The median overall survival in the doublet-therapy group was 8.4 months
+31566309,BEACON CRC,2019,mixed,BRAF V600E-mutated,triplet,,overall,grade3plus_ae_rate,58.0,percent,,,grade 3 or higher adverse events,verified,Adverse events of grade 3 or higher occurred in 58% of patients in the triplet-therapy group
+31566309,BEACON CRC,2019,mixed,BRAF V600E-mutated,triplet,,overall,orr,26.0,percent,18.0,35.0,confirmed response rate,verified,"The confirmed response rate was 26% (95% CI, 18 to 35) in the triplet-therapy group"
+31566309,BEACON CRC,2019,mixed,BRAF V600E-mutated,triplet,control,overall,os_hr,0.52,ratio,0.39,0.7,,verified,"hazard ratio for death, 0.52; 95% confidence interval [CI], 0.39 to 0.70"
+31566309,BEACON CRC,2019,mixed,BRAF V600E-mutated,triplet,control,overall,os_median,9.0,months,,,,verified,The median overall survival was 9.0 months in the triplet-therapy group and 5.4 months in the control group
+31609637,VOLFI,2019,first,RAS wild-type,FOLFOXIRI,,overall,n_randomized,33.0,count,,,,verified,and 33 patients to the control arm
+31609637,VOLFI,2019,first,RAS wild-type,FOLFOXIRI,,overall,orr,60.6,percent,,,"ORR, FOLFOXIRI control arm",verified,was higher when compared with that of FOLFOXIRI (87.3% v 60.6%
+31609637,VOLFI,2019,first,RAS wild-type,mFOLFOXIRI plus panitumumab,,overall,n_randomized,63.0,count,,,,verified,A total of 63 patients were randomly assigned to the experimental arm
+31609637,VOLFI,2019,first,RAS wild-type,mFOLFOXIRI plus panitumumab,FOLFOXIRI,overall,orr,87.3,percent,,,"ORR, mFOLFOXIRI plus panitumumab arm",verified,The ORR of the mFOLFOXIRI plus panitumumab arm exceeded 75% and was higher when compared with that of FOLFOXIRI (87.3% v 60.6%
+31609637,VOLFI,2019,first,RAS wild-type,mFOLFOXIRI plus panitumumab,FOLFOXIRI,overall,os_hr,0.67,ratio,0.41,1.11,hazard ratio for death,verified,"hazard ratio for death, 0.67; 95% CI, 0.41 to 1.11; P = .12"
+31810943,,2019,unclear,,Group 1,,overall,n_randomized,20.0,count,,,,verified,Group 1 included 20 patients who underwent placement of a self-expandable metal stent
+31810943,,2019,unclear,,Group 2,,overall,n_randomized,26.0,count,,,,verified,Group 2 included 26 patients in whom primary tumor resection was performed
+31831062,PulMiCC,2019,unclear,,Metastasectomy,Control,overall,os_hr,0.82,ratio,0.43,1.56,death within 5 years,verified,"The Hazard ratio for death within 5 years, comparing metastasectomy with control, was 0.82 (95%CI 0.43, 1.56)"
+28840585,Quxie Capsule,2018,mixed,,Placebo + conventional therapy,,overall,os_median,14.0,months,11.0,22.0,median overall survival,verified,"vs. 14 months in the control group (95% CI: 11-22, P=0.060)"
+28840585,Quxie Capsule,2018,mixed,,Quxie Capsule + conventional therapy,,overall,os_median,23.0,months,15.0,,median overall survival,verified,The median OS was 23 months in the treatment group [95% confidence interval (CI): 15-not calculated]
+28902669,LIGRO,2018,unclear,,ALPPS,,overall,n_randomized,48.0,count,,,,verified,RR was 92% [95% confidence interval (CI) 84%-100%] (44/48) in the ALPPS arm
+28902669,LIGRO,2018,unclear,,TSH,,overall,n_randomized,49.0,count,,,,verified,57% (95% CI 43%-72%) (28/49) in the TSH arm
+29045659,PRODIGE 20,2018,first,,BEV,,overall,grade3plus_ae_rate,80.4,percent,,,"severe toxicities grade 3/4, mainly non-hematologic",verified,"Severe toxicities grade 3/4 were mainly non-hematologic toxicities (80.4% in BEV, 63.3% in CT)"
+29045659,PRODIGE 20,2018,first,,BEV,,overall,n_randomized,51.0,count,,,,verified,About 102 patients were randomized (51 BEV and 51 CT)
+29045659,PRODIGE 20,2018,first,,BEV,,overall,os_median,21.7,months,,,,verified,Median overall survival was 21.7 months in BEV and 19.8 months in CT
+29045659,PRODIGE 20,2018,first,,BEV,,overall,pfs_median,9.7,months,,,,verified,Median progression-free survival was 9.7 months in BEV and 7.8 months in CT
+29045659,PRODIGE 20,2018,first,,CT,,overall,grade3plus_ae_rate,63.3,percent,,,"severe toxicities grade 3/4, mainly non-hematologic",verified,"Severe toxicities grade 3/4 were mainly non-hematologic toxicities (80.4% in BEV, 63.3% in CT)"
+29045659,PRODIGE 20,2018,first,,CT,,overall,n_randomized,51.0,count,,,,verified,About 102 patients were randomized (51 BEV and 51 CT)
+29045659,PRODIGE 20,2018,first,,CT,,overall,os_median,19.8,months,,,,verified,Median overall survival was 21.7 months in BEV and 19.8 months in CT
+29045659,PRODIGE 20,2018,first,,CT,,overall,pfs_median,7.8,months,,,,verified,Median progression-free survival was 9.7 months in BEV and 7.8 months in CT
+29084918,,2018,third_or_later,,ontuxizumab,,overall,grade3plus_ae_rate,11.0,percent,,,back pain,verified,The most common grade 3/4 TEAE in the ontuxizumab group versus placebo was back pain (11.0% vs. 0%)
+29084918,,2018,third_or_later,,ontuxizumab,placebo,overall,pfs_hr,1.13,ratio,0.76,1.67,progression-free survival,verified,"HR, 1.13; 95% confidence interval, 0.76-1.67"
+29084918,,2018,third_or_later,,ontuxizumab,,overall,pfs_median,8.1,weeks,,,progression-free survival,verified,with a median PFS of 8.1 weeks in each group
+29084918,,2018,third_or_later,,placebo,,overall,grade3plus_ae_rate,0.0,percent,,,back pain,verified,The most common grade 3/4 TEAE in the ontuxizumab group versus placebo was back pain (11.0% vs. 0%)
+29084918,,2018,third_or_later,,placebo,,overall,pfs_median,8.1,weeks,,,progression-free survival,verified,with a median PFS of 8.1 weeks in each group
+29140155,PLIANT,2018,mixed,,calmangafodipir 2 µmol/kg,,overall,n_randomized,57.0,count,,,,verified,calmangafodipir 2 µmol/kg (n = 57)
+29140155,PLIANT,2018,mixed,,calmangafodipir 5 µmol/kg,,overall,n_randomized,45.0,count,,,,verified,"calmangafodipir 5 µmol/kg (n = 45, initially 10 µmol/kg, n = 11)"
+29140155,PLIANT,2018,mixed,,placebo,,overall,n_randomized,60.0,count,,,,verified,randomised to placebo (n = 60)
+29145602,SETICC,2018,first,TYMS-3'UTR 6 bp ins/del and ERCC1-118C/T polymorphisms,control,,overall,n_randomized,65.0,count,,,,verified,control n = 65
+29145602,SETICC,2018,first,TYMS-3'UTR 6 bp ins/del and ERCC1-118C/T polymorphisms,control,,overall,orr,47.0,percent,,,,verified,ORR; 65% versus 47% in the control group
+29145602,SETICC,2018,first,TYMS-3'UTR 6 bp ins/del and ERCC1-118C/T polymorphisms,control,,overall,os_median,16.5,months,,,,verified,"Median overall survival was similar in both groups (16.5 versus 19.1 months, respectively; P = 0.797)"
+29145602,SETICC,2018,first,TYMS-3'UTR 6 bp ins/del and ERCC1-118C/T polymorphisms,control,,overall,pfs_median,9.4,months,,,,verified,median PFS was 9.4 months in the control group
+29145602,SETICC,2018,first,TYMS-3'UTR 6 bp ins/del and ERCC1-118C/T polymorphisms,experimental,,overall,n_randomized,130.0,count,,,,verified,experimental n = 130
+29145602,SETICC,2018,first,TYMS-3'UTR 6 bp ins/del and ERCC1-118C/T polymorphisms,experimental,,overall,orr,65.0,percent,,,,verified,Patients in the experimental group had a significantly higher overall response rate (ORR; 65% versus 47% in the control group; P = 0.042)
+29145602,SETICC,2018,first,TYMS-3'UTR 6 bp ins/del and ERCC1-118C/T polymorphisms,experimental,,overall,os_median,19.1,months,,,,verified,"Median overall survival was similar in both groups (16.5 versus 19.1 months, respectively; P = 0.797)"
+29145602,SETICC,2018,first,TYMS-3'UTR 6 bp ins/del and ERCC1-118C/T polymorphisms,experimental,,overall,pfs_median,10.1,months,,,,verified,10.1 months in the experimental group (P = 0.745)
+29215955,TERRA,2018,third_or_later,,placebo,,overall,grade3plus_ae_rate,23.7,percent,,,serious adverse events,verified,"placebo, n = 32 [23.7%]"
+29215955,TERRA,2018,third_or_later,,placebo,,overall,n_randomized,135.0,count,,,,verified,placebo (n = 135)
+29215955,TERRA,2018,third_or_later,,placebo,,overall,os_median,7.1,months,5.9,8.2,,verified,"7.1 months [95% CI, 5.9 to 8.2 months]"
+29215955,TERRA,2018,third_or_later,,trifluridine/tipiracil,,overall,grade3plus_ae_rate,23.2,percent,,,serious adverse events,verified,"trifluridine/tipiracil, n = 63 [23.2%]"
+29215955,TERRA,2018,third_or_later,,trifluridine/tipiracil,,overall,n_randomized,271.0,count,,,,verified,trifluridine/tipiracil (n = 271)
+29215955,TERRA,2018,third_or_later,,trifluridine/tipiracil,placebo,overall,os_hr,0.79,ratio,0.62,0.99,hazard ratio for death,verified,"hazard ratio for death, 0.79; 95% CI, 0.62 to 0.99"
+29215955,TERRA,2018,third_or_later,,trifluridine/tipiracil,,overall,os_median,7.8,months,7.1,8.8,,verified,"7.8 months [95% CI, 7.1 to 8.8 months]"
+29254887,FOCUS4-D,2018,first,"BRAF, PIK3CA, KRAS, and NRAS wild-type",AZD8931,,overall,n_randomized,16.0,count,,,,verified,16 to AZD8931 and 16 to placebo
+29254887,FOCUS4-D,2018,first,"BRAF, PIK3CA, KRAS, and NRAS wild-type",AZD8931,placebo,overall,pfs_hr,1.1,ratio,0.47,3.57,,verified,"hazard ratio [HR] 1·10, 95% CI 0·47-3·57; p=0·95"
+29254887,FOCUS4-D,2018,first,"BRAF, PIK3CA, KRAS, and NRAS wild-type",AZD8931,,overall,pfs_median,2.96,months,1.94,5.62,,verified,2·96 months (1·94-5·62) in the AZD8931 group
+29254887,FOCUS4-D,2018,first,"BRAF, PIK3CA, KRAS, and NRAS wild-type",placebo,,overall,n_randomized,16.0,count,,,,verified,16 to AZD8931 and 16 to placebo
+29254887,FOCUS4-D,2018,first,"BRAF, PIK3CA, KRAS, and NRAS wild-type",placebo,,overall,pfs_median,3.48,months,1.51,5.09,,verified,Median progression-free survival was 3·48 months (95% CI 1·51-5·09) in the placebo group
+29293874,TRICOLORE,2018,first,,control,,overall,grade3plus_ae_rate,64.9,percent,,,grade 3 or higher adverse events,verified,One hundred and fifty-seven patients (64.9%) in the control group
+29293874,TRICOLORE,2018,first,,control,,overall,pfs_median,10.8,months,9.6,11.6,,verified,Median PFS was 10.8 months (95% CI 9.6-11.6) in the control group
+29293874,TRICOLORE,2018,first,,experimental,,overall,grade3plus_ae_rate,58.6,percent,,,grade 3 or higher adverse events,verified,140 (58.6%) in the experimental group had adverse events of grade 3 or higher
+29293874,TRICOLORE,2018,first,,experimental,control,overall,pfs_hr,0.84,ratio,0.7,1.02,,verified,"HR 0.84, 95% CI 0.70-1.02"
+29293874,TRICOLORE,2018,first,,experimental,,overall,pfs_median,14.0,months,12.4,15.5,,verified,14.0 months (95% CI 12.4-15.5) in the experimental group
+29346040,PRODIGE 9,2018,maintenance,,bevacizumab maintenance,,overall,os_median,21.7,months,,,median overall survival,verified,"The median overall survival (OS) was 21.7 and 22.0 months in the maintenance and observation groups, respectively"
+29346040,PRODIGE 9,2018,maintenance,,bevacizumab maintenance,,overall,pfs_median,9.2,months,,,median progression-free survival from randomization,verified,"the median progression-free survival (PFS) from randomization was 9.2 and 8.9 months in the maintenance group and observation groups, respectively"
+29346040,PRODIGE 9,2018,maintenance,,observation,,overall,os_median,22.0,months,,,median overall survival,verified,"The median overall survival (OS) was 21.7 and 22.0 months in the maintenance and observation groups, respectively"
+29346040,PRODIGE 9,2018,maintenance,,observation,,overall,pfs_median,8.9,months,,,median progression-free survival from randomization,verified,"the median progression-free survival (PFS) from randomization was 9.2 and 8.9 months in the maintenance group and observation groups, respectively"
+29397354,,2018,third_or_later,,napabucasin,,safety population,grade3plus_ae_rate,15.0,percent,,,treatment-related diarrhoea,verified,diarrhoea (21 [15%] vs one [1%])
+29397354,,2018,third_or_later,,napabucasin,,overall,n_randomized,138.0,count,,,,verified,138 assigned to the napabucasin group
+29397354,,2018,third_or_later,,napabucasin,placebo,overall,os_hr,1.13,ratio,0.88,1.46,adjusted hazard ratio,verified,"adjusted hazard ratio [HR] 1·13, 95% CI 0·88-1·46, p=0·34"
+29397354,,2018,third_or_later,,napabucasin,placebo,pSTAT3-positive,os_hr,0.41,ratio,0.23,0.73,,verified,"HR 0·41, 0·23-0·73, p=0·0025"
+29397354,,2018,third_or_later,,napabucasin,,overall,os_median,4.4,months,3.7,4.9,,verified,median overall survival was 4·4 months (95% CI 3·7-4·9) in the napabucasin group
+29397354,,2018,third_or_later,,napabucasin,,pSTAT3-positive,os_median,5.1,months,4.0,7.5,,verified,median 5·1 months [95% CI 4·0-7·5]
+29397354,,2018,third_or_later,,placebo,,safety population,grade3plus_ae_rate,1.0,percent,,,treatment-related diarrhoea,verified,diarrhoea (21 [15%] vs one [1%])
+29397354,,2018,third_or_later,,placebo,,overall,n_randomized,144.0,count,,,,verified,144 to the placebo group
+29397354,,2018,third_or_later,,placebo,,overall,os_median,4.8,months,4.0,5.3,,verified,4·8 months (4·0-5·3) in the placebo group
+29397354,,2018,third_or_later,,placebo,,pSTAT3-positive,os_median,3.0,months,1.7,4.1,,verified,vs 3·0 months [1·7-4·1]
+29551560,,2018,maintenance,,arm A,,overall,grade3plus_ae_rate,28.0,percent,,,grade 3 to 4 treatment-related toxicities,verified,Grade 3 to 4 treatment-related toxicities were experienced by 7 patients (28%) in cohort A
+29551560,,2018,maintenance,,arm A,,overall,n_randomized,25.0,count,,,,verified,25 in arm A and 24 in arm B
+29551560,,2018,maintenance,,arm A,arm B,overall,os_hr,0.68,ratio,0.31,1.48,,verified,"hazard ratio, 0.68; 95% CI, 0.31-1.48"
+29551560,,2018,maintenance,,arm A,arm B,overall,os_median,27.61,months,,,,verified,Median overall survival was also longer in the axitinib arm but did not reach statistical significance (27.61 vs. 19.99 months
+29551560,,2018,maintenance,,arm A,arm B,overall,pfs_hr,0.46,ratio,0.25,0.86,,verified,"hazard ratio, 0.46; 95% CI, 0.25-0.86"
+29551560,,2018,maintenance,,arm A,arm B,overall,pfs_median,4.96,months,,,,verified,The median PFS was statistically significantly longer in the axitinib group than in the placebo group (4.96 vs. 3.16 months
+29551560,,2018,maintenance,,arm B,,overall,grade3plus_ae_rate,4.0,percent,,,grade 3 to 4 treatment-related toxicities,verified,1 patient (4%) in cohort B
+29551560,,2018,maintenance,,arm B,,overall,n_randomized,24.0,count,,,,verified,25 in arm A and 24 in arm B
+29551560,,2018,maintenance,,arm B,,overall,os_median,19.99,months,,,,verified,Median overall survival was also longer in the axitinib arm but did not reach statistical significance (27.61 vs. 19.99 months
+29551560,,2018,maintenance,,arm B,,overall,pfs_median,3.16,months,,,,verified,The median PFS was statistically significantly longer in the axitinib group than in the placebo group (4.96 vs. 3.16 months
+29555258,AXEPT,2018,second,,FOLFIRI with or without bevacizumab,,per-protocol safety population,grade3plus_ae_rate,43.0,percent,,,neutropenia,verified,133 [43%] of 310 in the FOLFIRI group
+29555258,AXEPT,2018,second,,FOLFIRI with or without bevacizumab,,per-protocol safety population,grade3plus_ae_rate,3.0,percent,,,diarrhoea,verified,than in the FOLFIRI group (ten [3%])
+29555258,AXEPT,2018,second,,FOLFIRI with or without bevacizumab,,overall,n_randomized,324.0,count,,,,verified,FOLFIRI with or without bevacizumab (n=324)
+29555258,AXEPT,2018,second,,FOLFIRI with or without bevacizumab,,overall,os_median,15.4,months,13.0,17.7,,verified,15·4 months (13·0-17·7) in the FOLFIRI group
+29555258,AXEPT,2018,second,,mXELIRI with or without bevacizumab,,per-protocol safety population,grade3plus_ae_rate,17.0,percent,,,neutropenia,verified,neutropenia (affecting 52 [17%] of 310 patients in the mXELIRI group
+29555258,AXEPT,2018,second,,mXELIRI with or without bevacizumab,,per-protocol safety population,grade3plus_ae_rate,7.0,percent,,,diarrhoea,verified,Incidences of grade 3-4 diarrhoea were higher in the mXELIRI group (22 [7%])
+29555258,AXEPT,2018,second,,mXELIRI with or without bevacizumab,,overall,n_randomized,326.0,count,,,,verified,mXELIRI with or without bevacizumab (n=326)
+29555258,AXEPT,2018,second,,mXELIRI with or without bevacizumab,FOLFIRI with or without bevacizumab,overall,os_hr,0.85,ratio,0.71,1.02,,verified,"HR 0·85, 95% CI 0·71-1·02"
+29555258,AXEPT,2018,second,,mXELIRI with or without bevacizumab,,overall,os_median,16.8,months,15.3,19.1,,verified,the median overall survival was 16·8 months (95% CI 15·3-19·1) in the mXELIRI group
+29653857,IND.210,2018,first,,FOLFOX/BEV,,overall,n_randomized,52.0,count,,,patients randomized to control arm,verified,or without (n = 52) pelareorep
+29653857,IND.210,2018,first,,FOLFOX/BEV,,overall,os_median,20.1,months,,,median overall survival,verified,"no statistical difference in OS (median, 19.2 vs. 20.1 months"
+29653857,IND.210,2018,first,,FOLFOX/BEV,,overall,other_time_median,9.0,months,,,median duration of response,verified,with a shorter median duration of response (5 vs. 9 months; P = .028)
+29653857,IND.210,2018,first,,FOLFOX/BEV,,overall,pfs_median,9.0,months,,,median progression-free survival,verified,PFS was inferior in the pelareorep arm (median 7 vs. 9 months
+29653857,IND.210,2018,first,,FOLFOX/BEV + pelareorep,FOLFOX/BEV,overall,n_randomized,51.0,count,,,patients randomized to pelareorep arm,verified,103 patients with metastatic CRC were randomly assigned to standard first-line leucovorin/5-FU/oxaliplatin (FOLFOX6)/bevacizumab (FOLFOX/BEV) every 2 weeks with (n = 51)
+29653857,IND.210,2018,first,,FOLFOX/BEV + pelareorep,FOLFOX/BEV,overall,os_hr,1.22,ratio,,,hazard ratio for OS,verified,"HR, 1.22; P = .38"
+29653857,IND.210,2018,first,,FOLFOX/BEV + pelareorep,FOLFOX/BEV,overall,os_median,19.2,months,,,median overall survival,verified,"no statistical difference in OS (median, 19.2 vs. 20.1 months"
+29653857,IND.210,2018,first,,FOLFOX/BEV + pelareorep,FOLFOX/BEV,overall,other_time_median,5.0,months,,,median duration of response,verified,with a shorter median duration of response (5 vs. 9 months; P = .028)
+29653857,IND.210,2018,first,,FOLFOX/BEV + pelareorep,FOLFOX/BEV,overall,pfs_hr,1.59,ratio,1.18,2.15,"hazard ratio for PFS, pelareorep vs control",verified,"hazard ratio [HR], 1.59 [80% confidence interval (CI), 1.18-2.15]"
+29653857,IND.210,2018,first,,FOLFOX/BEV + pelareorep,FOLFOX/BEV,overall,pfs_median,7.0,months,,,median progression-free survival,verified,PFS was inferior in the pelareorep arm (median 7 vs. 9 months
+29905927,,2018,second,,placebo-FOLFIRI,,overall,n_randomized,61.0,count,,,,verified,120 to regorafenib-FOLFIRI and 61 to placebo-FOLFIRI
+29905927,,2018,second,,placebo-FOLFIRI,,overall,orr,21.0,percent,11.0,33.0,,verified,"than placebo-FOLFIRI (21%; 95% CI, 11%-33%; P = .07)"
+29905927,,2018,second,,placebo-FOLFIRI,,overall,pfs_median,5.3,months,,,,verified,"median, 6.1 vs 5.3 months"
+29905927,,2018,second,,regorafenib-FOLFIRI,,overall,n_randomized,120.0,count,,,,verified,120 to regorafenib-FOLFIRI and 61 to placebo-FOLFIRI
+29905927,,2018,second,,regorafenib-FOLFIRI,,overall,orr,34.0,percent,25.0,44.0,,verified,"The response rate was higher with regorafenib-FOLFIRI (34%; 95% CI, 25%-44%)"
+29905927,,2018,second,,regorafenib-FOLFIRI,placebo-FOLFIRI,overall,os_hr,1.01,ratio,0.71,1.44,,verified,"HR, 1.01; 95% CI, 0.71-1.44"
+29905927,,2018,second,,regorafenib-FOLFIRI,placebo-FOLFIRI,overall,pfs_hr,0.73,ratio,0.53,1.01,,verified,"HR, 0.73; 95% confidence interval [CI], 0.53-1.01"
+29905927,,2018,second,,regorafenib-FOLFIRI,,overall,pfs_median,6.1,months,,,,verified,"median, 6.1 vs 5.3 months"
+29946728,FRESCO,2018,third_or_later,,fruquintinib,,overall,grade3plus_ae_rate,61.2,percent,,,grade 3 or worse treatment-emergent adverse events,verified,Grades 3 and 4 treatment-emergent adverse events occurred in 61.2% (170) of patients who received fruquintinib
+29946728,FRESCO,2018,third_or_later,,fruquintinib,,overall,n_randomized,278.0,count,,,,verified,"fruquintinib, 5 mg (n = 278)"
+29946728,FRESCO,2018,third_or_later,,fruquintinib,placebo,overall,os_hr,0.65,ratio,0.51,0.83,,verified,"hazard ratio (HR) for death, 0.65 (95% CI, 0.51-0.83; P < .001)"
+29946728,FRESCO,2018,third_or_later,,fruquintinib,,overall,os_median,9.3,months,8.2,10.5,,verified,"9.3 months [95% CI, 8.2-10.5]"
+29946728,FRESCO,2018,third_or_later,,fruquintinib,placebo,overall,pfs_hr,0.26,ratio,0.21,0.34,,verified,"HR for progression or death, 0.26 (95% CI, 0.21 to 0.34; P < .001)"
+29946728,FRESCO,2018,third_or_later,,fruquintinib,,overall,pfs_median,3.7,months,3.7,4.6,,verified,"3.7 months [95% CI, 3.7-4.6]"
+29946728,FRESCO,2018,third_or_later,,placebo,,overall,grade3plus_ae_rate,19.7,percent,,,grade 3 or worse treatment-emergent adverse events,verified,19.7% (27) who received placebo
+29946728,FRESCO,2018,third_or_later,,placebo,,overall,n_randomized,138.0,count,,,,verified,placebo (n = 138)
+29946728,FRESCO,2018,third_or_later,,placebo,,overall,os_median,6.6,months,5.9,8.1,,verified,"6.6 months [95% CI, 5.9-8.1]"
+29946728,FRESCO,2018,third_or_later,,placebo,,overall,pfs_median,1.8,months,1.8,1.8,,verified,"1.8 months [95% CI, 1.8-1.8] months"
+30010751,LUME-Colon 1,2018,third_or_later,,nintedanib,,overall,grade3plus_ae_rate,16.0,percent,,,liver-related adverse events,verified,liver-related AEs (nintedanib 16%; placebo 8%)
+30010751,LUME-Colon 1,2018,third_or_later,,nintedanib,,overall,grade3plus_ae_rate,9.0,percent,,,fatigue,verified,fatigue (nintedanib 9%; placebo 6%)
+30010751,LUME-Colon 1,2018,third_or_later,,nintedanib,placebo,overall,os_hr,1.01,ratio,0.86,1.19,,verified,"hazard ratio (HR), 1.01; 95% confidence interval (CI), 0.86-1.19"
+30010751,LUME-Colon 1,2018,third_or_later,,nintedanib,placebo,overall,os_median,6.4,months,,,,verified,median OS 6.4 months with nintedanib versus 6.0 months with placebo
+30010751,LUME-Colon 1,2018,third_or_later,,nintedanib,placebo,overall,pfs_hr,0.58,ratio,0.49,0.69,,verified,HR 0.58; 95% CI 0.49-0.69
+30010751,LUME-Colon 1,2018,third_or_later,,nintedanib,,overall,pfs_median,1.5,months,,,,verified,"median PFS 1.5 versus 1.4 months, respectively"
+30010751,LUME-Colon 1,2018,third_or_later,,placebo,,overall,grade3plus_ae_rate,8.0,percent,,,liver-related adverse events,verified,liver-related AEs (nintedanib 16%; placebo 8%)
+30010751,LUME-Colon 1,2018,third_or_later,,placebo,,overall,grade3plus_ae_rate,6.0,percent,,,fatigue,verified,fatigue (nintedanib 9%; placebo 6%)
+30010751,LUME-Colon 1,2018,third_or_later,,placebo,,overall,os_median,6.0,months,,,,verified,median OS 6.4 months with nintedanib versus 6.0 months with placebo
+30010751,LUME-Colon 1,2018,third_or_later,,placebo,,overall,pfs_median,1.4,months,,,,verified,"median PFS 1.5 versus 1.4 months, respectively"
+30049885,CCOG-1201,2018,first,,CapIRI/BEV,,overall,grade3plus_ae_rate,25.0,percent,,,hematological adverse events,verified,"and 25% and 23% in the CapIRI/BEV arm, respectively"
+30049885,CCOG-1201,2018,first,,CapIRI/BEV,,overall,grade3plus_ae_rate,23.0,percent,,,nonhematological adverse events,verified,"and 25% and 23% in the CapIRI/BEV arm, respectively"
+30049885,CCOG-1201,2018,first,,CapIRI/BEV,,overall,n_randomized,53.0,count,,,intent-to-treat population,verified,and 53 patients in the CapIRI/BEV arm
+30049885,CCOG-1201,2018,first,,CapIRI/BEV,,overall,orr,55.0,percent,,,,verified,and 55% in the CapIRI/BEV arm
+30049885,CCOG-1201,2018,first,,CapIRI/BEV,,overall,os_median,28.7,months,,,,verified,and 11.5 and 28.7 months in the CapIRI/BEV arm
+30049885,CCOG-1201,2018,first,,CapIRI/BEV,,overall,pfs_median,11.5,months,,,,verified,and 11.5 and 28.7 months in the CapIRI/BEV arm
+30049885,CCOG-1201,2018,first,,CapOX/BEV,,overall,grade3plus_ae_rate,13.0,percent,,,hematological adverse events,verified,The frequencies of hematological and nonhematological adverse events above grade 3 were 13% and 30% in the CapOX/BEV arm
+30049885,CCOG-1201,2018,first,,CapOX/BEV,,overall,grade3plus_ae_rate,30.0,percent,,,nonhematological adverse events,verified,The frequencies of hematological and nonhematological adverse events above grade 3 were 13% and 30% in the CapOX/BEV arm
+30049885,CCOG-1201,2018,first,,CapOX/BEV,,overall,n_randomized,54.0,count,,,intent-to-treat population,verified,The intent-to-treat population comprised 54 patients in the CapOX/BEV arm
+30049885,CCOG-1201,2018,first,,CapOX/BEV,,overall,orr,56.0,percent,,,,verified,ORR was 56% in the CapOX/BEV arm
+30049885,CCOG-1201,2018,first,,CapOX/BEV,,overall,os_median,26.7,months,,,,verified,Median PFS and OS were 12.4 and 26.7 months in the CapOX/BEV arm
+30049885,CCOG-1201,2018,first,,CapOX/BEV,,overall,pfs_median,12.4,months,,,,verified,Median PFS and OS were 12.4 and 26.7 months in the CapOX/BEV arm
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-A,,overall,grade3plus_ae_rate,70.0,percent,,,any grade 3 or worse adverse event,verified,Arm-A/Arm-B grade ≥III AEs: 70%/68%
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-A,,overall,grade3plus_ae_rate,28.0,percent,,,neutropenia,verified,neutropenia (Arm-A/Arm-B: 28%/26%)
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-A,,overall,grade3plus_ae_rate,15.0,percent,,,rash acneiform,verified,rash acneiform (15%/24%)
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-A,,overall,grade3plus_ae_rate,2.0,percent,,,sensory neuropathy,verified,sensory neuropathy (2%/15%)
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-A,,overall,n_randomized,129.0,count,,,,verified,129 Arm-A versus 64 Arm-B
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-A,,overall,orr,48.0,percent,39.0,57.0,,verified,"48 [39, 57]%/39 [27, 52]%"
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-A,Arm-B,overall,os_hr,1.24,ratio,0.85,1.79,,verified,"HR = 1.24 [0.85, 1.79]"
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-A,,overall,os_median,23.0,months,19.0,28.0,,verified,"23 [19, 28] months/27 [18, 36] months"
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-A,Arm-B,overall,pfs_hr,1.19,ratio,0.8,1.79,,verified,"hazard ratio [HR] = 1.19 [0.80, 1.79]"
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-A,,overall,pfs_median,9.0,months,7.0,10.0,,verified,"9 [95% CI 7, 10] months/10 [7,13] months"
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-B,,overall,grade3plus_ae_rate,68.0,percent,,,any grade 3 or worse adverse event,verified,Arm-A/Arm-B grade ≥III AEs: 70%/68%
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-B,,overall,grade3plus_ae_rate,26.0,percent,,,neutropenia,verified,neutropenia (Arm-A/Arm-B: 28%/26%)
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-B,,overall,grade3plus_ae_rate,24.0,percent,,,rash acneiform,verified,rash acneiform (15%/24%)
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-B,,overall,grade3plus_ae_rate,15.0,percent,,,sensory neuropathy,verified,sensory neuropathy (2%/15%)
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-B,,overall,n_randomized,64.0,count,,,,verified,129 Arm-A versus 64 Arm-B
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-B,,overall,orr,39.0,percent,27.0,52.0,,verified,"48 [39, 57]%/39 [27, 52]%"
+30054049,MACRO2,2018,first,KRAS wild-type,Arm-B,,overall,os_median,27.0,months,18.0,36.0,,verified,"23 [19, 28] months/27 [18, 36] months"
+30117334,,2018,second,,aflibercept plus FOLFIRI,placebo plus FOLFIRI,overall,pfs_hr,0.629,ratio,0.488,0.812,,verified,hazard ratio: 0.629; 95% CI: 0.488-0.812
+30262136,BEVZ92,2018,first,,BEVZ92,,overall,n_randomized,71.0,count,,,,verified,"142 patients were randomly assigned, 71 to the BEVZ92 group"
+30262136,BEVZ92,2018,first,,reference bevacizumab,,overall,n_randomized,71.0,count,,,,verified,71 to the reference bevacizumab group
+30463680,ICECREAM,2018,third_or_later,"KRAS, NRAS, BRAF and PIK3CA exon 20 wild-type",Cetuximab monotherapy,,overall,grade3plus_ae_rate,23.0,percent,,,grade 3 to 4 toxicities,verified,Grade 3 to 4 toxicities were less with cetuximab monotherapy (23% vs. 50%)
+30463680,ICECREAM,2018,third_or_later,"KRAS, NRAS, BRAF and PIK3CA exon 20 wild-type",Cetuximab monotherapy,,overall,orr,10.0,percent,,,response rate (2 partial responses),verified,"response rate was 10% (2 partial responses) versus 38% (1 complete, 8 partial)"
+30463680,ICECREAM,2018,third_or_later,"KRAS, NRAS, BRAF and PIK3CA exon 20 wild-type",Cetuximab monotherapy,Cetuximab plus irinotecan,overall,pfs_hr,0.39,ratio,0.2,0.78,hazard ratio for progression-free survival,verified,"progression-free survival was 14% versus 41% (hazard ratio, 0.39; 95% confidence interval, 0.20-0.78; P = .008)"
+30463680,ICECREAM,2018,third_or_later,"KRAS, NRAS, BRAF and PIK3CA exon 20 wild-type",Cetuximab plus irinotecan,,overall,grade3plus_ae_rate,50.0,percent,,,grade 3 to 4 toxicities,verified,Grade 3 to 4 toxicities were less with cetuximab monotherapy (23% vs. 50%)
+30463680,ICECREAM,2018,third_or_later,"KRAS, NRAS, BRAF and PIK3CA exon 20 wild-type",Cetuximab plus irinotecan,,overall,orr,38.0,percent,,,"response rate (1 complete, 8 partial)",verified,"response rate was 10% (2 partial responses) versus 38% (1 complete, 8 partial)"
+28632865,CALGB/SWOG 80405,2017,first,KRAS wild-type,Bevacizumab,,overall,n_randomized,559.0,count,,,,verified,or bevacizumab (n = 559)
+28632865,CALGB/SWOG 80405,2017,first,KRAS wild-type,Bevacizumab,,overall,orr,55.2,percent,,,site-reported objective response rate,verified,"Response rates were not significantly different, 59.6% vs 55.2% for cetuximab and bevacizumab, respectively"
+28632865,CALGB/SWOG 80405,2017,first,KRAS wild-type,Bevacizumab,,overall,os_median,29.0,months,,,,verified,and 29.0 months in the bevacizumab-chemotherapy group
+28632865,CALGB/SWOG 80405,2017,first,KRAS wild-type,Bevacizumab,,overall,pfs_median,10.6,months,,,,verified,and 10.6 months in the bevacizumab-chemotherapy group
+28632865,CALGB/SWOG 80405,2017,first,KRAS wild-type,Cetuximab,,overall,n_randomized,578.0,count,,,,verified,were randomized to receive either cetuximab (n = 578)
+28632865,CALGB/SWOG 80405,2017,first,KRAS wild-type,Cetuximab,,overall,orr,59.6,percent,,,site-reported objective response rate,verified,"Response rates were not significantly different, 59.6% vs 55.2% for cetuximab and bevacizumab, respectively"
+28632865,CALGB/SWOG 80405,2017,first,KRAS wild-type,Cetuximab,Bevacizumab,overall,os_hr,0.88,ratio,0.77,1.01,stratified hazard ratio for overall survival,verified,"with a stratified hazard ratio (HR) of 0.88 (95% CI, 0.77-1.01; P = .08)"
+28632865,CALGB/SWOG 80405,2017,first,KRAS wild-type,Cetuximab,,overall,os_median,30.0,months,,,,verified,The median overall survival was 30.0 months in the cetuximab-chemotherapy group
+28632865,CALGB/SWOG 80405,2017,first,KRAS wild-type,Cetuximab,,overall,pfs_median,10.5,months,,,,verified,The median progression-free survival was 10.5 months in the cetuximab-chemotherapy group
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFIRI,,overall,grade3plus_ae_rate,10.0,percent,,,neutropenia,verified,higher grade 3/4 neutropenia (40%/10%; p = 0.003)
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFIRI,,overall,grade3plus_ae_rate,0.0,percent,,,neuropathy,verified,neuropathy (13%/0%; p = 0.025)
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFIRI,,overall,orr,67.0,percent,,,,verified,67% with Pmab-FOLFIRI
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFIRI,,WT-RAS,orr,73.0,percent,,,,verified,(WT-RAS: 78%/73%)
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFIRI,Pmab-FOLFOX4,overall,os_hr,1.0,ratio,0.6,1.8,,verified,HR:1.0 [0.6-1.8]
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFIRI,Pmab-FOLFOX4,WT-RAS,os_hr,0.9,ratio,0.4,1.9,,verified,HR:0.9 [0.4-1.9]
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFIRI,,overall,os_median,41.0,months,,,,verified,Median OS was 37/41 months
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFIRI,,WT-RAS,os_median,49.0,months,,,,verified,WT-RAS: 39/49
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFIRI,Pmab-FOLFOX4,overall,pfs_hr,0.9,ratio,0.6,1.5,,verified,hazard ratio [HR] Pmab-FOLFIRI versus Pmab-FOLFOX4: 0.9; 95% confidence interval: [0.6-1.5]
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFIRI,Pmab-FOLFOX4,WT-RAS,pfs_hr,0.7,ratio,0.4,1.3,,verified,HR: 0.7 [0.4-1.3]
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFIRI,,overall,pfs_median,14.0,months,,,,verified,Median PFS was 13/14 months
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFIRI,,WT-RAS,pfs_median,15.0,months,,,,verified,WT-RAS:13/15
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFOX4,,overall,grade3plus_ae_rate,40.0,percent,,,neutropenia,verified,higher grade 3/4 neutropenia (40%/10%; p = 0.003)
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFOX4,,overall,grade3plus_ae_rate,13.0,percent,,,neuropathy,verified,neuropathy (13%/0%; p = 0.025)
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFOX4,,overall,orr,74.0,percent,,,,verified,ORR was 74% with Pmab-FOLFOX4
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFOX4,,WT-RAS,orr,78.0,percent,,,,verified,(WT-RAS: 78%/73%)
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFOX4,,overall,os_median,37.0,months,,,,verified,Median OS was 37/41 months
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFOX4,,WT-RAS,os_median,39.0,months,,,,verified,WT-RAS: 39/49
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFOX4,,overall,pfs_median,13.0,months,,,,verified,Median PFS was 13/14 months
+28633089,PLANET-TTD,2017,first,KRAS wild-type,Pmab-FOLFOX4,,WT-RAS,pfs_median,13.0,months,,,,verified,WT-RAS:13/15; HR: 0.7 [0.4-1.3]
+28735067,Italian Group for the Study of Gastrointestinal Cancer phase III trial,2017,mixed,RAS wild type,A,,overall,n_randomized,54.0,count,,,,verified,About 54 and 56 patients were randomised in arm A and in arm B
+28735067,Italian Group for the Study of Gastrointestinal Cancer phase III trial,2017,mixed,RAS wild type,A,B,overall,os_hr,0.84,ratio,0.55,1.28,,verified,"HR 0.84, 95% CI: 0.55-1.28; p = 0.411"
+28735067,Italian Group for the Study of Gastrointestinal Cancer phase III trial,2017,mixed,RAS wild type,A,,overall,os_median,12.3,months,,,,verified,median overall survival was 12.3 months in arm A and 18.6 months in arm B
+28735067,Italian Group for the Study of Gastrointestinal Cancer phase III trial,2017,mixed,RAS wild type,A,B,overall,pfs_hr,1.04,ratio,0.69,1.56,,verified,"Hazard ratio [HR] 1.04, 95% confidence interval [CI]: 0.69-1.56, p = 0.854"
+28735067,Italian Group for the Study of Gastrointestinal Cancer phase III trial,2017,mixed,RAS wild type,A,,overall,pfs_median,9.9,months,,,,verified,Median PFS was 9.9 months in arm A and 11.3 months in arm B
+28735067,Italian Group for the Study of Gastrointestinal Cancer phase III trial,2017,mixed,RAS wild type,B,,overall,n_randomized,56.0,count,,,,verified,About 54 and 56 patients were randomised in arm A and in arm B
+28735067,Italian Group for the Study of Gastrointestinal Cancer phase III trial,2017,mixed,RAS wild type,B,,overall,os_median,18.6,months,,,,verified,median overall survival was 12.3 months in arm A and 18.6 months in arm B
+28735067,Italian Group for the Study of Gastrointestinal Cancer phase III trial,2017,mixed,RAS wild type,B,,overall,pfs_median,11.3,months,,,,verified,Median PFS was 9.9 months in arm A and 11.3 months in arm B
+28880972,MVA-5T4,2017,maintenance,,MVA-5T4 only,,overall,n_randomized,19.0,count,,,,verified,MVA-5T4 only (n = 19)
+28880972,MVA-5T4,2017,maintenance,,MVA-5T4 plus cyclophosphamide,,overall,n_randomized,18.0,count,,,,verified,a combination of MVA-5T4 and cyclophosphamide (n = 18)
+28880972,MVA-5T4,2017,maintenance,,cyclophosphamide only,,overall,n_randomized,9.0,count,,,,verified,cyclophosphamide treatment only (n = 9)
+28880972,MVA-5T4,2017,maintenance,,watch and wait,,overall,n_randomized,9.0,count,,,,verified,watch and wait (n = 9)
+28979818,,2017,second,,BV + FOLFOX4,,overall,dcr,32.2,percent,,,combined partial response and stable disease rate,verified,than 32.2% for BV + FOLFOX4 group
+28979818,,2017,second,,BV + FOLFOX4,,overall,n_randomized,65.0,count,,,,verified,and 65 received BV + FOLFOX4
+28979818,,2017,second,,BV + FOLFOX4,,overall,os_median,12.1,months,,,,verified,than 12.1 months for BV + FOLFOX4 group
+28979818,,2017,second,,BV + FOLFOX4,,overall,pfs_median,6.9,months,,,,verified,than 6.9 months of BV + FOLFOX4 group
+28979818,,2017,second,,ER + BV + FOLFOX4,,overall,dcr,48.5,percent,,,combined partial response and stable disease rate,verified,Combined partial response and stable disease rate was 48.5% for ER + BV + FOLFOX4 group
+28979818,,2017,second,,ER + BV + FOLFOX4,,overall,n_randomized,66.0,count,,,,verified,66 patients received 2nd-line treatment of ER + BV+ FOLFOX4
+28979818,,2017,second,,ER + BV + FOLFOX4,BV + FOLFOX4,overall,os_hr,0.63,ratio,0.34,1.02,,verified,"HR = 0.63, 95% CI = 0.34-1.02"
+28979818,,2017,second,,ER + BV + FOLFOX4,,overall,os_median,12.5,months,,,,verified,Medium OS for ER + BV + FOLFOX4 group was 12.5 months
+28979818,,2017,second,,ER + BV + FOLFOX4,BV + FOLFOX4,overall,pfs_hr,1.15,ratio,0.88,1.39,,verified,"HR = 1.15, 95% CI = 0.88-1.39"
+28979818,,2017,second,,ER + BV + FOLFOX4,BV + FOLFOX4,overall,pfs_median,9.6,months,,,,verified,Median PFS was 9.6 months of ER + BV + FOLFOX4 group
+29043412,,2017,second,KRAS-mutant,EP,,overall,grade3plus_ae_rate,21.0,percent,,,diarrhea,verified,diarrhea (21 vs 20%)
+29043412,,2017,second,KRAS-mutant,EP,,overall,grade3plus_ae_rate,10.0,percent,,,neutropenia,verified,neutropenia (10 vs 22%)
+29043412,,2017,second,KRAS-mutant,EP,,overall,orr,10.0,percent,,,,verified,"ORRs were 10 and 5%, respectively (P = 0.676)"
+29043412,,2017,second,KRAS-mutant,EP,irinotecan,overall,os_hr,0.91,ratio,0.56,1.49,,verified,HR 0.91; 95% CI 0.56-1.49
+29043412,,2017,second,KRAS-mutant,EP,,overall,os_median,9.6,months,,,,verified,Median OS was 9.6 and 8.4 months in EP and irinotecan arms
+29043412,,2017,second,KRAS-mutant,EP,,overall,other_time_median,7.9,months,,,duration of response (DOR),verified,median DOR was significantly longer in EP arm (7.9 versus 1.4 months; P = 0.018)
+29043412,,2017,second,KRAS-mutant,EP,irinotecan,overall,pfs_hr,0.65,ratio,0.4,1.04,,verified,HR 0.65; 95% CI 0.40-1.04; P = 0.07
+29043412,,2017,second,KRAS-mutant,EP,,overall,pfs_median,4.0,months,,,,verified,"Median PFS was longer with EP versus irinotecan (4.0 versus 2.8 months, respectively"
+29043412,,2017,second,KRAS-mutant,irinotecan,,overall,grade3plus_ae_rate,20.0,percent,,,diarrhea,verified,diarrhea (21 vs 20%)
+29043412,,2017,second,KRAS-mutant,irinotecan,,overall,grade3plus_ae_rate,22.0,percent,,,neutropenia,verified,neutropenia (10 vs 22%)
+29043412,,2017,second,KRAS-mutant,irinotecan,,overall,orr,5.0,percent,,,,verified,"ORRs were 10 and 5%, respectively (P = 0.676)"
+29043412,,2017,second,KRAS-mutant,irinotecan,,overall,os_median,8.4,months,,,,verified,Median OS was 9.6 and 8.4 months in EP and irinotecan arms
+29043412,,2017,second,KRAS-mutant,irinotecan,,overall,other_time_median,1.4,months,,,duration of response (DOR),verified,median DOR was significantly longer in EP arm (7.9 versus 1.4 months; P = 0.018)
+29043412,,2017,second,KRAS-mutant,irinotecan,,overall,pfs_median,2.8,months,,,,verified,"Median PFS was longer with EP versus irinotecan (4.0 versus 2.8 months, respectively"
+29273089,,2017,third_or_later,,famitinib,,overall,dcr,59.8,percent,,,,verified,The DCR was 59.8% and 31.4% (P = 0.002)
+29273089,,2017,third_or_later,,famitinib,,overall,grade3plus_ae_rate,11.1,percent,,,hypertension,verified,hypertension (11.1%)
+29273089,,2017,third_or_later,,famitinib,,overall,grade3plus_ae_rate,10.1,percent,,,hand-foot syndrome,verified,hand-foot syndrome (10.1%)
+29273089,,2017,third_or_later,,famitinib,,overall,grade3plus_ae_rate,10.1,percent,,,thrombocytopenia,verified,thrombocytopenia (10.1%)
+29273089,,2017,third_or_later,,famitinib,,overall,grade3plus_ae_rate,9.1,percent,,,neutropenia,verified,neutropenia (9.1%)
+29273089,,2017,third_or_later,,famitinib,,overall,n_randomized,99.0,count,,,,verified,randomized in a 2:1 ratio to receive either famitinib (n = 99)
+29273089,,2017,third_or_later,,famitinib,,overall,orr,2.2,percent,,,,verified,the ORR was 2.2% and 0.0% (P = 0.540)
+29273089,,2017,third_or_later,,famitinib,placebo,overall,os_median,7.4,months,,,,verified,The median OS of the famitinib and placebo groups was 7.4 and 7.2 months (P = 0.657)
+29273089,,2017,third_or_later,,famitinib,placebo,overall,pfs_hr,0.6,ratio,0.41,0.86,,verified,"hazard ratio = 0.60, 95% confidence interval = 0.41-0.86"
+29273089,,2017,third_or_later,,famitinib,placebo,overall,pfs_median,2.8,months,,,,verified,The median PFS was 2.8 and 1.5 months in the famitinib and placebo groups
+29273089,,2017,third_or_later,,placebo,,overall,dcr,31.4,percent,,,,verified,The DCR was 59.8% and 31.4% (P = 0.002)
+29273089,,2017,third_or_later,,placebo,,overall,n_randomized,55.0,count,,,,verified,or placebo (n = 55)
+29273089,,2017,third_or_later,,placebo,,overall,orr,0.0,percent,,,,verified,the ORR was 2.2% and 0.0% (P = 0.540)
+29273089,,2017,third_or_later,,placebo,,overall,os_median,7.2,months,,,,verified,The median OS of the famitinib and placebo groups was 7.4 and 7.2 months (P = 0.657)
+29273089,,2017,third_or_later,,placebo,,overall,pfs_median,1.5,months,,,,verified,The median PFS was 2.8 and 1.5 months in the famitinib and placebo groups
+29798953,BevaciRel,2017,unclear,,reference bevacizumab,,overall,orr,66.67,percent,,,ORR at week 25,verified,and 66.67% in reference arm
+29798953,BevaciRel,2017,unclear,,reference bevacizumab,,overall,pfs_median,4.6,months,,,median PFS at 1 year,verified,and 4.6 months in reference arm
+29798953,BevaciRel,2017,unclear,,study bevacizumab (BevaciRel),,overall,orr,60.53,percent,,,ORR at week 25,verified,The ORR was 60.53% in study bevacizumab
+29798953,BevaciRel,2017,unclear,,study bevacizumab (BevaciRel),,overall,pfs_median,3.83,months,,,median PFS at 1 year,verified,The median PFS at 1 year was 3.83 months in test arm
