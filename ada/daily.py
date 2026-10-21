@@ -20,6 +20,8 @@ HELD_BECAUSE = {
     "plausible": "the value was implausible",
     "ci_brackets_value": "the interval did not contain the value",
     "standard_endpoint": "it described a non-standard endpoint",
+    "unit_fits": "its unit did not fit the measure",
+    "consistent": "it contradicted the trial's other numbers",
 }
 
 

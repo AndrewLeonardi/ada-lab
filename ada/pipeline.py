@@ -13,8 +13,8 @@ import time
 
 import yaml
 
-from . import db, sources
-from .extract import extract_paper
+from . import db, nightshift, sources
+from .extract import extract_paper, record as record_extraction, request as extraction_request
 from .llm import Budget, BudgetExceeded, Claude, Refused
 from .screen import screen_paper
 from .verify import verify_paper
@@ -97,11 +97,8 @@ def screen_batch(con, claude: Claude, model: str, n: int = 25) -> int:
 
 
 # ------------------------------------------------------------------ stage 2+3: extraction and verification
-def extract_one(con, claude: Claude, models: list[str], pmid: str) -> dict | None:
-    row = con.execute("SELECT * FROM papers WHERE pmid=?", (pmid,)).fetchone()
-    if not row:
-        return None
-    p = _paper(row)
+def _announce(con, p: dict):
+    pmid = p["pmid"]
     short = p["title"] if len(p["title"]) < 90 else p["title"][:87] + "..."
     act(con, "desk", "read_screen", "focused", f"Extracting outcomes: PMID {pmid}", f"Reading: {short}")
     db.emit(con, {"type": "screen", "screen": "computer", "content": {
@@ -109,8 +106,10 @@ def extract_one(con, claude: Claude, models: list[str], pmid: str) -> dict | Non
         "authors": p["authors"] or "", "journal": f"{p['journal']} {p['year']} - PMID {pmid}",
         "body": "Extracting arm-level outcomes. Every number must come with the exact sentence it was taken from; "
                 "a second, independent pass must agree before a number counts as verified."}})
-    r1 = extract_paper(con, claude, models[0], p, 1)
-    r2 = extract_paper(con, claude, models[1], p, 2)
+
+
+def _verify_and_report(con, p: dict, r1: dict, r2: dict) -> dict:
+    pmid = p["pmid"]
     counts = verify_paper(con, p, r1, r2)
     t = r1["trial"]
     name = t.get("acronym") or f"PMID {pmid}"
@@ -127,13 +126,91 @@ def extract_one(con, claude: Claude, models: list[str], pmid: str) -> dict | Non
     return counts
 
 
-def extract_batch(con, claude: Claude, models: list[str], n: int = 5) -> int:
+def extract_one(con, claude: Claude, models: list[str], pmid: str) -> dict | None:
+    """Extract one paper now, at full price (the benchmark, and papers a batch could not do)."""
+    row = con.execute("SELECT * FROM papers WHERE pmid=?", (pmid,)).fetchone()
+    if not row:
+        return None
+    p = _paper(row)
+    _announce(con, p)
+    r1 = extract_paper(con, claude, models[0], p, 1)
+    r2 = extract_paper(con, claude, models[1], p, 2)
+    return _verify_and_report(con, p, r1, r2)
+
+
+# Papers are read in half-price batches (Message Batches API). One batch at a time keeps spending in step
+# with the daily cap; the estimate per paper is her measured cost (both passes) at half price, plus a margin.
+BATCH_SIZE = 40
+BATCH_EST_USD = 0.0176 * 0.5 * 1.25
+BATCH_POLL_SECONDS = 60
+_last_poll = [0.0]
+
+
+def pending_batch(con):
+    return con.execute("SELECT * FROM batches WHERE status='submitted' ORDER BY submitted_at LIMIT 1").fetchone()
+
+
+def extract_step(con, claude: Claude, models: list[str], collect_only: bool = False) -> int:
+    """Collect a finished batch, or (unless collect_only) send the next one. Returns papers sent or verified."""
+    b = pending_batch(con)
+    if b:
+        if time.time() - _last_poll[0] < BATCH_POLL_SECONDS and not claude.mock:
+            return 0
+        _last_poll[0] = time.time()
+        if not claude.batch_done(b["id"]):
+            return 0
+        pmids = json.loads(b["items"])
+        stages = {f"{pm}-{k}": (f"extract{k}", models[k - 1]) for pm in pmids for k in (1, 2)}
+        results = claude.batch_results(b["id"], stages)
+        act(con, "desk", "read_screen", "excited", f"Batch back: {len(pmids)} papers to verify",
+            "The reading service is done. Checking every number against its source.")
+        done = usd = 0
+        for pmid in pmids:
+            row = con.execute("SELECT * FROM papers WHERE pmid=?", (pmid,)).fetchone()
+            r1, r2 = results.get(f"{pmid}-1"), results.get(f"{pmid}-2")
+            if not row or con.execute("SELECT 1 FROM extractions WHERE pmid=?", (pmid,)).fetchone():
+                continue
+            p = _paper(row)
+            if r1 is None or r2 is None:
+                try:  # retry directly once, at full price; if that fails too, it waits for the auditor
+                    extract_one(con, claude, models, pmid)
+                except BudgetExceeded:
+                    pass  # no budget left today: it goes into a later batch
+                except (Refused, RuntimeError, ValueError) as e:
+                    con.execute("INSERT INTO extractions(pmid, pass, model, prompt_version, result, usd, at) "
+                                "VALUES(?,?,?,?,?,?,?)", (pmid, 0, models[0], "failed", json.dumps({"error": str(e)[:300]}),
+                                                          0.0, time.time()))
+                    con.commit()
+                continue
+            for k, (res, cost) in ((1, r1), (2, r2)):
+                record_extraction(con, pmid, k, models[k - 1], res, cost)
+                usd += cost
+            _announce(con, p)
+            _verify_and_report(con, p, r1[0], r2[0])
+            done += 1
+            if not claude.mock:
+                time.sleep(2)  # one paper at a time on the lab's screen
+        con.execute("UPDATE batches SET status='ended', ended_at=?, usd=? WHERE id=?", (time.time(), usd, b["id"]))
+        con.commit()
+        return done
+    if collect_only:
+        return 0
     rows = con.execute(
         "SELECT s.pmid FROM screenings s WHERE s.id IN (SELECT MAX(id) FROM screenings GROUP BY pmid) "
-        "AND s.decision='include' AND s.pmid NOT IN (SELECT pmid FROM extractions) LIMIT ?", (n,)).fetchall()
-    for r in rows:
-        extract_one(con, claude, models, r["pmid"])
-    return len(rows)
+        "AND s.decision='include' AND s.pmid NOT IN (SELECT pmid FROM extractions) LIMIT ?", (BATCH_SIZE,)).fetchall()
+    if not rows:
+        return 0
+    claude.budget.check(con, len(rows) * BATCH_EST_USD)  # raises if the batch could break today's cap
+    papers = [_paper(con.execute("SELECT * FROM papers WHERE pmid=?", (r["pmid"],)).fetchone()) for r in rows]
+    items = [{"custom_id": f"{p['pmid']}-{k}", **extraction_request(models[k - 1], p, k)} for p in papers for k in (1, 2)]
+    bid = claude.submit_batch(items)
+    con.execute("INSERT INTO batches(id, kind, items, submitted_at, status) VALUES(?,?,?,?,?)",
+                (bid, "extract", json.dumps([p["pmid"] for p in papers]), time.time(), "submitted"))
+    con.commit()
+    act(con, "desk", "type", "focused", f"Sent {len(papers)} papers to the reading service (half price)",
+        "Two independent readings of each. Results usually within the hour.")
+    log(con, f"Sent {len(papers)} papers for extraction in a half-price batch", "action")
+    return len(papers)
 
 
 def board_update(con):
@@ -163,7 +240,7 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
     # stops working, so the site's budget meter is current. Elsewhere publishing is manual.
     publish_every = float(os.environ.get("ADA_PUBLISH_HOURS") or 0) * 3600
     last_publish, publish_pending = 0.0, False
-    state = None  # "working", "resting" (daily budget used) or "idle" (backlog clear)
+    state = None  # "working", "free_work" (paid budget used, free tasks), "resting" (nothing left) or "idle"
     rest_i = 0
 
     def become(new: str) -> bool:
@@ -192,48 +269,69 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
             log_fn(f"[ada] publish failed: {e!r}")
 
     log(con, f"Ada starts work (profile: {profile})", "system")
+    over: BudgetExceeded | None = None  # set while the day's paid budget is used up
+    last_export = 0.0
     while stop_at is None or time.time() < stop_at:
         if state:  # the first publish waits until she knows whether she is working or resting
             maybe_publish()
+        paid = free = 0
         try:
-            if state in (None, "resting"):
-                claude.budget.check(con)  # raises while the day's budget is still used up, so she keeps resting
-                if become("working"):  # back at work: tell the website now, not after the first batch
-                    maybe_publish(soon=True)
-            if time.time() - last_sync > 24 * 3600:
+            if time.time() - last_sync > 24 * 3600:  # new papers from PubMed (free)
                 sync(con)
                 last_sync = time.time()
-            did = screen_batch(con, claude, prof["screen_model"], screen_batch_size)
-            did += extract_batch(con, claude, prof["extract_models"], 3)
-            board_update(con)
-            from .export import export
-            export(con)
-            if not did:
-                if become("idle"):
-                    act(con, "coffee", "drink_coffee", "happy", "Backlog clear - waiting for new papers",
-                        "All caught up. I'll check PubMed again later.")
-                    maybe_publish(soon=True)
-                time.sleep(idle_seconds)
-            elif become("working"):
+            paid += extract_step(con, claude, prof["extract_models"], collect_only=True)  # already paid for
+            claude.budget.check(con)  # raises while the day's budget is used up
+            over = None
+            if state in (None, "resting", "free_work") and become("working"):  # tell the website now
                 maybe_publish(soon=True)
+            paid += screen_batch(con, claude, prof["screen_model"], screen_batch_size)
+            paid += extract_step(con, claude, prof["extract_models"])
         except BudgetExceeded as e:
-            if become("resting"):
-                log(con, f"Pausing: {e}", "system")
-                rest_i = 0
-            activity, mood, status, thought = REST[rest_i % len(REST)]
-            if "total cap" in str(e):
-                status = "Paused: her total budget is used up"
-            act(con, "couch", activity, mood, status, thought)
-            if rest_i == 0:
-                from .export import export
-                export(con)
-                maybe_publish(soon=True)
-            rest_i += 1
-            log_fn(f"[ada] {e}; resting {REST_SECONDS // 60} min")
-            time.sleep(REST_SECONDS)
+            over = e
         except Refused as e:
             log(con, f"A request was declined by a safety filter: {e}", "system")
         except Exception as e:  # keep the lab alive; record the problem
             log(con, f"Error: {type(e).__name__}: {str(e)[:200]}", "system")
             log_fn(f"[ada] error: {e!r}")
             time.sleep(60)
+        if not paid:  # free work fills whatever time the paid work leaves
+            try:
+                free = nightshift.step(con, claude if over is None else None)
+            except Exception as e:  # network trouble etc.: try again later
+                log(con, f"Free shift error: {type(e).__name__}: {str(e)[:200]}", "system")
+                log_fn(f"[ada] free shift error: {e!r}")
+                time.sleep(60)
+        if paid or time.time() - last_export > 300:
+            board_update(con)
+            from .export import export
+            export(con)
+            last_export = time.time()
+        waiting = pending_batch(con) is not None
+        if over is None and (paid or free or waiting):
+            if become("working"):
+                maybe_publish(soon=True)
+            if not paid:
+                time.sleep(5 if free else 30)  # between free steps, or while a batch is being read
+        elif free:  # paid budget used up: the free night shift
+            if become("free_work"):
+                log(con, f"Paid budget used ({over}): starting the free night shift", "system")
+                maybe_publish(soon=True)
+            time.sleep(5)
+        elif over is not None:  # no free work left either: the lounge
+            if become("resting"):
+                log(con, f"Pausing: {over}", "system")
+                rest_i = 0
+                maybe_publish(soon=True)
+            activity, mood, status, thought = REST[rest_i % len(REST)]
+            if "total cap" in str(over):
+                status = "Paused: her total budget is used up"
+            act(con, "couch", activity, mood, status, thought)
+            rest_i += 1
+            log_fn(f"[ada] {over}; resting {REST_SECONDS // 60} min")
+            time.sleep(REST_SECONDS)
+        else:  # budget left but nothing to do: caught up
+            if become("idle"):
+                act(con, "coffee", "drink_coffee", "happy", "Backlog clear - waiting for new papers",
+                    "All caught up. I'll check PubMed again later.")
+                maybe_publish(soon=True)
+            time.sleep(idle_seconds)

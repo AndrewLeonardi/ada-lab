@@ -5,6 +5,7 @@
 - stats.json: counts, spend, benchmark and audit scores
 - events.json: her recent real activity, replayed by the 3D lab on the website
 - daily.json: a recap of each day's work (see daily.py)
+- registry.json: the missing-results tracker and the paper-versus-registry checks (see registry.py)
 - notes.json: approved lab notes (drafts are never published without approval)
 """
 
@@ -64,12 +65,17 @@ def export(con=None, out: pathlib.Path = OUT) -> dict:
                          "comparator": r["comparator"], "population": ch.get("population"),
                          "detail": ch.get("detail"), "quote": r["quote"], "status": r["status"],
                          "failed_checks": [] if r["status"] == "corrected" else [k for k, v in ch.items() if v is False],
-                         "audit_note": (ch.get("audit") or {}).get("note")})
+                         "audit_note": (ch.get("audit") or {}).get("note"), "consistency_note": ch.get("consistency_note")})
         trials.append({"pmid": t["pmid"], "title": t["title"], "journal": t["journal"], "year": t["year"],
                        "authors": t["authors"], "doi": t["doi"], "nct_ids": json.loads(t["nct_ids"] or "[]"),
                        "acronym": t["acronym"], "phase": t["phase"], "line": t["line"], "biomarker": t["biomarker"],
                        "n_randomized": t["n_randomized"], "primary_endpoint": t["primary_endpoint"],
-                       "arms": json.loads(t["arms"] or "[]"), "records": recs})
+                       "arms": json.loads(t["arms"] or "[]"), "records": recs,
+                       "registry_checks": [{"nct": c["nct"], "check": c["check_name"], "verdict": c["verdict"],
+                                            "detail": c["detail"]} for c in con.execute(
+                           "SELECT * FROM registry_checks WHERE pmid=? ORDER BY id", (t["pmid"],))],
+                       "notices": [{"kind": n["kind"], "pmid": n["other_pmid"]} for n in con.execute(
+                           "SELECT * FROM notices WHERE pmid=? ORDER BY kind", (t["pmid"],))]})
     good = ("verified", "corrected")
     counts = {
         "candidates": con.execute("SELECT COUNT(*) FROM papers").fetchone()[0],
@@ -90,6 +96,8 @@ def export(con=None, out: pathlib.Path = OUT) -> dict:
         w.writerow(["pmid", "trial", "year", "line", "biomarker_selection", "arm", "comparator", "population",
                     "measure", "value", "unit", "ci_low", "ci_high", "detail", "status", "source_quote"])
         for t in trials:
+            if any(n["kind"] == "retraction" for n in t["notices"]):
+                continue  # a retracted paper's numbers are not part of the dataset
             for r in t["records"]:
                 if r["status"] in good:
                     w.writerow([t["pmid"], t["acronym"] or "", t["year"], t["line"], t["biomarker"] or "", r["arm"],
@@ -117,4 +125,35 @@ def export(con=None, out: pathlib.Path = OUT) -> dict:
     (out / "events.json").write_text(json.dumps(ev))
     (out / "notes.json").write_text(json.dumps(_notes(), indent=1))
     (out / "daily.json").write_text(json.dumps(daily(con), indent=1))
+    (out / "registry.json").write_text(json.dumps(registry_export(con), indent=1))
     return counts
+
+
+def registry_export(con) -> dict:
+    """The missing-results tracker and the paper-versus-registry summary, for the website."""
+    from .registry import DUE_MONTHS, due
+    searched = {r["nct"]: dict(r) for r in con.execute("SELECT * FROM result_search")}
+    trials = []
+    for t in sorted(due(con), key=lambda t: -t["months"]):
+        s = searched.get(t["nct"])
+        trials.append({"nct": t["nct"], "title": t["title"], "acronym": t["acronym"], "status": t["status"].lower(),
+                       "phase": t["phase"], "sponsor": t["sponsor"], "sponsor_class": t["sponsor_class"],
+                       "enrollment": t["enrollment"], "primary_completion": t["primary_completion"],
+                       "months": t["months"], "verdict": s["verdict"] if s else "not_searched",
+                       "pmids": json.loads(s["pmids"]) if s else [], "detail": s["detail"] if s else None,
+                       "searched": time.strftime("%Y-%m-%d", time.gmtime(s["searched_at"])) if s else None})
+    counts = {}
+    for t in trials:
+        counts[t["verdict"]] = counts.get(t["verdict"], 0) + 1
+    checks = [dict(r) for r in con.execute("SELECT * FROM registry_checks")]
+    differs = [{"pmid": c["pmid"], "nct": c["nct"], "check": c["check_name"], "detail": c["detail"]}
+               for c in checks if c["verdict"] == "differs"]
+    names = {r["pmid"]: r["acronym"] for r in con.execute("SELECT pmid, acronym FROM trials")}
+    for d in differs:
+        d["trial"] = names.get(d["pmid"]) or f"PMID {d['pmid']}"
+    return {"updated": time.strftime("%Y-%m-%d %H:%M"), "due_months": DUE_MONTHS,
+            "registered": con.execute("SELECT COUNT(*) FROM registry").fetchone()[0], "due": len(trials),
+            "counts": counts, "missing_patients": sum(t["enrollment"] or 0 for t in trials if t["verdict"] == "not_found"),
+            "trials": trials,
+            "crosscheck": {"trials": len({c["pmid"] for c in checks}),
+                           "agrees": sum(c["verdict"] == "agrees" for c in checks), "differs": differs}}

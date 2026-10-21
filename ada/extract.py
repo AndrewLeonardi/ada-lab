@@ -102,11 +102,19 @@ SCHEMA = {
 }
 
 
-def extract_paper(con, claude, model: str, p: dict, pass_no: int) -> dict:
-    system = COMMON + "\n\n" + PASS_INSTRUCTIONS[pass_no]
-    res, usd = claude.json(stage=f"extract{pass_no}", model=model, system=system, user=render(p), schema=SCHEMA,
-                           effort="low", max_tokens=6000)
+def request(model: str, p: dict, pass_no: int) -> dict:
+    """The extraction request for one pass, as used directly or in a batch."""
+    return {"stage": f"extract{pass_no}", "model": model, "system": COMMON + "\n\n" + PASS_INSTRUCTIONS[pass_no],
+            "user": render(p), "schema": SCHEMA, "effort": "low", "max_tokens": 6000}
+
+
+def record(con, pmid: str, pass_no: int, model: str, res: dict, usd: float):
     con.execute("INSERT INTO extractions(pmid, pass, model, prompt_version, result, usd, at) VALUES(?,?,?,?,?,?,?)",
-                (p["pmid"], pass_no, model, PROMPT_VERSION, json.dumps(res), usd, time.time()))
+                (pmid, pass_no, model, PROMPT_VERSION, json.dumps(res), usd, time.time()))
     con.commit()
+
+
+def extract_paper(con, claude, model: str, p: dict, pass_no: int) -> dict:
+    res, usd = claude.json(**request(model, p, pass_no))
+    record(con, p["pmid"], pass_no, model, res, usd)
     return res

@@ -109,12 +109,16 @@ table.trials, table.outcomes { width: 100%; border-collapse: collapse; font-size
 .md blockquote { border-left: 3px solid var(--teal); margin: 12px 0; padding: 4px 14px; color: var(--ink2); }
 .md code { background: var(--teal-soft); padding: 1px 5px; border-radius: 5px; font-size: 0.9em; }
 
+.notice { border-left: 4px solid var(--warn); background: var(--paper); padding: 8px 12px; border-radius: 8px; }
+.notice.retraction, .notice.concern { border-color: var(--coral); }
+
 /* budget meter (Budget.tsx) and daily log (Daily.tsx) */
 .meter { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; margin: 14px 0; }
 .meter-top { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
 .meter-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--ok); align-self: center; flex: none; }
 .meter.working .meter-dot { animation: pulse 1.6s ease-in-out infinite; }
 .meter.resting .meter-dot { background: var(--teal); }
+.meter.free .meter-dot { background: var(--warn); animation: pulse 1.6s ease-in-out infinite; }
 .meter.idle .meter-dot { background: var(--teal); }
 .meter.quiet .meter-dot { background: var(--warn); }
 @keyframes pulse { 50% { opacity: 0.35; } }

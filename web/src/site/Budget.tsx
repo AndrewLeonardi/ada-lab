@@ -17,7 +17,7 @@ function useMinuteClock() {
 }
 
 interface LiveState {
-  state: "working" | "resting" | "idle" | null; daily_usd: number | null; total_usd: number | null;
+  state: "working" | "free_work" | "resting" | "idle" | null; daily_usd: number | null; total_usd: number | null;
   spend_today: number; spend_total: number; budget_day: string; resets_at: number; now: number;
 }
 
@@ -53,7 +53,7 @@ function until(ts: number, now: number): string {
 const workingDay = (now: number) => new Date(now - 9 * 3600_000).toLocaleDateString("en-CA", { timeZone: "America/New_York" });
 
 export interface BudgetView {
-  tone: "working" | "resting" | "idle" | "quiet";
+  tone: "working" | "free" | "resting" | "idle" | "quiet";
   short: string; // for the lab's header
   headline: string;
   detail: string;
@@ -86,6 +86,10 @@ export function useBudget(): BudgetView | null {
     tone = "quiet";
     headline = "No recent update";
     detail = `Her server hasn't reported for ${ago(age).replace(" ago", "")}.`;
+  } else if (state === "free_work") {
+    tone = "free";
+    headline = "Free night shift";
+    detail = "Today's paid budget is used; she's checking trial registries and her own numbers, at no cost.";
   } else if (state === "resting" && sameDay) {
     tone = "resting";
     headline = "Resting: today's budget is used";
@@ -104,7 +108,8 @@ export function useBudget(): BudgetView | null {
     headline = "Working";
     detail = "Screening and extracting papers.";
   }
-  const short = { working: "Now: working", resting: "Now: resting", idle: "Now: caught up", quiet: "No recent update" }[tone];
+  const short = { working: "Now: working", free: "Now: free shift", resting: "Now: resting", idle: "Now: caught up",
+    quiet: "No recent update" }[tone];
   return {
     tone, short, headline, detail, cap,
     spend: sameDay ? spend : 0,

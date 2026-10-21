@@ -124,6 +124,7 @@ html, body, #root { margin: 0; }
 .hud-budget-bar > span { display: block; height: 100%; background: #7ff0c3; }
 .hud-budget.resting .hud-budget-bar > span, .hud-budget.idle .hud-budget-bar > span { background: #9fd4ff; }
 .hud-budget.quiet { color: #f0b36a; }
+.hud-budget.free .hud-budget-bar > span { background: #f0b36a; }
 .hud-budget-v { font-family: "JetBrains Mono", monospace; color: var(--muted); }
 
 @media (max-width: 720px) {

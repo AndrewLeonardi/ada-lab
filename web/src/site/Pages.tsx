@@ -2,6 +2,7 @@ import { Fragment, useMemo, useState } from "react";
 import { SITE } from "./config";
 import { DATA, LINE_NAMES, fmtValue, useData, type Dataset, type Note, type Stats, type Trial } from "./data";
 import { BudgetMeter } from "./Budget";
+import { CHECK_LABEL } from "./checks";
 import { Markdown } from "./Markdown";
 import { href } from "./router";
 
@@ -163,6 +164,46 @@ export function DataPage() {
 const shortTitle = (s: string) => (s.length > 90 ? s.slice(0, 87) + "…" : s);
 
 // ------------------------------------------------------------------ one trial
+const NOTICE: Record<string, string> = {
+  retraction: "This paper was retracted. Its numbers are not part of the dataset download.",
+  retracted_and_republished: "This paper was retracted and republished.", concern: "An expression of concern was published about this paper.",
+  correction: "A correction (erratum) was published for this paper.", update: "An update to this paper was published.",
+};
+
+function TrialNotices({ t }: { t: Trial }) {
+  const notes = (t.notices ?? []).filter((n) => n.kind !== "later_report");
+  const later = (t.notices ?? []).filter((n) => n.kind === "later_report");
+  if (!notes.length && !later.length) return null;
+  const pm = (id: string) => <a href={`https://pubmed.ncbi.nlm.nih.gov/${id}/`} target="_blank" rel="noreferrer">PubMed {id}</a>;
+  return (
+    <section>
+      {notes.map((n) => <p key={n.kind + n.pmid} className={`notice ${n.kind}`}>{NOTICE[n.kind]} {pm(n.pmid)}</p>)}
+      {later.length > 0 && (<><h2>Later reports from this trial</h2>
+        <p className="muted small">Follow-up papers (for example updated survival or subgroup analyses), linked by the trial's
+          registration number. Their results are not yet extracted.</p>
+        <ul>{later.map((n) => <li key={n.pmid}>{pm(n.pmid)}</li>)}</ul></>)}
+    </section>
+  );
+}
+
+function RegistryChecks({ t }: { t: Trial }) {
+  const cs = (t.registry_checks ?? []).filter((c) => c.verdict !== "not_comparable");
+  if (!cs.length) return null;
+  return (
+    <section>
+      <h2>Paper vs registry ({cs[0].nct})</h2>
+      <p className="muted small">The abstract compared with the trial's ClinicalTrials.gov record by code. A difference is not
+        necessarily an error (registries can include other cohorts, or a later data cut-off); differences go to the auditor.</p>
+      <table className="outcomes"><tbody>
+        {cs.map((c, i) => (
+          <tr key={i}><td>{CHECK_LABEL[c.check] ?? c.check}<div className="muted small">{c.detail}</div></td>
+            <td><span className={`badge-st ${c.verdict === "agrees" ? "verified" : "needs_review"}`}>{c.verdict}</span></td></tr>
+        ))}
+      </tbody></table>
+    </section>
+  );
+}
+
 export function TrialPage({ pmid }: { pmid: string }) {
   const d = useData<Dataset>(DATA.dataset);
   const [open, setOpen] = useState<string | null>(null);
@@ -209,6 +250,7 @@ export function TrialPage({ pmid }: { pmid: string }) {
                         Source sentence: “{r.quote}”
                         {r.failed_checks.length ? <div className="small">Failed checks: {r.failed_checks.join(", ")}</div> : null}
                         {r.audit_note ? <div className="small">Auditor: {r.audit_note}</div> : null}
+                        {r.consistency_note ? <div className="small">Contradiction: {r.consistency_note}</div> : null}
                       </td>
                     </tr>
                   )}
@@ -218,6 +260,8 @@ export function TrialPage({ pmid }: { pmid: string }) {
           </table>
         </section>
       ))}
+      <TrialNotices t={t} />
+      <RegistryChecks t={t} />
       <p className="muted small">Click a row to see the exact source sentence. Numbers marked “needs review” failed at least
         one automatic check and are not part of the verified dataset until an audit confirms or corrects them.</p>
     </>
@@ -286,7 +330,11 @@ export function MethodsPage() {
         <li>the value is plausible for its measure and its confidence interval brackets it;</li>
         <li>a median PFS, OS or time to progression is not about a different endpoint (such as second PFS, PFS on
           treatment or failure-free survival; those are kept as "other median time", named);</li>
-        <li>the independent second pass recorded the same measure with the same value.</li>
+        <li>its unit fits the measure (a median survival cannot be a percentage);</li>
+        <li>the independent second pass recorded the same measure with the same value;</li>
+        <li>it does not contradict the trial's other numbers: a hazard ratio must point the same way as the two arms'
+          medians, median PFS cannot exceed median OS, a response rate cannot exceed the disease control rate, arm sizes
+          cannot add up to more than the trial randomized, and a hazard ratio sits near the middle of its confidence interval.</li>
       </ul>
       <p>These checks prove that a number exists in the source. They cannot fully prove it <em>means</em> what the
         record says (for example, which arm it belongs to). That is what independent passes and audits are for.</p>
@@ -294,6 +342,12 @@ export function MethodsPage() {
       <p>A separate, more capable AI reviewer regularly re-checks a random sample of verified numbers and every
         number flagged for review against the original publications. Corrections are logged with the reason and
         date, and audit accuracy is published below.</p>
+      <h2>6. The free night shift</h2>
+      <p>Reading papers costs money and stops when the day's budget is used. The rest of the day goes to free work on public
+        data: comparing each trial in the dataset with its ClinicalTrials.gov record, looking for the results of every
+        registered trial that finished at least two years ago (the <a href={href("registry")}>registry check</a>),
+        re-running the consistency checks, watching PubMed for corrections and retractions, and linking follow-up papers to
+        their trials.</p>
       <h2>Accuracy</h2>
       {b ? (
         <p>Benchmark ({b.date}): of {b.gold_numbers_in_abstracts} hand-verified trial results that appear in PubMed

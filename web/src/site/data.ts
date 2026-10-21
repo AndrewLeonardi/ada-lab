@@ -18,6 +18,7 @@ export interface OutcomeRecord {
   status: "verified" | "corrected" | "needs_review" | "rejected";
   failed_checks: string[];
   audit_note?: string | null;
+  consistency_note?: string | null;
 }
 
 export interface Trial {
@@ -36,6 +37,21 @@ export interface Trial {
   primary_endpoint: string | null;
   arms: { label: string; regimen: string }[];
   records: OutcomeRecord[];
+  registry_checks?: { nct: string; check: string; verdict: "agrees" | "differs" | "not_comparable"; detail: string }[];
+  notices?: { kind: "correction" | "retraction" | "concern" | "retracted_and_republished" | "update" | "later_report"; pmid: string }[];
+}
+
+export interface RegistryTrial {
+  nct: string; title: string; acronym: string | null; status: string; phase: string; sponsor: string;
+  sponsor_class: string; enrollment: number | null; primary_completion: string; months: number;
+  verdict: "posted" | "linked" | "found_by_number" | "found_by_search" | "unclear" | "pending" | "not_found" | "not_searched";
+  pmids: string[]; detail: string | null; searched: string | null;
+}
+
+export interface RegistryData {
+  updated: string; due_months: number; registered: number; due: number; counts: Record<string, number>;
+  missing_patients: number; trials: RegistryTrial[];
+  crosscheck: { trials: number; agrees: number; differs: { pmid: string; nct: string; check: string; detail: string; trial: string }[] };
 }
 
 export interface Dataset {
@@ -65,7 +81,7 @@ export interface Stats {
   updated_at?: number; // epoch seconds of this export
   budget_day?: string; // her working day (9:00 to 9:00 US Eastern) that spend_usd_today belongs to
   budget_resets_at?: number; // epoch seconds of the next 9:00 Eastern
-  status?: { state: "working" | "resting" | "idle"; since: number; profile: string; daily_usd: number; total_usd: number } | null;
+  status?: { state: "working" | "free_work" | "resting" | "idle"; since: number; profile: string; daily_usd: number; total_usd: number } | null;
   findings?: Partial<Record<"idea" | "supported" | "ready", number>>;
   benchmark?: { date: string; gold_numbers_in_abstracts: number; recall_verified: number; recall_any: number };
   audit_scoreboard?: { audits: { date: string; sampled: number; correct: number; notes?: string }[] };
@@ -128,6 +144,7 @@ export const DATA = {
   notes: "data/notes.json",
   events: "data/events.json",
   daily: "data/daily.json",
+  registry: "data/registry.json",
   csv: "data/dataset.csv",
 };
 

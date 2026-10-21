@@ -72,3 +72,9 @@ def test_audit_verdict_survives_reverify(tmp_path):
     con.execute("UPDATE records SET status='verified', checks=json_set(checks, '$.audit', json('{\"verdict\": \"correct\"}'))")
     verify_paper(con, p, run, {"outcomes": []})
     assert con.execute("SELECT status FROM records").fetchone()["status"] == "verified"
+
+
+def test_unit_must_fit_the_measure():
+    # found by the consistency checks: a "median PFS" of 59.9 percent (a misfiled PFS rate)
+    r = rec(measure="pfs_median", value=57.3, unit="percent")
+    assert check_record(r, ABSTRACT, None)["unit_fits"] is False

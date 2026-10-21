@@ -12,7 +12,10 @@ import re
 def mock(stage: str, user: str, schema: dict) -> dict:
     if stage == "screen":
         inc = "random" in user.lower()
-        return {"decision": "include" if inc else "exclude", "reason": "mock decision", "trial_name": None}
+        return {"population": "mock", "randomized": inc, "metastatic": inc, "per_arm_efficacy": inc, "primary_report": inc,
+                "reason": "mock decision", "decision": "include" if inc else "exclude", "trial_name": None}
+    if stage == "registry_match":
+        return {"match": "unclear", "reason": "mock decision"}
     abstract = user.split("ABSTRACT:", 1)[-1]
     outcomes = []
     m = re.search(r"([^.;]*?(\d+(?:\.\d+)?)\s?%[^.;]*)", abstract)

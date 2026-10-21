@@ -3,9 +3,10 @@
 A record is VERIFIED only if:
   1. its quote occurs verbatim in the abstract (after normalizing whitespace, dashes and decimal points);
   2. its value (and confidence limits, if any) literally appear in that quote;
-  3. the value is plausible for its measure and confidence limits bracket it;
+  3. the value is plausible for its measure, in a unit that fits it, and confidence limits bracket it;
   4. a standard PFS/OS/TTP number is not about a non-standard endpoint (by its quote or its own detail);
-  5. the independent second extraction pass recorded the same measure with the same value.
+  5. the independent second extraction pass recorded the same measure with the same value;
+  6. it does not contradict the trial's other numbers (consistency.py).
 Anything else is NEEDS_REVIEW (for the auditor) and is not published as verified.
 """
 
@@ -21,6 +22,10 @@ PLAUSIBLE = {
     "os_median": (0.1, 300), "other_time_median": (0.1, 300), "pfs_hr": (0.05, 10), "os_hr": (0.05, 10), "grade3plus_ae_rate": (0, 100),
 }
 
+
+UNITS = {"n_randomized": {"count"}, "orr": {"percent"}, "dcr": {"percent"}, "grade3plus_ae_rate": {"percent"},
+         "pfs_median": {"months", "weeks"}, "ttp_median": {"months", "weeks"}, "os_median": {"months", "weeks"},
+         "other_time_median": {"months", "weeks"}, "pfs_hr": {"ratio"}, "os_hr": {"ratio"}}
 
 # Phrases that mean a quote (or the record's own "detail") is about a non-standard time endpoint
 # (found in audit 1: "second PFS" was recorded as ordinary PFS by both passes).
@@ -49,6 +54,7 @@ def check_record(o: dict, abstract: str, other_pass: list[dict] | None) -> dict:
         "value_in_quote": number_in(o["quote"], o["value"]),
         "ci_in_quote": all(number_in(o["quote"], v) for v in (o.get("ci_low"), o.get("ci_high")) if v is not None),
         "plausible": PLAUSIBLE[o["measure"]][0] <= o["value"] <= PLAUSIBLE[o["measure"]][1],
+        "unit_fits": o["unit"] in UNITS[o["measure"]],  # e.g. a "median PFS" in percent is a misfiled rate
         "ci_brackets_value": (o.get("ci_low") is None or o.get("ci_high") is None
                               or o["ci_low"] <= o["value"] <= o["ci_high"]),
         "standard_endpoint": not (o["measure"] in ("pfs_median", "os_median", "ttp_median")
@@ -94,4 +100,11 @@ def verify_paper(con, p: dict, pass1: dict, pass2: dict | None) -> dict:
          t.get("n_randomized_total"), t.get("primary_endpoint"), json.dumps(p.get("nct_ids") or []),
          json.dumps(pass1["arms"]), "extracted", now))
     con.commit()
+    # numbers that pass on their own can still contradict each other: re-count after the consistency checks
+    from .consistency import check_trial
+    check_trial(con, p["pmid"])
+    counts = {"verified": 0, "needs_review": 0}
+    for status, n in con.execute("SELECT status, COUNT(*) FROM records WHERE pmid=? GROUP BY status", (p["pmid"],)):
+        if status in counts:
+            counts[status] = n
     return counts

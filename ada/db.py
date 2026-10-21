@@ -74,6 +74,35 @@ CREATE TABLE IF NOT EXISTS corrections (
   id INTEGER PRIMARY KEY AUTOINCREMENT, record_id TEXT, field TEXT, old TEXT, new TEXT,
   reason TEXT, auditor TEXT, at REAL
 );
+-- numbers from one trial that contradict each other (consistency.py)
+CREATE TABLE IF NOT EXISTS consistency_flags (
+  id INTEGER PRIMARY KEY AUTOINCREMENT, pmid TEXT, check_name TEXT, record_ids TEXT, note TEXT, found_at REAL
+);
+-- ClinicalTrials.gov records of randomized trials in metastatic colorectal cancer (registry.py, free)
+CREATE TABLE IF NOT EXISTS registry (
+  nct TEXT PRIMARY KEY, title TEXT, acronym TEXT, status TEXT, phase TEXT, sponsor TEXT, sponsor_class TEXT,
+  enrollment INTEGER, primary_completion TEXT, completion TEXT, has_results INTEGER, refs TEXT, data TEXT,
+  fetched_at REAL
+);
+-- the missing-results tracker: where (if anywhere) each finished trial's results can be found
+CREATE TABLE IF NOT EXISTS result_search (
+  nct TEXT PRIMARY KEY, verdict TEXT, pmids TEXT, detail TEXT, candidates TEXT, searched_at REAL
+);
+-- a published paper compared with its registry record
+CREATE TABLE IF NOT EXISTS registry_checks (
+  id INTEGER PRIMARY KEY AUTOINCREMENT, pmid TEXT, nct TEXT, check_name TEXT, verdict TEXT, detail TEXT, at REAL
+);
+-- later reports, corrections, retractions and expressions of concern attached to a paper (upkeep.py)
+CREATE TABLE IF NOT EXISTS notices (
+  pmid TEXT, kind TEXT, other_pmid TEXT, at REAL, PRIMARY KEY (pmid, kind, other_pmid)
+);
+CREATE TABLE IF NOT EXISTS fulltexts (pmid TEXT PRIMARY KEY, pmcid TEXT, text TEXT, fetched_at REAL);
+-- half-price Batch API jobs in flight
+CREATE TABLE IF NOT EXISTS batches (
+  id TEXT PRIMARY KEY, kind TEXT, items TEXT, submitted_at REAL, ended_at REAL, status TEXT, usd REAL
+);
+-- when each free night-shift task last ran
+CREATE TABLE IF NOT EXISTS tasks (name TEXT PRIMARY KEY, last_run REAL, note TEXT);
 """
 
 

@@ -23,6 +23,7 @@ PRICES = {
     "mock": {"in": 0.0, "out": 0.0, "cache_read": 0.0},
 }
 CACHE_WRITE_MULT = 1.25
+BATCH_DISCOUNT = 0.5  # Message Batches API: half price, results usually within the hour
 
 
 class BudgetExceeded(RuntimeError):
@@ -84,11 +85,9 @@ class Claude:
             import anthropic
             self._client = anthropic.Anthropic(max_retries=4)
 
-    def json(self, *, stage: str, model: str, system: str, user: str, schema: dict, effort: str = "low",
-             max_tokens: int = 8000) -> tuple[dict, float]:
-        self.budget.check(self.con)
-        if self.mock is not None:
-            return self.mock(stage, user, schema), 0.0
+    @staticmethod
+    def params(*, model: str, system: str, user: str, schema: dict, effort: str = "low", max_tokens: int = 8000) -> dict:
+        """One request, as sent directly or inside a batch."""
         kwargs: dict[str, Any] = dict(
             model=model, max_tokens=max_tokens,
             system=[{"type": "text", "text": system}],
@@ -98,6 +97,14 @@ class Claude:
         )
         if model.startswith("claude-haiku"):
             kwargs["thinking"] = {"type": "disabled"}  # routine, well-specified work: no thinking tokens
+        return kwargs
+
+    def json(self, *, stage: str, model: str, system: str, user: str, schema: dict, effort: str = "low",
+             max_tokens: int = 8000) -> tuple[dict, float]:
+        self.budget.check(self.con)
+        if self.mock is not None:
+            return self.mock(stage, user, schema), 0.0
+        kwargs = self.params(model=model, system=system, user=user, schema=schema, effort=effort, max_tokens=max_tokens)
         if model in ("claude-opus-5-5", "claude-sonnet-5-5"):
             kwargs["betas"] = ["server-side-fallback-2026-07-01"]
             kwargs["fallbacks"] = "default"
@@ -112,3 +119,40 @@ class Claude:
             raise RuntimeError(f"{stage}: output hit max_tokens")
         text = next((b.text for b in msg.content if getattr(b, "type", "") == "text"), "")
         return json.loads(text), usd
+
+    # ---------------------------------------------------------------- half-price batches
+    def submit_batch(self, items: list[dict]) -> str:
+        """items: {custom_id, stage, model, system, user, schema, effort, max_tokens}. Returns the batch id.
+        Refusal fallbacks are not available in batches; a declined request simply fails and is retried directly."""
+        if self.mock is not None:
+            bid = f"mock-{time.time():.6f}"
+            self._mock_batches = getattr(self, "_mock_batches", {})
+            self._mock_batches[bid] = {i["custom_id"]: (self.mock(i["stage"], i["user"], i["schema"]), i) for i in items}
+            return bid
+        reqs = [{"custom_id": i["custom_id"], "params": self.params(**{k: i[k] for k in (
+            "model", "system", "user", "schema", "effort", "max_tokens")})} for i in items]
+        return self._client.messages.batches.create(requests=reqs).id
+
+    def batch_done(self, batch_id: str) -> bool:
+        if self.mock is not None:
+            return True
+        return self._client.messages.batches.retrieve(batch_id).processing_status == "ended"
+
+    def batch_results(self, batch_id: str, stages: dict[str, tuple[str, str]]) -> dict[str, tuple[dict, float] | None]:
+        """custom_id -> (parsed JSON, usd) or None if it failed. Spend is recorded at the batch price.
+        stages: custom_id -> (stage, model), for the spend log."""
+        if self.mock is not None:
+            return {cid: (res, 0.0) for cid, (res, _) in self._mock_batches.pop(batch_id).items()}
+        out = {}
+        for r in self._client.messages.batches.results(batch_id):
+            stage, model = stages.get(r.custom_id, ("batch", "claude-haiku-5-5"))
+            if r.result.type != "succeeded":
+                out[r.custom_id] = None
+                continue
+            msg = r.result.message
+            usd = price(msg.model or model, msg.usage) * BATCH_DISCOUNT
+            db.add_spend(self.con, model, stage, usd)
+            text = next((b.text for b in msg.content if getattr(b, "type", "") == "text"), "")
+            ok = msg.stop_reason not in ("refusal", "max_tokens") and text
+            out[r.custom_id] = (json.loads(text), usd) if ok else None
+        return out
