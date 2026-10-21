@@ -91,7 +91,7 @@ def step(con, claude=None) -> int:
             name = r["acronym"] or r["nct"]
             if r["verdict"] == "not_found":
                 db.emit(con, {"type": "mood", "mood": "puzzled"})
-                log(con, f"{name}: no results found anywhere ({r['enrollment']} patients)", "finding")
+                log(con, f"{name}: no results found by my search ({r['enrollment']} patients); listed for audit", "finding")
             elif r["nct"] not in before or r["verdict"] != "pending":
                 log(con, f"{name}: results {r['verdict'].replace('_', ' ')}", "action")
         return n
