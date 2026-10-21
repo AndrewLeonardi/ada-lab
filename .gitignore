@@ -1,0 +1,13 @@
+# secrets
+.env
+# build and dependencies
+web/node_modules/
+web/dist/
+__pycache__/
+*.egg-info/
+# Ada's private working database: it stores full abstracts, which are publishers' text.
+# Only the exported dataset (numbers + short source quotes) is published.
+data/ada.sqlite
+data/audits/*-sample.json
+# lab-note drafts stay private until approved (`ada approve <slug>` publishes them)
+data/notes/drafts/

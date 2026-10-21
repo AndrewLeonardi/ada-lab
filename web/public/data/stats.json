@@ -1,0 +1,15 @@
+{
+ "version": "2026-10-20",
+ "updated": "2026-10-20 21:44",
+ "counts": {
+  "candidates": 0,
+  "screened": 0,
+  "included": 0,
+  "trials": 0,
+  "verified_numbers": 0,
+  "pending_numbers": 0,
+  "corrected_numbers": 0
+ },
+ "spend_usd_total": 0.0,
+ "spend_usd_today": 0.0
+}

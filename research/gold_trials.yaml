@@ -1,0 +1,1232 @@
+# Metastatic colorectal cancer (mCRC): drug parameters and trial calibration targets
+# Compiled 2026-10-18.
+#
+# Verification conventions
+#   verified: true  -> PMID (or label / registry record) checked for title, first author and year,
+#                      AND every non-null number in the entry was seen in the abstract, full text,
+#                      FDA label text, or ClinicalTrials.gov posted results named in the source block.
+#   Any number that could not be seen in a primary or label/registry source is null, and the note
+#   says so. Where a commonly cited value is mentioned in a note as "UNVERIFIED", it is there only
+#   as a pointer for follow-up and must not be used as a calibration target.
+#   Units are as published (PFS in weeks for the panitumumab-vs-BSC trial; months elsewhere unless stated).
+#   FDA labels were read from DailyMed SPL XML (current versions as of Oct 2026).
+#   ClinicalTrials.gov results were read from the v2 API (posted sponsor results).
+
+# =====================================================================================
+# PART 1A. DRUG SCHEDULES
+# =====================================================================================
+
+- id: sched_mfolfox6
+  kind: drug_schedule
+  quantity: mFOLFOX6 regimen (oxaliplatin + leucovorin + bolus/infusional 5-FU)
+  setting: first-line mCRC (as protocolized in CALGB/SWOG 80405)
+  value: "q14d: oxaliplatin 85 mg/m2 IV over 120 min + leucovorin 400 mg/m2 IV over 2 h, then 5-FU 400 mg/m2 bolus, then 5-FU 2400 mg/m2 over 46-48 h"
+  components:
+    - {drug: oxaliplatin, dose: 85, units: mg/m2, route: "IV over 120 min", day: 1}
+    - {drug: leucovorin, dose: 400, units: mg/m2, route: "IV over 2 h", day: 1}
+    - {drug: fluorouracil_bolus, dose: 400, units: mg/m2, route: "IV bolus", day: 1}
+    - {drug: fluorouracil_infusion, dose: 2400, units: mg/m2, route: "continuous IV over 46-48 h", day: "1-3"}
+  cycle_length_days: 14
+  source:
+    citation: "Venook AP, et al. (2017). Effect of First-Line Chemotherapy Combined With Cetuximab or Bevacizumab on Overall Survival in Patients With KRAS Wild-Type Advanced or Metastatic Colorectal Cancer: A Randomized Clinical Trial. JAMA 317:2392-2401."
+    pmid: "28632865"
+    doi: "10.1001/jama.2017.7105"
+    pmcid: "PMC5545896"
+    verified: true
+    support: full text (Methods, PMC) gives the mFOLFOX6 doses exactly as listed
+  additional_sources:
+    - citation: "Fluorouracil Injection US Prescribing Information (Fresenius Kabi), DailyMed SPL v7, effective 2026-07-15. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+      verified: true
+      support: "section 2.3: infusional 5-FU with leucovorin +/- oxaliplatin or irinotecan = 400 mg/m2 bolus day 1 then 2400-3000 mg/m2 continuous infusion over 46 h every 2 weeks"
+  confidence: high
+  notes: "The paper wording says the 2400 mg/m2 dose was given 'by a 46- to 48-hour infusion' (it calls it a bolus, which is a wording slip; it is the infusion). Leucovorin 400 mg/m2 is racemic (dl) leucovorin; 200 mg/m2 if l-leucovorin (this l/dl equivalence is stated in the Erbitux label CRYSTAL description, see sched_folfiri)."
+
+- id: sched_folfox4
+  kind: drug_schedule
+  quantity: FOLFOX4 regimen (de Gramont LV5FU2 + oxaliplatin 85 mg/m2)
+  setting: first-line mCRC (de Gramont 2000; also the US oxaliplatin label regimen)
+  value: "q14d: day 1 oxaliplatin 85 mg/m2 over 120 min + leucovorin 200 mg/m2 over 120 min, then 5-FU 400 mg/m2 bolus + 600 mg/m2 over 22 h; day 2 leucovorin 200 mg/m2, 5-FU 400 mg/m2 bolus + 600 mg/m2 over 22 h"
+  components:
+    - {drug: oxaliplatin, dose: 85, units: mg/m2, route: "IV over 120 min", day: 1}
+    - {drug: leucovorin, dose: 200, units: mg/m2/day, route: "IV over 120 min", day: "1 and 2"}
+    - {drug: fluorouracil_bolus, dose: 400, units: mg/m2/day, route: "IV bolus", day: "1 and 2"}
+    - {drug: fluorouracil_infusion, dose: 600, units: mg/m2/day, route: "IV over 22 h", day: "1 and 2"}
+  cycle_length_days: 14
+  source:
+    citation: "Oxaliplatin Injection US Prescribing Information (Hospira), DailyMed SPL v18, effective 2026-08-07. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e51a62ba-d163-4c57-835c-8c86cf097e40"
+    pmid: null
+    doi: null
+    verified: true
+    support: "label section 2.1 Recommended Dosage (day 1 / day 2 schedule as listed)"
+  additional_sources:
+    - citation: "de Gramont A, et al. (2000). Leucovorin and fluorouracil with or without oxaliplatin as first-line treatment in advanced colorectal cancer. J Clin Oncol 18:2938-47."
+      pmid: "10944126"
+      doi: "10.1200/JCO.2000.18.16.2938"
+      verified: true
+      support: "abstract: LV 200 mg/m2/d 2-h infusion, 5FU bolus 400 mg/m2/d and 22-h infusion 600 mg/m2/d for 2 consecutive days every 2 weeks, +/- oxaliplatin 85 mg/m2 2-h infusion day 1"
+  confidence: high
+  notes: "Label dose-reduced level for advanced CRC is oxaliplatin 65 mg/m2 (see rule_oxaliplatin_dose_modification)."
+
+- id: sched_folfiri
+  kind: drug_schedule
+  quantity: FOLFIRI regimen (irinotecan + leucovorin + bolus/infusional 5-FU)
+  setting: first-line mCRC
+  value: "q14d: irinotecan 180 mg/m2 IV over 90 min + leucovorin 400 mg/m2 over 2 h, then 5-FU 400 mg/m2 bolus, then 5-FU 2400 mg/m2 over 46-48 h"
+  components:
+    - {drug: irinotecan, dose: 180, units: mg/m2, route: "IV over 90 min", day: 1}
+    - {drug: leucovorin, dose: 400, units: mg/m2, route: "IV over 2 h (racemic; 200 mg/m2 if L-form)", day: 1}
+    - {drug: fluorouracil_bolus, dose: 400, units: mg/m2, route: "IV bolus", day: 1}
+    - {drug: fluorouracil_infusion, dose: 2400, units: mg/m2, route: "continuous IV over 46-48 h", day: "1-3"}
+  cycle_length_days: 14
+  source:
+    citation: "Venook AP, et al. (2017). Effect of First-Line Chemotherapy Combined With Cetuximab or Bevacizumab on Overall Survival in Patients With KRAS Wild-Type Advanced or Metastatic Colorectal Cancer. JAMA 317:2392-2401."
+    pmid: "28632865"
+    doi: "10.1001/jama.2017.7105"
+    pmcid: "PMC5545896"
+    verified: true
+    support: full text (Methods, PMC)
+  additional_sources:
+    - citation: "ERBITUX (cetuximab) US Prescribing Information, ImClone LLC, DailyMed SPL v58, effective 2026-04-16. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bc6397e-4bd8-4d37-a007-a327e4da34d9"
+      verified: true
+      support: "section 14 (CRYSTAL): 14-day cycles of irinotecan 180 mg/m2 day 1, folinic acid 400 mg/m2 racemic or 200 mg/m2 L-form day 1, 5-FU 400 mg/m2 bolus day 1 then 2400 mg/m2 46-h continuous infusion"
+    - citation: "Tournigand C, et al. (2004). FOLFIRI followed by FOLFOX6 or the reverse sequence in advanced colorectal cancer: a randomized GERCOR study. J Clin Oncol 22:229-37."
+      pmid: "14657227"
+      doi: "10.1200/JCO.2004.05.113"
+      verified: true
+      support: "abstract: l-LV 200 or dl-LV 400 mg/m2, FU bolus 400 mg/m2 and 46-h infusion 2400-3000 mg/m2 every 2 weeks, with irinotecan 180 mg/m2"
+  confidence: high
+  notes: "The original GERCOR FOLFIRI allowed 46-h 5-FU of 2400-3000 mg/m2 (escalation); 2400 mg/m2 is the common fixed dose in later trials."
+
+- id: sched_cetuximab
+  kind: drug_schedule
+  quantity: Cetuximab dosing in CRC
+  setting: monotherapy or with irinotecan / FOLFIRI (label); also used with FOLFOX in trials
+  value: "weekly: 400 mg/m2 IV over 120 min loading, then 250 mg/m2 over 60 min weekly; OR biweekly: 500 mg/m2 IV over 120 min every 2 weeks"
+  components:
+    - {regimen: weekly, loading_dose: 400, maintenance_dose: 250, units: mg/m2, interval_days: 7}
+    - {regimen: biweekly, dose: 500, units: mg/m2, interval_days: 14}
+  source:
+    citation: "ERBITUX (cetuximab) US Prescribing Information, ImClone LLC, DailyMed SPL v58, effective 2026-04-16. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bc6397e-4bd8-4d37-a007-a327e4da34d9"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 2.3 Recommended Dosage for CRC (weekly and biweekly schedules); premedicate with H1 antagonist; complete infusion 1 h before irinotecan/FOLFIRI"
+  confidence: high
+  notes: "Trials in Part 2 used weekly 400/250 (CO.17, CRYSTAL, ASPECCT) or biweekly 500 mg/m2 (CRICKET). Label PK is nonlinear: clearance falls from 0.08 to 0.02 L/h/m2 as dose rises 20 -> 200 mg/m2 and plateaus above 200 mg/m2."
+
+- id: sched_panitumumab
+  kind: drug_schedule
+  quantity: Panitumumab dosing
+  setting: RAS wild-type mCRC, monotherapy or with FOLFOX
+  value: "6 mg/kg IV every 14 days (60-min infusion if dose <=1000 mg, 90 min if >1000 mg)"
+  dose: 6
+  units: mg/kg
+  interval_days: 14
+  source:
+    citation: "VECTIBIX (panitumumab) US Prescribing Information, Amgen, DailyMed SPL v161, effective 2026-06-23. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0fa4bca-f245-4d92-ae29-b0c630a315c2"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 2.2 Recommended Dosage"
+  confidence: high
+  notes: "Same schedule used in the panitumumab-vs-BSC trial (Van Cutsem 2007), ASPECCT and CHRONOS."
+
+- id: sched_bevacizumab
+  kind: drug_schedule
+  quantity: Bevacizumab dosing in mCRC
+  setting: first- and second-line mCRC with chemotherapy
+  value: "5 mg/kg IV every 2 weeks with bolus-IFL (label); 10 mg/kg every 2 weeks with FOLFOX4 (label, second-line E3200 setting); 5 mg/kg q2w or 7.5 mg/kg q3w with fluoropyrimidine-irinotecan or -oxaliplatin chemo after progression on first-line bevacizumab (label); 5 mg/kg q2w with mFOLFOX6 or FOLFIRI (CALGB 80405)"
+  components:
+    - {context: "with bolus-IFL (label)", dose: 5, units: mg/kg, interval_days: 14}
+    - {context: "with FOLFOX4 (label)", dose: 10, units: mg/kg, interval_days: 14}
+    - {context: "beyond progression on first-line bevacizumab (label)", dose: "5 q2w or 7.5 q3w", units: mg/kg}
+    - {context: "with mFOLFOX6/FOLFIRI (CALGB/SWOG 80405)", dose: 5, units: mg/kg, interval_days: 14}
+  source:
+    citation: "AVASTIN (bevacizumab) US Prescribing Information, Genentech, DailyMed SPL v39, effective 2025-01-06. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=939b5d1f-9fb2-4499-80ef-0607aa6b114e"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 2 (Dosage and Administration, metastatic colorectal cancer)"
+  additional_sources:
+    - citation: "Venook AP, et al. (2017). JAMA 317:2392-2401."
+      pmid: "28632865"
+      verified: true
+      support: "Methods: bevacizumab 5 mg/kg over 90 min in week 1, then 30-60 min every other week"
+  confidence: high
+  notes: null
+
+# =====================================================================================
+# PART 1B. PHARMACOKINETICS (elimination half-lives)
+# =====================================================================================
+
+- id: pk_fluorouracil_half_life
+  kind: drug_pk
+  quantity: 5-fluorouracil elimination half-life after IV bolus
+  value: null
+  low: 8
+  high: 20
+  units: minutes
+  source:
+    citation: "Fluorouracil Injection US Prescribing Information (Fresenius Kabi), DailyMed SPL v7, effective 2026-07-15. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 12.3: after bolus IV single-agent 5-FU, elimination half-life increased with dose from 8 to 20 minutes; >80% catabolized by DPD"
+  confidence: high
+  notes: "Label gives a dose-dependent range only (nonlinear elimination); no point estimate. During a 46-h infusion, plasma 5-FU is near steady state, so exposure is set by infusion rate and clearance rather than half-life."
+
+- id: pk_oxaliplatin_ultrafiltrable_platinum
+  kind: drug_pk
+  quantity: Oxaliplatin (ultrafiltrable platinum) half-lives, triphasic decline
+  value: 391
+  low: null
+  high: null
+  units: hours (terminal, t1/2 gamma)
+  phases:
+    t_half_alpha_h: 0.43
+    t_half_beta_h: 16.8
+    t_half_gamma_h: 391
+  source:
+    citation: "Oxaliplatin Injection US Prescribing Information (Hospira), DailyMed SPL v18, effective 2026-08-07. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e51a62ba-d163-4c57-835c-8c86cf097e40"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 12.3: decline of ultrafiltrable Pt is triphasic, two distribution phases (0.43 h, 16.8 h) and long terminal elimination phase (391 h); Vd 440 L; Cmax 0.814 mcg/mL after 85 mg/m2 over 2 h; no accumulation in ultrafiltrate at 85 mg/m2 q2w"
+  confidence: high
+  notes: "Use the 16.8 h beta phase for most of the active (unbound) exposure; the 391 h gamma phase is a slow tail. Neurotoxicity is cumulative-dose driven (see tox_oxaliplatin_neuropathy_cumulative_dose), not explained by ultrafiltrate accumulation."
+
+- id: pk_irinotecan_half_life
+  kind: drug_pk
+  quantity: Irinotecan terminal elimination half-life
+  value: 11.7
+  low: 6
+  high: 12
+  units: hours
+  detail:
+    - {dose_mg_m2: 125, n: 64, t_half_h_mean: 5.8, sd: 0.7, sampling: "24 h"}
+    - {dose_mg_m2: 340, n: 6, t_half_h_mean: 11.7, sd: 1.0, sampling: "48 h (label says this better reflects terminal half-life)"}
+  source:
+    citation: "CAMPTOSAR (irinotecan) US Prescribing Information, Pfizer (Pharmacia & Upjohn), DailyMed SPL v37, effective 2026-05-12. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e518dfc6-7e93-4fee-a66c-51e1ab71c056"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 12.3 text (mean terminal t1/2 about 6 to 12 h) and Table 9 (mean +/- SD by dose)"
+  confidence: high
+  notes: "value = 11.7 h from the 48-h sampling study (label states it is the more accurate terminal estimate); low/high = label's 6-12 h range."
+
+- id: pk_sn38_half_life
+  kind: drug_pk
+  quantity: SN-38 (active irinotecan metabolite) terminal elimination half-life
+  value: 21.0
+  low: 10
+  high: 20
+  units: hours
+  detail:
+    - {irinotecan_dose_mg_m2: 125, n: 64, t_half_h_mean: 10.4, sd: 3.1, sampling: "24 h"}
+    - {irinotecan_dose_mg_m2: 340, n: 6, t_half_h_mean: 21.0, sd: 4.3, sampling: "48 h"}
+  source:
+    citation: "CAMPTOSAR (irinotecan) US Prescribing Information, DailyMed SPL v37, effective 2026-05-12. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e518dfc6-7e93-4fee-a66c-51e1ab71c056"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 12.3 text (SN-38 mean terminal t1/2 about 10 to 20 h) and Table 9"
+  confidence: high
+  notes: "The label's narrative range is 10-20 h, while its 48-h-sampled mean is 21.0 +/- 4.3 h. SN-38 AUC rises less than dose-proportionally; UGT1A1*28 raises exposure."
+
+- id: pk_cetuximab_half_life
+  kind: drug_pk
+  quantity: Cetuximab mean elimination half-life at recommended dosage
+  value: 112
+  low: 63
+  high: 230
+  units: hours
+  source:
+    citation: "ERBITUX (cetuximab) US Prescribing Information, DailyMed SPL v58, effective 2026-04-16. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bc6397e-4bd8-4d37-a007-a327e4da34d9"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 12.3: at 400 mg/m2 loading then 250 mg/m2 weekly, mean t1/2 about 112 h (63-230 h); steady state by 3rd weekly infusion; peak 168-235 ug/mL, trough 41-85 ug/mL"
+  confidence: high
+  notes: "Nonlinear (target-mediated) PK: clearance falls with dose, plateauing above 200 mg/m2, so the half-life is dose-dependent. Value is about 4.7 days."
+
+- id: pk_panitumumab_half_life
+  kind: drug_pk
+  quantity: Panitumumab elimination half-life
+  value: 7.5
+  low: 3.6
+  high: 10.9
+  units: days
+  source:
+    citation: "VECTIBIX (panitumumab) US Prescribing Information, DailyMed SPL v161, effective 2026-06-23. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0fa4bca-f245-4d92-ae29-b0c630a315c2"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 12.3: at 6 mg/kg q2w, elimination half-life about 7.5 days (range 3.6-10.9); steady state by 3rd infusion; peak/trough 213 +/- 59 and 39 +/- 14 mcg/mL; CL 4.9 +/- 1.4 mL/kg/day"
+  confidence: high
+  notes: "Nonlinear at low doses (CL falls from 30.6 to 4.6 mL/day/kg over 0.75-9 mg/kg); about dose-proportional above 2 mg/kg."
+
+- id: pk_bevacizumab_half_life
+  kind: drug_pk
+  quantity: Bevacizumab estimated half-life
+  value: 20
+  low: 11
+  high: 50
+  units: days
+  source:
+    citation: "AVASTIN (bevacizumab) US Prescribing Information, DailyMed SPL v39, effective 2025-01-06. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=939b5d1f-9fb2-4499-80ef-0607aa6b114e"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 12.3: estimated half-life 20 days (11 to 50); CL 0.23 L/day (CV 33%); central Vd 2.9 L"
+  confidence: high
+  notes: "Clearance is higher in males and with higher tumor burden (label)."
+
+# =====================================================================================
+# PART 1C. TOXICITY RATES AND DOSE-MODIFICATION RULES
+# =====================================================================================
+
+- id: tox_folfox4_neutropenia_g34
+  kind: toxicity
+  quantity: Grade 3/4 neutropenia, FOLFOX4 (LV5FU2 + oxaliplatin) vs LV5FU2, first-line
+  value: 41.7
+  low: null
+  high: null
+  units: percent of patients
+  comparator: {regimen: LV5FU2 alone, value: 5.3}
+  source:
+    citation: "de Gramont A, et al. (2000). Leucovorin and fluorouracil with or without oxaliplatin as first-line treatment in advanced colorectal cancer. J Clin Oncol 18:2938-47."
+    pmid: "10944126"
+    doi: "10.1200/JCO.2000.18.16.2938"
+    verified: true
+    support: abstract (NCI-CTC grade 3/4 neutropenia 41.7% vs 5.3%)
+  confidence: high
+  notes: "The same trial gave grade 3/4 diarrhea in 11.9% vs 5.3%. Grade 3/4 neutropenia counts per-patient over the whole treatment course, not per cycle. Tournigand 2004 says only that grade 3/4 neutropenia was more frequent with FOLFOX6 than with FOLFIRI; its per-arm rates were not available (abstract only)."
+
+- id: tox_folfiri_neutropenia_g34
+  kind: toxicity
+  quantity: Grade 3-4 neutropenia, FOLFIRI +/- cetuximab, first-line (CRYSTAL, KRAS wild-type safety set)
+  value: 24
+  low: null
+  high: null
+  units: percent of patients (FOLFIRI alone, n=350)
+  comparator: {regimen: "cetuximab + FOLFIRI (n=317)", value: 31}
+  source:
+    citation: "ERBITUX (cetuximab) US Prescribing Information, DailyMed SPL v58, effective 2026-04-16, Table 4 (CRYSTAL, K-Ras wild-type). https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bc6397e-4bd8-4d37-a007-a327e4da34d9"
+    pmid: null
+    doi: null
+    verified: true
+    support: "label Table 4: neutropenia any grade 49% / grade 3-4 31% (cetuximab+FOLFIRI) vs 42% / 24% (FOLFIRI)"
+  confidence: high
+  notes: "Graded by NCI CTC v2.0. This is the FDA KRAS-wt safety subset of CRYSTAL; the published-paper per-arm rates were not available."
+
+- id: tox_oxaliplatin_g3_neuropathy_trials
+  kind: toxicity
+  quantity: Grade 3 (or >=3) sensory neuropathy with oxaliplatin-based first-line chemotherapy, by strategy
+  value: 18.2
+  low: null
+  high: null
+  units: percent of patients (FOLFOX4 until progression, de Gramont 2000)
+  by_trial:
+    - {trial: "de Gramont 2000", arm: "FOLFOX4", value_pct: 18.2, comparator_pct: 0, comparator: "LV5FU2", grade: "3 neurosensory", pmid: "10944126"}
+    - {trial: "OPTIMOX1 (Tournigand 2006)", arm: "FOLFOX4 until progression", value_pct: 17.9, grade: "3 sensory", pmid: "16421419"}
+    - {trial: "OPTIMOX1 (Tournigand 2006)", arm: "FOLFOX7 x6 then LV5FU2 maintenance, oxaliplatin reintroduction (stop-and-go)", value_pct: 13.3, grade: "3 sensory", p_value: 0.12, pmid: "16421419"}
+    - {trial: "MRC COIN (Adams 2011), per-protocol", arm: "continuous oxaliplatin-fluoropyrimidine (n=467)", value_pct: 27, n_events: 126, grade: ">=3 peripheral neuropathy", pmid: "21641867"}
+    - {trial: "MRC COIN (Adams 2011), per-protocol", arm: "intermittent (n=511)", value_pct: 5, n_events: 25, grade: ">=3 peripheral neuropathy", pmid: "21641867"}
+  source:
+    citation: "de Gramont A, et al. (2000). J Clin Oncol 18:2938-47; Tournigand C, et al. (2006). OPTIMOX1: a randomized study of FOLFOX4 or FOLFOX7 with oxaliplatin in a stop-and-Go fashion in advanced colorectal cancer--a GERCOR study. J Clin Oncol 24:394-400; Adams RA, et al. (2011). Intermittent versus continuous oxaliplatin and fluoropyrimidine combination chemotherapy for first-line treatment of advanced colorectal cancer: results of the randomised phase 3 MRC COIN trial. Lancet Oncol 12:642-53."
+    pmid: "10944126"
+    doi: "10.1200/JCO.2000.18.16.2938"
+    verified: true
+    support: "all values from the three abstracts (PMIDs 10944126, 16421419, 21641867 each checked)"
+  confidence: high
+  notes: "COIN chemotherapy was oxaliplatin with either infused 5-FU/LV or capecitabine (OxFp; about two-thirds capecitabine, per PMC full text). Grade definitions differ slightly across trials."
+
+- id: tox_oxaliplatin_neuropathy_cumulative_dose
+  kind: toxicity
+  quantity: Cumulative oxaliplatin dose at which 10% of patients have grade >=3 neurosensory adverse events (FOLFOX4)
+  value: null
+  low: 805
+  high: 832
+  units: mg/m2 cumulative oxaliplatin (Western FOLFOX4 studies EFC2962, N9741, EFC4584, MOSAIC; total n=1844)
+  asian_studies: "1526 mg/m2 or not reached (J-PMS, MASCOT; n=1515)"
+  overall_g3plus_incidence_pct: {western_low: 9.3, western_high: 19, asian_low: 2.0, asian_high: 4.4}
+  source:
+    citation: "Sugihara K, et al. (2012). Analysis of neurosensory adverse events induced by FOLFOX4 treatment in colorectal cancer patients: a comparison between two Asian studies and four Western studies. Cancer Med 1:198-206."
+    pmid: "23342269"
+    doi: "10.1002/cam4.25"
+    verified: true
+    support: abstract
+  additional_sources:
+    - citation: "Oxaliplatin Injection US Prescribing Information (Hospira), DailyMed SPL v18, effective 2026-08-07. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e51a62ba-d163-4c57-835c-8c86cf097e40"
+      verified: true
+      support: "section 5.2: median time to onset of grade 3 peripheral sensory neuropathy was 9 cycles (adjuvant) and 6 cycles (previously treated advanced CRC); acute neuropathy in about 56% of patients overall and about 30% in any one cycle; delayed (persistent >14 d) neuropathy in 48%"
+    - citation: "Extra JM, et al. (1998). Pharmacokinetics and safety profile of oxaliplatin. Semin Oncol 25:13-22."
+      pmid: "9609104"
+      verified: true
+      support: "abstract: neurosensory symptoms (any grade) affect all patients receiving >=540 mg/m2 over >=4 cycles; 82% regress within 4-6 months"
+  confidence: high
+  notes: "At 85 mg/m2 per cycle, 805-832 mg/m2 is about 9.5-10 cycles (derived, not published). The 6-cycle and 9-cycle label medians apply to patients who reached grade 3, not the whole population."
+
+- id: tox_cetuximab_g3_skin
+  kind: toxicity
+  quantity: Grade 3(-4) acneiform rash / skin toxicity with cetuximab
+  value: 10
+  low: null
+  high: null
+  units: percent of patients (severe grade 3-4 acneiform rash, pooled across cetuximab trials, n=1373)
+  by_trial:
+    - {context: "label pooled, all indications", n: 1373, any_grade_pct: 82, g34_pct: 10}
+    - {context: "CO.17 / CA225-025 monotherapy, KRAS wt (label Table 5), rash/desquamation", n: 118, any_grade_pct: 95, g34_pct: 16}
+    - {context: "CRYSTAL cetuximab+FOLFIRI, all patients, grade 3 skin reactions (no grade 4)", g3_pct: 19.7, comparator_pct: 0.2, pmid: "19339720"}
+    - {context: "CRYSTAL cetuximab+FOLFIRI, KRAS wt, acne-like rash (label Table 4)", n: 317, any_grade_pct: 86, g34_pct: 18}
+    - {context: "ASPECCT cetuximab monotherapy, grade 3-4 skin toxicity", n: 500, g34_pct: 10, pmid: "24739896"}
+    - {context: "TIME/PRODIGE 28 maintenance cetuximab monotherapy, grade 3-4 rash", n: 67, g34_pct: 11.9, pmid: "37721754"}
+  source:
+    citation: "ERBITUX (cetuximab) US Prescribing Information, DailyMed SPL v58, effective 2026-04-16. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bc6397e-4bd8-4d37-a007-a327e4da34d9"
+    pmid: null
+    doi: null
+    verified: true
+    support: "label section 5.4 (82% any grade, 10% grade 3-4, n=1373), Table 4 and Table 5; trial values from abstracts of PMIDs 19339720, 24739896, 37721754"
+  confidence: high
+  notes: "Rash usually appears within the first 2 weeks. In CO.17, grade >=2 rash was associated with longer OS (HR 0.33, 95% CI 0.22-0.50), per the Jonker 2007 abstract."
+
+- id: tox_panitumumab_g3_skin
+  kind: toxicity
+  quantity: Grade >=3 skin toxicity with panitumumab
+  value: 15
+  low: null
+  high: null
+  units: percent of patients (panitumumab monotherapy, study 20020408)
+  by_trial:
+    - {context: "20020408 monotherapy (label): dermatologic toxicity any grade 90%, grade >=3 15%", n: 229, any_grade_pct: 90, g3plus_pct: 15}
+    - {context: "ASPECCT panitumumab monotherapy, grade 3-4 skin toxicity", n: 499, g34_pct: 13, pmid: "24739896"}
+    - {context: "PRIME 20050203 panitumumab+FOLFOX, KRAS wt, rash (label Table 2)", n: 322, any_grade_pct: 56, g34_pct: 17}
+    - {context: "PANAMA maintenance FU/FA + panitumumab, grade >=3 skin rash", g3plus_pct: 7.2, pmid: "34533973"}
+    - {context: "CHRONOS rechallenge monotherapy, grade 3 skin rash", n: 32, g3_pct: 9, pmid: "35915157"}
+  source:
+    citation: "VECTIBIX (panitumumab) US Prescribing Information, DailyMed SPL v161, effective 2026-06-23. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0fa4bca-f245-4d92-ae29-b0c630a315c2"
+    pmid: null
+    doi: null
+    verified: true
+    support: "label section 6.1 (study 20020408) and Table 2 (study 20050203); other values from abstracts / PMC full text of the PMIDs listed"
+  confidence: high
+  notes: "The original Van Cutsem 2007 abstract does not give the grade 3 skin rate; the label is the verified source for that trial."
+
+- id: rule_oxaliplatin_dose_modification
+  kind: toxicity
+  quantity: Oxaliplatin dose-delay / reduction rules (advanced CRC)
+  value: "Delay until ANC >= 1.5 x 10^9/L and platelets >= 75 x 10^9/L. After grade 4 neutropenia, febrile neutropenia or grade 3-4 thrombocytopenia: reduce oxaliplatin 85 -> 65 mg/m2 (advanced CRC; 75 mg/m2 adjuvant). Neuropathy: persistent grade 2 -> consider 65 mg/m2; persistent grade 3 -> consider discontinuing; grade 4 -> discontinue. Grade 3-4 GI toxicity -> oxaliplatin 65 mg/m2 plus 5-FU bolus 300 mg/m2 and 22-h infusion 500 mg/m2."
+  anc_threshold_1e9_per_L: 1.5
+  platelet_threshold_1e9_per_L: 75
+  source:
+    citation: "Oxaliplatin Injection US Prescribing Information (Hospira), DailyMed SPL v18, effective 2026-08-07. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e51a62ba-d163-4c57-835c-8c86cf097e40"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 2.2 Tables 1-2 and section 5.3"
+  confidence: high
+  notes: "The 5-FU reductions in the GI row are given against the FOLFOX4 (22-h infusion) schedule."
+
+- id: rule_irinotecan_dose_modification
+  kind: toxicity
+  quantity: Irinotecan + 5-FU/LV cycle-start and hold rules
+  value: "Start a new cycle only when granulocytes >= 1500/mm3 (1.5 x 10^9/L), platelets >= 100,000/mm3 and treatment-related diarrhea has fully resolved (bowel function back to baseline >= 24 h without antidiarrheals). Delay 1-2 weeks for recovery; consider discontinuing if not recovered after a 2-week delay. Hold irinotecan for neutropenic fever or ANC < 1000/mm3, and reduce later doses after recovery."
+  anc_threshold_1e9_per_L: 1.5
+  platelet_threshold_1e9_per_L: 100
+  source:
+    citation: "CAMPTOSAR (irinotecan) US Prescribing Information, DailyMed SPL v37, effective 2026-05-12. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e518dfc6-7e93-4fee-a66c-51e1ab71c056"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 2 (Recommended Dose Modifications for combination schedules) and section 5.2"
+  confidence: high
+  notes: "Label dose levels for the infusional combination regimen: irinotecan 180 -> 150 -> 120 mg/m2."
+
+- id: rule_fluorouracil_dose_modification
+  kind: toxicity
+  quantity: 5-FU withhold rules
+  value: "Withhold 5-FU for grade 4 myelosuppression, grade 3-4 diarrhea, grade 3-4 mucositis, grade 2-3 hand-foot syndrome, new cardiac ischemia/arrhythmia/heart failure, hyperammonemic encephalopathy or acute cerebellar/neurologic syndrome. Resume at a reduced dose once diarrhea, mucositis, myelosuppression or hand-foot syndrome improve to grade 1."
+  source:
+    citation: "Fluorouracil Injection US Prescribing Information (Fresenius Kabi), DailyMed SPL v7, effective 2026-07-15. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=beb8c6c5-4b6e-4770-b6d4-718e33c7a2ff"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 2.7 Dose Modifications"
+  confidence: high
+  notes: "The label gives no numeric percent reduction. It recommends DPYD genotyping before starting (section 2.1)."
+
+- id: rule_cetuximab_skin_dose_modification
+  kind: toxicity
+  quantity: Cetuximab dose modification for grade 3-4 dermatologic toxicity
+  value: "1st grade 3-4 occurrence: delay 1-2 weeks; if improved continue 250 mg/m2. 2nd: delay 1-2 weeks, then 200 mg/m2. 3rd: delay 1-2 weeks, then 150 mg/m2. 4th: discontinue. If no improvement after delay: discontinue. Grade 3-4 infusion reaction: discontinue permanently."
+  dose_levels_mg_m2_weekly: [250, 200, 150]
+  source:
+    citation: "ERBITUX (cetuximab) US Prescribing Information, DailyMed SPL v58, effective 2026-04-16. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bc6397e-4bd8-4d37-a007-a327e4da34d9"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 2.5 Table 1"
+  confidence: high
+  notes: "Dose levels are given for the weekly schedule."
+
+- id: rule_panitumumab_skin_dose_modification
+  kind: toxicity
+  quantity: Panitumumab dose modification for grade 3 dermatologic toxicity
+  value: "1st grade 3 occurrence: withhold 1-2 doses; if improved to < grade 3, restart at 100%. 2nd: withhold 1-2 doses, restart at 80%. 3rd: withhold 1-2 doses, restart at 60%. 4th: discontinue. Discontinue for any grade 4 reaction, or a grade 3 reaction that does not recover after withholding 1-2 doses."
+  dose_fractions: [1.0, 0.8, 0.6]
+  source:
+    citation: "VECTIBIX (panitumumab) US Prescribing Information, DailyMed SPL v161, effective 2026-06-23. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e0fa4bca-f245-4d92-ae29-b0c630a315c2"
+    pmid: null
+    doi: null
+    verified: true
+    support: "section 2.3 Dose Modifications"
+  confidence: high
+  notes: null
+
+# =====================================================================================
+# PART 2. TRIAL OUTCOMES
+# =====================================================================================
+
+# ---------- Anti-EGFR vs best supportive care (chemorefractory) ----------
+
+- id: co17_cetuximab_vs_bsc_all
+  kind: trial
+  quantity: Cetuximab + BSC vs BSC alone, chemorefractory EGFR-expressing mCRC (NCIC CTG CO.17), all randomized
+  setting: chemorefractory (prior fluoropyrimidine, irinotecan and oxaliplatin, or contraindicated); KRAS unselected
+  arms:
+    - name: cetuximab (400 mg/m2 then 250 mg/m2 weekly) + BSC
+      n: 287
+      response_rate_pct: 8.0
+      stable_disease_pct: 31.4
+      median_pfs_months: null
+      median_os_months: 6.1
+      median_os_95ci: [5.4, 6.7]
+    - name: BSC alone
+      n: 285
+      response_rate_pct: 0
+      stable_disease_pct: 10.9
+      median_pfs_months: null
+      median_os_months: 4.6
+      median_os_95ci: [4.2, 4.9]
+  hazard_ratios: {pfs: 0.68, pfs_95ci: [0.57, 0.80], os: 0.77, os_95ci: [0.64, 0.92], os_p: 0.005}
+  grade3plus_any_ae_pct: {cetuximab: 78.5, bsc: 59.1}
+  source:
+    citation: "Jonker DJ, et al. (2007). Cetuximab for the treatment of colorectal cancer. N Engl J Med 357:2040-8."
+    pmid: "18003960"
+    doi: "10.1056/NEJMoa071834"
+    verified: true
+    support: "abstract (n, OS medians, HRs, PR 23 pts = 8.0%, SD rates, grade >=3 AE rates); OS 95% CIs from Erbitux label Table 11 (study CA225-025)"
+  confidence: high
+  notes: "Per-arm median PFS NOT verified: the abstract gives only the PFS HR, and the full text was not accessible. Medians of about 1.9 vs 1.8 months are widely cited (UNVERIFIED). All responses were partial. Primary endpoint OS. Patients were evaluated every 8 weeks, so PFS is discretized near 8 weeks."
+
+- id: co17_kras_wt
+  kind: trial
+  quantity: Cetuximab + BSC vs BSC, KRAS exon 2 wild-type subgroup of CO.17 (Karapetis 2008)
+  setting: chemorefractory, KRAS exon 2 (codons 12/13) wild-type; retrospective biomarker analysis (394 of 572 tumors tested)
+  arms:
+    - name: cetuximab + BSC
+      n: 117
+      response_rate_pct: 12.8
+      median_pfs_months: 3.7
+      median_os_months: 9.5
+      one_year_os_pct: 28.3
+    - name: BSC alone
+      n: 113
+      response_rate_pct: 0
+      median_pfs_months: 1.9
+      median_os_months: 4.8
+      one_year_os_pct: 20.1
+  hazard_ratios: {pfs: 0.40, pfs_95ci: [0.30, 0.54], os: 0.55, os_95ci: [0.41, 0.74], os_adjusted: 0.62, os_adjusted_95ci: [0.44, 0.87], pfs_adjusted: 0.42, pfs_adjusted_95ci: [0.30, 0.58]}
+  source:
+    citation: "Karapetis CS, et al. (2008). K-ras mutations and benefit from cetuximab in advanced colorectal cancer. N Engl J Med 359:1757-65."
+    pmid: "18946061"
+    doi: "10.1056/NEJMoa0804385"
+    verified: true
+    support: "abstract (medians, HRs) + full text: Table 2 (n 117/113), Results text (RR 12.8% vs none, 1-yr OS, adjusted HRs)"
+  confidence: high
+  notes: "13 BSC patients crossed over to cetuximab because of protocol violations. The Erbitux label's FDA re-analysis of the same trial gives a different KRAS-wt split (n 117 vs 128) and OS 8.6 (7.0-10.3) vs 5.0 (4.3-5.7) months, HR 0.63 (0.47-0.84). Use the publication numbers above unless matching the label."
+
+- id: co17_kras_mutant
+  kind: trial
+  quantity: Cetuximab + BSC vs BSC, KRAS exon 2 mutant subgroup of CO.17 (Karapetis 2008)
+  setting: chemorefractory, KRAS exon 2 mutant
+  arms:
+    - name: cetuximab + BSC
+      n: 81
+      response_rate_pct: 1.2
+      median_pfs_months: 1.8
+      median_os_months: 4.5
+      one_year_os_pct: 13.2
+    - name: BSC alone
+      n: 83
+      response_rate_pct: 0
+      median_pfs_months: 1.8
+      median_os_months: 4.6
+      one_year_os_pct: 19.6
+  hazard_ratios: {pfs: 0.99, pfs_95ci: [0.73, 1.35], os: 0.98, os_95ci: [0.70, 1.37]}
+  source:
+    citation: "Karapetis CS, et al. (2008). K-ras mutations and benefit from cetuximab in advanced colorectal cancer. N Engl J Med 359:1757-65."
+    pmid: "18946061"
+    doi: "10.1056/NEJMoa0804385"
+    verified: true
+    support: "abstract (HRs) + full text (Table 1/2 n, Results text medians, 1-yr OS, RR: one responder = 1.2%)"
+  confidence: high
+  notes: "Useful as a negative control: anti-EGFR has no effect in KRAS-mutant disease. KRAS status did not change survival under BSC alone (HR 1.01)."
+
+- id: pmab_vs_bsc_all
+  kind: trial
+  quantity: Panitumumab + BSC vs BSC alone, chemorefractory EGFR-expressing mCRC (study 20020408), all randomized
+  setting: chemorefractory; KRAS unselected; open-label; BSC patients could cross over at progression
+  arms:
+    - name: panitumumab 6 mg/kg q2w + BSC
+      n: 231
+      response_rate_pct: 10
+      responders_n: 22
+      median_pfs_weeks: 8.0
+      median_pfs_weeks_95ci: [7.9, 8.4]
+      mean_pfs_weeks: 13.8
+      median_os_months: 6.4
+      median_os_months_95ci: [6.1, 7.7]
+    - name: BSC alone
+      n: 232
+      response_rate_pct: 0
+      responders_n: 0
+      median_pfs_weeks: 7.3
+      median_pfs_weeks_95ci: [7.1, 7.7]
+      mean_pfs_weeks: 8.5
+      median_os_months: 6.3
+      median_os_months_95ci: [4.9, 7.6]
+  hazard_ratios: {pfs: 0.54, pfs_95ci: [0.44, 0.66], os: 1.00, os_95ci: [0.82, 1.22]}
+  source:
+    citation: "Van Cutsem E, et al. (2007). Open-label phase III trial of panitumumab plus best supportive care compared with best supportive care alone in patients with chemotherapy-refractory metastatic colorectal cancer. J Clin Oncol 25:1658-64."
+    pmid: "17470858"
+    doi: "10.1200/JCO.2006.08.1620"
+    verified: true
+    support: "abstract (n, PFS medians/CIs in weeks, mean PFS, RR, HRs); OS medians and responder count from ClinicalTrials.gov posted results NCT00113763"
+  confidence: high
+  notes: "PFS is in WEEKS. OS was confounded: 76% of BSC patients crossed over to panitumumab. The median PFS is pinned near the first scan (week 8), so the mean PFS or the HR is a better calibration target than the median."
+
+- id: pmab_vs_bsc_kras_wt
+  kind: trial
+  quantity: Panitumumab + BSC vs BSC, KRAS wild-type subgroup (Amado 2008)
+  setting: chemorefractory, KRAS codon 12/13 wild-type; retrospective (KRAS known in 427/463)
+  arms:
+    - name: panitumumab + BSC
+      n: 124
+      response_rate_pct: 17
+      response_rate_95ci: [11, 25]
+      responders_n: 21
+      stable_disease_pct: 34
+      median_pfs_weeks: 12.3
+      median_pfs_weeks_95ci: [8.3, 16.1]
+      median_os_months: 8.1
+    - name: BSC alone
+      n: 119
+      response_rate_pct: 0
+      stable_disease_pct: 12
+      median_pfs_weeks: 7.3
+      median_pfs_weeks_95ci: [7.0, 7.7]
+      median_os_months: 7.6
+  hazard_ratios: {pfs: 0.45, pfs_95ci: [0.34, 0.59], os: 0.99, os_95ci: [0.75, 1.29]}
+  source:
+    citation: "Amado RG, et al. (2008). Wild-type KRAS is required for panitumumab efficacy in patients with metastatic colorectal cancer. J Clin Oncol 26:1626-34."
+    pmid: "18316791"
+    doi: "10.1200/JCO.2007.14.7116"
+    verified: true
+    support: "abstract (HR, PFS medians, RR 17%) + full text (CONSORT n 124/119, 21/124 PR, SD 34% vs 12%, Fig 5 OS medians and HR); PFS 95% CIs from ClinicalTrials.gov NCT00113763 post-hoc results"
+  confidence: high
+  notes: "PFS in WEEKS. OS is confounded by crossover (76% of KRAS-wt BSC patients got panitumumab). Among BSC patients who crossed over, KRAS-wt response rate was 22% (20/91)."
+
+- id: pmab_vs_bsc_kras_mutant
+  kind: trial
+  quantity: Panitumumab + BSC vs BSC, KRAS mutant subgroup (Amado 2008)
+  setting: chemorefractory, KRAS codon 12/13 mutant
+  arms:
+    - name: panitumumab + BSC
+      n: 84
+      response_rate_pct: 0
+      median_pfs_weeks: 7.4
+      median_pfs_weeks_95ci: [7.3, 7.9]
+      median_os_months: 4.9
+    - name: BSC alone
+      n: 100
+      response_rate_pct: 0
+      median_pfs_weeks: 7.3
+      median_pfs_weeks_95ci: [6.3, 7.9]
+      median_os_months: 4.4
+  hazard_ratios: {pfs: 0.99, pfs_95ci: [0.73, 1.36], os: 1.02, os_95ci: [0.75, 1.39]}
+  source:
+    citation: "Amado RG, et al. (2008). J Clin Oncol 26:1626-34."
+    pmid: "18316791"
+    doi: "10.1200/JCO.2007.14.7116"
+    verified: true
+    support: "abstract (PFS HR; RR 0% in mutant) + full text (n, Fig 2 PFS medians, Fig 5 OS medians, OS HR); PFS CIs from ClinicalTrials.gov NCT00113763"
+  confidence: high
+  notes: null
+
+# ---------- First-line chemotherapy ----------
+
+- id: degramont_2000_folfox4_first_line
+  kind: trial
+  quantity: LV5FU2 +/- oxaliplatin (FOLFOX4) first-line advanced CRC
+  setting: first-line, previously untreated, measurable disease
+  arms:
+    - name: FOLFOX4 (LV5FU2 + oxaliplatin 85 mg/m2 q2w)
+      n: null
+      response_rate_pct: 50.7
+      median_pfs_months: 9.0
+      median_os_months: 16.2
+    - name: LV5FU2
+      n: null
+      response_rate_pct: 22.3
+      median_pfs_months: 6.2
+      median_os_months: 14.7
+  n_total: 420
+  hazard_ratios: {pfs: null, os: null, pfs_p: 0.0003, os_p: 0.12, rr_p: 0.0001}
+  toxicity_g34_pct: {neutropenia: [41.7, 5.3], diarrhea: [11.9, 5.3], neurosensory_g3: [18.2, 0]}
+  source:
+    citation: "de Gramont A, et al. (2000). Leucovorin and fluorouracil with or without oxaliplatin as first-line treatment in advanced colorectal cancer. J Clin Oncol 18:2938-47."
+    pmid: "10944126"
+    doi: "10.1200/JCO.2000.18.16.2938"
+    verified: true
+    support: abstract
+  confidence: high
+  notes: "Per-arm n not verified (abstract gives 420 total; 1:1, about 210 per arm, UNVERIFIED). HRs not in the abstract; the OS difference was not significant (P=.12). Republished as a JCO classic in 2023 (PMID 37967516)."
+
+- id: gercor_tournigand_2004_first_line
+  kind: trial
+  quantity: "GERCOR C97-3: FOLFIRI then FOLFOX6 (arm A) vs FOLFOX6 then FOLFIRI (arm B) - first-line results and overall strategy"
+  setting: first-line advanced CRC; planned crossover to the other regimen at progression
+  arms:
+    - name: "Arm A: first-line FOLFIRI (then FOLFOX6)"
+      n: 109
+      response_rate_pct: 56
+      median_pfs_months: 8.5
+      median_pfs2_months: 14.2
+      median_os_months: 21.5
+    - name: "Arm B: first-line FOLFOX6 (then FOLFIRI)"
+      n: 111
+      response_rate_pct: 54
+      median_pfs_months: 8.0
+      median_pfs2_months: 10.9
+      median_os_months: 20.6
+  hazard_ratios: {pfs: null, os: null, first_line_pfs_p: 0.26, pfs2_p: 0.64, os_p: 0.99}
+  source:
+    citation: "Tournigand C, et al. (2004). FOLFIRI followed by FOLFOX6 or the reverse sequence in advanced colorectal cancer: a randomized GERCOR study. J Clin Oncol 22:229-37."
+    pmid: "14657227"
+    doi: "10.1200/JCO.2004.05.113"
+    verified: true
+    support: abstract
+  confidence: high
+  notes: "FOLFOX6 here used oxaliplatin 100 mg/m2 (not 85) with dl-LV 400 mg/m2, 5-FU bolus 400 mg/m2 and 46-h infusion 2400-3000 mg/m2; FOLFIRI used irinotecan 180 mg/m2 (abstract). PFS2 = time to second progression. Toxicity: FOLFIRI had more grade 3/4 mucositis, nausea/vomiting and grade 2 alopecia; FOLFOX6 more grade 3/4 neutropenia and neurosensory toxicity (abstract gives no rates). Republished as a JCO classic in 2023 (PMID 37379692)."
+
+- id: gercor_tournigand_2004_second_line
+  kind: trial
+  quantity: GERCOR C97-3 second-line results after crossover
+  setting: second-line after progression on the other regimen
+  arms:
+    - name: "Second-line FOLFOX6 (arm A, after FOLFIRI)"
+      n: null
+      response_rate_pct: 15
+      median_pfs_months: 4.2
+      median_os_months: null
+    - name: "Second-line FOLFIRI (arm B, after FOLFOX6)"
+      n: null
+      response_rate_pct: 4
+      median_pfs_months: 2.5
+      median_os_months: null
+  hazard_ratios: {pfs: null, os: null}
+  source:
+    citation: "Tournigand C, et al. (2004). J Clin Oncol 22:229-37."
+    pmid: "14657227"
+    doi: "10.1200/JCO.2004.05.113"
+    verified: true
+    support: abstract
+  confidence: high
+  notes: "The number of patients who actually got second-line therapy in each arm is not in the abstract (null). Second-line efficacy is much lower than first-line, which is useful for calibrating acquired cross-resistance."
+
+# ---------- CRYSTAL ----------
+
+- id: crystal_2009_all_randomized
+  kind: trial
+  quantity: "CRYSTAL: FOLFIRI +/- cetuximab, first-line EGFR-expressing mCRC (initial report, all patients)"
+  setting: first-line, KRAS unselected (KRAS known in about 45% at the 2009 report)
+  arms:
+    - name: cetuximab + FOLFIRI
+      n: 599
+      response_rate_pct: null
+      median_pfs_months: null
+      median_os_months: null
+    - name: FOLFIRI
+      n: 599
+      response_rate_pct: null
+      median_pfs_months: null
+      median_os_months: null
+  hazard_ratios: {pfs: 0.85, pfs_95ci: [0.72, 0.99], pfs_p: 0.048, os: 0.93, os_95ci: [0.81, 1.07], os_p: 0.31, pfs_kras_wt: 0.68, pfs_kras_wt_95ci: [0.50, 0.94]}
+  toxicity_g34_pct: {skin_reactions_g3: [19.7, 0.2], infusion_reactions: [2.5, 0], diarrhea: [15.7, 10.5]}
+  source:
+    citation: "Van Cutsem E, et al. (2009). Cetuximab and chemotherapy as initial treatment for metastatic colorectal cancer. N Engl J Med 360:1408-17."
+    pmid: "19339720"
+    doi: "10.1056/NEJMoa0805019"
+    verified: true
+    support: abstract (n per arm, HRs, toxicity)
+  confidence: high
+  notes: "The 2009 per-arm medians and the 2009 KRAS-wt n/RR/medians were NOT verified (full text inaccessible). Commonly cited 2009 KRAS-wt figures (UNVERIFIED): n 172 vs 176, RR 59.3% vs 43.2%, PFS 9.9 vs 8.7 months. Prefer crystal_kras_wt (2011 update) as the calibration target. ClinicalTrials.gov ITT results (later cut): PFS 8.9 (8.0-9.4) vs 8.0 (7.6-9.0) months; OS 19.9 (18.5-21.3) vs 18.6 (16.7-19.8) months; ORR 46.9% vs 38.7%."
+
+- id: crystal_kras_wt
+  kind: trial
+  quantity: "CRYSTAL updated analysis: FOLFIRI +/- cetuximab, first-line, KRAS exon 2 wild-type"
+  setting: first-line, KRAS exon 2 (codons 12/13) wild-type; KRAS ascertainment raised to 89%
+  arms:
+    - name: FOLFIRI + cetuximab
+      n: 316
+      response_rate_pct: 57.3
+      response_rate_95ci: [51.6, 62.8]
+      median_pfs_months: 9.9
+      median_pfs_95ci: [9.0, 11.3]
+      median_os_months: 23.5
+      median_os_95ci: [21.2, 26.3]
+    - name: FOLFIRI
+      n: 350
+      response_rate_pct: 39.7
+      response_rate_95ci: [34.6, 45.1]
+      median_pfs_months: 8.4
+      median_pfs_95ci: [7.4, 9.2]
+      median_os_months: 20.0
+      median_os_95ci: [17.4, 21.7]
+  hazard_ratios: {pfs: 0.696, pfs_p: 0.0012, os: 0.796, os_p: 0.0093, response_odds_ratio: 2.069}
+  source:
+    citation: "Van Cutsem E, et al. (2011). Cetuximab plus irinotecan, fluorouracil, and leucovorin as first-line treatment for metastatic colorectal cancer: updated analysis of overall survival according to tumor KRAS and BRAF mutation status. J Clin Oncol 29:2011-9."
+    pmid: "21502544"
+    doi: "10.1200/JCO.2010.33.5091"
+    verified: true
+    support: "abstract (medians, RR, HRs, OR); n per arm and 95% CIs from ClinicalTrials.gov NCT00154102 posted results (KRAS-wt ITT population, data to 28 Aug 2009), which match the abstract medians/RR exactly"
+  additional_sources:
+    - citation: "ERBITUX label Table 10 (FDA analysis, KRAS wt n=320 vs 356): PFS 9.5 (8.9-11.1) vs 8.1 (7.4-9.2), HR 0.70 (0.57-0.86); OS 23.5 (21-26) vs 19.5 (17-21), HR 0.80 (0.67-0.94); ORR 57% vs 39%. https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=8bc6397e-4bd8-4d37-a007-a327e4da34d9"
+      verified: true
+      support: label Table 10 (different analysis population and cut; listed for transparency)
+  confidence: high
+  notes: "HR CIs not in the JCO abstract. PFS by independent review. The abstract calls BRAF mutation a strong indicator of poor prognosis (no subgroup numbers in the abstract)."
+
+- id: crystal_kras_mutant
+  kind: trial
+  quantity: "CRYSTAL updated analysis: FOLFIRI +/- cetuximab, first-line, KRAS exon 2 mutant"
+  setting: first-line, KRAS exon 2 mutant
+  arms:
+    - name: FOLFIRI + cetuximab
+      n: 214
+      response_rate_pct: 31.3
+      response_rate_95ci: [25.2, 38.0]
+      median_pfs_months: 7.4
+      median_pfs_95ci: [6.1, 8.0]
+      median_os_months: 16.2
+      median_os_95ci: [14.9, 17.9]
+    - name: FOLFIRI
+      n: 183
+      response_rate_pct: 36.1
+      response_rate_95ci: [29.1, 43.5]
+      median_pfs_months: 7.7
+      median_pfs_95ci: [7.3, 9.2]
+      median_os_months: 16.7
+      median_os_95ci: [14.9, 19.4]
+  hazard_ratios: {pfs: null, os: null}
+  source:
+    citation: "ClinicalTrials.gov NCT00154102 posted results (CRYSTAL; KRAS-mutant ITT population, data to 28 Aug 2009). https://clinicaltrials.gov/study/NCT00154102"
+    pmid: null
+    doi: null
+    verified: true
+    support: "registry results tables (n, medians, 95% CIs, response rates)"
+  additional_sources:
+    - citation: "Van Cutsem E, et al. (2011). J Clin Oncol 29:2011-9."
+      pmid: "21502544"
+      verified: true
+      support: "abstract reports a significant KRAS-by-treatment interaction for all key endpoints but gives no mutant-subgroup numbers"
+  confidence: medium
+  notes: "Numbers come from the sponsor's registry posting, not the paper's abstract; they match the KRAS-wt registry figures that do agree with the JCO abstract. Label FDA analysis (n 216/187) differs slightly: PFS 7.5 vs 8.2, OS 16.0 vs 16.7, ORR 31% vs 35%."
+
+# ---------- Rechallenge ----------
+
+- id: cricket_rechallenge
+  kind: trial
+  quantity: "CRICKET: cetuximab + irinotecan rechallenge, third line, RAS/BRAF wt mCRC with acquired resistance to first-line cetuximab + irinotecan"
+  setting: third-line; single-arm phase 2; required prior PR and PFS >= 6 months on first-line irinotecan + cetuximab, progression within 4 weeks of last cetuximab, and second-line oxaliplatin + bevacizumab
+  regimen: "cetuximab 500 mg/m2 + irinotecan 180 mg/m2, every 2 weeks"
+  arms:
+    - name: cetuximab + irinotecan rechallenge
+      n: 28
+      response_rate_pct: 21
+      response_rate_95ci: [10, 40]
+      partial_responses: {total: 6, confirmed: 4, unconfirmed: 2}
+      complete_responses: 0
+      stable_disease_n: 9
+      disease_control_rate_pct: 54
+      disease_control_rate_95ci: [36, 70]
+      median_pfs_months: 3.4
+      median_pfs_95ci: [1.9, 3.8]
+      median_os_months: 9.8
+      median_os_95ci: [5.2, 13.10]
+  hazard_ratios: {pfs: null, os: null}
+  toxicity_g3plus_pct: {diarrhea: 18, acneiform_rash: 14, neutropenia: 14, hand_foot: 7}
+  source:
+    citation: "Cremolini C, et al. (2019). Rechallenge for Patients With RAS and BRAF Wild-Type Metastatic Colorectal Cancer With Acquired Resistance to First-line Cetuximab and Irinotecan: A Phase 2 Single-Arm Clinical Trial. JAMA Oncol 5:343-350."
+    pmid: "30476968"
+    doi: "10.1001/jamaoncol.2018.5080"
+    pmcid: "PMC6439839"
+    verified: true
+    support: "abstract (n, RR, DCR) + full text Results and Table (PFS/OS medians with CIs, confirmed/unconfirmed PRs, toxicity)"
+  confidence: high
+  notes: "The OS upper CI is printed as 13.10 in the paper. Median duration of disease control was 9.9 weeks (95% CI 8.1-23.1). See cricket_ctdna_subgroups for the RAS ctDNA split."
+
+- id: cricket_ctdna_subgroups
+  kind: trial
+  quantity: "CRICKET: outcome by baseline plasma ctDNA RAS status at rechallenge"
+  setting: third-line cetuximab + irinotecan rechallenge; 25 of 28 patients had evaluable ctDNA
+  arms:
+    - name: ctDNA RAS wild-type
+      n: 13
+      response_rate_pct: null
+      median_pfs_months: 4.0
+      median_os_months: 12.5
+    - name: ctDNA RAS mutated
+      n: 12
+      response_rate_pct: null
+      median_pfs_months: 1.9
+      median_os_months: 5.2
+  hazard_ratios: {pfs: 0.44, pfs_95ci: [0.18, 0.98], pfs_p: 0.03, os: 0.58, os_95ci: [0.22, 1.52], os_p: 0.24}
+  ctdna_ras_mutant_prevalence: "12 of 25 (48%)"
+  source:
+    citation: "Cremolini C, et al. (2019). JAMA Oncol 5:343-350."
+    pmid: "30476968"
+    doi: "10.1001/jamaoncol.2018.5080"
+    pmcid: "PMC6439839"
+    verified: true
+    support: "abstract (PFS medians and HR, 12/25 RAS-mutant) + full text Results (n 13 vs 12, OS medians and HR)"
+  confidence: high
+  notes: "Per-subgroup response rates are not given as percentages; the paper states that no RAS mutations were found in patients with a confirmed PR. The paper does not give separate n for the OS comparison (assumed the same 13 vs 12). Small exploratory subgroups."
+
+- id: chronos_ctdna_guided_panitumumab_rechallenge
+  kind: trial
+  quantity: "CHRONOS: ctDNA-guided panitumumab monotherapy rechallenge"
+  setting: "later line; tissue RAS wt tumors with prior response to anti-EGFR; ctDNA screen excluded patients with RAS/BRAF/EGFR-ectodomain resistance mutations; single-arm phase 2"
+  regimen: "panitumumab 6 mg/kg IV over 1 h every 2 weeks"
+  screening: {screened: 52, excluded_resistance_mutation_n: 16, excluded_resistance_mutation_pct: 31}
+  arms:
+    - name: panitumumab rechallenge
+      n: 27
+      response_rate_pct: 30
+      response_rate_95ci: [12, 47]
+      partial_responses: {total: 8, confirmed: 6, unconfirmed: 2}
+      stable_disease_pct: 40
+      disease_control_rate_pct: 63
+      disease_control_rate_95ci: [41, 78]
+      median_pfs_weeks: 16
+      median_os_weeks: 55
+      median_duration_of_response_weeks: 17
+  hazard_ratios: {pfs: null, os: null}
+  source:
+    citation: "Sartore-Bianchi A, et al. (2022). Circulating tumor DNA to guide rechallenge with panitumumab in metastatic colorectal cancer: the phase 2 CHRONOS trial. Nat Med 28:1612-1618."
+    pmid: "35915157"
+    doi: "10.1038/s41591-022-01886-0"
+    pmcid: "PMC9386661"
+    verified: true
+    support: "abstract (screening, n, PR and DCR counts) + full text (ORR 95% CI, SD, DCR CI, median PFS 16 weeks, median OS 55 weeks, DoR 17 weeks)"
+  confidence: high
+  notes: "PFS/OS are in WEEKS and given without CIs in the text (the KM curves are in Extended Data Fig. 4). DCR is defined as PR + SD lasting >4 months. Grade 3/4 toxicity in 7/32 (22%) of the safety population; grade 3 rash 3/32 (9%)."
+
+# ---------- Head-to-head anti-EGFR ----------
+
+- id: aspecct_pmab_vs_cetuximab
+  kind: trial
+  quantity: "ASPECCT: panitumumab vs cetuximab, chemorefractory KRAS exon 2 wt mCRC"
+  setting: chemorefractory; KRAS exon 2 wild-type; open-label non-inferiority phase 3
+  arms:
+    - name: panitumumab 6 mg/kg q2w
+      n: 499
+      response_rate_pct: 22.0
+      response_rate_95ci: [18.4, 26.0]
+      response_evaluable_n: 486
+      median_pfs_months: 4.1
+      median_pfs_95ci: [3.2, 4.8]
+      median_os_months: 10.4
+      median_os_95ci: [9.4, 11.6]
+    - name: cetuximab 400 mg/m2 then 250 mg/m2 weekly
+      n: 500
+      response_rate_pct: 19.8
+      response_rate_95ci: [16.3, 23.6]
+      response_evaluable_n: 485
+      median_pfs_months: 4.4
+      median_pfs_95ci: [3.2, 4.8]
+      median_os_months: 10.0
+      median_os_95ci: [9.3, 11.0]
+  hazard_ratios: {os: 0.97, os_95ci: [0.84, 1.11], pfs: 1.00, pfs_95ci: [0.88, 1.14], response_odds_ratio: 1.15, response_or_95ci: [0.83, 1.58]}
+  toxicity_g34_pct: {skin: [13, 10], infusion_reactions: ["<0.5", 2], hypomagnesaemia: [7, 3]}
+  source:
+    citation: "Price TJ, et al. (2014). Panitumumab versus cetuximab in patients with chemotherapy-refractory wild-type KRAS exon 2 metastatic colorectal cancer (ASPECCT): a randomised, multicentre, open-label, non-inferiority phase 3 study. Lancet Oncol 15:569-79."
+    pmid: "24739896"
+    doi: "10.1016/S1470-2045(14)70118-4"
+    verified: true
+    support: "abstract (n treated 499/500 of 1010 randomized, OS medians/CIs/HR, toxicity); PFS and ORR from ClinicalTrials.gov NCT01001377 posted results and Vectibix label Table 5 (study 20080763)"
+  confidence: high
+  notes: "PFS/ORR are not in the Lancet Oncol abstract; registry and label agree (label rounds ORR to 22% vs 19%). The registry OS HR is 0.966 (0.839-1.113). Panitumumab kept 105.7% of the cetuximab OS effect."
+
+# ---------- Intermittent / maintenance / stop-and-go strategies ----------
+
+- id: optimox1_stop_and_go
+  kind: trial
+  quantity: "OPTIMOX1: FOLFOX4 until progression vs FOLFOX7 x6 -> LV5FU2 maintenance x12 -> FOLFOX7 reintroduction (stop-and-go oxaliplatin)"
+  setting: first-line advanced CRC
+  arms:
+    - name: "Arm A: FOLFOX4 until progression"
+      n: null
+      response_rate_pct: 58.5
+      median_pfs_months: 9.0
+      median_os_months: 19.3
+      g34_toxicity_pct: 54.4
+      g3_sensory_neuropathy_pct: 17.9
+    - name: "Arm B: FOLFOX7 x6, maintenance without oxaliplatin x12 cycles, FOLFOX7 reintroduction"
+      n: null
+      response_rate_pct: 59.2
+      median_pfs_months: 8.7
+      median_os_months: 21.2
+      g34_toxicity_pct: 48.7
+      g3_sensory_neuropathy_pct: 13.3
+  n_total: 620
+  hazard_ratios: {pfs: null, os: null, note: "PFS and OS differences not significant"}
+  reintroduction: "In arm B, oxaliplatin was reintroduced in only 40.1% of patients; 69.4% of these had response or stabilization"
+  source:
+    citation: "Tournigand C, et al. (2006). OPTIMOX1: a randomized study of FOLFOX4 or FOLFOX7 with oxaliplatin in a stop-and-Go fashion in advanced colorectal cancer--a GERCOR study. J Clin Oncol 24:394-400."
+    pmid: "16421419"
+    doi: "10.1200/JCO.2005.03.0106"
+    verified: true
+    support: abstract
+  confidence: high
+  notes: "n per arm not verified (620 enrolled includes an exploratory cohort of 95 elderly/poor-prognosis patients). FOLFOX7 uses 'high-dose' oxaliplatin per the abstract; the 130 mg/m2 dose is from memory (UNVERIFIED). From cycle 7, fewer patients had grade 3-4 toxicity in arm B."
+
+- id: optimox2_maintenance_vs_complete_stop
+  kind: trial
+  quantity: "OPTIMOX2: mFOLFOX7 x6 then LV5FU2 maintenance vs mFOLFOX7 x6 then complete chemotherapy-free interval (CFI)"
+  setting: first-line; mFOLFOX7 reintroduced at progression in both arms; primary endpoint duration of disease control (DDC)
+  arms:
+    - name: "Arm 1: maintenance LV5FU2"
+      n: 98
+      response_rate_pct: 59.2
+      reintroduction_response_rate_pct: 20.4
+      median_duration_disease_control_months: 13.1
+      median_pfs_months: 8.6
+      median_os_months: 23.8
+      median_maintenance_duration_months: 4.8
+    - name: "Arm 2: complete stop (CFI)"
+      n: 104
+      response_rate_pct: 59.6
+      reintroduction_response_rate_pct: 30.3
+      median_duration_disease_control_months: 9.2
+      median_pfs_months: 6.6
+      median_os_months: 19.5
+      median_cfi_duration_months: 3.9
+  hazard_ratios: {pfs: null, os: null, ddc_p: 0.046}
+  source:
+    citation: "Chibaudel B, et al. (2009). Can chemotherapy be discontinued in unresectable metastatic colorectal cancer? The GERCOR OPTIMOX2 Study. J Clin Oncol 27:5727-33."
+    pmid: "19786657"
+    doi: "10.1200/JCO.2009.23.4344"
+    verified: true
+    support: abstract
+  confidence: high
+  notes: "The response rates in the first rows are for the initial 6 cycles of mFOLFOX7. A 3.9-month median CFI is a direct calibration target for regrowth after stopping chemotherapy."
+
+- id: coin_intermittent_vs_continuous
+  kind: trial
+  quantity: "MRC COIN arms A vs C: continuous vs intermittent (12 weeks then break until progression) oxaliplatin + fluoropyrimidine"
+  setting: first-line advanced CRC; non-inferiority for OS (boundary HR 1.162) not met
+  arms:
+    - name: "Arm A: continuous OxFp"
+      n: 815
+      median_os_months: 15.8
+      median_os_iqr: [9.4, 26.1]
+      per_protocol_n: 467
+      per_protocol_median_os_months: 19.6
+      g3plus_peripheral_neuropathy_pct_pp: 27
+      g3plus_haematological_pct_pp: 15
+    - name: "Arm C: intermittent OxFp"
+      n: 815
+      median_os_months: 14.4
+      median_os_iqr: [8.0, 24.7]
+      per_protocol_n: 511
+      per_protocol_median_os_months: 18.0
+      g3plus_peripheral_neuropathy_pct_pp: 5
+      g3plus_haematological_pct_pp: 12
+  hazard_ratios: {os_itt: 1.084, os_itt_80ci: [1.008, 1.165], os_pp: 1.087, os_pp_ci: [0.986, 1.198]}
+  subgroups: "Per-protocol, C vs A: normal baseline platelets HR 0.96 (95% CI 0.80-1.15); platelets >=400,000/uL HR 1.54 (1.17-2.03), interaction p=0.0027"
+  source:
+    citation: "Adams RA, et al. (2011). Intermittent versus continuous oxaliplatin and fluoropyrimidine combination chemotherapy for first-line treatment of advanced colorectal cancer: results of the randomised phase 3 MRC COIN trial. Lancet Oncol 12:642-53."
+    pmid: "21641867"
+    doi: "10.1016/S1470-2045(11)70102-4"
+    pmcid: "PMC3159416"
+    verified: true
+    support: abstract
+  confidence: high
+  notes: "OS spreads are IQRs, not CIs, as published. The ITT HR CI is 80%, as published. The per-protocol HR CI is printed without a stated level in the abstract (likely 80%). OxFp = oxaliplatin + capecitabine (130 mg/m2 q3w + capecitabine 1000 mg/m2 bid x14 d) or oxaliplatin 85 mg/m2 + LV/5-FU q2w, chosen by local policy or patient preference; about 65-66% got capecitabine (PMC full text, Methods and Table 1)."
+
+- id: coin_b_intermittent_vs_continuous_cetuximab
+  kind: trial
+  quantity: "COIN-B: intermittent FOLFOX + intermittent cetuximab vs intermittent FOLFOX + continuous (maintenance) cetuximab, KRAS wt"
+  setting: first-line; 12 weeks FOLFOX + weekly cetuximab, then planned break vs cetuximab maintenance; restart at RECIST progression; randomized phase 2
+  arms:
+    - name: intermittent cetuximab
+      n: 78
+      primary_analysis_n: 64
+      ffs_10mo_pct: 50
+      median_ffs_months: 12.2
+      median_ffs_95ci: [8.8, 15.6]
+      median_os_months_primary_cohort: 16.8
+      median_os_95ci_primary_cohort: [14.5, 22.6]
+      median_os_months_itt: 16.0
+      median_os_95ci_itt: [13.3, 20.4]
+      g34_rash_pct: 27
+      g34_neutropenia_pct: 29
+    - name: continuous cetuximab
+      n: 91
+      primary_analysis_n: 66
+      ffs_10mo_pct: 52
+      median_ffs_months: 14.3
+      median_ffs_95ci: [10.7, 20.4]
+      median_os_months_primary_cohort: 22.2
+      median_os_95ci_primary_cohort: [18.4, 28.9]
+      median_os_months_itt: 17.5
+      median_os_95ci_itt: [13.7, 21.7]
+      g34_rash_pct: 22
+      g34_neutropenia_pct: 33
+  hazard_ratios: {pfs: null, os: null}
+  source:
+    citation: "Wasan H, et al. (2014). Intermittent chemotherapy plus either intermittent or continuous cetuximab for first-line treatment of patients with KRAS wild-type advanced colorectal cancer (COIN-B): a randomised phase 2 trial. Lancet Oncol 15:631-9."
+    pmid: "24703531"
+    doi: "10.1016/S1470-2045(14)70106-8"
+    pmcid: "PMC4012566"
+    verified: true
+    support: "abstract (n, FFS, toxicity) + PMC full text (OS medians with CIs)"
+  confidence: high
+  notes: "FFS = failure-free survival (primary analysis population = patients completing 12 weeks without progression or death). The 10-month FFS lower 95% bounds were 39 and 41. Toxicity denominators are 77 and 92."
+
+- id: improve_intermittent_pmab_folfiri
+  kind: trial
+  quantity: "IMPROVE: FOLFIRI + panitumumab continuous vs intermittent (treatment-free intervals after induction), RAS/BRAF wt"
+  setting: first-line; noncomparative randomized phase 2; primary endpoint PFS on treatment (PFSot) at 12 months
+  arms:
+    - name: "Arm A: continuous FOLFIRI + panitumumab"
+      n: 69
+      response_rate_pct: 68.1
+      median_pfsot_months: 11.2
+      pfsot_12mo_pct: 45.7
+      median_os_months: 36.3
+      g3plus_skin_pct: 30.3
+      median_cycles: 13
+    - name: "Arm B: intermittent FOLFIRI + panitumumab"
+      n: 68
+      response_rate_pct: 61.2
+      median_pfsot_months: 17.5
+      pfsot_12mo_pct: 58.5
+      median_os_months: 35.1
+      g3plus_skin_pct: 17.9
+      median_cycles: 16
+  hazard_ratios: {pfs: null, os: null}
+  source:
+    citation: "Avallone A, et al. (2025). Intermittent or Continuous Panitumumab Plus Fluorouracil, Leucovorin, and Irinotecan for First-Line Treatment of RAS and BRAF Wild-Type Metastatic Colorectal Cancer: The IMPROVE Trial. J Clin Oncol 43:829-839."
+    pmid: "39576946"
+    doi: "10.1200/JCO.24.00979"
+    pmcid: "PMC11856000"
+    verified: true
+    support: abstract
+  confidence: high
+  notes: "PFSot excludes progression during planned treatment-free intervals, so it is not the same as conventional PFS. Skin toxicity is reported as 'grade >2 skin PAN-related AEs'. Median follow-up 43.2 months."
+
+- id: valentino_pmab_maintenance
+  kind: trial
+  quantity: "VALENTINO: after 8 cycles panitumumab + FOLFOX4, maintenance panitumumab + 5-FU/LV (arm A) vs panitumumab alone (arm B), RAS wt"
+  setting: first-line; randomized phase 2 non-inferiority (margin HR 1.515); randomized at study entry (ITT)
+  arms:
+    - name: "Arm A: maintenance panitumumab + FU/LV"
+      n: 117
+      response_rate_pct: 66.7
+      response_rate_95ci: [57.4, 75.1]
+      pfs_10mo_pct: 59.9
+      pfs_10mo_95ci: [51.5, 69.8]
+      median_pfs_months: 12.0
+      median_pfs_95ci: [10.4, 14.5]
+      os_18mo_pct: 66.4
+    - name: "Arm B: maintenance panitumumab alone"
+      n: 112
+      response_rate_pct: 67.0
+      response_rate_95ci: [57.4, 75.6]
+      pfs_10mo_pct: 49.0
+      pfs_10mo_95ci: [40.5, 59.4]
+      median_pfs_months: 9.9
+      median_pfs_95ci: [8.4, 11.0]
+      os_18mo_pct: 62.4
+  hazard_ratios: {pfs_b_vs_a: 1.51, pfs_95ci: [1.11, 2.07], os_b_vs_a: 1.13, os_95ci: [0.71, 1.81], os_p: 0.60}
+  source:
+    citation: "Pietrantonio F, et al. (2019). Maintenance Therapy With Panitumumab Alone vs Panitumumab Plus Fluorouracil-Leucovorin in Patients With RAS Wild-Type Metastatic Colorectal Cancer: A Phase 2 Randomized Clinical Trial. JAMA Oncol 5:1268-1275."
+    pmid: "31268481"
+    doi: "10.1001/jamaoncol.2019.1467"
+    pmcid: "PMC6613306"
+    verified: true
+    support: "abstract (n, 10-month PFS, HR) + PMC full text (median PFS with CIs, ORR, OS)"
+  confidence: high
+  notes: "Panitumumab-alone maintenance was inferior. The abstract gives the PFS HR P as .01 and the text gives .009. Per-protocol (n 85/79): median PFS 14.1 vs 10.8 months. Grade >=3 AEs during maintenance: 42.4% vs 20.3%."
+
+- id: time_prodige28_cetuximab_maintenance
+  kind: trial
+  quantity: "TIME (PRODIGE 28-UCGI 27): after 8 cycles FOLFIRI + cetuximab, maintenance cetuximab vs observation (treatment break), RAS wt"
+  setting: first-line; noncomparative randomized phase 2; randomized after induction without progression; full induction regimen reintroduced at progression
+  arms:
+    - name: maintenance cetuximab (biweekly)
+      n: 67
+      progression_free_6mo_pct: 38.8
+      progression_free_6mo_95ci: [27.1, 51.5]
+      median_pfs_months: 5.3
+      median_pfs_95ci: [3.7, 7.4]
+      median_os_months: 24.8
+      median_os_95ci: [18.7, 30.4]
+      g34_rash_pct: 11.9
+    - name: observation
+      n: 72
+      progression_free_6mo_pct: 5.6
+      progression_free_6mo_95ci: [1.5, 13.6]
+      median_pfs_months: 2.0
+      median_pfs_95ci: [1.8, 2.7]
+      median_os_months: 19.7
+      median_os_95ci: [13.3, 24.4]
+  hazard_ratios: {pfs: null, os: null, mapk_mutation_pfs_hr: 1.63, mapk_mutation_pfs_95ci: [1.01, 2.62]}
+  source:
+    citation: "Boige V, et al. (2023). Maintenance Therapy With Cetuximab After FOLFIRI Plus Cetuximab for RAS Wild-Type Metastatic Colorectal Cancer: A Phase 2 Randomized Clinical Trial. JAMA Netw Open 6:e2333533."
+    pmid: "37721754"
+    doi: "10.1001/jamanetworkopen.2023.33533"
+    pmcid: "PMC10507485"
+    verified: true
+    support: abstract
+  confidence: high
+  notes: "PFS is measured from randomization (after about 4 months of induction). 214 enrolled, 139 randomized. The primary endpoint (6-month PF rate) was not met per its design. A 2.0-month PFS off all therapy is a direct target for regrowth after a full stop following anti-EGFR induction. The MAPK-mutation HR is from an exploratory multivariate analysis."
+
+- id: panama_pmab_maintenance
+  kind: trial
+  quantity: "PANAMA (AIO KRK 0212): after 6 cycles FU/FA + oxaliplatin + panitumumab, maintenance FU/FA + panitumumab vs FU/FA alone, RAS wt"
+  setting: first-line; randomized after response or stable disease to induction; PFS from randomization
+  arms:
+    - name: FU/FA + panitumumab maintenance
+      n: 125
+      response_rate_pct: 40.8
+      median_pfs_months: 8.8
+      median_os_months: 28.7
+    - name: FU/FA maintenance
+      n: 123
+      response_rate_pct: 26.0
+      median_pfs_months: 5.7
+      median_os_months: 25.7
+  hazard_ratios: {pfs: 0.72, pfs_80ci: [0.60, 0.85], pfs_p: 0.014, os: 0.84, os_95ci: [0.60, 1.18], os_p: 0.32, response_odds_ratio: 1.96, response_or_95ci: [1.14, 3.36]}
+  source:
+    citation: "Modest DP, et al. (2022). Panitumumab Plus Fluorouracil and Folinic Acid Versus Fluorouracil and Folinic Acid Alone as Maintenance Therapy in RAS Wild-Type Metastatic Colorectal Cancer: The Randomized PANAMA Trial (AIO KRK 0212). J Clin Oncol 40:72-82."
+    pmid: "34533973"
+    doi: "10.1200/JCO.21.01332"
+    pmcid: "PMC8683209"
+    verified: true
+    support: abstract
+  confidence: high
+  notes: "The PFS HR CI is 80%, as published. Response rate is the objective response during maintenance. The most frequent grade >=3 event in maintenance was skin rash (7.2%)."

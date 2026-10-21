@@ -1,0 +1,31 @@
+# Run profiles: which model does which job, and hard spending caps (USD).
+# Choose with:  ada run --profile <name>
+# Spending more is a profile change, not a code change.
+
+frugal:
+  description: Haiku screens and extracts twice; cheapest. Errors of two Haiku passes are correlated.
+  screen_model: claude-haiku-5-5
+  extract_models: [claude-haiku-5-5, claude-haiku-5-5]
+  daily_usd: 0.80
+  total_usd: 25
+
+balanced:
+  description: Recommended. Haiku screens; Haiku and Sonnet extract independently, so they rarely make the same mistake.
+  screen_model: claude-haiku-5-5
+  extract_models: [claude-haiku-5-5, claude-sonnet-5-5]
+  daily_usd: 1.50
+  total_usd: 30
+
+quality:
+  description: Sonnet extracts twice.
+  screen_model: claude-haiku-5-5
+  extract_models: [claude-sonnet-5-5, claude-sonnet-5-5]
+  daily_usd: 5.00
+  total_usd: 30
+
+opus-sprint:
+  description: A short, expensive burst - Opus and Sonnet extract. Use for a backlog push.
+  screen_model: claude-haiku-5-5
+  extract_models: [claude-opus-5-5, claude-sonnet-5-5]
+  daily_usd: 10.00
+  total_usd: 50
