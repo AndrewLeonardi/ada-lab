@@ -22,12 +22,13 @@ export function ago(seconds: number): string {
   return `${Math.round(seconds / 86400)} days ago`;
 }
 
-function untilUtcMidnight(now: number): string {
-  const d = new Date(now);
-  const next = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate() + 1);
-  const min = Math.max(0, Math.round((next - now) / 60000));
+function until(ts: number, now: number): string {
+  const min = Math.max(0, Math.round((ts * 1000 - now) / 60000));
   return min >= 60 ? `${Math.floor(min / 60)} h ${min % 60} min` : `${min} min`;
 }
+
+// Her working day runs 9:00 to 9:00 US Eastern; it's named after the date it starts.
+const workingDay = (now: number) => new Date(now - 9 * 3600_000).toLocaleDateString("en-CA", { timeZone: "America/New_York" });
 
 export interface BudgetView {
   tone: "working" | "resting" | "idle" | "quiet";
@@ -48,7 +49,7 @@ export function useBudget(): BudgetView | null {
   if (!stats) return null;
   const cap = stats.status?.daily_usd ?? 1.5;
   const age = stats.updated_at ? now / 1000 - stats.updated_at : Infinity;
-  const sameDay = stats.version === new Date(now).toISOString().slice(0, 10);
+  const sameDay = (stats.budget_day ?? stats.version) === workingDay(now);
   const spend = stats.spend_usd_today;
   const state = stats.status?.state;
   let tone: BudgetView["tone"], headline: string, detail: string;
@@ -59,11 +60,12 @@ export function useBudget(): BudgetView | null {
   } else if (state === "resting" && sameDay) {
     tone = "resting";
     headline = "Resting: today's budget is used";
-    detail = `Back at work in ${untilUtcMidnight(now)} (midnight UTC).`;
+    detail = stats.budget_resets_at
+      ? `Back at work in ${until(stats.budget_resets_at, now)} (9:00 AM Eastern).` : "Back at work at 9:00 AM Eastern.";
   } else if (state === "resting") {
     tone = "working";
     headline = "New day, new budget";
-    detail = "Her budget reset at midnight UTC; she resumes on her own.";
+    detail = "Her budget reset at 9:00 AM Eastern; she resumes on her own.";
   } else if (state === "idle") {
     tone = "idle";
     headline = "Caught up";
@@ -99,7 +101,7 @@ export function BudgetMeter() {
       </div>
       <div className="meter-bar"><span style={{ width: `${b.frac * 100}%` }} /></div>
       <div className="meter-foot muted small">
-        Today (UTC): {usd(b.spend)} of {usd(b.cap)} · all time: {usd(b.totalSpend)} of {usd(b.totalCap)} · updated {b.updated}
+        Today (from 9 AM Eastern): {usd(b.spend)} of {usd(b.cap)} · all time: {usd(b.totalSpend)} of {usd(b.totalCap)} · updated {b.updated}
       </div>
     </div>
   );

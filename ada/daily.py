@@ -1,4 +1,4 @@
-"""Daily recaps for the website: what Ada did each day (UTC), computed from her records by code.
+"""Daily recaps for the website: what Ada did each working day (9:00 to 9:00 US Eastern), computed by code.
 
 No AI writes these and nothing is inferred: counts, the trials she added with their headline verified numbers,
 why numbers were held for review, auditor corrections and what she spent.
@@ -7,7 +7,9 @@ why numbers were held for review, auditor corrections and what she spent.
 from __future__ import annotations
 
 import json
-from collections import Counter
+from collections import Counter, defaultdict
+
+from .db import budget_day
 
 HEADLINE = ["os_hr", "pfs_hr", "os_median", "pfs_median", "orr"]  # the first one a trial has verified
 HELD_BECAUSE = {
@@ -52,19 +54,20 @@ def _headline(con, pmid: str) -> dict | None:
 def daily(con, days: int = 30) -> list[dict]:
     final = {r[0]: r[1] for r in con.execute(
         "SELECT pmid, decision FROM screenings WHERE id IN (SELECT MAX(id) FROM screenings GROUP BY pmid)")}
-    dates = sorted({r[0] for r in con.execute(
-        "SELECT date(at, 'unixepoch') FROM screenings UNION SELECT date(at, 'unixepoch') FROM extractions "
-        "UNION SELECT date(at, 'unixepoch') FROM corrections") if r[0]}, reverse=True)  # days she did work
+    screened = defaultdict(dict)    # day -> pmid -> that day's last decision
+    for pmid, dec, at in con.execute("SELECT pmid, decision, at FROM screenings ORDER BY id"):
+        screened[budget_day(at)][pmid] = dec
+    extracted_on = defaultdict(list)  # day -> pmids first extracted that day
+    for pmid, at in con.execute("SELECT pmid, MIN(at) FROM extractions WHERE pass=1 GROUP BY pmid ORDER BY MIN(at)"):
+        extracted_on[budget_day(at)].append(pmid)
+    corrected = defaultdict(set)
+    for rid, at in con.execute("SELECT record_id, at FROM corrections"):
+        corrected[budget_day(at)].add(rid)
     out = []
-    for d in dates[:days]:
-        that_day = {}
-        for pmid, dec in con.execute("SELECT pmid, decision FROM screenings WHERE date(at, 'unixepoch')=? ORDER BY id",
-                                     (d,)):
-            that_day[pmid] = dec
-        decisions = Counter(that_day.values())
+    for d in sorted(set(screened) | set(extracted_on) | set(corrected), reverse=True)[:days]:  # days she did work
+        decisions = Counter(screened[d].values())
         extracted, held = [], Counter()
-        for (pmid,) in con.execute("SELECT pmid FROM extractions WHERE pass=1 GROUP BY pmid "
-                                   "HAVING date(MIN(at), 'unixepoch')=? ORDER BY MIN(at)", (d,)).fetchall():
+        for pmid in extracted_on[d]:
             if final.get(pmid) != "include":  # test-set or screened-out papers are not part of the dataset
                 continue
             recs = con.execute("SELECT status, checks FROM records WHERE pmid=?", (pmid,)).fetchall()
@@ -77,13 +80,12 @@ def daily(con, days: int = 30) -> list[dict]:
         out.append({
             "date": d,
             "spend_usd": round(con.execute("SELECT COALESCE(SUM(usd), 0) FROM spend WHERE day=?", (d,)).fetchone()[0], 4),
-            "screened": len(that_day),
+            "screened": len(screened[d]),
             "included": decisions["include"], "secondary": decisions["secondary"], "excluded": decisions["exclude"],
             "extracted": extracted,
             "verified_numbers": sum(t["verified"] for t in extracted),
             "review_numbers": sum(t["review"] for t in extracted),
             "held_because": [{"reason": HELD_BECAUSE[k], "n": n} for k, n in held.most_common()],
-            "corrections": con.execute("SELECT COUNT(DISTINCT record_id) FROM corrections WHERE date(at, 'unixepoch')=?",
-                                       (d,)).fetchone()[0],
+            "corrections": len(corrected[d]),
         })
     return out

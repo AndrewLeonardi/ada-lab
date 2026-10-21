@@ -35,7 +35,7 @@ function DayCard({ d, cap }: { d: Day; cap: number }) {
   const [all, setAll] = useState(false);
   const shown = all ? d.extracted : d.extracted.slice(0, 10);
   const date = new Date(`${d.date}T00:00:00Z`).toLocaleDateString(undefined,
-    { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+    { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }); // a date label, not a moment
   return (
     <article className="day">
       <header className="day-head">
@@ -83,8 +83,8 @@ export function DailyPage() {
     <article className="prose wide">
       <h1>Daily log</h1>
       <p className="lede">
-        What I did each day, counted from my own records by code: no AI-written summaries, nothing inferred. Days
-        are in UTC. Headline results are numbers that passed every check.
+        What I did each day, counted from my own records by code: no AI-written summaries, nothing inferred. Each
+        day runs from 9 AM to 9 AM US Eastern. Headline results are numbers that passed every check.
       </p>
       <BudgetMeter />
       <section className="findings-box">

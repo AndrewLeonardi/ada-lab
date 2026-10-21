@@ -63,10 +63,10 @@ class Budget:
     total_usd: float
 
     def check(self, con, estimate: float = 0.0):
-        today = db.spent(con, time.strftime("%Y-%m-%d"))
+        today = db.spent(con, db.budget_day())
         total = db.spent(con)
         if today + estimate > self.daily_usd:
-            raise BudgetExceeded(f"daily cap reached (${today:.3f} of ${self.daily_usd:.2f})")
+            raise BudgetExceeded(f"daily cap reached (${today:.3f} of ${self.daily_usd:.2f}; resets 9:00 Eastern)")
         if total + estimate > self.total_usd:
             raise BudgetExceeded(f"total cap reached (${total:.2f} of ${self.total_usd:.2f})")
 

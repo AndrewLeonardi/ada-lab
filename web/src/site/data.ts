@@ -63,6 +63,8 @@ export interface Stats {
   spend_usd_total: number;
   spend_usd_today: number;
   updated_at?: number; // epoch seconds of this export
+  budget_day?: string; // her working day (9:00 to 9:00 US Eastern) that spend_usd_today belongs to
+  budget_resets_at?: number; // epoch seconds of the next 9:00 Eastern
   status?: { state: "working" | "resting" | "idle"; since: number; profile: string; daily_usd: number; total_usd: number } | null;
   findings?: Partial<Record<"idea" | "supported" | "ready", number>>;
   benchmark?: { date: string; gold_numbers_in_abstracts: number; recall_verified: number; recall_any: number };

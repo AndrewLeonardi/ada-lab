@@ -104,7 +104,8 @@ def export(con=None, out: pathlib.Path = OUT) -> dict:
     findings = ROOT / "data" / "findings.md"
     stats = {"version": version, "updated": time.strftime("%Y-%m-%d %H:%M"), "updated_at": time.time(),
              "counts": counts, "spend_usd_total": round(db.spent(con), 4),
-             "spend_usd_today": round(db.spent(con, version), 4),
+             "budget_day": db.budget_day(), "budget_resets_at": db.next_day_start(),
+             "spend_usd_today": round(db.spent(con, db.budget_day()), 4),
              "status": json.loads(state.read_text()) if state.exists() else None,
              # candidate findings by status (idea / supported / ready), from the auditor's register
              "findings": dict(Counter(re.findall(r"status:\s*(idea|supported|ready)", findings.read_text())))

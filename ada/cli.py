@@ -62,7 +62,7 @@ def main(argv=None):
             print(f"{k:12s} daily ${v['daily_usd']:.2f}, total ${v['total_usd']:.0f} - {v['description']}")
     elif args.cmd == "status":
         print(json.dumps(export(con), indent=1))
-        print(f"spent today ${db.spent(con, __import__('time').strftime('%Y-%m-%d')):.4f}, total ${db.spent(con):.4f}")
+        print(f"spent today ${db.spent(con, db.budget_day()):.4f} (day starts 9:00 Eastern), total ${db.spent(con):.4f}")
     elif args.cmd == "sync":
         print(f"{sync(con, args.limit)} new papers")
     elif args.cmd == "run":

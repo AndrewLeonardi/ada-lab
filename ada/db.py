@@ -11,9 +11,28 @@ import os
 import pathlib
 import sqlite3
 import time
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 
 DATA_DIR = pathlib.Path(__file__).resolve().parents[1] / "data"
 DB_PATH = pathlib.Path(os.environ.get("ADA_DB", DATA_DIR / "ada.sqlite"))  # ADA_DB: use another file (tests)
+
+# Ada's working day runs from 9:00 to 9:00 US Eastern: her daily budget resets at 9 AM, when it can be watched.
+DAY_TZ = ZoneInfo("America/New_York")
+DAY_STARTS_HOUR = 9
+
+
+def budget_day(ts: float | None = None) -> str:
+    """The working day (YYYY-MM-DD, named after the date it starts) that contains this moment."""
+    t = datetime.fromtimestamp(time.time() if ts is None else ts, DAY_TZ) - timedelta(hours=DAY_STARTS_HOUR)
+    return t.strftime("%Y-%m-%d")
+
+
+def next_day_start(ts: float | None = None) -> float:
+    """When the next working day (and daily budget) starts, as a Unix time."""
+    now = datetime.fromtimestamp(time.time() if ts is None else ts, DAY_TZ)
+    start = now.replace(hour=DAY_STARTS_HOUR, minute=0, second=0, microsecond=0)
+    return (start if now < start else start + timedelta(days=1)).timestamp()
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS papers (
@@ -67,7 +86,7 @@ def connect(path: pathlib.Path = DB_PATH) -> sqlite3.Connection:
 
 
 def add_spend(con: sqlite3.Connection, model: str, stage: str, usd: float):
-    day = time.strftime("%Y-%m-%d")
+    day = budget_day()
     con.execute(
         "INSERT INTO spend(day, model, stage, usd, calls) VALUES(?,?,?,?,1) "
         "ON CONFLICT(day, model, stage) DO UPDATE SET usd = usd + excluded.usd, calls = calls + 1",
