@@ -1,17 +1,18 @@
 {
- "updated": "2026-10-22 15:37",
+ "updated": "2026-10-22 15:38",
  "due_months": 24,
  "registered": 732,
  "due": 355,
  "counts": {
-  "not_found": 60,
+  "not_found": 63,
   "linked": 22,
   "unclear": 1,
   "found_by_number": 67,
   "posted": 168,
-  "pending": 37
+  "found_by_search": 1,
+  "pending": 33
  },
- "missing_patients": 9199,
+ "missing_patients": 12284,
  "trials": [
   {
    "nct": "NCT02228785",
@@ -515,10 +516,10 @@
    "enrollment": 2200,
    "primary_completion": "2007-01",
    "months": 237,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT00056459",
@@ -583,10 +584,10 @@
    "enrollment": 880,
    "primary_completion": "2007-04",
    "months": 234,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT00115765",
@@ -615,10 +616,12 @@
    "enrollment": 64,
    "primary_completion": "2007-06",
    "months": 232,
-   "verdict": "pending",
-   "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "verdict": "found_by_search",
+   "pmids": [
+    "20127139"
+   ],
+   "detail": "Found by searching PubMed; a model confirmed the paper matches the registry record.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT00252564",
@@ -1094,10 +1097,10 @@
    "enrollment": 5,
    "primary_completion": "2009-07",
    "months": 207,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT00364013",
