@@ -42,3 +42,17 @@ def test_differences_are_reported():
     trial = {"primary_endpoint": "overall survival", "n_randomized": 120}
     v = verdicts(compare(trial, [rec("pfs_median", 7.2)], STUDY))
     assert v == {"primary_endpoint": "differs", "patients": "differs", "pfs_median": "differs"}
+
+
+def test_rounding_and_whole_population_tables():
+    study = {"protocolSection": {}, "resultsSection": {"outcomeMeasuresModule": {"outcomeMeasures": [
+        {"title": "Objective Response Rate (ORR)", "paramType": "NUMBER", "unitOfMeasure": "percentage of participants",
+         "classes": [{"categories": [{"measurements": [{"groupId": "OG000", "value": "60.6"}]}]}]},
+        {"title": "Progression-Free Survival in Participants With Left-sided Tumors", "paramType": "MEDIAN",
+         "unitOfMeasure": "Months", "classes": [{"categories": [{"measurements": [{"groupId": "OG000", "value": "13.7"}]}]}]},
+        {"title": "Progression-Free Survival", "paramType": "MEDIAN", "unitOfMeasure": "Months",
+         "classes": [{"categories": [{"measurements": [{"groupId": "OG000", "value": "12.2"}]}]}]},
+    ]}}}
+    v = verdicts(compare({}, [rec("orr", 61.0, "percent"), rec("pfs_median", 12.2)], study))
+    assert v == {"orr": "agrees", "pfs_median": "agrees"}  # 61% is 60.6% rounded; the left-sided table is not used
+    assert verdicts(compare({}, [rec("orr", 60.0, "percent")], study)) == {"orr": "differs"}  # 60.6 rounds to 61

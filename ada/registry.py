@@ -223,17 +223,29 @@ def _unit_factor(unit: str | None) -> float | None:
     return next((f for k, f in TO_MONTHS.items() if k in u), None)
 
 
-def registry_values(study: dict, family: str, kind: str) -> list[tuple[float, str]]:
-    """Numbers the registry reports for an endpoint family. kind: "median" (in months), "percent", or "hr"."""
+def _half_step(s) -> float:
+    """Half the last digit of a number as written: '60' -> 0.5, '60.6' -> 0.05 (rounding tolerance)."""
+    txt = str(s).strip()
+    return 0.5 * 10 ** -(len(txt.split(".")[1]) if "." in txt else 0)
+
+
+SUBGROUP = re.compile(r"in participants with|in patients with|subgroup|left[- ]sided|right[- ]sided|\bby\b", re.I)
+
+
+def registry_values(study: dict, family: str, kind: str) -> list[tuple[float, str, float]]:
+    """Numbers the registry reports for an endpoint family, as (value, outcome title, rounding tolerance).
+    kind: "median" (in months), "percent", or "hr". Tables restricted to a subgroup are used only when no
+    whole-population table exists (audit 2: an overall PFS was compared with a left-sided-tumour table)."""
+    oms = [om for om in study.get("resultsSection", {}).get("outcomeMeasuresModule", {}).get("outcomeMeasures", [])
+           if family in families(om.get("title"))]
+    whole = [om for om in oms if not SUBGROUP.search(om.get("title", ""))]
     out = []
-    for om in study.get("resultsSection", {}).get("outcomeMeasuresModule", {}).get("outcomeMeasures", []):
-        if family not in families(om.get("title")):
-            continue
+    for om in whole or oms:
         label = om.get("title", "")[:120]
         if kind == "hr":
             for a in om.get("analyses", []) or []:
                 if "hazard" in (a.get("paramType") or "").lower() and _num(a.get("paramValue")) is not None:
-                    out.append((_num(a["paramValue"]), label))
+                    out.append((_num(a["paramValue"]), label, _half_step(a["paramValue"])))
             continue
         unit = (om.get("unitOfMeasure") or "").lower()
         if kind == "median" and (om.get("paramType") or "").upper() == "MEDIAN" and _unit_factor(unit):
@@ -247,7 +259,7 @@ def registry_values(study: dict, family: str, kind: str) -> list[tuple[float, st
                 for m in cat.get("measurements", []) or []:
                     v = _num(m.get("value"))
                     if v is not None:
-                        out.append((round(v * f, 3), label))
+                        out.append((round(v * f, 3), label, _half_step(m.get("value")) * f))
     return out
 
 
@@ -276,13 +288,15 @@ def compare(trial: dict, records: list[dict], study: dict) -> list[dict]:
         reg = registry_values(study, fam, kind)
         if not reg:
             continue
-        value = r["value"] * (1.0 if kind != "median" else (_unit_factor(r["unit"]) or 1.0))
-        tol = 0.051 if kind != "median" or r["unit"] == "months" else max(0.06, 0.03 * value)
+        f = 1.0 if kind != "median" else (_unit_factor(r["unit"]) or 1.0)
+        value, own = r["value"] * f, _half_step(f"{r['value']:g}") * f
+        # equal within the rounding of the less precise number (abstracts often round: 60% vs 60.6%, audit 2);
         # a hazard ratio may be registered the other way round (B vs A): 1/HR then matches
-        match = any(abs(v - value) <= tol or (kind == "hr" and v > 0 and abs(1 / v - value) <= 0.012) for v, _ in reg)
+        match = any(abs(v - value) <= max(own, tol) + 1e-9 or (kind == "hr" and v > 0 and abs(1 / v - value) <= 0.012)
+                    for v, _, tol in reg)
         checks.append({"check": r["measure"], "verdict": "agrees" if match else "differs", "record": r["id"],
                        "detail": f"Abstract: {r['value']:g} {r['unit']} ({r['arm']}). Registry values for "
-                                 f"{reg[0][1]}: {', '.join(f'{v:g}' for v, _ in reg[:6])}."})
+                                 f"{reg[0][1]}: {', '.join(f'{v:g}' for v, _, _ in reg[:6])}."})
     return checks
 
 

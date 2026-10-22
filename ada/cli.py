@@ -12,6 +12,7 @@
   audit-sample [--n 20]          draw an audit sample (for /audit-ada in Claude Code)
   apply-audit <file.yaml>        apply an audit's verdicts and corrections
   profiles                       list run profiles
+  recheck-registry               redo every paper-vs-registry comparison (free; after the comparison improves)
   hypotheses                     run the registered hypothesis tests now (free; research/hypotheses/)
   hypothesis-sample ID [--n 30]  draw the fixed-seed sample to verify by hand (prints YAML)
   live [--port 8787]             stream her activity to the 3D lab as it happens (read-only; runs on the server)
@@ -48,6 +49,7 @@ def main(argv=None):
     a = sub.add_parser("approve")
     a.add_argument("slug")
     sub.add_parser("reverify")
+    sub.add_parser("recheck-registry")
     sub.add_parser("hypotheses")
     hs = sub.add_parser("hypothesis-sample")
     hs.add_argument("id")
@@ -89,6 +91,10 @@ def main(argv=None):
         export(con)
     elif args.cmd == "export":
         print(json.dumps(export(con), indent=1))
+    elif args.cmd == "recheck-registry":
+        con.execute("DELETE FROM registry_checks")  # derived data: the night shift compares every trial again (free)
+        con.commit()
+        print("registry comparisons cleared; the night shift will redo them")
     elif args.cmd == "hypotheses":
         from .hypotheses import run_all
         for r in run_all(con):
