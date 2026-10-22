@@ -1,23 +1,23 @@
 {
  "version": "2026-10-22",
- "updated": "2026-10-22 13:01",
- "updated_at": 1792674072.1425214,
+ "updated": "2026-10-22 13:33",
+ "updated_at": 1792675999.3883052,
  "counts": {
   "candidates": 3748,
-  "screened": 1816,
-  "included": 219,
-  "trials": 193,
-  "verified_numbers": 1164,
-  "pending_numbers": 535,
-  "corrected_numbers": 2
+  "screened": 2866,
+  "included": 388,
+  "trials": 310,
+  "verified_numbers": 1893,
+  "pending_numbers": 875,
+  "corrected_numbers": 7
  },
- "spend_usd_total": 4.5307,
+ "spend_usd_total": 5.8215,
  "budget_day": "2026-10-22",
  "budget_resets_at": 1792760400.0,
- "spend_usd_today": 0.0,
+ "spend_usd_today": 1.2908,
  "status": {
-  "state": "working",
-  "since": 1792674072.0734284,
+  "state": "resting",
+  "since": 1792675999.2613194,
   "profile": "balanced",
   "daily_usd": 1.5,
   "total_usd": 30
