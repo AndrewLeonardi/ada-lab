@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-22 15:38",
+ "updated": "2026-10-22 15:57",
  "due_months": 24,
  "registered": 732,
  "due": 355,
  "counts": {
-  "not_found": 63,
+  "not_found": 88,
   "linked": 22,
-  "unclear": 1,
+  "unclear": 3,
   "found_by_number": 67,
   "posted": 168,
-  "found_by_search": 1,
-  "pending": 33
+  "found_by_search": 6,
+  "pending": 1
  },
- "missing_patients": 12284,
+ "missing_patients": 18115,
  "trials": [
   {
    "nct": "NCT02228785",
@@ -1277,10 +1277,10 @@
    "enrollment": 130,
    "primary_completion": "2010-01",
    "months": 201,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT00469443",
@@ -1375,10 +1375,10 @@
    "enrollment": 151,
    "primary_completion": "2010-06",
    "months": 196,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT00640081",
@@ -1391,10 +1391,10 @@
    "enrollment": 169,
    "primary_completion": "2010-06",
    "months": 196,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT00905047",
@@ -1439,10 +1439,10 @@
    "enrollment": 3240,
    "primary_completion": "2010-08",
    "months": 194,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT00625651",
@@ -1543,10 +1543,10 @@
    "enrollment": 214,
    "primary_completion": "2010-12",
    "months": 190,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT00816777",
@@ -1867,10 +1867,10 @@
    "enrollment": 111,
    "primary_completion": "2011-07",
    "months": 183,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT01086267",
@@ -1967,10 +1967,10 @@
    "enrollment": 9,
    "primary_completion": "2011-11",
    "months": 179,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT01189227",
@@ -2262,10 +2262,10 @@
    "enrollment": 60,
    "primary_completion": "2012-10",
    "months": 168,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT01075048",
@@ -2392,10 +2392,12 @@
    "enrollment": 8,
    "primary_completion": "2012-12",
    "months": 166,
-   "verdict": "pending",
-   "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "verdict": "unclear",
+   "pmids": [
+    "26090075"
+   ],
+   "detail": "Possible match, needs a human look.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT00544700",
@@ -2608,10 +2610,10 @@
    "enrollment": 38,
    "primary_completion": "2013-09",
    "months": 157,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT01507545",
@@ -2708,10 +2710,10 @@
    "enrollment": 8,
    "primary_completion": "2013-11",
    "months": 155,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT01252628",
@@ -2822,10 +2824,10 @@
    "enrollment": 18,
    "primary_completion": "2014-01",
    "months": 153,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT01399684",
@@ -2896,10 +2898,10 @@
    "enrollment": 10,
    "primary_completion": "2014-05",
    "months": 149,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT01375816",
@@ -2912,10 +2914,12 @@
    "enrollment": 55,
    "primary_completion": "2014-06",
    "months": 148,
-   "verdict": "pending",
-   "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "verdict": "found_by_search",
+   "pmids": [
+    "26806397"
+   ],
+   "detail": "Found by searching PubMed; a model confirmed the paper matches the registry record.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT01412957",
@@ -3149,10 +3153,10 @@
    "enrollment": 24,
    "primary_completion": "2014-12",
    "months": 142,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT01609231",
@@ -3197,10 +3201,10 @@
    "enrollment": 5,
    "primary_completion": "2015-01",
    "months": 141,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT00940316",
@@ -3297,10 +3301,12 @@
    "enrollment": 110,
    "primary_completion": "2015-04",
    "months": 138,
-   "verdict": "pending",
-   "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "verdict": "found_by_search",
+   "pmids": [
+    "28735067"
+   ],
+   "detail": "Found by searching PubMed; a model confirmed the paper matches the registry record.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT02196688",
@@ -3430,10 +3436,12 @@
    "enrollment": 84,
    "primary_completion": "2015-09",
    "months": 133,
-   "verdict": "pending",
-   "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "verdict": "found_by_search",
+   "pmids": [
+    "29551560"
+   ],
+   "detail": "Found by searching PubMed; a model confirmed the paper matches the registry record.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT01442649",
@@ -3599,10 +3607,10 @@
    "enrollment": 24,
    "primary_completion": "2015-12",
    "months": 130,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT00952029",
@@ -3830,10 +3838,12 @@
    "enrollment": 419,
    "primary_completion": "2016-08-18",
    "months": 122,
-   "verdict": "pending",
-   "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "verdict": "found_by_search",
+   "pmids": [
+    "34105207"
+   ],
+   "detail": "Found by searching PubMed; a model confirmed the paper matches the registry record.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT01939223",
@@ -3915,10 +3925,10 @@
    "enrollment": 62,
    "primary_completion": "2016-09",
    "months": 121,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT02083653",
@@ -4395,10 +4405,10 @@
    "enrollment": 20,
    "primary_completion": "2018-08",
    "months": 98,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT02453490",
@@ -4534,10 +4544,10 @@
    "enrollment": 543,
    "primary_completion": "2019-02",
    "months": 92,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT03549338",
@@ -4584,10 +4594,10 @@
    "enrollment": 173,
    "primary_completion": "2019-03",
    "months": 91,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT02292758",
@@ -4664,10 +4674,12 @@
    "enrollment": 82,
    "primary_completion": "2019-07-30",
    "months": 87,
-   "verdict": "pending",
-   "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "verdict": "found_by_search",
+   "pmids": [
+    "31740551"
+   ],
+   "detail": "Found by searching PubMed; a model confirmed the paper matches the registry record.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT02705300",
@@ -4712,10 +4724,10 @@
    "enrollment": 4,
    "primary_completion": "2019-10-03",
    "months": 84,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT01516216",
@@ -4943,10 +4955,10 @@
    "enrollment": 90,
    "primary_completion": "2021-01-29",
    "months": 69,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT03414983",
@@ -4975,10 +4987,10 @@
    "enrollment": 20,
    "primary_completion": "2021-04-28",
    "months": 66,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT04247984",
@@ -4991,10 +5003,10 @@
    "enrollment": 264,
    "primary_completion": "2021-04-01",
    "months": 66,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT03473925",
@@ -5039,10 +5051,10 @@
    "enrollment": 320,
    "primary_completion": "2021-06",
    "months": 64,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT02384759",
@@ -5432,10 +5444,12 @@
    "enrollment": 17,
    "primary_completion": "2022-12-31",
    "months": 46,
-   "verdict": "pending",
-   "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "verdict": "unclear",
+   "pmids": [
+    "37336691"
+   ],
+   "detail": "Possible match, needs a human look.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT03519295",
@@ -5644,10 +5658,10 @@
    "enrollment": 124,
    "primary_completion": "2024-02-01",
    "months": 32,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-22"
   },
   {
    "nct": "NCT03547999",
@@ -5973,8 +5987,303 @@
   }
  ],
  "crosscheck": {
-  "trials": 0,
-  "agrees": 0,
-  "differs": []
+  "trials": 55,
+  "agrees": 261,
+  "differs": [
+   {
+    "pmid": "41852303",
+    "nct": "NCT05004350",
+    "check": "os_median",
+    "detail": "Abstract: 11.6 months (Doublet). Registry values for Randomized Phase 2: Overall Survival (OS): 11.9, 8.2.",
+    "trial": "NAUTICAL"
+   },
+   {
+    "pmid": "41852303",
+    "nct": "NCT05004350",
+    "check": "os_hr",
+    "detail": "Abstract: 0.55 ratio (Doublet). Registry values for Randomized Phase 2: Overall Survival (OS): 0.54.",
+    "trial": "NAUTICAL"
+   },
+   {
+    "pmid": "39761503",
+    "nct": "NCT03365882",
+    "check": "patients",
+    "detail": "Registry: 240 enrolled. Abstract: 54 randomized.",
+    "trial": "S1613"
+   },
+   {
+    "pmid": "39761503",
+    "nct": "NCT03365882",
+    "check": "pfs_median",
+    "detail": "Abstract: 3 months (TP). Registry values for Progression-free Survival(PFS): 4.7, 3.7.",
+    "trial": "S1613"
+   },
+   {
+    "pmid": "39761503",
+    "nct": "NCT03365882",
+    "check": "pfs_median",
+    "detail": "Abstract: 4.2 months (CETIRI). Registry values for Progression-free Survival(PFS): 4.7, 3.7.",
+    "trial": "S1613"
+   },
+   {
+    "pmid": "39602630",
+    "nct": "NCT04008030",
+    "check": "patients",
+    "detail": "Registry: 839 enrolled. Abstract: 303 randomized.",
+    "trial": "CheckMate 8HW"
+   },
+   {
+    "pmid": "39048638",
+    "nct": "NCT04068610",
+    "check": "patients",
+    "detail": "Registry: 61 enrolled. Abstract: 52 randomized.",
+    "trial": "COLUMBIA-1"
+   },
+   {
+    "pmid": "39116902",
+    "nct": "NCT04744831",
+    "check": "patients",
+    "detail": "Registry: 122 enrolled. Abstract: 80 randomized.",
+    "trial": "DESTINY-CRC02"
+   },
+   {
+    "pmid": "38749110",
+    "nct": "NCT04456699",
+    "check": "pfs_median",
+    "detail": "Abstract: 3.5 months (Olaparib alone). Registry values for Progression Free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors Version (RECIST) 1.1 as Assessed by Bli: 3.7, 3.6, 5.5.",
+    "trial": "LYNK-003"
+   },
+   {
+    "pmid": "38749110",
+    "nct": "NCT04456699",
+    "check": "pfs_median",
+    "detail": "Abstract: 5.6 months (Bevacizumab plus fluoropyrimidine). Registry values for Progression Free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors Version (RECIST) 1.1 as Assessed by Bli: 3.7, 3.6, 5.5.",
+    "trial": "LYNK-003"
+   },
+   {
+    "pmid": "38749110",
+    "nct": "NCT04456699",
+    "check": "pfs_hr",
+    "detail": "Abstract: 1.52 ratio (Olaparib plus bevacizumab). Registry values for Progression Free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors Version (RECIST) 1.1 as Assessed by Bli: 1.41, 1.75.",
+    "trial": "LYNK-003"
+   },
+   {
+    "pmid": "38749110",
+    "nct": "NCT04456699",
+    "check": "pfs_hr",
+    "detail": "Abstract: 2.11 ratio (Olaparib alone). Registry values for Progression Free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors Version (RECIST) 1.1 as Assessed by Bli: 1.41, 1.75.",
+    "trial": "LYNK-003"
+   },
+   {
+    "pmid": "38664577",
+    "nct": "NCT03388190",
+    "check": "pfs_median",
+    "detail": "Abstract: 15.8 months (experimental group). Registry values for Primary - Progression-free Survival (PFS): 9.2, 9.2.",
+    "trial": "METIMMOX"
+   },
+   {
+    "pmid": "38312102",
+    "nct": "NCT01896856",
+    "check": "patients",
+    "detail": "Registry: 118 enrolled. Abstract: 104 randomized.",
+    "trial": "PMID 38312102"
+   },
+   {
+    "pmid": "38485190",
+    "nct": "NCT03414983",
+    "check": "orr",
+    "detail": "Abstract: 60 percent (Nivolumab plus SOC). Registry values for Objective Response Rate (ORR) Per Blinded Independent Central Review (BICR): 60.6, 45.6, 60.6, 52.9.",
+    "trial": "CheckMate 9X8"
+   },
+   {
+    "pmid": "37071094",
+    "nct": "NCT02394795",
+    "check": "pfs_median",
+    "detail": "Abstract: 12.2 months (panitumumab). Registry values for Progression-Free Survival (PFS) in All Participants: 12.91, 11.99.",
+    "trial": "PARADIGM"
+   },
+   {
+    "pmid": "37071094",
+    "nct": "NCT02394795",
+    "check": "pfs_median",
+    "detail": "Abstract: 11.4 months (bevacizumab). Registry values for Progression-Free Survival (PFS) in All Participants: 12.91, 11.99.",
+    "trial": "PARADIGM"
+   },
+   {
+    "pmid": "35179586",
+    "nct": "NCT02873195",
+    "check": "pfs_median",
+    "detail": "Abstract: 3.6 months (placebo). Registry values for Progression Free Survival (PFS): 4.37, 3.32.",
+    "trial": "ACCRU"
+   },
+   {
+    "pmid": "35179586",
+    "nct": "NCT02873195",
+    "check": "pfs_hr",
+    "detail": "Abstract: 0.75 ratio (investigational). Registry values for Progression Free Survival (PFS): 0.725.",
+    "trial": "ACCRU"
+   },
+   {
+    "pmid": "35179586",
+    "nct": "NCT02873195",
+    "check": "orr",
+    "detail": "Abstract: 23.1 percent (investigational). Registry values for Objective Response Rate: 8.54, 4.35.",
+    "trial": "ACCRU"
+   },
+   {
+    "pmid": "35179586",
+    "nct": "NCT02873195",
+    "check": "orr",
+    "detail": "Abstract: 5.8 percent (investigational). Registry values for Objective Response Rate: 8.54, 4.35.",
+    "trial": "ACCRU"
+   },
+   {
+    "pmid": "35179586",
+    "nct": "NCT02873195",
+    "check": "os_hr",
+    "detail": "Abstract: 0.33 ratio (investigational). Registry values for Overall Survival (OS): 0.94.",
+    "trial": "ACCRU"
+   },
+   {
+    "pmid": "35179586",
+    "nct": "NCT02873195",
+    "check": "os_hr",
+    "detail": "Abstract: 1.14 ratio (investigational). Registry values for Overall Survival (OS): 0.94.",
+    "trial": "ACCRU"
+   },
+   {
+    "pmid": "31566309",
+    "nct": "NCT02928224",
+    "check": "os_median",
+    "detail": "Abstract: 8.4 months (doublet). Registry values for (Phase 3) Overall Survival (OS) of Triplet Arm vs. Control Arm - Interim Analysis: 9.03, 5.42, 9.82, 5.88, 9.4, 5.88.",
+    "trial": "BEACON CRC"
+   },
+   {
+    "pmid": "31445198",
+    "nct": "NCT02337946",
+    "check": "patients",
+    "detail": "Registry: 164 enrolled. Abstract: 113 randomized.",
+    "trial": "SAPPHIRE"
+   },
+   {
+    "pmid": "30199311",
+    "nct": "NCT01228734",
+    "check": "patients",
+    "detail": "Registry: 553 enrolled. Abstract: 393 randomized.",
+    "trial": "TAILOR"
+   },
+   {
+    "pmid": "29653857",
+    "nct": "NCT01622543",
+    "check": "os_median",
+    "detail": "Abstract: 19.2 months (FOLFOX/BEV + pelareorep). Registry values for Overall Survival: 19.3, 20.",
+    "trial": "IND.210"
+   },
+   {
+    "pmid": "29653857",
+    "nct": "NCT01622543",
+    "check": "os_median",
+    "detail": "Abstract: 20.1 months (FOLFOX/BEV). Registry values for Overall Survival: 19.3, 20.",
+    "trial": "IND.210"
+   },
+   {
+    "pmid": "29653857",
+    "nct": "NCT01622543",
+    "check": "os_hr",
+    "detail": "Abstract: 1.22 ratio (FOLFOX/BEV + pelareorep). Registry values for Overall Survival: 1.24.",
+    "trial": "IND.210"
+   },
+   {
+    "pmid": "28632865",
+    "nct": "NCT00265850",
+    "check": "patients",
+    "detail": "Registry: 2334 enrolled. Abstract: 1137 randomized.",
+    "trial": "CALGB/SWOG 80405"
+   },
+   {
+    "pmid": "27091810",
+    "nct": "NCT00851084",
+    "check": "patients",
+    "detail": "Registry: 268 enrolled. Abstract: 236 randomized.",
+    "trial": "AFFIRM"
+   },
+   {
+    "pmid": "26405092",
+    "nct": "NCT00614393",
+    "check": "patients",
+    "detail": "Registry: 558 enrolled. Abstract: 344 randomized.",
+    "trial": "PMID 26405092"
+   },
+   {
+    "pmid": "26109878",
+    "nct": "NCT00609622",
+    "check": "os_median",
+    "detail": "Abstract: 23.7 months (sunitinib plus mFOLFOX6). Registry values for Overall Survival (OS): 19.387.",
+    "trial": "PMID 26109878"
+   },
+   {
+    "pmid": "26109878",
+    "nct": "NCT00609622",
+    "check": "os_median",
+    "detail": "Abstract: 34.1 months (bevacizumab plus mFOLFOX6). Registry values for Overall Survival (OS): 19.387.",
+    "trial": "PMID 26109878"
+   },
+   {
+    "pmid": "25982297",
+    "nct": "NCT00418938",
+    "check": "patients",
+    "detail": "Registry: 266 enrolled. Abstract: 182 randomized.",
+    "trial": "SPIRITT"
+   },
+   {
+    "pmid": "25319061",
+    "nct": "NCT01008475",
+    "check": "os_hr",
+    "detail": "Abstract: 0.55 ratio (arm A). Registry values for Overall Survival (OS) Time: 0.83, 0.8.",
+    "trial": "POSEIDON"
+   },
+   {
+    "pmid": "25319061",
+    "nct": "NCT01008475",
+    "check": "os_hr",
+    "detail": "Abstract: 0.41 ratio (arm B). Registry values for Overall Survival (OS) Time: 0.83, 0.8.",
+    "trial": "POSEIDON"
+   },
+   {
+    "pmid": "23605883",
+    "nct": "NCT00460603",
+    "check": "patients",
+    "detail": "Registry: 187 enrolled. Abstract: 126 randomized.",
+    "trial": "PMID 23605883"
+   },
+   {
+    "pmid": "23605883",
+    "nct": "NCT00460603",
+    "check": "os_median",
+    "detail": "Abstract: 21.6 months (bevacizumab). Registry values for Overall Survival (OS): Phase 2: 18.136, 21.651, 19.745.",
+    "trial": "PMID 23605883"
+   },
+   {
+    "pmid": "23358972",
+    "nct": "NCT00457691",
+    "check": "pfs_median",
+    "detail": "Abstract: 7.8 months (sunitinib plus FOLFIRI). Registry values for Progression-free Survival (PFS): 7.727, 8.417.",
+    "trial": "PMID 23358972"
+   },
+   {
+    "pmid": "19339720",
+    "nct": "NCT00154102",
+    "check": "os_hr",
+    "detail": "Abstract: 0.93 ratio (Cetuximab + FOLFIRI). Registry values for Overall Survival Time (OS): 0.878, 0.796, 1.035.",
+    "trial": "CRYSTAL"
+   },
+   {
+    "pmid": "19339720",
+    "nct": "NCT00154102",
+    "check": "pfs_hr",
+    "detail": "Abstract: 0.68 ratio (Cetuximab + FOLFIRI). Registry values for Progression-free Survival (PFS) Time - Independent Review Committee (IRC) Assessments: 0.853, 0.696, 1.171.",
+    "trial": "CRYSTAL"
+   }
+  ]
  }
 }
