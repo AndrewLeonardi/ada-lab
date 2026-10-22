@@ -19,7 +19,7 @@ from .consistency import check_trial
 
 DAY = 86400
 PERIODIC = [("registry_sync", 7 * DAY), ("consistency", 7 * DAY), ("later_reports", DAY), ("notices", 7 * DAY),
-            ("hypotheses", DAY)]
+            ("hypotheses", DAY / 4)]
 BOARD = {"waiting": "open", "inconclusive": "testing", "supported": "supported", "refuted": "refuted",
          "not_supported": "refuted", "withdrawn": "refuted"}
 
