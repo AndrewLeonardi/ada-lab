@@ -294,13 +294,17 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
             log(con, f"Error: {type(e).__name__}: {str(e)[:200]}", "system")
             log_fn(f"[ada] error: {e!r}")
             time.sleep(60)
-        if not paid:  # free work fills whatever time the paid work leaves
-            try:
-                free = nightshift.step(con, claude if over is None else None)
-            except Exception as e:  # network trouble etc.: try again later
-                log(con, f"Free shift error: {type(e).__name__}: {str(e)[:200]}", "system")
-                log_fn(f"[ada] free shift error: {e!r}")
-                time.sleep(60)
+        # one small step of free work every round, also between paid batches (found in audit 2: candidate papers
+        # waited for a model check that only ran when no paid work was going on). Its few cheap model calls
+        # (confirming a paper matches a trial) may use whatever is left of today's budget, even when a whole batch
+        # no longer fits; each call is still checked against the cap.
+        under_cap = db.spent(con, db.budget_day()) < prof["daily_usd"]
+        try:
+            free = nightshift.step(con, claude if under_cap else None)
+        except Exception as e:  # network trouble etc.: try again later
+            log(con, f"Free shift error: {type(e).__name__}: {str(e)[:200]}", "system")
+            log_fn(f"[ada] free shift error: {e!r}")
+            time.sleep(60)
         if paid or time.time() - last_export > 300:
             board_update(con)
             from .export import export
