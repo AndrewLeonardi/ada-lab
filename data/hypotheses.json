@@ -2,16 +2,28 @@
  "H001": {
   "latest": {
    "status": "waiting",
-   "summary": "Waiting: 46 of 355 finished trials still pending or unsearched.",
+   "summary": "Waiting: 1 of 355 finished trials still pending or unsearched.",
    "numbers": {
     "eligible": 355,
-    "unresolved": 46
+    "unresolved": 1
    },
    "id": "H001",
    "spec_hash": "bd7f86305e31920d",
    "tested": "2026-10-22"
   },
-  "history": []
+  "history": [
+   {
+    "status": "waiting",
+    "summary": "Waiting: 46 of 355 finished trials still pending or unsearched.",
+    "numbers": {
+     "eligible": 355,
+     "unresolved": 46
+    },
+    "id": "H001",
+    "spec_hash": "bd7f86305e31920d",
+    "tested": "2026-10-22"
+   }
+  ]
  },
  "H002": {
   "latest": {
@@ -37,9 +49,18 @@
  },
  "H004": {
   "latest": {
-   "status": "waiting",
-   "summary": "Waiting: 21 trials still to compare with their registry record.",
-   "numbers": {},
+   "status": "inconclusive",
+   "numbers": {
+    "compared": 50,
+    "flagged": 0,
+    "confirmed": 0,
+    "share": [
+     0.0,
+     0.0,
+     0.07134760017861413
+    ]
+   },
+   "summary": "0 of 50 trials (0.0%, 95% CI 0.0% to 7.1%) report a different primary endpoint than they registered (code flagged none).",
    "id": "H004",
    "spec_hash": "3a695b9647bd8dd2",
    "tested": "2026-10-22"
@@ -58,6 +79,14 @@
      ]
     },
     "summary": "0 of 32 trials (0.0%, 95% CI 0.0% to 10.7%) report a different primary endpoint than they registered (code flagged none).",
+    "id": "H004",
+    "spec_hash": "3a695b9647bd8dd2",
+    "tested": "2026-10-22"
+   },
+   {
+    "status": "waiting",
+    "summary": "Waiting: 21 trials still to compare with their registry record.",
+    "numbers": {},
     "id": "H004",
     "spec_hash": "3a695b9647bd8dd2",
     "tested": "2026-10-22"
