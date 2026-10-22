@@ -1,0 +1,58 @@
+{
+ "H001": {
+  "latest": {
+   "status": "waiting",
+   "summary": "Waiting: 46 of 355 finished trials still pending or unsearched.",
+   "numbers": {
+    "eligible": 355,
+    "unresolved": 46
+   },
+   "id": "H001",
+   "spec_hash": "bd7f86305e31920d",
+   "tested": "2026-10-22"
+  },
+  "history": []
+ },
+ "H002": {
+  "latest": {
+   "status": "waiting",
+   "summary": "Waiting: the automated search still has trials pending or unsearched.",
+   "numbers": {},
+   "id": "H002",
+   "spec_hash": "1ecaca98e38d0bfb",
+   "tested": "2026-10-22"
+  },
+  "history": []
+ },
+ "H003": {
+  "latest": {
+   "status": "waiting",
+   "summary": "Waiting: the automated search still has trials pending or unsearched.",
+   "numbers": {},
+   "id": "H003",
+   "spec_hash": "89b1df2fcff51dc2",
+   "tested": "2026-10-22"
+  },
+  "history": []
+ },
+ "H004": {
+  "latest": {
+   "status": "inconclusive",
+   "numbers": {
+    "compared": 32,
+    "flagged": 0,
+    "confirmed": 0,
+    "share": [
+     0.0,
+     0.0,
+     0.10717919976468034
+    ]
+   },
+   "summary": "0 of 32 trials (0.0%, 95% CI 0.0% to 10.7%) report a different primary endpoint than they registered (code flagged none).",
+   "id": "H004",
+   "spec_hash": "3a695b9647bd8dd2",
+   "tested": "2026-10-22"
+  },
+  "history": []
+ }
+}

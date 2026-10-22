@@ -1,0 +1,110 @@
+[
+ {
+  "id": "H001",
+  "title": "Many finished colorectal cancer trials have no public results",
+  "registered": "2026-10-21",
+  "claim": "At least 10% of randomized phase 2/3 trials in metastatic colorectal cancer registered on ClinicalTrials.gov that finished at least 24 months ago have no publicly available results.",
+  "why": "Patients join trials on the understanding that the results will add to medical knowledge. Unreported results waste their contribution and bias the published evidence toward trials that went well.",
+  "population": "ClinicalTrials.gov records matching the condition \"metastatic colorectal cancer\", interventional, randomized, phase 2 or 3 (registry.QUERY), with status COMPLETED or TERMINATED, more than zero patients enrolled, and a primary completion date (or else completion date) at least 24 months before the test date.",
+  "measure": "A trial has public results if they are posted on ClinicalTrials.gov, a results publication is linked in the registry, a PubMed record cites its registration number, or a PubMed search finds a paper that a model confirms is its results paper (registry.find_results). Otherwise it has \"no results found\" (verdict not_found or unclear). Because an automated search can miss publications, a random sample of 30 trials with no results found (drawn by code, seed \"H001-v1\") is searched by hand by the auditor: PubMed by title, acronym and investigators; Google Scholar; conference abstracts. Each is judged truly_missing, found_elsewhere or unclear (unclear counts as found_elsewhere).",
+  "test": "p_auto = share of eligible trials with no results found, with a Wilson 95% interval. ppv = share of the audited sample judged truly_missing, with a Wilson 95% interval. Estimate = p_auto x ppv; conservative 95% bounds are the product of the two lower bounds and the product of the two upper bounds.",
+  "decision": "Supported if the lower bound of the estimate is at least 10%. Refuted if the upper bound is below 10%. Otherwise inconclusive.",
+  "disclosure": "Not blind. Before registration, an exploratory count (2026-10-21) found 95 of 347 finished trials with no posted results, no linked paper and no PubMed record citing the registration number. The first full automated pass the same day found no results for 52 of 355 trials, with 46 awaiting confirmation of a candidate paper. The 10% threshold was set below these figures; the audited sample decides how many are truly missing.",
+  "amendments": [],
+  "file": "research/hypotheses/H001-missing-results.yaml",
+  "spec_hash": "bd7f86305e31920d",
+  "latest": {
+   "status": "waiting",
+   "summary": "Waiting: 46 of 355 finished trials still pending or unsearched.",
+   "numbers": {
+    "eligible": 355,
+    "unresolved": 46
+   },
+   "id": "H001",
+   "spec_hash": "bd7f86305e31920d",
+   "tested": "2026-10-22"
+  },
+  "history": []
+ },
+ {
+  "id": "H002",
+  "title": "Results go missing less often since the 2017 US reporting rule",
+  "registered": "2026-10-21",
+  "claim": "Among the finished trials of H001, those whose primary completion date is on or after 18 January 2017 (when the US rule on posting trial results took effect) are less likely to have no public results than those completed before.",
+  "why": "If transparency rules work, missing results should become rarer. If they do not, that is worth knowing too.",
+  "population": "The eligible trials of H001, split by primary completion date (or else completion date) before or on/after 2017-01-18.",
+  "measure": "The automated verdict of H001 (no results found = not_found or unclear). No hand verification.",
+  "test": "Fisher's exact test, one-sided (later group lower), alpha 0.05. Also reported: both shares with Wilson 95% intervals and their difference with a Newcombe 95% interval.",
+  "decision": "Supported if the one-sided p-value is below 0.05. Refuted if the later group's share is higher with a one-sided p-value below 0.05 in that direction. Otherwise not supported.",
+  "disclosure": "Registered before any comparison by completion date was run. Limitations: the US rule covers only US-regulated trials, many trials in this set are not; and automated verdicts can misclassify some trials.",
+  "amendments": [],
+  "file": "research/hypotheses/H002-reporting-after-2017.yaml",
+  "spec_hash": "1ecaca98e38d0bfb",
+  "latest": {
+   "status": "waiting",
+   "summary": "Waiting: the automated search still has trials pending or unsearched.",
+   "numbers": {},
+   "id": "H002",
+   "spec_hash": "1ecaca98e38d0bfb",
+   "tested": "2026-10-22"
+  },
+  "history": []
+ },
+ {
+  "id": "H003",
+  "title": "Industry and non-industry trials differ in missing results",
+  "registered": "2026-10-21",
+  "claim": "Among the finished trials of H001, trials with an industry lead sponsor differ from trials with other lead sponsors (universities, hospitals, cooperative groups, government) in the share with no public results.",
+  "why": "Knowing who leaves results unreported shows where reporting efforts would help most.",
+  "population": "The eligible trials of H001, split by the lead sponsor's class on ClinicalTrials.gov (INDUSTRY vs all others).",
+  "measure": "The automated verdict of H001 (no results found = not_found or unclear). No hand verification.",
+  "test": "Fisher's exact test, two-sided, alpha 0.05. Also reported: both shares with Wilson 95% intervals and their difference with a Newcombe 95% interval.",
+  "decision": "Supported (with its direction stated) if the two-sided p-value is below 0.05. Otherwise not supported.",
+  "disclosure": "Registered before any comparison by sponsor was run.",
+  "amendments": [],
+  "file": "research/hypotheses/H003-sponsor-type.yaml",
+  "spec_hash": "89b1df2fcff51dc2",
+  "latest": {
+   "status": "waiting",
+   "summary": "Waiting: the automated search still has trials pending or unsearched.",
+   "numbers": {},
+   "id": "H003",
+   "spec_hash": "89b1df2fcff51dc2",
+   "tested": "2026-10-22"
+  },
+  "history": []
+ },
+ {
+  "id": "H004",
+  "title": "Some abstracts report a different primary endpoint than the trial registered",
+  "registered": "2026-10-21",
+  "claim": "For at least 5% of trials in Ada's dataset that have results on ClinicalTrials.gov, the primary endpoint stated in the published abstract differs from the registered primary outcome.",
+  "why": "Changing a trial's main question after seeing the data (\"outcome switching\") can make results look better than they are. It is a known problem; whether it happens in this field, and how often, is checkable.",
+  "population": "Trials in Ada's dataset whose ClinicalTrials.gov record has results, compared by registry.crosscheck_step, where both the registered primary outcome and the abstract's primary endpoint could be classified.",
+  "measure": "Code classifies each endpoint into families (overall survival, progression-free survival, response, ...) and flags trials whose families do not overlap. Every flagged trial is checked by the auditor against the registry record and the paper, and judged confirmed_switch, explained (for example a multi-part trial whose registry lists several primary outcomes) or not_a_switch. Only confirmed switches count.",
+  "test": "Share of compared trials with a confirmed switch, with a Wilson 95% interval.",
+  "decision": "Supported if the lower bound is at least 5%. Refuted if the upper bound is below 5%. Otherwise inconclusive.",
+  "disclosure": "Partly seen. A first test run on 8 trials (2026-10-21) found the primary endpoint matching in all 6 comparable ones; the full comparison of the dataset ran the same day, but its primary-endpoint results were not tallied before registration.",
+  "amendments": [],
+  "file": "research/hypotheses/H004-primary-endpoint.yaml",
+  "spec_hash": "3a695b9647bd8dd2",
+  "latest": {
+   "status": "inconclusive",
+   "numbers": {
+    "compared": 32,
+    "flagged": 0,
+    "confirmed": 0,
+    "share": [
+     0.0,
+     0.0,
+     0.10717919976468034
+    ]
+   },
+   "summary": "0 of 32 trials (0.0%, 95% CI 0.0% to 10.7%) report a different primary endpoint than they registered (code flagged none).",
+   "id": "H004",
+   "spec_hash": "3a695b9647bd8dd2",
+   "tested": "2026-10-22"
+  },
+  "history": []
+ }
+]
