@@ -1,17 +1,17 @@
 [
  {
   "date": "2026-10-22",
-  "spend_usd": 1.3277,
-  "screened": 1175,
-  "included": 189,
-  "secondary": 205,
-  "excluded": 772,
+  "spend_usd": 1.3952,
+  "screened": 1401,
+  "included": 237,
+  "secondary": 222,
+  "excluded": 933,
   "extracted": [
    {
     "pmid": "28383633",
     "name": "SALTO",
-    "verified": 6,
-    "review": 4,
+    "verified": 4,
+    "review": 6,
     "headline": null
    },
    {
@@ -37,15 +37,15 @@
    {
     "pmid": "28430159",
     "name": "Efficacy of Low-Molecular-Weight Fucoidan as a Supplemental Therapy in Metastatic Color\u2026",
-    "verified": 4,
-    "review": 0,
+    "verified": 2,
+    "review": 2,
     "headline": null
    },
    {
     "pmid": "28275117",
     "name": "Parsatuzumab (MEGF0444A) phase II trial",
-    "verified": 3,
-    "review": 3,
+    "verified": 6,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -84,8 +84,8 @@
    {
     "pmid": "28246207",
     "name": "null",
-    "verified": 16,
-    "review": 0,
+    "verified": 13,
+    "review": 3,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -134,8 +134,8 @@
    {
     "pmid": "27878354",
     "name": "G13D-study",
-    "verified": 8,
-    "review": 0,
+    "verified": 5,
+    "review": 3,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -275,8 +275,8 @@
    {
     "pmid": "27428073",
     "name": "Phase II randomised trial of autologous tumour lysate dendritic cell\u00a0plus best supporti\u2026",
-    "verified": 6,
-    "review": 4,
+    "verified": 4,
+    "review": 6,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -304,8 +304,8 @@
    {
     "pmid": "27052743",
     "name": "CIK",
-    "verified": 5,
-    "review": 1,
+    "verified": 4,
+    "review": 2,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -490,8 +490,8 @@
    {
     "pmid": "26406550",
     "name": "Feasibility and Clinical Value of CT-guided (125)I Brachytherapy for Bilateral Lung Rec\u2026",
-    "verified": 2,
-    "review": 4,
+    "verified": 1,
+    "review": 5,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -667,8 +667,8 @@
    {
     "pmid": "25873343",
     "name": "Endostar combined with irinotecan/calcium folinate/5-fluorouracil (FOLFIRI) for treatin\u2026",
-    "verified": 4,
-    "review": 2,
+    "verified": 2,
+    "review": 4,
     "headline": {
      "label": "Median PFS",
      "items": [
@@ -696,8 +696,8 @@
    {
     "pmid": "26366218",
     "name": "A Muti-center, Randomized Phase II Study of Oxaliplatin and S-1 versus Capecitabine and\u2026",
-    "verified": 13,
-    "review": 1,
+    "verified": 12,
+    "review": 2,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -991,8 +991,8 @@
    {
     "pmid": "25790229",
     "name": "Randomized phase II study of 5-fluorouracil hepatic arterial infusion with or without a\u2026",
-    "verified": 2,
-    "review": 2,
+    "verified": 0,
+    "review": 4,
     "headline": null
    },
    {
@@ -1081,16 +1081,34 @@
    {
     "pmid": "25441408",
     "name": "A randomised, open-label phase II trial of afatinib versus cetuximab in patients with m\u2026",
-    "verified": 7,
-    "review": 6,
+    "verified": 4,
+    "review": 9,
     "headline": {
-     "label": "Median PFS",
+     "label": "Objective response rate",
      "items": [
       {
        "arm": "afatinib",
        "comparator": null,
-       "value": 46.0,
-       "unit": "weeks",
+       "value": 3.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "KRAS wild-type"
+      },
+      {
+       "arm": "afatinib",
+       "comparator": null,
+       "value": 0.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "KRAS wild-type"
+      },
+      {
+       "arm": "cetuximab",
+       "comparator": null,
+       "value": 20.0,
+       "unit": "percent",
        "ci_low": null,
        "ci_high": null,
        "population": "KRAS wild-type"
@@ -1121,8 +1139,8 @@
    {
     "pmid": "25088940",
     "name": "FIRE-3",
-    "verified": 10,
-    "review": 6,
+    "verified": 8,
+    "review": 8,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -1208,8 +1226,8 @@
    {
     "pmid": "24919569",
     "name": "Randomized phase Ib/II trial of rilotumumab or ganitumab with panitumumab versus panitu\u2026",
-    "verified": 12,
-    "review": 0,
+    "verified": 9,
+    "review": 3,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -1260,8 +1278,8 @@
    {
     "pmid": "24915899",
     "name": "Safety and efficacy of second-line treatment with folinic acid, 5-fluorouracil and irin\u2026",
-    "verified": 8,
-    "review": 0,
+    "verified": 4,
+    "review": 4,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -1356,8 +1374,8 @@
    {
     "pmid": "24318863",
     "name": "Pretreatment selection of regimen according to genetic analysis improves the efficacy o\u2026",
-    "verified": 7,
-    "review": 0,
+    "verified": 6,
+    "review": 1,
     "headline": {
      "label": "Objective response rate",
      "items": [
@@ -1385,8 +1403,8 @@
    {
     "pmid": "24316553",
     "name": "GOLFIG-2",
-    "verified": 6,
-    "review": 2,
+    "verified": 5,
+    "review": 3,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -1405,22 +1423,9 @@
    {
     "pmid": "24548447",
     "name": "[Clinical values of detecting excision repair cross complementing 1 and top-isomerase I\u2026",
-    "verified": 3,
-    "review": 3,
-    "headline": {
-     "label": "Median OS",
-     "items": [
-      {
-       "arm": "Testing group (individualized chemotherapy guided by ERCC1/TOPO I expression)",
-       "comparator": null,
-       "value": 281.0,
-       "unit": "weeks",
-       "ci_low": null,
-       "ci_high": null,
-       "population": "overall"
-      }
-     ]
-    }
+    "verified": 0,
+    "review": 6,
+    "headline": null
    },
    {
     "pmid": "24225157",
@@ -1557,8 +1562,8 @@
    {
     "pmid": "23605883",
     "name": "Axitinib and/or bevacizumab with modified FOLFOX-6 as first-line therapy for metastatic\u2026",
-    "verified": 12,
-    "review": 0,
+    "verified": 9,
+    "review": 3,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -1622,8 +1627,8 @@
    {
     "pmid": "23559149",
     "name": "CECOG",
-    "verified": 14,
-    "review": 1,
+    "verified": 12,
+    "review": 3,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -1642,8 +1647,8 @@
    {
     "pmid": "23510984",
     "name": "A randomized, placebo-controlled phase 2 study of ganitumab or conatumumab in combinati\u2026",
-    "verified": 16,
-    "review": 3,
+    "verified": 19,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -1651,6 +1656,15 @@
        "arm": "Arm A",
        "comparator": "Arm C",
        "value": 0.89,
+       "unit": "ratio",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "Arm B",
+       "comparator": "Arm C",
+       "value": 1.27,
        "unit": "ratio",
        "ci_low": null,
        "ci_high": null,
@@ -1711,8 +1725,8 @@
    {
     "pmid": "23684358",
     "name": "MIROX",
-    "verified": 2,
-    "review": 3,
+    "verified": 0,
+    "review": 5,
     "headline": null
    },
    {
@@ -1885,22 +1899,9 @@
    {
     "pmid": "23082002",
     "name": "A randomized phase II trial of vismodegib versus placebo with FOLFOX or FOLFIRI and bev\u2026",
-    "verified": 3,
-    "review": 0,
-    "headline": {
-     "label": "PFS hazard ratio",
-     "items": [
-      {
-       "arm": "vismodegib",
-       "comparator": "placebo",
-       "value": 1.25,
-       "unit": "ratio",
-       "ci_low": 0.89,
-       "ci_high": 1.76,
-       "population": "overall"
-      }
-     ]
-    }
+    "verified": 0,
+    "review": 3,
+    "headline": null
    },
    {
     "pmid": "22294255",
@@ -1954,8 +1955,8 @@
    {
     "pmid": "22965965",
     "name": "HORIZON II",
-    "verified": 8,
-    "review": 0,
+    "verified": 6,
+    "review": 2,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -1974,8 +1975,8 @@
    {
     "pmid": "22965961",
     "name": "HORIZON III",
-    "verified": 10,
-    "review": 0,
+    "verified": 8,
+    "review": 2,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -1994,18 +1995,27 @@
    {
     "pmid": "22951287",
     "name": "TAS-102 phase 2",
-    "verified": 5,
-    "review": 4,
+    "verified": 4,
+    "review": 5,
     "headline": {
-     "label": "OS hazard ratio",
+     "label": "Median OS",
      "items": [
       {
        "arm": "TAS-102",
-       "comparator": "placebo",
-       "value": 0.56,
-       "unit": "ratio",
-       "ci_low": 0.39,
-       "ci_high": 0.81,
+       "comparator": null,
+       "value": 9.0,
+       "unit": "months",
+       "ci_low": 7.3,
+       "ci_high": 11.3,
+       "population": "overall"
+      },
+      {
+       "arm": "placebo",
+       "comparator": null,
+       "value": 6.6,
+       "unit": "months",
+       "ci_low": 4.9,
+       "ci_high": 8.0,
        "population": "overall"
       }
      ]
@@ -2070,8 +2080,8 @@
    {
     "pmid": "22753904",
     "name": "EVEREST",
-    "verified": 6,
-    "review": 2,
+    "verified": 4,
+    "review": 4,
     "headline": {
      "label": "Objective response rate",
      "items": [
@@ -2104,12 +2114,16 @@
     "headline": null
    }
   ],
-  "verified_numbers": 647,
-  "review_numbers": 327,
+  "verified_numbers": 600,
+  "review_numbers": 374,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
     "n": 295
+   },
+   {
+    "reason": "the count was not stated as randomized",
+    "n": 57
    },
    {
     "reason": "its unit did not fit the measure",
@@ -2121,7 +2135,15 @@
    },
    {
     "reason": "it contradicted the trial's other numbers",
-    "n": 18
+    "n": 12
+   },
+   {
+    "reason": "its unit is not the one the source uses",
+    "n": 11
+   },
+   {
+    "reason": "it was not stated as a disease control rate",
+    "n": 8
    },
    {
     "reason": "the value was implausible",
@@ -2130,6 +2152,14 @@
    {
     "reason": "the quote was not found word for word",
     "n": 4
+   },
+   {
+    "reason": "its interval was not a 95% interval",
+    "n": 4
+   },
+   {
+    "reason": "the value was a bound, not exact",
+    "n": 3
    },
    {
     "reason": "the interval did not contain the value",
@@ -2149,18 +2179,27 @@
    {
     "pmid": "32379280",
     "name": "CO.26",
-    "verified": 8,
-    "review": 2,
+    "verified": 6,
+    "review": 4,
     "headline": {
-     "label": "OS hazard ratio",
+     "label": "Median OS",
      "items": [
       {
+       "arm": "best supportive care alone",
+       "comparator": null,
+       "value": 4.1,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
        "arm": "durvalumab plus tremelimumab",
-       "comparator": "best supportive care alone",
-       "value": 0.72,
-       "unit": "ratio",
-       "ci_low": 0.54,
-       "ci_high": 0.97,
+       "comparator": null,
+       "value": 6.6,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
        "population": "overall"
       }
      ]
@@ -2189,8 +2228,8 @@
    {
     "pmid": "32334845",
     "name": "BE1040V",
-    "verified": 2,
-    "review": 2,
+    "verified": 1,
+    "review": 3,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -2238,8 +2277,8 @@
    {
     "pmid": "32164906",
     "name": "TRIBE2",
-    "verified": 4,
-    "review": 7,
+    "verified": 2,
+    "review": 9,
     "headline": null
    },
    {
@@ -2285,8 +2324,8 @@
    {
     "pmid": "31740551",
     "name": "CAPTEM",
-    "verified": 10,
-    "review": 0,
+    "verified": 6,
+    "review": 4,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -2305,8 +2344,8 @@
    {
     "pmid": "32679021",
     "name": "The JPJDF has Synergistic Effect with Fluoropyrimidine in the Maintenance Therapy for M\u2026",
-    "verified": 6,
-    "review": 0,
+    "verified": 4,
+    "review": 2,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -2394,8 +2433,8 @@
    {
     "pmid": "31810943",
     "name": "Resection or Stenting in the Treatment of Symptomatic Advanced Metastatic Rectal Cancer\u2026",
-    "verified": 2,
-    "review": 0,
+    "verified": 0,
+    "review": 2,
     "headline": null
    },
    {
@@ -2430,20 +2469,11 @@
    {
     "pmid": "31445198",
     "name": "SAPPHIRE",
-    "verified": 4,
-    "review": 4,
+    "verified": 3,
+    "review": 5,
     "headline": {
      "label": "Median PFS",
      "items": [
-      {
-       "arm": "group A",
-       "comparator": null,
-       "value": 9.1,
-       "unit": "months",
-       "ci_low": 8.6,
-       "ci_high": 11.1,
-       "population": "overall"
-      },
       {
        "arm": "group B",
        "comparator": null,
@@ -2486,8 +2516,8 @@
    {
     "pmid": "31390590",
     "name": "TES",
-    "verified": 2,
-    "review": 0,
+    "verified": 0,
+    "review": 2,
     "headline": null
    },
    {
@@ -2507,18 +2537,36 @@
    {
     "pmid": "30552157",
     "name": "STEAM",
-    "verified": 11,
-    "review": 0,
+    "verified": 10,
+    "review": 1,
     "headline": {
-     "label": "PFS hazard ratio",
+     "label": "Median PFS",
      "items": [
+      {
+       "arm": "FOLFOX-BEV",
+       "comparator": null,
+       "value": 9.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "cFOLFOXIRI-BEV",
+       "comparator": null,
+       "value": 11.9,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
       {
        "arm": "pooled FOLFOXIRI-BEV",
        "comparator": "FOLFOX-BEV",
-       "value": 0.7,
-       "unit": "ratio",
-       "ci_low": 0.5,
-       "ci_high": 0.9,
+       "value": 11.7,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
        "population": "overall"
       }
      ]
@@ -2563,8 +2611,8 @@
    {
     "pmid": "30048216",
     "name": "The Effect of Telephone-Based Follow-Up on Adherence, Efficacy, and Toxicity of Oral Ca\u2026",
-    "verified": 2,
-    "review": 0,
+    "verified": 0,
+    "review": 2,
     "headline": null
    },
    {
@@ -2577,8 +2625,8 @@
    {
     "pmid": "30224341",
     "name": "MAVERICC",
-    "verified": 4,
-    "review": 2,
+    "verified": 2,
+    "review": 4,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -2617,18 +2665,27 @@
    {
     "pmid": "31020480",
     "name": "PACIFIC",
-    "verified": 4,
-    "review": 2,
+    "verified": 3,
+    "review": 3,
     "headline": {
-     "label": "Median PFS",
+     "label": "Objective response rate",
      "items": [
       {
        "arm": "IRI + Pmab",
        "comparator": null,
-       "value": 190.0,
-       "unit": "weeks",
-       "ci_low": 159.0,
-       "ci_high": 213.0,
+       "value": 40.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "control",
+       "comparator": null,
+       "value": 21.7,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
        "population": "overall"
       }
      ]
@@ -2637,8 +2694,8 @@
    {
     "pmid": "30964527",
     "name": "SUNSHINE",
-    "verified": 13,
-    "review": 0,
+    "verified": 11,
+    "review": 2,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -2677,8 +2734,8 @@
    {
     "pmid": "30559073",
     "name": "SAKK 41/10",
-    "verified": 4,
-    "review": 2,
+    "verified": 2,
+    "review": 4,
     "headline": {
      "label": "Objective response rate",
      "items": [
@@ -2883,8 +2940,8 @@
    {
     "pmid": "29653857",
     "name": "IND.210",
-    "verified": 10,
-    "review": 1,
+    "verified": 9,
+    "review": 2,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -2999,8 +3056,8 @@
    {
     "pmid": "29551560",
     "name": "A Randomized Phase II Study of Axitinib as Maintenance Therapy After First-line Treatme\u2026",
-    "verified": 10,
-    "review": 2,
+    "verified": 8,
+    "review": 4,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -3039,8 +3096,8 @@
    {
     "pmid": "28902669",
     "name": "LIGRO",
-    "verified": 2,
-    "review": 8,
+    "verified": 0,
+    "review": 10,
     "headline": null
    },
    {
@@ -3358,8 +3415,8 @@
    {
     "pmid": "28979818",
     "name": "Erlotinib in combination with bevacizumab and FOLFOX4 as second-line chemotherapy for p\u2026",
-    "verified": 10,
-    "review": 0,
+    "verified": 6,
+    "review": 4,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -3465,8 +3522,8 @@
     }
    }
   ],
-  "verified_numbers": 433,
-  "review_numbers": 194,
+  "verified_numbers": 398,
+  "review_numbers": 229,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
@@ -3477,8 +3534,24 @@
     "n": 27
    },
    {
+    "reason": "the count was not stated as randomized",
+    "n": 26
+   },
+   {
+    "reason": "its unit is not the one the source uses",
+    "n": 17
+   },
+   {
+    "reason": "its interval was not a 95% interval",
+    "n": 16
+   },
+   {
     "reason": "it contradicted the trial's other numbers",
     "n": 14
+   },
+   {
+    "reason": "it was not stated as a disease control rate",
+    "n": 10
    },
    {
     "reason": "the number was not in its quote",
@@ -3487,6 +3560,10 @@
    {
     "reason": "the value was implausible",
     "n": 6
+   },
+   {
+    "reason": "the value was a bound, not exact",
+    "n": 2
    },
    {
     "reason": "the confidence limits were not in the quote",
@@ -3507,6 +3584,35 @@
   "secondary": 221,
   "excluded": 828,
   "extracted": [
+   {
+    "pmid": "14657227",
+    "name": "GERCOR",
+    "verified": 14,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "Arm A",
+       "comparator": "Arm B",
+       "value": 21.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "Arm B",
+       "comparator": "Arm A",
+       "value": 20.6,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
    {
     "pmid": "16421419",
     "name": "OPTIMOX1",
@@ -3682,8 +3788,8 @@
    {
     "pmid": "34533973",
     "name": "PANAMA",
-    "verified": 11,
-    "review": 0,
+    "verified": 10,
+    "review": 1,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -3845,8 +3951,8 @@
    {
     "pmid": "42859101",
     "name": "EGFR Targeting With Afatinib and Cetuximab Versus Cetuximab Alone in Chemorefractory Wi\u2026",
-    "verified": 6,
-    "review": 2,
+    "verified": 4,
+    "review": 4,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -3970,8 +4076,8 @@
    {
     "pmid": "41870279",
     "name": "ARC-9",
-    "verified": 12,
-    "review": 0,
+    "verified": 10,
+    "review": 2,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -3997,8 +4103,8 @@
    {
     "pmid": "41905242",
     "name": "AIO-KRK-0117 / IKF 629",
-    "verified": 12,
-    "review": 2,
+    "verified": 10,
+    "review": 4,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -4167,8 +4273,8 @@
    {
     "pmid": "41537257",
     "name": "BEVATOMOX",
-    "verified": 4,
-    "review": 4,
+    "verified": 2,
+    "review": 6,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -4393,8 +4499,8 @@
    {
     "pmid": "39632230",
     "name": "KH903",
-    "verified": 8,
-    "review": 4,
+    "verified": 11,
+    "review": 1,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -4496,8 +4602,8 @@
    {
     "pmid": "39575283",
     "name": "Clinical evaluation of sintilimab in conjunction with bevacizumab for advanced colorect\u2026",
-    "verified": 4,
-    "review": 0,
+    "verified": 2,
+    "review": 2,
     "headline": {
      "label": "Objective response rate",
      "items": [
@@ -4869,8 +4975,8 @@
    {
     "pmid": "37870968",
     "name": "CodeBreaK 300",
-    "verified": 14,
-    "review": 0,
+    "verified": 11,
+    "review": 3,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -4927,8 +5033,8 @@
    {
     "pmid": "38192897",
     "name": "The Effect of Topical Vitamin K1 on the Treatment of Cetuximab-Induced Skin Rashes in M\u2026",
-    "verified": 2,
-    "review": 1,
+    "verified": 0,
+    "review": 3,
     "headline": null
    },
    {
@@ -5122,8 +5228,8 @@
    {
     "pmid": "37200022",
     "name": "null",
-    "verified": 5,
-    "review": 3,
+    "verified": 3,
+    "review": 5,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -5182,8 +5288,8 @@
    {
     "pmid": "37071094",
     "name": "PARADIGM",
-    "verified": 12,
-    "review": 11,
+    "verified": 10,
+    "review": 13,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -5231,8 +5337,8 @@
    {
     "pmid": "36503738",
     "name": "CanStem303C",
-    "verified": 7,
-    "review": 11,
+    "verified": 5,
+    "review": 13,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -5423,18 +5529,18 @@
    {
     "pmid": "35636444",
     "name": "AtezoTRIBE",
-    "verified": 5,
-    "review": 6,
+    "verified": 1,
+    "review": 10,
     "headline": {
-     "label": "PFS hazard ratio",
+     "label": "Median PFS",
      "items": [
       {
-       "arm": "atezolizumab",
-       "comparator": "control",
-       "value": 0.69,
-       "unit": "ratio",
-       "ci_low": 0.56,
-       "ci_high": 0.85,
+       "arm": "control",
+       "comparator": null,
+       "value": 11.5,
+       "unit": "months",
+       "ci_low": 10.0,
+       "ci_high": 12.6,
        "population": "overall"
       }
      ]
@@ -5463,8 +5569,8 @@
    {
     "pmid": "35385794",
     "name": "NCT03925662",
-    "verified": 6,
-    "review": 0,
+    "verified": 5,
+    "review": 1,
     "headline": {
      "label": "Median PFS",
      "items": [
@@ -5532,8 +5638,8 @@
    {
     "pmid": "35179586",
     "name": "ACCRU",
-    "verified": 15,
-    "review": 3,
+    "verified": 13,
+    "review": 5,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -5561,8 +5667,8 @@
    {
     "pmid": "35069808",
     "name": "FOLFIRI (folinic acid, fluorouracil, and irinotecan) increases not efficacy but toxicit\u2026",
-    "verified": 5,
-    "review": 2,
+    "verified": 3,
+    "review": 4,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -5581,8 +5687,8 @@
    {
     "pmid": "35236652",
     "name": "Efficacy and safety of bevacizumab combined with chemotherapy in the treatment of advan\u2026",
-    "verified": 8,
-    "review": 0,
+    "verified": 7,
+    "review": 1,
     "headline": {
      "label": "Objective response rate",
      "items": [
@@ -5610,15 +5716,15 @@
    {
     "pmid": "35022282",
     "name": "Celecoxib as an adjuvant to chemotherapy for patients with metastatic colorectal cancer\u2026",
-    "verified": 2,
-    "review": 1,
+    "verified": 1,
+    "review": 2,
     "headline": null
    },
    {
     "pmid": "34345969",
     "name": "Pre-emptive oral clarithromycin reduces the skin toxicity of panitumumab treatment for \u2026",
-    "verified": 4,
-    "review": 1,
+    "verified": 2,
+    "review": 3,
     "headline": null
    },
    {
@@ -5684,8 +5790,8 @@
    {
     "pmid": "34105207",
     "name": "ALTER0703",
-    "verified": 11,
-    "review": 0,
+    "verified": 9,
+    "review": 2,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -5900,8 +6006,8 @@
    {
     "pmid": "32737004",
     "name": "NEXIRI-2/PRODIGE 27",
-    "verified": 10,
-    "review": 3,
+    "verified": 7,
+    "review": 6,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -5978,8 +6084,8 @@
    {
     "pmid": "32829105",
     "name": "PURE FIST",
-    "verified": 2,
-    "review": 0,
+    "verified": 0,
+    "review": 2,
     "headline": null
    },
    {
@@ -6086,8 +6192,8 @@
     }
    }
   ],
-  "verified_numbers": 813,
-  "review_numbers": 354,
+  "verified_numbers": 788,
+  "review_numbers": 393,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
@@ -6098,12 +6204,28 @@
     "n": 56
    },
    {
+    "reason": "the count was not stated as randomized",
+    "n": 55
+   },
+   {
     "reason": "it contradicted the trial's other numbers",
-    "n": 35
+    "n": 32
    },
    {
     "reason": "the number was not in its quote",
     "n": 19
+   },
+   {
+    "reason": "it was not stated as a disease control rate",
+    "n": 9
+   },
+   {
+    "reason": "its interval was not a 95% interval",
+    "n": 8
+   },
+   {
+    "reason": "its unit is not the one the source uses",
+    "n": 5
    },
    {
     "reason": "the value was implausible",
@@ -6112,6 +6234,10 @@
    {
     "reason": "the quote was not found word for word",
     "n": 2
+   },
+   {
+    "reason": "the value was a bound, not exact",
+    "n": 1
    },
    {
     "reason": "it described a non-standard endpoint",

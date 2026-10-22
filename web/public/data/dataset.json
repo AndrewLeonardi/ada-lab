@@ -1,15 +1,15 @@
 {
  "name": "Open Metastatic Colorectal Cancer Trial Outcomes",
  "version": "2026-10-22",
- "generated": "2026-10-22T15:27:21",
+ "generated": "2026-10-22T15:34:28",
  "counts": {
   "candidates": 3748,
-  "screened": 2991,
-  "included": 408,
-  "trials": 310,
-  "verified_numbers": 1893,
-  "pending_numbers": 875,
-  "corrected_numbers": 7
+  "screened": 3217,
+  "included": 456,
+  "trials": 311,
+  "verified_numbers": 1786,
+  "pending_numbers": 996,
+  "corrected_numbers": 11
  },
  "trials": [
   {
@@ -708,8 +708,10 @@
      "population": "overall",
      "detail": null,
      "quote": "33 in the control and 50 in the experimental arms",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -765,8 +767,10 @@
      "population": "overall",
      "detail": null,
      "quote": "33 in the control and 50 in the experimental arms",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -1417,8 +1421,10 @@
      "population": "overall",
      "detail": "confirmed overall response rate",
      "quote": "The confirmed overall response rate was 17% (90% CI, 10.6%-26.1%) with EZFB",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -1543,8 +1549,10 @@
      "population": "overall",
      "detail": "confirmed overall response rate",
      "quote": "and 3% (90% CI, 0.1%-12.2%) with regorafenib",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -1931,8 +1939,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The full analysis population comprised 120 patients (62 Arm A, 58 Arm B",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -2078,8 +2088,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The full analysis population comprised 120 patients (62 Arm A, 58 Arm B",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -2633,6 +2645,7 @@
      "quote": "14 (63.6%) underwent pulmonary metastasectomy (+SX)",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -2693,6 +2706,7 @@
      "quote": "8 (36.4%) remained on chemotherapy only (-SX)",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -4308,6 +4322,7 @@
      "quote": "Median disease-free survival was 1\u00b713 years (95\u00b744% CI 0\u00b792-1\u00b744) with aspirin",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -4368,6 +4383,7 @@
      "quote": "and 1\u00b740 years (1\u00b711-1\u00b769) with placebo",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -4706,6 +4722,7 @@
      "quote": "9 patients (18%; 95% confidence interval [CI], 8-31), were progression-free at 6 months",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees",
       "consistent"
      ],
@@ -4743,8 +4760,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Patients (n = 51) received oral afatinib (40 mg/d)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -4835,8 +4854,10 @@
      "population": "overall",
      "detail": null,
      "quote": "or cetuximab alone (n = 24)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     }
@@ -5283,6 +5304,7 @@
      "quote": "mean, 0.1 vs 1.3 days; P < .001",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -5439,12 +5461,10 @@
      "population": "overall",
      "detail": null,
      "quote": "median (m)PFS was 5.68 months (95% CI, 4.67-7.13) with 4mg/kg q1w",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "PFS hazard ratio 0.76 says KH903 5mg/kg q2w + FOLFIRI did better than KH903 4mg/kg q1w + FOLFIRI, but the medians say the opposite (5.19 vs 5.68 months)."
+     "consistency_note": null
     },
     {
      "id": "39632230:kh903-5mg-kg-q2w-+-folfiri|dcr|overall||",
@@ -5551,12 +5571,10 @@
      "population": "overall",
      "detail": null,
      "quote": "(HR, 0.76; 95% CI, 0.50-1.16)",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "PFS hazard ratio 0.76 says KH903 5mg/kg q2w + FOLFIRI did better than KH903 4mg/kg q1w + FOLFIRI, but the medians say the opposite (5.19 vs 5.68 months)."
+     "consistency_note": null
     },
     {
      "id": "39632230:kh903-5mg-kg-q2w-+-folfiri|pfs-median|overall||kh903-4mg-kg-q1w-+-folfiri",
@@ -5571,12 +5589,10 @@
      "population": "overall",
      "detail": null,
      "quote": "5.19 months (95% CI, 4.04, 5.78) with 5mg/kg q2w",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "PFS hazard ratio 0.76 says KH903 5mg/kg q2w + FOLFIRI did better than KH903 4mg/kg q1w + FOLFIRI, but the medians say the opposite (5.19 vs 5.68 months)."
+     "consistency_note": null
     }
    ],
    "registry_checks": [],
@@ -6538,6 +6554,7 @@
      "status": "needs_review",
      "failed_checks": [
       "unit_fits",
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -8563,6 +8580,7 @@
      "quote": "38 in each group received treatment",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -8601,6 +8619,7 @@
      "quote": "38 in each group received treatment",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -9218,6 +9237,7 @@
      "quote": "disease-control rate was 52% vs 73% (P = .05)",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -9238,6 +9258,7 @@
      "quote": "Of the 102 enrolled, 44 treated with irinotecan-cetuximab and 45 with modified ramucirumab were evaluable.",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -9298,6 +9319,7 @@
      "quote": "disease-control rate was 52% vs 73% (P = .05)",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -9318,6 +9340,7 @@
      "quote": "44 treated with irinotecan-cetuximab and 45 with modified ramucirumab were evaluable.",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -10663,8 +10686,10 @@
      "population": "overall",
      "detail": null,
      "quote": "the control group (n = 50)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -10699,8 +10724,10 @@
      "population": "overall",
      "detail": null,
      "quote": "the experimental group (n = 60)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -10943,6 +10970,7 @@
      "quote": "A total of 303 patients who had not previously received systemic treatment for metastatic disease were randomly assigned to receive nivolumab plus ipilimumab or chemotherapy",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees",
       "consistent"
      ],
@@ -11005,6 +11033,7 @@
      "quote": "A total of 303 patients who had not previously received systemic treatment for metastatic disease were randomly assigned to receive nivolumab plus ipilimumab or chemotherapy",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees",
       "consistent"
      ],
@@ -11694,8 +11723,10 @@
      "population": "overall",
      "detail": null,
      "quote": "control, n = 629",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -11714,6 +11745,7 @@
      "quote": "control, n = 272",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -11848,8 +11880,10 @@
      "population": "overall",
      "detail": null,
      "quote": "napabucasin, n = 624",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -11868,6 +11902,7 @@
      "quote": "napabucasin, n = 275",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -12363,8 +12398,10 @@
      "population": "overall",
      "detail": null,
      "quote": "bevacizumab (n = 412)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -12533,8 +12570,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Panitumumab (n = 411)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -13140,6 +13179,7 @@
      "status": "needs_review",
      "failed_checks": [
       "value_in_quote",
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -13158,8 +13198,10 @@
      "population": "overall",
      "detail": null,
      "quote": "31 received panitumumab plus trifluridine-tipiracil",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -13252,8 +13294,10 @@
      "population": "overall",
      "detail": null,
      "quote": "31 received trifluridine-tipiracil alone",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -14183,6 +14227,7 @@
      "status": "needs_review",
      "failed_checks": [
       "unit_fits",
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -15720,8 +15765,10 @@
      "population": "overall",
      "detail": null,
      "quote": "sotorasib at a dose of 240 mg once daily plus panitumumab (53 patients)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -15810,8 +15857,10 @@
      "population": "overall",
      "detail": null,
      "quote": "sotorasib at a dose of 960 mg once daily plus panitumumab (53 patients)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -15900,8 +15949,10 @@
      "population": "overall",
      "detail": null,
      "quote": "standard care; 54 patients",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -16021,8 +16072,10 @@
      "population": "overall",
      "detail": null,
      "quote": "placebo cream in the control group (n = 24)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -16039,8 +16092,10 @@
      "population": "overall",
      "detail": null,
      "quote": "intervention group (n = 25)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -16270,8 +16325,10 @@
      "population": "overall",
      "detail": null,
      "quote": "HR, 0.72; 80% CI, 0.60 to 0.85",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -16358,8 +16415,10 @@
      "population": "overall",
      "detail": null,
      "quote": "the celecoxib group (n=26)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -16464,8 +16523,10 @@
      "population": "overall",
      "detail": null,
      "quote": "treated with FOLFIRI (n = 88)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -16502,6 +16563,7 @@
      "quote": "The median PFS was 104 and 112 days (3.5 and 3.7 months)",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -16538,8 +16600,10 @@
      "population": "overall",
      "detail": null,
      "quote": "irinotecan (n = 84)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -16558,6 +16622,7 @@
      "quote": "The median PFS was 104 and 112 days (3.5 and 3.7 months)",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -16661,8 +16726,10 @@
      "population": "overall",
      "detail": null,
      "quote": "82 in the investigational group and 46 in the placebo group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -16901,8 +16968,10 @@
      "population": "overall",
      "detail": null,
      "quote": "82 in the investigational group and 46 in the placebo group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -17021,8 +17090,10 @@
      "population": "overall",
      "detail": "disease control rate",
      "quote": "which were significantly higher than those of 26% and 80% in the control group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "dcr_named"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -17715,8 +17786,10 @@
      "population": "overall",
      "detail": null,
      "quote": "mebendazole group (n = 20)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -18053,8 +18126,10 @@
      "population": "overall",
      "detail": null,
      "quote": "218 patients were randomly assigned and received treatment (73 in the control group and 145 in the atezolizumab group)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -18071,8 +18146,10 @@
      "population": "overall",
      "detail": null,
      "quote": "hazard ratio [HR] 0\u00b769 [80% CI 0\u00b756-0\u00b785]",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -18089,8 +18166,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Median progression-free survival was 13\u00b71 months (80% CI 12\u00b75-13\u00b78) in the atezolizumab group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -18167,8 +18246,10 @@
      "population": "overall",
      "detail": null,
      "quote": "218 patients were randomly assigned and received treatment (73 in the control group and 145 in the atezolizumab group)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -18241,6 +18322,7 @@
      "quote": "No differences in early tumor shrinkage rate (57%/58%, P = .878)",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees",
       "consistent"
      ],
@@ -18339,6 +18421,7 @@
      "quote": "No differences in early tumor shrinkage rate (57%/58%, P = .878)",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees",
       "consistent"
      ],
@@ -19063,6 +19146,7 @@
      "quote": "and 36 pts in the control arm",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -19083,6 +19167,7 @@
      "quote": "The full analysis set consists of 70 patients (pts) in the experimental arm",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -20428,8 +20513,10 @@
      "population": "overall",
      "detail": null,
      "quote": "anlotinib: 282; placebo: 137",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -20518,8 +20605,10 @@
      "population": "overall",
      "detail": null,
      "quote": "anlotinib: 282; placebo: 137",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -21062,8 +21151,10 @@
      "population": "overall",
      "detail": null,
      "quote": "78 received reactive treatment",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -21098,8 +21189,10 @@
      "population": "overall",
      "detail": null,
      "quote": "78 received pre-emptive antibiotic treatment",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -22116,6 +22209,7 @@
      "quote": "23 served as controls (no PTX)",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "consistent"
      ],
      "audit_note": null,
@@ -22154,6 +22248,7 @@
      "quote": "17 patients were treated with a full dose of PTX (400 mg TID)",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "consistent"
      ],
      "audit_note": null,
@@ -22194,6 +22289,7 @@
      "quote": "9 patients with a reduced dose PTX (200 mg TID)",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "consistent"
      ],
      "audit_note": null,
@@ -22295,8 +22391,10 @@
      "population": "overall",
      "detail": null,
      "quote": "9.5 (8.2-25.8) in arm A",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "unit_in_source"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -22331,8 +22429,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Progression-free survival and overall survival were 3.5 (2.0-5.0) and 9.5 (8.2-25.8) in arm A",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "unit_in_source"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -22385,8 +22485,10 @@
      "population": "overall",
      "detail": null,
      "quote": "10.6 (8.5-20.8) in arm B",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "unit_in_source"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -22403,8 +22505,10 @@
      "population": "overall",
      "detail": null,
      "quote": "3.5 (2.3-6.1) and 10.6 (8.5-20.8) in arm B",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "unit_in_source"
+     ],
      "audit_note": null,
      "consistency_note": null
     }
@@ -23279,8 +23383,10 @@
      "population": "overall",
      "detail": null,
      "quote": "340 in the control group and 339 in the experimental group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -23375,8 +23481,10 @@
      "population": "overall",
      "detail": null,
      "quote": "340 in the control group and 339 in the experimental group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -23489,8 +23597,10 @@
      "population": "per-protocol",
      "detail": "hazard ratio, biosimilar vs reference",
      "quote": "The hazard ratio of the biosimilar arm versus the reference arm was 0.79 in the per-protocol population (90% CI, 0.46-1.35; P = 0.47)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -23812,8 +23922,10 @@
      "population": "overall",
      "detail": null,
      "quote": "(hazard ratio [HR], 0.72; 90% CI, 0.54-0.97; P = .07)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -23832,6 +23944,7 @@
      "quote": "OS was significantly improved with durvalumab and tremelimumab (HR, 0.66; 90% CI, 0.49-0.89; P = .02)",
      "status": "needs_review",
      "failed_checks": [
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -23852,6 +23965,7 @@
      "quote": "Patients who were MSS with plasma TMB of 28 variants per megabase or more (21% of MSS patients) had the greatest OS benefit (HR, 0.34; 90% CI, 0.18-0.63; P = .004)",
      "status": "needs_review",
      "failed_checks": [
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -23888,8 +24002,10 @@
      "population": "overall",
      "detail": null,
      "quote": "(HR, 1.01; 90% CI, 0.76-1.34)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -24790,8 +24906,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Flu-F-treated group, n = 69",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -24844,8 +24962,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Flu-treated group, n = 68",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -24933,8 +25053,10 @@
      "population": "overall",
      "detail": null,
      "quote": "59 in NEXIRI, 57 in IRI, and 57 in NEX arms",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -25008,8 +25130,10 @@
      "population": "overall",
      "detail": null,
      "quote": "59 in NEXIRI, 57 in IRI, and 57 in NEX arms",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -25083,8 +25207,10 @@
      "population": "overall",
      "detail": null,
      "quote": "59 in NEXIRI, 57 in IRI, and 57 in NEX arms",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -25417,8 +25543,10 @@
      "population": "overall",
      "detail": null,
      "quote": "control group (n = 106)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -25435,8 +25563,10 @@
      "population": "overall",
      "detail": null,
      "quote": "study group (n = 107)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     }
@@ -26288,8 +26418,10 @@
      "population": "overall",
      "detail": null,
      "quote": "control group (n = 38) and intervention group (n = 44)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -26306,8 +26438,10 @@
      "population": "overall",
      "detail": null,
      "quote": "control group (n = 38) and intervention group (n = 44)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     }
@@ -26353,8 +26487,10 @@
      "population": "overall",
      "detail": null,
      "quote": "188 each received mFOLFOX6-BV and FOLFIRI-BV",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -26447,8 +26583,10 @@
      "population": "overall",
      "detail": null,
      "quote": "188 each received mFOLFOX6-BV and FOLFIRI-BV",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     }
@@ -26516,6 +26654,7 @@
      "quote": "Noninferiority of TFS was not shown (hazard ratio [HR], 0.86; 90% CI, 0.73 to 1.02)",
      "status": "needs_review",
      "failed_checks": [
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -26536,6 +26675,7 @@
      "quote": "patients with RAS mutant tumors (HR, 1.09; 90% CI, 0.81 to 1.46; P = .58)",
      "status": "needs_review",
      "failed_checks": [
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -26574,6 +26714,7 @@
      "quote": "patients with RAS/BRAF wild-type tumors benefitted from combination chemotherapy (HR, 0.61; 90% CI, 0.46 to 0.82; P = .005)",
      "status": "needs_review",
      "failed_checks": [
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -26638,6 +26779,7 @@
      "quote": "A total of 132 patients",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees",
       "consistent"
      ],
@@ -26752,6 +26894,7 @@
      "quote": "A total of 132 patients",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees",
       "consistent"
      ],
@@ -27403,8 +27546,10 @@
      "population": "overall",
      "detail": "pooled concurrent and sequential",
      "quote": "hazard ratio, 0.7; 90% confidence interval, 0.5-0.9",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -27585,6 +27730,7 @@
      "quote": "At week 12, 6 of 11 patients (55%) were progression-free in the cetuximab monotherapy arm",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -27603,8 +27749,10 @@
      "population": "overall",
      "detail": null,
      "quote": "11 in the monotherapy arm",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -27641,6 +27789,7 @@
      "quote": "9 of 13 patients (69%) in the combination arm",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -27659,8 +27808,10 @@
      "population": "overall",
      "detail": null,
      "quote": "13 in the combination arm",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -28272,8 +28423,10 @@
      "population": "overall",
      "detail": null,
      "quote": "high-dose vitamin D3 (n = 69)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -28398,8 +28551,10 @@
      "population": "overall",
      "detail": null,
      "quote": "standard-dose vitamin D3 (n = 70)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -28867,8 +29022,10 @@
      "population": "overall",
      "detail": null,
      "quote": "190 days (95% confidence interval, 159-213) for IRI + Pmab",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "unit_in_source"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -28923,7 +29080,8 @@
      "quote": "The median progression-free survival was 254 days (95% confidence interval, 159-306) for control",
      "status": "needs_review",
      "failed_checks": [
-      "plausible"
+      "plausible",
+      "unit_in_source"
      ],
      "audit_note": null,
      "consistency_note": null
@@ -29039,6 +29197,7 @@
      "status": "needs_review",
      "failed_checks": [
       "plausible",
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -29059,6 +29218,7 @@
      "quote": "DOR (210 days vs. 109 days; P < 0.001)",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -29079,6 +29239,7 @@
      "quote": "longer median PFS (169 days vs. 95 days; P < 0.001)",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -29159,6 +29320,7 @@
      "quote": "DOR (210 days vs. 109 days; P < 0.001)",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -29179,6 +29341,7 @@
      "quote": "longer median PFS (169 days vs. 95 days; P < 0.001)",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -29200,6 +29363,7 @@
      "status": "needs_review",
      "failed_checks": [
       "plausible",
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -29220,6 +29384,7 @@
      "quote": "their median PFS was 84 days (95% CI 65 to 113 days)",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -29271,6 +29436,7 @@
      "quote": "Twenty-eight patients aged >18 y with a histological diagnosis of metastatic colorectal cancer were randomly assigned (1:2)",
      "status": "needs_review",
      "failed_checks": [
+      "exact_value",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -29292,6 +29458,7 @@
      "status": "needs_review",
      "failed_checks": [
       "plausible",
+      "unit_in_source",
       "second_pass_agrees",
       "consistent"
      ],
@@ -29314,6 +29481,7 @@
      "status": "needs_review",
      "failed_checks": [
       "plausible",
+      "unit_in_source",
       "second_pass_agrees",
       "consistent"
      ],
@@ -29377,6 +29545,7 @@
      "quote": "median of 200 and 502 d for FOLFOX and CUFOX, respectively",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees",
       "consistent"
      ],
@@ -29419,6 +29588,7 @@
      "quote": "median of 171 and 291 d for FOLFOX and CUFOX, respectively",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees",
       "consistent"
      ],
@@ -29921,8 +30091,10 @@
      "population": "overall",
      "detail": null,
      "quote": "165 received CAU",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -29939,8 +30111,10 @@
      "population": "overall",
      "detail": null,
      "quote": "184 received the TES program",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     }
@@ -30029,6 +30203,7 @@
      "status": "needs_review",
      "failed_checks": [
       "unit_fits",
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -30047,8 +30222,10 @@
      "population": "overall",
      "detail": "median progression-free survival",
      "quote": "median PFS were 46.4% (80% confidence interval [CI], 38.1-54.9) and 9.1 months (95% CI, 8.6-11.1) in group A",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -30106,6 +30283,7 @@
      "status": "needs_review",
      "failed_checks": [
       "unit_fits",
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -30735,8 +30913,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Group 1 included 20 patients who underwent placement of a self-expandable metal stent",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -30753,8 +30933,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Group 2 included 26 patients in whom primary tumor resection was performed",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     }
@@ -30996,8 +31178,10 @@
      "population": "overall",
      "detail": null,
      "quote": "RR was 92% [95% confidence interval (CI) 84%-100%] (44/48) in the ALPPS arm",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -31097,8 +31281,10 @@
      "population": "overall",
      "detail": null,
      "quote": "57% (95% CI 43%-72%) (28/49) in the TSH arm",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -33224,6 +33410,7 @@
      "status": "needs_review",
      "failed_checks": [
       "unit_fits",
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -33245,6 +33432,7 @@
      "status": "needs_review",
      "failed_checks": [
       "unit_fits",
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -33689,8 +33877,10 @@
      "population": "overall",
      "detail": null,
      "quote": "25 in arm A and 24 in arm B",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -33818,8 +34008,10 @@
      "population": "overall",
      "detail": null,
      "quote": "25 in arm A and 24 in arm B",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -34210,6 +34402,7 @@
      "status": "needs_review",
      "failed_checks": [
       "unit_fits",
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -34282,8 +34475,10 @@
      "population": "overall",
      "detail": "hazard ratio for PFS, pelareorep vs control",
      "quote": "hazard ratio [HR], 1.59 [80% confidence interval (CI), 1.18-2.15]",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -34452,6 +34647,7 @@
      "quote": "Grade 3/4 adverse events with a >5% absolute increase from regorafenib included diarrhea, neutropenia, febrile neutropenia, hypophosphatemia, and hypertension.",
      "status": "needs_review",
      "failed_checks": [
+      "exact_value",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -34849,6 +35045,7 @@
      "quote": "nintedanib n = 384; placebo n = 381",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -34998,6 +35195,7 @@
      "quote": "placebo n = 381",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -36209,6 +36407,7 @@
      "quote": "clinical benefit (62 [87%] vs 65 [92%])",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -36307,6 +36506,7 @@
      "quote": "clinical benefit (62 [87%] vs 65 [92%])",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -36558,6 +36758,7 @@
      "quote": "HB-MAB vs. RB-MAB: 100% vs. 96%, P=0.36 at Week 6",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -36578,6 +36779,7 @@
      "quote": "95.83 vs. 100%, P=1.00 at Week 12",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -36638,6 +36840,7 @@
      "quote": "HB-MAB vs. RB-MAB: 100% vs. 96%, P=0.36 at Week 6",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -36658,6 +36861,7 @@
      "quote": "95.83 vs. 100%, P=1.00 at Week 12",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -36763,8 +36967,10 @@
      "population": "overall",
      "detail": null,
      "quote": "10 in Cet group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -36817,8 +37023,10 @@
      "population": "overall",
      "detail": null,
      "quote": "and 47.4% in the CetI group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "dcr_named"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -36835,8 +37043,10 @@
      "population": "overall",
      "detail": null,
      "quote": "19 in CetI group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -37379,7 +37589,20 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [],
+   "registry_checks": [
+    {
+     "nct": "NCT02196688",
+     "check": "primary_endpoint",
+     "verdict": "agrees",
+     "detail": "Registered primary outcome: Progression Free Survival (PFS). Primary endpoint in the abstract: progression-free survival (PFS)."
+    },
+    {
+     "nct": "NCT02196688",
+     "check": "patients",
+     "verdict": "agrees",
+     "detail": "Registry: 71 enrolled. Abstract: 71 randomized."
+    }
+   ],
    "notices": []
   },
   {
@@ -37477,8 +37700,10 @@
      "population": "overall",
      "detail": null,
      "quote": "FOLFIRI/placebo (n = 80)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -37549,8 +37774,10 @@
      "population": "overall",
      "detail": null,
      "quote": "FOLFIRI/simtuzumab 200 mg (n = 85)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -37657,8 +37884,10 @@
      "population": "overall",
      "detail": null,
      "quote": "FOLFIRI/simtuzumab 700 mg (n = 84)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -37753,7 +37982,80 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [],
+   "registry_checks": [
+    {
+     "nct": "NCT01479465",
+     "check": "patients",
+     "verdict": "agrees",
+     "detail": "Registry: 266 enrolled. Abstract: 249 randomized."
+    },
+    {
+     "nct": "NCT01479465",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 5.5 months (FOLFIRI + simtuzumab 700 mg). Registry values for Progression Free Survival (PFS): 5.7, 5.8, 5.4, 5.5."
+    },
+    {
+     "nct": "NCT01479465",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 5.4 months (FOLFIRI + simtuzumab 200 mg). Registry values for Progression Free Survival (PFS): 5.7, 5.8, 5.4, 5.5."
+    },
+    {
+     "nct": "NCT01479465",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 5.8 months (FOLFIRI + placebo). Registry values for Progression Free Survival (PFS): 5.7, 5.8, 5.4, 5.5."
+    },
+    {
+     "nct": "NCT01479465",
+     "check": "pfs_hr",
+     "verdict": "agrees",
+     "detail": "Abstract: 1.32 ratio (FOLFIRI + simtuzumab 700 mg). Registry values for Progression Free Survival (PFS): 1.45, 1.32."
+    },
+    {
+     "nct": "NCT01479465",
+     "check": "pfs_hr",
+     "verdict": "agrees",
+     "detail": "Abstract: 1.45 ratio (FOLFIRI + simtuzumab 200 mg). Registry values for Progression Free Survival (PFS): 1.45, 1.32."
+    },
+    {
+     "nct": "NCT01479465",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 11.4 months (FOLFIRI + simtuzumab 700 mg). Registry values for Overall Survival (OS): 9.8, 16.3, 10.5, 11.4."
+    },
+    {
+     "nct": "NCT01479465",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 10.5 months (FOLFIRI + simtuzumab 200 mg). Registry values for Overall Survival (OS): 9.8, 16.3, 10.5, 11.4."
+    },
+    {
+     "nct": "NCT01479465",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 16.3 months (FOLFIRI + placebo). Registry values for Overall Survival (OS): 9.8, 16.3, 10.5, 11.4."
+    },
+    {
+     "nct": "NCT01479465",
+     "check": "orr",
+     "verdict": "agrees",
+     "detail": "Abstract: 11.9 percent (FOLFIRI + simtuzumab 700 mg). Registry values for Objective Response Rate (ORR): 9.1, 10, 5.9, 11.9."
+    },
+    {
+     "nct": "NCT01479465",
+     "check": "orr",
+     "verdict": "agrees",
+     "detail": "Abstract: 5.9 percent (FOLFIRI + simtuzumab 200 mg). Registry values for Objective Response Rate (ORR): 9.1, 10, 5.9, 11.9."
+    },
+    {
+     "nct": "NCT01479465",
+     "check": "orr",
+     "verdict": "agrees",
+     "detail": "Abstract: 10 percent (FOLFIRI + placebo). Registry values for Objective Response Rate (ORR): 9.1, 10, 5.9, 11.9."
+    }
+   ],
    "notices": []
   },
   {
@@ -37832,12 +38134,10 @@
      "population": "overall",
      "detail": "progression-free survival hazard ratio",
      "quote": "The progression-free survival (PFS) hazard ratio was 1.17 (95% confidence interval [CI], 0.71-1.93; p = .548)",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "PFS hazard ratio 1.17 says parsatuzumab 400 mg did worse than placebo, but the medians say the opposite (12 vs 11.9 months)."
+     "consistency_note": null
     },
     {
      "id": "28275117:parsatuzumab-400-mg|pfs-median|overall||",
@@ -37852,12 +38152,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The median PFS was 12 months for the experimental arm versus 11.9 months for the control arm",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "PFS hazard ratio 1.17 says parsatuzumab 400 mg did worse than placebo, but the medians say the opposite (12 vs 11.9 months)."
+     "consistency_note": null
     },
     {
      "id": "28275117:placebo|orr|overall||",
@@ -37890,12 +38188,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The median PFS was 12 months for the experimental arm versus 11.9 months for the control arm",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "PFS hazard ratio 1.17 says parsatuzumab 400 mg did worse than placebo, but the medians say the opposite (12 vs 11.9 months)."
+     "consistency_note": null
     }
    ],
    "registry_checks": [],
@@ -38022,8 +38318,10 @@
      "population": "overall",
      "detail": null,
      "quote": "S-1 group (n = 80)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -38116,8 +38414,10 @@
      "population": "overall",
      "detail": null,
      "quote": "capecitabine group (n = 80)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     }
@@ -38163,8 +38463,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The DCRs were 92.8% and 69.2% in the study and control groups, respectively (p = 0.026)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "dcr_named"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -38199,8 +38501,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The DCRs were 92.8% and 69.2% in the study and control groups, respectively (p = 0.026)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "dcr_named"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -39687,8 +39991,10 @@
      "population": "overall",
      "detail": "combined partial response and stable disease rate",
      "quote": "than 32.2% for BV + FOLFOX4 group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "dcr_named"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -39705,8 +40011,10 @@
      "population": "overall",
      "detail": null,
      "quote": "and 65 received BV + FOLFOX4",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -39759,8 +40067,10 @@
      "population": "overall",
      "detail": "combined partial response and stable disease rate",
      "quote": "Combined partial response and stable disease rate was 48.5% for ER + BV + FOLFOX4 group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "dcr_named"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -39777,8 +40087,10 @@
      "population": "overall",
      "detail": null,
      "quote": "66 patients received 2nd-line treatment of ER + BV+ FOLFOX4",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -40783,7 +41095,8 @@
      "quote": "Thirty-three were percutaneously treated with CT-guided (125)I brachytherapy (group A)",
      "status": "needs_review",
      "failed_checks": [
-      "value_in_quote"
+      "value_in_quote",
+      "randomized_count"
      ],
      "audit_note": null,
      "consistency_note": null
@@ -40859,8 +41172,10 @@
      "population": "overall",
      "detail": null,
      "quote": "the other 39 were only given symptomatic and supportive treatments (group B)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -42612,7 +42927,8 @@
      "quote": "Sixty-one patients in group 1 (cell therapy group)",
      "status": "needs_review",
      "failed_checks": [
-      "value_in_quote"
+      "value_in_quote",
+      "randomized_count"
      ],
      "audit_note": null,
      "consistency_note": null
@@ -42666,8 +42982,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Another 61 patients in group 2 (the control group)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -43248,7 +43566,44 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [],
+   "registry_checks": [
+    {
+     "nct": "NCT00851084",
+     "check": "primary_endpoint",
+     "verdict": "agrees",
+     "detail": "Registered primary outcome: Progression Free Survival (PFS) Rate at 12 Months. Primary endpoint in the abstract: progression-free survival rate at 12 months."
+    },
+    {
+     "nct": "NCT00851084",
+     "check": "patients",
+     "verdict": "differs",
+     "detail": "Registry: 268 enrolled. Abstract: 236 randomized."
+    },
+    {
+     "nct": "NCT00851084",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 8.48 months (aflibercept/mFOLFOX6). Registry values for Progression Free Survival (PFS): 8.77, 8.48."
+    },
+    {
+     "nct": "NCT00851084",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 8.77 months (mFOLFOX6). Registry values for Progression Free Survival (PFS): 8.77, 8.48."
+    },
+    {
+     "nct": "NCT00851084",
+     "check": "orr",
+     "verdict": "agrees",
+     "detail": "Abstract: 49.1 percent (aflibercept/mFOLFOX6). Registry values for Overall Objective Response Rate (ORR): 45.9, 49.1."
+    },
+    {
+     "nct": "NCT00851084",
+     "check": "orr",
+     "verdict": "agrees",
+     "detail": "Abstract: 45.9 percent (mFOLFOX6). Registry values for Overall Objective Response Rate (ORR): 45.9, 49.1."
+    }
+   ],
    "notices": []
   },
   {
@@ -43291,6 +43646,7 @@
      "quote": "Response and stable disease rates were 0% and 58% for monotherapy",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -43352,6 +43708,7 @@
      "quote": "9% and 70% for combination treatment, respectively",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -43725,6 +44082,7 @@
      "quote": "The median PFS for FOLFIRI + Bev (n = 197)",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -43961,6 +44319,7 @@
      "quote": "mFOLFOX6 + Bev (n = 198)",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -44294,8 +44653,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Fifty-two patients were included (28 EA/24 CA)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -44369,8 +44730,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Fifty-two patients were included (28 EA/24 CA)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -44627,6 +44990,7 @@
      "quote": "52 on ICR+mFOLFOX-6",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -44701,6 +45065,7 @@
      "quote": "52 on RAM+mFOLFOX-6",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -44775,6 +45140,7 @@
      "quote": "49 on mFOLFOX-6",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -44817,7 +45183,56 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [],
+   "registry_checks": [
+    {
+     "nct": "NCT01111604",
+     "check": "primary_endpoint",
+     "verdict": "agrees",
+     "detail": "Registered primary outcome: Progression-Free Survival (PFS). Primary endpoint in the abstract: progression-free survival."
+    },
+    {
+     "nct": "NCT01111604",
+     "check": "patients",
+     "verdict": "agrees",
+     "detail": "Registry: 158 enrolled. Abstract: 158 randomized."
+    },
+    {
+     "nct": "NCT01111604",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 18.4 weeks (mFOLFOX-6). Registry values for Progression-Free Survival (PFS): 4.232, 4.921, 3.657."
+    },
+    {
+     "nct": "NCT01111604",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 21.4 weeks (RAM+mFOLFOX-6). Registry values for Progression-Free Survival (PFS): 4.232, 4.921, 3.657."
+    },
+    {
+     "nct": "NCT01111604",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 15.9 weeks (ICR+mFOLFOX-6). Registry values for Progression-Free Survival (PFS): 4.232, 4.921, 3.657."
+    },
+    {
+     "nct": "NCT01111604",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 53.6 weeks (mFOLFOX-6). Registry values for Overall Survival (OS): 12.327, 9.59, 9.659."
+    },
+    {
+     "nct": "NCT01111604",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 41.7 weeks (RAM+mFOLFOX-6). Registry values for Overall Survival (OS): 12.327, 9.59, 9.659."
+    },
+    {
+     "nct": "NCT01111604",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 42 weeks (ICR+mFOLFOX-6). Registry values for Overall Survival (OS): 12.327, 9.59, 9.659."
+    }
+   ],
    "notices": []
   },
   {
@@ -46468,8 +46883,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Overall survival was not statistically improved (p=0.105) in the AN arm (n=32)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -46506,8 +46923,10 @@
      "population": "overall",
      "detail": null,
      "quote": "versus the control arm (n=33)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -46716,8 +47135,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The control group (n = 18)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -46772,8 +47193,10 @@
      "population": "overall",
      "detail": null,
      "quote": "tested group (n = 22)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -47189,6 +47612,7 @@
      "quote": "10 mg/kg, n = 188",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -47287,6 +47711,7 @@
      "quote": "5 mg/kg, n = 181",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -47611,7 +48036,38 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [],
+   "registry_checks": [
+    {
+     "nct": "NCT01607957",
+     "check": "primary_endpoint",
+     "verdict": "agrees",
+     "detail": "Registered primary outcome: Overall Survival. Primary endpoint in the abstract: overall survival."
+    },
+    {
+     "nct": "NCT01607957",
+     "check": "patients",
+     "verdict": "agrees",
+     "detail": "Registry: 800 enrolled. Abstract: 800 randomized."
+    },
+    {
+     "nct": "NCT01607957",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 5.3 months (placebo). Registry values for Overall Survival: 7.1, 5.3."
+    },
+    {
+     "nct": "NCT01607957",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 7.1 months (TAS-102). Registry values for Overall Survival: 7.1, 5.3."
+    },
+    {
+     "nct": "NCT01607957",
+     "check": "os_hr",
+     "verdict": "agrees",
+     "detail": "Abstract: 0.68 ratio (TAS-102). Registry values for Overall Survival: 0.68."
+    }
+   ],
    "notices": []
   },
   {
@@ -47988,7 +48444,44 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [],
+   "registry_checks": [
+    {
+     "nct": "NCT00418938",
+     "check": "primary_endpoint",
+     "verdict": "agrees",
+     "detail": "Registered primary outcome: Progression-free Survival (PFS). Primary endpoint in the abstract: progression-free survival (PFS)."
+    },
+    {
+     "nct": "NCT00418938",
+     "check": "patients",
+     "verdict": "differs",
+     "detail": "Registry: 266 enrolled. Abstract: 182 randomized."
+    },
+    {
+     "nct": "NCT00418938",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 7.7 months (panitumumab). Registry values for Progression-free Survival (PFS): 7.7, 9.2, 3.7, 6.4."
+    },
+    {
+     "nct": "NCT00418938",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 9.2 months (bevacizumab). Registry values for Progression-free Survival (PFS): 7.7, 9.2, 3.7, 6.4."
+    },
+    {
+     "nct": "NCT00418938",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 18 months (panitumumab). Registry values for Overall Survival: 18, 21.4, 8.7, 13.5."
+    },
+    {
+     "nct": "NCT00418938",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 21.4 months (bevacizumab). Registry values for Overall Survival: 18, 21.4, 8.7, 13.5."
+    }
+   ],
    "notices": []
   },
   {
@@ -48517,7 +49010,44 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [],
+   "registry_checks": [
+    {
+     "nct": "NCT00609622",
+     "check": "primary_endpoint",
+     "verdict": "agrees",
+     "detail": "Registered primary outcome: Progression-free Survival (PFS). Primary endpoint in the abstract: progression-free survival."
+    },
+    {
+     "nct": "NCT00609622",
+     "check": "patients",
+     "verdict": "agrees",
+     "detail": "Registry: 191 enrolled. Abstract: 191 randomized."
+    },
+    {
+     "nct": "NCT00609622",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 9.3 months (sunitinib plus mFOLFOX6). Registry values for Progression-free Survival (PFS): 9.314, 15.408."
+    },
+    {
+     "nct": "NCT00609622",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 15.4 months (bevacizumab plus mFOLFOX6). Registry values for Progression-free Survival (PFS): 9.314, 15.408."
+    },
+    {
+     "nct": "NCT00609622",
+     "check": "os_median",
+     "verdict": "differs",
+     "detail": "Abstract: 23.7 months (sunitinib plus mFOLFOX6). Registry values for Overall Survival (OS): 19.387."
+    },
+    {
+     "nct": "NCT00609622",
+     "check": "os_median",
+     "verdict": "differs",
+     "detail": "Abstract: 34.1 months (bevacizumab plus mFOLFOX6). Registry values for Overall Survival (OS): 19.387."
+    }
+   ],
    "notices": []
   },
   {
@@ -48932,6 +49462,7 @@
      "quote": "bevacizumab plus mFOLFOX6, n = 41",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -49011,6 +49542,7 @@
      "quote": "nintedanib plus mFOLFOX6, n = 85",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -49462,8 +49994,10 @@
      "population": "overall",
      "detail": null,
      "quote": "versus 77.3% (95% CI, 64.5-89.4), P = 0.044]",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "dcr_named"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -49625,6 +50159,7 @@
      "quote": "arm A = 116",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -49797,6 +50332,7 @@
      "quote": "arm B = 117",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -49889,6 +50425,7 @@
      "quote": "arm C = 111",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -50051,7 +50588,80 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [],
+   "registry_checks": [
+    {
+     "nct": "NCT00614393",
+     "check": "primary_endpoint",
+     "verdict": "agrees",
+     "detail": "Registered primary outcome: Overall Survival (OS); Progression-free Survival (PFS); Percentage of Participants Who Have a Clinical or Laboratory Common Terminology Criteria for Adverse Events (CTCAE) Grade 3 to 5 Toxicity; Percentage of Participants Who Have a Drug-related Clinical or Laboratory CTCAE Grade 3 to 5 Toxicity; Pe. Primary endpoint in the abstract: progression-free survival (PFS) and overall survival (OS)."
+    },
+    {
+     "nct": "NCT00614393",
+     "check": "patients",
+     "verdict": "differs",
+     "detail": "Registry: 558 enrolled. Abstract: 344 randomized."
+    },
+    {
+     "nct": "NCT00614393",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 3.9 months (arm A). Registry values for Progression-free Survival (PFS): 3.9, 5.4, 5.6."
+    },
+    {
+     "nct": "NCT00614393",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 5.4 months (arm B). Registry values for Progression-free Survival (PFS): 3.9, 5.4, 5.6."
+    },
+    {
+     "nct": "NCT00614393",
+     "check": "pfs_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 5.6 months (arm C). Registry values for Progression-free Survival (PFS): 3.9, 5.4, 5.6."
+    },
+    {
+     "nct": "NCT00614393",
+     "check": "pfs_hr",
+     "verdict": "agrees",
+     "detail": "Abstract: 1.33 ratio (arm A). Registry values for Progression-free Survival (PFS): 1.33, 1.13."
+    },
+    {
+     "nct": "NCT00614393",
+     "check": "pfs_hr",
+     "verdict": "agrees",
+     "detail": "Abstract: 1.13 ratio (arm B). Registry values for Progression-free Survival (PFS): 1.33, 1.13."
+    },
+    {
+     "nct": "NCT00614393",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 10.8 months (arm A). Registry values for Overall Survival (OS): 10.8, 11.6, 14."
+    },
+    {
+     "nct": "NCT00614393",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 11.6 months (arm B). Registry values for Overall Survival (OS): 10.8, 11.6, 14."
+    },
+    {
+     "nct": "NCT00614393",
+     "check": "os_median",
+     "verdict": "agrees",
+     "detail": "Abstract: 14 months (arm C). Registry values for Overall Survival (OS): 10.8, 11.6, 14."
+    },
+    {
+     "nct": "NCT00614393",
+     "check": "os_hr",
+     "verdict": "agrees",
+     "detail": "Abstract: 1.41 ratio (arm A). Registry values for Overall Survival (OS): 1.41, 1.26."
+    },
+    {
+     "nct": "NCT00614393",
+     "check": "os_hr",
+     "verdict": "agrees",
+     "detail": "Abstract: 1.26 ratio (arm B). Registry values for Overall Survival (OS): 1.41, 1.26."
+    }
+   ],
    "notices": []
   },
   {
@@ -50117,6 +50727,7 @@
      "quote": "diarrhoea (21 [10%] vs two [<1%])",
      "status": "needs_review",
      "failed_checks": [
+      "exact_value",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -50137,6 +50748,7 @@
      "quote": "asthenia (12 [5%] vs two [<1%])",
      "status": "needs_review",
      "failed_checks": [
+      "exact_value",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -50817,8 +51429,10 @@
      "population": "overall",
      "detail": "overall survival",
      "quote": "median 21.63 (95% CI, 18.09-25.18)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "unit_in_source"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -50954,8 +51568,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Blood samples of patients in planned treatment group (N = 53) were analyzed",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -52038,6 +52654,7 @@
      "quote": "500 received cetuximab",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -52094,6 +52711,7 @@
      "quote": "one [<0.5%] patient vs nine [2%] patients",
      "status": "needs_review",
      "failed_checks": [
+      "exact_value",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -52132,6 +52750,7 @@
      "quote": "499 received panitumumab",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -52223,6 +52842,7 @@
      "failed_checks": [
       "value_in_quote",
       "plausible",
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -52449,8 +53069,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The disease-controlled rate in FOLFIRI+PB arm was improved to 62.2 from 50.2 % in FOLFIRI arm",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "dcr_named"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -52467,8 +53089,10 @@
      "population": "overall",
      "detail": null,
      "quote": "155 and 137 patients were included in the FOLFIRI arm and FOLFIRI+PB arm, respectively",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -52521,8 +53145,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The disease-controlled rate in FOLFIRI+PB arm was improved to 62.2 from 50.2 % in FOLFIRI arm",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "dcr_named"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -52539,8 +53165,10 @@
      "population": "overall",
      "detail": null,
      "quote": "155 and 137 patients were included in the FOLFIRI arm and FOLFIRI+PB arm, respectively",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -52626,8 +53254,10 @@
      "population": "overall",
      "detail": null,
      "quote": "panitumumab plus ganitumab (n = 46)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -52698,8 +53328,10 @@
      "population": "overall",
      "detail": null,
      "quote": "panitumumab plus placebo arms (n = 48)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -52770,8 +53402,10 @@
      "population": "overall",
      "detail": null,
      "quote": "panitumumab plus rilotumumab (n = 48)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -53110,8 +53744,10 @@
      "population": "overall",
      "detail": null,
      "quote": "295 in the FOLFIRI plus bevacizumab group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -53242,8 +53878,10 @@
      "population": "overall",
      "detail": null,
      "quote": "297 in the FOLFIRI plus cetuximab group",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -53495,6 +54133,7 @@
      "quote": "We randomly assigned 508 patients with untreated metastatic colorectal cancer",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees",
       "consistent"
      ],
@@ -53591,6 +54230,7 @@
      "quote": "We randomly assigned 508 patients with untreated metastatic colorectal cancer",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees",
       "consistent"
      ],
@@ -53749,8 +54389,10 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "Patients with KRAS wild-type tumours (n=50) received afatinib (n=36) or cetuximab (n=14)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -53769,6 +54411,7 @@
      "quote": "In the KRAS-mutated group (n=41)",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -53826,6 +54469,7 @@
      "status": "needs_review",
      "failed_checks": [
       "plausible",
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -53846,6 +54490,7 @@
      "quote": "Median PFS and OS were 41.0 and 173days, respectively",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -53864,8 +54509,10 @@
      "population": "KRAS wild-type",
      "detail": "reported in days in abstract",
      "quote": "Median PFS was 46.0 and 144.5 days for afatinib and cetuximab",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "unit_in_source"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -53884,6 +54531,7 @@
      "quote": "Median PFS and OS were 41.0 and 173days, respectively",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -53902,8 +54550,10 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "received afatinib (n=36) or cetuximab (n=14)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -53958,6 +54608,7 @@
      "quote": "Median PFS was 46.0 and 144.5 days for afatinib and cetuximab",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -54142,8 +54793,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The overall response rates for placebo-treated and vismodegib-treated patients were 51% (90% CI: 43-60) and 46% (90% CI: 37-55), respectively.",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -54160,8 +54813,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The overall response rates for placebo-treated and vismodegib-treated patients were 51% (90% CI: 43-60) and 46% (90% CI: 37-55), respectively.",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -54178,8 +54833,10 @@
      "population": "overall",
      "detail": "median PFS hazard ratio for vismodegib versus placebo",
      "quote": "The median PFS hazard ratio (HR) for vismodegib treatment compared with placebo was 1.25 (90% CI: 0.89-1.76; P = 0.28).",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     }
@@ -54363,6 +55020,7 @@
      "quote": "Grade 3-5 bleeding or haemorrhage (eight [2%] vs one [<1%])",
      "status": "needs_review",
      "failed_checks": [
+      "exact_value",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -55957,12 +56615,10 @@
      "population": "overall",
      "detail": null,
      "quote": "12.4 months (HR, 1.27; P = 0.357)",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "OS hazard ratio 1.27 says Arm B did worse than Arm C, but the medians say the opposite (12.4 vs 12 months)."
+     "consistency_note": null
     },
     {
      "id": "23510984:arm-b|os-median|overall||arm-c",
@@ -55977,12 +56633,10 @@
      "population": "overall",
      "detail": null,
      "quote": "12.4 months (HR, 1.27; P = 0.357)",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "OS hazard ratio 1.27 says Arm B did worse than Arm C, but the medians say the opposite (12.4 vs 12 months)."
+     "consistency_note": null
     },
     {
      "id": "23510984:arm-b|pfs-hr|overall||arm-c",
@@ -56087,12 +56741,10 @@
      "population": "overall",
      "detail": null,
      "quote": "and 12.0 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "OS hazard ratio 1.27 says Arm B did worse than Arm C, but the medians say the opposite (12.4 vs 12 months)."
+     "consistency_note": null
     },
     {
      "id": "23510984:arm-c|pfs-median|overall||",
@@ -56401,8 +57053,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Of 152 randomized eligible patients, 75 were treated in arm 1 and 77 in arm 2",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -56509,8 +57163,10 @@
      "population": "overall",
      "detail": null,
      "quote": "75 were treated in arm 1 and 77 in arm 2",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -56652,8 +57308,10 @@
      "population": "overall",
      "detail": null,
      "quote": "axitinib arm (n = 42)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -56724,8 +57382,10 @@
      "population": "overall",
      "detail": null,
      "quote": "axitinib/bevacizumab arm (n = 41)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -56796,8 +57456,10 @@
      "population": "overall",
      "detail": null,
      "quote": "bevacizumab arm (n = 43",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -57074,8 +57736,10 @@
      "population": "overall",
      "detail": null,
      "quote": "20 in MIROX arm",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -57114,8 +57778,10 @@
      "population": "overall",
      "detail": null,
      "quote": "19 in sLV5FU2 arm",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -59149,8 +59815,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Each group had 45 patients",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -59189,6 +59857,7 @@
      "quote": "versus 246 days and 44.4% (20/45) respectively in the control group",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -59207,8 +59876,10 @@
      "population": "overall",
      "detail": null,
      "quote": "Each group had 45 patients",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -59245,8 +59916,10 @@
      "population": "overall",
      "detail": "median survival time, units days",
      "quote": "the median survival time was 281 days",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "unit_in_source"
+     ],
      "audit_note": null,
      "consistency_note": null
     }
@@ -59684,6 +60357,7 @@
      "quote": "280 days (range, 135-591 days) in patients with stomas",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -59722,6 +60396,7 @@
      "quote": "Mean long-term survival was 297 days (range, 125-612 days) in patients who had stents",
      "status": "needs_review",
      "failed_checks": [
+      "unit_in_source",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -59811,8 +60486,10 @@
      "population": "overall",
      "detail": "standard dosing arm",
      "quote": "standard (n = 45) dosing",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -59885,8 +60562,10 @@
      "population": "overall",
      "detail": "dose escalation arm",
      "quote": "Dose escalation (n = 44)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -60468,8 +61147,10 @@
      "population": "overall",
      "detail": null,
      "quote": "hazard ratio for death 0\u00b756, 80% CI 0\u00b744-0\u00b771, 95% CI 0\u00b739-0\u00b781",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "ci_is_95"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -60589,8 +61270,10 @@
      "population": "overall",
      "detail": null,
      "quote": "mFOLFOX6/bevacizumab (n = 713)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -60661,8 +61344,10 @@
      "population": "overall",
      "detail": null,
      "quote": "mFOLFOX6/cediranib 20 mg (n = 709)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -60798,8 +61483,10 @@
      "population": "overall",
      "detail": null,
      "quote": "cediranib 20 mg (n = 502)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -60888,8 +61575,10 @@
      "population": "overall",
      "detail": null,
      "quote": "or placebo (n = 358)",
-     "status": "verified",
-     "failed_checks": [],
+     "status": "needs_review",
+     "failed_checks": [
+      "randomized_count"
+     ],
      "audit_note": null,
      "consistency_note": null
     },
@@ -61290,6 +61979,7 @@
      "quote": "arm A, n=467; arm C, n=511",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -61438,6 +62128,7 @@
      "quote": "arm A, n=467; arm C, n=511",
      "status": "needs_review",
      "failed_checks": [
+      "randomized_count",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -61458,6 +62149,7 @@
      "quote": "hazard ratio [HR] 1.084, 80% CI 1.008-1.165",
      "status": "needs_review",
      "failed_checks": [
+      "ci_is_95",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -62260,6 +62952,7 @@
      "quote": "and in 10.9% of patients assigned to supportive care alone",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -62355,6 +63048,7 @@
      "quote": "the disease was stable in an additional 31.4% of patients assigned to cetuximab",
      "status": "needs_review",
      "failed_checks": [
+      "dcr_named",
       "second_pass_agrees"
      ],
      "audit_note": null,
@@ -62675,6 +63369,299 @@
      "status": "verified",
      "failed_checks": [],
      "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
+     "consistency_note": null
+    }
+   ],
+   "registry_checks": [],
+   "notices": []
+  },
+  {
+   "pmid": "14657227",
+   "title": "FOLFIRI followed by FOLFOX6 or the reverse sequence in advanced colorectal cancer: a randomized GERCOR study.",
+   "journal": "J Clin Oncol",
+   "year": 2004,
+   "authors": "Tournigand C, Andr\u00e9 T, Achille E, et al.",
+   "doi": "10.1200/JCO.2004.05.113",
+   "nct_ids": [],
+   "acronym": "GERCOR",
+   "phase": "3",
+   "line": "mixed",
+   "biomarker": null,
+   "n_randomized": 220,
+   "primary_endpoint": null,
+   "arms": [
+    {
+     "label": "Arm A",
+     "regimen": "FOLFIRI followed by FOLFOX6 at progression"
+    },
+    {
+     "label": "Arm B",
+     "regimen": "FOLFOX6 followed by FOLFIRI at progression"
+    }
+   ],
+   "records": [
+    {
+     "id": "14657227:arm-a|n-randomized|overall|patients-allocated-to-folfiri-then-folfox6|",
+     "arm": "Arm A",
+     "measure": "n_randomized",
+     "label": "Patients randomized",
+     "value": 109.0,
+     "unit": "count",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "patients allocated to FOLFIRI then FOLFOX6",
+     "quote": "Median survival was 21.5 months in 109 patients allocated to FOLFIRI then FOLFOX6",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:arm-a|os-median|overall|median-survival|arm-b",
+     "arm": "Arm A",
+     "measure": "os_median",
+     "label": "Median OS",
+     "value": 21.5,
+     "unit": "months",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "Arm B",
+     "population": "overall",
+     "detail": "median survival",
+     "quote": "Median survival was 21.5 months in 109 patients allocated to FOLFIRI then FOLFOX6",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:arm-a|pfs-median|overall|median-second-progression-free-survival|",
+     "arm": "Arm A",
+     "measure": "other_time_median",
+     "label": "Other median time",
+     "value": 14.2,
+     "unit": "months",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "second progression-free survival (PFS2)",
+     "quote": "Median second progression-free survival (PFS) was 14.2 months in arm A versus 10.9 in arm B",
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "Abstract reports SECOND progression-free survival (after second-line therapy), not PFS. Both passes made this error.",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:arm-b|n-randomized|overall|patients-allocated-to-folfox6-then-folfiri|",
+     "arm": "Arm B",
+     "measure": "n_randomized",
+     "label": "Patients randomized",
+     "value": 111.0,
+     "unit": "count",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "patients allocated to FOLFOX6 then FOLFIRI",
+     "quote": "versus 20.6 months in 111 patients allocated to FOLFOX6 then FOLFIRI",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:arm-b|os-median|overall|median-survival|arm-a",
+     "arm": "Arm B",
+     "measure": "os_median",
+     "label": "Median OS",
+     "value": 20.6,
+     "unit": "months",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "Arm A",
+     "population": "overall",
+     "detail": "median survival",
+     "quote": "versus 20.6 months in 111 patients allocated to FOLFOX6 then FOLFIRI",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:arm-b|pfs-median|overall|median-second-progression-free-survival|",
+     "arm": "Arm B",
+     "measure": "other_time_median",
+     "label": "Other median time",
+     "value": 10.9,
+     "unit": "months",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "second progression-free survival (PFS2)",
+     "quote": "Median second progression-free survival (PFS) was 14.2 months in arm A versus 10.9 in arm B",
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "Same as above: PFS2, not PFS.",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:folfiri|orr|first-line|response-rate|folfox6",
+     "arm": "FOLFIRI",
+     "measure": "orr",
+     "label": "Objective response rate",
+     "value": 56.0,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "FOLFOX6",
+     "population": "first-line",
+     "detail": "response rate",
+     "quote": "In first-line therapy, FOLFIRI achieved 56% response rate (RR) and 8.5 months median PFS",
+     "status": "verified",
+     "failed_checks": [
+      "second_pass_agrees"
+     ],
+     "audit_note": "First-line FOLFIRI response, as stated.",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:folfiri|orr|second-line|response-rate-second-line|folfox6",
+     "arm": "FOLFIRI",
+     "measure": "orr",
+     "label": "Objective response rate",
+     "value": 4.0,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "FOLFOX6",
+     "population": "second-line",
+     "detail": "response rate second-line",
+     "quote": "Second-line FOLFIRI achieved 4% RR and 2.5 months median PFS",
+     "status": "verified",
+     "failed_checks": [
+      "second_pass_agrees"
+     ],
+     "audit_note": "Second-line response, as stated.",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:folfiri|pfs-median|second-line|median-pfs-second-line|folfox6",
+     "arm": "FOLFIRI",
+     "measure": "other_time_median",
+     "label": "Other median time",
+     "value": 2.5,
+     "unit": "months",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "FOLFOX6",
+     "population": "second-line",
+     "detail": "second-line PFS (PFS of second-line therapy)",
+     "quote": "Second-line FOLFIRI achieved 4% RR and 2.5 months median PFS",
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "PFS of second-line therapy, not PFS from randomization.",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:folfiri|pfs-median|first-line|median-pfs-first-line|folfox6",
+     "arm": "FOLFIRI",
+     "measure": "pfs_median",
+     "label": "Median PFS",
+     "value": 8.5,
+     "unit": "months",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "FOLFOX6",
+     "population": "first-line",
+     "detail": "median PFS first-line",
+     "quote": "FOLFIRI achieved 56% response rate (RR) and 8.5 months median PFS",
+     "status": "verified",
+     "failed_checks": [
+      "second_pass_agrees"
+     ],
+     "audit_note": "First-line PFS from randomization, as stated.",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:folfox6|orr|first-line|response-rate|folfiri",
+     "arm": "FOLFOX6",
+     "measure": "orr",
+     "label": "Objective response rate",
+     "value": 54.0,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "FOLFIRI",
+     "population": "first-line",
+     "detail": "response rate",
+     "quote": "versus FOLFOX6 which achieved 54% RR and 8.0 months median PFS",
+     "status": "verified",
+     "failed_checks": [
+      "second_pass_agrees"
+     ],
+     "audit_note": "First-line FOLFOX6 response, as stated.",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:folfox6|orr|second-line|response-rate-second-line|folfiri",
+     "arm": "FOLFOX6",
+     "measure": "orr",
+     "label": "Objective response rate",
+     "value": 15.0,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "FOLFIRI",
+     "population": "second-line",
+     "detail": "response rate second-line",
+     "quote": "versus FOLFOX6 which achieved 15% RR and 4.2 months PFS",
+     "status": "verified",
+     "failed_checks": [
+      "second_pass_agrees"
+     ],
+     "audit_note": "Second-line response, as stated.",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:folfox6|pfs-median|second-line|median-pfs-second-line|folfiri",
+     "arm": "FOLFOX6",
+     "measure": "other_time_median",
+     "label": "Other median time",
+     "value": 4.2,
+     "unit": "months",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "FOLFIRI",
+     "population": "second-line",
+     "detail": "second-line PFS (PFS of second-line therapy)",
+     "quote": "versus FOLFOX6 which achieved 15% RR and 4.2 months PFS",
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "Same as above.",
+     "consistency_note": null
+    },
+    {
+     "id": "14657227:folfox6|pfs-median|first-line|median-pfs-first-line|folfiri",
+     "arm": "FOLFOX6",
+     "measure": "pfs_median",
+     "label": "Median PFS",
+     "value": 8.0,
+     "unit": "months",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "FOLFIRI",
+     "population": "first-line",
+     "detail": "median PFS first-line",
+     "quote": "FOLFOX6 which achieved 54% RR and 8.0 months median PFS",
+     "status": "verified",
+     "failed_checks": [
+      "second_pass_agrees"
+     ],
+     "audit_note": "First-line PFS from randomization, as stated.",
      "consistency_note": null
     }
    ],

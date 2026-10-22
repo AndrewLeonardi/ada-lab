@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22 15:27",
+ "updated": "2026-10-22 15:34",
  "due_months": 24,
  "registered": 732,
  "due": 355,
@@ -5967,8 +5967,8 @@
   }
  ],
  "crosscheck": {
-  "trials": 36,
-  "agrees": 163,
+  "trials": 44,
+  "agrees": 215,
   "differs": [
    {
     "pmid": "41852303",
@@ -6207,6 +6207,41 @@
     "check": "patients",
     "detail": "Registry: 2334 enrolled. Abstract: 1137 randomized.",
     "trial": "CALGB/SWOG 80405"
+   },
+   {
+    "pmid": "27091810",
+    "nct": "NCT00851084",
+    "check": "patients",
+    "detail": "Registry: 268 enrolled. Abstract: 236 randomized.",
+    "trial": "AFFIRM"
+   },
+   {
+    "pmid": "26405092",
+    "nct": "NCT00614393",
+    "check": "patients",
+    "detail": "Registry: 558 enrolled. Abstract: 344 randomized.",
+    "trial": "PMID 26405092"
+   },
+   {
+    "pmid": "26109878",
+    "nct": "NCT00609622",
+    "check": "os_median",
+    "detail": "Abstract: 23.7 months (sunitinib plus mFOLFOX6). Registry values for Overall Survival (OS): 19.387.",
+    "trial": "PMID 26109878"
+   },
+   {
+    "pmid": "26109878",
+    "nct": "NCT00609622",
+    "check": "os_median",
+    "detail": "Abstract: 34.1 months (bevacizumab plus mFOLFOX6). Registry values for Overall Survival (OS): 19.387.",
+    "trial": "PMID 26109878"
+   },
+   {
+    "pmid": "25982297",
+    "nct": "NCT00418938",
+    "check": "patients",
+    "detail": "Registry: 266 enrolled. Abstract: 182 randomized.",
+    "trial": "SPIRITT"
    }
   ]
  }

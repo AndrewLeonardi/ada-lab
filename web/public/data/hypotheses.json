@@ -89,22 +89,31 @@
   "file": "research/hypotheses/H004-primary-endpoint.yaml",
   "spec_hash": "3a695b9647bd8dd2",
   "latest": {
-   "status": "inconclusive",
-   "numbers": {
-    "compared": 32,
-    "flagged": 0,
-    "confirmed": 0,
-    "share": [
-     0.0,
-     0.0,
-     0.10717919976468034
-    ]
-   },
-   "summary": "0 of 32 trials (0.0%, 95% CI 0.0% to 10.7%) report a different primary endpoint than they registered (code flagged none).",
+   "status": "waiting",
+   "summary": "Waiting: 21 trials still to compare with their registry record.",
+   "numbers": {},
    "id": "H004",
    "spec_hash": "3a695b9647bd8dd2",
    "tested": "2026-10-22"
   },
-  "history": []
+  "history": [
+   {
+    "status": "inconclusive",
+    "numbers": {
+     "compared": 32,
+     "flagged": 0,
+     "confirmed": 0,
+     "share": [
+      0.0,
+      0.0,
+      0.10717919976468034
+     ]
+    },
+    "summary": "0 of 32 trials (0.0%, 95% CI 0.0% to 10.7%) report a different primary endpoint than they registered (code flagged none).",
+    "id": "H004",
+    "spec_hash": "3a695b9647bd8dd2",
+    "tested": "2026-10-22"
+   }
+  ]
  }
 ]
