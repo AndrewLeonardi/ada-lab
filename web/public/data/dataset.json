@@ -1,7 +1,7 @@
 {
  "name": "Open Metastatic Colorectal Cancer Trial Outcomes",
  "version": "2026-10-22",
- "generated": "2026-10-22T16:24:37",
+ "generated": "2026-10-22T17:04:45",
  "counts": {
   "candidates": 3748,
   "screened": 3438,
@@ -36751,7 +36751,12 @@
      "detail": "Abstract: 0.58 ratio (nintedanib). Registry values for Progression-Free Survival (PFS) by Central Review Assessment: 0.58."
     }
    ],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "26603056"
+    }
+   ]
   },
   {
    "pmid": "30049885",
@@ -47908,7 +47913,12 @@
     }
    ],
    "registry_checks": [],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "27310205"
+    }
+   ]
   },
   {
    "pmid": "25481673",
@@ -48848,7 +48858,24 @@
     }
    ],
    "registry_checks": [],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "26244985"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "31191000"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "33062063"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "38295317"
+    }
+   ]
   },
   {
    "pmid": "25790229",
@@ -49110,7 +49137,16 @@
     }
    ],
    "registry_checks": [],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "28911067"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "31094083"
+    }
+   ]
   },
   {
    "pmid": "25873343",
@@ -49570,7 +49606,24 @@
      "detail": "Abstract: 0.844 ratio (ramucirumab plus FOLFIRI). Registry values for Overall Survival (OS): 0.844."
     }
    ],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "27573561"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "29228087"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "30339194"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "34229554"
+    }
+   ]
   },
   {
    "pmid": "25881090",
@@ -50154,7 +50207,20 @@
      "detail": "Abstract: 0.68 ratio (TAS-102). Registry values for Overall Survival: 0.68."
     }
    ],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "27443414"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "29274618"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "31912801"
+    }
+   ]
   },
   {
    "pmid": "25981818",
@@ -51987,7 +52053,16 @@
     }
    ],
    "registry_checks": [],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "27753609"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "30036739"
+    }
+   ]
   },
   {
    "pmid": "26366218",
@@ -54448,7 +54523,24 @@
      "detail": "Registry: 285 enrolled. Abstract: 285 randomized."
     }
    ],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "28424871"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "28449055"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "29627309"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "30614531"
+    }
+   ]
   },
   {
    "pmid": "24703531",
@@ -55134,7 +55226,16 @@
      "detail": "Abstract: 0.97 ratio (panitumumab). Registry values for Overall Survival: 0.966."
     }
    ],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "27085587"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "27716478"
+    }
+   ]
   },
   {
    "pmid": "24743706",
@@ -56370,7 +56471,40 @@
     }
    ],
    "registry_checks": [],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "26261259"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "27234640"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "27575024"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "29195117"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "31868905"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "32917529"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "33154570"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "35637412"
+    }
+   ]
   },
   {
    "pmid": "25150117",
@@ -56737,7 +56871,28 @@
     }
    ],
    "registry_checks": [],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "25712456"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "26338525"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "29487697"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "29873679"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "35594613"
+    }
+   ]
   },
   {
    "pmid": "25441408",
@@ -57598,7 +57753,12 @@
      "detail": "Abstract: 0.81 ratio (bevacizumab plus chemotherapy). Registry values for Overall Survival: Time From Randomization to Death From Any Cause: 0.81, 0.9."
     }
    ],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "23852309"
+    }
+   ]
   },
   {
    "pmid": "23177514",
@@ -61305,7 +61465,12 @@
     }
    ],
    "registry_checks": [],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "23922111"
+    }
+   ]
   },
   {
    "pmid": "23953030",
@@ -64028,7 +64193,24 @@
      "detail": "Abstract: 11.1 percent (placebo + FOLFIRI). Registry values for Overall Objective Response Rate (ORR) Based on the Tumor Assessment by the Independent Review Committee (IRC) as Per Res: 11.1, 19.8."
     }
    ],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "24140268"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "26706237"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "28761750"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "28807738"
+    }
+   ]
   },
   {
    "pmid": "22951287",
@@ -64898,7 +65080,12 @@
     }
    ],
    "registry_checks": [],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "25424120"
+    }
+   ]
   },
   {
    "pmid": "21641867",
@@ -65577,7 +65764,12 @@
      "detail": "Abstract: 0.68 ratio (Cetuximab + FOLFIRI). Registry values for Progression-free Survival (PFS) Time - Independent Review Committee (IRC) Assessments: 0.853, 0.696, 1.171."
     }
    ],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "23265711"
+    }
+   ]
   },
   {
    "pmid": "19786657",
@@ -66291,7 +66483,24 @@
     }
    ],
    "registry_checks": [],
-   "notices": []
+   "notices": [
+    {
+     "kind": "later_report",
+     "pmid": "18946061"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "33087330"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "38656931"
+    },
+    {
+     "kind": "later_report",
+     "pmid": "40215447"
+    }
+   ]
   },
   {
    "pmid": "16421419",
