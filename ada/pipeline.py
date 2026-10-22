@@ -311,7 +311,7 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
             export(con)
             last_export = time.time()
         waiting = pending_batch(con) is not None
-        if over is None and (paid or free or waiting):
+        if paid or (over is None and (free or waiting)):
             if become("working"):
                 maybe_publish(soon=True)
             if not paid:

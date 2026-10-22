@@ -70,15 +70,6 @@ def step(con, claude=None) -> int:
             "app": "search", "source": "ClinicalTrials.gov", "query": nct, "url": f"clinicaltrials.gov/study/{nct}",
             "results": [{"title": "Registered primary outcome, patients, results tables", "meta": f"vs PMID {pmid}"}]}})
 
-    n = registry.crosscheck_step(con, limit=1, on_trial=comparing)
-    if n:
-        pmid = con.execute("SELECT pmid FROM registry_checks ORDER BY id DESC LIMIT 1").fetchone()[0]
-        v = dict(con.execute("SELECT verdict, COUNT(*) FROM registry_checks WHERE pmid=? GROUP BY verdict", (pmid,)).fetchall())
-        name = (con.execute("SELECT acronym FROM trials WHERE pmid=?", (pmid,)).fetchone() or [None])[0] or f"PMID {pmid}"
-        log(con, f"{name} vs registry: {v.get('agrees', 0)} agree, {v.get('differs', 0)} differ",
-            "finding" if v.get("differs") else "action")
-        return n
-
     def searching(t):
         years = t["months"] // 12
         act(con, "desk", "read_screen", "focused", f"Free shift: where are the results of {t['acronym'] or t['nct']}?",
@@ -87,6 +78,21 @@ def step(con, claude=None) -> int:
             "app": "search", "source": "ClinicalTrials.gov + PubMed", "query": t["nct"],
             "url": f"clinicaltrials.gov/study/{t['nct']}",
             "results": [{"title": (t["title"] or "")[:140], "meta": f"{t['sponsor']} - {t['status'].lower()}"}]}})
+
+    # checks that need a little of today's budget go first (several at a time): the free ones can wait (audit 2)
+    if claude is not None:
+        n = registry.search_step(con, claude, limit=6, on_trial=searching, pending_only=True)
+        if n:
+            return n
+
+    n = registry.crosscheck_step(con, limit=1, on_trial=comparing)
+    if n:
+        pmid = con.execute("SELECT pmid FROM registry_checks ORDER BY id DESC LIMIT 1").fetchone()[0]
+        v = dict(con.execute("SELECT verdict, COUNT(*) FROM registry_checks WHERE pmid=? GROUP BY verdict", (pmid,)).fetchall())
+        name = (con.execute("SELECT acronym FROM trials WHERE pmid=?", (pmid,)).fetchone() or [None])[0] or f"PMID {pmid}"
+        log(con, f"{name} vs registry: {v.get('agrees', 0)} agree, {v.get('differs', 0)} differ",
+            "finding" if v.get("differs") else "action")
+        return n
 
     before = {r[0] for r in con.execute("SELECT nct FROM result_search")}
     n = registry.search_step(con, claude, limit=1, on_trial=searching)

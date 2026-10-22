@@ -22,6 +22,11 @@ HELD_BECAUSE = {
     "standard_endpoint": "it described a non-standard endpoint",
     "unit_fits": "its unit did not fit the measure",
     "consistent": "it contradicted the trial's other numbers",
+    "randomized_count": "the count was not stated as randomized",
+    "dcr_named": "it was not stated as a disease control rate",
+    "ci_is_95": "its interval was not a 95% interval",
+    "exact_value": "the value was a bound, not exact",
+    "unit_in_source": "its unit is not the one the source uses",
 }
 
 

@@ -27,9 +27,12 @@ def sample(con, n_verified: int = 20, n_review: int = 30, seed: str | None = Non
     AUDIT_DIR.mkdir(parents=True, exist_ok=True)
     day = time.strftime("%Y-%m-%d")
     rng = random.Random(seed or day)
-    ver = [dict(r) for r in con.execute("SELECT * FROM records WHERE status='verified'")]
-    rev = [dict(r) for r in con.execute("SELECT * FROM records WHERE status='needs_review'")]
-    picked = rng.sample(ver, min(n_verified, len(ver))) + rev[:n_review]
+    # only published numbers (latest screening "include"), so the score measures what the public sees (audit 2)
+    public = ("SELECT r.* FROM records r JOIN screenings s ON s.pmid = r.pmid AND s.id = (SELECT MAX(id) FROM "
+              "screenings WHERE pmid = r.pmid) WHERE s.decision = 'include' AND r.status = ?")
+    ver = [dict(r) for r in con.execute(public, ("verified",))]
+    rev = [dict(r) for r in con.execute(public, ("needs_review",))]
+    picked = rng.sample(ver, min(n_verified, len(ver))) + rng.sample(rev, min(n_review, len(rev)))
     items = []
     for r in picked:
         p = con.execute("SELECT title, journal, year, abstract FROM papers WHERE pmid=?", (r["pmid"],)).fetchone()

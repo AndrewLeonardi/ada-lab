@@ -12,7 +12,7 @@ import time
 from . import db
 from .screen import render
 
-PROMPT_VERSION = "extract-v2"  # v2: non-standard time endpoints separated (audit 1)
+PROMPT_VERSION = "extract-v3"  # v2: non-standard time endpoints separated (audit 1); v3: counts, DCR, CIs (audit 2)
 
 MEASURES = ["n_randomized", "orr", "dcr", "pfs_median", "ttp_median", "os_median", "other_time_median", "pfs_hr",
             "os_hr", "grade3plus_ae_rate"]
@@ -26,20 +26,27 @@ contiguous span (ideally one clause) that contains the number. A script will sea
 abstract; a quote that is not found makes the record invalid.
 
 Measures (use these names):
-- n_randomized: patients randomized to that arm (count)
+- n_randomized: patients randomly assigned to that arm (count). Counts of patients who were treated, received \
+treatment, were evaluable, were analysed, were included in an analysis set, or had a biomarker tested are NOT \
+randomized counts: do not record them. Record each arm's own count; never put the trial's total under an arm.
 - orr: objective response rate (percent)
-- dcr: disease control rate (percent)
+- dcr: disease control rate (percent), only when the abstract states it; a stable-disease percentage alone is not a \
+disease control rate
 - pfs_median / ttp_median / os_median: median progression-free survival / time to progression / overall \
-survival, in the unit stated (months or weeks). pfs_median means time from randomization to the FIRST progression \
+survival, in the unit stated (months or weeks; a median given in days is not recorded). A survival rate at a time \
+point ("10-month PFS was 59.9%") is not a median: do not record it. pfs_median means time from randomization to the FIRST progression \
 or death, nothing else.
 - other_time_median: any other median time-to-event endpoint, such as second progression-free survival (PFS2), PFS \
 on treatment, time to treatment failure, time to strategy failure, or duration of disease control. Name the \
 endpoint exactly in "detail".
 - pfs_hr / os_hr: hazard ratio of this arm versus the comparator arm; put the comparator's label in \
-"comparator" (unit "ratio")
+"comparator" (unit "ratio"). "arm" is the group in the numerator: a ratio below 1 means "arm" did better. Check the \
+direction against the reported medians: if the medians favour one group, a ratio below 1 belongs to that group as \
+"arm" (abstracts often report control versus experimental)
 - grade3plus_ae_rate: percent of patients with grade 3 or worse adverse events, overall or for a named event \
 (name it in "detail")
-Include 95% confidence limits only when stated (otherwise null). If the abstract reports a subgroup (for \
+Include 95% confidence limits only when stated (otherwise null; never record an 80% or 90% interval). Record only \
+exact values: a value given as a bound ("<0.5%", ">20 months") is not recorded. If the abstract reports a subgroup (for \
 example KRAS wild-type), put it in "population"; use "overall" for the full trial population."""
 
 PASS_INSTRUCTIONS = {

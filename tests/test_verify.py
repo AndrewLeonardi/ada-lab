@@ -78,3 +78,32 @@ def test_unit_must_fit_the_measure():
     # found by the consistency checks: a "median PFS" of 59.9 percent (a misfiled PFS rate)
     r = rec(measure="pfs_median", value=57.3, unit="percent")
     assert check_record(r, ABSTRACT, None)["unit_fits"] is False
+
+
+def test_audit_2_checks():
+    a = ("RESULTS: Of 133 randomized patients, 128 were assessed for efficacy (82 in the investigational group and 46 in "
+         "the placebo group). Partial responses occurred in 8 patients and the disease was stable in an additional 31.4% "
+         "of patients. Median survival was 15.8 months (hazard ratio [HR] 1.084, 80% CI 1.008-1.165). Infusion "
+         "reactions: one [<0.5%] patient vs nine [2%] patients. Patients were randomly assigned to A (n = 117) or B (n = 112).")
+    def c(**kw):
+        return check_record(rec(**kw), a, None)
+    assert c(measure="n_randomized", value=46, unit="count", ci_low=None, ci_high=None,
+             quote="82 in the investigational group and 46 in the placebo group")["randomized_count"] is False
+    assert c(measure="n_randomized", value=117, unit="count", ci_low=None, ci_high=None,
+             quote="randomly assigned to A (n = 117)")["randomized_count"] is True
+    assert c(measure="dcr", value=31.4, ci_low=None, ci_high=None,
+             quote="the disease was stable in an additional 31.4% of patients")["dcr_named"] is False
+    assert c(measure="os_hr", value=1.084, unit="ratio", ci_low=1.008, ci_high=1.165,
+             quote="hazard ratio [HR] 1.084, 80% CI 1.008-1.165")["ci_is_95"] is False
+    assert c(measure="grade3plus_ae_rate", value=0.5, ci_low=None, ci_high=None,
+             quote="one [<0.5%] patient vs nine [2%] patients")["exact_value"] is False
+    assert c(measure="grade3plus_ae_rate", value=2, ci_low=None, ci_high=None,
+             quote="one [<0.5%] patient vs nine [2%] patients")["exact_value"] is True
+
+
+def test_unit_must_match_the_source_sentence():
+    a = "Median OS was a median of 200 and 502 d for FOLFOX and CUFOX, respectively. Median PFS was 9.9 months."
+    r = rec(measure="os_median", value=200, unit="weeks", ci_low=None, ci_high=None, quote="median of 200 and 502 d")
+    assert check_record(r, a, None)["unit_in_source"] is False
+    r = rec(measure="pfs_median", value=9.9, unit="months", ci_low=None, ci_high=None, quote="Median PFS was 9.9 months")
+    assert check_record(r, a, None)["unit_in_source"] is True

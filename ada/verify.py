@@ -3,7 +3,9 @@
 A record is VERIFIED only if:
   1. its quote occurs verbatim in the abstract (after normalizing whitespace, dashes and decimal points);
   2. its value (and confidence limits, if any) literally appear in that quote;
-  3. the value is plausible for its measure, in a unit that fits it, and confidence limits bracket it;
+  3. the value is plausible for its measure, in a unit that fits it, exact (not "<0.5%"), and 95% confidence limits
+     (not 80% or 90%) bracket it; a randomized count comes from a sentence about randomization; a disease control
+     rate is named as one;
   4. a standard PFS/OS/TTP number is not about a non-standard endpoint (by its quote or its own detail);
   5. the independent second extraction pass recorded the same measure with the same value;
   6. it does not contradict the trial's other numbers (consistency.py).
@@ -33,6 +35,47 @@ NONSTANDARD_TIME = re.compile(r"second[- ]line pfs|second progression|pfs ?2|pfs
                               r"failure|failure[- ]free|duration of disease control|time to failure")
 
 
+# Found in audit 2: "patients randomized" filled with counts of patients treated, evaluable or analysed; a
+# stable-disease rate filed as disease control; an 80% interval recorded as a 95% one; "<0.5%" recorded as 0.5.
+RANDOMIZED = re.compile(r"random|allocat|assign|intention[- ]to[- ]treat|intent[- ]to[- ]treat|\bitt\b|enrol")
+NOT_RANDOMIZED = re.compile(r"assess|evaluab|analy[sz]ed|received|treated|included in the (safety|per)|per[- ]protocol|"
+                            r"safety population|full analysis")
+TIME_UNIT = {"months": re.compile(r"month|\bmo\b|\bmos\b"), "weeks": re.compile(r"week|\bwk")}
+DISEASE_CONTROL = re.compile(r"disease control|\bdcr\b")
+NOT_95 = re.compile(r"(?<![\d.])(50|80|90|99)\s?% ?(ci|confidence)")
+
+
+def sentence(abstract: str, quote: str) -> str:
+    """The sentence of the (normalized) abstract that contains the quote, or the quote itself if not found."""
+    a, q = norm(abstract), norm(quote)
+    i = a.find(q)
+    if i < 0:
+        return q
+    end = a.find(". ", i + len(q))
+    return a[max(a.rfind(". ", 0, i), 0): len(a) if end < 0 else end]
+
+
+def randomized_count(abstract: str, quote: str) -> bool:
+    """A per-arm count is a randomized count only if its sentence ties it to randomization: "Of 133 randomized
+    patients, 128 were assessed for efficacy (82 and 46)" is not (the counts are of patients assessed)."""
+    s, q = sentence(abstract, quote), norm(quote)
+    if RANDOMIZED.search(q) and not NOT_RANDOMIZED.search(q):
+        return True
+    i = s.find(q)
+    i = len(s) if i < 0 else i
+    before = list(RANDOMIZED.finditer(s[:i]))
+    if not before:  # "the experimental group (n = 60) was randomly assigned to ..."
+        return bool(RANDOMIZED.search(s[i:])) and not NOT_RANDOMIZED.search(q)
+    return not NOT_RANDOMIZED.search(s[before[-1].end():i] + q)
+
+
+def exact_in(text: str, x: float) -> bool:
+    """False if the number appears only as a bound ("<0.5%", "≥3")."""
+    t = norm(text)
+    hits = [m for m in re.finditer(r"(?<![\d.])\d[\d,]*(?:\.\d+)?", t) if abs(float(m.group().replace(",", "")) - x) < 1e-9]
+    return not hits or any(not re.search(r"[<>≤≥]\s*$", t[:m.start()]) for m in hits)
+
+
 def norm(s: str) -> str:
     s = unicodedata.normalize("NFKC", s or "")
     s = s.replace("·", ".").replace("−", "-").replace("–", "-").replace("—", "-").replace(" ", " ")
@@ -55,6 +98,12 @@ def check_record(o: dict, abstract: str, other_pass: list[dict] | None) -> dict:
         "ci_in_quote": all(number_in(o["quote"], v) for v in (o.get("ci_low"), o.get("ci_high")) if v is not None),
         "plausible": PLAUSIBLE[o["measure"]][0] <= o["value"] <= PLAUSIBLE[o["measure"]][1],
         "unit_fits": o["unit"] in UNITS[o["measure"]],  # e.g. a "median PFS" in percent is a misfiled rate
+        "randomized_count": o["measure"] != "n_randomized" or randomized_count(abstract, o["quote"]),
+        "dcr_named": o["measure"] != "dcr" or bool(DISEASE_CONTROL.search(q)),
+        "ci_is_95": o.get("ci_low") is None or not NOT_95.search(q),
+        "exact_value": exact_in(o["quote"], o["value"]),
+        # a median's unit must be the one its sentence uses ("200 and 502 d" was recorded as weeks, audit 2)
+        "unit_in_source": o["unit"] not in TIME_UNIT or bool(TIME_UNIT[o["unit"]].search(sentence(abstract, o["quote"]))),
         "ci_brackets_value": (o.get("ci_low") is None or o.get("ci_high") is None
                               or o["ci_low"] <= o["value"] <= o["ci_high"]),
         "standard_endpoint": not (o["measure"] in ("pfs_median", "os_median", "ttp_median")

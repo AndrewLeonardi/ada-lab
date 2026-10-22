@@ -43,6 +43,9 @@ def find(records: list[dict], trial_total: int | None = None) -> list[dict]:
                 a, c = one(med_m, arm, pop), one(med_m, h["comparator"], pop) if h["comparator"] else None
                 if not (a and c) or a["unit"] != c["unit"]:
                     continue
+                gap = abs(a["value"] - c["value"]) / max(a["value"], c["value"], 1e-9)
+                if gap < 0.1:  # near-equal medians can sit with either direction of hazard ratio (audit 2)
+                    continue
                 if (h["value"] < 0.85 and a["value"] < c["value"]) or (h["value"] > 1.15 and a["value"] > c["value"]):
                     word = "better" if h["value"] < 1 else "worse"
                     flags.append({"check": "hr_direction", "records": [h["id"], a["id"], c["id"]],

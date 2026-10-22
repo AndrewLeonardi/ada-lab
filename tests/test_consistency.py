@@ -37,3 +37,10 @@ def test_hazard_ratio_off_centre_and_arm_totals():
 def test_subgroups_are_not_mixed_with_the_overall_population():
     rs = [rec("p", "pfs_median", "A", 14.0, population="KRAS wild-type"), rec("o", "os_median", "A", 12.0)]
     assert find(rs) == []
+
+
+def test_near_equal_medians_are_not_a_contradiction():
+    # audit 2: HR 1.27 with medians 12.4 vs 12.0 is not evidence of a reversed ratio
+    rs = [rec("h", "os_hr", "B", 1.27, "ratio", comparator="C"), rec("b", "os_median", "B", 12.4),
+          rec("c", "os_median", "C", 12.0)]
+    assert find(rs) == []

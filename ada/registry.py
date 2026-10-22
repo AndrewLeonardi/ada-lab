@@ -183,8 +183,9 @@ def find_results(con, trial: dict, claude=None, model: str = "claude-haiku-5-5")
             "detail": "No posted results or linked publication; candidate papers in PubMed were other trials."}
 
 
-def search_step(con, claude=None, limit: int = 4, on_trial=None) -> int:
-    """Look for the results of up to ``limit`` due trials not searched yet (or not found, a month ago)."""
+def search_step(con, claude=None, limit: int = 4, on_trial=None, pending_only: bool = False) -> int:
+    """Look for the results of up to ``limit`` due trials not searched yet (or not found, a month ago).
+    pending_only: just the trials whose candidate papers wait for a model check."""
     known = {r["nct"]: r for r in con.execute("SELECT * FROM result_search")}
     todo = []
     for t in sorted(due(con), key=lambda t: -t["months"]):
@@ -193,6 +194,8 @@ def search_step(con, claude=None, limit: int = 4, on_trial=None) -> int:
                          and time.time() - (k["searched_at"] or 0) > RESEARCH_DAYS * 86400
                          or k["verdict"] == "pending" and claude is not None):
             todo.append(t)
+    if pending_only:
+        todo = [t for t in todo if known.get(t["nct"]) and known[t["nct"]]["verdict"] == "pending"]
     for t in todo[:limit]:
         if on_trial:
             on_trial(t)
