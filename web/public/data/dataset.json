@@ -1,15 +1,15 @@
 {
  "name": "Open Metastatic Colorectal Cancer Trial Outcomes",
  "version": "2026-10-22",
- "generated": "2026-10-22T15:34:28",
+ "generated": "2026-10-22T15:37:29",
  "counts": {
   "candidates": 3748,
-  "screened": 3217,
-  "included": 456,
-  "trials": 311,
-  "verified_numbers": 1786,
-  "pending_numbers": 996,
-  "corrected_numbers": 11
+  "screened": 3267,
+  "included": 469,
+  "trials": 312,
+  "verified_numbers": 1818,
+  "pending_numbers": 935,
+  "corrected_numbers": 20
  },
  "trials": [
   {
@@ -1301,50 +1301,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT05004350",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 107 enrolled. Abstract: 97 randomized."
-    },
-    {
-     "nct": "NCT05004350",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 4.2 months (Doublet). Registry values for Randomized Phase 2: Progression-free Survival (PFS) by Blinded (to Treatment Received) Independent Central Review (BICR): 4.2, 2.5, 4.2, 2.5, 4.2, 2.5."
-    },
-    {
-     "nct": "NCT05004350",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 2.5 months (Control). Registry values for Randomized Phase 2: Progression-free Survival (PFS) by Blinded (to Treatment Received) Independent Central Review (BICR): 4.2, 2.5, 4.2, 2.5, 4.2, 2.5."
-    },
-    {
-     "nct": "NCT05004350",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.37 ratio (Doublet). Registry values for Randomized Phase 2: Progression-free Survival (PFS) by Blinded (to Treatment Received) Independent Central Review (BICR): 0.37, 0.37, 0.29."
-    },
-    {
-     "nct": "NCT05004350",
-     "check": "os_median",
-     "verdict": "differs",
-     "detail": "Abstract: 11.6 months (Doublet). Registry values for Randomized Phase 2: Overall Survival (OS): 11.9, 8.2."
-    },
-    {
-     "nct": "NCT05004350",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 8.2 months (Control). Registry values for Randomized Phase 2: Overall Survival (OS): 11.9, 8.2."
-    },
-    {
-     "nct": "NCT05004350",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.55 ratio (Doublet). Registry values for Randomized Phase 2: Overall Survival (OS): 0.54."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -2254,26 +2211,6 @@
      "consistency_note": null
     },
     {
-     "id": "41980919:a|os-hr|overall||b",
-     "arm": "A",
-     "measure": "os_hr",
-     "label": "OS hazard ratio",
-     "value": 1.3,
-     "unit": "ratio",
-     "ci_low": 0.99,
-     "ci_high": 1.72,
-     "comparator": "B",
-     "population": "overall",
-     "detail": null,
-     "quote": "(HR = 1.30, 95% CI, 0.99-1.72)",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
-     "audit_note": null,
-     "consistency_note": "OS hazard ratio 1.3 says A did worse than B, but the medians say the opposite (40.4 vs 34.4 months)."
-    },
-    {
      "id": "41980919:a|os-median|overall||b",
      "arm": "A",
      "measure": "os_median",
@@ -2385,6 +2322,24 @@
      "failed_checks": [],
      "audit_note": null,
      "consistency_note": null
+    },
+    {
+     "id": "41980919:a|os-hr|overall||b",
+     "arm": "B",
+     "measure": "os_hr",
+     "label": "OS hazard ratio",
+     "value": 1.3,
+     "unit": "ratio",
+     "ci_low": 0.99,
+     "ci_high": 1.72,
+     "comparator": "A",
+     "population": "overall",
+     "detail": null,
+     "quote": "(HR = 1.30, 95% CI, 0.99-1.72)",
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
+     "consistency_note": "OS hazard ratio 1.3 says A did worse than B, but the medians say the opposite (40.4 vs 34.4 months)."
     },
     {
      "id": "41980919:b|os-median|overall||a",
@@ -3421,12 +3376,12 @@
      "population": "overall",
      "detail": "disease control rate at 12 months",
      "quote": "the disease control rate at 12 months was 64.7% versus 32.4%",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "A disease control rate at 12 months (a landmark rate), not the disease control rate.",
      "consistency_note": "Response rate (86.1%) is higher than disease control rate (64.7%) for FFX/bev/atezo."
     },
     {
@@ -3520,12 +3475,12 @@
      "population": "overall",
      "detail": "disease control rate at 12 months",
      "quote": "the disease control rate at 12 months was 64.7% versus 32.4%",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "A disease control rate at 12 months (a landmark rate), not the disease control rate.",
      "consistency_note": "Response rate (46%) is higher than disease control rate (32.4%) for atezo."
     },
     {
@@ -3840,32 +3795,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT04094688",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression-free Survival (PFS). Primary endpoint in the abstract: progression-free survival."
-    },
-    {
-     "nct": "NCT04094688",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 455 enrolled. Abstract: 455 randomized."
-    },
-    {
-     "nct": "NCT04094688",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 11.8 months (High-dose vitamin D3). Registry values for Progression-free Survival (PFS): 11.8, 10.3."
-    },
-    {
-     "nct": "NCT04094688",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 10.3 months (Standard-dose vitamin D3). Registry values for Progression-free Survival (PFS): 11.8, 10.3."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -4720,13 +4650,13 @@
      "population": "overall",
      "detail": "6-month nonprogression rate",
      "quote": "9 patients (18%; 95% confidence interval [CI], 8-31), were progression-free at 6 months",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "dcr_named",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "18% were progression-free at 6 months: not a disease control rate.",
      "consistency_note": "Response rate (26%) is higher than disease control rate (18%) for Afatinib + cetuximab."
     },
     {
@@ -5329,26 +5259,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT04607668",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 326 enrolled. Abstract: 326 randomized."
-    },
-    {
-     "nct": "NCT04607668",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 41.6 percent (trilaciclib). Registry values for Best Overall Response (BOR): 0, 3, 75, 91, 50, 36."
-    },
-    {
-     "nct": "NCT04607668",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 57.1 percent (placebo). Registry values for Best Overall Response (BOR): 0, 3, 75, 91, 50, 36."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -5806,44 +5717,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT03365882",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression-free Survival(PFS). Primary endpoint in the abstract: progression-free survival (PFS)."
-    },
-    {
-     "nct": "NCT03365882",
-     "check": "patients",
-     "verdict": "differs",
-     "detail": "Registry: 240 enrolled. Abstract: 54 randomized."
-    },
-    {
-     "nct": "NCT03365882",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 4.7 months (TP). Registry values for Progression-free Survival(PFS): 4.7, 3.7."
-    },
-    {
-     "nct": "NCT03365882",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 3.7 months (CETIRI). Registry values for Progression-free Survival(PFS): 4.7, 3.7."
-    },
-    {
-     "nct": "NCT03365882",
-     "check": "pfs_median",
-     "verdict": "differs",
-     "detail": "Abstract: 3 months (TP). Registry values for Progression-free Survival(PFS): 4.7, 3.7."
-    },
-    {
-     "nct": "NCT03365882",
-     "check": "pfs_median",
-     "verdict": "differs",
-     "detail": "Abstract: 4.2 months (CETIRI). Registry values for Progression-free Survival(PFS): 4.7, 3.7."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -5904,7 +5778,7 @@
      "quote": "RR 47% and 65% Arms A and B respectively",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -7548,7 +7422,7 @@
      "quote": "Common \u2265Grade 3 treatment related adverse events in Arm A were neutropenia (42%)",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -7760,26 +7634,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT01896856",
-     "check": "patients",
-     "verdict": "differs",
-     "detail": "Registry: 118 enrolled. Abstract: 104 randomized."
-    },
-    {
-     "nct": "NCT01896856",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 7.15 months (Arm A). Registry values for Overall Survival: 7.15, 7.66."
-    },
-    {
-     "nct": "NCT01896856",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 7.66 months (Arm B). Registry values for Overall Survival: 7.15, 7.66."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -7822,11 +7677,11 @@
      "population": "overall",
      "detail": null,
      "quote": "doublet arm (sintilimab and chidamide, n = 23)",
-     "status": "needs_review",
+     "status": "verified",
      "failed_checks": [
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "Per-arm randomized counts.",
      "consistency_note": "Patients per arm add up to 96, more than the 48 randomized."
     },
     {
@@ -7919,13 +7774,13 @@
      "population": "overall",
      "detail": "total randomized",
      "quote": "Forty-eight patients were randomly assigned",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "value_in_quote",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial total recorded as if it were an arm ('overall').",
      "consistency_note": "Patients per arm add up to 96, more than the 48 randomized."
     },
     {
@@ -8001,11 +7856,11 @@
      "population": "overall",
      "detail": null,
      "quote": "triplet arm (sintilimab, chidamide and bevacizumab, n = 25)",
-     "status": "needs_review",
+     "status": "verified",
      "failed_checks": [
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "Per-arm randomized counts.",
      "consistency_note": "Patients per arm add up to 96, more than the 48 randomized."
     },
     {
@@ -8299,50 +8154,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT03414983",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression Free Survival (PFS) Per Blinded Independent Central Review (BICR). Primary endpoint in the abstract: progression-free survival (PFS) by blinded independent central review (BICR)."
-    },
-    {
-     "nct": "NCT03414983",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 196 enrolled. Abstract: 195 randomized."
-    },
-    {
-     "nct": "NCT03414983",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 11.9 months (Nivolumab plus SOC). Registry values for Progression Free Survival (PFS) Per Blinded Independent Central Review (BICR): 11.86, 11.93, 13.77, 12.19, 11.99, 12.02."
-    },
-    {
-     "nct": "NCT03414983",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 11.9 months (SOC). Registry values for Progression Free Survival (PFS) Per Blinded Independent Central Review (BICR): 11.86, 11.93, 13.77, 12.19, 11.99, 12.02."
-    },
-    {
-     "nct": "NCT03414983",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.81 ratio (Nivolumab plus SOC). Registry values for Progression Free Survival (PFS) Per Blinded Independent Central Review (BICR): 0.81, 0.81, 0.8, 0.88, 0.88."
-    },
-    {
-     "nct": "NCT03414983",
-     "check": "orr",
-     "verdict": "differs",
-     "detail": "Abstract: 60 percent (Nivolumab plus SOC). Registry values for Objective Response Rate (ORR) Per Blinded Independent Central Review (BICR): 60.6, 45.6, 60.6, 52.9."
-    },
-    {
-     "nct": "NCT03414983",
-     "check": "orr",
-     "verdict": "differs",
-     "detail": "Abstract: 46 percent (SOC). Registry values for Objective Response Rate (ORR) Per Blinded Independent Central Review (BICR): 60.6, 45.6, 60.6, 52.9."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -8682,38 +8494,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT03388190",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Primary - Progression-free Survival (PFS). Primary endpoint in the abstract: progression-free survival (PFS)."
-    },
-    {
-     "nct": "NCT03388190",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 80 enrolled. Abstract: 80 randomized."
-    },
-    {
-     "nct": "NCT03388190",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 9.2 months (control group). Registry values for Primary - Progression-free Survival (PFS): 9.2, 9.2."
-    },
-    {
-     "nct": "NCT03388190",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 9.2 months (experimental group). Registry values for Primary - Progression-free Survival (PFS): 9.2, 9.2."
-    },
-    {
-     "nct": "NCT03388190",
-     "check": "pfs_median",
-     "verdict": "differs",
-     "detail": "Abstract: 15.8 months (experimental group). Registry values for Primary - Progression-free Survival (PFS): 9.2, 9.2."
-    }
-   ],
+   "registry_checks": [],
    "notices": [
     {
      "kind": "later_report",
@@ -9149,50 +8930,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT04456699",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression Free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors Version (RECIST) 1.1 as Assessed by Blinded Independent Central Review (BICR). Primary endpoint in the abstract: progression-free survival (PFS) per RECIST v1.1 by central review."
-    },
-    {
-     "nct": "NCT04456699",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 335 enrolled. Abstract: 309 randomized."
-    },
-    {
-     "nct": "NCT04456699",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 3.7 months (Olaparib plus bevacizumab). Registry values for Progression Free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors Version (RECIST) 1.1 as Assessed by Bli: 3.7, 3.6, 5.5."
-    },
-    {
-     "nct": "NCT04456699",
-     "check": "pfs_median",
-     "verdict": "differs",
-     "detail": "Abstract: 3.5 months (Olaparib alone). Registry values for Progression Free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors Version (RECIST) 1.1 as Assessed by Bli: 3.7, 3.6, 5.5."
-    },
-    {
-     "nct": "NCT04456699",
-     "check": "pfs_median",
-     "verdict": "differs",
-     "detail": "Abstract: 5.6 months (Bevacizumab plus fluoropyrimidine). Registry values for Progression Free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors Version (RECIST) 1.1 as Assessed by Bli: 3.7, 3.6, 5.5."
-    },
-    {
-     "nct": "NCT04456699",
-     "check": "pfs_hr",
-     "verdict": "differs",
-     "detail": "Abstract: 1.52 ratio (Olaparib plus bevacizumab). Registry values for Progression Free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors Version (RECIST) 1.1 as Assessed by Bli: 1.41, 1.75."
-    },
-    {
-     "nct": "NCT04456699",
-     "check": "pfs_hr",
-     "verdict": "differs",
-     "detail": "Abstract: 2.11 ratio (Olaparib alone). Registry values for Progression Free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors Version (RECIST) 1.1 as Assessed by Bli: 1.41, 1.75."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -9654,7 +9392,7 @@
      "quote": "36 (65.5%) and 32 (56.1%) patients in the serplulimab and placebo groups had grade \u22653 treatment-related adverse events",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -10295,20 +10033,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT04068610",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Number of Participants With Treatment Emergent Adverse Events (TEAEs) and Treatment Emergent Serious Adverse Events (TESAEs) in Part 1; Number of Participants With Dose Limiting Toxicities (DLTs) in Part 1; Number of Participants With at Least 2-Grade Shift From Baseline to Worst Toxicity Grade in C. Primary endpoint in the abstract: safety and efficacy."
-    },
-    {
-     "nct": "NCT04068610",
-     "check": "patients",
-     "verdict": "differs",
-     "detail": "Registry: 61 enrolled. Abstract: 52 randomized."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -10417,26 +10142,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT04744831",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Percentage of Participants With Objective Response Rate (ORR) Based on Blinded Independent Central Review Following IV Administration of T-DXd in Participants With Human Epidermal Growth Factor Receptor 2-overexpressing Metastatic Colorectal Cancer. Primary endpoint in the abstract: confirmed objective response rate by blinded independent central review."
-    },
-    {
-     "nct": "NCT04744831",
-     "check": "patients",
-     "verdict": "differs",
-     "detail": "Registry: 122 enrolled. Abstract: 80 randomized."
-    },
-    {
-     "nct": "NCT04744831",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 37.8 percent (5.4 mg/kg). Registry values for Percentage of Participants With Objective Response Rate (ORR) Based on Blinded Independent Central Review Following IV A: 37.8, 27.5, 31.7, 30."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -10968,13 +10674,13 @@
      "population": "overall",
      "detail": null,
      "quote": "A total of 303 patients who had not previously received systemic treatment for metastatic disease were randomly assigned to receive nivolumab plus ipilimumab or chemotherapy",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 606, more than the 303 randomized."
     },
     {
@@ -11031,13 +10737,13 @@
      "population": "overall",
      "detail": null,
      "quote": "A total of 303 patients who had not previously received systemic treatment for metastatic disease were randomly assigned to receive nivolumab plus ipilimumab or chemotherapy",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 606, more than the 303 randomized."
     },
     {
@@ -11062,20 +10768,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT04008030",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression-free Survival (PFS) by Blinded Independent Review Center (BICR) - Arm B vs. Arm A All Lines Centrally Confirmed MSI-H/dMMR; Progression-free Survival (PFS) by Blinded Independent Review Center (BICR) - Arm B vs. Arm C 1L Participants Centrally Confirmed MSI-H/dMMR. Primary endpoint in the abstract: progression-free survival (nivolumab plus ipilimumab vs chemotherapy, first-line; interim analysis)."
-    },
-    {
-     "nct": "NCT04008030",
-     "check": "patients",
-     "verdict": "differs",
-     "detail": "Registry: 839 enrolled. Abstract: 303 randomized."
-    }
-   ],
+   "registry_checks": [],
    "notices": [
     {
      "kind": "later_report",
@@ -12827,44 +12520,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT02394795",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: OS in Participants With Left-sided Tumors; Overall Survival (OS) in All Participants. Primary endpoint in the abstract: overall survival."
-    },
-    {
-     "nct": "NCT02394795",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 823 enrolled. Abstract: 823 randomized."
-    },
-    {
-     "nct": "NCT02394795",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 36.2 months (panitumumab). Registry values for OS in Participants With Left-sided Tumors: 37.85, 34.3, 36.24, 31.28."
-    },
-    {
-     "nct": "NCT02394795",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 31.3 months (bevacizumab). Registry values for OS in Participants With Left-sided Tumors: 37.85, 34.3, 36.24, 31.28."
-    },
-    {
-     "nct": "NCT02394795",
-     "check": "pfs_median",
-     "verdict": "differs",
-     "detail": "Abstract: 12.2 months (panitumumab). Registry values for Progression-Free Survival (PFS) in Participants With Left-sided Tumors: 13.7, 13.24, 12.91, 11.99."
-    },
-    {
-     "nct": "NCT02394795",
-     "check": "pfs_median",
-     "verdict": "differs",
-     "detail": "Abstract: 11.4 months (bevacizumab). Registry values for Progression-Free Survival (PFS) in Participants With Left-sided Tumors: 13.7, 13.24, 12.91, 11.99."
-    }
-   ],
+   "registry_checks": [],
    "notices": [
     {
      "kind": "correction",
@@ -13084,56 +12740,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT04737187",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Overall Survival (OS); Survival Probability at 6 Months; Survival Probability at 12 Months; Survival Probability at 18 Months. Primary endpoint in the abstract: overall survival."
-    },
-    {
-     "nct": "NCT04737187",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 492 enrolled. Abstract: 492 randomized."
-    },
-    {
-     "nct": "NCT04737187",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 10.8 months (combination group). Registry values for Overall Survival (OS): 10.78, 7.46."
-    },
-    {
-     "nct": "NCT04737187",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 7.5 months (FTD-TPI group). Registry values for Overall Survival (OS): 10.78, 7.46."
-    },
-    {
-     "nct": "NCT04737187",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.61 ratio (combination group). Registry values for Overall Survival (OS): 0.61."
-    },
-    {
-     "nct": "NCT04737187",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 5.6 months (combination group). Registry values for Progression Free Survival (PFS): 5.55, 2.4."
-    },
-    {
-     "nct": "NCT04737187",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 2.4 months (FTD-TPI group). Registry values for Progression Free Survival (PFS): 5.55, 2.4."
-    },
-    {
-     "nct": "NCT04737187",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.44 ratio (combination group). Registry values for Progression Free Survival (PFS): 0.44."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -14019,38 +13626,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT04322539",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Overall Survival (OS). Primary endpoint in the abstract: overall survival."
-    },
-    {
-     "nct": "NCT04322539",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 691 enrolled. Abstract: 691 randomized."
-    },
-    {
-     "nct": "NCT04322539",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 7.4 months (fruquintinib). Registry values for Overall Survival (OS): 7.4, 4.8."
-    },
-    {
-     "nct": "NCT04322539",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 4.8 months (placebo). Registry values for Overall Survival (OS): 7.4, 4.8."
-    },
-    {
-     "nct": "NCT04322539",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.66 ratio (fruquintinib). Registry values for Overall Survival (OS): 0.662."
-    }
-   ],
+   "registry_checks": [],
    "notices": [
     {
      "kind": "later_report",
@@ -15454,27 +15030,6 @@
      "consistency_note": null
     },
     {
-     "id": "37721754:cetuximab-maintenance|pfs-hr|overall|any-tumor-activating-mapk-pathway-mutation-regardless-of-treatment-group-explorator",
-     "arm": "Cetuximab maintenance",
-     "measure": "pfs_hr",
-     "label": "PFS hazard ratio",
-     "value": 1.63,
-     "unit": "ratio",
-     "ci_low": 1.01,
-     "ci_high": 2.62,
-     "comparator": "Observation",
-     "population": "overall",
-     "detail": "any tumor-activating MAPK pathway mutation, regardless of treatment group (exploratory multivariate analysis)",
-     "quote": "hazard ratio, 1.63 [95% CI, 1.01-2.62]; P = .04",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees",
-      "consistent"
-     ],
-     "audit_note": null,
-     "consistency_note": "PFS hazard ratio 1.63 says Cetuximab maintenance did worse than Observation, but the medians say the opposite (5.3 vs 2 months)."
-    },
-    {
      "id": "37721754:cetuximab-maintenance|pfs-median|overall|from-randomization|",
      "arm": "Cetuximab maintenance",
      "measure": "pfs_median",
@@ -15529,6 +15084,24 @@
      "failed_checks": [],
      "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
      "consistency_note": null
+    },
+    {
+     "id": "37721754:cetuximab-maintenance|pfs-hr|overall|any-tumor-activating-mapk-pathway-mutation-regardless-of-treatment-group-explorator",
+     "arm": "Observation",
+     "measure": "pfs_hr",
+     "label": "PFS hazard ratio",
+     "value": 1.63,
+     "unit": "ratio",
+     "ci_low": 1.01,
+     "ci_high": 2.62,
+     "comparator": "Cetuximab maintenance",
+     "population": "overall",
+     "detail": "any tumor-activating MAPK pathway mutation, regardless of treatment group (exploratory multivariate analysis)",
+     "quote": "hazard ratio, 1.63 [95% CI, 1.01-2.62]; P = .04",
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
+     "consistency_note": "PFS hazard ratio 1.63 says Cetuximab maintenance did worse than Observation, but the medians say the opposite (5.3 vs 2 months)."
     },
     {
      "id": "37721754:observation|pfs-median|overall|from-randomization|",
@@ -15993,32 +15566,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT05198934",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression-free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 as Assessed by BICR. Primary endpoint in the abstract: progression-free survival by blinded independent central review (RECIST 1.1)."
-    },
-    {
-     "nct": "NCT05198934",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 5.6 months (Sotorasib 960 mg + panitumumab). Registry values for Progression-free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 as Assessed by BIC: 2.04, 3.91, 5.62."
-    },
-    {
-     "nct": "NCT05198934",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 3.9 months (Sotorasib 240 mg + panitumumab). Registry values for Progression-free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 as Assessed by BIC: 2.04, 3.91, 5.62."
-    },
-    {
-     "nct": "NCT05198934",
-     "check": "pfs_median",
-     "verdict": "differs",
-     "detail": "Abstract: 2.2 months (Standard care). Registry values for Progression-free Survival (PFS) Per Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 as Assessed by BIC: 2.04, 3.91, 5.62."
-    }
-   ],
+   "registry_checks": [],
    "notices": [
     {
      "kind": "correction",
@@ -16968,11 +16516,11 @@
      "population": "overall",
      "detail": null,
      "quote": "82 in the investigational group and 46 in the placebo group",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count"
      ],
-     "audit_note": null,
+     "audit_note": "46 is the number assessed for efficacy, not randomized (133 were randomized; per-arm randomized counts are not given).",
      "consistency_note": null
     },
     {
@@ -16994,62 +16542,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT02873195",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression Free Survival (PFS). Primary endpoint in the abstract: PFS."
-    },
-    {
-     "nct": "NCT02873195",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 133 enrolled. Abstract: 133 randomized."
-    },
-    {
-     "nct": "NCT02873195",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 4.4 months (investigational). Registry values for Progression Free Survival (PFS): 4.37, 3.32."
-    },
-    {
-     "nct": "NCT02873195",
-     "check": "pfs_median",
-     "verdict": "differs",
-     "detail": "Abstract: 3.6 months (placebo). Registry values for Progression Free Survival (PFS): 4.37, 3.32."
-    },
-    {
-     "nct": "NCT02873195",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.75 ratio (investigational). Registry values for Progression Free Survival (PFS): 0.725."
-    },
-    {
-     "nct": "NCT02873195",
-     "check": "orr",
-     "verdict": "differs",
-     "detail": "Abstract: 23.1 percent (investigational). Registry values for Objective Response Rate: 8.54, 4.35."
-    },
-    {
-     "nct": "NCT02873195",
-     "check": "orr",
-     "verdict": "differs",
-     "detail": "Abstract: 5.8 percent (investigational). Registry values for Objective Response Rate: 8.54, 4.35."
-    },
-    {
-     "nct": "NCT02873195",
-     "check": "os_hr",
-     "verdict": "differs",
-     "detail": "Abstract: 0.33 ratio (investigational). Registry values for Overall Survival (OS): 0.94."
-    },
-    {
-     "nct": "NCT02873195",
-     "check": "os_hr",
-     "verdict": "differs",
-     "detail": "Abstract: 1.14 ratio (investigational). Registry values for Overall Survival (OS): 0.94."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -17628,68 +17121,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT02292758",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression-Free Survival (PFS); 6-month and 12-month Progression-free Survival (PFS) Rates. Primary endpoint in the abstract: progression-free survival."
-    },
-    {
-     "nct": "NCT02292758",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 36 enrolled. Abstract: 36 randomized."
-    },
-    {
-     "nct": "NCT02292758",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 9.7 months (CBI). Registry values for Progression-Free Survival (PFS): 9.7, 5.5."
-    },
-    {
-     "nct": "NCT02292758",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 5.5 months (CI). Registry values for Progression-Free Survival (PFS): 9.7, 5.5."
-    },
-    {
-     "nct": "NCT02292758",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.64 ratio (CBI). Registry values for Progression-Free Survival (PFS): 0.912, 0.642."
-    },
-    {
-     "nct": "NCT02292758",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 19.7 months (CBI). Registry values for Overall Survival (OS): 19.7, 10.2."
-    },
-    {
-     "nct": "NCT02292758",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 10.2 months (CI). Registry values for Overall Survival (OS): 19.7, 10.2."
-    },
-    {
-     "nct": "NCT02292758",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.41 ratio (CBI). Registry values for Overall Survival (OS): 0.471, 0.406."
-    },
-    {
-     "nct": "NCT02292758",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 36.8 percent (CBI). Registry values for Overall Response Rate (ORR): 36.8, 11.8."
-    },
-    {
-     "nct": "NCT02292758",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 11.8 percent (CI). Registry values for Overall Response Rate (ORR): 36.8, 11.8."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -18320,13 +17752,13 @@
      "population": "overall",
      "detail": "early tumor shrinkage rate",
      "quote": "No differences in early tumor shrinkage rate (57%/58%, P = .878)",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "dcr_named",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "57%/58% are early tumour shrinkage rates, not disease control rates.",
      "consistency_note": "Response rate (76%) is higher than disease control rate (57%) for control group."
     },
     {
@@ -18419,13 +17851,13 @@
      "population": "overall",
      "detail": "early tumor shrinkage rate",
      "quote": "No differences in early tumor shrinkage rate (57%/58%, P = .878)",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "dcr_named",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "57%/58% are early tumour shrinkage rates, not disease control rates.",
      "consistency_note": "Response rate (73%) is higher than disease control rate (58%) for experimental group."
     },
     {
@@ -18572,11 +18004,11 @@
      "population": "overall",
      "detail": null,
      "quote": "42 patients were randomised to VOR/HCQ and RGF",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 84, more than the 42 randomized."
     },
     {
@@ -18610,11 +18042,11 @@
      "population": "overall",
      "detail": null,
      "quote": "42 patients were randomised to VOR/HCQ and RGF",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 84, more than the 42 randomized."
     },
     {
@@ -18636,32 +18068,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT02316340",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Efficacy Based on Progression Free Survival of Vorinostat and Hydroxychloroquine Compared to Regorafenib. Primary endpoint in the abstract: median progression-free survival (mPFS)."
-    },
-    {
-     "nct": "NCT02316340",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 42 enrolled. Abstract: 42 randomized."
-    },
-    {
-     "nct": "NCT02316340",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.9 months (VOR/HCQ). Registry values for Efficacy Based on Progression Free Survival of Vorinostat and Hydroxychloroquine Compared to Regorafenib: 1.9, 4.35."
-    },
-    {
-     "nct": "NCT02316340",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 4.35 months (RGF). Registry values for Efficacy Based on Progression Free Survival of Vorinostat and Hydroxychloroquine Compared to Regorafenib: 1.9, 4.35."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -20149,26 +19556,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT02164916",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression-free Survival. Primary endpoint in the abstract: progression-free survival."
-    },
-    {
-     "nct": "NCT02164916",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 106 enrolled. Abstract: 106 randomized."
-    },
-    {
-     "nct": "NCT02164916",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.5 ratio (Irinotecan and cetuximab plus vemurafenib). Registry values for Progression-free Survival: 0.48."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -20714,7 +20102,7 @@
      "quote": "or the experimental arm (n = 115)",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -20882,44 +20270,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT01718873",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Objective Response Rate. Primary endpoint in the abstract: objective response rate (ORR) per RECIST 1.1."
-    },
-    {
-     "nct": "NCT01718873",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 230 enrolled. Abstract: 230 randomized."
-    },
-    {
-     "nct": "NCT01718873",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 10.5 months (standard). Registry values for Progression-free Survival (PFS): 11.7, 10.5."
-    },
-    {
-     "nct": "NCT01718873",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 11.7 months (experimental). Registry values for Progression-free Survival (PFS): 11.7, 10.5."
-    },
-    {
-     "nct": "NCT01718873",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 24.1 months (standard). Registry values for Overall Survival: 29.8, 24.1."
-    },
-    {
-     "nct": "NCT01718873",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 29.8 months (experimental). Registry values for Overall Survival: 29.8, 24.1."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -22207,12 +21558,12 @@
      "population": "overall",
      "detail": null,
      "quote": "23 served as controls (no PTX)",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "Counts of patients treated at each dose, not randomized counts.",
      "consistency_note": "Patients per arm add up to 49, more than the 40 randomized."
     },
     {
@@ -22246,12 +21597,12 @@
      "population": "overall",
      "detail": null,
      "quote": "17 patients were treated with a full dose of PTX (400 mg TID)",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "Counts of patients treated at each dose, not randomized counts.",
      "consistency_note": "Patients per arm add up to 49, more than the 40 randomized."
     },
     {
@@ -22287,12 +21638,12 @@
      "population": "overall",
      "detail": null,
      "quote": "9 patients with a reduced dose PTX (200 mg TID)",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "Counts of patients treated at each dose, not randomized counts.",
      "consistency_note": "Patients per arm add up to 49, more than the 40 randomized."
     }
    ],
@@ -22731,12 +22082,12 @@
      "population": "overall",
      "detail": null,
      "quote": "Patients scheduled for first-line chemotherapy (n = 107) were randomly assigned",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 214, more than the 107 randomized."
     },
     {
@@ -22793,12 +22144,12 @@
      "population": "overall",
      "detail": null,
      "quote": "Patients scheduled for first-line chemotherapy (n = 107) were randomly assigned",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 214, more than the 107 randomized."
     }
    ],
@@ -23645,32 +22996,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT03288987",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression Free Survival (PFS). Primary endpoint in the abstract: progression-free survival (PFS)."
-    },
-    {
-     "nct": "NCT03288987",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 126 enrolled. Abstract: 126 randomized."
-    },
-    {
-     "nct": "NCT03288987",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.79 ratio (BE1040V (biosimilar bevacizumab) + FOLFIRI-3). Registry values for Progression Free Survival (PFS): 0.79."
-    },
-    {
-     "nct": "NCT03288987",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.99 ratio (BE1040V (biosimilar bevacizumab) + FOLFIRI-3). Registry values for Overall Survival (OS): 0.99."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -24614,44 +23940,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT02743221",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression Free Survival (PFS). Primary endpoint in the abstract: progression-free survival (PFS)."
-    },
-    {
-     "nct": "NCT02743221",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 154 enrolled. Abstract: 153 randomized."
-    },
-    {
-     "nct": "NCT02743221",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 9.2 months (TT-B). Registry values for Progression Free Survival (PFS): 9.2, 7.8."
-    },
-    {
-     "nct": "NCT02743221",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 7.8 months (C-B). Registry values for Progression Free Survival (PFS): 9.2, 7.8."
-    },
-    {
-     "nct": "NCT02743221",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 18 months (TT-B). Registry values for Overall Survival (OS): 18, 16.2."
-    },
-    {
-     "nct": "NCT02743221",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 16.2 months (C-B). Registry values for Overall Survival (OS): 18, 16.2."
-    }
-   ],
+   "registry_checks": [],
    "notices": [
     {
      "kind": "later_report",
@@ -26777,13 +26066,13 @@
      "population": "overall",
      "detail": null,
      "quote": "A total of 132 patients",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 264, more than the 132 randomized."
     },
     {
@@ -26892,13 +26181,13 @@
      "population": "overall",
      "detail": null,
      "quote": "A total of 132 patients",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 264, more than the 132 randomized."
     },
     {
@@ -27626,68 +26915,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT01765582",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Percentage of Participants With Overall Response During First-Line Therapy (ORR1); Progression-Free Survival During First-Line Therapy (PFS1). Primary endpoint in the abstract: overall response rate (cFOLFOXIRI-BEV vs FOLFOX-BEV) and progression-free survival (pooled FOLFOXIRI-BEV vs FOLFOX-BEV)."
-    },
-    {
-     "nct": "NCT01765582",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 280 enrolled. Abstract: 280 randomized."
-    },
-    {
-     "nct": "NCT01765582",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 72 percent (cFOLFOXIRI-BEV). Registry values for Percentage of Participants With Overall Response During First-Line Therapy (ORR1): 72, 72.8, 62.1, 72.4."
-    },
-    {
-     "nct": "NCT01765582",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 72.8 percent (sFOLFOXIRI-BEV). Registry values for Percentage of Participants With Overall Response During First-Line Therapy (ORR1): 72, 72.8, 62.1, 72.4."
-    },
-    {
-     "nct": "NCT01765582",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 62.1 percent (FOLFOX-BEV). Registry values for Percentage of Participants With Overall Response During First-Line Therapy (ORR1): 72, 72.8, 62.1, 72.4."
-    },
-    {
-     "nct": "NCT01765582",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 11.9 months (cFOLFOXIRI-BEV). Registry values for Progression-Free Survival During First-Line Therapy (PFS1): 11.86, 11.37, 9.46, 11.7."
-    },
-    {
-     "nct": "NCT01765582",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 11.4 months (sFOLFOXIRI-BEV). Registry values for Progression-Free Survival During First-Line Therapy (PFS1): 11.86, 11.37, 9.46, 11.7."
-    },
-    {
-     "nct": "NCT01765582",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 9.5 months (FOLFOX-BEV). Registry values for Progression-Free Survival During First-Line Therapy (PFS1): 11.86, 11.37, 9.46, 11.7."
-    },
-    {
-     "nct": "NCT01765582",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 11.7 months (pooled FOLFOXIRI-BEV). Registry values for Progression-Free Survival During First-Line Therapy (PFS1): 11.86, 11.37, 9.46, 11.7."
-    },
-    {
-     "nct": "NCT01765582",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.7 ratio (pooled FOLFOXIRI-BEV). Registry values for Progression-Free Survival During First-Line Therapy (PFS1): 0.68."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -28613,56 +27841,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT01516216",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Median Progression-free Survival (PFS). Primary endpoint in the abstract: progression-free survival."
-    },
-    {
-     "nct": "NCT01516216",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 139 enrolled. Abstract: 139 randomized."
-    },
-    {
-     "nct": "NCT01516216",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 13 months (High-dose vitamin D3). Registry values for Median Progression-free Survival (PFS): 11, 13."
-    },
-    {
-     "nct": "NCT01516216",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 11 months (Standard-dose vitamin D3). Registry values for Median Progression-free Survival (PFS): 11, 13."
-    },
-    {
-     "nct": "NCT01516216",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 58 percent (High-dose vitamin D3). Registry values for Objective Response Rate: 63, 58."
-    },
-    {
-     "nct": "NCT01516216",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 63 percent (Standard-dose vitamin D3). Registry values for Objective Response Rate: 63, 58."
-    },
-    {
-     "nct": "NCT01516216",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 24.3 months (High-dose vitamin D3). Registry values for Median Overall Survival (OS): 24.3, 24.3."
-    },
-    {
-     "nct": "NCT01516216",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 24.3 months (Standard-dose vitamin D3). Registry values for Median Overall Survival (OS): 24.3, 24.3."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -28801,7 +27980,7 @@
      "quote": "183 patients in the atezolizumab plus cobimetinib group",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -28895,50 +28074,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT02788279",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Overall Survival (OS). Primary endpoint in the abstract: overall survival."
-    },
-    {
-     "nct": "NCT02788279",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 363 enrolled. Abstract: 363 randomized."
-    },
-    {
-     "nct": "NCT02788279",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 8.87 months (atezolizumab plus cobimetinib). Registry values for Overall Survival (OS): 8.51, 8.87, 7.1."
-    },
-    {
-     "nct": "NCT02788279",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 7.1 months (atezolizumab monotherapy). Registry values for Overall Survival (OS): 8.51, 8.87, 7.1."
-    },
-    {
-     "nct": "NCT02788279",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 8.51 months (regorafenib). Registry values for Overall Survival (OS): 8.51, 8.87, 7.1."
-    },
-    {
-     "nct": "NCT02788279",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 1 ratio (atezolizumab plus cobimetinib). Registry values for Overall Survival (OS): 1, 1.19, 1.01, 1.18."
-    },
-    {
-     "nct": "NCT02788279",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.19 ratio (atezolizumab monotherapy). Registry values for Overall Survival (OS): 1, 1.19, 1.01, 1.18."
-    }
-   ],
+   "registry_checks": [],
    "notices": [
     {
      "kind": "correction",
@@ -29443,6 +28579,24 @@
      "consistency_note": null
     },
     {
+     "id": "31132111:folfox|os-hr|overall|overall-survival-intention-to-treat|cufox",
+     "arm": "CUFOX",
+     "measure": "os_hr",
+     "label": "OS hazard ratio",
+     "value": 0.34,
+     "unit": "ratio",
+     "ci_low": 0.14,
+     "ci_high": 0.82,
+     "comparator": "FOLFOX",
+     "population": "overall",
+     "detail": "overall survival, intention-to-treat",
+     "quote": "for OS was 0.34 (95% CI: 0.14, 0.82; P = 0.02)",
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
+     "consistency_note": "OS hazard ratio 0.34 says FOLFOX did better than CUFOX, but the medians say the opposite (200 vs 502 weeks)."
+    },
+    {
      "id": "31132111:cufox|os-median|overall|overall-survival-intention-to-treat|",
      "arm": "CUFOX",
      "measure": "os_median",
@@ -29455,15 +28609,33 @@
      "population": "overall",
      "detail": "overall survival, intention-to-treat",
      "quote": "median of 200 and 502 d for FOLFOX and CUFOX, respectively",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "plausible",
       "unit_in_source",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The abstract gives these medians in days, not weeks.",
      "consistency_note": "OS hazard ratio 0.34 says FOLFOX did better than CUFOX, but the medians say the opposite (200 vs 502 weeks)."
+    },
+    {
+     "id": "31132111:folfox|pfs-hr|overall|progression-free-survival-intention-to-treat|cufox",
+     "arm": "CUFOX",
+     "measure": "pfs_hr",
+     "label": "PFS hazard ratio",
+     "value": 0.57,
+     "unit": "ratio",
+     "ci_low": 0.24,
+     "ci_high": 1.36,
+     "comparator": "FOLFOX",
+     "population": "overall",
+     "detail": "progression-free survival, intention-to-treat",
+     "quote": "the HR for PFS was 0.57 (95% CI: 0.24, 1.36; P = 0.2)",
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
+     "consistency_note": "PFS hazard ratio 0.57 says FOLFOX did better than CUFOX, but the medians say the opposite (171 vs 291 weeks)."
     },
     {
      "id": "31132111:cufox|pfs-median|overall|progression-free-survival-intention-to-treat|",
@@ -29478,14 +28650,14 @@
      "population": "overall",
      "detail": "progression-free survival, intention-to-treat",
      "quote": "median of 171 and 291 d for FOLFOX and CUFOX, respectively",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "plausible",
       "unit_in_source",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The abstract gives these medians in days, not weeks.",
      "consistency_note": "PFS hazard ratio 0.57 says FOLFOX did better than CUFOX, but the medians say the opposite (171 vs 291 weeks)."
     },
     {
@@ -29510,27 +28682,6 @@
      "consistency_note": null
     },
     {
-     "id": "31132111:folfox|os-hr|overall|overall-survival-intention-to-treat|cufox",
-     "arm": "FOLFOX",
-     "measure": "os_hr",
-     "label": "OS hazard ratio",
-     "value": 0.34,
-     "unit": "ratio",
-     "ci_low": 0.14,
-     "ci_high": 0.82,
-     "comparator": "CUFOX",
-     "population": "overall",
-     "detail": "overall survival, intention-to-treat",
-     "quote": "for OS was 0.34 (95% CI: 0.14, 0.82; P = 0.02)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees",
-      "consistent"
-     ],
-     "audit_note": null,
-     "consistency_note": "OS hazard ratio 0.34 says FOLFOX did better than CUFOX, but the medians say the opposite (200 vs 502 weeks)."
-    },
-    {
      "id": "31132111:folfox|os-median|overall|overall-survival-intention-to-treat|",
      "arm": "FOLFOX",
      "measure": "os_median",
@@ -29543,35 +28694,14 @@
      "population": "overall",
      "detail": "overall survival, intention-to-treat",
      "quote": "median of 200 and 502 d for FOLFOX and CUFOX, respectively",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "unit_in_source",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The abstract gives these medians in days, not weeks.",
      "consistency_note": "OS hazard ratio 0.34 says FOLFOX did better than CUFOX, but the medians say the opposite (200 vs 502 weeks)."
-    },
-    {
-     "id": "31132111:folfox|pfs-hr|overall|progression-free-survival-intention-to-treat|cufox",
-     "arm": "FOLFOX",
-     "measure": "pfs_hr",
-     "label": "PFS hazard ratio",
-     "value": 0.57,
-     "unit": "ratio",
-     "ci_low": 0.24,
-     "ci_high": 1.36,
-     "comparator": "CUFOX",
-     "population": "overall",
-     "detail": "progression-free survival, intention-to-treat",
-     "quote": "the HR for PFS was 0.57 (95% CI: 0.24, 1.36; P = 0.2)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees",
-      "consistent"
-     ],
-     "audit_note": null,
-     "consistency_note": "PFS hazard ratio 0.57 says FOLFOX did better than CUFOX, but the medians say the opposite (171 vs 291 weeks)."
     },
     {
      "id": "31132111:folfox|pfs-median|overall|progression-free-survival-intention-to-treat|",
@@ -29586,13 +28716,13 @@
      "population": "overall",
      "detail": "progression-free survival, intention-to-treat",
      "quote": "median of 171 and 291 d for FOLFOX and CUFOX, respectively",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "unit_in_source",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The abstract gives these medians in days, not weeks.",
      "consistency_note": "PFS hazard ratio 0.57 says FOLFOX did better than CUFOX, but the medians say the opposite (171 vs 291 weeks)."
     }
    ],
@@ -29740,11 +28870,11 @@
      "population": "overall",
      "detail": "treatment-related adverse events during maintenance",
      "quote": "arm A had a higher incidence of grade 3 or greater treatment-related adverse events (36 [42.4%] vs 16 [20.3%])",
-     "status": "needs_review",
+     "status": "verified",
      "failed_checks": [
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -29760,11 +28890,11 @@
      "population": "overall",
      "detail": "panitumumab-related adverse events during maintenance",
      "quote": "panitumumab-related adverse events (27 [31.8%] vs 13 [16.4%])",
-     "status": "needs_review",
+     "status": "verified",
      "failed_checks": [
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -29786,26 +28916,6 @@
      "consistency_note": null
     },
     {
-     "id": "31268481:arm-a|pfs-hr|overall|10-month-pfs-arm-b-vs-arm-a|arm-b",
-     "arm": "arm A",
-     "measure": "pfs_hr",
-     "label": "PFS hazard ratio",
-     "value": 1.51,
-     "unit": "ratio",
-     "ci_low": 1.11,
-     "ci_high": 2.07,
-     "comparator": "arm B",
-     "population": "overall",
-     "detail": "10-month PFS, arm B vs arm A",
-     "quote": "HR, 1.51; 95% CI, 1.11-2.07; P = .01",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
-     "audit_note": null,
-     "consistency_note": "PFS hazard ratio 1.51 says arm A did worse than arm B, but the medians say the opposite (59.9 vs 49 percent)."
-    },
-    {
      "id": "31268481:arm-a|pfs-median|overall|10-month-pfs-rate|",
      "arm": "arm A",
      "measure": "pfs_median",
@@ -29818,13 +28928,13 @@
      "population": "overall",
      "detail": "10-month PFS rate",
      "quote": "Ten-month PFS was 59.9% (95% CI, 51.5%-69.8%) in arm A",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "unit_fits",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "A 10-month PFS rate, not a median.",
      "consistency_note": "PFS hazard ratio 1.51 says arm A did worse than arm B, but the medians say the opposite (59.9 vs 49 percent)."
     },
     {
@@ -29840,11 +28950,11 @@
      "population": "overall",
      "detail": "treatment-related adverse events during maintenance",
      "quote": "16 [20.3%]",
-     "status": "needs_review",
+     "status": "verified",
      "failed_checks": [
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -29860,11 +28970,11 @@
      "population": "overall",
      "detail": "panitumumab-related adverse events during maintenance",
      "quote": "13 [16.4%]",
-     "status": "needs_review",
+     "status": "verified",
      "failed_checks": [
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -29886,6 +28996,24 @@
      "consistency_note": null
     },
     {
+     "id": "31268481:arm-a|pfs-hr|overall|10-month-pfs-arm-b-vs-arm-a|arm-b",
+     "arm": "arm B",
+     "measure": "pfs_hr",
+     "label": "PFS hazard ratio",
+     "value": 1.51,
+     "unit": "ratio",
+     "ci_low": 1.11,
+     "ci_high": 2.07,
+     "comparator": "arm A",
+     "population": "overall",
+     "detail": "10-month PFS, arm B vs arm A",
+     "quote": "HR, 1.51; 95% CI, 1.11-2.07; P = .01",
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "The hazard ratio 1.51 is arm B versus arm A (arm B was inferior).",
+     "consistency_note": "PFS hazard ratio 1.51 says arm A did worse than arm B, but the medians say the opposite (59.9 vs 49 percent)."
+    },
+    {
      "id": "31268481:arm-b|pfs-median|overall|10-month-pfs-rate|",
      "arm": "arm B",
      "measure": "pfs_median",
@@ -29898,13 +29026,13 @@
      "population": "overall",
      "detail": "10-month PFS rate",
      "quote": "49.0% (95% CI, 40.5%-59.4%) in arm B",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "unit_fits",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "A 10-month PFS rate, not a median.",
      "consistency_note": "PFS hazard ratio 1.51 says arm A did worse than arm B, but the medians say the opposite (59.9 vs 49 percent)."
     }
    ],
@@ -30308,32 +29436,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT02337946",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression-Free Survival Rate (PFS Rate) at 9 Months After Randomization. Primary endpoint in the abstract: progression-free survival rate at 9 months after randomisation."
-    },
-    {
-     "nct": "NCT02337946",
-     "check": "patients",
-     "verdict": "differs",
-     "detail": "Registry: 164 enrolled. Abstract: 113 randomized."
-    },
-    {
-     "nct": "NCT02337946",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 9.1 months (group A). Registry values for Progression-Free Survival (PFS): 9.1, 9.3."
-    },
-    {
-     "nct": "NCT02337946",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 9.3 months (group B). Registry values for Progression-Free Survival (PFS): 9.1, 9.3."
-    }
-   ],
+   "registry_checks": [],
    "notices": [
     {
      "kind": "later_report",
@@ -30640,50 +29743,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT02928224",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: (Safety Lead-in) Number of Participants With Dose-Limiting Toxicities (DLTs); (Safety Lead-in) Number of Participants With Adverse Events (AEs); (Safety Lead-in) Incidence of Dose Interruptions, Dose Modifications and Discontinuations Due to Adverse Events (AEs) - Interim Analysis; (Safety Lead-in) . Primary endpoint in the abstract: overall survival and objective response rate (triplet vs control)."
-    },
-    {
-     "nct": "NCT02928224",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 702 enrolled. Abstract: 665 randomized."
-    },
-    {
-     "nct": "NCT02928224",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 9 months (triplet). Registry values for (Phase 3) Overall Survival (OS) of Triplet Arm vs. Control Arm - Interim Analysis: 9.03, 5.42, 9.82, 5.88, 9.4, 5.88."
-    },
-    {
-     "nct": "NCT02928224",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 5.4 months (control). Registry values for (Phase 3) Overall Survival (OS) of Triplet Arm vs. Control Arm - Interim Analysis: 9.03, 5.42, 9.82, 5.88, 9.4, 5.88."
-    },
-    {
-     "nct": "NCT02928224",
-     "check": "orr",
-     "verdict": "differs",
-     "detail": "Abstract: 26 percent (triplet). Registry values for (Phase 3) Objective Response Rate (ORR) by Blinded Independent Central Review (BICR) Per Response Evaluation Criteria in: 26.1, 1.9, 52.8, 41.7, 26.1, 3.7."
-    },
-    {
-     "nct": "NCT02928224",
-     "check": "orr",
-     "verdict": "differs",
-     "detail": "Abstract: 2 percent (control). Registry values for (Phase 3) Objective Response Rate (ORR) by Blinded Independent Central Review (BICR) Per Response Evaluation Criteria in: 26.1, 1.9, 52.8, 41.7, 26.1, 3.7."
-    },
-    {
-     "nct": "NCT02928224",
-     "check": "os_median",
-     "verdict": "differs",
-     "detail": "Abstract: 8.4 months (doublet). Registry values for (Phase 3) Overall Survival (OS) of Triplet Arm vs. Control Arm - Interim Analysis: 9.03, 5.42, 9.82, 5.88, 9.4, 5.88."
-    }
-   ],
+   "registry_checks": [],
    "notices": [
     {
      "kind": "later_report",
@@ -31738,14 +30798,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT01619423",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 186 enrolled. Abstract: 173 randomized."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -32005,12 +31058,12 @@
      "population": "overall",
      "detail": null,
      "quote": "9 months in the FOLFOX/Bev TS-H group",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "A comparison of biomarker groups (thymidylate synthase high vs low), not of randomized arms.",
      "consistency_note": "PFS hazard ratio 1.6 says FOLFOX/Bev (TS-L) did worse than FOLFOX/Bev (TS-H), but the medians say the opposite (13 vs 9 months)."
     },
     {
@@ -32066,12 +31119,12 @@
      "population": "overall",
      "detail": "TS-L vs TS-H within FOLFOX/Bev",
      "quote": "hazard ratio, 1.6; 95% CI, 1.0%-2.4%; P = .04; Cox regression",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "A comparison of biomarker groups (thymidylate synthase high vs low), not of randomized arms.",
      "consistency_note": "PFS hazard ratio 1.6 says FOLFOX/Bev (TS-L) did worse than FOLFOX/Bev (TS-H), but the medians say the opposite (13 vs 9 months)."
     },
     {
@@ -32087,12 +31140,12 @@
      "population": "overall",
      "detail": null,
      "quote": "13 months in the FOLFOX/Bev TS-L group",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "A comparison of biomarker groups (thymidylate synthase high vs low), not of randomized arms.",
      "consistency_note": "PFS hazard ratio 1.6 says FOLFOX/Bev (TS-L) did worse than FOLFOX/Bev (TS-H), but the medians say the opposite (13 vs 9 months)."
     },
     {
@@ -32148,11 +31201,11 @@
      "population": "overall",
      "detail": null,
      "quote": "10 months in the IROX/Bev TS-H group",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "A comparison of biomarker groups (thymidylate synthase high vs low), not of randomized arms.",
      "consistency_note": null
     }
    ],
@@ -32273,7 +31326,7 @@
      "quote": "trifluridine/tipiracil (n = 271)",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -32313,38 +31366,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT01955837",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Overall Survival\uff08OS\uff09. Primary endpoint in the abstract: overall survival."
-    },
-    {
-     "nct": "NCT01955837",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 406 enrolled. Abstract: 406 randomized."
-    },
-    {
-     "nct": "NCT01955837",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.79 ratio (trifluridine/tipiracil). Registry values for Overall Survival\uff08OS\uff09: 0.79, 0.77, 0.83."
-    },
-    {
-     "nct": "NCT01955837",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 7.8 months (trifluridine/tipiracil). Registry values for Overall Survival\uff08OS\uff09: 7.8, 7.1, 8.6, 7.4, 7, 6.5."
-    },
-    {
-     "nct": "NCT01955837",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 7.1 months (placebo). Registry values for Overall Survival\uff08OS\uff09: 7.8, 7.1, 8.6, 7.4, 7, 6.5."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -32708,7 +31730,7 @@
      "quote": "The median overall survival (OS) was 21.7 and 22.0 months in the maintenance and observation groups, respectively",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -34008,11 +33030,11 @@
      "population": "overall",
      "detail": null,
      "quote": "25 in arm A and 24 in arm B",
-     "status": "needs_review",
+     "status": "verified",
      "failed_checks": [
       "randomized_count"
      ],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -34501,56 +33523,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT01622543",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression Free Survival. Primary endpoint in the abstract: progression-free survival (PFS)."
-    },
-    {
-     "nct": "NCT01622543",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 109 enrolled. Abstract: 103 randomized."
-    },
-    {
-     "nct": "NCT01622543",
-     "check": "pfs_median",
-     "verdict": "differs",
-     "detail": "Abstract: 7 months (FOLFOX/BEV + pelareorep). Registry values for Progression Free Survival: 7.33, 9.13."
-    },
-    {
-     "nct": "NCT01622543",
-     "check": "pfs_median",
-     "verdict": "differs",
-     "detail": "Abstract: 9 months (FOLFOX/BEV). Registry values for Progression Free Survival: 7.33, 9.13."
-    },
-    {
-     "nct": "NCT01622543",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.59 ratio (FOLFOX/BEV + pelareorep). Registry values for Progression Free Survival: 1.59."
-    },
-    {
-     "nct": "NCT01622543",
-     "check": "os_median",
-     "verdict": "differs",
-     "detail": "Abstract: 19.2 months (FOLFOX/BEV + pelareorep). Registry values for Overall Survival: 19.3, 20."
-    },
-    {
-     "nct": "NCT01622543",
-     "check": "os_median",
-     "verdict": "differs",
-     "detail": "Abstract: 20.1 months (FOLFOX/BEV). Registry values for Overall Survival: 19.3, 20."
-    },
-    {
-     "nct": "NCT01622543",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.22 ratio (FOLFOX/BEV + pelareorep). Registry values for Overall Survival: 1.24."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -35123,7 +34096,7 @@
      "quote": "HR 0.58; 95% CI 0.49-0.69",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -35238,56 +34211,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT02149108",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression-Free Survival (PFS) by Central Review Assessment; Overall Survival (OS). Primary endpoint in the abstract: overall survival and progression-free survival by central review (co-primary)."
-    },
-    {
-     "nct": "NCT02149108",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 768 enrolled. Abstract: 768 randomized."
-    },
-    {
-     "nct": "NCT02149108",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 6.4 months (nintedanib). Registry values for Overall Survival (OS): 6.05, 6.44."
-    },
-    {
-     "nct": "NCT02149108",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 6 months (placebo). Registry values for Overall Survival (OS): 6.05, 6.44."
-    },
-    {
-     "nct": "NCT02149108",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.01 ratio (nintedanib). Registry values for Overall Survival (OS): 1.01."
-    },
-    {
-     "nct": "NCT02149108",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.5 months (nintedanib). Registry values for Progression-Free Survival (PFS) by Central Review Assessment: 1.38, 1.51."
-    },
-    {
-     "nct": "NCT02149108",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.4 months (placebo). Registry values for Progression-Free Survival (PFS) by Central Review Assessment: 1.38, 1.51."
-    },
-    {
-     "nct": "NCT02149108",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.58 ratio (nintedanib). Registry values for Progression-Free Survival (PFS) by Central Review Assessment: 0.58."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -35757,7 +34681,7 @@
      "quote": "Arm-A/Arm-B grade \u2265III AEs: 70%/68%",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -35943,20 +34867,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT01661270",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression-free Survival (PFS). Primary endpoint in the abstract: progression-free survival."
-    },
-    {
-     "nct": "NCT01661270",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 332 enrolled. Abstract: 332 randomized."
-    }
-   ],
+   "registry_checks": [],
    "notices": [
     {
      "kind": "correction",
@@ -36349,20 +35260,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT01228734",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression Free Survival (PFS) Time. Primary endpoint in the abstract: progression-free survival time."
-    },
-    {
-     "nct": "NCT01228734",
-     "check": "patients",
-     "verdict": "differs",
-     "detail": "Registry: 553 enrolled. Abstract: 393 randomized."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -37589,20 +36487,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT02196688",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression Free Survival (PFS). Primary endpoint in the abstract: progression-free survival (PFS)."
-    },
-    {
-     "nct": "NCT02196688",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 71 enrolled. Abstract: 71 randomized."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -37982,80 +36867,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT01479465",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 266 enrolled. Abstract: 249 randomized."
-    },
-    {
-     "nct": "NCT01479465",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 5.5 months (FOLFIRI + simtuzumab 700 mg). Registry values for Progression Free Survival (PFS): 5.7, 5.8, 5.4, 5.5."
-    },
-    {
-     "nct": "NCT01479465",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 5.4 months (FOLFIRI + simtuzumab 200 mg). Registry values for Progression Free Survival (PFS): 5.7, 5.8, 5.4, 5.5."
-    },
-    {
-     "nct": "NCT01479465",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 5.8 months (FOLFIRI + placebo). Registry values for Progression Free Survival (PFS): 5.7, 5.8, 5.4, 5.5."
-    },
-    {
-     "nct": "NCT01479465",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.32 ratio (FOLFIRI + simtuzumab 700 mg). Registry values for Progression Free Survival (PFS): 1.45, 1.32."
-    },
-    {
-     "nct": "NCT01479465",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.45 ratio (FOLFIRI + simtuzumab 200 mg). Registry values for Progression Free Survival (PFS): 1.45, 1.32."
-    },
-    {
-     "nct": "NCT01479465",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 11.4 months (FOLFIRI + simtuzumab 700 mg). Registry values for Overall Survival (OS): 9.8, 16.3, 10.5, 11.4."
-    },
-    {
-     "nct": "NCT01479465",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 10.5 months (FOLFIRI + simtuzumab 200 mg). Registry values for Overall Survival (OS): 9.8, 16.3, 10.5, 11.4."
-    },
-    {
-     "nct": "NCT01479465",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 16.3 months (FOLFIRI + placebo). Registry values for Overall Survival (OS): 9.8, 16.3, 10.5, 11.4."
-    },
-    {
-     "nct": "NCT01479465",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 11.9 percent (FOLFIRI + simtuzumab 700 mg). Registry values for Objective Response Rate (ORR): 9.1, 10, 5.9, 11.9."
-    },
-    {
-     "nct": "NCT01479465",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 5.9 percent (FOLFIRI + simtuzumab 200 mg). Registry values for Objective Response Rate (ORR): 9.1, 10, 5.9, 11.9."
-    },
-    {
-     "nct": "NCT01479465",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 10 percent (FOLFIRI + placebo). Registry values for Objective Response Rate (ORR): 9.1, 10, 5.9, 11.9."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -38853,50 +37665,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT00265850",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Overall Survival. Primary endpoint in the abstract: overall survival."
-    },
-    {
-     "nct": "NCT00265850",
-     "check": "patients",
-     "verdict": "differs",
-     "detail": "Registry: 2334 enrolled. Abstract: 1137 randomized."
-    },
-    {
-     "nct": "NCT00265850",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 30 months (Cetuximab). Registry values for Overall Survival: 29, 30."
-    },
-    {
-     "nct": "NCT00265850",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 29 months (Bevacizumab). Registry values for Overall Survival: 29, 30."
-    },
-    {
-     "nct": "NCT00265850",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.88 ratio (Cetuximab). Registry values for Overall Survival: 0.88."
-    },
-    {
-     "nct": "NCT00265850",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 10.5 months (Cetuximab). Registry values for Progression-free Survival (PFS): 10.6, 10.5."
-    },
-    {
-     "nct": "NCT00265850",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 10.6 months (Bevacizumab). Registry values for Progression-free Survival (PFS): 10.6, 10.5."
-    }
-   ],
+   "registry_checks": [],
    "notices": [
     {
      "kind": "later_report",
@@ -39352,26 +38121,6 @@
      "consistency_note": null
     },
     {
-     "id": "28735067:a|os-hr|overall||b",
-     "arm": "A",
-     "measure": "os_hr",
-     "label": "OS hazard ratio",
-     "value": 0.84,
-     "unit": "ratio",
-     "ci_low": 0.55,
-     "ci_high": 1.28,
-     "comparator": "B",
-     "population": "overall",
-     "detail": null,
-     "quote": "HR 0.84, 95% CI: 0.55-1.28; p = 0.411",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
-     "audit_note": null,
-     "consistency_note": "OS hazard ratio 0.84 says A did better than B, but the medians say the opposite (12.3 vs 18.6 months)."
-    },
-    {
      "id": "28735067:a|os-median|overall||",
      "arm": "A",
      "measure": "os_median",
@@ -39444,6 +38193,24 @@
      "failed_checks": [],
      "audit_note": null,
      "consistency_note": null
+    },
+    {
+     "id": "28735067:a|os-hr|overall||b",
+     "arm": "B",
+     "measure": "os_hr",
+     "label": "OS hazard ratio",
+     "value": 0.84,
+     "unit": "ratio",
+     "ci_low": 0.55,
+     "ci_high": 1.28,
+     "comparator": "A",
+     "population": "overall",
+     "detail": null,
+     "quote": "HR 0.84, 95% CI: 0.55-1.28; p = 0.411",
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
+     "consistency_note": "OS hazard ratio 0.84 says A did better than B, but the medians say the opposite (12.3 vs 18.6 months)."
     },
     {
      "id": "28735067:b|os-median|overall||",
@@ -41908,26 +40675,6 @@
      "consistency_note": null
     },
     {
-     "id": "26487578:fu|pfs-hr|overall|progression-free-survival|iri",
-     "arm": "FU",
-     "measure": "pfs_hr",
-     "label": "PFS hazard ratio",
-     "value": 0.84,
-     "unit": "ratio",
-     "ci_low": 0.66,
-     "ci_high": 1.07,
-     "comparator": "IRI",
-     "population": "overall",
-     "detail": "progression-free survival",
-     "quote": "hazard ratio (HR) = 0.84 (0.66-1.07)",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
-     "audit_note": null,
-     "consistency_note": "PFS hazard ratio 0.84 says FU did better than IRI, but the medians say the opposite (5.2 vs 7.3 months)."
-    },
-    {
      "id": "26487578:fu|pfs-median|overall|progression-free-survival|iri",
      "arm": "FU",
      "measure": "pfs_median",
@@ -42000,6 +40747,24 @@
      "failed_checks": [],
      "audit_note": null,
      "consistency_note": null
+    },
+    {
+     "id": "26487578:fu|pfs-hr|overall|progression-free-survival|iri",
+     "arm": "IRI",
+     "measure": "pfs_hr",
+     "label": "PFS hazard ratio",
+     "value": 0.84,
+     "unit": "ratio",
+     "ci_low": 0.66,
+     "ci_high": 1.07,
+     "comparator": "FU",
+     "population": "overall",
+     "detail": "progression-free survival",
+     "quote": "hazard ratio (HR) = 0.84 (0.66-1.07)",
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
+     "consistency_note": "PFS hazard ratio 0.84 says FU did better than IRI, but the medians say the opposite (5.2 vs 7.3 months)."
     },
     {
      "id": "26487578:iri|pfs-median|overall|progression-free-survival|fu",
@@ -43566,44 +42331,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT00851084",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression Free Survival (PFS) Rate at 12 Months. Primary endpoint in the abstract: progression-free survival rate at 12 months."
-    },
-    {
-     "nct": "NCT00851084",
-     "check": "patients",
-     "verdict": "differs",
-     "detail": "Registry: 268 enrolled. Abstract: 236 randomized."
-    },
-    {
-     "nct": "NCT00851084",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 8.48 months (aflibercept/mFOLFOX6). Registry values for Progression Free Survival (PFS): 8.77, 8.48."
-    },
-    {
-     "nct": "NCT00851084",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 8.77 months (mFOLFOX6). Registry values for Progression Free Survival (PFS): 8.77, 8.48."
-    },
-    {
-     "nct": "NCT00851084",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 49.1 percent (aflibercept/mFOLFOX6). Registry values for Overall Objective Response Rate (ORR): 45.9, 49.1."
-    },
-    {
-     "nct": "NCT00851084",
-     "check": "orr",
-     "verdict": "agrees",
-     "detail": "Abstract: 45.9 percent (mFOLFOX6). Registry values for Overall Objective Response Rate (ORR): 45.9, 49.1."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -44863,6 +43591,24 @@
    ],
    "records": [
     {
+     "id": "27712015:panitumumab-plus-folfiri|os-hr|overall|hazard-ratio-for-overall-survival|bevacizumab-plus-folfiri",
+     "arm": "bevacizumab plus FOLFIRI",
+     "measure": "os_hr",
+     "label": "OS hazard ratio",
+     "value": 1.16,
+     "unit": "ratio",
+     "ci_low": 0.76,
+     "ci_high": 1.77,
+     "comparator": "panitumumab plus FOLFIRI",
+     "population": "overall",
+     "detail": "hazard ratio for overall survival",
+     "quote": "[hazard ratio (HR), 1.16; 95% CI, 0.76-1.77]",
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
+     "consistency_note": "OS hazard ratio 1.16 says panitumumab plus FOLFIRI did worse than bevacizumab plus FOLFIRI, but the medians say the opposite (16.2 vs 13.4 months)."
+    },
+    {
      "id": "27712015:bevacizumab-plus-folfiri|os-median|overall|median-overall-survival|panitumumab-plus-folfiri",
      "arm": "bevacizumab plus FOLFIRI",
      "measure": "os_median",
@@ -44875,26 +43621,6 @@
      "population": "overall",
      "detail": "median overall survival",
      "quote": "Median overall survival (OS) for panitumumab plus FOLFIRI and bevacizumab plus FOLFIRI were 16.2 and 13.4 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
-     "audit_note": null,
-     "consistency_note": "OS hazard ratio 1.16 says panitumumab plus FOLFIRI did worse than bevacizumab plus FOLFIRI, but the medians say the opposite (16.2 vs 13.4 months)."
-    },
-    {
-     "id": "27712015:panitumumab-plus-folfiri|os-hr|overall|hazard-ratio-for-overall-survival|bevacizumab-plus-folfiri",
-     "arm": "panitumumab plus FOLFIRI",
-     "measure": "os_hr",
-     "label": "OS hazard ratio",
-     "value": 1.16,
-     "unit": "ratio",
-     "ci_low": 0.76,
-     "ci_high": 1.77,
-     "comparator": "bevacizumab plus FOLFIRI",
-     "population": "overall",
-     "detail": "hazard ratio for overall survival",
-     "quote": "[hazard ratio (HR), 1.16; 95% CI, 0.76-1.77]",
      "status": "needs_review",
      "failed_checks": [
       "consistent"
@@ -45183,56 +43909,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT01111604",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression-Free Survival (PFS). Primary endpoint in the abstract: progression-free survival."
-    },
-    {
-     "nct": "NCT01111604",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 158 enrolled. Abstract: 158 randomized."
-    },
-    {
-     "nct": "NCT01111604",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 18.4 weeks (mFOLFOX-6). Registry values for Progression-Free Survival (PFS): 4.232, 4.921, 3.657."
-    },
-    {
-     "nct": "NCT01111604",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 21.4 weeks (RAM+mFOLFOX-6). Registry values for Progression-Free Survival (PFS): 4.232, 4.921, 3.657."
-    },
-    {
-     "nct": "NCT01111604",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 15.9 weeks (ICR+mFOLFOX-6). Registry values for Progression-Free Survival (PFS): 4.232, 4.921, 3.657."
-    },
-    {
-     "nct": "NCT01111604",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 53.6 weeks (mFOLFOX-6). Registry values for Overall Survival (OS): 12.327, 9.59, 9.659."
-    },
-    {
-     "nct": "NCT01111604",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 41.7 weeks (RAM+mFOLFOX-6). Registry values for Overall Survival (OS): 12.327, 9.59, 9.659."
-    },
-    {
-     "nct": "NCT01111604",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 42 weeks (ICR+mFOLFOX-6). Registry values for Overall Survival (OS): 12.327, 9.59, 9.659."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -48036,38 +46713,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT01607957",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Overall Survival. Primary endpoint in the abstract: overall survival."
-    },
-    {
-     "nct": "NCT01607957",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 800 enrolled. Abstract: 800 randomized."
-    },
-    {
-     "nct": "NCT01607957",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 5.3 months (placebo). Registry values for Overall Survival: 7.1, 5.3."
-    },
-    {
-     "nct": "NCT01607957",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 7.1 months (TAS-102). Registry values for Overall Survival: 7.1, 5.3."
-    },
-    {
-     "nct": "NCT01607957",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 0.68 ratio (TAS-102). Registry values for Overall Survival: 0.68."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -48444,44 +47090,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT00418938",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression-free Survival (PFS). Primary endpoint in the abstract: progression-free survival (PFS)."
-    },
-    {
-     "nct": "NCT00418938",
-     "check": "patients",
-     "verdict": "differs",
-     "detail": "Registry: 266 enrolled. Abstract: 182 randomized."
-    },
-    {
-     "nct": "NCT00418938",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 7.7 months (panitumumab). Registry values for Progression-free Survival (PFS): 7.7, 9.2, 3.7, 6.4."
-    },
-    {
-     "nct": "NCT00418938",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 9.2 months (bevacizumab). Registry values for Progression-free Survival (PFS): 7.7, 9.2, 3.7, 6.4."
-    },
-    {
-     "nct": "NCT00418938",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 18 months (panitumumab). Registry values for Overall Survival: 18, 21.4, 8.7, 13.5."
-    },
-    {
-     "nct": "NCT00418938",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 21.4 months (bevacizumab). Registry values for Overall Survival: 18, 21.4, 8.7, 13.5."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -49010,44 +47619,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT00609622",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Progression-free Survival (PFS). Primary endpoint in the abstract: progression-free survival."
-    },
-    {
-     "nct": "NCT00609622",
-     "check": "patients",
-     "verdict": "agrees",
-     "detail": "Registry: 191 enrolled. Abstract: 191 randomized."
-    },
-    {
-     "nct": "NCT00609622",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 9.3 months (sunitinib plus mFOLFOX6). Registry values for Progression-free Survival (PFS): 9.314, 15.408."
-    },
-    {
-     "nct": "NCT00609622",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 15.4 months (bevacizumab plus mFOLFOX6). Registry values for Progression-free Survival (PFS): 9.314, 15.408."
-    },
-    {
-     "nct": "NCT00609622",
-     "check": "os_median",
-     "verdict": "differs",
-     "detail": "Abstract: 23.7 months (sunitinib plus mFOLFOX6). Registry values for Overall Survival (OS): 19.387."
-    },
-    {
-     "nct": "NCT00609622",
-     "check": "os_median",
-     "verdict": "differs",
-     "detail": "Abstract: 34.1 months (bevacizumab plus mFOLFOX6). Registry values for Overall Survival (OS): 19.387."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -50588,80 +49160,7 @@
      "consistency_note": null
     }
    ],
-   "registry_checks": [
-    {
-     "nct": "NCT00614393",
-     "check": "primary_endpoint",
-     "verdict": "agrees",
-     "detail": "Registered primary outcome: Overall Survival (OS); Progression-free Survival (PFS); Percentage of Participants Who Have a Clinical or Laboratory Common Terminology Criteria for Adverse Events (CTCAE) Grade 3 to 5 Toxicity; Percentage of Participants Who Have a Drug-related Clinical or Laboratory CTCAE Grade 3 to 5 Toxicity; Pe. Primary endpoint in the abstract: progression-free survival (PFS) and overall survival (OS)."
-    },
-    {
-     "nct": "NCT00614393",
-     "check": "patients",
-     "verdict": "differs",
-     "detail": "Registry: 558 enrolled. Abstract: 344 randomized."
-    },
-    {
-     "nct": "NCT00614393",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 3.9 months (arm A). Registry values for Progression-free Survival (PFS): 3.9, 5.4, 5.6."
-    },
-    {
-     "nct": "NCT00614393",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 5.4 months (arm B). Registry values for Progression-free Survival (PFS): 3.9, 5.4, 5.6."
-    },
-    {
-     "nct": "NCT00614393",
-     "check": "pfs_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 5.6 months (arm C). Registry values for Progression-free Survival (PFS): 3.9, 5.4, 5.6."
-    },
-    {
-     "nct": "NCT00614393",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.33 ratio (arm A). Registry values for Progression-free Survival (PFS): 1.33, 1.13."
-    },
-    {
-     "nct": "NCT00614393",
-     "check": "pfs_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.13 ratio (arm B). Registry values for Progression-free Survival (PFS): 1.33, 1.13."
-    },
-    {
-     "nct": "NCT00614393",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 10.8 months (arm A). Registry values for Overall Survival (OS): 10.8, 11.6, 14."
-    },
-    {
-     "nct": "NCT00614393",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 11.6 months (arm B). Registry values for Overall Survival (OS): 10.8, 11.6, 14."
-    },
-    {
-     "nct": "NCT00614393",
-     "check": "os_median",
-     "verdict": "agrees",
-     "detail": "Abstract: 14 months (arm C). Registry values for Overall Survival (OS): 10.8, 11.6, 14."
-    },
-    {
-     "nct": "NCT00614393",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.41 ratio (arm A). Registry values for Overall Survival (OS): 1.41, 1.26."
-    },
-    {
-     "nct": "NCT00614393",
-     "check": "os_hr",
-     "verdict": "agrees",
-     "detail": "Abstract: 1.26 ratio (arm B). Registry values for Overall Survival (OS): 1.41, 1.26."
-    }
-   ],
+   "registry_checks": [],
    "notices": []
   },
   {
@@ -51128,7 +49627,7 @@
      "quote": "compared with with the placebo arm (4.5% vs 0.7%, 3.0% vs 0%, respectively)",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -52652,12 +51151,12 @@
      "population": "overall",
      "detail": "patients who began study treatment",
      "quote": "500 received cetuximab",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Patients who began treatment, not the number randomized.",
      "consistency_note": null
     },
     {
@@ -52709,12 +51208,12 @@
      "population": "overall",
      "detail": "infusion reactions",
      "quote": "one [<0.5%] patient vs nine [2%] patients",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "exact_value",
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Reported as <0.5% (one patient): a bound, not a value.",
      "consistency_note": null
     },
     {
@@ -52748,12 +51247,12 @@
      "population": "overall",
      "detail": "patients who began study treatment",
      "quote": "499 received panitumumab",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Patients who began treatment, not the number randomized.",
      "consistency_note": null
     },
     {
@@ -54131,13 +52630,13 @@
      "population": "overall",
      "detail": null,
      "quote": "We randomly assigned 508 patients with untreated metastatic colorectal cancer",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 1016, more than the 508 randomized."
     },
     {
@@ -54228,13 +52727,13 @@
      "population": "overall",
      "detail": null,
      "quote": "We randomly assigned 508 patients with untreated metastatic colorectal cancer",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 1016, more than the 508 randomized."
     },
     {
@@ -55445,7 +53944,7 @@
      "quote": "vs cediranib 20 mg (81.4%)",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -55535,7 +54034,7 @@
      "quote": "cediranib 30 mg, n=73",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -57561,12 +56060,12 @@
      "population": "overall",
      "detail": null,
      "quote": "Patients, disease-free after CRC metastasectomy and perioperative chemotherapy (n = 74), were randomized to injections of autologous DCs modified with PANVAC",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 148, more than the 74 randomized."
     },
     {
@@ -57624,12 +56123,12 @@
      "population": "overall",
      "detail": null,
      "quote": "Patients, disease-free after CRC metastasectomy and perioperative chemotherapy (n = 74), were randomized to injections of autologous DCs modified with PANVAC",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 148, more than the 74 randomized."
     },
     {
@@ -58588,13 +57087,13 @@
      "population": "overall",
      "detail": null,
      "quote": "Six hundred and seventy-two patients with advanced, measurable CRC following prior fluoropyrimidine-containing chemotherapy were randomised",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "value_in_quote",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 1344, more than the 672 randomized."
     },
     {
@@ -58649,13 +57148,13 @@
      "population": "overall",
      "detail": null,
      "quote": "Six hundred and seventy-two patients with advanced, measurable CRC following prior fluoropyrimidine-containing chemotherapy were randomised",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "value_in_quote",
       "second_pass_agrees",
       "consistent"
      ],
-     "audit_note": null,
+     "audit_note": "The trial's total was recorded under each arm.",
      "consistency_note": "Patients per arm add up to 1344, more than the 672 randomized."
     },
     {
@@ -59008,7 +57507,7 @@
      "quote": "HR, 1.36; 95% CI, 0.82-2.24",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -60238,7 +58737,7 @@
      "quote": "Median time to progression was 8.7 months in arm A and 14.4 months in arm B.",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": null,
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -61925,7 +60424,7 @@
      "quote": "hand-foot syndrome (21 [4%] vs 15 [3%])",
      "status": "verified",
      "failed_checks": [],
-     "audit_note": "Random sample: value, arm, measure and population checked against the source sentence.",
+     "audit_note": "Random sample: checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -61977,12 +60476,12 @@
      "population": "per-protocol",
      "detail": null,
      "quote": "arm A, n=467; arm C, n=511",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Per-protocol population size, not the number randomized.",
      "consistency_note": null
     },
     {
@@ -62016,11 +60515,11 @@
      "population": "intention-to-treat",
      "detail": null,
      "quote": "Median survival in the ITT population (n=815 in both groups) was 15.8 months (IQR 9.4-26.1) in arm A",
-     "status": "needs_review",
+     "status": "verified",
      "failed_checks": [
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -62126,12 +60625,12 @@
      "population": "per-protocol",
      "detail": null,
      "quote": "arm A, n=467; arm C, n=511",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "randomized_count",
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Per-protocol population size, not the number randomized.",
      "consistency_note": null
     },
     {
@@ -62141,18 +60640,15 @@
      "label": "OS hazard ratio",
      "value": 1.084,
      "unit": "ratio",
-     "ci_low": 1.008,
-     "ci_high": 1.165,
+     "ci_low": null,
+     "ci_high": null,
      "comparator": "A",
      "population": "intention-to-treat",
      "detail": null,
      "quote": "hazard ratio [HR] 1.084, 80% CI 1.008-1.165",
-     "status": "needs_review",
-     "failed_checks": [
-      "ci_is_95",
-      "second_pass_agrees"
-     ],
-     "audit_note": null,
+     "status": "corrected",
+     "failed_checks": [],
+     "audit_note": "The interval given is an 80% CI, not 95%.",
      "consistency_note": null
     },
     {
@@ -62186,11 +60682,11 @@
      "population": "normal baseline platelet count",
      "detail": "per-protocol subgroup",
      "quote": "the HR for comparison of arm C and arm A in patients with a normal platelet count was 0.96 (95% CI 0.80-1.15, p=0.66)",
-     "status": "needs_review",
+     "status": "verified",
      "failed_checks": [
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -62206,11 +60702,11 @@
      "population": "raised baseline platelet count",
      "detail": "per-protocol subgroup",
      "quote": "versus 1.54 (1.17-2.03, p=0.0018) in patients with a raised platelet count",
-     "status": "needs_review",
+     "status": "verified",
      "failed_checks": [
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Checked against the abstract.",
      "consistency_note": null
     },
     {
@@ -62244,11 +60740,11 @@
      "population": "intention-to-treat",
      "detail": null,
      "quote": "and 14.4 months (8.0-24.7) in arm C",
-     "status": "needs_review",
+     "status": "verified",
      "failed_checks": [
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "Checked against the abstract.",
      "consistency_note": null
     }
    ],
@@ -62950,12 +61446,12 @@
      "population": "overall",
      "detail": "stable disease in an additional patients",
      "quote": "and in 10.9% of patients assigned to supportive care alone",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "dcr_named",
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "10.9% is stable disease; the abstract does not state a disease control rate.",
      "consistency_note": null
     },
     {
@@ -63007,12 +61503,12 @@
      "population": "overall",
      "detail": "partial responses",
      "quote": "but in none in the group assigned to supportive care alone",
-     "status": "needs_review",
+     "status": "verified",
      "failed_checks": [
       "value_in_quote",
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "No partial responses in the supportive-care group: 0%.",
      "consistency_note": null
     },
     {
@@ -63046,12 +61542,12 @@
      "population": "overall",
      "detail": "stable disease in an additional patients",
      "quote": "the disease was stable in an additional 31.4% of patients assigned to cetuximab",
-     "status": "needs_review",
+     "status": "rejected",
      "failed_checks": [
       "dcr_named",
       "second_pass_agrees"
      ],
-     "audit_note": null,
+     "audit_note": "31.4% is stable disease only; the disease control rate is not stated.",
      "consistency_note": null
     },
     {
@@ -63662,6 +62158,253 @@
       "second_pass_agrees"
      ],
      "audit_note": "First-line PFS from randomization, as stated.",
+     "consistency_note": null
+    }
+   ],
+   "registry_checks": [],
+   "notices": []
+  },
+  {
+   "pmid": "10944126",
+   "title": "Leucovorin and fluorouracil with or without oxaliplatin as first-line treatment in advanced colorectal cancer.",
+   "journal": "J Clin Oncol",
+   "year": 2000,
+   "authors": "de Gramont A, Figer A, Seymour M, et al.",
+   "doi": "10.1200/JCO.2000.18.16.2938",
+   "nct_ids": [],
+   "acronym": "LV5FU2-oxaliplatin",
+   "phase": "3",
+   "line": "first",
+   "biomarker": null,
+   "n_randomized": 420,
+   "primary_endpoint": "progression-free survival",
+   "arms": [
+    {
+     "label": "LV5FU2",
+     "regimen": "leucovorin plus bolus and infusional fluorouracil every 2 weeks"
+    },
+    {
+     "label": "LV5FU2 + oxaliplatin",
+     "regimen": "leucovorin plus bolus and infusional fluorouracil every 2 weeks with oxaliplatin 85 mg/m(2) on day 1"
+    }
+   ],
+   "records": [
+    {
+     "id": "10944126:lv5fu2|grade3plus-ae-rate|overall|neutropenia|",
+     "arm": "LV5FU2",
+     "measure": "grade3plus_ae_rate",
+     "label": "Grade >=3 adverse events",
+     "value": 5.3,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "neutropenia",
+     "quote": "grade 3/4 neutropenia (41. 7% v 5.3% of patients)",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Random sample: value, arm, measure and population checked against the source sentence.",
+     "consistency_note": null
+    },
+    {
+     "id": "10944126:lv5fu2|grade3plus-ae-rate|overall|neurosensory-toxicity|",
+     "arm": "LV5FU2",
+     "measure": "grade3plus_ae_rate",
+     "label": "Grade >=3 adverse events",
+     "value": 0.0,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "neurosensory toxicity",
+     "quote": "grade 3 neurosensory toxicity (18.2% v 0%)",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Random sample: value, arm, measure and population checked against the source sentence.",
+     "consistency_note": null
+    },
+    {
+     "id": "10944126:lv5fu2|grade3plus-ae-rate|overall|diarrhea|",
+     "arm": "LV5FU2",
+     "measure": "grade3plus_ae_rate",
+     "label": "Grade >=3 adverse events",
+     "value": 5.3,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "diarrhea",
+     "quote": "grade 3/4 diarrhea (11.9% v 5.3%)",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": null,
+     "consistency_note": null
+    },
+    {
+     "id": "10944126:lv5fu2|orr|overall|response-rate|",
+     "arm": "LV5FU2",
+     "measure": "orr",
+     "label": "Objective response rate",
+     "value": 22.3,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "response rate",
+     "quote": "better response rate (50.7% v 22.3%; P =.0001)",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
+     "consistency_note": null
+    },
+    {
+     "id": "10944126:lv5fu2|os-median|overall|overall-survival-not-statistically-significant|",
+     "arm": "LV5FU2",
+     "measure": "os_median",
+     "label": "Median OS",
+     "value": 14.7,
+     "unit": "months",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "overall survival, not statistically significant",
+     "quote": "median, 16.2 v 14.7 months; P =. 12",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
+     "consistency_note": null
+    },
+    {
+     "id": "10944126:lv5fu2|pfs-median|overall|progression-free-survival|",
+     "arm": "LV5FU2",
+     "measure": "pfs_median",
+     "label": "Median PFS",
+     "value": 6.2,
+     "unit": "months",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "progression-free survival",
+     "quote": "significantly longer progression-free survival (median, 9.0 v 6.2 months; P =.0003)",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
+     "consistency_note": null
+    },
+    {
+     "id": "10944126:lv5fu2-+-oxaliplatin|grade3plus-ae-rate|overall|neurosensory-toxicity|",
+     "arm": "LV5FU2 + oxaliplatin",
+     "measure": "grade3plus_ae_rate",
+     "label": "Grade >=3 adverse events",
+     "value": 18.2,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "neurosensory toxicity",
+     "quote": "grade 3 neurosensory toxicity (18.2% v 0%)",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Random sample: value, arm, measure and population checked against the source sentence.",
+     "consistency_note": null
+    },
+    {
+     "id": "10944126:lv5fu2-+-oxaliplatin|grade3plus-ae-rate|overall|neutropenia|",
+     "arm": "LV5FU2 + oxaliplatin",
+     "measure": "grade3plus_ae_rate",
+     "label": "Grade >=3 adverse events",
+     "value": 41.7,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "neutropenia",
+     "quote": "grade 3/4 neutropenia (41. 7% v 5.3% of patients)",
+     "status": "needs_review",
+     "failed_checks": [
+      "value_in_quote"
+     ],
+     "audit_note": null,
+     "consistency_note": null
+    },
+    {
+     "id": "10944126:lv5fu2-+-oxaliplatin|grade3plus-ae-rate|overall|diarrhea|",
+     "arm": "LV5FU2 + oxaliplatin",
+     "measure": "grade3plus_ae_rate",
+     "label": "Grade >=3 adverse events",
+     "value": 11.9,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": null,
+     "population": "overall",
+     "detail": "diarrhea",
+     "quote": "grade 3/4 diarrhea (11.9% v 5.3%)",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": null,
+     "consistency_note": null
+    },
+    {
+     "id": "10944126:lv5fu2-+-oxaliplatin|orr|overall|response-rate|lv5fu2",
+     "arm": "LV5FU2 + oxaliplatin",
+     "measure": "orr",
+     "label": "Objective response rate",
+     "value": 50.7,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "LV5FU2",
+     "population": "overall",
+     "detail": "response rate",
+     "quote": "better response rate (50.7% v 22.3%; P =.0001)",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
+     "consistency_note": null
+    },
+    {
+     "id": "10944126:lv5fu2-+-oxaliplatin|os-median|overall|overall-survival-not-statistically-significant|lv5fu2",
+     "arm": "LV5FU2 + oxaliplatin",
+     "measure": "os_median",
+     "label": "Median OS",
+     "value": 16.2,
+     "unit": "months",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "LV5FU2",
+     "population": "overall",
+     "detail": "overall survival, not statistically significant",
+     "quote": "median, 16.2 v 14.7 months; P =. 12",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
+     "consistency_note": null
+    },
+    {
+     "id": "10944126:lv5fu2-+-oxaliplatin|pfs-median|overall|progression-free-survival|lv5fu2",
+     "arm": "LV5FU2 + oxaliplatin",
+     "measure": "pfs_median",
+     "label": "Median PFS",
+     "value": 9.0,
+     "unit": "months",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "LV5FU2",
+     "population": "overall",
+     "detail": "progression-free survival",
+     "quote": "significantly longer progression-free survival (median, 9.0 v 6.2 months; P =.0003)",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
      "consistency_note": null
     }
    ],

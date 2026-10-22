@@ -1,11 +1,11 @@
 [
  {
   "date": "2026-10-22",
-  "spend_usd": 1.3952,
-  "screened": 1401,
-  "included": 237,
-  "secondary": 222,
-  "excluded": 933,
+  "spend_usd": 1.4199,
+  "screened": 1451,
+  "included": 250,
+  "secondary": 224,
+  "excluded": 968,
   "extracted": [
    {
     "pmid": "28383633",
@@ -192,18 +192,18 @@
    {
     "pmid": "27712015",
     "name": "WJOG 6210G",
-    "verified": 1,
-    "review": 3,
+    "verified": 2,
+    "review": 2,
     "headline": {
-     "label": "PFS hazard ratio",
+     "label": "OS hazard ratio",
      "items": [
       {
-       "arm": "panitumumab plus FOLFIRI",
-       "comparator": "bevacizumab plus FOLFIRI",
-       "value": 1.14,
+       "arm": "bevacizumab plus FOLFIRI",
+       "comparator": "panitumumab plus FOLFIRI",
+       "value": 1.16,
        "unit": "ratio",
-       "ci_low": 0.78,
-       "ci_high": 1.66,
+       "ci_low": 0.76,
+       "ci_high": 1.77,
        "population": "overall"
       }
      ]
@@ -510,8 +510,8 @@
    {
     "pmid": "26487578",
     "name": "FFCD 2001-02",
-    "verified": 14,
-    "review": 3,
+    "verified": 15,
+    "review": 2,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -1120,7 +1120,7 @@
     "pmid": "25337750",
     "name": "TRIBE",
     "verified": 8,
-    "review": 3,
+    "review": 1,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -1480,7 +1480,7 @@
     "pmid": "23657083",
     "name": "A randomized phase II study of immunization with dendritic cells modified with poxvecto\u2026",
     "verified": 0,
-    "review": 6,
+    "review": 4,
     "headline": null
    },
    {
@@ -1516,7 +1516,7 @@
     "pmid": "23953030",
     "name": "PICCOLO",
     "verified": 2,
-    "review": 4,
+    "review": 2,
     "headline": null
    },
    {
@@ -2114,16 +2114,16 @@
     "headline": null
    }
   ],
-  "verified_numbers": 600,
-  "review_numbers": 374,
+  "verified_numbers": 602,
+  "review_numbers": 366,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
-    "n": 295
+    "n": 289
    },
    {
     "reason": "the count was not stated as randomized",
-    "n": 57
+    "n": 55
    },
    {
     "reason": "its unit did not fit the measure",
@@ -2131,11 +2131,7 @@
    },
    {
     "reason": "the number was not in its quote",
-    "n": 24
-   },
-   {
-    "reason": "it contradicted the trial's other numbers",
-    "n": 12
+    "n": 22
    },
    {
     "reason": "its unit is not the one the source uses",
@@ -2148,6 +2144,10 @@
    {
     "reason": "the value was implausible",
     "n": 5
+   },
+   {
+    "reason": "it contradicted the trial's other numbers",
+    "n": 4
    },
    {
     "reason": "the quote was not found word for word",
@@ -2166,7 +2166,7 @@
     "n": 2
    }
   ],
-  "corrections": 0
+  "corrections": 9
  },
  {
   "date": "2026-10-21",
@@ -2530,9 +2530,22 @@
    {
     "pmid": "31132111",
     "name": "CUFOX",
-    "verified": 0,
-    "review": 8,
-    "headline": null
+    "verified": 2,
+    "review": 2,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "CUFOX",
+       "comparator": "FOLFOX",
+       "value": 0.34,
+       "unit": "ratio",
+       "ci_low": 0.14,
+       "ci_high": 0.82,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "30552157",
@@ -2833,7 +2846,7 @@
     "pmid": "30422156",
     "name": "PRODIGE18",
     "verified": 6,
-    "review": 4,
+    "review": 2,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -3056,8 +3069,8 @@
    {
     "pmid": "29551560",
     "name": "A Randomized Phase II Study of Axitinib as Maintenance Therapy After First-line Treatme\u2026",
-    "verified": 8,
-    "review": 4,
+    "verified": 9,
+    "review": 3,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -3250,7 +3263,7 @@
     "pmid": "29211295",
     "name": "E4203",
     "verified": 0,
-    "review": 10,
+    "review": 6,
     "headline": null
    },
    {
@@ -3435,18 +3448,18 @@
    {
     "pmid": "28735067",
     "name": "Italian Group for the Study of Gastrointestinal Cancer phase III trial",
-    "verified": 5,
-    "review": 3,
+    "verified": 6,
+    "review": 2,
     "headline": {
-     "label": "PFS hazard ratio",
+     "label": "OS hazard ratio",
      "items": [
       {
-       "arm": "A",
-       "comparator": "B",
-       "value": 1.04,
+       "arm": "B",
+       "comparator": "A",
+       "value": 0.84,
        "unit": "ratio",
-       "ci_low": 0.69,
-       "ci_high": 1.56,
+       "ci_low": 0.55,
+       "ci_high": 1.28,
        "population": "overall"
       }
      ]
@@ -3522,12 +3535,12 @@
     }
    }
   ],
-  "verified_numbers": 398,
-  "review_numbers": 229,
+  "verified_numbers": 402,
+  "review_numbers": 215,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
-    "n": 185
+    "n": 173
    },
    {
     "reason": "its unit did not fit the measure",
@@ -3535,19 +3548,15 @@
    },
    {
     "reason": "the count was not stated as randomized",
-    "n": 26
-   },
-   {
-    "reason": "its unit is not the one the source uses",
-    "n": 17
+    "n": 23
    },
    {
     "reason": "its interval was not a 95% interval",
     "n": 16
    },
    {
-    "reason": "it contradicted the trial's other numbers",
-    "n": 14
+    "reason": "its unit is not the one the source uses",
+    "n": 13
    },
    {
     "reason": "it was not stated as a disease control rate",
@@ -3559,10 +3568,14 @@
    },
    {
     "reason": "the value was implausible",
-    "n": 6
+    "n": 4
    },
    {
     "reason": "the value was a bound, not exact",
+    "n": 2
+   },
+   {
+    "reason": "it contradicted the trial's other numbers",
     "n": 2
    },
    {
@@ -3584,6 +3597,35 @@
   "secondary": 221,
   "excluded": 828,
   "extracted": [
+   {
+    "pmid": "10944126",
+    "name": "LV5FU2-oxaliplatin",
+    "verified": 11,
+    "review": 1,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "LV5FU2",
+       "comparator": null,
+       "value": 14.7,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "LV5FU2 + oxaliplatin",
+       "comparator": "LV5FU2",
+       "value": 16.2,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
    {
     "pmid": "14657227",
     "name": "GERCOR",
@@ -3665,8 +3707,8 @@
    {
     "pmid": "18003960",
     "name": "EPIC",
-    "verified": 9,
-    "review": 3,
+    "verified": 10,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -3734,11 +3776,20 @@
    {
     "pmid": "21641867",
     "name": "COIN",
-    "verified": 12,
-    "review": 7,
+    "verified": 17,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
+      {
+       "arm": "C",
+       "comparator": "A",
+       "value": 1.084,
+       "unit": "ratio",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "intention-to-treat"
+      },
       {
        "arm": "C",
        "comparator": "A",
@@ -3747,6 +3798,15 @@
        "ci_low": 0.986,
        "ci_high": 1.198,
        "population": "per-protocol"
+      },
+      {
+       "arm": "C",
+       "comparator": "A",
+       "value": 0.96,
+       "unit": "ratio",
+       "ci_low": 0.8,
+       "ci_high": 1.15,
+       "population": "normal baseline platelet count"
       }
      ]
     }
@@ -3762,7 +3822,7 @@
     "pmid": "24739896",
     "name": "ASPECCT",
     "verified": 8,
-    "review": 3,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -3781,9 +3841,22 @@
    {
     "pmid": "31268481",
     "name": "Maintenance Therapy With Panitumumab Alone vs Panitumumab Plus Fluorouracil-Leucovorin \u2026",
-    "verified": 2,
-    "review": 7,
-    "headline": null
+    "verified": 7,
+    "review": 0,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "arm B",
+       "comparator": "arm A",
+       "value": 1.51,
+       "unit": "ratio",
+       "ci_low": 1.11,
+       "ci_high": 2.07,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "34533973",
@@ -3808,27 +3881,18 @@
    {
     "pmid": "37721754",
     "name": "TIME",
-    "verified": 7,
-    "review": 1,
+    "verified": 8,
+    "review": 0,
     "headline": {
-     "label": "Median OS",
+     "label": "PFS hazard ratio",
      "items": [
       {
-       "arm": "Cetuximab maintenance",
-       "comparator": null,
-       "value": 24.8,
-       "unit": "months",
-       "ci_low": 18.7,
-       "ci_high": 30.4,
-       "population": "overall"
-      },
-      {
        "arm": "Observation",
-       "comparator": null,
-       "value": 19.7,
-       "unit": "months",
-       "ci_low": 13.3,
-       "ci_high": 24.4,
+       "comparator": "Cetuximab maintenance",
+       "value": 1.63,
+       "unit": "ratio",
+       "ci_low": 1.01,
+       "ci_high": 2.62,
        "population": "overall"
       }
      ]
@@ -3896,7 +3960,7 @@
     "pmid": "42525921",
     "name": "COMMIT",
     "verified": 4,
-    "review": 6,
+    "review": 4,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -3952,7 +4016,7 @@
     "pmid": "42859101",
     "name": "EGFR Targeting With Afatinib and Cetuximab Versus Cetuximab Alone in Chemorefractory Wi\u2026",
     "verified": 4,
-    "review": 4,
+    "review": 3,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -4208,37 +4272,19 @@
    {
     "pmid": "41980919",
     "name": "STRATEGIC-1",
-    "verified": 8,
-    "review": 4,
+    "verified": 9,
+    "review": 3,
     "headline": {
-     "label": "Objective response rate",
+     "label": "OS hazard ratio",
      "items": [
-      {
-       "arm": "A",
-       "comparator": "B",
-       "value": 82.4,
-       "unit": "percent",
-       "ci_low": null,
-       "ci_high": null,
-       "population": "first-line group"
-      },
-      {
-       "arm": "A",
-       "comparator": "B",
-       "value": 20.7,
-       "unit": "percent",
-       "ci_low": null,
-       "ci_high": null,
-       "population": "second-line group"
-      },
       {
        "arm": "B",
        "comparator": "A",
-       "value": 65.4,
-       "unit": "percent",
-       "ci_low": null,
-       "ci_high": null,
-       "population": "first-line group"
+       "value": 1.3,
+       "unit": "ratio",
+       "ci_low": 0.99,
+       "ci_high": 1.72,
+       "population": "overall"
       }
      ]
     }
@@ -4569,7 +4615,7 @@
     "pmid": "39602630",
     "name": "CheckMate 8HW",
     "verified": 0,
-    "review": 6,
+    "review": 4,
     "headline": null
    },
    {
@@ -4868,8 +4914,8 @@
    {
     "pmid": "38438735",
     "name": "CAPability-01",
-    "verified": 4,
-    "review": 9,
+    "verified": 6,
+    "review": 6,
     "headline": {
      "label": "Median PFS",
      "items": [
@@ -5461,7 +5507,7 @@
     "pmid": "35739299",
     "name": "NCT02316340",
     "verified": 2,
-    "review": 2,
+    "review": 0,
     "headline": {
      "label": "Median PFS",
      "items": [
@@ -5510,7 +5556,7 @@
     "pmid": "35666229",
     "name": "TRIPLETE",
     "verified": 5,
-    "review": 6,
+    "review": 4,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -5639,7 +5685,7 @@
     "pmid": "35179586",
     "name": "ACCRU",
     "verified": 13,
-    "review": 5,
+    "review": 4,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -5947,7 +5993,7 @@
     "pmid": "34957976",
     "name": "Effect of pentoxifylline on colon cancer patients treated with chemotherapy (Part I).",
     "verified": 1,
-    "review": 4,
+    "review": 1,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -6092,7 +6138,7 @@
     "pmid": "32037284",
     "name": "The effect of nutritional counseling on muscle mass and treatment outcome in patients w\u2026",
     "verified": 0,
-    "review": 5,
+    "review": 3,
     "headline": null
    },
    {
@@ -6192,36 +6238,32 @@
     }
    }
   ],
-  "verified_numbers": 788,
-  "review_numbers": 393,
+  "verified_numbers": 814,
+  "review_numbers": 354,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
-    "n": 330
+    "n": 300
    },
    {
     "reason": "its unit did not fit the measure",
-    "n": 56
+    "n": 54
    },
    {
     "reason": "the count was not stated as randomized",
-    "n": 55
-   },
-   {
-    "reason": "it contradicted the trial's other numbers",
-    "n": 32
+    "n": 45
    },
    {
     "reason": "the number was not in its quote",
-    "n": 19
+    "n": 18
    },
    {
-    "reason": "it was not stated as a disease control rate",
-    "n": 9
+    "reason": "it contradicted the trial's other numbers",
+    "n": 10
    },
    {
     "reason": "its interval was not a 95% interval",
-    "n": 8
+    "n": 7
    },
    {
     "reason": "its unit is not the one the source uses",
@@ -6232,12 +6274,12 @@
     "n": 4
    },
    {
-    "reason": "the quote was not found word for word",
-    "n": 2
+    "reason": "it was not stated as a disease control rate",
+    "n": 4
    },
    {
-    "reason": "the value was a bound, not exact",
-    "n": 1
+    "reason": "the quote was not found word for word",
+    "n": 2
    },
    {
     "reason": "it described a non-standard endpoint",

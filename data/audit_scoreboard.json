@@ -9,6 +9,16 @@
    "review_corrected": 7,
    "review_rejected": 0,
    "notes": "First audit, on the 19-trial test set (kept out of the public dataset). Of 100 numbers marked verified, 96 were correct: 81 compared with hand-checked values (79 correct), 18 picked at random (17 correct) and 1 found by a new check (wrong). 16 review-queue items were also judged. Systematic error: non-standard time endpoints (second PFS, PFS on treatment, failure-free survival, duration of disease control) filed as PFS or TTP; fixed with a new measure and a code check."
+  },
+  {
+   "date": "2026-10-22",
+   "auditor": "Claude (Opus 5.5) via Claude Code",
+   "sampled": 17,
+   "correct": 16,
+   "review_confirmed": 11,
+   "review_corrected": 9,
+   "review_rejected": 40,
+   "notes": "Audit 2. Published accuracy: 16 of 17 sampled verified numbers correct (one 'randomized' count was the number assessed). The review queue and the 24 consistency contradictions showed systematic errors: counts of treated or assessed patients filed as randomized, trial totals under each arm, hazard ratios recorded the wrong way round (8), stable disease or landmark rates filed as disease control, an 80% interval as 95%, and medians in days recorded as weeks. Fixed with six new code checks and extract-v3."
   }
  ]
 }

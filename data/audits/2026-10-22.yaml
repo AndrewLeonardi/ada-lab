@@ -1,0 +1,344 @@
+date: '2026-10-22'
+auditor: Claude (Opus 5.5) via Claude Code
+summary: 'Audit 2. Published accuracy: 16 of 17 sampled verified numbers correct (one ''randomized'' count was the
+  number assessed). The review queue and the 24 consistency contradictions showed systematic errors: counts of treated
+  or assessed patients filed as randomized, trial totals under each arm, hazard ratios recorded the wrong way round
+  (8), stable disease or landmark rates filed as disease control, an 80% interval as 95%, and medians in days recorded
+  as weeks. Fixed with six new code checks and extract-v3.'
+items:
+- id: 30054049:arm-b|grade3plus-ae-rate|overall|any-grade-3-or-worse-adverse-event|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 30010751:nintedanib|pfs-hr|overall||placebo
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 23299530:cediranib-20-mg|grade3plus-ae-rate|overall|grade-3-or-worse-adverse-events|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 31003911:atezolizumab-plus-cobimetinib|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 29346040:bevacizumab-maintenance|os-median|overall|median-overall-survival|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 22294255:arm-a|ttp-median|overall||
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 26505681:placebo|grade3plus-ae-rate|overall|nausea|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 38312102:arm-a|grade3plus-ae-rate|overall|neutropenia-treatment-related-|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 23299530:cediranib-30-mg|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 21641867:a|grade3plus-ae-rate|per-protocol|hand-foot-syndrome|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 24188685:axitinib-folfiri|os-hr|overall|overall-survival-axitinib-folfiri-vs-bevacizumab-folfiri|bevacizumab-folfiri
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 38870931:serplulimab-group|grade3plus-ae-rate|overall|treatment-related-adverse-events|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 39779412:arm-a|orr|overall|response-rate|
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 29215955:trifluridine-tipiracil|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 34309665:experimental|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 29551560:arm-b|n-randomized|overall||
+  pre_status: verified
+  verdict: correct
+  note: 'Random sample: checked against the abstract.'
+- id: 35179586:placebo|n-randomized|overall||
+  pre_status: verified
+  verdict: wrong
+  note: 46 is the number assessed for efficacy, not randomized (133 were randomized; per-arm randomized counts are
+    not given).
+- id: 18003960:best-supportive-care-alone|orr|overall|partial-responses|
+  pre_status: needs_review
+  verdict: correct
+  note: 'No partial responses in the supportive-care group: 0%.'
+- id: 18003960:cetuximab-plus-best-supportive-care|dcr|overall|stable-disease-in-an-additional-patients|
+  pre_status: needs_review
+  verdict: wrong
+  note: 31.4% is stable disease only; the disease control rate is not stated.
+- id: 18003960:best-supportive-care-alone|dcr|overall|stable-disease-in-an-additional-patients|
+  pre_status: needs_review
+  verdict: wrong
+  note: 10.9% is stable disease; the abstract does not state a disease control rate.
+- id: 21641867:a|os-median|intention-to-treat||
+  pre_status: needs_review
+  verdict: correct
+  note: Checked against the abstract.
+- id: 21641867:c|os-median|intention-to-treat||
+  pre_status: needs_review
+  verdict: correct
+  note: Checked against the abstract.
+- id: 21641867:c|os-hr|normal-baseline-platelet-count|per-protocol-subgroup|a
+  pre_status: needs_review
+  verdict: correct
+  note: Checked against the abstract.
+- id: 21641867:c|os-hr|raised-baseline-platelet-count|per-protocol-subgroup|a
+  pre_status: needs_review
+  verdict: correct
+  note: Checked against the abstract.
+- id: 31268481:arm-a|grade3plus-ae-rate|overall|treatment-related-adverse-events-during-maintenance|
+  pre_status: needs_review
+  verdict: correct
+  note: Checked against the abstract.
+- id: 31268481:arm-b|grade3plus-ae-rate|overall|treatment-related-adverse-events-during-maintenance|
+  pre_status: needs_review
+  verdict: correct
+  note: Checked against the abstract.
+- id: 31268481:arm-a|grade3plus-ae-rate|overall|panitumumab-related-adverse-events-during-maintenance|
+  pre_status: needs_review
+  verdict: correct
+  note: Checked against the abstract.
+- id: 31268481:arm-b|grade3plus-ae-rate|overall|panitumumab-related-adverse-events-during-maintenance|
+  pre_status: needs_review
+  verdict: correct
+  note: Checked against the abstract.
+- id: 21641867:c|os-hr|intention-to-treat||a
+  pre_status: needs_review
+  verdict: wrong
+  note: The interval given is an 80% CI, not 95%.
+  corrected:
+    ci_low: null
+    ci_high: null
+- id: 21641867:a|n-randomized|per-protocol||
+  pre_status: needs_review
+  verdict: wrong
+  note: Per-protocol population size, not the number randomized.
+- id: 21641867:c|n-randomized|per-protocol||
+  pre_status: needs_review
+  verdict: wrong
+  note: Per-protocol population size, not the number randomized.
+- id: 24739896:panitumumab|n-randomized|overall|patients-who-began-study-treatment|
+  pre_status: needs_review
+  verdict: wrong
+  note: Patients who began treatment, not the number randomized.
+- id: 24739896:cetuximab|n-randomized|overall|patients-who-began-study-treatment|
+  pre_status: needs_review
+  verdict: wrong
+  note: Patients who began treatment, not the number randomized.
+- id: 24739896:panitumumab|grade3plus-ae-rate|overall|infusion-reactions|
+  pre_status: needs_review
+  verdict: wrong
+  note: 'Reported as <0.5% (one patient): a bound, not a value.'
+- id: 31268481:arm-a|pfs-hr|overall|10-month-pfs-arm-b-vs-arm-a|arm-b
+  pre_status: needs_review
+  verdict: wrong
+  note: The hazard ratio 1.51 is arm B versus arm A (arm B was inferior).
+  corrected:
+    arm: arm B
+    comparator: arm A
+- id: 31268481:arm-a|pfs-median|overall|10-month-pfs-rate|
+  pre_status: needs_review
+  verdict: wrong
+  note: A 10-month PFS rate, not a median.
+- id: 31268481:arm-b|pfs-median|overall|10-month-pfs-rate|
+  pre_status: needs_review
+  verdict: wrong
+  note: A 10-month PFS rate, not a median.
+- id: 23657083:dc-panvac|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 23657083:panvac-gm-csf|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 23953030:irinotecan|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 23953030:irinotecan-plus-ciclosporin|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 25337750:experimental|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 25337750:control|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 30422156:a|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 30422156:b|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 32037284:nc|n-randomized|overall||uc
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 32037284:uc|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 35739299:vor-hcq|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 35739299:rgf|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 39602630:nivolumab-plus-ipilimumab|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 39602630:chemotherapy|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial's total was recorded under each arm.
+- id: 34957976:full-dose-pentoxifylline|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: Counts of patients treated at each dose, not randomized counts.
+- id: 34957976:reduced-dose-pentoxifylline|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: Counts of patients treated at each dose, not randomized counts.
+- id: 34957976:control|n-randomized|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: Counts of patients treated at each dose, not randomized counts.
+- id: 38438735:overall|n-randomized|overall|total-randomized|
+  pre_status: needs_review
+  verdict: wrong
+  note: The trial total recorded as if it were an arm ('overall').
+- id: 38438735:doublet|n-randomized|overall||
+  pre_status: needs_review
+  verdict: correct
+  note: Per-arm randomized counts.
+- id: 38438735:triplet|n-randomized|overall||
+  pre_status: needs_review
+  verdict: correct
+  note: Per-arm randomized counts.
+- id: 26487578:fu|pfs-hr|overall|progression-free-survival|iri
+  pre_status: needs_review
+  verdict: wrong
+  note: 'Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.'
+  corrected:
+    arm: IRI
+    comparator: FU
+- id: 27712015:panitumumab-plus-folfiri|os-hr|overall|hazard-ratio-for-overall-survival|bevacizumab-plus-folfiri
+  pre_status: needs_review
+  verdict: wrong
+  note: 'Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.'
+  corrected:
+    arm: bevacizumab plus FOLFIRI
+    comparator: panitumumab plus FOLFIRI
+- id: 28735067:a|os-hr|overall||b
+  pre_status: needs_review
+  verdict: wrong
+  note: 'Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.'
+  corrected:
+    arm: B
+    comparator: A
+- id: 31132111:folfox|os-hr|overall|overall-survival-intention-to-treat|cufox
+  pre_status: needs_review
+  verdict: wrong
+  note: 'Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.'
+  corrected:
+    arm: CUFOX
+    comparator: FOLFOX
+- id: 31132111:folfox|pfs-hr|overall|progression-free-survival-intention-to-treat|cufox
+  pre_status: needs_review
+  verdict: wrong
+  note: 'Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.'
+  corrected:
+    arm: CUFOX
+    comparator: FOLFOX
+- id: 37721754:cetuximab-maintenance|pfs-hr|overall|any-tumor-activating-mapk-pathway-mutation-regardless-of-treatment-group-explorator
+  pre_status: needs_review
+  verdict: wrong
+  note: 'Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.'
+  corrected:
+    arm: Observation
+    comparator: Cetuximab maintenance
+- id: 41980919:a|os-hr|overall||b
+  pre_status: needs_review
+  verdict: wrong
+  note: 'Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.'
+  corrected:
+    arm: B
+    comparator: A
+- id: 31132111:folfox|os-median|overall|overall-survival-intention-to-treat|
+  pre_status: needs_review
+  verdict: wrong
+  note: The abstract gives these medians in days, not weeks.
+- id: 31132111:cufox|os-median|overall|overall-survival-intention-to-treat|
+  pre_status: needs_review
+  verdict: wrong
+  note: The abstract gives these medians in days, not weeks.
+- id: 31132111:folfox|pfs-median|overall|progression-free-survival-intention-to-treat|
+  pre_status: needs_review
+  verdict: wrong
+  note: The abstract gives these medians in days, not weeks.
+- id: 31132111:cufox|pfs-median|overall|progression-free-survival-intention-to-treat|
+  pre_status: needs_review
+  verdict: wrong
+  note: The abstract gives these medians in days, not weeks.
+- id: 29211295:folfox-bev-ts-l-|pfs-hr|overall|ts-l-vs-ts-h-within-folfox-bev|folfox-bev-ts-h-
+  pre_status: needs_review
+  verdict: wrong
+  note: A comparison of biomarker groups (thymidylate synthase high vs low), not of randomized arms.
+- id: 29211295:irox-bev-ts-h-|pfs-median|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: A comparison of biomarker groups (thymidylate synthase high vs low), not of randomized arms.
+- id: 29211295:folfox-bev-ts-h-|pfs-median|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: A comparison of biomarker groups (thymidylate synthase high vs low), not of randomized arms.
+- id: 29211295:folfox-bev-ts-l-|pfs-median|overall||
+  pre_status: needs_review
+  verdict: wrong
+  note: A comparison of biomarker groups (thymidylate synthase high vs low), not of randomized arms.
+- id: 35666229:experimental-group|dcr|overall|early-tumor-shrinkage-rate|control-group
+  pre_status: needs_review
+  verdict: wrong
+  note: 57%/58% are early tumour shrinkage rates, not disease control rates.
+- id: 35666229:control-group|dcr|overall|early-tumor-shrinkage-rate|
+  pre_status: needs_review
+  verdict: wrong
+  note: 57%/58% are early tumour shrinkage rates, not disease control rates.
+- id: 42525921:ffx-bev-atezo|dcr|overall|disease-control-rate-at-12-months|
+  pre_status: needs_review
+  verdict: wrong
+  note: A disease control rate at 12 months (a landmark rate), not the disease control rate.
+- id: 42525921:atezo|dcr|overall|disease-control-rate-at-12-months|
+  pre_status: needs_review
+  verdict: wrong
+  note: A disease control rate at 12 months (a landmark rate), not the disease control rate.
+- id: 42859101:afatinib-+-cetuximab|dcr|overall|6-month-nonprogression-rate|
+  pre_status: needs_review
+  verdict: wrong
+  note: '18% were progression-free at 6 months: not a disease control rate.'

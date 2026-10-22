@@ -1,23 +1,23 @@
 {
  "version": "2026-10-22",
- "updated": "2026-10-22 15:34",
- "updated_at": 1792683268.7274132,
+ "updated": "2026-10-22 15:37",
+ "updated_at": 1792683449.1454482,
  "counts": {
   "candidates": 3748,
-  "screened": 3217,
-  "included": 456,
-  "trials": 311,
-  "verified_numbers": 1786,
-  "pending_numbers": 996,
-  "corrected_numbers": 11
+  "screened": 3267,
+  "included": 469,
+  "trials": 312,
+  "verified_numbers": 1818,
+  "pending_numbers": 935,
+  "corrected_numbers": 20
  },
- "spend_usd_total": 5.9259,
+ "spend_usd_total": 5.9506,
  "budget_day": "2026-10-22",
  "budget_resets_at": 1792760400.0,
- "spend_usd_today": 1.3952,
+ "spend_usd_today": 1.4199,
  "status": {
   "state": "working",
-  "since": 1792683268.5473566,
+  "since": 1792683448.9688842,
   "profile": "balanced",
   "daily_usd": 1.5,
   "total_usd": 30
@@ -78,6 +78,16 @@
     "review_corrected": 7,
     "review_rejected": 0,
     "notes": "First audit, on the 19-trial test set (kept out of the public dataset). Of 100 numbers marked verified, 96 were correct: 81 compared with hand-checked values (79 correct), 18 picked at random (17 correct) and 1 found by a new check (wrong). 16 review-queue items were also judged. Systematic error: non-standard time endpoints (second PFS, PFS on treatment, failure-free survival, duration of disease control) filed as PFS or TTP; fixed with a new measure and a code check."
+   },
+   {
+    "date": "2026-10-22",
+    "auditor": "Claude (Opus 5.5) via Claude Code",
+    "sampled": 17,
+    "correct": 16,
+    "review_confirmed": 11,
+    "review_corrected": 9,
+    "review_rejected": 40,
+    "notes": "Audit 2. Published accuracy: 16 of 17 sampled verified numbers correct (one 'randomized' count was the number assessed). The review queue and the 24 consistency contradictions showed systematic errors: counts of treated or assessed patients filed as randomized, trial totals under each arm, hazard ratios recorded the wrong way round (8), stable disease or landmark rates filed as disease control, an 80% interval as 95%, and medians in days recorded as weeks. Fixed with six new code checks and extract-v3."
    }
   ]
  }
