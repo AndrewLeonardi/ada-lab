@@ -1,0 +1,27 @@
+id: H004
+title: Some abstracts report a different primary endpoint than the trial registered
+registered: "2026-10-21"
+claim: >-
+  For at least 5% of trials in Ada's dataset that have results on ClinicalTrials.gov, the primary endpoint stated in
+  the published abstract differs from the registered primary outcome.
+why: >-
+  Changing a trial's main question after seeing the data ("outcome switching") can make results look better than they
+  are. It is a known problem; whether it happens in this field, and how often, is checkable.
+population: >-
+  Trials in Ada's dataset whose ClinicalTrials.gov record has results, compared by registry.crosscheck_step, where both
+  the registered primary outcome and the abstract's primary endpoint could be classified.
+measure: >-
+  Code classifies each endpoint into families (overall survival, progression-free survival, response, ...) and
+  flags trials whose families do not overlap. Every flagged trial is checked by the auditor against the registry record
+  and the paper, and judged confirmed_switch, explained (for example a multi-part trial whose registry lists several
+  primary outcomes) or not_a_switch. Only confirmed switches count.
+test: Share of compared trials with a confirmed switch, with a Wilson 95% interval.
+decision: >-
+  Supported if the lower bound is at least 5%. Refuted if the upper bound is below 5%. Otherwise inconclusive.
+ready_when: Every eligible trial has been compared, and every flagged trial has an auditor verdict.
+disclosure: >-
+  Partly seen. A first test run on 8 trials (2026-10-21) found the primary endpoint matching in all 6 comparable
+  ones; the full comparison of the dataset ran the same day, but its primary-endpoint results were not tallied before
+  registration.
+test_function: h004
+amendments: []

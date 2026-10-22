@@ -1,0 +1,22 @@
+id: H002
+title: Results go missing less often since the 2017 US reporting rule
+registered: "2026-10-21"
+claim: >-
+  Among the finished trials of H001, those whose primary completion date is on or after 18 January 2017 (when the US
+  rule on posting trial results took effect) are less likely to have no public results than those completed before.
+why: >-
+  If transparency rules work, missing results should become rarer. If they do not, that is worth knowing too.
+population: The eligible trials of H001, split by primary completion date (or else completion date) before or on/after 2017-01-18.
+measure: The automated verdict of H001 (no results found = not_found or unclear). No hand verification.
+test: >-
+  Fisher's exact test, one-sided (later group lower), alpha 0.05. Also reported: both shares with Wilson 95%
+  intervals and their difference with a Newcombe 95% interval.
+decision: >-
+  Supported if the one-sided p-value is below 0.05. Refuted if the later group's share is higher with a one-sided
+  p-value below 0.05 in that direction. Otherwise not supported.
+ready_when: No eligible trial is still pending or unsearched.
+disclosure: >-
+  Registered before any comparison by completion date was run. Limitations: the US rule covers only US-regulated
+  trials, many trials in this set are not; and automated verdicts can misclassify some trials.
+test_function: h002
+amendments: []

@@ -1,0 +1,35 @@
+id: H001
+title: Many finished colorectal cancer trials have no public results
+registered: "2026-10-21"
+claim: >-
+  At least 10% of randomized phase 2/3 trials in metastatic colorectal cancer registered on ClinicalTrials.gov that
+  finished at least 24 months ago have no publicly available results.
+why: >-
+  Patients join trials on the understanding that the results will add to medical knowledge. Unreported results waste
+  their contribution and bias the published evidence toward trials that went well.
+population: >-
+  ClinicalTrials.gov records matching the condition "metastatic colorectal cancer", interventional, randomized,
+  phase 2 or 3 (registry.QUERY), with status COMPLETED or TERMINATED, more than zero patients enrolled, and a primary
+  completion date (or else completion date) at least 24 months before the test date.
+measure: >-
+  A trial has public results if they are posted on ClinicalTrials.gov, a results publication is linked in the
+  registry, a PubMed record cites its registration number, or a PubMed search finds a paper that a model confirms is
+  its results paper (registry.find_results). Otherwise it has "no results found" (verdict not_found or unclear).
+  Because an automated search can miss publications, a random sample of 30 trials with no results found (drawn by
+  code, seed "H001-v1") is searched by hand by the auditor: PubMed by title, acronym and investigators; Google Scholar;
+  conference abstracts. Each is judged truly_missing, found_elsewhere or unclear (unclear counts as found_elsewhere).
+test: >-
+  p_auto = share of eligible trials with no results found, with a Wilson 95% interval. ppv = share of the audited
+  sample judged truly_missing, with a Wilson 95% interval. Estimate = p_auto x ppv; conservative 95% bounds are the
+  product of the two lower bounds and the product of the two upper bounds.
+decision: >-
+  Supported if the lower bound of the estimate is at least 10%. Refuted if the upper bound is below 10%. Otherwise
+  inconclusive.
+ready_when: No eligible trial is still pending or unsearched, and every trial in the audited sample has a verdict.
+disclosure: >-
+  Not blind. Before registration, an exploratory count (2026-10-21) found 95 of 347 finished trials with no posted
+  results, no linked paper and no PubMed record citing the registration number. The first full automated pass the
+  same day found no results for 52 of 355 trials, with 46 awaiting confirmation of a candidate paper. The 10%
+  threshold was set below these figures; the audited sample decides how many are truly missing.
+test_function: h001
+amendments: []

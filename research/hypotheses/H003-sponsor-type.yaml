@@ -1,0 +1,18 @@
+id: H003
+title: Industry and non-industry trials differ in missing results
+registered: "2026-10-21"
+claim: >-
+  Among the finished trials of H001, trials with an industry lead sponsor differ from trials with other lead sponsors
+  (universities, hospitals, cooperative groups, government) in the share with no public results.
+why: >-
+  Knowing who leaves results unreported shows where reporting efforts would help most.
+population: The eligible trials of H001, split by the lead sponsor's class on ClinicalTrials.gov (INDUSTRY vs all others).
+measure: The automated verdict of H001 (no results found = not_found or unclear). No hand verification.
+test: >-
+  Fisher's exact test, two-sided, alpha 0.05. Also reported: both shares with Wilson 95% intervals and their
+  difference with a Newcombe 95% interval.
+decision: Supported (with its direction stated) if the two-sided p-value is below 0.05. Otherwise not supported.
+ready_when: No eligible trial is still pending or unsearched.
+disclosure: Registered before any comparison by sponsor was run.
+test_function: h003
+amendments: []
