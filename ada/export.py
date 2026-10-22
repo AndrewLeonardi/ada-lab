@@ -126,6 +126,7 @@ def export(con=None, out: pathlib.Path = OUT) -> dict:
     (out / "notes.json").write_text(json.dumps(_notes(), indent=1))
     (out / "daily.json").write_text(json.dumps(daily(con), indent=1))
     (out / "registry.json").write_text(json.dumps(registry_export(con), indent=1))
+    (out / "hypotheses.json").write_text(json.dumps(hypotheses_export(), indent=1))
     return counts
 
 
@@ -157,3 +158,12 @@ def registry_export(con) -> dict:
             "trials": trials,
             "crosscheck": {"trials": len({c["pmid"] for c in checks}),
                            "agrees": sum(c["verdict"] == "agrees" for c in checks), "differs": differs}}
+
+
+def hypotheses_export() -> list[dict]:
+    """The ledger for the website: each registered hypothesis with its latest result and history."""
+    from .hypotheses import RESULTS, load_specs
+    results = json.loads(RESULTS.read_text()) if RESULTS.exists() else {}
+    keep = ("id", "title", "registered", "claim", "why", "population", "measure", "test", "decision", "disclosure",
+            "amendments", "file", "spec_hash")
+    return [{**{k: s.get(k) for k in keep}, **results.get(s["id"], {"latest": None, "history": []})} for s in load_specs()]

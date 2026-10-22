@@ -41,6 +41,16 @@ export interface Trial {
   notices?: { kind: "correction" | "retraction" | "concern" | "retracted_and_republished" | "update" | "later_report"; pmid: string }[];
 }
 
+export interface HypothesisResult {
+  id: string; status: string; summary: string; tested: string; spec_hash: string; numbers?: Record<string, unknown>;
+}
+
+export interface HypothesisEntry {
+  id: string; title: string; registered: string; claim: string; why: string; population: string; measure: string;
+  test: string; decision: string; disclosure: string; amendments: unknown[]; file: string; spec_hash: string;
+  latest: HypothesisResult | null; history: HypothesisResult[];
+}
+
 export interface RegistryTrial {
   nct: string; title: string; acronym: string | null; status: string; phase: string; sponsor: string;
   sponsor_class: string; enrollment: number | null; primary_completion: string; months: number;
@@ -145,6 +155,7 @@ export const DATA = {
   events: "data/events.json",
   daily: "data/daily.json",
   registry: "data/registry.json",
+  hypotheses: "data/hypotheses.json",
   csv: "data/dataset.csv",
 };
 

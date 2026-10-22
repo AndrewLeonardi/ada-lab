@@ -11,6 +11,7 @@ import { Layout } from "./site/Layout";
 import { AboutPage, DataPage, Home, MethodsPage, NotePage, NotesPage, TrialPage } from "./site/Pages";
 import { DailyPage } from "./site/Daily";
 import { RegistryPage } from "./site/Registry";
+import { HypothesesPage } from "./site/Hypotheses";
 import { DATA } from "./site/data";
 
 function LabView() {
@@ -71,6 +72,7 @@ export default function App() {
     case "about": page = <AboutPage />; break;
     case "daily": page = <DailyPage />; break;
     case "registry": page = <RegistryPage />; break;
+    case "hypotheses": page = <HypothesesPage />; break;
     default: page = <Home />;
   }
   return <Layout route={route}>{page}</Layout>;

@@ -112,6 +112,17 @@ table.trials, table.outcomes { width: 100%; border-collapse: collapse; font-size
 .notice { border-left: 4px solid var(--warn); background: var(--paper); padding: 8px 12px; border-radius: 8px; }
 .notice.retraction, .notice.concern { border-color: var(--coral); }
 
+/* hypothesis ledger (Hypotheses.tsx) */
+.hyp { border-top: 1px solid var(--line); padding: 8px 0 14px; }
+.hyp-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.hyp-head h2 { margin: 14px 0 4px; flex: 1; min-width: 200px; }
+.hyp-id { font-family: "JetBrains Mono", monospace; color: var(--muted); font-size: 14px; }
+.hyp-claim { font-size: 18px; }
+.hyp-result { background: var(--teal-soft); border-radius: 10px; padding: 8px 12px; }
+.hyp-method dt { font-weight: 700; margin-top: 10px; font-size: 14px; }
+.hyp-method dd { margin: 2px 0 0; color: var(--ink2); }
+.linkish { background: none; border: 0; padding: 0; color: var(--teal); cursor: pointer; font: inherit; text-decoration: underline; }
+
 /* budget meter (Budget.tsx) and daily log (Daily.tsx) */
 .meter { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; margin: 14px 0; }
 .meter-top { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }

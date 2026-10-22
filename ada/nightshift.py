@@ -18,7 +18,10 @@ from . import db, registry, upkeep
 from .consistency import check_trial
 
 DAY = 86400
-PERIODIC = [("registry_sync", 7 * DAY), ("consistency", 7 * DAY), ("later_reports", DAY), ("notices", 7 * DAY)]
+PERIODIC = [("registry_sync", 7 * DAY), ("consistency", 7 * DAY), ("later_reports", DAY), ("notices", 7 * DAY),
+            ("hypotheses", DAY)]
+BOARD = {"waiting": "open", "inconclusive": "testing", "supported": "supported", "refuted": "refuted",
+         "not_supported": "refuted", "withdrawn": "refuted"}
 
 
 def _due(con, name: str, every: float) -> bool:
@@ -50,6 +53,8 @@ def step(con, claude=None) -> int:
             note = f"{flags} contradictions flagged for the auditor"
         elif name == "later_reports":
             note = f"{upkeep.link_later_reports(con)} follow-up papers linked"
+        elif name == "hypotheses":
+            note = run_hypotheses(con)
         else:
             act(con, "desk", "read_screen", "focused", "Free shift: checking for corrections and retractions", None)
             note = f"{upkeep.notices_step(con)} new notices"
@@ -101,3 +106,23 @@ def step(con, claude=None) -> int:
         act(con, "bookshelf", "browse_books", "curious", "Free shift: saving open-access full texts", None)
         return n
     return 0
+
+
+def run_hypotheses(con) -> str:
+    """Run the prespecified tests; show each hypothesis on the whiteboard and log any change of verdict."""
+    import json
+    from .hypotheses import RESULTS, changed, load_specs, run_all
+    from .pipeline import act, log
+    before = json.loads(RESULTS.read_text()) if RESULTS.exists() else {}
+    act(con, "whiteboard", "write_board", "curious", "Free shift: testing her registered hypotheses",
+        "Which of my predictions survive?")
+    results = run_all(con)
+    titles = {s["id"]: s["title"] for s in load_specs()}
+    for r in results:
+        db.emit(con, {"type": "hypothesis", "hypothesis": {"id": r["id"], "status": BOARD.get(r["status"], "open"),
+                                                           "text": f"{r['id']}: {titles[r['id']]}", "evidence": r["summary"]}})
+    for r in changed(before, results):
+        if r["status"] != "waiting":
+            db.emit(con, {"type": "mood", "mood": "excited" if r["status"] == "supported" else "puzzled"})
+            log(con, f"{r['id']} {r['status'].replace('_', ' ')}: {r['summary']}", "finding")
+    return f"hypotheses tested: " + ", ".join(f"{r['id']} {r['status']}" for r in results)

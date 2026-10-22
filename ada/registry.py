@@ -283,8 +283,8 @@ def compare(trial: dict, records: list[dict], study: dict) -> list[dict]:
     return checks
 
 
-def crosscheck_step(con, limit: int = 3, on_trial=None) -> int:
-    """Compare up to ``limit`` of Ada's trials (with registry results) that have not been compared yet."""
+def crosscheck_todo(con) -> list[tuple[str, str]]:
+    """(pmid, nct) of Ada's included trials with registry results that have not been compared yet."""
     done = {r[0] for r in con.execute("SELECT DISTINCT pmid FROM registry_checks")}
     todo = []
     for p in con.execute("SELECT p.pmid, p.nct_ids FROM papers p JOIN trials t ON t.pmid = p.pmid JOIN screenings s "
@@ -297,6 +297,12 @@ def crosscheck_step(con, limit: int = 3, on_trial=None) -> int:
             if reg and reg["has_results"]:
                 todo.append((p["pmid"], nct))
                 break
+    return todo
+
+
+def crosscheck_step(con, limit: int = 3, on_trial=None) -> int:
+    """Compare up to ``limit`` of Ada's trials (with registry results) that have not been compared yet."""
+    todo = crosscheck_todo(con)
     for pmid, nct in todo[:limit]:
         if on_trial:
             on_trial(pmid, nct)

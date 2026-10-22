@@ -96,7 +96,8 @@ export function DailyPage() {
         <p className="muted small">
           Most days add data, not discoveries. A pattern counts as a finding only after the auditor has checked every
           number behind it, tested that it holds up under other reasonable choices, and searched for prior work.
-          Ready findings are announced in <a href={href("notes")}>Lab notes</a>.
+          Ready findings are announced in <a href={href("notes")}>Lab notes</a>; questions under test are on the{" "}
+          <a href={href("hypotheses")}>Hypotheses</a> page.
         </p>
       </section>
       {days === undefined ? <p className="muted">Loading…</p> : days && days.length ? (

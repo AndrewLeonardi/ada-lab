@@ -7,6 +7,7 @@ const NAV: [string, string][] = [
   ["data", "Dataset"],
   ["daily", "Daily log"],
   ["registry", "Registry check"],
+  ["hypotheses", "Hypotheses"],
   ["notes", "Lab notes"],
   ["methods", "Methods & integrity"],
   ["about", "About"],
