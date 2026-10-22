@@ -1,0 +1,104 @@
+{
+ "steps": [
+  {
+   "name": "Protocol registered",
+   "status": "done",
+   "detail": "dataset-protocol-v1.md (committed before the first release)",
+   "progress": null
+  },
+  {
+   "name": "Every candidate paper screened",
+   "status": "doing",
+   "detail": "3,438 of 3,748 PubMed records screened.",
+   "progress": 0.9172892209178228
+  },
+  {
+   "name": "Every included trial extracted",
+   "status": "doing",
+   "detail": "312 of 509 included papers extracted (two independent readings each).",
+   "progress": 0.6129666011787819
+  },
+  {
+   "name": "Disagreements settled by a third reading",
+   "status": "todo",
+   "detail": "0 numbers judged by a third reading; 549 waiting (in 128 trials).",
+   "progress": 0.0
+  },
+  {
+   "name": "Review queue resolved or clearly flagged",
+   "status": "doing",
+   "detail": "1,818 numbers verified; 935 in review (published flagged, not as verified).",
+   "progress": null
+  },
+  {
+   "name": "Independent audits",
+   "status": "doing",
+   "detail": "2 audits; latest 2026-10-22: 16 of 17 sampled numbers correct.",
+   "progress": null
+  },
+  {
+   "name": "Human validation (150 numbers, blind)",
+   "status": "doing",
+   "detail": "Sample 'pilot' drawn (30 numbers); waiting for a validator.",
+   "progress": null
+  },
+  {
+   "name": "One record per trial",
+   "status": "todo",
+   "detail": "Merge duplicate primary publications of the same trial (shared registration numbers). Planned before release 1.0.",
+   "progress": null
+  },
+  {
+   "name": "Licence chosen for data and code",
+   "status": "todo",
+   "detail": "Andrew's decision. CC BY 4.0 for the data and MIT for the code are common choices.",
+   "progress": null
+  },
+  {
+   "name": "Copyright check of the quoted abstract sentences",
+   "status": "todo",
+   "detail": "The dataset quotes one sentence per number from PubMed abstracts. Confirm this can be redistributed, or ship links and positions instead.",
+   "progress": null
+  },
+  {
+   "name": "Data dictionary",
+   "status": "doing",
+   "detail": "Field definitions are in the protocol (section 5); a standalone data dictionary file ships with the release.",
+   "progress": null
+  },
+  {
+   "name": "Frozen release 1.0 with a DOI",
+   "status": "todo",
+   "detail": "Zenodo archives a GitHub release and assigns a DOI, for free.",
+   "progress": null
+  },
+  {
+   "name": "Human expert co-author",
+   "status": "todo",
+   "detail": "A clinician or epidemiologist, ideally the one who validates the sample.",
+   "progress": null
+  },
+  {
+   "name": "Target journal",
+   "status": "todo",
+   "detail": "A data journal, for example Scientific Data or Data in Brief. Check fees and AI-use policies.",
+   "progress": null
+  },
+  {
+   "name": "Manuscript draft",
+   "status": "todo",
+   "detail": "Background, methods (from the protocol), data records, technical validation (audits and human validation), usage notes.",
+   "progress": null
+  }
+ ],
+ "done": 1,
+ "total": 15,
+ "counts": {
+  "candidates": 3748,
+  "screened": 3438,
+  "included": 509,
+  "extracted": 312,
+  "verified": 1818,
+  "review": 935
+ }
+}
