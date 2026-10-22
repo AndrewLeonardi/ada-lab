@@ -146,13 +146,14 @@ BATCH_POLL_SECONDS = 60
 _last_poll = [0.0]
 
 
-def pending_batch(con):
-    return con.execute("SELECT * FROM batches WHERE status='submitted' ORDER BY submitted_at LIMIT 1").fetchone()
+def pending_batch(con, kind: str | None = None):
+    q = "SELECT * FROM batches WHERE status='submitted'" + (" AND kind=?" if kind else "") + " ORDER BY submitted_at LIMIT 1"
+    return con.execute(q, (kind,) if kind else ()).fetchone()
 
 
 def extract_step(con, claude: Claude, models: list[str], collect_only: bool = False) -> int:
     """Collect a finished batch, or (unless collect_only) send the next one. Returns papers sent or verified."""
-    b = pending_batch(con)
+    b = pending_batch(con, "extract")
     if b:
         if time.time() - _last_poll[0] < BATCH_POLL_SECONDS and not claude.mock:
             return 0
@@ -211,6 +212,53 @@ def extract_step(con, claude: Claude, models: list[str], collect_only: bool = Fa
         "Two independent readings of each. Results usually within the hour.")
     log(con, f"Sent {len(papers)} papers for extraction in a half-price batch", "action")
     return len(papers)
+
+
+def adjudicate_step(con, claude: Claude, collect_only: bool = False) -> int:
+    """Third reading in half-price batches: collect a finished one, or (when no extraction is waiting) send the next."""
+    from . import adjudicate
+    from .verify import reverify
+    b = pending_batch(con, "adjudicate")
+    if b:
+        if time.time() - _last_poll[0] < BATCH_POLL_SECONDS and not claude.mock:
+            return 0
+        _last_poll[0] = time.time()
+        if not claude.batch_done(b["id"]):
+            return 0
+        asked = json.loads(b["items"])  # pmid -> the record ids, in the order they were numbered N1, N2, ...
+        pmids = list(asked)
+        results = claude.batch_results(b["id"], {pm: ("adjudicate", adjudicate.MODEL) for pm in pmids})
+        confirmed = 0
+        for pm in pmids:
+            res = results.get(pm)
+            adjudicate.store(con, pm, [{"id": rid} for rid in asked[pm]], res[0] if res else None)
+            confirmed += sum(1 for v in ((res or ({}, 0))[0].get("verdicts", [])) if v.get("verdict") == "correct")
+        reverify(con, set(pmids))
+        con.execute("UPDATE batches SET status='ended', ended_at=?, usd=? WHERE id=?",
+                    (time.time(), sum((r or ({}, 0))[1] for r in results.values()), b["id"]))
+        con.commit()
+        act(con, "desk", "read_screen", "happy", f"Third reading back: {confirmed} disputed numbers confirmed",
+            "Two readings disagreed; a third, stronger reader settled them.")
+        log(con, f"Third reading: {len(pmids)} trials, {confirmed} disputed numbers confirmed", "finding")
+        return len(pmids)
+    if collect_only or pending_batch(con, "extract"):
+        return 0
+    if con.execute("SELECT 1 FROM screenings s WHERE s.id IN (SELECT MAX(id) FROM screenings GROUP BY pmid) "
+                   "AND s.decision='include' AND s.pmid NOT IN (SELECT pmid FROM extractions) LIMIT 1").fetchone():
+        return 0  # extraction comes first
+    todo = adjudicate.disputed(con)
+    if not todo:
+        return 0
+    pmids = sorted(todo)[:adjudicate.BATCH_SIZE]
+    claude.budget.check(con, len(pmids) * adjudicate.EST_USD)
+    bid = claude.submit_batch([{"custom_id": pm, **adjudicate.request(con, pm, todo[pm])} for pm in pmids])
+    con.execute("INSERT INTO batches(id, kind, items, submitted_at, status) VALUES(?,?,?,?,?)",
+                (bid, "adjudicate", json.dumps({pm: [r["id"] for r in todo[pm]] for pm in pmids}), time.time(), "submitted"))
+    con.commit()
+    act(con, "desk", "type", "focused", f"Sent {len(pmids)} trials for a third reading",
+        "Where my two readings disagreed, a stronger reader decides.")
+    log(con, f"Sent {len(pmids)} trials ({sum(len(todo[p]) for p in pmids)} disputed numbers) for a third reading", "action")
+    return len(pmids)
 
 
 def board_update(con):
@@ -280,12 +328,14 @@ def run(profile: str = "balanced", hours: float | None = None, mock=None, screen
                 sync(con)
                 last_sync = time.time()
             paid += extract_step(con, claude, prof["extract_models"], collect_only=True)  # already paid for
+            paid += adjudicate_step(con, claude, collect_only=True)
             claude.budget.check(con)  # raises while the day's budget is used up
             over = None
             if state in (None, "resting", "free_work") and become("working"):  # tell the website now
                 maybe_publish(soon=True)
             paid += screen_batch(con, claude, prof["screen_model"], screen_batch_size)
             paid += extract_step(con, claude, prof["extract_models"])
+            paid += adjudicate_step(con, claude)
         except BudgetExceeded as e:
             over = e
         except Refused as e:

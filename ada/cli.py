@@ -12,6 +12,8 @@
   audit-sample [--n 20]          draw an audit sample (for /audit-ada in Claude Code)
   apply-audit <file.yaml>        apply an audit's verdicts and corrections
   profiles                       list run profiles
+  validation-sample --name N      draw a fixed-seed sample of published numbers for human checking
+  validation-report FILE         compare a validator's downloaded answers with Ada's numbers
   recheck-registry               redo every paper-vs-registry comparison (free; after the comparison improves)
   hypotheses                     run the registered hypothesis tests now (free; research/hypotheses/)
   hypothesis-sample ID [--n 30]  draw the fixed-seed sample to verify by hand (prints YAML)
@@ -50,6 +52,11 @@ def main(argv=None):
     a.add_argument("slug")
     sub.add_parser("reverify")
     sub.add_parser("recheck-registry")
+    vs = sub.add_parser("validation-sample")
+    vs.add_argument("--name", required=True)
+    vs.add_argument("--n", type=int, default=150)
+    vr = sub.add_parser("validation-report")
+    vr.add_argument("file")
     sub.add_parser("hypotheses")
     hs = sub.add_parser("hypothesis-sample")
     hs.add_argument("id")
@@ -91,6 +98,18 @@ def main(argv=None):
         export(con)
     elif args.cmd == "export":
         print(json.dumps(export(con), indent=1))
+    elif args.cmd == "validation-sample":
+        from .validation import draw
+        s = draw(con, args.name, args.n)
+        print(f"drew {len(s['items'])} of {s['pool']} published numbers (seed {s['seed']})")
+        export(con)
+    elif args.cmd == "validation-report":
+        import pathlib
+        from .validation import report
+        r = report(con, json.loads(pathlib.Path(args.file).read_text()))
+        print(f"{r['agree']} of {r['answered']} agree ({100 * r['agreement'][0]:.1f}%, 95% CI "
+              f"{100 * r['agreement'][1]:.1f}-{100 * r['agreement'][2]:.1f}%); {len(r['disagreements'])} to adjudicate")
+        export(con)
     elif args.cmd == "recheck-registry":
         con.execute("DELETE FROM registry_checks")  # derived data: the night shift compares every trial again (free)
         con.commit()
@@ -129,19 +148,8 @@ def main(argv=None):
         print("\n".join(changed))
         export(con)
     elif args.cmd == "reverify":
-        from .pipeline import _paper
-        from .verify import verify_paper
-        tot = {"verified": 0, "needs_review": 0}
-        for row in con.execute("SELECT DISTINCT pmid FROM extractions").fetchall():
-            ex = {r["pass"]: json.loads(r["result"]) for r in con.execute(
-                "SELECT pass, result FROM extractions WHERE pmid=? AND id IN (SELECT MAX(id) FROM extractions "
-                "WHERE pmid=? GROUP BY pass)", (row["pmid"], row["pmid"]))}
-            if 1 not in ex:
-                continue
-            paper = _paper(con.execute("SELECT * FROM papers WHERE pmid=?", (row["pmid"],)).fetchone())
-            for k, v in verify_paper(con, paper, ex[1], ex.get(2)).items():
-                tot[k] += v
-        print(json.dumps(tot))
+        from .verify import reverify
+        print(json.dumps(reverify(con)))
         export(con)
     elif args.cmd == "publish":
         from .publish import publish

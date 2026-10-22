@@ -1,0 +1,27 @@
+# Steps toward the dataset paper that need a person (the rest is measured from the data by ada/paper.py).
+# status: todo | doing | done
+items:
+  - name: One record per trial
+    status: todo
+    note: Merge duplicate primary publications of the same trial (shared registration numbers). Planned before release 1.0.
+  - name: Licence chosen for data and code
+    status: todo
+    note: Andrew's decision. CC BY 4.0 for the data and MIT for the code are common choices.
+  - name: Copyright check of the quoted abstract sentences
+    status: todo
+    note: The dataset quotes one sentence per number from PubMed abstracts. Confirm this can be redistributed, or ship links and positions instead.
+  - name: Data dictionary
+    status: doing
+    note: Field definitions are in the protocol (section 5); a standalone data dictionary file ships with the release.
+  - name: Frozen release 1.0 with a DOI
+    status: todo
+    note: Zenodo archives a GitHub release and assigns a DOI, for free.
+  - name: Human expert co-author
+    status: todo
+    note: A clinician or epidemiologist, ideally the one who validates the sample.
+  - name: Target journal
+    status: todo
+    note: A data journal, for example Scientific Data or Data in Brief. Check fees and AI-use policies.
+  - name: Manuscript draft
+    status: todo
+    note: Background, methods (from the protocol), data records, technical validation (audits and human validation), usage notes.

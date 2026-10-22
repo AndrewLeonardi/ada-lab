@@ -112,6 +112,18 @@ table.trials, table.outcomes { width: 100%; border-collapse: collapse; font-size
 .notice { border-left: 4px solid var(--warn); background: var(--paper); padding: 8px 12px; border-radius: 8px; }
 .notice.retraction, .notice.concern { border-color: var(--coral); }
 
+/* paper readiness (Paper.tsx) and validation form (Validate.tsx) */
+.steps-list { padding-left: 22px; } .steps-list li { margin: 12px 0; }
+.step-head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.val-card { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 6px 18px 14px; margin: 16px 0; }
+.val-card h2 { font-size: 19px; margin-top: 8px; }
+.val-ask { font-size: 17px; }
+.val-form { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.val-form input[type=text] { padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; font: inherit; background: var(--bg); color: var(--ink); }
+.val-reveal { background: var(--teal-soft); border-radius: 12px; padding: 4px 14px; }
+.val-nav { display: flex; justify-content: space-between; margin-top: 12px; }
+.btn[disabled] { opacity: 0.45; cursor: default; }
+
 /* hypothesis ledger (Hypotheses.tsx) */
 .hyp { border-top: 1px solid var(--line); padding: 8px 0 14px; }
 .hyp-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }

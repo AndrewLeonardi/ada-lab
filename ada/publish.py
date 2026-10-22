@@ -11,7 +11,7 @@ import time
 from .export import ROOT, export
 
 PATHS = ["web/public/data", "data/notes/published", "data/audits", "data/feedback", "data/audit_scoreboard.json",
-         "data/benchmark.json", "data/findings.md", "data/hypotheses.json"]
+         "data/benchmark.json", "data/findings.md", "data/hypotheses.json", "data/validation"]
 
 
 def _git(*args: str) -> subprocess.CompletedProcess:

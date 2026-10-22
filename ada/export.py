@@ -65,7 +65,8 @@ def export(con=None, out: pathlib.Path = OUT) -> dict:
                          "comparator": r["comparator"], "population": ch.get("population"),
                          "detail": ch.get("detail"), "quote": r["quote"], "status": r["status"],
                          "failed_checks": [] if r["status"] == "corrected" else [k for k, v in ch.items() if v is False],
-                         "audit_note": (ch.get("audit") or {}).get("note"), "consistency_note": ch.get("consistency_note")})
+                         "audit_note": (ch.get("audit") or {}).get("note"), "consistency_note": ch.get("consistency_note"),
+                         "third_reading": ch.get("third_reading")})
         trials.append({"pmid": t["pmid"], "title": t["title"], "journal": t["journal"], "year": t["year"],
                        "authors": t["authors"], "doi": t["doi"], "nct_ids": json.loads(t["nct_ids"] or "[]"),
                        "acronym": t["acronym"], "phase": t["phase"], "line": t["line"], "biomarker": t["biomarker"],
@@ -127,6 +128,10 @@ def export(con=None, out: pathlib.Path = OUT) -> dict:
     (out / "daily.json").write_text(json.dumps(daily(con), indent=1))
     (out / "registry.json").write_text(json.dumps(registry_export(con), indent=1))
     (out / "hypotheses.json").write_text(json.dumps(hypotheses_export(), indent=1))
+    from .validation import summary as validation_summary
+    (out / "validation.json").write_text(json.dumps(validation_summary(), indent=1))
+    from .paper import readiness
+    (out / "paper.json").write_text(json.dumps(readiness(con), indent=1))
     return counts
 
 

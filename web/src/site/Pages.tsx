@@ -251,6 +251,8 @@ export function TrialPage({ pmid }: { pmid: string }) {
                         {r.failed_checks.length ? <div className="small">Failed checks: {r.failed_checks.join(", ")}</div> : null}
                         {r.audit_note ? <div className="small">Auditor: {r.audit_note}</div> : null}
                         {r.consistency_note ? <div className="small">Contradiction: {r.consistency_note}</div> : null}
+                        {r.third_reading ? <div className="small">The two readings disagreed; a third reading (Claude Opus) judged
+                          it {r.third_reading === "correct" ? "correct" : r.third_reading}.</div> : null}
                       </td>
                     </tr>
                   )}

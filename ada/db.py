@@ -101,6 +101,10 @@ CREATE TABLE IF NOT EXISTS fulltexts (pmid TEXT PRIMARY KEY, pmcid TEXT, text TE
 CREATE TABLE IF NOT EXISTS batches (
   id TEXT PRIMARY KEY, kind TEXT, items TEXT, submitted_at REAL, ended_at REAL, status TEXT, usd REAL
 );
+-- third readings of numbers the two extraction passes disagreed on (adjudicate.py)
+CREATE TABLE IF NOT EXISTS adjudications (
+  record_id TEXT PRIMARY KEY, verdict TEXT, reason TEXT, model TEXT, prompt_version TEXT, at REAL
+);
 -- when each free night-shift task last ran
 CREATE TABLE IF NOT EXISTS tasks (name TEXT PRIMARY KEY, last_run REAL, note TEXT);
 """

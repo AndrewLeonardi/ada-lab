@@ -19,6 +19,7 @@ export interface OutcomeRecord {
   failed_checks: string[];
   audit_note?: string | null;
   consistency_note?: string | null;
+  third_reading?: "correct" | "wrong" | "unclear" | null;
 }
 
 export interface Trial {
@@ -156,6 +157,8 @@ export const DATA = {
   daily: "data/daily.json",
   registry: "data/registry.json",
   hypotheses: "data/hypotheses.json",
+  validation: "data/validation.json",
+  paper: "data/paper.json",
   csv: "data/dataset.csv",
 };
 

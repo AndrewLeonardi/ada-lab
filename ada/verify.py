@@ -128,9 +128,14 @@ def verify_paper(con, p: dict, pass1: dict, pass2: dict | None) -> dict:
     now = time.time()
     for o in pass1["outcomes"]:
         c = check_record(o, p["abstract"], other)
-        status = "verified" if all(c.values()) else "needs_review"
-        counts[status] += 1
         rid = record_id(p["pmid"], o)
+        if c.get("second_pass_agrees") is False:  # a third reading may settle the passes' disagreement
+            adj = con.execute("SELECT verdict FROM adjudications WHERE record_id=?", (rid,)).fetchone()
+            if adj:
+                c["second_pass_agrees"] = adj[0] == "correct"
+                c["third_reading"] = adj[0]
+        status = "verified" if all(v for v in c.values() if isinstance(v, bool)) else "needs_review"
+        counts[status] += 1
         # an auditor's verdict (confirmed, corrected or rejected) wins over a re-extraction or re-check
         prev = con.execute("SELECT status, checks FROM records WHERE id=?", (rid,)).fetchone()
         if prev and (prev["status"] in ("corrected", "rejected") or "audit" in json.loads(prev["checks"] or "{}")):
@@ -157,3 +162,22 @@ def verify_paper(con, p: dict, pass1: dict, pass2: dict | None) -> dict:
         if status in counts:
             counts[status] = n
     return counts
+
+
+def reverify(con, pmids=None) -> dict:
+    """Re-run the free checks on stored extractions (all papers, or the given ones)."""
+    from .pipeline import _paper
+    tot = {"verified": 0, "needs_review": 0}
+    rows = con.execute("SELECT DISTINCT pmid FROM extractions WHERE pass IN (1, 2)").fetchall()
+    for (pmid,) in rows:
+        if pmids is not None and pmid not in pmids:
+            continue
+        ex = {r["pass"]: json.loads(r["result"]) for r in con.execute(
+            "SELECT pass, result FROM extractions WHERE pmid=? AND pass IN (1, 2) AND id IN (SELECT MAX(id) FROM "
+            "extractions WHERE pmid=? GROUP BY pass)", (pmid, pmid))}
+        if 1 not in ex:
+            continue
+        paper = _paper(con.execute("SELECT * FROM papers WHERE pmid=?", (pmid,)).fetchone())
+        for k, n in verify_paper(con, paper, ex[1], ex.get(2)).items():
+            tot[k] += n
+    return tot

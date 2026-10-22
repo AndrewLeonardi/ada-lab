@@ -14,6 +14,9 @@ def mock(stage: str, user: str, schema: dict) -> dict:
         inc = "random" in user.lower()
         return {"population": "mock", "randomized": inc, "metastatic": inc, "per_arm_efficacy": inc, "primary_report": inc,
                 "reason": "mock decision", "decision": "include" if inc else "exclude", "trial_name": None}
+    if stage == "adjudicate":
+        n = user.count("\nN")
+        return {"verdicts": [{"id": f"N{i}", "verdict": "correct", "reason": "mock"} for i in range(1, n + 1)]}
     if stage == "registry_match":
         return {"match": "unclear", "reason": "mock decision"}
     abstract = user.split("ABSTRACT:", 1)[-1]
