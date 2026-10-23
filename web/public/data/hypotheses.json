@@ -15,10 +15,10 @@
   "spec_hash": "bd7f86305e31920d",
   "latest": {
    "status": "waiting",
-   "summary": "Waiting: 1 of 355 finished trials still pending or unsearched.",
+   "summary": "Waiting: automated search done (92 of 355 trials, 25.9%, with no results found); the hand-checked sample has not been drawn yet.",
    "numbers": {
     "eligible": 355,
-    "unresolved": 1
+    "no_results_found": 92
    },
    "id": "H001",
    "spec_hash": "bd7f86305e31920d",
@@ -35,6 +35,17 @@
     "id": "H001",
     "spec_hash": "bd7f86305e31920d",
     "tested": "2026-10-22"
+   },
+   {
+    "status": "waiting",
+    "summary": "Waiting: 1 of 355 finished trials still pending or unsearched.",
+    "numbers": {
+     "eligible": 355,
+     "unresolved": 1
+    },
+    "id": "H001",
+    "spec_hash": "bd7f86305e31920d",
+    "tested": "2026-10-23"
    }
   ]
  },
@@ -53,14 +64,51 @@
   "file": "research/hypotheses/H002-reporting-after-2017.yaml",
   "spec_hash": "1ecaca98e38d0bfb",
   "latest": {
-   "status": "waiting",
-   "summary": "Waiting: the automated search still has trials pending or unsearched.",
-   "numbers": {},
+   "status": "not_supported",
+   "numbers": {
+    "groups": {
+     "completed on/after 2017-01-18": {
+      "k": 29,
+      "n": 118,
+      "share": [
+       0.2457627118644068,
+       0.17691193989468285,
+       0.3306448429040609
+      ]
+     },
+     "completed before": {
+      "k": 63,
+      "n": 237,
+      "share": [
+       0.26582278481012656,
+       0.21364014775128817,
+       0.32547574817629454
+      ]
+     }
+    },
+    "difference": [
+     -0.020060072945719765,
+     -0.11115839806310217,
+     0.07957929568057905
+    ],
+    "p_one_sided": 0.3931343066300131,
+    "p_opposite": 0.7018234707588582
+   },
+   "summary": "No results found for 24.6% of trials completed since the 2017 rule (29/118) vs 26.6% before (63/237); one-sided p = 0.393.",
    "id": "H002",
    "spec_hash": "1ecaca98e38d0bfb",
    "tested": "2026-10-23"
   },
-  "history": []
+  "history": [
+   {
+    "status": "waiting",
+    "summary": "Waiting: the automated search still has trials pending or unsearched.",
+    "numbers": {},
+    "id": "H002",
+    "spec_hash": "1ecaca98e38d0bfb",
+    "tested": "2026-10-23"
+   }
+  ]
  },
  {
   "id": "H003",
@@ -77,14 +125,50 @@
   "file": "research/hypotheses/H003-sponsor-type.yaml",
   "spec_hash": "89b1df2fcff51dc2",
   "latest": {
-   "status": "waiting",
-   "summary": "Waiting: the automated search still has trials pending or unsearched.",
-   "numbers": {},
+   "status": "supported",
+   "numbers": {
+    "groups": {
+     "industry": {
+      "k": 24,
+      "n": 162,
+      "share": [
+       0.14814814814814814,
+       0.10162049404348174,
+       0.21097600161567942
+      ]
+     },
+     "other sponsors": {
+      "k": 68,
+      "n": 193,
+      "share": [
+       0.35233160621761656,
+       0.28841803110415587,
+       0.4220088254943136
+      ]
+     }
+    },
+    "difference": [
+     -0.20418345806946842,
+     -0.28796733171241,
+     -0.11456044620799634
+    ],
+    "p_two_sided": 1.0793605774159164e-05
+   },
+   "summary": "No results found for 14.8% of industry trials (24/162) vs 35.2% of others (68/193); two-sided p = 1.08e-05. Industry trials less often have no results.",
    "id": "H003",
    "spec_hash": "89b1df2fcff51dc2",
    "tested": "2026-10-23"
   },
-  "history": []
+  "history": [
+   {
+    "status": "waiting",
+    "summary": "Waiting: the automated search still has trials pending or unsearched.",
+    "numbers": {},
+    "id": "H003",
+    "spec_hash": "89b1df2fcff51dc2",
+    "tested": "2026-10-23"
+   }
+  ]
  },
  {
   "id": "H004",
