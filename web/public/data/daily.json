@@ -1,11 +1,11 @@
 [
  {
   "date": "2026-10-23",
-  "spend_usd": 1.1315,
-  "screened": 310,
+  "spend_usd": 1.1319,
+  "screened": 311,
   "included": 112,
   "secondary": 18,
-  "excluded": 176,
+  "excluded": 177,
   "extracted": [
    {
     "pmid": "22748098",
