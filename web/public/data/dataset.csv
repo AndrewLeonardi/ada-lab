@@ -1671,6 +1671,25 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 24247559,Stop and Go,2013,first,,arm B,arm A,overall,orr,66.7,percent,,,,verified,no significant difference between the two arms for ORR (66.7 vs. 59.0%; p = 0.861)
 24247559,Stop and Go,2013,first,,arm B,arm A,overall,os_median,23.8,months,,,,verified,median OS (23.8 vs. 20.2 months; p = 0.100)
 24247559,Stop and Go,2013,first,,arm B,arm A,overall,pfs_median,11.0,months,,,,verified,Median PFS was significantly longer for arm B than for arm A (11.0 vs. 8.3 months; p = 0.002)
+21120580,,2012,first,,FFG,,overall,grade3plus_ae_rate,2.4,percent,,,peripheral neuropathy,verified,Peripheral neuropathy was more frequent (P = <.001) with FOLFOX4 (18/42; 42.9%) than with FFG (1/42; 2.4%).
+21120580,,2012,first,,FFG,,overall,n_randomized,42.0,count,,,,verified,Of 84 enrolled patients (42 to each arm)
+21120580,,2012,first,,FFG,,overall,orr,9.5,percent,,,,verified,FFG (4/42; 9.5%)
+21120580,,2012,first,,FOLFOX4,,overall,grade3plus_ae_rate,42.9,percent,,,peripheral neuropathy,verified,FOLFOX4 (18/42; 42.9%)
+21120580,,2012,first,,FOLFOX4,,overall,n_randomized,42.0,count,,,,verified,Of 84 enrolled patients (42 to each arm)
+21120580,,2012,first,,FOLFOX4,,overall,orr,40.5,percent,,,,verified,FOLFOX4 (17/42; 40.5%)
+21828378,,2012,unclear,,cediranib 20 mg + mFOLFOX6,placebo + mFOLFOX6,overall,pfs_hr,0.7,ratio,0.44,1.11,"PFS hazard ratio, cediranib 20 mg versus placebo",verified,hazard ratio = 0.70 (95% confidence interval 0.44-1.11)
+22020318,,2012,third_or_later,,Vorinostat 800 mg/day + 5-FU/LV,,overall,os_median,6.5,months,,,median overall survival on low-dose arm,verified,"The median PFS and overall survival on the low-dose arm were 2.4 and 6.5 months, respectively."
+22020318,,2012,third_or_later,,Vorinostat 800 mg/day + 5-FU/LV,,overall,pfs_median,2.4,months,,,median PFS on low-dose arm,verified,"The median PFS and overall survival on the low-dose arm were 2.4 and 6.5 months, respectively."
+22055112,,2012,first,,A,,overall,dcr,87.0,percent,,,,verified,disease control rates (CR+PR+stable disease [SD]) were 87%/83%
+22055112,,2012,first,,A,,overall,grade3plus_ae_rate,28.0,percent,,,grade 3-4 neutropenia,verified,Grade 3-4 neutropenia was higher in arm A (28%/7%)
+22055112,,2012,first,,A,,overall,n_randomized,124.0,count,,,,verified,arm A/arm B 124/123
+22055112,,2012,first,,A,,overall,orr,52.0,percent,,,,verified,objective response rates (ORR) (complete response [CR] + partial response [PR]) were 52%/41%
+22055112,,2012,first,,A,,overall,os_median,21.0,months,,,,verified,median overall survival (OS) was 21/19.5 months
+22055112,,2012,first,,B,,overall,dcr,83.0,percent,,,,verified,disease control rates (CR+PR+stable disease [SD]) were 87%/83%
+22055112,,2012,first,,B,,overall,grade3plus_ae_rate,7.0,percent,,,grade 3-4 neutropenia,verified,Grade 3-4 neutropenia was higher in arm A (28%/7%)
+22055112,,2012,first,,B,,overall,n_randomized,123.0,count,,,,verified,arm A/arm B 124/123
+22055112,,2012,first,,B,,overall,orr,41.0,percent,,,,verified,objective response rates (ORR) (complete response [CR] + partial response [PR]) were 52%/41%
+22055112,,2012,first,,B,,overall,os_median,19.5,months,,,,verified,median overall survival (OS) was 21/19.5 months
 22213153,,2012,maintenance,,enzastaurin,,overall,grade3plus_ae_rate,15.8,percent,,,thrombosis or embolism,verified,More enzastaurin patients developed thrombosis or embolism compared with placebo (15.8% and 1.7%; P = .008)
 22213153,,2012,maintenance,,enzastaurin,placebo,overall,pfs_hr,1.35,ratio,0.84,2.16,time from randomization,verified,"hazard ratio [HR], 1.35; 95% confidence interval [CI], 0.84-2.16"
 22213153,,2012,maintenance,,enzastaurin,placebo,overall,pfs_hr,1.39,ratio,0.86,2.23,time from start of first-line therapy,verified,"(HR, 1.39; 95% CI, 0.86-2.23; P = .913)"
@@ -1678,6 +1697,15 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 22213153,,2012,maintenance,,placebo,,overall,grade3plus_ae_rate,1.7,percent,,,thrombosis or embolism,verified,More enzastaurin patients developed thrombosis or embolism compared with placebo (15.8% and 1.7%; P = .008)
 22213153,,2012,maintenance,,placebo,,overall,n_randomized,59.0,count,,,,verified,and 59 to placebo
 22213153,,2012,maintenance,,placebo,,overall,pfs_median,8.1,months,,,time from randomization,verified,the median PFS was 5.8 and 8.1 months
+22234633,MACRO TTD,2012,first,,XELOX plus bevacizumab,,overall,n_randomized,239.0,count,,,,verified,"XELOX plus bevacizumab, n = 239"
+22234633,MACRO TTD,2012,first,,bevacizumab,,overall,n_randomized,241.0,count,,,,verified,"bevacizumab, n = 241"
+22240792,CAPIRI-Bev,2012,first,,Arm-A,,overall,n_randomized,167.0,count,,,,verified,Arm-A=167
+22240792,CAPIRI-Bev,2012,first,,Arm-A,Arm-B,overall,orr,45.5,percent,,,,verified,response rates (45.5 and 39.8.7%; P=0.32)
+22240792,CAPIRI-Bev,2012,first,,Arm-A,Arm-B,overall,os_median,25.7,months,,,,verified,overall survival (25.7 and 27.5 months; P=0.55)
+22240792,CAPIRI-Bev,2012,first,,Arm-A,Arm-B,overall,pfs_median,10.0,months,,,,verified,No difference was observed in median progression-free survival (PFS) (10.0 and 8.9 months; P=0.64)
+22240792,CAPIRI-Bev,2012,first,,Arm-B,,overall,n_randomized,166.0,count,,,,verified,Arm-B=166
+22240792,CAPIRI-Bev,2012,first,,Arm-B,,overall,os_median,27.5,months,,,,verified,overall survival (25.7 and 27.5 months; P=0.55)
+22240792,CAPIRI-Bev,2012,first,,Arm-B,,overall,pfs_median,8.9,months,,,,verified,No difference was observed in median progression-free survival (PFS) (10.0 and 8.9 months; P=0.64)
 22294255,,2012,first,,Arm A,,overall,n_randomized,12.0,count,,,,verified,"Twenty-three patients (12 in arm A, 11 in arm B) were enrolled onto the study."
 22294255,,2012,first,,Arm A,,overall,orr,36.4,percent,,,,verified,The overall response rate was 54% (36.4% in arm A and 72.7% in arm B).
 22294255,,2012,first,,Arm A,,overall,os_median,18.0,months,,,,verified,The median survival was 18.0 months in arm A and 42.5 months in arm B.
@@ -1686,11 +1714,41 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 22294255,,2012,first,,Arm B,,overall,orr,72.7,percent,,,,verified,The overall response rate was 54% (36.4% in arm A and 72.7% in arm B).
 22294255,,2012,first,,Arm B,,overall,os_median,42.5,months,,,,verified,The median survival was 18.0 months in arm A and 42.5 months in arm B.
 22294255,,2012,first,,Arm B,,overall,ttp_median,14.4,months,,,,verified,Median time to progression was 8.7 months in arm A and 14.4 months in arm B.
+22567742,,2012,first,,LV/Ca,,overall,grade3plus_ae_rate,64.0,percent,,,grade 3 events,verified,Grade 3 events were 64% and 46% (p = 0.28)
+22567742,,2012,first,,LV/Ca,,overall,orr,55.0,percent,,,,verified,"observed ORR, 55% (significantly higher than 35%, p = 0.02)"
+22567742,,2012,first,,LV/Ca,,overall,os_median,11.9,months,,,,verified,Median overall survival durations were 11.9 months and 22.9 months (p = 0.02)
+22567742,,2012,first,,LV/Ca,,overall,pfs_median,8.0,months,,,,verified,PFS 8.0 vs. 11.5 months (ns)
+22567742,,2012,first,,LV/Na,,overall,grade3plus_ae_rate,46.0,percent,,,grade 3 events,verified,Grade 3 events were 64% and 46% (p = 0.28)
+22567742,,2012,first,,LV/Na,,overall,orr,61.0,percent,,,,verified,61% (p = 0.004)
+22567742,,2012,first,,LV/Na,,overall,os_median,22.9,months,,,,verified,Median overall survival durations were 11.9 months and 22.9 months (p = 0.02)
+22567742,,2012,first,,LV/Na,,overall,pfs_median,11.5,months,,,,verified,PFS 8.0 vs. 11.5 months (ns)
 22575396,,2012,unclear,,endoscopic stent placement,,overall,n_randomized,22.0,count,,,,verified,22 patients with stage IV unresectable rectosigmoid cancer and symptoms of chronic subacute obstruction were randomized
+22622147,XELOX-A-DVS,2012,first,,Q2W,,overall,grade3plus_ae_rate,81.0,percent,,,grade 3 or 4 adverse events,verified,Grade 3 or 4 AEs occurred in 75% and 81% of patients in the Q3W and Q2W groups
+22622147,XELOX-A-DVS,2012,first,,Q2W,,overall,os_median,22.1,months,,,,verified,The median overall survival times were 28.4 months and 22.1 months
+22622147,XELOX-A-DVS,2012,first,,Q2W,,overall,other_time_median,3.4,months,,,time to treatment failure,verified,the median times to treatment failure were 5.5 months and 3.4 months
+22622147,XELOX-A-DVS,2012,first,,Q2W,,overall,pfs_median,9.1,months,,,,verified,and 9.1 months in the Q2W group
+22622147,XELOX-A-DVS,2012,first,,Q3W,,overall,grade3plus_ae_rate,75.0,percent,,,grade 3 or 4 adverse events,verified,Grade 3 or 4 AEs occurred in 75% and 81% of patients in the Q3W and Q2W groups
+22622147,XELOX-A-DVS,2012,first,,Q3W,,overall,os_median,28.4,months,,,,verified,The median overall survival times were 28.4 months and 22.1 months
+22622147,XELOX-A-DVS,2012,first,,Q3W,,overall,other_time_median,5.5,months,,,time to treatment failure,verified,the median times to treatment failure were 5.5 months and 3.4 months
+22622147,XELOX-A-DVS,2012,first,,Q3W,,overall,pfs_median,9.6,months,,,,verified,The median PFS intervals were 9.6 months in the Q3W group
+22748098,XELIRI-bevacizumab vs FOLFIRI-bevacizumab,2012,first,,group A,group B,overall,grade3plus_ae_rate,13.0,percent,,,neutropenia,verified,"neutropenia (13% vs 22%, p = 0.053)"
+22748098,XELIRI-bevacizumab vs FOLFIRI-bevacizumab,2012,first,,group A,group B,overall,grade3plus_ae_rate,19.0,percent,,,diarrhea,verified,"diarrhea (19% vs 11%, p = 0.082)"
+22748098,XELIRI-bevacizumab vs FOLFIRI-bevacizumab,2012,first,,group A,,overall,n_randomized,143.0,count,,,,verified,143 were randomized to group A
+22748098,XELIRI-bevacizumab vs FOLFIRI-bevacizumab,2012,first,,group A,,overall,orr,38.5,percent,,,,verified,Fifty-five patients (38.5%) in group A
+22748098,XELIRI-bevacizumab vs FOLFIRI-bevacizumab,2012,first,,group A,group B,overall,os_median,20.0,months,,,,verified,median OS was 20.0 and 25.3 months (p = 0.099)
+22748098,XELIRI-bevacizumab vs FOLFIRI-bevacizumab,2012,first,,group A,group B,overall,pfs_median,10.2,months,,,,verified,median PFS was 10.2 and 10.8 months (p = 0.74)
+22748098,XELIRI-bevacizumab vs FOLFIRI-bevacizumab,2012,first,,group B,group A,overall,grade3plus_ae_rate,22.0,percent,,,neutropenia,verified,"neutropenia (13% vs 22%, p = 0.053)"
+22748098,XELIRI-bevacizumab vs FOLFIRI-bevacizumab,2012,first,,group B,group A,overall,grade3plus_ae_rate,11.0,percent,,,diarrhea,verified,"diarrhea (19% vs 11%, p = 0.082)"
+22748098,XELIRI-bevacizumab vs FOLFIRI-bevacizumab,2012,first,,group B,,overall,n_randomized,142.0,count,,,,verified,142 to group B
+22748098,XELIRI-bevacizumab vs FOLFIRI-bevacizumab,2012,first,,group B,,overall,orr,40.1,percent,,,,verified,57 (40.1%) in group B responded
+22748098,XELIRI-bevacizumab vs FOLFIRI-bevacizumab,2012,first,,group B,group A,overall,os_median,25.3,months,,,,verified,median OS was 20.0 and 25.3 months (p = 0.099)
+22748098,XELIRI-bevacizumab vs FOLFIRI-bevacizumab,2012,first,,group B,group A,overall,pfs_median,10.8,months,,,,verified,median PFS was 10.2 and 10.8 months (p = 0.74)
 22753904,EVEREST,2012,second,,group A,,overall,dcr,58.0,percent,,,standard dosing,verified,"disease control rate (70% v 58%, respectively)"
 22753904,EVEREST,2012,second,,group A,,overall,orr,16.0,percent,,,standard dosing,verified,"dose escalation, compared with standard dosing, showed some evidence for improved response rate (30% v 16%, respectively)"
 22753904,EVEREST,2012,second,,group B,group A,overall,dcr,70.0,percent,,,dose escalation vs standard dosing,verified,"disease control rate (70% v 58%, respectively)"
 22753904,EVEREST,2012,second,,group B,group A,overall,orr,30.0,percent,,,dose escalation vs standard dosing,verified,"dose escalation, compared with standard dosing, showed some evidence for improved response rate (30% v 16%, respectively)"
+22777333,,2012,mixed,,mFOLFIRI + bevacizumab,,overall,orr,62.0,percent,40.1,79.8,,verified,The overall response rate was 62% [95% confidence interval (CI) 40.1-79.8]
+22777333,,2012,mixed,,sequential IRIS + bevacizumab,,overall,orr,72.0,percent,50.6,86.2,,verified,versus 72% (95% CI 50.6-86.2)
 22949147,VELOUR,2012,second,,aflibercept + FOLFIRI,,overall,n_randomized,612.0,count,,,,verified,aflibercept (4 mg/kg intravenously; 612 patients)
 22949147,VELOUR,2012,second,,aflibercept + FOLFIRI,,overall,orr,19.8,percent,16.4,23.2,,verified,"Response rate was 19.8% (95% CI, 16.4% to 23.2%) with aflibercept plus FOLFIRI"
 22949147,VELOUR,2012,second,,aflibercept + FOLFIRI,placebo + FOLFIRI,overall,os_hr,0.817,ratio,0.713,0.937,overall survival,verified,"hazard ratio [HR], 0.817; 95.34% CI, 0.713 to 0.937"
@@ -1724,6 +1782,92 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 23062232,SOX vs CapeOX,2012,first,,SOX,,overall,n_randomized,168.0,count,,,,verified,we randomly assigned 168 patients to receive SOX
 23062232,SOX vs CapeOX,2012,first,,SOX,CapeOX,overall,pfs_hr,0.79,ratio,0.6,1.04,,verified,"hazard ratio, 0·79 [95% CI 0·60-1·04]"
 23062232,SOX vs CapeOX,2012,first,,SOX,,overall,pfs_median,8.5,months,7.6,9.3,,verified,Median PFS was 8·5 months (95% CI 7·6-9·3) in the SOX group
+23691464,,2012,first,,control group,,overall,dcr,42.2,percent,,,,verified,"The addition of thalidomide to XELOX significantly improved the DCR (63.6% vs. 42.2%, P=0.043)."
+23691464,,2012,first,,control group,,overall,grade3plus_ae_rate,4.4,percent,,,constipation,verified,"Grade 3 or 4 constipation in patients treated with thalidomide was significantly increased (20.5% vs. 4.4%, P=0.022)"
+23691464,,2012,first,,control group,,overall,n_randomized,45.0,count,,,,verified,control group (n=45)
+23691464,,2012,first,,control group,,overall,orr,26.7,percent,,,,verified,"The ORRs of the two groups also had no statistical difference (34.1% vs. 26.7%, P=0.446)."
+23691464,,2012,first,,control group,,overall,pfs_median,5.2,months,,,,verified,"The median PFS of the treatment and control groups were 5.6 and 5.2 months, respectively."
+23691464,,2012,first,,treatment group,control group,overall,dcr,63.6,percent,,,,verified,"The addition of thalidomide to XELOX significantly improved the DCR (63.6% vs. 42.2%, P=0.043)."
+23691464,,2012,first,,treatment group,,overall,grade3plus_ae_rate,20.5,percent,,,constipation,verified,"Grade 3 or 4 constipation in patients treated with thalidomide was significantly increased (20.5% vs. 4.4%, P=0.022)"
+23691464,,2012,first,,treatment group,,overall,n_randomized,44.0,count,,,,verified,treatment group (n=44)
+23691464,,2012,first,,treatment group,control group,overall,orr,34.1,percent,,,,verified,"The ORRs of the two groups also had no statistical difference (34.1% vs. 26.7%, P=0.446)."
+23691464,,2012,first,,treatment group,control group,overall,pfs_median,5.6,months,,,,verified,"The median PFS of the treatment and control groups were 5.6 and 5.2 months, respectively."
+20127139,,2011,second,,AZD6244,,overall,n_randomized,34.0,count,,,,verified,"34 and 35 patients in the AZD6244 and capecitabine groups, respectively"
+20127139,,2011,second,,capecitabine,,overall,n_randomized,35.0,count,,,,verified,"34 and 35 patients in the AZD6244 and capecitabine groups, respectively"
+20333384,HA-Irinotecan,2011,second,,HA-Irinotecan,,overall,n_randomized,41.0,count,,,,verified,Seventy-six patients (41 HA-Irinotecan and 35 irinotecan-alone) were enrolled
+20333384,HA-Irinotecan,2011,second,,HA-Irinotecan,irinotecan,overall,os_median,10.1,months,,,,verified,Median overall survival was 10.1 months for HA-Irinotecan compared to 8.0 months for irinotecan patients (P = 0.196)
+20333384,HA-Irinotecan,2011,second,,HA-Irinotecan,irinotecan,overall,other_time_median,4.0,months,,,time to treatment failure,verified,time to treatment failure (4 vs. 1.8 months; P = 0.007)
+20333384,HA-Irinotecan,2011,second,,HA-Irinotecan,irinotecan,overall,pfs_median,5.2,months,,,,verified,HA-Irinotecan patients had a significantly longer median progression-free survival of 5.2 versus 2.4 months (P = 0.017)
+20333384,HA-Irinotecan,2011,second,,irinotecan,,overall,n_randomized,35.0,count,,,,verified,Seventy-six patients (41 HA-Irinotecan and 35 irinotecan-alone) were enrolled
+20333384,HA-Irinotecan,2011,second,,irinotecan,HA-Irinotecan,overall,os_median,8.0,months,,,,verified,Median overall survival was 10.1 months for HA-Irinotecan compared to 8.0 months for irinotecan patients (P = 0.196)
+20333384,HA-Irinotecan,2011,second,,irinotecan,HA-Irinotecan,overall,other_time_median,1.8,months,,,time to treatment failure,verified,time to treatment failure (4 vs. 1.8 months; P = 0.007)
+20333384,HA-Irinotecan,2011,second,,irinotecan,HA-Irinotecan,overall,pfs_median,2.4,months,,,,verified,HA-Irinotecan patients had a significantly longer median progression-free survival of 5.2 versus 2.4 months (P = 0.017)
+20473862,,2011,first,,FOLFOX-6,,overall,n_randomized,150.0,count,,,,verified,FOLFOX-6 n = 150
+20473862,,2011,first,,FOLFOX-6,,per-protocol,orr,46.0,percent,,,,verified,"ORR was 42 and 46% with XELOX and FOLFOX-6, respectively"
+20473862,,2011,first,,FOLFOX-6,,intent-to-treat,os_median,20.5,months,,,,verified,"median OS was 19.9 and 20.5 months, respectively"
+20473862,,2011,first,,FOLFOX-6,,intent-to-treat,pfs_median,9.3,months,,,,verified,9.3 months with FOLFOX-6
+20473862,,2011,first,,XELOX,,overall,n_randomized,156.0,count,,,,verified,XELOX n = 156
+20473862,,2011,first,,XELOX,,per-protocol,orr,42.0,percent,,,,verified,"ORR was 42 and 46% with XELOX and FOLFOX-6, respectively"
+20473862,,2011,first,,XELOX,,intent-to-treat,os_median,19.9,months,,,,verified,"median OS was 19.9 and 20.5 months, respectively"
+20473862,,2011,first,,XELOX,,intent-to-treat,pfs_median,8.8,months,,,,verified,median progression-free survival was 8.8 months with XELOX
+20971632,,2011,first,,FUFIRI,,overall,dcr,81.0,percent,,,,verified,"disease control rate (ORR plus stable disease) was significantly greater in the FUFIRI group (81% versus 68%, P=0.001)"
+20971632,,2011,first,,FUFIRI,,overall,grade3plus_ae_rate,30.0,percent,,,diarrhoea,verified,"diarrhoea which was more frequent in the mIROX-arm compared to the FUFIRI-arm (19% versus 30%, P=0.006)"
+20971632,,2011,first,,FUFIRI,,overall,orr,41.0,percent,,,,verified,Both regimens induced an identical objective response rate (ORR) of 41%
+20971632,,2011,first,,FUFIRI,,overall,os_median,22.0,months,,,,verified,and 22 months in the FUFIRI-arm
+20971632,,2011,first,,FUFIRI,,overall,pfs_median,8.2,months,,,,verified,and 8.2 months in the FUFIRI arm
+20971632,,2011,first,,mIROX,,overall,dcr,68.0,percent,,,,verified,"disease control rate (ORR plus stable disease) was significantly greater in the FUFIRI group (81% versus 68%, P=0.001)"
+20971632,,2011,first,,mIROX,,overall,grade3plus_ae_rate,19.0,percent,,,diarrhoea,verified,"diarrhoea which was more frequent in the mIROX-arm compared to the FUFIRI-arm (19% versus 30%, P=0.006)"
+20971632,,2011,first,,mIROX,,overall,orr,41.0,percent,,,,verified,Both regimens induced an identical objective response rate (ORR) of 41%
+20971632,,2011,first,,mIROX,FUFIRI,overall,os_hr,1.08,ratio,,,,verified,"hazard ratio=1.08, P=0.276"
+20971632,,2011,first,,mIROX,,overall,os_median,19.0,months,,,,verified,overall survival time with 19 months in the mIROX-arm
+20971632,,2011,first,,mIROX,FUFIRI,overall,pfs_hr,1.14,ratio,0.94,1.37,,verified,hazard ratio=1.14; 95% confidence interval (CI) 0.94-1.37
+20971632,,2011,first,,mIROX,,overall,pfs_median,7.2,months,,,,verified,Progression-free survival was 7.2 months in the mIROX arm
+21078826,GISCAD,2011,first,,arm A,arm B,overall,os_hr,0.88,ratio,,,,verified,"hazard ratio (HR), 0.88"
+21078826,GISCAD,2011,first,,arm A,arm B,overall,os_median,18.0,months,,,,verified,OS was 18 months in arm A and 17 months in arm B
+21078826,GISCAD,2011,first,,arm A,arm B,overall,pfs_hr,1.03,ratio,,,,verified,"6 months in both, with HR, 1.03"
+21078826,GISCAD,2011,first,,arm A,arm B,overall,pfs_median,6.0,months,,,,verified,"PFS was comparable in the two groups (6 months in both, with HR, 1.03)"
+21078826,GISCAD,2011,first,,arm B,,overall,os_median,17.0,months,,,,verified,OS was 18 months in arm A and 17 months in arm B
+21078826,GISCAD,2011,first,,arm B,,overall,pfs_median,6.0,months,,,,verified,"PFS was comparable in the two groups (6 months in both, with HR, 1.03)"
+21248446,,2011,unclear,,cetuximab (E),cetuximab-sorafenib (EN),overall,orr,17.6,percent,,,partial response,verified,which constituted 33.3% compared to 17.6% in the cetuximab group (P = 0.44)
+21248446,,2011,unclear,,cetuximab-sorafenib (EN),cetuximab (E),overall,orr,33.3,percent,,,partial response,verified,"Partial response was higher in cetuximab-sorafenib (EN), which constituted 33.3% compared to 17.6% in the cetuximab group (P = 0.44)"
+21300933,AIO KRK-0104,2011,first,,CAPIRI plus cetuximab,,overall,orr,46.0,percent,35.0,57.0,intention-to-treat population (n = 177),verified,"ORR was 46% (95% CI, 35 to 57) for CAPIRI plus cetuximab"
+21300933,AIO KRK-0104,2011,first,,CAPIRI plus cetuximab,,KRAS wild-type,orr,50.0,percent,,,KRAS wild-type subgroup,verified,Patients with KRAS wild-type in the CAPIRI plus cetuximab arm showed an ORR of 50.0%
+21300933,AIO KRK-0104,2011,first,,CAPIRI plus cetuximab,,KRAS wild-type,os_median,21.1,months,,,KRAS wild-type subgroup,verified,an OS of 21.1 months
+21300933,AIO KRK-0104,2011,first,,CAPIRI plus cetuximab,,KRAS wild-type,pfs_median,6.2,months,,,KRAS wild-type subgroup,verified,a PFS of 6.2 months and an OS of 21.1 months
+21300933,AIO KRK-0104,2011,first,,CAPOX plus cetuximab,,overall,orr,48.0,percent,37.0,59.0,intention-to-treat population (n = 177),verified,"48% (95% CI, 37 to 59) for CAPOX plus cetuximab"
+21300933,AIO KRK-0104,2011,first,,CAPOX plus cetuximab,,KRAS wild-type,orr,44.9,percent,,,KRAS wild-type subgroup,verified,an ORR of 44.9%
+21300933,AIO KRK-0104,2011,first,,CAPOX plus cetuximab,,KRAS wild-type,os_median,23.5,months,,,KRAS wild-type subgroup,verified,an OS of 23.5 months were observed
+21300933,AIO KRK-0104,2011,first,,CAPOX plus cetuximab,,KRAS wild-type,pfs_median,7.1,months,,,KRAS wild-type subgroup,verified,a PFS of 7.1 months and an OS of 23.5 months
+21464401,,2011,second,,PTK/ZK + FOLFOX4,Placebo + FOLFOX4,overall,os_hr,1.0,ratio,0.87,1.16,,verified,"hazard ratio [HR], 1.00; 95% CI, 0.87 to 1.16"
+21464401,,2011,second,,PTK/ZK + FOLFOX4,,overall,os_median,13.1,months,,,,verified,median OS was 13.1 and 11.9 months
+21464401,,2011,second,,PTK/ZK + FOLFOX4,Placebo + FOLFOX4,overall,pfs_hr,0.83,ratio,0.71,0.96,,verified,"HR, 0.83; 95% CI, 0.71 to 0.96"
+21464401,,2011,second,,PTK/ZK + FOLFOX4,Placebo + FOLFOX4,"high LDH, regardless of WHO PS",pfs_hr,0.63,ratio,0.48,0.83,exploratory post hoc analysis,verified,"HR, 0.63; 95% CI, 0.48 to 0.83"
+21464401,,2011,second,,PTK/ZK + FOLFOX4,,overall,pfs_median,5.6,months,,,,verified,"Median PFS was longer with PTK/ZK than with placebo (5.6 and 4.2 months, respectively"
+21464401,,2011,second,,Placebo + FOLFOX4,,overall,os_median,11.9,months,,,,verified,median OS was 13.1 and 11.9 months
+21464401,,2011,second,,Placebo + FOLFOX4,,overall,pfs_median,4.2,months,,,,verified,"Median PFS was longer with PTK/ZK than with placebo (5.6 and 4.2 months, respectively"
+21464406,CONFIRM-1,2011,first,,FOLFOX4 plus PTK/ZK,,overall,os_median,21.4,months,,,median OS,verified,median OS was 21.4 months with PTK/ZK
+21464406,CONFIRM-1,2011,first,,FOLFOX4 plus PTK/ZK,FOLFOX4 plus placebo,overall,pfs_hr,0.88,ratio,0.74,1.03,hazard ratio for PFS,verified,"hazard ratio [HR], 0.88; 95% CI, 0.74 to 1.03"
+21464406,CONFIRM-1,2011,first,,FOLFOX4 plus PTK/ZK,FOLFOX4 plus placebo,high serum LDH,pfs_hr,0.67,ratio,0.49,0.91,hazard ratio for PFS,verified,"HR, 0.67; 95% CI, 0.49 to 0.91"
+21464406,CONFIRM-1,2011,first,,FOLFOX4 plus PTK/ZK,,overall,pfs_median,7.7,months,,,median PFS by central review,verified,Median PFS by central review was 7.7 months with PTK/ZK
+21464406,CONFIRM-1,2011,first,,FOLFOX4 plus PTK/ZK,,high serum LDH,pfs_median,7.7,months,,,median PFS,verified,"PFS was longer with PTK/ZK versus placebo (7.7 v 5.8 months, respectively"
+21464406,CONFIRM-1,2011,first,,FOLFOX4 plus placebo,FOLFOX4 plus PTK/ZK,overall,os_hr,1.08,ratio,0.94,1.24,hazard ratio for OS,verified,"HR, 1.08; 95% CI, 0.94 to 1.24"
+21464406,CONFIRM-1,2011,first,,FOLFOX4 plus placebo,,overall,os_median,20.5,months,,,median OS,verified,versus 20.5 months with placebo
+21464406,CONFIRM-1,2011,first,,FOLFOX4 plus placebo,,overall,pfs_median,7.6,months,,,median PFS by central review,verified,versus 7.6 months with placebo
+21464406,CONFIRM-1,2011,first,,FOLFOX4 plus placebo,,high serum LDH,pfs_median,5.8,months,,,median PFS,verified,"PFS was longer with PTK/ZK versus placebo (7.7 v 5.8 months, respectively"
+21570111,FOCUS2,2011,first,,A,,overall,n_randomized,115.0,count,,,,verified,"115 to each of groups A-C, 114 to group D"
+21570111,FOCUS2,2011,first,,B,A,overall,grade3plus_ae_rate,38.0,percent,,,"any grade 3 or worse toxic effect, oxaliplatin versus no oxaliplatin",verified,83/219 [38%] vs 70/221 [32%]
+21570111,FOCUS2,2011,first,,B,,overall,n_randomized,115.0,count,,,,verified,"115 to each of groups A-C, 114 to group D"
+21570111,FOCUS2,2011,first,,C,A,overall,grade3plus_ae_rate,40.0,percent,,,"any grade 3 or worse toxic effect, capecitabine versus fluorouracil",verified,88/222 [40%] vs 65/218 [30%]
+21570111,FOCUS2,2011,first,,C,,overall,n_randomized,115.0,count,,,,verified,"115 to each of groups A-C, 114 to group D"
+21570111,FOCUS2,2011,first,,D,,overall,n_randomized,114.0,count,,,,verified,114 to group D
+21570111,FOCUS2,2011,first,,oxaliplatin addition (B+D),no oxaliplatin (A+C),overall,pfs_hr,0.84,ratio,0.69,1.01,,verified,"hazard ratio 0·84, 95% CI 0·69-1·01, p=0·07"
+21570111,FOCUS2,2011,first,,oxaliplatin addition (B+D),no oxaliplatin (A+C),overall,pfs_median,5.8,months,,,,verified,median 5·8 months [IQR 3·3-7·5] vs 4·5 months [2·8-6·4]
+21641636,COIN,2011,first,KRAS exon 2 wild-type,A,,KRAS wild-type,os_median,17.9,months,,,,verified,median survival 17·9 months [IQR 10·3-29·2] in the control group
+21641636,COIN,2011,first,KRAS exon 2 wild-type,A,,KRAS wild-type,pfs_median,8.6,months,,,,verified,8·6 months [IQR 5·0-12·5] in the control group
+21641636,COIN,2011,first,KRAS exon 2 wild-type,B,A,KRAS wild-type,os_hr,1.04,ratio,0.87,1.23,,verified,"HR 1·04, 95% CI 0·87-1·23, p=0·67"
+21641636,COIN,2011,first,KRAS exon 2 wild-type,B,,KRAS wild-type,os_median,17.0,months,,,,verified,17·0 months [9·4-30·1] in the cetuximab group
+21641636,COIN,2011,first,KRAS exon 2 wild-type,B,A,KRAS wild-type,pfs_hr,0.96,ratio,0.82,1.12,,verified,"HR 0·96, 0·82-1·12, p=0·60"
+21641636,COIN,2011,first,KRAS exon 2 wild-type,B,,KRAS wild-type,pfs_median,8.6,months,,,,verified,8·6 months [5·1-13·8] in the cetuximab group
 21641867,COIN,2011,first,,A,,per-protocol,grade3plus_ae_rate,15.0,percent,,,haematological toxic effects,verified,more patients on continuous than on intermittent treatment had grade 3 or worse haematological toxic effects (72 [15%] vs 60 [12%])
 21641867,COIN,2011,first,,A,,per-protocol,grade3plus_ae_rate,4.0,percent,,,hand-foot syndrome,verified,hand-foot syndrome (21 [4%] vs 15 [3%])
 21641867,COIN,2011,first,,A,,per-protocol,grade3plus_ae_rate,27.0,percent,,,peripheral neuropathy,verified,Grade 3 or worse peripheral neuropathy (126 [27%] vs 25 [5%])
@@ -1741,6 +1885,129 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 21641867,COIN,2011,first,,C,A,raised baseline platelet count,os_hr,1.54,ratio,1.17,2.03,per-protocol subgroup,verified,"versus 1.54 (1.17-2.03, p=0.0018) in patients with a raised platelet count"
 21641867,COIN,2011,first,,C,,per-protocol,os_median,18.0,months,,,,verified,and 18.0 months (12.1-29.3) in arm C
 21641867,COIN,2011,first,,C,,intention-to-treat,os_median,14.4,months,,,,verified,and 14.4 months (8.0-24.7) in arm C
+21826593,,2011,first,,control,,overall,grade3plus_ae_rate,76.7,percent,,,grade 3/4 adverse events,verified,grade 3/4 AEs were 56.6% and 76.7%
+21826593,,2011,first,,control,,overall,n_randomized,60.0,count,,,,verified,"control group (FOLFOX-4 plus placebo, 60 cases)"
+21826593,,2011,first,,control,,overall,orr,34.0,percent,,,,verified,RR was 41.5% in the experimental group and 34.0% in the control group
+21826593,,2011,first,,control,,overall,os_median,18.0,months,,,,verified,Median OS were 21.0 months and 18.0 months
+21826593,,2011,first,,control,,overall,pfs_median,8.0,months,,,,verified,"Median PFS were 9.0 months and 8.0 months, respectively"
+21826593,,2011,first,,experimental,,overall,grade3plus_ae_rate,56.6,percent,,,grade 3/4 adverse events,verified,grade 3/4 AEs were 56.6% and 76.7%
+21826593,,2011,first,,experimental,,overall,n_randomized,60.0,count,,,,verified,"experimental group (FOLFOX-4 plus YZD, 60 cases)"
+21826593,,2011,first,,experimental,control,overall,orr,41.5,percent,,,,verified,RR was 41.5% in the experimental group and 34.0% in the control group
+21826593,,2011,first,,experimental,control,overall,os_hr,0.65,ratio,0.43,0.99,,verified,"HR: 0.65, 95% CI: 0.43 to 0.99, P=0.043"
+21826593,,2011,first,,experimental,,overall,os_median,21.0,months,,,,verified,Median OS were 21.0 months and 18.0 months
+21826593,,2011,first,,experimental,control,overall,pfs_hr,0.78,ratio,0.53,1.15,,verified,"hazard ratio (HR): 0.78, 95% CI: 0.53 to 1.15, P=0.215"
+21826593,,2011,first,,experimental,,overall,pfs_median,9.0,months,,,,verified,"Median PFS were 9.0 months and 8.0 months, respectively"
+21903473,FFCD 2000-05,2011,mixed,,Combination,,overall,n_randomized,205.0,count,,,,verified,and 205 to the combination group
+21903473,FFCD 2000-05,2011,mixed,,Sequential,,overall,n_randomized,205.0,count,,,,verified,205 patients were randomly assigned to the sequential group
+21959045,ARTIST,2011,first,,bevacizumab plus mIFL,,overall,grade3plus_ae_rate,33.0,percent,,,neutropenia,verified,33% in the bevacizumab plus mIFL group
+21959045,ARTIST,2011,first,,bevacizumab plus mIFL,,overall,orr,35.0,percent,,,,verified,response rate (17% vs. 35%
+21959045,ARTIST,2011,first,,bevacizumab plus mIFL,,overall,os_median,18.7,months,,,,verified,median overall survival (13.4 months vs. 18.7 months
+21959045,ARTIST,2011,first,,bevacizumab plus mIFL,,overall,pfs_median,8.3,months,,,,verified,8.3 months in the bevacizumab plus mIFL group
+21959045,ARTIST,2011,first,,mIFL,,overall,grade3plus_ae_rate,21.0,percent,,,diarrhea,verified,diarrhea (21% in the mIFL group
+21959045,ARTIST,2011,first,,mIFL,,overall,grade3plus_ae_rate,19.0,percent,,,neutropenia,verified,neutropenia (19% in the mIFL group
+21959045,ARTIST,2011,first,,mIFL,,overall,orr,17.0,percent,,,,verified,response rate (17% vs. 35%
+21959045,ARTIST,2011,first,,mIFL,,overall,os_median,13.4,months,,,,verified,median overall survival (13.4 months vs. 18.7 months
+21959045,ARTIST,2011,first,,mIFL,,overall,pfs_median,4.2,months,,,,verified,4.2 months in the mIFL group
+21969495,,2011,second,,CAP,,overall,n_randomized,18.0,count,,,,verified,and 18 to CAP
+21969495,,2011,second,,CAP,,overall,orr,7.0,percent,,,,verified,ORR was 20% v 7% in the P-CAP and CAP groups
+21969495,,2011,second,,CAP,,overall,os_median,7.6,months,,,,verified,median OS (17.7 v 7.6 months; P = .0052)
+21969495,,2011,second,,CAP,,fluorouracil-refractory,os_median,6.5,months,,,,verified,median OS of 15.1 v 6.5 months (P = .0061)
+21969495,,2011,second,,CAP,,overall,ttp_median,10.1,weeks,,,,verified,Median TTP (27.5 v 10.1 weeks; P < .001)
+21969495,,2011,second,,CAP,,fluorouracil-refractory,ttp_median,9.0,weeks,,,,verified,A subset analysis of fluorouracil-refractory patients showed a median TTP of 17.6 v 9.0 weeks (P < .001)
+21969495,,2011,second,,P-CAP,,overall,orr,20.0,percent,,,,verified,ORR was 20% v 7% in the P-CAP and CAP groups
+21969495,,2011,second,,P-CAP,CAP,overall,os_median,17.7,months,,,,verified,median OS (17.7 v 7.6 months; P = .0052)
+21969495,,2011,second,,P-CAP,CAP,fluorouracil-refractory,os_median,15.1,months,,,,verified,median OS of 15.1 v 6.5 months (P = .0061)
+21969495,,2011,second,,P-CAP,CAP,overall,ttp_median,27.5,weeks,,,,verified,Median TTP (27.5 v 10.1 weeks; P < .001)
+21969495,,2011,second,,P-CAP,CAP,fluorouracil-refractory,ttp_median,17.6,weeks,,,,verified,A subset analysis of fluorouracil-refractory patients showed a median TTP of 17.6 v 9.0 weeks (P < .001)
+19622596,XELOX(30) vs XELOX(30Chron),2010,first,,arm A,,overall,grade3plus_ae_rate,31.0,percent,,,overall toxicity grade 3-4,verified,grade 3-4 was 31% versus 37%
+19622596,XELOX(30) vs XELOX(30Chron),2010,first,,arm A,,overall,grade3plus_ae_rate,16.0,percent,,,grade 3 neuropathy,verified,The incidence of grade 3 neuropathy was 16% in arm A and 19% in arm B
+19622596,XELOX(30) vs XELOX(30Chron),2010,first,,arm A,,overall,os_median,17.6,months,,,,verified,median overall survival (17.6 versus 15.5 months
+19622596,XELOX(30) vs XELOX(30Chron),2010,first,,arm A,,overall,pfs_median,8.9,months,,,,verified,median progression-free survival (8.9 versus 8.8 months
+19622596,XELOX(30) vs XELOX(30Chron),2010,first,,arm B,,overall,grade3plus_ae_rate,37.0,percent,,,overall toxicity grade 3-4,verified,grade 3-4 was 31% versus 37%
+19622596,XELOX(30) vs XELOX(30Chron),2010,first,,arm B,,overall,grade3plus_ae_rate,19.0,percent,,,grade 3 neuropathy,verified,The incidence of grade 3 neuropathy was 16% in arm A and 19% in arm B
+19622596,XELOX(30) vs XELOX(30Chron),2010,first,,arm B,,overall,os_median,15.5,months,,,,verified,median overall survival (17.6 versus 15.5 months
+19622596,XELOX(30) vs XELOX(30Chron),2010,first,,arm B,,overall,pfs_median,8.8,months,,,,verified,median progression-free survival (8.9 versus 8.8 months
+19713248,CAPOX vs CAPIRI elderly,2010,first,,CAPIRI,,overall,grade3plus_ae_rate,32.0,percent,,,diarrhea,verified,diarrhea (32% versus 15%; P = 0.052)
+19713248,CAPOX vs CAPIRI elderly,2010,first,,CAPIRI,,overall,grade3plus_ae_rate,23.0,percent,,,neutropenia,verified,neutropenia (23% versus 6%; P = 0.021)
+19713248,CAPOX vs CAPIRI elderly,2010,first,,CAPIRI,,overall,orr,36.0,percent,,,,verified,ORR 36%; P = 0.831
+19713248,CAPOX vs CAPIRI elderly,2010,first,,CAPIRI,,overall,os_median,14.0,months,,,,verified,median survival times of 19.3 months and 14.0 months
+19713248,CAPOX vs CAPIRI elderly,2010,first,,CAPIRI,,overall,ttp_median,7.0,months,,,,verified,7 months for CAPIRI (P = 0.195)
+19713248,CAPOX vs CAPIRI elderly,2010,first,,CAPOX,,overall,grade3plus_ae_rate,15.0,percent,,,diarrhea,verified,diarrhea (32% versus 15%; P = 0.052)
+19713248,CAPOX vs CAPIRI elderly,2010,first,,CAPOX,,overall,grade3plus_ae_rate,6.0,percent,,,neutropenia,verified,neutropenia (23% versus 6%; P = 0.021)
+19713248,CAPOX vs CAPIRI elderly,2010,first,,CAPOX,,overall,orr,38.0,percent,,,,verified,ORR 38%
+19713248,CAPOX vs CAPIRI elderly,2010,first,,CAPOX,,overall,os_median,19.3,months,,,,verified,median survival times of 19.3 months and 14.0 months
+19713248,CAPOX vs CAPIRI elderly,2010,first,,CAPOX,,overall,ttp_median,8.0,months,,,,verified,Median time to progression was 8 months for CAPOX
+20108160,,2010,unclear,,Ca/Mg group,,overall,dcr,73.0,percent,,,,verified,"Ca/Mg group: RR 36%, DCR 73%"
+20108160,,2010,unclear,,Ca/Mg group,,overall,n_randomized,17.0,count,,,,verified,"Ca/Mg group, n = 17"
+20108160,,2010,unclear,,Ca/Mg group,,overall,orr,36.0,percent,,,,verified,"Ca/Mg group: RR 36%, DCR 73%"
+20108160,,2010,unclear,,Ca/Mg group,,overall,pfs_median,9.2,months,,,,verified,The median progression-free survival time was 9.2 months in the Ca/Mg group
+20108160,,2010,unclear,,Placebo group,,overall,dcr,70.0,percent,,,,verified,"Placebo group: RR 40%, DCR 70%"
+20108160,,2010,unclear,,Placebo group,,overall,n_randomized,16.0,count,,,,verified,"placebo group, n = 16"
+20108160,,2010,unclear,,Placebo group,,overall,orr,40.0,percent,,,,verified,"Placebo group: RR 40%, DCR 70%"
+20108160,,2010,unclear,,Placebo group,,overall,pfs_median,8.1,months,,,,verified,and 8.1 months in the control group
+20516443,MAX,2010,first,,C,,overall,os_median,18.9,months,,,,verified,median OS was 18.9 months for capecitabine
+20516443,MAX,2010,first,,C,,overall,pfs_median,5.7,months,,,,verified,Median PFS was 5.7 months for capecitabine
+20516443,MAX,2010,first,,CB,C,overall,pfs_hr,0.63,ratio,0.5,0.79,,verified,"capecitabine v CB: hazard ratio [HR], 0.63; 95% CI, 0.50 to 0.79"
+20516443,MAX,2010,first,,CB,,overall,pfs_median,8.5,months,,,,verified,8.5 months for CB
+20516443,MAX,2010,first,,CBM,,overall,os_median,16.4,months,,,,verified,was 16.4 months for CBM
+20516443,MAX,2010,first,,CBM,C,overall,pfs_hr,0.59,ratio,0.47,0.75,,verified,"C v CBM: HR, 0.59; 95% CI, 0.47 to 0.75"
+20516443,MAX,2010,first,,CBM,,overall,pfs_median,8.4,months,,,,verified,8.4 months for CBM
+20567019,,2010,third_or_later,,arm A,,overall,os_median,7.3,months,,,,verified,Median overall survival was 7.3 and 10.0 months in arms A and B
+20567019,,2010,third_or_later,,arm A,,overall,other_time_median,2.1,months,,,time to liver progression (TTLP),verified,Median TTLP was 2.1 and 5.5 months in arms A and B
+20567019,,2010,third_or_later,,arm A,,overall,ttp_median,2.1,months,,,,verified,"Median time to tumor progression (TTP) was 2.1 and 4.5 months, respectively"
+20567019,,2010,third_or_later,,arm B,arm A,overall,os_hr,0.92,ratio,0.47,1.78,,verified,"(HR = 0.92; 95% CI, 0.47 to 1.78; P = .80)"
+20567019,,2010,third_or_later,,arm B,,overall,os_median,10.0,months,,,,verified,Median overall survival was 7.3 and 10.0 months in arms A and B
+20567019,,2010,third_or_later,,arm B,,overall,other_time_median,5.5,months,,,time to liver progression (TTLP),verified,Median TTLP was 2.1 and 5.5 months in arms A and B
+20567019,,2010,third_or_later,,arm B,,overall,ttp_median,4.5,months,,,,verified,"Median time to tumor progression (TTP) was 2.1 and 4.5 months, respectively"
+20593498,CECOG,2010,unclear,,A,B,overall,orr,43.0,percent,,,,verified,overall response rate (ORR) 43% vs 45%
+20593498,CECOG,2010,unclear,,A,B,overall,os_hr,0.98,ratio,,,,verified,(HR = 0.98)
+20593498,CECOG,2010,unclear,,A,,overall,os_median,17.4,months,,,,verified,"median overall survival (OS), 17.4 mo vs 18.9 mo"
+20593498,CECOG,2010,unclear,,A,B,overall,pfs_hr,1.06,ratio,,,,verified,hazard ratio (HR) = 1.06
+20593498,CECOG,2010,unclear,,A,B,overall,pfs_median,8.6,months,,,,verified,"median PFS, 8.6 mo vs 8.3 mo"
+20593498,CECOG,2010,unclear,,B,,overall,orr,45.0,percent,,,,verified,overall response rate (ORR) 43% vs 45%
+20593498,CECOG,2010,unclear,,B,,overall,os_median,18.9,months,,,,verified,"median overall survival (OS), 17.4 mo vs 18.9 mo"
+20593498,CECOG,2010,unclear,,B,,overall,pfs_median,8.3,months,,,,verified,"median PFS, 8.6 mo vs 8.3 mo"
+20708966,FIRIS,2010,second,,FOLFIRI,,overall,grade3plus_ae_rate,52.1,percent,,,neutropenia,verified,neutropenia (110 [52.1%] of 211 patients in the FOLFIRI group
+20708966,FIRIS,2010,second,,FOLFIRI,,overall,grade3plus_ae_rate,15.6,percent,,,leucopenia,verified,leucopenia (33 [15.6%] in the FOLFIRI group
+20708966,FIRIS,2010,second,,FOLFIRI,,overall,grade3plus_ae_rate,4.7,percent,,,diarrhoea,verified,diarrhoea (ten [4.7%] in the FOLFIRI group
+20708966,FIRIS,2010,second,,FOLFIRI,,overall,n_randomized,213.0,count,,,,verified,FOLFIRI (n=213) or IRIS (n=213)
+20708966,FIRIS,2010,second,,FOLFIRI,,overall,pfs_median,5.1,months,,,,verified,median progression-free survival was 5.1 months in the FOLFIRI group
+20708966,FIRIS,2010,second,,IRIS,,overall,grade3plus_ae_rate,36.2,percent,,,neutropenia,verified,76 [36.2%] of 210 patients in the IRIS group
+20708966,FIRIS,2010,second,,IRIS,,overall,grade3plus_ae_rate,18.1,percent,,,leucopenia,verified,38 [18.1%] in the IRIS group
+20708966,FIRIS,2010,second,,IRIS,,overall,grade3plus_ae_rate,20.5,percent,,,diarrhoea,verified,43 [20.5%] in the IRIS group
+20708966,FIRIS,2010,second,,IRIS,,overall,n_randomized,213.0,count,,,,verified,FOLFIRI (n=213) or IRIS (n=213)
+20708966,FIRIS,2010,second,,IRIS,FOLFIRI,overall,pfs_hr,1.077,ratio,0.879,1.319,,verified,"hazard ratio 1.077, 95% CI 0.879-1.319"
+20708966,FIRIS,2010,second,,IRIS,,overall,pfs_median,5.8,months,,,,verified,5.8 months in the IRIS group
+20798560,,2010,first,,arm A,,overall,orr,36.8,percent,,,partial response,verified,"partial response, 42 patients (36.8%) and 38 patients (35.2%) for arms A and B, respectively"
+20798560,,2010,first,,arm A,,overall,os_median,22.0,months,18.1,25.9,,verified,The median overall survival of arm A patients was 22.0 months (95% CI: 18.1-25.9)
+20798560,,2010,first,,arm B,,overall,orr,35.2,percent,,,partial response,verified,"partial response, 42 patients (36.8%) and 38 patients (35.2%) for arms A and B, respectively"
+20798560,,2010,first,,arm B,,overall,os_median,25.0,months,18.1,31.9,,verified,25.0 months (CI: 18.1-31.9) for arm B patients
+18718892,FUIRI vs FOLFIRI,2009,first,,FOLFIRI,,overall,grade3plus_ae_rate,27.0,percent,,,grade 3/4 neutropenia,verified,Grade 3/4 neutropenia was significantly more frequent on FOLFIRI arm (27% versus 9%)
+18718892,FUIRI vs FOLFIRI,2009,first,,FOLFIRI,FUIRI,overall,orr,57.0,percent,49.0,64.0,intention-to-treat,verified,the response rates for FOLFIRI and FUIRI were 57% [95% confidence interval (CI) 49% to 64%]
+18718892,FUIRI vs FOLFIRI,2009,first,,FOLFIRI,FUIRI,overall,os_median,21.6,months,,,,verified,median overall survival (21.6 versus 19.2 months; log-rank test P = 0.2941)
+18718892,FUIRI vs FOLFIRI,2009,first,,FOLFIRI,FUIRI,overall,pfs_median,8.3,months,,,,verified,median progression-free survival (8.3 versus 8.4 months; P = 0.4339)
+18718892,FUIRI vs FOLFIRI,2009,first,,FUIRI,,overall,grade3plus_ae_rate,9.0,percent,,,grade 3/4 neutropenia,verified,Grade 3/4 neutropenia was significantly more frequent on FOLFIRI arm (27% versus 9%)
+18718892,FUIRI vs FOLFIRI,2009,first,,FUIRI,FOLFIRI,overall,orr,51.0,percent,43.0,59.0,intention-to-treat,verified,51% (95% CI 43% to 59%)
+18718892,FUIRI vs FOLFIRI,2009,first,,FUIRI,FOLFIRI,overall,os_median,19.2,months,,,,verified,median overall survival (21.6 versus 19.2 months; log-rank test P = 0.2941)
+18718892,FUIRI vs FOLFIRI,2009,first,,FUIRI,FOLFIRI,overall,pfs_median,8.4,months,,,,verified,median progression-free survival (8.3 versus 8.4 months; P = 0.4339)
+18719941,SICOG 0401,2009,unclear,,OXAFAFU,OXXEL,overall,orr,33.0,percent,,,"response rate, 6 complete and 48 partial responses",verified,six complete and 48 partial responses were obtained with OXAFAFU (RR = 33%)
+18719941,SICOG 0401,2009,unclear,,OXAFAFU,OXXEL,overall,pfs_hr,1.12,ratio,,,,verified,"(HR = 1.12, P = 0.354)"
+18719941,SICOG 0401,2009,unclear,,OXAFAFU,OXXEL,overall,pfs_median,6.5,months,,,,verified,and 6.5 months in the OXAFAFU arm
+18719941,SICOG 0401,2009,unclear,,OXXEL,OXAFAFU,overall,orr,34.0,percent,,,"response rate, 11 complete and 42 partial responses",verified,Eleven complete and 42 partial responses were registered with OXXEL (RR = 34%)
+18719941,SICOG 0401,2009,unclear,,OXXEL,OXAFAFU,overall,pfs_median,6.6,months,,,,verified,Median PFS was 6.6 months in the OXXEL
+18854549,,2009,first,,A,,overall,grade3plus_ae_rate,33.0,percent,,,neutropenia,verified,"neutropenia (arm A, 33%; arm B, 5%)"
+18854549,,2009,first,,A,,overall,grade3plus_ae_rate,14.0,percent,,,diarrhoea,verified,"diarrhoea (arm A, 14%; arm B, 8%)"
+18854549,,2009,first,,A,,overall,grade3plus_ae_rate,9.0,percent,,,fatigue,verified,"fatigue (arm A, 9%; arm B, 8%)"
+18854549,,2009,first,,A,,overall,orr,54.1,percent,,,,verified,the addition of oxaliplatin significantly improved response rates (54.1 versus 29.8%; P < 0.0001)
+18854549,,2009,first,,A,B,overall,os_hr,0.93,ratio,0.78,1.1,2-year survival rate 27.3% in arm A,verified,hazard ratio 0.93; 95% confidence interval 0.78-1.10
+18854549,,2009,first,,A,,overall,pfs_median,7.9,months,,,,verified,median progression-free survival (7.9 versus 5.9 months; P < 0.0001)
+18854549,,2009,first,,B,,overall,grade3plus_ae_rate,5.0,percent,,,neutropenia,verified,"neutropenia (arm A, 33%; arm B, 5%)"
+18854549,,2009,first,,B,,overall,grade3plus_ae_rate,8.0,percent,,,diarrhoea,verified,"diarrhoea (arm A, 14%; arm B, 8%)"
+18854549,,2009,first,,B,,overall,grade3plus_ae_rate,8.0,percent,,,fatigue,verified,"fatigue (arm A, 9%; arm B, 8%)"
+18854549,,2009,first,,B,,overall,orr,29.8,percent,,,,verified,the addition of oxaliplatin significantly improved response rates (54.1 versus 29.8%; P < 0.0001)
+18854549,,2009,first,,B,,overall,pfs_median,5.9,months,,,,verified,median progression-free survival (7.9 versus 5.9 months; P < 0.0001)
+19196673,,2009,first,,CB,,overall,pfs_median,10.7,months,,,,verified,The median progression-free survival was 10.7 months in the CB group
+19196673,,2009,first,,CBC,,overall,pfs_median,9.4,months,,,,verified,and 9.4 in the CBC group (P=0.01)
 19339720,CRYSTAL,2009,first,,Cetuximab + FOLFIRI,,overall,grade3plus_ae_rate,19.7,percent,,,skin reactions (grade 3 only),verified,"skin reactions (which were grade 3 only) (in 19.7% vs. 0.2% of patients, P<0.001)"
 19339720,CRYSTAL,2009,first,,Cetuximab + FOLFIRI,,overall,grade3plus_ae_rate,2.5,percent,,,infusion-related reactions,verified,"infusion-related reactions (in 2.5% vs. 0%, P<0.001)"
 19339720,CRYSTAL,2009,first,,Cetuximab + FOLFIRI,,overall,grade3plus_ae_rate,15.7,percent,,,diarrhea,verified,"diarrhea (in 15.7% vs. 10.5%, P=0.008)"
@@ -1752,6 +2019,28 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 19339720,CRYSTAL,2009,first,,FOLFIRI,,overall,grade3plus_ae_rate,0.0,percent,,,infusion-related reactions,verified,"infusion-related reactions (in 2.5% vs. 0%, P<0.001)"
 19339720,CRYSTAL,2009,first,,FOLFIRI,,overall,grade3plus_ae_rate,10.5,percent,,,diarrhea,verified,"diarrhea (in 15.7% vs. 10.5%, P=0.008)"
 19339720,CRYSTAL,2009,first,,FOLFIRI,,overall,n_randomized,599.0,count,,,,verified,and 599 received FOLFIRI alone
+19380443,N9841,2009,second,,arm A,,overall,n_randomized,245.0,count,,,,verified,"arm A, n = 245"
+19380443,N9841,2009,second,,arm A,,overall,orr,15.5,percent,,,,verified,Response rates (RR; 28% v 15.5%; P = .0009)
+19380443,N9841,2009,second,,arm A,,overall,os_median,14.3,months,12.0,15.9,,verified,"14.3 months (95% CI, 12.0 to 15.9 months) for irinotecan"
+19380443,N9841,2009,second,,arm A,,overall,ttp_median,4.4,months,,,time to progression,verified,time to progression (TTP; 6.2 v 4.4 months; P = .0009)
+19380443,N9841,2009,second,,arm B,,overall,n_randomized,246.0,count,,,,verified,"arm B, n = 246"
+19380443,N9841,2009,second,,arm B,arm A,overall,orr,28.0,percent,,,,verified,Response rates (RR; 28% v 15.5%; P = .0009)
+19380443,N9841,2009,second,,arm B,arm A,overall,os_hr,0.92,ratio,0.8,1.1,,verified,"hazard ratio = 0.92; 95% CI, 0.8 to 1.1"
+19380443,N9841,2009,second,,arm B,,overall,os_median,13.8,months,12.2,15.0,,verified,"Median survival was 13.8 months (95% CI, 12.2 to 15.0 months) for initial treatment with FOLFOX4"
+19380443,N9841,2009,second,,arm B,arm A,overall,ttp_median,6.2,months,,,time to progression,verified,time to progression (TTP; 6.2 v 4.4 months; P = .0009)
+19386096,XELIRI vs FOLFIRI neoadjuvant,2009,first,,FOLFIRI,XELIRI,overall,n_randomized,46.0,count,,,,verified,46 pts in the FOLFIRI arm
+19386096,XELIRI vs FOLFIRI neoadjuvant,2009,first,,FOLFIRI,XELIRI,overall,orr,48.0,percent,,,,verified,48% in the FOLFIRI arm
+19386096,XELIRI vs FOLFIRI neoadjuvant,2009,first,,FOLFIRI,XELIRI,overall,os_median,16.6,months,,,,verified,16.6 months in the FOLFIRI arm
+19386096,XELIRI vs FOLFIRI neoadjuvant,2009,first,,FOLFIRI,XELIRI,overall,pfs_median,9.3,months,,,,verified,9.3 months in the FOLFIRI arm
+19386096,XELIRI vs FOLFIRI neoadjuvant,2009,first,,XELIRI,FOLFIRI,overall,n_randomized,41.0,count,,,,verified,41 pts in the XELIRI
+19386096,XELIRI vs FOLFIRI neoadjuvant,2009,first,,XELIRI,FOLFIRI,overall,orr,49.0,percent,,,,verified,ORR was 49% in the XELIRI
+19386096,XELIRI vs FOLFIRI neoadjuvant,2009,first,,XELIRI,FOLFIRI,overall,os_median,30.7,months,,,,verified,the median OS was 30.7 months in the XELIRI arm
+19386096,XELIRI vs FOLFIRI neoadjuvant,2009,first,,XELIRI,FOLFIRI,overall,pfs_median,10.3,months,,,,verified,the median PFS was 10.3 months in the XELIRI
+19598023,,2009,second,,group A,,overall,dcr,80.0,percent,,,,verified,Disease control rate(CR+PR+SD) was 80% in group A
+19598023,,2009,second,,group A,,overall,orr,30.0,percent,,,,verified,Tumor response rate was 30% in group A
+19598023,,2009,second,,group A,,overall,os_median,10.9,months,,,,verified,10.9 months vs 8.9 months
+19598023,,2009,second,,group B,,overall,orr,21.8,percent,,,,verified,21.8% in group B respectively
+19598023,,2009,second,,group B,,overall,os_median,8.9,months,,,,verified,10.9 months vs 8.9 months
 19786657,OPTIMOX2,2009,first,,arm 1 (maintenance),,overall,n_randomized,98.0,count,,,,verified,"maintenance arm, n = 98"
 19786657,OPTIMOX2,2009,first,,arm 1 (maintenance),,overall,orr,59.2,percent,,,initial FOLFOX chemotherapy,verified,Overall response rates were 59.2% and 59.6% for the initial FOLFOX chemotherapy
 19786657,OPTIMOX2,2009,first,,arm 1 (maintenance),,overall,orr,20.4,percent,,,FOLFOX reintroduction,verified,"20.4% and 30.3% for FOLFOX reintroduction in arms 1 and 2, respectively"
@@ -1764,6 +2053,137 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 19786657,OPTIMOX2,2009,first,,arm 2 (CFI),,overall,os_median,19.5,months,,,,verified,"6.6 and 19.5 months, respectively, in the CFI arm"
 19786657,OPTIMOX2,2009,first,,arm 2 (CFI),,overall,other_time_median,9.2,months,,,duration of disease control (DDC),corrected,9.2 months in patients assigned to the CFI arm
 19786657,OPTIMOX2,2009,first,,arm 2 (CFI),,overall,pfs_median,6.6,months,,,,verified,"6.6 and 19.5 months, respectively, in the CFI arm"
+18065406,EORTC 40015,2008,first,,CAPIRI,FOLFIRI,overall,os_median,14.8,months,,,,verified,OS 14.8 versus 19.9 months
+18065406,EORTC 40015,2008,first,,CAPIRI,FOLFIRI,overall,pfs_median,5.9,months,,,,verified,Median PFS and overall survival (OS) times were shorter for CAPIRI versus FOLFIRI (PFS 5.9 versus 9.6 months
+18065406,EORTC 40015,2008,first,,CAPIRI + C,,overall,orr,22.0,percent,,,,verified,Response rates were 22% for CAPIRI + C
+18065406,EORTC 40015,2008,first,,CAPIRI + P,,overall,orr,48.0,percent,,,,verified,48% for CAPIRI + P
+18065406,EORTC 40015,2008,first,,FOLFIRI,CAPIRI,overall,os_median,19.9,months,,,,verified,OS 14.8 versus 19.9 months
+18065406,EORTC 40015,2008,first,,FOLFIRI,CAPIRI,overall,pfs_median,9.6,months,,,,verified,versus 9.6 months and OS 14.8 versus 19.9 months
+18065406,EORTC 40015,2008,first,,FOLFIRI + C,,overall,orr,32.0,percent,,,,verified,32% for FOLFIRI + C
+18065406,EORTC 40015,2008,first,,FOLFIRI + P,,overall,orr,46.0,percent,,,,verified,46% for FOLFIRI + P
+18065406,EORTC 40015,2008,first,,celecoxib,placebo,overall,os_median,18.3,months,,,,verified,OS 18.3 versus 19.9 months
+18065406,EORTC 40015,2008,first,,celecoxib,placebo,overall,pfs_median,6.9,months,,,,verified,celecoxib versus placebo (PFS 6.9 versus 7.8 months
+18065406,EORTC 40015,2008,first,,placebo,celecoxib,overall,os_median,19.9,months,,,,verified,OS 18.3 versus 19.9 months
+18065406,EORTC 40015,2008,first,,placebo,celecoxib,overall,pfs_median,7.8,months,,,,verified,versus placebo (PFS 6.9 versus 7.8 months
+18209013,FLIRI,2008,unclear,,FLIRI,Lv5FU2-IRI,overall,grade3plus_ae_rate,11.0,percent,,,grade 3/4 neutropenia,verified,"Grade 3/4 neutropenia (11% versus 5%, P = 0.01)"
+18209013,FLIRI,2008,unclear,,FLIRI,,overall,orr,35.0,percent,,,"objective response rate, fewer responses in FLIRI group",verified,"Fewer objective responses were seen in the FLIRI group (35% versus 49%, P = 0.001)"
+18209013,FLIRI,2008,unclear,,Lv5FU2-IRI,FLIRI,overall,grade3plus_ae_rate,5.0,percent,,,grade 3/4 neutropenia,verified,"Grade 3/4 neutropenia (11% versus 5%, P = 0.01)"
+18209013,FLIRI,2008,unclear,,Lv5FU2-IRI,,overall,orr,49.0,percent,,,objective response rate,verified,"Fewer objective responses were seen in the FLIRI group (35% versus 49%, P = 0.001)"
+18349029,,2008,first,,Arm A,,overall,dcr,76.0,percent,,,,verified,with 76% disease control in both arms
+18349029,,2008,first,,Arm A,,overall,orr,14.0,percent,,,,verified,"Objective partial response rates after external review and radiological confirmation were 14% and 41% in the XELOX and in the XELOX + Cetuximab arm, respectively"
+18349029,,2008,first,,Arm A,,overall,os_median,16.5,months,,,,verified,The median overall survival was 16.5 months for arm A and 20.5 months for arm B
+18349029,,2008,first,,Arm A,,overall,ttp_median,5.8,months,,,,verified,The median time to progression was 5.8 months for arm A and 7.2 months for arm B
+18349029,,2008,first,,Arm B,,overall,dcr,76.0,percent,,,,verified,with 76% disease control in both arms
+18349029,,2008,first,,Arm B,,overall,orr,41.0,percent,,,,verified,"Objective partial response rates after external review and radiological confirmation were 14% and 41% in the XELOX and in the XELOX + Cetuximab arm, respectively"
+18349029,,2008,first,,Arm B,,overall,os_median,20.5,months,,,,verified,The median overall survival was 16.5 months for arm A and 20.5 months for arm B
+18349029,,2008,first,,Arm B,,overall,ttp_median,7.2,months,,,,verified,The median time to progression was 5.8 months for arm A and 7.2 months for arm B
+18386570,,2008,unclear,,treatment group (routine treatment plus Quxie Capsule),,overall,os_median,17.0,months,,,median survival time,verified,"mST, ST and TTP in the treatment group were 11.1% (2/18), 17 months"
+18390971,EPIC,2008,second,,cetuximab plus irinotecan,,overall,orr,16.4,percent,,,,verified,(16.4% v 4.2%; P < .0001)
+18390971,EPIC,2008,second,,cetuximab plus irinotecan,irinotecan alone,overall,os_hr,0.975,ratio,0.854,1.114,,verified,"hazard ratio [HR], 0.975; 95% CI, 0.854 to 1.114; P = .71"
+18390971,EPIC,2008,second,,cetuximab plus irinotecan,,overall,os_median,10.7,months,9.6,11.3,,verified,"10.7 months (95% CI, 9.6 to 11.3) with cetuximab/irinotecan"
+18390971,EPIC,2008,second,,cetuximab plus irinotecan,irinotecan alone,overall,pfs_hr,0.692,ratio,0.617,0.776,,verified,"HR, 0.692; 95% CI, 0.617 to 0.776"
+18390971,EPIC,2008,second,,cetuximab plus irinotecan,,overall,pfs_median,4.0,months,,,,verified,"median, 4.0 v 2.6 months"
+18390971,EPIC,2008,second,,irinotecan alone,,overall,orr,4.2,percent,,,,verified,(16.4% v 4.2%; P < .0001)
+18390971,EPIC,2008,second,,irinotecan alone,,overall,os_median,10.0,months,9.1,11.3,,verified,"10.0 months (95% CI, 9.1 to 11.3) with irinotecan alone"
+18390971,EPIC,2008,second,,irinotecan alone,,overall,pfs_median,2.6,months,,,,verified,"median, 4.0 v 2.6 months"
+18421053,,2008,first,,FOLFOX-4,,overall,os_median,19.6,months,,,,verified,versus 19.6 months with FOLFOX-4
+18421053,,2008,first,,FOLFOX-4,,overall,pfs_median,8.5,months,,,pooled FOLFOX-4-containing arms,verified,versus 8.5 months in the FOLFOX-4-containing arms
+18421053,,2008,first,,XELOX,FOLFOX-4,overall,os_hr,0.99,ratio,0.88,1.12,,verified,"(HR, 0.99; 97.5% CI, 0.88 to 1.12)"
+18421053,,2008,first,,XELOX,,overall,os_median,19.8,months,,,,verified,The median overall survival was 19.8 months with XELOX
+18421053,,2008,first,,XELOX,FOLFOX-4,overall,pfs_hr,1.04,ratio,0.93,1.16,,verified,"hazard ratio [HR], 1.04; 97.5% CI, 0.93 to 1.16"
+18421053,,2008,first,,XELOX,,overall,pfs_median,8.0,months,,,pooled XELOX-containing arms,verified,The median PFS was 8.0 months in the pooled XELOX-containing arms
+18421054,NO16966,2008,first,,bevacizumab,placebo,overall,os_hr,0.89,ratio,0.76,1.03,,verified,"(HR, 0.89; 97.5% CI, 0.76 to 1.03; P = .077)"
+18421054,NO16966,2008,first,,bevacizumab,,overall,os_median,21.3,months,,,,verified,Median overall survival was 21.3 months in the bevacizumab group
+18421054,NO16966,2008,first,,bevacizumab,placebo,overall,pfs_hr,0.83,ratio,0.72,0.95,,verified,"hazard ratio [HR], 0.83; 97.5% CI, 0.72 to 0.95"
+18421054,NO16966,2008,first,,bevacizumab,,overall,pfs_median,9.4,months,,,,verified,Median progression-free survival (PFS) was 9.4 months in the bevacizumab group
+18421054,NO16966,2008,first,,placebo,,overall,os_median,19.9,months,,,,verified,and 19.9 months in the placebo group
+18421054,NO16966,2008,first,,placebo,,overall,pfs_median,8.0,months,,,,verified,and 8.0 months in the placebo group
+18445839,,2008,unclear,,arm A,arm B,overall,orr,18.3,percent,,,,verified,the objective response rate was 18.3% in arm A and 33.7% in arm B (P = .004)
+18445839,,2008,unclear,,arm A,,overall,os_median,16.0,months,,,,verified,Median overall survival was 16 months in arm A and 22 months in arm B (P = .08)
+18445839,,2008,unclear,,arm B,arm A,overall,orr,33.7,percent,,,,verified,the objective response rate was 18.3% in arm A and 33.7% in arm B (P = .004)
+18445839,,2008,unclear,,arm B,,overall,os_median,22.0,months,,,,verified,Median overall survival was 16 months in arm A and 22 months in arm B (P = .08)
+18501073,,2008,first,,FOLFOX4,,overall,n_randomized,41.0,count,,,,verified,"oxaliplatin with 2-day infusion 5-FU/LV (FOLFOX4, n = 41)"
+18501073,,2008,first,,chronomodulated 5-FU plus oxaliplatin,,overall,n_randomized,25.0,count,,,,verified,chronomodulated 5-FU plus oxaliplatin (n = 25)
+18501073,,2008,first,,continuous 5-FU infusion plus oxaliplatin,,overall,n_randomized,23.0,count,,,,verified,continuous 5-FU infusion plus oxaliplatin (n = 23)
+18501073,,2008,first,,weekly 5-FU bolus with LV plus oxaliplatin,,overall,n_randomized,40.0,count,,,,verified,weekly 5-FU bolus with LV plus oxaliplatin (n = 40)
+18550577,XELOX vs FOLFOX-4,2008,second,,FOLFOX-4,,overall,grade3plus_ae_rate,65.0,percent,,,treatment-related grade 3/4 adverse events,verified,and 65% of FOLFOX-4-treated patients
+18550577,XELOX vs FOLFOX-4,2008,second,,FOLFOX-4,,overall,n_randomized,314.0,count,,,,verified,FOLFOX-4 (n = 314)
+18550577,XELOX vs FOLFOX-4,2008,second,,XELOX,,overall,grade3plus_ae_rate,50.0,percent,,,treatment-related grade 3/4 adverse events,verified,Treatment-related grade 3/4 adverse events occurred in 50% of XELOX-
+18550577,XELOX vs FOLFOX-4,2008,second,,XELOX,,overall,n_randomized,313.0,count,,,,verified,XELOX (n = 313)
+18640933,TREE,2008,first,,CapeOx,,overall,grade3plus_ae_rate,67.0,percent,,,"grade 3/4 treatment-related adverse events during the first 12 weeks, TREE-1",verified,"Incidence of grade 3/4 treatment-related adverse events during the first 12 weeks of treatment were 59%, 36%, and 67% for mFOLFOX6, bFOL, and CapeOx, respectively"
+18640933,TREE,2008,first,,CapeOx,,overall,orr,27.0,percent,,,"overall response rate, TREE-1",verified,"Overall response rates were 41%, 20%, and 27% (TREE-1)"
+18640933,TREE,2008,first,,CapeOx,,overall,os_median,17.2,months,,,TREE-1,verified,"median overall survival (OS) was 19.2, 17.9, and 17.2 months (TREE-1)"
+18640933,TREE,2008,first,,CapeOx plus bevacizumab,,overall,grade3plus_ae_rate,56.0,percent,,,"grade 3/4 treatment-related adverse events during the first 12 weeks, TREE-2",verified,"59%, 51%, and 56% for the corresponding treatments plus bevacizumab (TREE-2; primary end point)"
+18640933,TREE,2008,first,,CapeOx plus bevacizumab,,overall,orr,46.0,percent,,,"overall response rate, TREE-2",verified,"and 52%, 39%, and 46% (TREE-2)"
+18640933,TREE,2008,first,,CapeOx plus bevacizumab,,overall,os_median,24.6,months,,,TREE-2,verified,"and 26.1, 20.4, and 24.6 months (TREE-2)"
+18640933,TREE,2008,first,,bFOL,,overall,grade3plus_ae_rate,36.0,percent,,,"grade 3/4 treatment-related adverse events during the first 12 weeks, TREE-1",verified,"Incidence of grade 3/4 treatment-related adverse events during the first 12 weeks of treatment were 59%, 36%, and 67% for mFOLFOX6, bFOL, and CapeOx, respectively"
+18640933,TREE,2008,first,,bFOL,,overall,orr,20.0,percent,,,"overall response rate, TREE-1",verified,"Overall response rates were 41%, 20%, and 27% (TREE-1)"
+18640933,TREE,2008,first,,bFOL,,overall,os_median,17.9,months,,,TREE-1,verified,"median overall survival (OS) was 19.2, 17.9, and 17.2 months (TREE-1)"
+18640933,TREE,2008,first,,bFOL plus bevacizumab,,overall,grade3plus_ae_rate,51.0,percent,,,"grade 3/4 treatment-related adverse events during the first 12 weeks, TREE-2",verified,"59%, 51%, and 56% for the corresponding treatments plus bevacizumab (TREE-2; primary end point)"
+18640933,TREE,2008,first,,bFOL plus bevacizumab,,overall,orr,39.0,percent,,,"overall response rate, TREE-2",verified,"and 52%, 39%, and 46% (TREE-2)"
+18640933,TREE,2008,first,,bFOL plus bevacizumab,,overall,os_median,20.4,months,,,TREE-2,verified,"and 26.1, 20.4, and 24.6 months (TREE-2)"
+18640933,TREE,2008,first,,mFOLFOX6,,overall,grade3plus_ae_rate,59.0,percent,,,"grade 3/4 treatment-related adverse events during the first 12 weeks, TREE-1",verified,"Incidence of grade 3/4 treatment-related adverse events during the first 12 weeks of treatment were 59%, 36%, and 67% for mFOLFOX6, bFOL, and CapeOx, respectively"
+18640933,TREE,2008,first,,mFOLFOX6,,overall,orr,41.0,percent,,,"overall response rate, TREE-1",verified,"Overall response rates were 41%, 20%, and 27% (TREE-1)"
+18640933,TREE,2008,first,,mFOLFOX6,,overall,os_median,19.2,months,,,TREE-1,verified,"median overall survival (OS) was 19.2, 17.9, and 17.2 months (TREE-1)"
+18640933,TREE,2008,first,,mFOLFOX6 plus bevacizumab,,overall,grade3plus_ae_rate,59.0,percent,,,"grade 3/4 treatment-related adverse events during the first 12 weeks, TREE-2",verified,"59%, 51%, and 56% for the corresponding treatments plus bevacizumab (TREE-2; primary end point)"
+18640933,TREE,2008,first,,mFOLFOX6 plus bevacizumab,,overall,orr,52.0,percent,,,"overall response rate, TREE-2",verified,"and 52%, 39%, and 46% (TREE-2)"
+18640933,TREE,2008,first,,mFOLFOX6 plus bevacizumab,,overall,os_median,26.1,months,,,TREE-2,verified,"and 26.1, 20.4, and 24.6 months (TREE-2)"
+18667394,,2008,unclear,,FOLFIRI,,overall,grade3plus_ae_rate,52.1,percent,,,grade 3-4 adverse events,verified,25 patients (52.1%) in the FOLFIRI arm
+18667394,,2008,unclear,,FOLFIRI,,overall,orr,47.9,percent,,,,verified,Twenty-three patients (47.9%) in the FOLFIRI arm
+18667394,,2008,unclear,,FOLFIRI,,overall,os_median,18.6,months,,,,verified,The median progression-free survival and overall survival were 8.3 and 18.6 months in the FOLFIRI arm
+18667394,,2008,unclear,,FOLFIRI,,overall,pfs_median,8.3,months,,,,verified,The median progression-free survival and overall survival were 8.3 and 18.6 months in the FOLFIRI arm
+18667394,,2008,unclear,,FOLFIRI + gefitinib,FOLFIRI,overall,grade3plus_ae_rate,67.3,percent,,,grade 3-4 adverse events,verified,grades 3-4 adverse events were experienced by 35 (67.3%) patients versus 25 patients (52.1%) in the FOLFIRI arm
+18667394,,2008,unclear,,FOLFIRI + gefitinib,,overall,orr,45.1,percent,,,,verified,23 (45.1%) in the FOLFIRI + gefitinib arm experienced an objective response
+18667394,,2008,unclear,,FOLFIRI + gefitinib,,overall,os_median,17.1,months,,,,verified,"and 8.3 and 17.1 months in the FOLFIRI + gefitinib arm, respectively"
+18667394,,2008,unclear,,FOLFIRI + gefitinib,,overall,pfs_median,8.3,months,,,,verified,"and 8.3 and 17.1 months in the FOLFIRI + gefitinib arm, respectively"
+18824706,IROX,2008,second,,IROX,,overall,grade3plus_ae_rate,25.0,percent,,,granulocytopenia,verified,With the exception of granulocytopenia (25% v 13%)
+18824706,IROX,2008,second,,IROX,,overall,grade3plus_ae_rate,28.0,percent,,,diarrhea,verified,diarrhea (28% v 23%)
+18824706,IROX,2008,second,,IROX,,overall,grade3plus_ae_rate,5.0,percent,,,sensory disturbances,verified,sensory disturbances (5% v 0%)
+18824706,IROX,2008,second,,IROX,,overall,orr,22.0,percent,,,,verified,"Overall response rate (22% v 7%, respectively; P < .0001)"
+18824706,IROX,2008,second,,IROX,irinotecan alone,overall,os_hr,0.78,ratio,0.65,0.94,,verified,"hazard ratio = 0.78; 95% CI, 0.65 to 0.94"
+18824706,IROX,2008,second,,IROX,irinotecan alone,overall,os_median,13.4,months,12.4,14.7,,verified,"median overall survival was 13.4 months (95% CI, 12.4 to 14.7 months)"
+18824706,IROX,2008,second,,IROX,,overall,ttp_median,5.3,months,,,,verified,"median time to progression (5.3 v 2.8 months, respectively; P < .0001)"
+18824706,IROX,2008,second,,irinotecan alone,,overall,grade3plus_ae_rate,13.0,percent,,,granulocytopenia,verified,With the exception of granulocytopenia (25% v 13%)
+18824706,IROX,2008,second,,irinotecan alone,,overall,grade3plus_ae_rate,23.0,percent,,,diarrhea,verified,diarrhea (28% v 23%)
+18824706,IROX,2008,second,,irinotecan alone,,overall,grade3plus_ae_rate,0.0,percent,,,sensory disturbances,verified,sensory disturbances (5% v 0%)
+18824706,IROX,2008,second,,irinotecan alone,,overall,orr,7.0,percent,,,,verified,"Overall response rate (22% v 7%, respectively; P < .0001)"
+18824706,IROX,2008,second,,irinotecan alone,,overall,os_median,11.1,months,10.0,12.7,,verified,"11.1 month (95% CI, 10.0 to 12.7 months)"
+18824706,IROX,2008,second,,irinotecan alone,,overall,ttp_median,2.8,months,,,,verified,"median time to progression (5.3 v 2.8 months, respectively; P < .0001)"
+16983507,,2007,unclear,,Treatment A,,overall,n_randomized,19.0,count,,,,verified,19 patients were assigned to Treatment A
+16983507,,2007,unclear,,Treatment A,,overall,orr,16.0,percent,,,,verified,Overall response rates were 16% and 24%
+16983507,,2007,unclear,,Treatment A,,overall,os_median,15.1,months,,,,verified,overall survival 15.1 months and 17.4 months
+16983507,,2007,unclear,,Treatment B,,overall,n_randomized,17.0,count,,,,verified,17 to Treatment B
+16983507,,2007,unclear,,Treatment B,,overall,orr,24.0,percent,,,,verified,Overall response rates were 16% and 24%
+16983507,,2007,unclear,,Treatment B,,overall,os_median,17.4,months,,,,verified,overall survival 15.1 months and 17.4 months
+17245343,TEGAFIRI vs TEGAFOX,2007,first,,TEGAFIRI,,overall,grade3plus_ae_rate,13.0,percent,,,neutropenia,verified,neutropenia (13% of cases with TEGAFIRI; 1% in the TEGAFOX group)
+17245343,TEGAFIRI vs TEGAFOX,2007,first,,TEGAFIRI,,overall,orr,41.7,percent,29.1,55.1,six CR and 19 partial remission; reported as odds ratio,verified,"Six complete remission (CR) and 19 partial remission (PR) were recorded in the TEGAFIRI arm (odds ratio (OR): 41.7; 95% confidence limit (CL), 29.1-55.1%)"
+17245343,TEGAFIRI vs TEGAFOX,2007,first,,TEGAFIRI,,overall,os_median,20.0,months,,,median survival probability,verified,"a median survival probability of 20 and 19 months was obtained in the TEGAFIRI and TEGAFOX groups, respectively"
+17245343,TEGAFIRI vs TEGAFOX,2007,first,,TEGAFIRI,,overall,ttp_median,8.0,months,,,median time to progression,verified,Median time to progression was 8 months for both groups
+17245343,TEGAFIRI vs TEGAFOX,2007,first,,TEGAFOX,,overall,grade3plus_ae_rate,1.0,percent,,,neutropenia,verified,neutropenia (13% of cases with TEGAFIRI; 1% in the TEGAFOX group)
+17245343,TEGAFIRI vs TEGAFOX,2007,first,,TEGAFOX,,overall,orr,38.9,percent,27.6,51.1,six CR and 22 partial remission; reported as odds ratio,verified,"six CR and 22 PR were recorded in the TEGAFOX group, (OR: 38.9; 95% CL, 27.6-51.1)"
+17245343,TEGAFIRI vs TEGAFOX,2007,first,,TEGAFOX,,overall,os_median,19.0,months,,,median survival probability,verified,"a median survival probability of 20 and 19 months was obtained in the TEGAFIRI and TEGAFOX groups, respectively"
+17245343,TEGAFIRI vs TEGAFOX,2007,first,,TEGAFOX,,overall,ttp_median,8.0,months,,,median time to progression,verified,Median time to progression was 8 months for both groups
+17396039,,2007,second,,Arm A,,overall,orr,11.0,percent,,,,verified,Both regimens yielded a partial response rate of 11%
+17396039,,2007,second,,Arm A,,overall,os_median,9.5,months,,,,verified,similar overall survival (9.5 months for the combination therapy vs. 10.7 months for the monotherapy)
+17396039,,2007,second,,Arm A,,overall,pfs_median,3.7,months,,,,verified,identical progression-free survival (3.7 months for both regimens)
+17396039,,2007,second,,Arm B,,overall,orr,11.0,percent,,,,verified,Both regimens yielded a partial response rate of 11%
+17396039,,2007,second,,Arm B,,overall,os_median,10.7,months,,,,verified,similar overall survival (9.5 months for the combination therapy vs. 10.7 months for the monotherapy)
+17396039,,2007,second,,Arm B,,overall,pfs_median,3.7,months,,,,verified,identical progression-free survival (3.7 months for both regimens)
+17405895,,2007,first,,control group,,overall,n_randomized,44.0,count,,,,verified,control group; n = 44
+17405895,,2007,first,,control group,,overall,orr,47.8,percent,,,response to chemotherapy,verified,no significant between-group differences in response to chemotherapy (52.4% versus 47.8%)
+17405895,,2007,first,,glutamine group,,overall,n_randomized,42.0,count,,,,verified,glutamine group; n = 42
+17405895,,2007,first,,glutamine group,,overall,orr,52.4,percent,,,response to chemotherapy,verified,no significant between-group differences in response to chemotherapy (52.4% versus 47.8%)
+17442997,E3200,2007,second,,FOLFOX4 alone,,overall,orr,8.6,percent,,,,verified,"The corresponding overall response rates were 22.7%, 8.6%, and 3.3%, respectively"
+17442997,E3200,2007,second,,FOLFOX4 alone,,overall,os_median,10.8,months,,,,verified,compared with 10.8 months for the group treated with FOLFOX4 alone
+17442997,E3200,2007,second,,FOLFOX4 alone,,overall,pfs_median,4.7,months,,,,verified,compared with 4.7 months for the group treated with FOLFOX4 alone
+17442997,E3200,2007,second,,FOLFOX4 plus bevacizumab,,overall,orr,22.7,percent,,,,verified,"The corresponding overall response rates were 22.7%, 8.6%, and 3.3%, respectively"
+17442997,E3200,2007,second,,FOLFOX4 plus bevacizumab,FOLFOX4 alone,overall,os_hr,0.75,ratio,,,,verified,corresponding hazard ratio for death = 0.75
+17442997,E3200,2007,second,,FOLFOX4 plus bevacizumab,,overall,os_median,12.9,months,,,,verified,The median duration of survival for the group treated with FOLFOX4 and bevacizumab was 12.9 months
+17442997,E3200,2007,second,,FOLFOX4 plus bevacizumab,FOLFOX4 alone,overall,pfs_hr,0.61,ratio,,,,verified,corresponding hazard ratio for progression = 0.61
+17442997,E3200,2007,second,,FOLFOX4 plus bevacizumab,,overall,pfs_median,7.3,months,,,,verified,The median progression-free survival for the group treated with FOLFOX4 in combination with bevacizumab was 7.3 months
+17442997,E3200,2007,second,,bevacizumab alone,,overall,orr,3.3,percent,,,,verified,"The corresponding overall response rates were 22.7%, 8.6%, and 3.3%, respectively"
+17442997,E3200,2007,second,,bevacizumab alone,,overall,os_median,10.2,months,,,,verified,and 10.2 months for those treated with bevacizumab alone
+17442997,E3200,2007,second,,bevacizumab alone,,overall,pfs_median,2.7,months,,,,verified,and 2.7 months for those treated with bevacizumab alone
 17470858,,2007,third_or_later,EGFR tumor cell membrane staining 1% or more,BSC alone,,overall,n_randomized,232.0,count,,,,verified,BSC alone (n = 232)
 17470858,,2007,third_or_later,EGFR tumor cell membrane staining 1% or more,BSC alone,,overall,orr,0.0,percent,,,after 12-month minimum follow-up,verified,response rates were 10% for panitumumab and 0% for BSC
 17470858,,2007,third_or_later,EGFR tumor cell membrane staining 1% or more,BSC alone,,overall,pfs_median,7.3,weeks,7.1,7.7,,verified,"7.3 weeks (95% CI, 7.1 to 7.7) for BSC"
@@ -1772,6 +2192,59 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 17470858,,2007,third_or_later,EGFR tumor cell membrane staining 1% or more,Panitumumab plus BSC,BSC alone,overall,os_hr,1.0,ratio,0.82,1.22,,verified,"No difference was observed in OS (HR, 1.00; 95% CI, 0.82 to 1.22)"
 17470858,,2007,third_or_later,EGFR tumor cell membrane staining 1% or more,Panitumumab plus BSC,BSC alone,overall,pfs_hr,0.54,ratio,0.44,0.66,,verified,"hazard ratio [HR], 0.54; 95% CI, 0.44 to 0.66"
 17470858,,2007,third_or_later,EGFR tumor cell membrane staining 1% or more,Panitumumab plus BSC,,overall,pfs_median,8.0,weeks,7.9,8.4,,verified,"Median PFS time was 8 weeks (95% CI, 7.9 to 8.4) for panitumumab"
+17470860,GONO,2007,first,,FOLFIRI,FOLFOXIRI,overall,grade3plus_ae_rate,28.0,percent,,,neutropenia grade 3 to 4,verified,grade 3 to 4 neutropenia (28% v 50%; P < .001)
+17470860,GONO,2007,first,,FOLFIRI,FOLFOXIRI,overall,grade3plus_ae_rate,20.0,percent,,,diarrhea grade 3 to 4,verified,grade 3 to 4 diarrhea (12% v 20%)
+17470860,GONO,2007,first,,FOLFIRI,FOLFOXIRI,overall,orr,41.0,percent,,,"response rate, investigator assessed",verified,"RR, 41% v 66%; P = .0002"
+17470860,GONO,2007,first,,FOLFIRI,FOLFOXIRI,overall,orr,34.0,percent,,,"response rate, confirmed by external panel",verified,RR confirmed by an external panel was 34% versus 60% (P < .0001)
+17470860,GONO,2007,first,,FOLFIRI,FOLFOXIRI,overall,os_median,16.7,months,,,,verified,"median OS, 16.7 v 22.6 months"
+17470860,GONO,2007,first,,FOLFIRI,FOLFOXIRI,overall,pfs_median,6.9,months,,,,verified,"median PFS, 6.9 v 9.8 months"
+17470860,GONO,2007,first,,FOLFOXIRI,FOLFIRI,overall,grade3plus_ae_rate,50.0,percent,,,neutropenia grade 3 to 4,verified,grade 3 to 4 neutropenia (28% v 50%; P < .001)
+17470860,GONO,2007,first,,FOLFOXIRI,FOLFIRI,overall,grade3plus_ae_rate,12.0,percent,,,diarrhea grade 3 to 4,verified,grade 3 to 4 diarrhea (12% v 20%)
+17470860,GONO,2007,first,,FOLFOXIRI,FOLFIRI,overall,orr,66.0,percent,,,"response rate, investigator assessed",verified,"RR, 41% v 66%; P = .0002"
+17470860,GONO,2007,first,,FOLFOXIRI,FOLFIRI,overall,orr,60.0,percent,,,"response rate, confirmed by external panel",verified,RR confirmed by an external panel was 34% versus 60% (P < .0001)
+17470860,GONO,2007,first,,FOLFOXIRI,FOLFIRI,overall,os_hr,0.7,ratio,,,,verified,"median OS, 16.7 v 22.6 months; HR, 0.70"
+17470860,GONO,2007,first,,FOLFOXIRI,FOLFIRI,overall,os_median,22.6,months,,,,verified,"median OS, 16.7 v 22.6 months"
+17470860,GONO,2007,first,,FOLFOXIRI,FOLFIRI,overall,pfs_hr,0.63,ratio,,,,verified,"hazard ratio [HR], 0.63; P = .0006"
+17470860,GONO,2007,first,,FOLFOXIRI,FOLFIRI,overall,pfs_median,9.8,months,,,,verified,"median PFS, 6.9 v 9.8 months"
+17496414,,2007,mixed,,group A,,overall,os_median,42.0,weeks,36.6,47.4,,verified,"The median overall survival was 42.0 weeks (range, 36.6-47.4 weeks) for group A"
+17496414,,2007,mixed,,group A,,overall,ttp_median,18.0,weeks,10.0,36.0,time to progression following first-line 5-FU/LV,verified,"The median time to progression for patients in group A following first-line 5-FU/LV was 18 weeks (range, 10-36 weeks)"
+17496414,,2007,mixed,,group B,,overall,os_median,32.0,weeks,28.2,35.8,,verified,"and 32.0 weeks (range, 28.2-35.8 weeks) for group B"
+17496414,,2007,mixed,,group B,,overall,ttp_median,12.0,weeks,10.0,16.0,time to progression following first-line CPT-11,verified,"and 12 weeks (range, 10-16 weeks) for group B following first-line CPT-11"
+17550132,,2007,unclear,,5-FU,5-FU + low-dose CDDP,overall,orr,11.7,percent,,,,verified,The response rate in the 5-FU+low-dose CDDP arm (n=75) was significantly higher than that in the 5-FU arm (n=77) (25.3% vs. 11.7%; P = 0.037)
+17550132,,2007,unclear,,5-FU + low-dose CDDP,5-FU,overall,orr,25.3,percent,,,,verified,The response rate in the 5-FU+low-dose CDDP arm (n=75) was significantly higher than that in the 5-FU arm (n=77) (25.3% vs. 11.7%; P = 0.037)
+17630036,CAIRO,2007,mixed,,combination treatment,sequential treatment,overall,grade3plus_ae_rate,7.0,percent,,,grade 3 hand-foot syndrome,verified,"grade 3 hand-foot syndrome, which occurred more often with sequential treatment than with combination treatment (13%vs 7%; p=0.004)"
+17630036,CAIRO,2007,mixed,,combination treatment,,overall,n_randomized,410.0,count,,,,verified,combination treatment; n=410
+17630036,CAIRO,2007,mixed,,combination treatment,sequential treatment,overall,os_hr,0.92,ratio,0.79,1.08,,verified,The hazard ratio for combination versus sequential treatment was 0.92 (95% CI 0.79-1.08
+17630036,CAIRO,2007,mixed,,sequential treatment,combination treatment,overall,grade3plus_ae_rate,13.0,percent,,,grade 3 hand-foot syndrome,verified,"grade 3 hand-foot syndrome, which occurred more often with sequential treatment than with combination treatment (13%vs 7%; p=0.004)"
+17630036,CAIRO,2007,mixed,,sequential treatment,,overall,n_randomized,410.0,count,,,,verified,sequential treatment; n=410
+17630036,CAIRO,2007,mixed,,sequential treatment,,overall,os_median,16.3,months,14.3,18.1,,verified,Median overall survival was 16.3 (95% CI 14.3-18.1) months for sequential treatment
+17630037,MRC FOCUS,2007,first,,A,,overall,os_median,13.9,months,,,median overall survival,verified,Median survival of patients allocated to control strategy A was 13.9 months
+17630037,MRC FOCUS,2007,first,,B-ir,,overall,os_median,15.0,months,,,median overall survival,verified,"B-ir 15.0, B-ox 15.2, C-ir 16.7, and C-ox 15.4 months"
+17630037,MRC FOCUS,2007,first,,B-ox,,overall,os_median,15.2,months,,,median overall survival,verified,"B-ir 15.0, B-ox 15.2, C-ir 16.7, and C-ox 15.4 months"
+17630037,MRC FOCUS,2007,first,,C-ir,,overall,os_median,16.7,months,,,median overall survival,verified,"B-ir 15.0, B-ox 15.2, C-ir 16.7, and C-ox 15.4 months"
+17630037,MRC FOCUS,2007,first,,C-ox,,overall,os_median,15.4,months,,,median overall survival,verified,"B-ir 15.0, B-ox 15.2, C-ir 16.7, and C-ox 15.4 months"
+17649644,,2007,unclear,,control group,treatment group,overall,orr,15.2,percent,,,,verified,15.2% in the control group
+17649644,,2007,unclear,,treatment group,control group,overall,orr,28.1,percent,,,,verified,The response rate was 28.1% in the treatment group
+17649644,,2007,unclear,,treatment group,control group,overall,ttp_median,3.8,months,,,,verified,with a median TTP of 3.8 months vs. 2. 5 months
+17785765,IRINOX,2007,first,,A,,overall,orr,52.5,percent,,,"partial responses only, 21 of 40 patients",verified,"Twenty-one partial responses (52.5%, median duration 7.2 months) were observed with the IRINOX arm"
+17785765,IRINOX,2007,first,,A,,overall,os_median,19.0,months,,,,verified,"Median progression-free and overall survival times were 8.4 and 19 months, respectively, in the IRINOX arm"
+17785765,IRINOX,2007,first,,A,,overall,pfs_median,8.4,months,,,,verified,"Median progression-free and overall survival times were 8.4 and 19 months, respectively, in the IRINOX arm"
+17785765,IRINOX,2007,first,,B,,overall,orr,55.0,percent,,,"two complete and 20 partial responses, 22 of 40 patients",verified,"two complete and 20 partial responses (55%, median duration 6.4 months) with arm B"
+17785765,IRINOX,2007,first,,B,,overall,os_median,20.4,months,,,,verified,8.1 and 20.4 months in arm B
+17785765,IRINOX,2007,first,,B,,overall,pfs_median,8.1,months,,,,verified,8.1 and 20.4 months in arm B
+17876013,BOND-2,2007,second,,A,,overall,orr,37.0,percent,,,,verified,the response rate was 37%
+17876013,BOND-2,2007,second,,A,,overall,os_median,14.5,months,,,,verified,The overall survival for the CBI arm was 14.5 months
+17876013,BOND-2,2007,second,,A,,overall,ttp_median,7.3,months,,,time to tumor progression,verified,"For the CBI arm, time to tumor progression (TTP) was 7.3 months"
+17876013,BOND-2,2007,second,,B,,overall,orr,20.0,percent,,,,verified,the response rate was 20%
+17876013,BOND-2,2007,second,,B,,overall,os_median,11.4,months,,,,verified,the overall survival for the CB-alone arm was 11.4 months
+17876013,BOND-2,2007,second,,B,,overall,ttp_median,4.9,months,,,time to tumor progression,verified,"for the CB arm, TTP was 4.9 months"
+17947725,BICC-C,2007,first,,CapeIRI,,overall,os_median,18.9,months,,,,verified,18.9 months for CapeIRI
+17947725,BICC-C,2007,first,,CapeIRI,,overall,pfs_median,5.8,months,,,,verified,5.8 months for CapeIRI
+17947725,BICC-C,2007,first,,FOLFIRI,,overall,os_median,23.1,months,,,,verified,Median OS was 23.1 months for FOLFIRI
+17947725,BICC-C,2007,first,,FOLFIRI,,overall,pfs_median,7.6,months,,,,verified,Median PFS was 7.6 months for FOLFIRI
+17947725,BICC-C,2007,first,,mIFL,,overall,os_median,17.6,months,,,,verified,17.6 months for mIFL
+17947725,BICC-C,2007,first,,mIFL,,overall,pfs_median,5.9,months,,,,verified,5.9 months for mIFL
+17947725,BICC-C,2007,first,,mIFL+Bev,,overall,os_median,19.2,months,,,,verified,was 19.2 months for mIFL+Bev
 18003960,EPIC,2007,third_or_later,EGFR expression by immunohistochemistry,best supportive care alone,,overall,grade3plus_ae_rate,59.1,percent,,,any adverse event grade 3 or higher,verified,and 59.1% in the group assigned to supportive care alone
 18003960,EPIC,2007,third_or_later,EGFR expression by immunohistochemistry,best supportive care alone,,overall,n_randomized,285.0,count,,,,verified,best supportive care alone (285 patients)
 18003960,EPIC,2007,third_or_later,EGFR expression by immunohistochemistry,best supportive care alone,,overall,orr,0.0,percent,,,partial responses,verified,but in none in the group assigned to supportive care alone
@@ -1782,6 +2255,18 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 18003960,EPIC,2007,third_or_later,EGFR expression by immunohistochemistry,cetuximab plus best supportive care,best supportive care alone,overall,os_hr,0.77,ratio,0.64,0.92,hazard ratio for death,verified,"hazard ratio for death, 0.77; 95% confidence interval [CI], 0.64 to 0.92"
 18003960,EPIC,2007,third_or_later,EGFR expression by immunohistochemistry,cetuximab plus best supportive care,,overall,os_median,6.1,months,,,,verified,The median overall survival was 6.1 months in the cetuximab group
 18003960,EPIC,2007,third_or_later,EGFR expression by immunohistochemistry,cetuximab plus best supportive care,best supportive care alone,overall,pfs_hr,0.68,ratio,0.57,0.8,hazard ratio for disease progression or death,verified,"hazard ratio for disease progression or death, 0.68; 95% CI, 0.57 to 0.80"
+18198641,,2007,unclear,,Aidi injection + FOLFOX4,FOLFOX4 alone,overall,orr,44.62,percent,,,,verified,The response rate in the treatment group was 44.62%
+18198641,,2007,unclear,,FOLFOX4 alone,Aidi injection + FOLFOX4,overall,orr,30.77,percent,,,,verified,in the control group 30.77% (P = 0.126)
+18334829,ALIRI,2007,first,,ALIRI,,overall,orr,20.0,percent,,,,verified,"Response rates (ALIRI = 20.0%, FOLFIRI = 33.3%)"
+18334829,ALIRI,2007,first,,ALIRI,,overall,pfs_median,5.7,months,,,,verified,Progression-free survival was 5.7 months for ALIRI
+18334829,ALIRI,2007,first,,FOLFIRI,,overall,orr,33.3,percent,,,,verified,"Response rates (ALIRI = 20.0%, FOLFIRI = 33.3%)"
+18334829,ALIRI,2007,first,,FOLFIRI,,overall,pfs_median,7.7,months,,,,verified,and 7.7 months for FOLFIRI (p < 0.001)
+16246545,,2006,unclear,,Arm B,,overall,orr,25.7,percent,,,,verified,Patients in Arm B obtained a 25.7% response rate
+16246545,,2006,unclear,,Arm B,,overall,os_median,28.0,months,,,,verified,a median survival of 28 months
+16311275,,2006,first,,3H1 + 5-FU/LV,,overall,n_randomized,422.0,count,,,,verified,randomised in a 2:1 fashion to receive bolus 5-fluorouracil (5-FU) and leucovorin (LV) plus either 3H1 (n = 422)
+16311275,,2006,first,,3H1 + 5-FU/LV,Placebo + 5-FU/LV,overall,os_median,14.7,months,,,"overall survival, intent-to-treat population, 3H1 arm",verified,Survival for the full intent-to-treat population was 14.7 months for the 3H1 arm
+16311275,,2006,first,,Placebo + 5-FU/LV,,overall,n_randomized,208.0,count,,,,verified,or placebo (n = 208)
+16311275,,2006,first,,Placebo + 5-FU/LV,,overall,os_median,15.2,months,,,"overall survival, intent-to-treat population, placebo arm",verified,and 15.2 months for the placebo arm
 16421419,OPTIMOX1,2006,first,,arm A,,overall,grade3plus_ae_rate,54.4,percent,,,any NCI-CTC grade 3 or 4 toxicity,verified,National Cancer Institute Common Toxicity Criteria grade 3 or 4 toxicity was observed in 54.4% of the patients in arm A
 16421419,OPTIMOX1,2006,first,,arm A,,overall,grade3plus_ae_rate,17.9,percent,,,grade 3 sensory neuropathy,verified,Grade 3 sensory neuropathy was observed in 17.9% of the patients in arm A v 13.3% of patients in arm B (P = .12).
 16421419,OPTIMOX1,2006,first,,arm A,,overall,orr,58.5,percent,,,,verified,Response rates were 58.5% with arm A and 59.2% with arm B.
@@ -1792,6 +2277,167 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 16421419,OPTIMOX1,2006,first,,arm B,,overall,orr,59.2,percent,,,,verified,Response rates were 58.5% with arm A and 59.2% with arm B.
 16421419,OPTIMOX1,2006,first,,arm B,,overall,os_median,21.2,months,,,,verified,"compared with 8.7 and 21.2 months, respectively, in patients allocated to arm B"
 16421419,OPTIMOX1,2006,first,,arm B,,overall,pfs_median,8.7,months,,,,verified,"compared with 8.7 and 21.2 months, respectively, in patients allocated to arm B"
+16500914,,2006,first,,5FU/LV,,overall,orr,18.5,percent,,,confirmed response rate,verified,"Confirmed RR, progression free survival (PFS; months) and median overall survival (OS; months) in 5FU/LV versus 5FU/LV/oxaliplatin were respectively 18.5% versus (vs) 33.8%"
+16500914,,2006,first,,5FU/LV,,overall,os_median,13.3,months,,,median overall survival,verified,13.3 vs 13.8 (P = 0.619)
+16500914,,2006,first,,5FU/LV,,overall,pfs_median,5.6,months,,,progression free survival,verified,5.6 vs 6.7 (P = 0.016)
+16500914,,2006,first,,5FU/LV/oxaliplatin,5FU/LV,overall,orr,33.8,percent,,,confirmed response rate,verified,versus (vs) 33.8% (P = 0.004)
+16500914,,2006,first,,5FU/LV/oxaliplatin,5FU/LV,overall,os_median,13.8,months,,,median overall survival,verified,13.3 vs 13.8 (P = 0.619)
+16500914,,2006,first,,5FU/LV/oxaliplatin,5FU/LV,overall,pfs_median,6.7,months,,,progression free survival,verified,5.6 vs 6.7 (P = 0.016)
+16508637,FOLFOXIRI vs FOLFIRI,2006,first,,FOLFIRI,,overall,n_randomized,146.0,count,,,,verified,FOLFIRI arm: n=146
+16508637,FOLFOXIRI vs FOLFIRI,2006,first,,FOLFIRI,,overall,orr,33.6,percent,,,,verified,"response rates (33.6 and 43% for FOLFIRI and FOLFOXIRI, respectively; P=0.168)"
+16508637,FOLFOXIRI vs FOLFIRI,2006,first,,FOLFIRI,FOLFOXIRI,overall,os_median,19.5,months,,,,verified,"median OS: 19.5 and 21.5 months, for FOLFIRI and FOLFOXIRI, respectively; P=0.337"
+16508637,FOLFOXIRI vs FOLFIRI,2006,first,,FOLFIRI,FOLFOXIRI,overall,ttp_median,6.9,months,,,time to disease progression,verified,median time to disease progression (FOLFIRI: 6.9 and FOLFOXIRI: 8.4 months; P=0.17)
+16508637,FOLFOXIRI vs FOLFIRI,2006,first,,FOLFOXIRI,,overall,n_randomized,137.0,count,,,,verified,FOLFOXIRI arm: n=137
+16508637,FOLFOXIRI vs FOLFIRI,2006,first,,FOLFOXIRI,,overall,orr,43.0,percent,,,,verified,"response rates (33.6 and 43% for FOLFIRI and FOLFOXIRI, respectively; P=0.168)"
+16508637,FOLFOXIRI vs FOLFIRI,2006,first,,FOLFOXIRI,FOLFIRI,overall,os_median,21.5,months,,,,verified,"median OS: 19.5 and 21.5 months, for FOLFIRI and FOLFOXIRI, respectively; P=0.337"
+16508637,FOLFOXIRI vs FOLFIRI,2006,first,,FOLFOXIRI,FOLFIRI,overall,ttp_median,8.4,months,,,time to disease progression,verified,median time to disease progression (FOLFIRI: 6.9 and FOLFOXIRI: 8.4 months; P=0.17)
+16760295,GOIM 2301,2006,first,,A,,overall,orr,41.0,percent,27.0,57.0,evaluable for response,verified,The overall response rate was 41% in arm A (95% CI 27% to 57%)
+16760295,GOIM 2301,2006,first,,A,,overall,os_median,16.0,months,,,,verified,"median duration of response and survival were, respectively, 8 months, 9 months and 16 months in arm A"
+16760295,GOIM 2301,2006,first,,A,,overall,other_time_median,9.0,months,,,median duration of response,verified,"Median time to progression, median duration of response and survival were, respectively, 8 months, 9 months and 16 months in arm A"
+16760295,GOIM 2301,2006,first,,A,,overall,ttp_median,8.0,months,,,median time to progression,verified,"Median time to progression, median duration of response and survival were, respectively, 8 months, 9 months and 16 months in arm A"
+16760295,GOIM 2301,2006,first,,B,,overall,orr,35.0,percent,20.0,50.0,evaluable for response,verified,35% in arm B (95% CI 20% to 50%)
+16760295,GOIM 2301,2006,first,,B,,overall,os_median,19.0,months,,,,verified,"and 7 months, 9 months and 19 months in arm B"
+16760295,GOIM 2301,2006,first,,B,,overall,other_time_median,9.0,months,,,median duration of response,verified,"and 7 months, 9 months and 19 months in arm B"
+16760295,GOIM 2301,2006,first,,B,,overall,ttp_median,7.0,months,,,median time to progression,verified,"and 7 months, 9 months and 19 months in arm B"
+16762887,,2006,unclear,,group A,,overall,orr,43.3,percent,,,,verified,The tumor response rate was 43.3% in group A
+16762887,,2006,unclear,,group B,,overall,orr,27.7,percent,,,,verified,27.7% in group B
+16762887,,2006,unclear,,group C,,overall,orr,30.0,percent,,,,verified,30.0% in group C
+16816536,FFCD 9601,2006,first,,HD-FU,,overall,grade3plus_ae_rate,38.0,percent,,,at least one episode of grade 3-4 toxicity,verified,"At least one episode of grade 3-4 toxicity was observed in 27, 25, 38 and 47% of the patients in the LV5FU2, ldLV5FU2, HD-FU and Tomudex arms, respectively (p = 0.016)"
+16816536,FFCD 9601,2006,first,,HD-FU,,overall,orr,22.0,percent,,,,verified,"An objective response was observed in 28, 21, 22 and 10% of the patients in the LV5FU2, ldLV5FU2, HD-FU and Tomudex arms, respectively"
+16816536,FFCD 9601,2006,first,,LV5FU2,,overall,grade3plus_ae_rate,27.0,percent,,,at least one episode of grade 3-4 toxicity,verified,"At least one episode of grade 3-4 toxicity was observed in 27, 25, 38 and 47% of the patients in the LV5FU2, ldLV5FU2, HD-FU and Tomudex arms, respectively (p = 0.016)"
+16816536,FFCD 9601,2006,first,,LV5FU2,,overall,orr,28.0,percent,,,,verified,"An objective response was observed in 28, 21, 22 and 10% of the patients in the LV5FU2, ldLV5FU2, HD-FU and Tomudex arms, respectively"
+16816536,FFCD 9601,2006,first,,Tomudex,,overall,grade3plus_ae_rate,47.0,percent,,,at least one episode of grade 3-4 toxicity,verified,"At least one episode of grade 3-4 toxicity was observed in 27, 25, 38 and 47% of the patients in the LV5FU2, ldLV5FU2, HD-FU and Tomudex arms, respectively (p = 0.016)"
+16816536,FFCD 9601,2006,first,,Tomudex,,overall,orr,10.0,percent,,,,verified,"An objective response was observed in 28, 21, 22 and 10% of the patients in the LV5FU2, ldLV5FU2, HD-FU and Tomudex arms, respectively"
+16816536,FFCD 9601,2006,first,,ldLV5FU2,,overall,grade3plus_ae_rate,25.0,percent,,,at least one episode of grade 3-4 toxicity,verified,"At least one episode of grade 3-4 toxicity was observed in 27, 25, 38 and 47% of the patients in the LV5FU2, ldLV5FU2, HD-FU and Tomudex arms, respectively (p = 0.016)"
+16816536,FFCD 9601,2006,first,,ldLV5FU2,,overall,orr,21.0,percent,,,,verified,"An objective response was observed in 28, 21, 22 and 10% of the patients in the LV5FU2, ldLV5FU2, HD-FU and Tomudex arms, respectively"
+16849748,N9741,2006,first,,FOLFOX4,rIFL,overall,orr,48.0,percent,,,,verified,"RR (48% v 32%, respectively; P = .006)"
+16849748,N9741,2006,first,,FOLFOX4,rIFL,overall,os_median,19.0,months,,,,verified,"overall survival (19.0 v 16.3 months, respectively; P = .026)"
+16849748,N9741,2006,first,,FOLFOX4,rIFL,overall,ttp_median,9.7,months,,,,verified,"time to progression (9.7 v 5.5 months, respectively; P < .0001)"
+16849748,N9741,2006,first,,rIFL,FOLFOX4,overall,orr,32.0,percent,,,,verified,"RR (48% v 32%, respectively; P = .006)"
+16849748,N9741,2006,first,,rIFL,FOLFOX4,overall,os_median,16.3,months,,,,verified,"overall survival (19.0 v 16.3 months, respectively; P = .026)"
+16849748,N9741,2006,first,,rIFL,FOLFOX4,overall,ttp_median,5.5,months,,,,verified,"time to progression (9.7 v 5.5 months, respectively; P < .0001)"
+16877722,chronoFLO4,2006,first,,FOLFOX2,,overall,os_median,18.7,months,17.7,21.0,,verified,"and 18.7 months with FOLFOX2 (95% CL = 17.7, 21.0; P = .55)"
+16877722,chronoFLO4,2006,first,,FOLFOX2,chronoFLO4,women,os_median,19.1,months,,,women,verified,"with median survival times of 16.3 and 19.1 months (P = .03), respectively"
+16877722,chronoFLO4,2006,first,,FOLFOX2,chronoFLO4,men,os_median,18.3,months,,,men,verified,"with median survival times of 21.4 and 18.3 months (P = .02), respectively"
+16877722,chronoFLO4,2006,first,,chronoFLO4,,overall,os_median,19.6,months,18.2,21.2,,verified,"Median survival was 19.6 months (95% confidence limit [CL] = 18.2, 21.2) with chronoFLO4"
+16877722,chronoFLO4,2006,first,,chronoFLO4,FOLFOX2,women,os_median,16.3,months,,,women,verified,"with median survival times of 16.3 and 19.1 months (P = .03), respectively"
+16877722,chronoFLO4,2006,first,,chronoFLO4,FOLFOX2,men,os_median,21.4,months,,,men,verified,"with median survival times of 21.4 and 18.3 months (P = .02), respectively"
+17098421,FOCA,2006,first,,A,B,overall,grade3plus_ae_rate,14.0,percent,,,G3-4 diarrhoea,verified,G3-4 diarrhoea was observed in 14.0% versus 8.2%
+17098421,FOCA,2006,first,,A,,overall,n_randomized,56.0,count,,,,verified,arm A (pviFOX: pvi5-FU by a central venous catheter 250 mg/m2/daily d1-21+oxaliplatin 130 mg/m2 d1 q3w) (56 pts)
+17098421,FOCA,2006,first,,A,B,overall,orr,48.2,percent,34.6,61.9,CR+PR,verified,the CR+PR rate was 48.2% (95% confidence limits 34.6%-61.9%) versus 43.5 % (31.0%-56.7%)
+17098421,FOCA,2006,first,,A,B,overall,ttp_median,7.0,months,,,median time to progression,verified,"Median TTP was 7 versus 9 months, respectively"
+17098421,FOCA,2006,first,,B,A,overall,grade3plus_ae_rate,8.2,percent,,,G3-4 diarrhoea,verified,G3-4 diarrhoea was observed in 14.0% versus 8.2%
+17098421,FOCA,2006,first,,B,,overall,n_randomized,62.0,count,,,,verified,arm B (XELOX: capecitabine 1000 mg/m2 po bid d1-14+oxaliplatin at the same schedule) (62 pts)
+17098421,FOCA,2006,first,,B,A,overall,orr,43.5,percent,31.0,56.7,CR+PR,verified,the CR+PR rate was 48.2% (95% confidence limits 34.6%-61.9%) versus 43.5 % (31.0%-56.7%)
+17098421,FOCA,2006,first,,B,A,overall,ttp_median,9.0,months,,,median time to progression,verified,"Median TTP was 7 versus 9 months, respectively"
+17127232,,2006,unclear,,group A,,overall,grade3plus_ae_rate,19.0,percent,,,diarrhea,verified,"diarrhea (19%, in group A vs. 35% in group B; p=0.032)"
+17127232,,2006,unclear,,group A,,overall,grade3plus_ae_rate,2.0,percent,,,mucositis,verified,mucositis (2% vs. 14%; p=0.017)
+17127232,,2006,unclear,,group A,,overall,n_randomized,80.0,count,,,,verified,80 patients (group A)
+17127232,,2006,unclear,,group A,,overall,orr,30.0,percent,,,,verified,The overall response rate was 30% and 47.5% in groups A and B respectively
+17127232,,2006,unclear,,group A,,overall,os_median,14.0,months,,,overall survival,verified,15 months vs. 14 months for the groups B and A respectively
+17127232,,2006,unclear,,group A,,overall,pfs_median,4.5,months,,,progression-free survival,verified,median 7.5 vs. 4.5 months
+17127232,,2006,unclear,,group B,,overall,grade3plus_ae_rate,35.0,percent,,,diarrhea,verified,"diarrhea (19%, in group A vs. 35% in group B; p=0.032)"
+17127232,,2006,unclear,,group B,,overall,grade3plus_ae_rate,14.0,percent,,,mucositis,verified,mucositis (2% vs. 14%; p=0.017)
+17127232,,2006,unclear,,group B,,overall,orr,47.5,percent,,,,verified,The overall response rate was 30% and 47.5% in groups A and B respectively
+17127232,,2006,unclear,,group B,group A,overall,os_median,15.0,months,,,overall survival,verified,15 months vs. 14 months for the groups B and A respectively
+17127232,,2006,unclear,,group B,group A,overall,pfs_median,7.5,months,,,"progression-free survival, triple-drug arm",verified,median 7.5 vs. 4.5 months
+15668285,,2005,first,,A,,overall,grade3plus_ae_rate,34.0,percent,,,diarrhea,verified,"grade 3/4 diarrhea (arm A: 34%, B: 19%)"
+15668285,,2005,first,,A,,overall,grade3plus_ae_rate,5.0,percent,,,neutropenia,verified,"grade 3/4 neutropenia (A: 5%, B: 19%)"
+15668285,,2005,first,,A,,overall,orr,34.0,percent,20.0,51.0,,verified,Response rates were 34% [95% confidence interval (CI) 20% to 51%] in arm A
+15668285,,2005,first,,A,,overall,os_median,17.4,months,12.6,23.0,,verified,median overall survival was 17.4 (12.6-23.0+) and 24.7 (16.3-26.4+) months
+15668285,,2005,first,,A,,overall,ttp_median,6.9,months,4.6,10.1,,verified,Median time to progression was 6.9 (4.6-10.1) and 9.2 (7.9-11.5) months
+15668285,,2005,first,,B,,overall,grade3plus_ae_rate,19.0,percent,,,diarrhea,verified,"grade 3/4 diarrhea (arm A: 34%, B: 19%)"
+15668285,,2005,first,,B,,overall,grade3plus_ae_rate,19.0,percent,,,neutropenia,verified,"grade 3/4 neutropenia (A: 5%, B: 19%)"
+15668285,,2005,first,,B,,overall,orr,35.0,percent,20.0,53.0,,verified,and 35% (95% CI: 20% to 53%) in arm B
+15668285,,2005,first,,B,,overall,os_median,24.7,months,16.3,26.4,,verified,median overall survival was 17.4 (12.6-23.0+) and 24.7 (16.3-26.4+) months
+15668285,,2005,first,,B,,overall,ttp_median,9.2,months,7.9,11.5,,verified,Median time to progression was 6.9 (4.6-10.1) and 9.2 (7.9-11.5) months
+15738537,,2005,first,,FU/LV/bevacizumab,,overall,grade3plus_ae_rate,16.0,percent,,,grade 3 hypertension,verified,Grade 3 hypertension was more common with bevacizumab treatment (16% v 3%)
+15738537,,2005,first,,FU/LV/bevacizumab,,overall,n_randomized,104.0,count,,,,verified,FU/LV/bevacizumab (n = 104)
+15738537,,2005,first,,FU/LV/bevacizumab,,overall,orr,26.0,percent,,,,verified,Response rates were 26.0% (FU/LV/bevacizumab)
+15738537,,2005,first,,FU/LV/bevacizumab,FU/LV/placebo,overall,os_hr,0.79,ratio,,,,verified,"hazard ratio, 0.79; P = .16"
+15738537,,2005,first,,FU/LV/bevacizumab,,overall,os_median,16.6,months,,,,verified,Median survival was 16.6 months for the FU/LV/bevacizumab group
+15738537,,2005,first,,FU/LV/bevacizumab,,overall,other_time_median,9.2,months,,,duration of response,verified,duration of response was 9.2 months (FU/LV/bevacizumab)
+15738537,,2005,first,,FU/LV/bevacizumab,FU/LV/placebo,overall,pfs_hr,0.5,ratio,,,,verified,hazard ratio was 0.50; P = .0002
+15738537,,2005,first,,FU/LV/bevacizumab,,overall,pfs_median,9.2,months,,,,verified,Median progression-free survival was 9.2 months (FU/LV/bevacizumab)
+15738537,,2005,first,,FU/LV/placebo,,overall,grade3plus_ae_rate,3.0,percent,,,grade 3 hypertension,verified,Grade 3 hypertension was more common with bevacizumab treatment (16% v 3%)
+15738537,,2005,first,,FU/LV/placebo,,overall,n_randomized,105.0,count,,,,verified,FU/LV/placebo (n = 105)
+15738537,,2005,first,,FU/LV/placebo,,overall,orr,15.2,percent,,,,verified,15.2% (FU/LV/placebo)
+15738537,,2005,first,,FU/LV/placebo,,overall,os_median,12.9,months,,,,verified,12.9 months for the FU/LV/placebo group
+15738537,,2005,first,,FU/LV/placebo,,overall,other_time_median,6.8,months,,,duration of response,verified,6.8 months (FU/LV/placebo)
+15738537,,2005,first,,FU/LV/placebo,,overall,pfs_median,5.5,months,,,,verified,5.5 months (FU/LV/placebo)
+15756271,,2005,second,,Group A,,overall,orr,8.0,percent,,,,verified,than in Groups A (8%) and C (9%)
+15756271,,2005,second,,Group B,,overall,orr,13.0,percent,,,,verified,higher overall response rate in Group B (13%)
+15756271,,2005,second,,Group C,,overall,orr,9.0,percent,,,,verified,than in Groups A (8%) and C (9%)
+15756442,,2005,first,,arm A,,overall,grade3plus_ae_rate,7.0,percent,,,neutropenia,verified,"neutropenia (7%, 39% and 12%)"
+15756442,,2005,first,,arm A,,overall,grade3plus_ae_rate,6.0,percent,,,diarrhea,verified,"diarrhea (6%, 21% and 18%)"
+15756442,,2005,first,,arm A,,evaluable patients,orr,33.0,percent,17.0,49.0,,verified,"The overall response rate for evaluable patients in arm A was 33% [95% confidence interval (CI), 17-49%]"
+15756442,,2005,first,,arm A,,intention-to-treat,os_median,22.2,months,,,,verified,"median survival times were 22.2, 17.0 and 18.2 months for arms A, B and C"
+15756442,,2005,first,,arm A,,intention-to-treat,ttp_median,7.9,months,,,time to progression,verified,"Median times to progression were 7.9, 7.0 and 6.9 months"
+15756442,,2005,first,,arm B,,overall,grade3plus_ae_rate,39.0,percent,,,neutropenia,verified,"neutropenia (7%, 39% and 12%)"
+15756442,,2005,first,,arm B,,overall,grade3plus_ae_rate,21.0,percent,,,diarrhea,verified,"diarrhea (6%, 21% and 18%)"
+15756442,,2005,first,,arm B,,evaluable patients,orr,32.0,percent,16.0,49.0,,verified,"in arm B was 32% (95% CI, 16-49%)"
+15756442,,2005,first,,arm B,,intention-to-treat,os_median,17.0,months,,,,verified,"median survival times were 22.2, 17.0 and 18.2 months for arms A, B and C"
+15756442,,2005,first,,arm B,,intention-to-treat,ttp_median,7.0,months,,,time to progression,verified,"Median times to progression were 7.9, 7.0 and 6.9 months"
+15756442,,2005,first,,arm C,,overall,grade3plus_ae_rate,12.0,percent,,,neutropenia,verified,"neutropenia (7%, 39% and 12%)"
+15756442,,2005,first,,arm C,,overall,grade3plus_ae_rate,18.0,percent,,,diarrhea,verified,"diarrhea (6%, 21% and 18%)"
+15756442,,2005,first,,arm C,,evaluable patients,orr,26.0,percent,12.0,40.0,,verified,"in arm C was 26% (95% CI, 12-40%)"
+15756442,,2005,first,,arm C,,intention-to-treat,os_median,18.2,months,,,,verified,"median survival times were 22.2, 17.0 and 18.2 months for arms A, B and C"
+15756442,,2005,first,,arm C,,intention-to-treat,ttp_median,6.9,months,,,time to progression,verified,"Median times to progression were 7.9, 7.0 and 6.9 months"
+15837702,OXAFAFU vs IRIFAFU,2005,first,,IRIFAFU,,overall,orr,31.0,percent,23.0,40.0,,verified,The response rate with OXAFAFU [44%; 95% confidence interval (CI) 35% to 52%] was significantly higher (P=0.029) than that of IRIFAFU (31%; 95% CI 23% to 40%)
+15837702,OXAFAFU vs IRIFAFU,2005,first,,IRIFAFU,OXAFAFU,overall,os_median,15.6,months,,,,verified,overall survival of patients (18.9 versus 15.6 months; P=0.032)
+15837702,OXAFAFU vs IRIFAFU,2005,first,,OXAFAFU high dose,,overall,orr,44.0,percent,35.0,52.0,,verified,The response rate with OXAFAFU [44%; 95% confidence interval (CI) 35% to 52%]
+15837702,OXAFAFU vs IRIFAFU,2005,first,,OXAFAFU high dose,IRIFAFU,overall,os_median,18.9,months,,,,verified,overall survival of patients (18.9 versus 15.6 months; P=0.032)
+15855226,,2005,first,,IRI/LV/5-FU,,overall,grade3plus_ae_rate,12.3,percent,,,diarrhea,verified,"diarrhea 12.3% and 9.8%, neutropenia 8.2% and 4.9%, and febrile neutropenia 1.4% and 1.4%, respectively"
+15855226,,2005,first,,IRI/LV/5-FU,,overall,grade3plus_ae_rate,8.2,percent,,,neutropenia,verified,neutropenia 8.2% and 4.9%
+15855226,,2005,first,,IRI/LV/5-FU,,overall,grade3plus_ae_rate,1.4,percent,,,febrile neutropenia,verified,febrile neutropenia 1.4% and 1.4%
+15855226,,2005,first,,IRI/LV/5-FU,,overall,orr,33.0,percent,,,single evaluation,verified,33% with IRI/LV/5-FU versus 32% with OXA/LV/5-FU based on responses demonstrated on a single evaluation
+15855226,,2005,first,,IRI/LV/5-FU,,overall,orr,23.0,percent,,,responses confirmed according to WHO criteria,verified,23% with IRI/LV/5-FU versus 22.3% with OXA/LV/5-FU based on responses confirmed according to WHO criteria
+15855226,,2005,first,,IRI/LV/5-FU,,overall,os_median,17.6,months,,,overall survival,verified,median overall survival (17.6 versus 17.4 months)
+15855226,,2005,first,,IRI/LV/5-FU,,overall,ttp_median,8.9,months,,,time to progression,verified,median time to progression (8.9 versus 7.6 months)
+15855226,,2005,first,,OXA/LV/5-FU,,overall,grade3plus_ae_rate,9.8,percent,,,diarrhea,verified,"diarrhea 12.3% and 9.8%, neutropenia 8.2% and 4.9%, and febrile neutropenia 1.4% and 1.4%, respectively"
+15855226,,2005,first,,OXA/LV/5-FU,,overall,grade3plus_ae_rate,4.9,percent,,,neutropenia,verified,neutropenia 8.2% and 4.9%
+15855226,,2005,first,,OXA/LV/5-FU,,overall,grade3plus_ae_rate,1.4,percent,,,febrile neutropenia,verified,febrile neutropenia 1.4% and 1.4%
+15855226,,2005,first,,OXA/LV/5-FU,,overall,grade3plus_ae_rate,5.6,percent,,,sensory neuropathy,verified,"grade 3 sensory neuropathy, which almost exclusively occurred in the OXA arm (0% versus 5.6%; P=0.003, Fisher's exact test)"
+15855226,,2005,first,,OXA/LV/5-FU,,overall,orr,32.0,percent,,,single evaluation,verified,33% with IRI/LV/5-FU versus 32% with OXA/LV/5-FU based on responses demonstrated on a single evaluation
+15855226,,2005,first,,OXA/LV/5-FU,,overall,orr,22.3,percent,,,responses confirmed according to WHO criteria,verified,23% with IRI/LV/5-FU versus 22.3% with OXA/LV/5-FU based on responses confirmed according to WHO criteria
+15855226,,2005,first,,OXA/LV/5-FU,,overall,os_median,17.4,months,,,overall survival,verified,median overall survival (17.6 versus 17.4 months)
+15855226,,2005,first,,OXA/LV/5-FU,,overall,ttp_median,7.6,months,,,time to progression,verified,median time to progression (8.9 versus 7.6 months)
+15938923,,2005,unclear,,group A,,overall,orr,31.3,percent,,,,verified,Response rate in group A was 31.3%
+15938923,,2005,unclear,,group A,,overall,os_median,14.2,months,,,,verified,OS in group A was 14.2 months
+15938923,,2005,unclear,,group A,,overall,ttp_median,8.4,months,,,,verified,TTP of group A was 8.4 months
+15938923,,2005,unclear,,group B,,overall,orr,51.9,percent,,,,verified,51.9% in group B
+15938923,,2005,unclear,,group B,,overall,os_median,17.9,months,,,,verified,17.9 months in group B
+15938923,,2005,unclear,,group B,,overall,ttp_median,12.5,months,,,,verified,that of group B was 12.5 months
+15939922,GOIM,2005,first,,A,,overall,os_median,14.0,months,,,,verified,"overall survival (OS; 14 v 15 months, respectively)"
+15939922,GOIM,2005,first,,A,,overall,other_time_median,9.0,months,,,duration of response,verified,"duration of response (9 v 10 months, respectively)"
+15939922,GOIM,2005,first,,A,,overall,ttp_median,7.0,months,,,,verified,"median time to progression (TTP; 7 v 7 months, respectively)"
+15939922,GOIM,2005,first,,B,,overall,os_median,15.0,months,,,,verified,"overall survival (OS; 14 v 15 months, respectively)"
+15939922,GOIM,2005,first,,B,,overall,other_time_median,10.0,months,,,duration of response,verified,"duration of response (9 v 10 months, respectively)"
+15939922,GOIM,2005,first,,B,,overall,ttp_median,7.0,months,,,,verified,"median time to progression (TTP; 7 v 7 months, respectively)"
+15939923,EORTC 40986,2005,first,,AIO arm,,overall,orr,34.4,percent,27.5,41.3,,verified,"34.4% (95% CI, 27.5% to 41.3%) in the AIO arm"
+15939923,EORTC 40986,2005,first,,AIO arm,,overall,os_median,16.9,months,,,,verified,The median overall survival time was increased from 16.9 to 20.1 months
+15939923,EORTC 40986,2005,first,,AIO arm,,overall,pfs_median,6.4,months,5.3,7.2,,verified,"compared with 6.4 months (95% CI, 5.3 to 7.2 months) in the AIO arm"
+15939923,EORTC 40986,2005,first,,experimental group,,overall,n_randomized,214.0,count,,,,verified,"experimental group, n = 214"
+15939923,EORTC 40986,2005,first,,experimental group,,overall,orr,62.2,percent,55.0,69.5,,verified,"The objective response rate was 62.2% (95% CI, 55.0% to 69.5%) in the experimental group"
+15939923,EORTC 40986,2005,first,,experimental group,AIO arm,overall,os_median,20.1,months,,,,verified,The median overall survival time was increased from 16.9 to 20.1 months
+15939923,EORTC 40986,2005,first,,experimental group,AIO arm,overall,pfs_median,8.5,months,7.6,9.9,,verified,"The median PFS time in the experimental group was 8.5 months (95% CI, 7.6 to 9.9 months)"
+16108890,,2005,unclear,,5-fluorouracil plus leucovorin,,overall,n_randomized,73.0,count,,,,verified,73 were allocated chemotherapy with 5-fluorouracil plus leucovorin
+16108890,,2005,unclear,,5-fluorouracil plus leucovorin,,overall,os_median,8.7,months,6.9,11.0,,verified,The median survival time in the chemotherapy group was 8.7 months (95% confidence interval (CI) 6.9-11.0 months)
+16108890,,2005,unclear,,placebo,,overall,n_randomized,74.0,count,,,,verified,74 were allocated placebo
+16108890,,2005,unclear,,placebo,,overall,os_median,6.7,months,5.3,7.9,,verified,compared to 6.7 months in the placebo group (95% CI 5.3-7.9 months)
+16214045,,2005,first,,5-FU/LV,,overall,grade3plus_ae_rate,4.1,percent,,,grade 3/4 neutropenia,verified,5-FU/LV showed a higher incidence of grade 3/4 neutropenia (4.1 vs. 0%)
+16214045,,2005,first,,5-FU/LV,,overall,n_randomized,123.0,count,,,,verified,(n=123)
+16214045,,2005,first,,5-FU/LV,FT/LV,overall,orr,13.0,percent,7.0,19.0,,verified,"than in the 5-FU/LV arm (13%, 95% CI 7-19)"
+16214045,,2005,first,,5-FU/LV,,overall,os_median,12.2,months,8.9,15.7,,verified,"and 12.2 months (95% CI, 8.9-15.7 months; 5-FU/LV arm)"
+16214045,,2005,first,,5-FU/LV,,overall,ttp_median,6.2,months,5.4,6.9,time to progression,verified,"and 6.2 months (95% CI, 5.4-6.9; 5-FU/LV arm)"
+16214045,,2005,first,,FT/LV,,overall,grade3plus_ae_rate,0.0,percent,,,grade 3/4 neutropenia,verified,(4.1 vs. 0%)
+16214045,,2005,first,,FT/LV,,overall,n_randomized,114.0,count,,,,verified,(n=114)
+16214045,,2005,first,,FT/LV,5-FU/LV,overall,orr,27.0,percent,19.0,35.0,,verified,"Response rate was significantly higher in the FT/LV arm (27%, 95% CI 19-35)"
+16214045,,2005,first,,FT/LV,5-FU/LV,overall,os_hr,1.02,ratio,,,,verified,hazard ratio FT/LV:5-FU/LV=1.02
+16214045,,2005,first,,FT/LV,,overall,os_median,12.4,months,10.3,14.5,,verified,"Median overall survival was 12.4 months (95% CI, 10.3-14.5 months; FT/LV arm)"
+16214045,,2005,first,,FT/LV,,overall,ttp_median,5.9,months,5.3,6.5,time to progression,verified,"The median time to progression was 5.9 months (95% CI, 5.3-6.5; FT/LV arm)"
+16265344,,2005,first,,arm A,,overall,ttp_median,8.2,months,,,,verified,Median time to progression was 8.2 months for arm A
+16265344,,2005,first,,arm B,,overall,ttp_median,8.8,months,,,,verified,and 8.8 months for arm B
 14657227,GERCOR,2004,mixed,,Arm A,,overall,n_randomized,109.0,count,,,patients allocated to FOLFIRI then FOLFOX6,verified,Median survival was 21.5 months in 109 patients allocated to FOLFIRI then FOLFOX6
 14657227,GERCOR,2004,mixed,,Arm A,Arm B,overall,os_median,21.5,months,,,median survival,verified,Median survival was 21.5 months in 109 patients allocated to FOLFIRI then FOLFOX6
 14657227,GERCOR,2004,mixed,,Arm A,,overall,other_time_median,14.2,months,,,second progression-free survival (PFS2),corrected,Median second progression-free survival (PFS) was 14.2 months in arm A versus 10.9 in arm B
@@ -1806,6 +2452,99 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 14657227,GERCOR,2004,mixed,,FOLFOX6,FOLFIRI,second-line,orr,15.0,percent,,,response rate second-line,verified,versus FOLFOX6 which achieved 15% RR and 4.2 months PFS
 14657227,GERCOR,2004,mixed,,FOLFOX6,FOLFIRI,second-line,other_time_median,4.2,months,,,second-line PFS (PFS of second-line therapy),corrected,versus FOLFOX6 which achieved 15% RR and 4.2 months PFS
 14657227,GERCOR,2004,mixed,,FOLFOX6,FOLFIRI,first-line,pfs_median,8.0,months,,,median PFS first-line,verified,FOLFOX6 which achieved 54% RR and 8.0 months median PFS
+14665611,FOLFOX,2004,first,,FOLFOX,,overall,orr,45.0,percent,,,response rate,verified,response rate of 45%
+14665611,FOLFOX,2004,first,,FOLFOX,,overall,os_median,19.5,months,,,,verified,median survival time of 19.5 months
+14716761,,2004,first,,Arm A,,overall,pfs_median,8.3,months,,,,verified,The median progression-free survival was 8.3 months in Arm A
+14716761,,2004,first,,Arm B,,overall,pfs_median,7.6,months,,,,verified,and 7.6 months in Arm B
+15025796,,2004,unclear,,CTI 5-FU,PVI 5-FU,overall,grade3plus_ae_rate,19.8,percent,,,grade 3/4 diarrhea,verified,Grade 3/4 diarrhea occurred significantly more frequently with CTI 5-FU (6.5% vs. 19.8%; P < 0.001)
+15025796,,2004,unclear,,CTI 5-FU,PVI 5-FU,overall,orr,30.3,percent,,,,verified,compared with 30.3% for the CTI group
+15025796,,2004,unclear,,CTI 5-FU,PVI 5-FU,overall,os_median,16.3,months,,,,verified,overall survival (15.8 months vs. 16.3 months; P = 0.275)
+15025796,,2004,unclear,,PVI 5-FU,CTI 5-FU,overall,grade3plus_ae_rate,6.5,percent,,,grade 3/4 diarrhea,verified,Grade 3/4 diarrhea occurred significantly more frequently with CTI 5-FU (6.5% vs. 19.8%; P < 0.001)
+15025796,,2004,unclear,,PVI 5-FU,CTI 5-FU,overall,orr,38.0,percent,,,,verified,The overall response rate for the PVI 5-FU group was 38%
+15025796,,2004,unclear,,PVI 5-FU,CTI 5-FU,overall,os_median,15.8,months,,,,verified,overall survival (15.8 months vs. 16.3 months; P = 0.275)
+15138363,EST 1285,2004,first,,MVPF,,overall,n_randomized,44.0,count,,,,verified,and 44 to MVPF
+15170981,,2004,unclear,,A,B,overall,orr,0.0,percent,,,,verified,than in arm A (0%)
+15170981,,2004,unclear,,B,A,overall,orr,23.5,percent,,,,verified,The overall response rate was significantly (p = 0.007) greater in arm B (23.5%)
+15175435,AVF2107g,2004,first,,IFL plus bevacizumab,,overall,grade3plus_ae_rate,11.0,percent,,,grade 3 hypertension,verified,Grade 3 hypertension was more common during treatment with IFL plus bevacizumab than with IFL plus placebo (11.0 percent vs. 2.3 percent)
+15175435,AVF2107g,2004,first,,IFL plus bevacizumab,,overall,n_randomized,402.0,count,,,,verified,"we randomly assigned 402 to receive irinotecan, bolus fluorouracil, and leucovorin (IFL) plus bevacizumab"
+15175435,AVF2107g,2004,first,,IFL plus bevacizumab,,overall,orr,44.8,percent,,,,verified,the corresponding rates of response were 44.8 percent and 34.8 percent
+15175435,AVF2107g,2004,first,,IFL plus bevacizumab,IFL plus placebo,overall,os_hr,0.66,ratio,,,,verified,corresponding to a hazard ratio for death of 0.66 (P<0.001)
+15175435,AVF2107g,2004,first,,IFL plus bevacizumab,,overall,os_median,20.3,months,,,,verified,The median duration of survival was 20.3 months in the group given IFL plus bevacizumab
+15175435,AVF2107g,2004,first,,IFL plus bevacizumab,,overall,other_time_median,10.4,months,,,duration of response,verified,The median duration of the response was 10.4 months in the group given IFL plus bevacizumab
+15175435,AVF2107g,2004,first,,IFL plus bevacizumab,IFL plus placebo,overall,pfs_hr,0.54,ratio,,,,verified,"hazard ratio for disease progression, 0.54; P<0.001"
+15175435,AVF2107g,2004,first,,IFL plus bevacizumab,,overall,pfs_median,10.6,months,,,,verified,The median duration of progression-free survival was 10.6 months in the group given IFL plus bevacizumab
+15175435,AVF2107g,2004,first,,IFL plus placebo,,overall,grade3plus_ae_rate,2.3,percent,,,grade 3 hypertension,verified,(11.0 percent vs. 2.3 percent)
+15175435,AVF2107g,2004,first,,IFL plus placebo,,overall,n_randomized,411.0,count,,,,verified,411 to receive IFL plus placebo
+15175435,AVF2107g,2004,first,,IFL plus placebo,,overall,orr,34.8,percent,,,,verified,the corresponding rates of response were 44.8 percent and 34.8 percent
+15175435,AVF2107g,2004,first,,IFL plus placebo,,overall,os_median,15.6,months,,,,verified,as compared with 15.6 months in the group given IFL plus placebo
+15175435,AVF2107g,2004,first,,IFL plus placebo,,overall,other_time_median,7.1,months,,,duration of response,verified,as compared with 7.1 months in the group given IFL plus placebo
+15175435,AVF2107g,2004,first,,IFL plus placebo,,overall,pfs_median,6.2,months,,,,verified,as compared with 6.2 months in the group given IFL plus placebo
+15269313,,2004,second,,cetuximab monotherapy,,overall,n_randomized,111.0,count,,,,verified,cetuximab monotherapy (111 patients)
+15269313,,2004,second,,cetuximab monotherapy,cetuximab plus irinotecan,overall,orr,10.8,percent,5.7,18.1,,verified,"10.8 percent [95 percent confidence interval, 5.7 to 18.1 percent]"
+15269313,,2004,second,,cetuximab monotherapy,,overall,os_median,6.9,months,,,,verified,and 6.9 months in the monotherapy group
+15269313,,2004,second,,cetuximab monotherapy,cetuximab plus irinotecan,overall,ttp_median,1.5,months,,,time to progression,verified,"(4.1 vs. 1.5 months, P<0.001 by the log-rank test)"
+15269313,,2004,second,,cetuximab plus irinotecan,,overall,n_randomized,218.0,count,,,,verified,cetuximab and irinotecan (at the same dose and schedule as in a prestudy regimen [218 patients])
+15269313,,2004,second,,cetuximab plus irinotecan,cetuximab monotherapy,overall,orr,22.9,percent,17.5,29.1,,verified,"22.9 percent [95 percent confidence interval, 17.5 to 29.1 percent]"
+15269313,,2004,second,,cetuximab plus irinotecan,,overall,os_median,8.6,months,,,,verified,The median survival time was 8.6 months in the combination-therapy group
+15269313,,2004,second,,cetuximab plus irinotecan,cetuximab monotherapy,overall,ttp_median,4.1,months,,,time to progression,verified,The median time to progression was significantly greater in the combination-therapy group (4.1 vs. 1.5 months
+15284252,,2004,second,,continuous irinotecan,,overall,n_randomized,25.0,count,,,,verified,continue until disease progression (n = 25)
+15284252,,2004,second,,defined-duration irinotecan,,overall,n_randomized,30.0,count,,,,verified,stop irinotecan (n = 30)
+15381932,,2004,second,,A,,overall,n_randomized,41.0,count,,,,verified,arm A (n=41)
+15499601,SIR-Spheres,2004,first,,fluorouracil/leucovorin alone,,overall,os_median,12.8,months,,,median survival,verified,"(29.4 months vs. 12.8 months, P = 0.02)"
+15499601,SIR-Spheres,2004,first,,fluorouracil/leucovorin alone,,overall,ttp_median,3.6,months,,,time to progressive disease,verified,"(18.6 months vs. 3.6 months, P < 0.0005)"
+15570076,,2004,third_or_later,,FOLFOX4,,overall,grade3plus_ae_rate,42.0,percent,,,neutropenia,verified,"neutropenia (13% and 42%, respectively)"
+15570076,,2004,third_or_later,,FOLFOX4,,overall,grade3plus_ae_rate,16.0,percent,,,diarrhea,verified,"diarrhea (6% and 16%, respectively)"
+15570076,,2004,third_or_later,,FOLFOX4,,overall,grade3plus_ae_rate,6.0,percent,,,overall neuropathy,verified,"overall neuropathy (0% and 6%, respectively)"
+15570076,,2004,third_or_later,,FOLFOX4,LV5FU2,overall,orr,13.0,percent,,,,verified,"Objective response (complete + partial) rates for LV5FU2 versus FOLFOX4 were 2% v 13% (P = .0027), respectively."
+15570076,,2004,third_or_later,,FOLFOX4,LV5FU2,overall,os_median,9.9,months,,,,verified,median survival was 11.4 v 9.9 months (P = .20)
+15570076,,2004,third_or_later,,FOLFOX4,LV5FU2,overall,ttp_median,4.8,months,,,time to disease progression,verified,Median time to disease progression was 2.4 v 4.8 months (P < .0001)
+15570076,,2004,third_or_later,,LV5FU2,,overall,grade3plus_ae_rate,13.0,percent,,,neutropenia,verified,"neutropenia (13% and 42%, respectively)"
+15570076,,2004,third_or_later,,LV5FU2,,overall,grade3plus_ae_rate,6.0,percent,,,diarrhea,verified,"diarrhea (6% and 16%, respectively)"
+15570076,,2004,third_or_later,,LV5FU2,,overall,grade3plus_ae_rate,0.0,percent,,,overall neuropathy,verified,"overall neuropathy (0% and 6%, respectively)"
+15570076,,2004,third_or_later,,LV5FU2,,overall,orr,2.0,percent,,,,verified,"Objective response (complete + partial) rates for LV5FU2 versus FOLFOX4 were 2% v 13% (P = .0027), respectively."
+15570076,,2004,third_or_later,,LV5FU2,,overall,os_median,11.4,months,,,,verified,median survival was 11.4 v 9.9 months (P = .20)
+15570076,,2004,third_or_later,,LV5FU2,,overall,ttp_median,2.4,months,,,time to disease progression,verified,Median time to disease progression was 2.4 v 4.8 months (P < .0001)
+12663719,,2003,first,,arm A,arm B,overall,orr,42.2,percent,,,,verified,higher radiologically confirmed response rate (54.5% v 42.2%)
+12663719,,2003,first,,arm A,arm B,overall,pfs_median,6.0,months,,,,verified,significantly longer median progression-free survival time than those allocated to control arm A (10.5 v 6.0 months; P =.0013)
+12663719,,2003,first,,arm B,arm A,overall,orr,54.5,percent,,,,verified,higher radiologically confirmed response rate (54.5% v 42.2%)
+12663719,,2003,first,,arm B,arm A,overall,pfs_median,10.5,months,,,,verified,significantly longer median progression-free survival time than those allocated to control arm A (10.5 v 6.0 months; P =.0013)
+12775730,FOLFOX4,2003,second,,FOLFOX4,,overall,orr,9.9,percent,,,,verified,Objective RRs determined by an independent radiology panel were 9.9% for FOLFOX4 versus 0% for LV5FU2
+12775730,FOLFOX4,2003,second,,FOLFOX4,,overall,ttp_median,4.6,months,,,,verified,Median TTP was 4.6 months for FOLFOX4 versus 2.7 months for LV5FU2
+12775730,FOLFOX4,2003,second,,LV5FU2,,overall,orr,0.0,percent,,,,verified,Objective RRs determined by an independent radiology panel were 9.9% for FOLFOX4 versus 0% for LV5FU2
+12775730,FOLFOX4,2003,second,,LV5FU2,,overall,ttp_median,2.7,months,,,,verified,Median TTP was 4.6 months for FOLFOX4 versus 2.7 months for LV5FU2
+12853354,,2003,first,,arm A,,overall,grade3plus_ae_rate,30.0,percent,,,neutropenia,verified,Neutropenia was the main serious adverse event in arms A (30% of patients)
+12853354,,2003,first,,arm A,,intention-to-treat,orr,33.0,percent,21.0,48.0,,verified,33% [95% confidence interval (CI) 21% to 48%]
+12853354,,2003,first,,arm A,,evaluable,orr,40.0,percent,24.0,58.0,,verified,40% (95% CI 24% to 58%) in arm A
+12853354,,2003,first,,arm A,,overall,os_median,15.0,months,,,,verified,"Median survival times were 15, 12 and 17 months for arms A, B and C, respectively"
+12853354,,2003,first,,arm A,,overall,ttp_median,6.0,months,,,time to progression,verified,"Median times to progression were 6, 8 and 7 months for arms A, B and C, respectively"
+12853354,,2003,first,,arm B,,overall,grade3plus_ae_rate,8.0,percent,,,neutropenia,verified,but occurred in only 8% of patients in arm B
+12853354,,2003,first,,arm B,,intention-to-treat,orr,42.0,percent,28.0,56.0,,verified,42% (95% CI 28% to 56%)
+12853354,,2003,first,,arm B,,evaluable,orr,44.0,percent,29.0,60.0,,verified,44% (95% CI 29% to 60%) in arm B
+12853354,,2003,first,,arm B,,overall,os_median,12.0,months,,,,verified,"Median survival times were 15, 12 and 17 months for arms A, B and C, respectively"
+12853354,,2003,first,,arm B,,overall,ttp_median,8.0,months,,,time to progression,verified,"Median times to progression were 6, 8 and 7 months for arms A, B and C, respectively"
+12853354,,2003,first,,arm C,,overall,grade3plus_ae_rate,22.0,percent,,,neutropenia,verified,and C (22% of patients)
+12853354,,2003,first,,arm C,,intention-to-treat,orr,30.0,percent,18.0,45.0,,verified,30% (95% CI 18% to 45%)
+12853354,,2003,first,,arm C,,evaluable,orr,31.0,percent,17.0,47.0,,verified,31% (95% CI 17% to 47%) in arm C
+12853354,,2003,first,,arm C,,overall,os_median,17.0,months,,,,verified,"Median survival times were 15, 12 and 17 months for arms A, B and C, respectively"
+12853354,,2003,first,,arm C,,overall,ttp_median,7.0,months,,,time to progression,verified,"Median times to progression were 6, 8 and 7 months for arms A, B and C, respectively"
+12963704,EORTC 40952,2003,first,,FU + LV,,overall,grade3plus_ae_rate,9.0,percent,,,grade 3 and 4 diarrhea,verified,Occurrence of grade 3 and 4 diarrhea was higher in the FU24h + LV arm (22%) compared with the FU24h (6%) or FU + LV (9%) arms
+12963704,EORTC 40952,2003,first,,FU + LV,,patients with measurable disease,orr,12.0,percent,,,,verified,"The response rates in the subgroup of patients with measurable disease were 12%, 10%, and 17% for FU + LV, FU24h, and FU24h + LV, respectively"
+12963704,EORTC 40952,2003,first,,FU + LV,,overall,os_median,11.1,months,10.2,15.0,,verified,"median FU + LV, 11.1 months [95% CI, 10.2 to 15.0 months]"
+12963704,EORTC 40952,2003,first,,FU + LV,,overall,pfs_median,4.0,months,3.4,4.9,,verified,"median FU + LV, 4.0 months [95% CI, 3.4 to 4.9]"
+12963704,EORTC 40952,2003,first,,FU24h,,overall,grade3plus_ae_rate,6.0,percent,,,grade 3 and 4 diarrhea,verified,Occurrence of grade 3 and 4 diarrhea was higher in the FU24h + LV arm (22%) compared with the FU24h (6%) or FU + LV (9%) arms
+12963704,EORTC 40952,2003,first,,FU24h,,patients with measurable disease,orr,10.0,percent,,,,verified,"The response rates in the subgroup of patients with measurable disease were 12%, 10%, and 17% for FU + LV, FU24h, and FU24h + LV, respectively"
+12963704,EORTC 40952,2003,first,,FU24h,,overall,os_median,13.0,months,10.4,15.4,,verified,"FU24h, 13.0 months [95% CI, 10.4 to 15.4 months]"
+12963704,EORTC 40952,2003,first,,FU24h,,overall,pfs_median,4.1,months,3.4,5.0,,verified,"FU24h, 4.1 months [95% CI, 3.4 to 5.0]"
+12963704,EORTC 40952,2003,first,,FU24h + LV,,overall,grade3plus_ae_rate,22.0,percent,,,grade 3 and 4 diarrhea,verified,Occurrence of grade 3 and 4 diarrhea was higher in the FU24h + LV arm (22%) compared with the FU24h (6%) or FU + LV (9%) arms
+12963704,EORTC 40952,2003,first,,FU24h + LV,,patients with measurable disease,orr,17.0,percent,,,,verified,"The response rates in the subgroup of patients with measurable disease were 12%, 10%, and 17% for FU + LV, FU24h, and FU24h + LV, respectively"
+12963704,EORTC 40952,2003,first,,FU24h + LV,,overall,os_median,13.7,months,12.0,16.4,,verified,"FU24h + LV, 13.7 months [95% CI, 12.0 to 16.4 months]"
+12963704,EORTC 40952,2003,first,,FU24h + LV,,overall,pfs_median,5.6,months,4.4,6.7,,verified,"FU24h + LV 5.6 months [95% CI, 4.4 to 6.7]"
+14504920,,2003,second,,Group A,,overall,orr,23.0,percent,,,,verified,overall response rate (ORR) 23%
+14504920,,2003,second,,Group B,,overall,orr,25.0,percent,,,,verified,ORR 25%
+15339557,,2003,unclear,,control group,,overall,orr,15.8,percent,,,response rate,verified,while in the control group the response rate was 15.8% (36.8% including minor remission patients)
+15339557,,2003,unclear,,control group,,overall,os_median,14.3,months,,,median survival time,verified,and the median survival time was 14.3 months
+15339557,,2003,unclear,,treatment group,,overall,orr,30.0,percent,,,response rate,verified,The response rate in the treatment group was 30% (45% including minor remission patients)
+15339557,,2003,unclear,,treatment group,,overall,os_median,18.6,months,,,median survival time,verified,the median survival time was 18.6 months
 10944126,LV5FU2-oxaliplatin,2000,first,,LV5FU2,,overall,grade3plus_ae_rate,5.3,percent,,,neutropenia,verified,grade 3/4 neutropenia (41. 7% v 5.3% of patients)
 10944126,LV5FU2-oxaliplatin,2000,first,,LV5FU2,,overall,grade3plus_ae_rate,0.0,percent,,,neurosensory toxicity,verified,grade 3 neurosensory toxicity (18.2% v 0%)
 10944126,LV5FU2-oxaliplatin,2000,first,,LV5FU2,,overall,grade3plus_ae_rate,5.3,percent,,,diarrhea,verified,grade 3/4 diarrhea (11.9% v 5.3%)

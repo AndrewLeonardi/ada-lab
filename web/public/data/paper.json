@@ -8,26 +8,26 @@
   },
   {
    "name": "Every candidate paper screened",
-   "status": "doing",
-   "detail": "3,438 of 3,748 PubMed records screened.",
-   "progress": 0.9172892209178228
+   "status": "done",
+   "detail": "3,748 of 3,748 PubMed records screened.",
+   "progress": 1.0
   },
   {
    "name": "Every included trial extracted",
    "status": "doing",
-   "detail": "312 of 509 included papers extracted (two independent readings each).",
-   "progress": 0.6129666011787819
+   "detail": "432 of 621 included papers extracted (two independent readings each).",
+   "progress": 0.6956521739130435
   },
   {
    "name": "Disagreements settled by a third reading",
    "status": "todo",
-   "detail": "0 numbers judged by a third reading; 549 waiting (in 128 trials).",
+   "detail": "0 numbers judged by a third reading; 715 waiting (in 165 trials).",
    "progress": 0.0
   },
   {
    "name": "Review queue resolved or clearly flagged",
    "status": "doing",
-   "detail": "1,818 numbers verified; 935 in review (published flagged, not as verified).",
+   "detail": "2,557 numbers verified; 1,208 in review (published flagged, not as verified).",
    "progress": null
   },
   {
@@ -91,14 +91,14 @@
    "progress": null
   }
  ],
- "done": 1,
+ "done": 2,
  "total": 15,
  "counts": {
   "candidates": 3748,
-  "screened": 3438,
-  "included": 509,
-  "extracted": 312,
-  "verified": 1818,
-  "review": 935
+  "screened": 3748,
+  "included": 621,
+  "extracted": 432,
+  "verified": 2557,
+  "review": 1208
  }
 }

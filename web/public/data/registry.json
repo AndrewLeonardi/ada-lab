@@ -1,18 +1,17 @@
 {
- "updated": "2026-10-23 13:06",
+ "updated": "2026-10-23 13:37",
  "due_months": 24,
  "registered": 732,
  "due": 355,
  "counts": {
-  "not_found": 88,
+  "not_found": 89,
   "linked": 22,
   "unclear": 3,
   "found_by_number": 67,
   "posted": 168,
-  "found_by_search": 6,
-  "pending": 1
+  "found_by_search": 6
  },
- "missing_patients": 18115,
+ "missing_patients": 18169,
  "trials": [
   {
    "nct": "NCT02228785",
@@ -5900,10 +5899,10 @@
    "enrollment": 54,
    "primary_completion": "2024-08-07",
    "months": 26,
-   "verdict": "pending",
+   "verdict": "not_found",
    "pmids": [],
-   "detail": "Candidate papers await checking.",
-   "searched": "2026-10-21"
+   "detail": "No posted results or linked publication; candidate papers in PubMed were other trials.",
+   "searched": "2026-10-23"
   },
   {
    "nct": "NCT05064059",
