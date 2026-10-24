@@ -14,20 +14,20 @@
   },
   {
    "name": "Every included trial extracted",
-   "status": "doing",
-   "detail": "512 of 621 included papers extracted (two independent readings each).",
-   "progress": 0.8244766505636071
+   "status": "done",
+   "detail": "621 of 621 included papers extracted (two independent readings each).",
+   "progress": 1.0
   },
   {
    "name": "Disagreements settled by a third reading",
    "status": "todo",
-   "detail": "0 numbers judged by a third reading; 820 waiting (in 199 trials).",
+   "detail": "0 numbers judged by a third reading; 963 waiting (in 252 trials).",
    "progress": 0.0
   },
   {
    "name": "Review queue resolved or clearly flagged",
    "status": "doing",
-   "detail": "2,933 numbers verified; 1,398 in review (published flagged, not as verified).",
+   "detail": "3,183 numbers verified; 1,631 in review (published flagged, not as verified).",
    "progress": null
   },
   {
@@ -91,14 +91,14 @@
    "progress": null
   }
  ],
- "done": 2,
+ "done": 3,
  "total": 15,
  "counts": {
   "candidates": 3751,
   "screened": 3751,
   "included": 621,
-  "extracted": 512,
-  "verified": 2933,
-  "review": 1398
+  "extracted": 621,
+  "verified": 3183,
+  "review": 1631
  }
 }

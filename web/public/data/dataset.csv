@@ -2896,6 +2896,16 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 8627643,,1996,first,,C,A,overall,ttp_median,6.2,months,,,time to disease progression,verified,"compared with 6.2 and 6.5 months for patients in arms C and D, respectively (C versus A, P = .007"
 8627643,,1996,first,,D,A,overall,orr,31.0,percent,,,,verified,in 47 (31%) of 153 patients receiving treatment D (D versus A; P = .016)
 8627643,,1996,first,,D,A,overall,ttp_median,6.5,months,,,time to disease progression,verified,"compared with 6.2 and 6.5 months for patients in arms C and D, respectively (C versus A, P = .007; D versus A, P = .017)"
+8646806,,1996,unclear,,group A,,overall,grade3plus_ae_rate,3.0,percent,,,grade 3 diarrhea,verified,grade 3 diarrhea in group B 15% versus 3% in group A
+8646806,,1996,unclear,,group A,,overall,os_median,9.2,months,,,,verified,group A 9.2 months
+8646806,,1996,unclear,,group A,,overall,ttp_median,6.1,months,,,,verified,group A 6.1 months
+8646806,,1996,unclear,,group B,,overall,grade3plus_ae_rate,15.0,percent,,,grade 3 diarrhea,verified,grade 3 diarrhea in group B 15% versus 3% in group A
+8646806,,1996,unclear,,group B,,overall,os_median,10.3,months,,,,verified,group B 10.3 months
+8646806,,1996,unclear,,group B,,overall,ttp_median,6.8,months,,,,verified,group B 6.8 months
+8678498,,1996,first,,5-FU/LV,,overall,orr,30.0,percent,,,,verified,The overall responses were 30% and 36.3%
+8678498,,1996,first,,5-FU/LV/CDDP,,overall,orr,36.3,percent,,,,verified,The overall responses were 30% and 36.3%
+8682466,,1996,unclear,,Group A,,overall,orr,13.0,percent,,,,verified,only 13% of the chemotherapy had such a response
+8682466,,1996,unclear,,Group B,,overall,orr,64.0,percent,,,,verified,64% of the immuno-chemotherapy group had a positive response
 8708716,,1996,unclear,,5-FU alone,,overall,orr,10.0,percent,,,response rate in patients with bidimensionally measurable disease,verified,doubling of the response rate from 10% to 21% (P = .025)
 8708716,,1996,unclear,,5-FU alone,,overall,os_median,9.3,months,,,median survival time,verified,The median survival time also increased from 9.3 to 12.5 months
 8708716,,1996,unclear,,5-FU plus MTX,5-FU alone,overall,orr,21.0,percent,,,response rate in patients with bidimensionally measurable disease,verified,doubling of the response rate from 10% to 21% (P = .025)
@@ -2932,3 +2942,243 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 8918401,,1996,first,,arm A,,overall,os_median,11.0,months,,,,verified,"median survival was 11 months (range, 1-24) in both groups"
 8918401,,1996,first,,arm B,,overall,grade3plus_ae_rate,18.0,percent,,,National Cancer Institute Grade 3 and 4 diarrhea,verified,and in 18% of those receiving i.v. treatment
 8918401,,1996,first,,arm B,,overall,os_median,11.0,months,,,,verified,"median survival was 11 months (range, 1-24) in both groups"
+7611750,,1995,unclear,,Arm A,,colorectal cancer,orr,32.4,percent,,,,verified,32.4% (12/37) in arm A
+7611750,,1995,unclear,,Arm B,,colorectal cancer,orr,20.0,percent,,,,verified,20% (8/40) in arm B
+7611750,,1995,unclear,,Arm C,,colorectal cancer,orr,11.1,percent,,,,verified,11.1% (4/36) in arm C
+7672764,,1995,unclear,,Group A,,overall,n_randomized,20.0,count,,,,verified,Group A (20 patients) who had liver resection
+7672764,,1995,unclear,,Group B,,overall,n_randomized,20.0,count,,,,verified,Group B (20 patients) who had liver resection combined with post-operative locoregional immuno- therapy + chemotherapy
+7695972,,1995,unclear,,5-FU/LV,,overall,orr,16.0,percent,,,complete and partial responses,verified,versus 16% in those in the 5-FU/LV arm of the study
+7695972,,1995,unclear,,rIL2/5-FU/LV,,overall,orr,17.0,percent,,,complete and partial responses,verified,The response rates (complete and partial responses) were 17% in patients receiving rIL2/5-FU/LV
+7707120,Corfu-A,1995,first,,IFN/5-FU,,overall,orr,21.0,percent,,,,verified,overall response rate (21% v 18%)
+7707120,Corfu-A,1995,first,,IFN/5-FU,,overall,os_median,11.0,months,,,,verified,"survival time (median, 11.0 v 11.3 months)"
+7707120,Corfu-A,1995,first,,LV/5-FU,,overall,orr,18.0,percent,,,,verified,overall response rate (21% v 18%)
+7707120,Corfu-A,1995,first,,LV/5-FU,,overall,os_median,11.3,months,,,,verified,"survival time (median, 11.0 v 11.3 months)"
+7717714,,1995,unclear,,Regimen A,,overall,orr,32.4,percent,,,,verified,The response rates were 32.4% (12/37 cases) in Regimen A
+7717714,,1995,unclear,,Regimen B,,overall,orr,20.0,percent,,,,verified,20.0% (8/40) in regimen B
+7717714,,1995,unclear,,Regimen C,,overall,orr,11.1,percent,,,,verified,11.1% (4/36) in regimen C
+7738622,,1995,first,,5-FU/FA,5-FU/FA/DP,overall,orr,15.0,percent,,,"objective response rate, 1 CR and 13 PRs",verified,An objective response rate of 15% (one complete response [CR] and 13 partial responses [PRs]) for 5-FU/FA
+7738622,,1995,first,,5-FU/FA,,overall,os_median,11.6,months,,,median survival time,verified,"the median survival time (11.6 months for 5-FU/FA v 9.3 months for 5-FU/FA/DP; P = .14, log-rank test)"
+7738622,,1995,first,,5-FU/FA/DP,5-FU/FA,overall,orr,13.0,percent,,,"objective response rate, 2 CRs and 9 PRs",verified,13% (two CRs and nine PRs) for 5-FU/FA/DP was observed
+7738622,,1995,first,,5-FU/FA/DP,,overall,os_median,9.3,months,,,median survival time,verified,11.6 months for 5-FU/FA v 9.3 months for 5-FU/FA/DP
+7751874,,1995,unclear,,5-FU + IFN,5-FU alone,assessable patients,orr,19.0,percent,,,"radiologic response, all partial responses",verified,10 of 52 (19%) in the group that received 5-FU plus IFN (all partial responses [PRs])
+7751875,SWOG screening trial,1995,unclear,,overall,,overall,os_median,14.0,months,,,,verified,The median survival time for the entire cohort is 14 months.
+7795270,,1995,first,,5-FU,,overall,orr,18.0,percent,9.0,30.0,,verified,"18% (two complete and nine partial responses in 62 patients, 95% CI of 9-30%) for 5-FU"
+7795270,,1995,first,,5-FU,,overall,os_median,13.6,months,,,,verified,13.6 months for the 5-FU schedule
+7795270,,1995,first,,TMQ 200 mg/m2 i.v. q 2 weeks,,overall,orr,6.0,percent,2.0,14.0,,verified,"Overall response rates were: 6% (four partial responses in 71 patients, 95% CI of 2-14%)"
+7795270,,1995,first,,TMQ 200 mg/m2 i.v. q 2 weeks,,overall,os_median,10.3,months,,,,verified,Median survival estimates were 10.3 months for the q 2 week TMQ schedule
+7795270,,1995,first,,TMQ daily x 5,,overall,orr,0.0,percent,0.0,29.0,,verified,"0% (zero of 29, 95% CI of 0-29%) for daily x 5 TMQ"
+7795270,,1995,first,,TMQ daily x 5,,overall,os_median,8.7,months,,,,verified,8.7 months for the daily x 5 TMQ schedule
+7900703,FUMIC,1995,unclear,,FU-FA,,overall,grade3plus_ae_rate,11.6,percent,,,any grade 3-4 toxicity,verified,(grade 3-4: 11.6%)
+7900703,FUMIC,1995,unclear,,FU-FA,,overall,orr,25.0,percent,,,,verified,13 of 52 (25%) with FU-FA
+7900703,FUMIC,1995,unclear,,FU-FA,FUcont,overall,os_median,9.6,months,,,,verified,overall survival (median: 12.9 v 9.6 months; P = .028)
+7900703,FUMIC,1995,unclear,,FU-FA,FUcont,overall,pfs_median,4.4,months,,,,verified,Progression-free survival (median: 8 v 4.4 months; P = .0026)
+7900703,FUMIC,1995,unclear,,FUcont,,overall,grade3plus_ae_rate,10.0,percent,,,any grade 3-4 toxicity,verified,Toxicity was observed in 62% of the FUcont patients (grade 3-4: 10%)
+7900703,FUMIC,1995,unclear,,FUcont,,overall,orr,45.8,percent,,,,verified,The response rates were 22 of 48 (45.8%) with FUcont
+7900703,FUMIC,1995,unclear,,FUcont,FU-FA,overall,os_median,12.9,months,,,,verified,overall survival (median: 12.9 v 9.6 months; P = .028)
+7900703,FUMIC,1995,unclear,,FUcont,FU-FA,overall,pfs_median,8.0,months,,,,verified,Progression-free survival (median: 8 v 4.4 months; P = .0026)
+8562146,Tomudex,1995,first,,5-FU plus LV,,overall,orr,12.7,percent,,,,verified,19.8% of patients who received Tomudex and 12.7% of patients who received 5-FU plus LV had complete or partial responses
+8562146,Tomudex,1995,first,,Tomudex,,overall,orr,19.8,percent,,,,verified,19.8% of patients who received Tomudex and 12.7% of patients who received 5-FU plus LV had complete or partial responses
+8562173,,1995,unclear,,5-FU,,overall,orr,18.6,percent,,,,verified,and 18.6% in the 5-FU arm (P = 0.045)
+8562173,,1995,unclear,,5-FU,,overall,os_median,7.5,months,,,,verified,and 7.5 months in the 5-FU arm (P = 0.039)
+8562173,,1995,unclear,,FA/5-FU,,overall,n_randomized,94.0,count,,,,verified,94 were randomly allocated to receive FA 200 mg/m2 i.v. plus 5-FU 400 mg/m2 i.v.
+8562173,,1995,unclear,,FA/5-FU,5-FU,overall,orr,33.3,percent,,,,verified,The response rate was 33.3% in the accelerated FA/5-FU and 18.6% in the 5-FU arm
+8562173,,1995,unclear,,FA/5-FU,,overall,os_median,13.5,months,,,,verified,Median survival was 13.5 months in the FA/5-FU arm
+7677801,,1994,unclear,,intensive-course 5FU plus low-dose leucovorin,weekly 5FU plus high-dose leucovorin,overall,orr,35.0,percent,,,objective tumor response,verified,objective tumor response (35% v 31%)
+7677801,,1994,unclear,,intensive-course 5FU plus low-dose leucovorin,weekly 5FU plus high-dose leucovorin,overall,os_median,9.3,months,,,median survival,verified,"survival (median, 9.3 v 10.7 months)"
+7677801,,1994,unclear,,weekly 5FU plus high-dose leucovorin,intensive-course 5FU plus low-dose leucovorin,overall,orr,31.0,percent,,,objective tumor response,verified,objective tumor response (35% v 31%)
+7677801,,1994,unclear,,weekly 5FU plus high-dose leucovorin,intensive-course 5FU plus low-dose leucovorin,overall,os_median,10.7,months,,,median survival,verified,"survival (median, 9.3 v 10.7 months)"
+7840516,,1994,unclear,,Arm A,,overall,os_median,12.0,months,,,,verified,"Median overall survival was similar in both groups (12 versus 13 months, respectively)"
+7840516,,1994,unclear,,Arm B,,overall,os_median,13.0,months,,,,verified,"Median overall survival was similar in both groups (12 versus 13 months, respectively)"
+7932825,,1994,first,,schedule A,,overall,grade3plus_ae_rate,89.0,percent,,,severe stomatitis,verified,occurred in five times as many patients on schedule A than on schedule B (89% versus 18%; chi 2 = 46; P < .001)
+7932825,,1994,first,,schedule A,,overall,orr,32.0,percent,18.0,46.0,,verified,15 of 47 patients (32%; 95% CI = 18%-46%) on schedule A
+7932825,,1994,first,,schedule A,,overall,os_median,14.9,months,12.1,17.8,,verified,14.9 months (95% CI = 12.1-17.8) on schedule A
+7932825,,1994,first,,schedule B,,overall,grade3plus_ae_rate,18.0,percent,,,severe stomatitis,verified,"Severe stomatitis (grade 3 or 4, World Health Organization [WHO] grading system), the dose-limiting toxic effect of 5-FU, occurred in five times as many patients on schedule A than on schedule B (89% versus 18%; chi 2 = 46; P < .001)"
+7932825,,1994,first,,schedule B,schedule A,overall,orr,53.0,percent,38.0,68.0,,verified,24 of 45 patients (53%; 95% confidence interval [CI] = 38%-68%) exhibited an objective response
+7932825,,1994,first,,schedule B,,overall,os_median,19.0,months,14.8,23.2,,verified,The median survival was 19 months (95% CI = 14.8-23.2) on schedule B
+8156482,,1994,first,,5-FU/LV,,overall,orr,19.0,percent,,,overall response (complete and partial),verified,"The overall responses (complete and partial response) were 19% and 28% for the 5-FU/LV and the 5-FU/LV/CDDP treatment arms, respectively"
+8156482,,1994,first,,5-FU/LV/CDDP,5-FU/LV,overall,orr,28.0,percent,,,overall response (complete and partial),verified,"The overall responses (complete and partial response) were 19% and 28% for the 5-FU/LV and the 5-FU/LV/CDDP treatment arms, respectively"
+7683942,,1993,first,,chemotherapy plus supportive care,supportive care alone,overall,os_median,11.0,months,,,,verified,Overall survival was significantly longer for patients given chemotherapy (11.0 months)
+7683942,,1993,first,,supportive care alone,chemotherapy plus supportive care,overall,os_median,5.0,months,,,,verified,than for those receiving supportive care alone (5.0 months; p = 0.006)
+8410114,,1993,unclear,,FU,FU-LV,overall,orr,23.0,percent,,,,verified,Response rate was 32% for FU-LV versus 23% for FU (P = .15)
+8410114,,1993,unclear,,FU,FU-LV,overall,os_median,54.0,weeks,,,,verified,Median survival time was 44 versus 54 weeks (P = .26)
+8410114,,1993,unclear,,FU-LV,FU,overall,orr,32.0,percent,,,,verified,Response rate was 32% for FU-LV versus 23% for FU (P = .15)
+8410114,,1993,unclear,,FU-LV,FU,overall,os_median,44.0,weeks,,,,verified,Median survival time was 44 versus 54 weeks (P = .26)
+8426211,,1993,mixed,,F,FMB,overall,orr,33.0,percent,,,,verified,There was no significant difference in response rate (47% FMB v 33% F; P = .17)
+8426211,,1993,mixed,,F,FMB,overall,os_median,14.0,months,,,,verified,"Median survival was similar in the two groups, 19.1 months for the FMB group compared with 14.0 months for the F group (P = .23)"
+8426211,,1993,mixed,,FMB,F,overall,orr,47.0,percent,,,,verified,There was no significant difference in response rate (47% FMB v 33% F; P = .17)
+8426211,,1993,mixed,,FMB,F,overall,os_median,19.1,months,,,,verified,"Median survival was similar in the two groups, 19.1 months for the FMB group compared with 14.0 months for the F group (P = .23)"
+8459266,,1993,first,,arm A,,overall,os_median,6.0,months,,,,verified,Median survival time of arm A patients was 6 months
+8459266,,1993,first,,arm B,,overall,os_median,8.0,months,,,,verified,it was 8 months (mean: 9.01) for arm B cases
+8471555,MFL vs FLv,1993,first,,FLv,MFL,overall,orr,21.0,percent,,,complete plus partial response,verified,"objective response rates (complete (CR)+partial (PR), MFL 17%, FLv 21%)"
+8471555,MFL vs FLv,1993,first,,FLv,MFL,overall,os_median,9.0,months,,,,verified,survival (median 7.5 vs. 9 months)
+8471555,MFL vs FLv,1993,first,,MFL,FLv,overall,orr,17.0,percent,,,complete plus partial response,verified,"objective response rates (complete (CR)+partial (PR), MFL 17%, FLv 21%)"
+8471555,MFL vs FLv,1993,first,,MFL,FLv,overall,os_median,7.5,months,,,,verified,survival (median 7.5 vs. 9 months)
+1303612,,1992,unclear,,FUDR alone,,overall,os_median,15.0,months,,,,verified,"median, 23 months and 15 months, respectively; P = 0.06"
+1303612,,1992,unclear,,FUDR plus dexamethasone,,overall,os_median,23.0,months,,,,verified,"median, 23 months and 15 months, respectively; P = 0.06"
+1389519,,1992,first,,5-FU alone,5-FU plus LV,overall,grade3plus_ae_rate,8.5,percent,,,grade 3-4 diarrhoea,verified,"a higher percentage of grade 3-4 diarrhoea, 19.5% vs. 8.5% (P = 0.045)"
+1389519,,1992,first,,5-FU alone,5-FU plus LV,overall,grade3plus_ae_rate,5.6,percent,,,grade 3-4 conjunctivitis,verified,"conjunctivitis, 26.5% vs. 5.6% (P = 0.0025)"
+1389519,,1992,first,,5-FU alone,,overall,os_median,11.0,months,,,"median survival, both groups",verified,Median survival was 11 months in both groups
+1389519,,1992,first,,5-FU plus LV,5-FU alone,overall,grade3plus_ae_rate,19.5,percent,,,grade 3-4 diarrhoea,verified,"a higher percentage of grade 3-4 diarrhoea, 19.5% vs. 8.5% (P = 0.045)"
+1389519,,1992,first,,5-FU plus LV,5-FU alone,overall,grade3plus_ae_rate,26.5,percent,,,grade 3-4 conjunctivitis,verified,"conjunctivitis, 26.5% vs. 5.6% (P = 0.0025)"
+1389519,,1992,first,,5-FU plus LV,,overall,os_median,11.0,months,,,"median survival, both groups",verified,Median survival was 11 months in both groups
+1449116,,1992,first,,bolus 5-FU,infusional 5-FU,overall,pfs_median,2.3,months,,,,verified,(3.8 versus 2.3 months)
+1449116,,1992,first,,infusional 5-FU,bolus 5-FU,overall,pfs_median,3.8,months,,,,verified,Progression free survival was significantly longer (p = 0.0139) in the infusion group (3.8 versus 2.3 months)
+1550080,,1992,first,,5-FU,CP-5-FU,overall,orr,23.0,percent,,,,verified,"The overall response rate in the combination and in the single arm were 18 and 23%, respectively."
+1550080,,1992,first,,5-FU,CP-5-FU,overall,os_median,59.6,weeks,,,,verified,"a median of 71.2 and 59.6 weeks, respectively"
+1550080,,1992,first,,5-FU,CP-5-FU,overall,ttp_median,14.9,weeks,,,time to progression,verified,"a median of 17.8 and 14.9 weeks for CP-5-FU and 5-FU, respectively"
+1550080,,1992,first,,CP-5-FU,5-FU,overall,orr,18.0,percent,,,,verified,"The overall response rate in the combination and in the single arm were 18 and 23%, respectively."
+1550080,,1992,first,,CP-5-FU,5-FU,overall,os_median,71.2,weeks,,,,verified,"a median of 71.2 and 59.6 weeks, respectively"
+1550080,,1992,first,,CP-5-FU,5-FU,overall,ttp_median,17.8,weeks,,,time to progression,verified,"a median of 17.8 and 14.9 weeks for CP-5-FU and 5-FU, respectively"
+1616890,,1992,first,,A,,overall,os_median,62.0,weeks,,,,verified,Median survival was 62 weeks on the 5FU arm
+1616890,,1992,first,,A,,overall,other_time_median,20.0,weeks,,,median time to failure (TTF),verified,Median time to failure (TTF) was 20 weeks for arm A
+1616890,,1992,first,,B,,overall,os_median,53.0,weeks,,,,verified,53 weeks on the FA plus 5FU arm (p = 0.14)
+1616890,,1992,first,,B,,overall,other_time_median,21.0,weeks,,,median time to failure (TTF),verified,and 21 for arm B (p = 0.62)
+1618109,,1992,unclear,,fluorouracil monotherapy,,overall,orr,9.0,percent,,,complete or partial remission,verified,"complete or partial remission, 9 vs 16%"
+1618109,,1992,unclear,,fluorouracil monotherapy,,overall,os_median,7.24,months,,,median survival from onset of treatment,verified,Median survival time for the fluorouracil monotherapy was 7.24 months from onset of treatment
+1618109,,1992,unclear,,fluorouracil plus folinic acid,,overall,orr,16.0,percent,,,complete or partial remission,verified,"complete or partial remission, 9 vs 16%"
+1618109,,1992,unclear,,fluorouracil plus folinic acid,,overall,os_median,14.98,months,,,median survival from onset of treatment,verified,14.98 months from treatment onset
+1622115,,1992,unclear,,5-FU + FA,5-FU weekly,overall,orr,26.0,percent,,,partial remission,verified,and in 9/34 patients (26%) treated with 5-FU + FA
+1622115,,1992,unclear,,5-FU + FA,,overall,os_median,10.0,months,,,median survival,verified,Median survival was higher with 5-FU + FA treatment (10 vs 7 months)
+1622115,,1992,unclear,,5-FU + FA,,overall,ttp_median,6.0,months,,,time to progression,verified,"The median time to progression was 5 and 6 months in patients treated with 5FU and 5FU + FA, respectively"
+1622115,,1992,unclear,,5-FU weekly,5-FU + FA,overall,orr,3.0,percent,,,partial remission,verified,A partial remission (PR) was obtained in 1/30 patients (3%) treated with 5-FU
+1622115,,1992,unclear,,5-FU weekly,,overall,os_median,7.0,months,,,median survival,verified,Median survival was higher with 5-FU + FA treatment (10 vs 7 months)
+1622115,,1992,unclear,,5-FU weekly,,overall,ttp_median,5.0,months,,,time to progression,verified,"The median time to progression was 5 and 6 months in patients treated with 5FU and 5FU + FA, respectively"
+1742223,GISCAD,1991,unclear,,Arm A,,overall,orr,20.6,percent,,,,verified,Response rates were 20.6% (Arm A)
+1742223,GISCAD,1991,unclear,,Arm B,,overall,orr,10.0,percent,,,,verified,and 10% (Arm B)
+1804386,,1991,unclear,,5-FU-leucovorin alone,,overall,n_randomized,23.0,count,,,,verified,over the other 23
+1985710,,1991,first,,PIF + weekly cisplatin,,overall,orr,33.0,percent,23.0,44.0,,verified,"33% (28 of 85; 95% CI, 23% to 44%) for the arm in which weekly cisplatin was added to PIF"
+1985710,,1991,first,,PIF + weekly cisplatin,,overall,os_median,11.2,months,,,,verified,The median survival times were 11.8 and 11.2 months in the two groups
+1985710,,1991,first,,PIF alone,,overall,orr,35.0,percent,25.0,46.0,,verified,"The response rate in the PIF alone arm was 35% (29 of 83; 95% confidence interval [CI], 25% to 46%)"
+1985710,,1991,first,,PIF alone,,overall,os_median,11.8,months,,,,verified,The median survival times were 11.8 and 11.2 months in the two groups
+1999706,,1991,first,,arm A,arm B,overall,orr,29.0,percent,,,,verified,"overall response rate (29% v 14.5%, P = .026)"
+1999706,,1991,first,,arm A,arm B,overall,os_median,15.3,months,,,,verified,"survival (median, 15.3 months v 11.4 months, P = .003)"
+1999706,,1991,first,,arm A,arm B,overall,ttp_median,9.9,months,,,,verified,"time to progression (TTP; median, 9.9 months v 5.9 months, P = .009)"
+1999706,,1991,first,,arm B,arm A,overall,orr,14.5,percent,,,,verified,"overall response rate (29% v 14.5%, P = .026)"
+1999706,,1991,first,,arm B,arm A,overall,os_median,11.4,months,,,,verified,"survival (median, 15.3 months v 11.4 months, P = .003)"
+1999706,,1991,first,,arm B,arm A,overall,ttp_median,5.9,months,,,,verified,"time to progression (TTP; median, 9.9 months v 5.9 months, P = .009)"
+2031508,,1991,first,,A,,overall,os_median,8.3,months,,,,verified,The median survival was 8.3 months in arm A and 11.2 months in arm B
+2031508,,1991,first,,B,,overall,os_median,11.2,months,,,,verified,The median survival was 8.3 months in arm A and 11.2 months in arm B
+2037387,,1991,unclear,,group A,,overall,orr,40.0,percent,,,,verified,Tumor response rates were 40% for group A
+2037387,,1991,unclear,,group A,,overall,os_median,17.0,months,,,,verified,The median survival times tended to be longer in group A (17 months)
+2037387,,1991,unclear,,group B,,overall,orr,0.0,percent,,,,verified,"Tumor response rates were 40% for group A, 0% for group B"
+2037387,,1991,unclear,,group B,,overall,os_median,10.0,months,,,,verified,than in group B (10 months)
+2037387,,1991,unclear,,group C,,overall,orr,20.0,percent,,,,verified,and 20% for group C
+2037387,,1991,unclear,,group C,,overall,os_median,9.0,months,,,,verified,and in group C (9 months)
+2143063,,1990,unclear,,intra-arterial floxuridine,,overall,orr,48.0,percent,,,,verified,Objective tumor response was observed in 48% of patients receiving intra-arterial floxuridine
+2143063,,1990,unclear,,intra-arterial floxuridine,,overall,os_median,12.6,months,,,,verified,survival (12.6 vs 10.5 months)
+2143063,,1990,unclear,,intra-arterial floxuridine,,overall,other_time_median,6.0,months,,,time to overall progression,verified,time to overall progression (6.0 vs 5.0 months)
+2143063,,1990,unclear,,intravenous fluorouracil,,overall,orr,21.0,percent,,,,verified,and in 21% of patients receiving intravenous fluorouracil
+2143063,,1990,unclear,,intravenous fluorouracil,,overall,os_median,10.5,months,,,,verified,survival (12.6 vs 10.5 months)
+2143063,,1990,unclear,,intravenous fluorouracil,,overall,ttp_median,6.0,months,,,time to hepatic progression,verified,Time to hepatic progression was significantly longer in the group given intra-arterial therapy: 15.7 vs 6.0 months
+2195136,,1990,unclear,,5FU + leucovorin,,overall,orr,33.0,percent,,,,verified,The response rate was 33% for the combination
+2195136,,1990,unclear,,5FU + leucovorin,,overall,os_median,12.6,months,,,,verified,The median survival for 5FU + leucovorin was 12.6 months
+2195136,,1990,unclear,,5FU alone,,overall,orr,7.0,percent,,,,verified,only 7% for 5FU alone
+2195136,,1990,unclear,,5FU alone,,overall,os_median,9.6,months,,,,verified,9.6 months for 5FU alone
+2205259,,1990,unclear,,group A,,overall,orr,10.0,percent,,,,verified,The response rates were 10% for the group A (1 PR)
+2205259,,1990,unclear,,group A,,overall,os_median,17.0,months,,,,verified,"the median survival times were 17 months, 10 months and 9 months"
+2205259,,1990,unclear,,group B,,overall,orr,0.0,percent,,,,verified,0% for the group B and 20% for the group C
+2205259,,1990,unclear,,group B,,overall,os_median,10.0,months,,,,verified,"the median survival times were 17 months, 10 months and 9 months"
+2205259,,1990,unclear,,group C,,overall,orr,20.0,percent,,,,verified,0% for the group B and 20% for the group C
+2205259,,1990,unclear,,group C,,overall,os_median,9.0,months,,,,verified,"the median survival times were 17 months, 10 months and 9 months"
+2405107,,1990,first,,CDDP/FU,,overall,grade3plus_ae_rate,22.0,percent,,,"grade 3 and 4 hematologic toxicity, grade 3",verified,"grades 3 and 4 hematologic toxicity occurred in 22% and 0% of patients, respectively (P = .0001)"
+2405107,,1990,first,,CDDP/FU,FU,overall,orr,25.0,percent,,,partial response rate,verified,"The partial response rate was significantly greater in patients who received CDDP/FU versus FU alone (25% v 3%, P = .001)"
+2405107,,1990,first,,CDDP/FU,,overall,os_median,10.0,months,,,,verified,"survival (median 10, and 12 months, respectively)"
+2405107,,1990,first,,FU,CDDP/FU,overall,orr,3.0,percent,,,partial response rate,verified,"The partial response rate was significantly greater in patients who received CDDP/FU versus FU alone (25% v 3%, P = .001)"
+2405107,,1990,first,,FU,,overall,os_median,12.0,months,,,,verified,"survival (median 10, and 12 months, respectively)"
+2476530,,1989,unclear,,5-FU plus high-dose MTX,,overall,os_median,10.5,months,,,median survival,verified,"high-dose MTX plus 5-FU, with a median survival of 10.5 months"
+2476530,,1989,unclear,,5-FU plus high-dose leucovorin,,overall,os_median,12.2,months,,,median survival,verified,The high- and low-dose leucovorin plus 5-FU regimens had median survivals of 12.2 and 12.0 months
+2476530,,1989,unclear,,5-FU plus low-dose leucovorin,,overall,os_median,12.0,months,,,median survival,verified,The high- and low-dose leucovorin plus 5-FU regimens had median survivals of 12.2 and 12.0 months
+2530317,NCOG,1989,unclear,,IA FUDR,,overall,n_randomized,67.0,count,,,,verified,"Patients with liver-only metastases (N = 143) were randomized, 76 to the IV arm and 67 to the IA arm"
+2530317,NCOG,1989,unclear,,IV FUDR,,overall,n_randomized,76.0,count,,,,verified,"Patients with liver-only metastases (N = 143) were randomized, 76 to the IV arm and 67 to the IA arm"
+2674331,,1989,first,,5-FU alone,,overall,orr,12.1,percent,,,,verified,13 of 107 (12.1%) on the 5-FU control
+2674331,,1989,first,,5-FU plus high-dose leucovorin,5-FU alone,overall,orr,30.3,percent,,,,verified,a response rate of 33 of 109 (30.3%) on the high-dose leucovorin regimen
+2674331,,1989,first,,5-FU plus low-dose leucovorin,,overall,orr,18.8,percent,,,,verified,21 of 112 (18.8%) on the low-dose leucovorin regimen
+2674332,MFL,1989,first,,5-FU,MFL,overall,os_median,6.0,months,,,"survival, median",verified,"survival (median, 8.5 v 6 months; P less than .02)"
+2674332,MFL,1989,first,,MFL,5-FU,overall,os_median,8.5,months,,,"survival, median",verified,"survival (median, 8.5 v 6 months; P less than .02)"
+2789272,,1989,first,,A,,overall,grade3plus_ae_rate,42.3,percent,,,grade 3 or greater nonhematologic toxicity,verified,The rates of grade 3 or greater nonhematologic toxicity were 42.3% on arm A
+2789272,,1989,first,,A,,overall,orr,17.3,percent,,,complete plus partial response,verified,The objective response rate (complete [CR] plus partial [PR] responses) was 17.3% on arm A
+2789272,,1989,first,,B,,overall,grade3plus_ae_rate,24.3,percent,,,grade 3 or greater nonhematologic toxicity,verified,"24.3% on arm B, and 14.3% on arm C"
+2789272,,1989,first,,B,,overall,orr,18.8,percent,,,complete plus partial response,verified,"18.8% on arm B, and 19.8% on arm C"
+2789272,,1989,first,,C,,overall,grade3plus_ae_rate,14.3,percent,,,grade 3 or greater nonhematologic toxicity,verified,"24.3% on arm B, and 14.3% on arm C"
+2789272,,1989,first,,C,,overall,orr,19.8,percent,,,complete plus partial response,verified,"18.8% on arm B, and 19.8% on arm C"
+2926468,MAOP,1989,first,,bolus,,overall,grade3plus_ae_rate,22.0,percent,,,leukopenia,verified,22% developing grade 3 (severe) or grade 4 (life-threatening) leukopenia with four sepsis-related deaths
+2926468,MAOP,1989,first,,bolus,infusion,overall,orr,7.0,percent,,,,verified,the tumor response rate reached 7% (six of 87) for the bolus arm
+2926468,MAOP,1989,first,,infusion,bolus,overall,orr,30.0,percent,,,,verified,30% (26 of 87) for the infusion arms (P less than .001)
+3061823,,1988,unclear,,5-fluorouracil alone,,overall,os_median,13.0,months,,,,verified,"the overall median survival time was similar for the two arms (10 and 13 months, respectively)"
+3061823,,1988,unclear,,Cisplatin + 5-fluorouracil,,overall,os_median,10.0,months,,,,verified,"the overall median survival time was similar for the two arms (10 and 13 months, respectively)"
+3280741,,1988,first,,5-FU alone,,overall,orr,7.0,percent,,,,verified,and was 7% (four of 61 patients) in the 5-FU arm
+3280741,,1988,first,,5-FU alone,,overall,os_median,9.6,months,,,,verified,and 9.6 months for those receiving 5-FU alone
+3280741,,1988,first,,5-FU and FA,,overall,orr,33.0,percent,,,,verified,The response rate was 33% (21 of 63 patients) in the 5-FU and FA arm
+3280741,,1988,first,,5-FU and FA,,overall,os_median,12.6,months,,,,verified,The median survival was 12.6 months for patients receiving the combination
+2443619,,1987,first,,5-FU alone,,overall,orr,11.0,percent,,,combined complete and partial response rate,verified,"The combined complete and partial response rates in the three regimens were 11%, 5%, and 48%, respectively (P = .0009)"
+2443619,,1987,first,,5-FU and MTX,,overall,orr,5.0,percent,,,combined complete and partial response rate,verified,"The combined complete and partial response rates in the three regimens were 11%, 5%, and 48%, respectively (P = .0009)"
+2443619,,1987,first,,5-FU and leucovorin,,overall,orr,48.0,percent,,,combined complete and partial response rate,verified,"The combined complete and partial response rates in the three regimens were 11%, 5%, and 48%, respectively (P = .0009)"
+3543246,SWOG,1987,unclear,,bolus arm,infusion arm,overall,os_median,10.3,months,,,,verified,"and of patients on the bolus arm, 10.3 months"
+3543246,SWOG,1987,unclear,,infusion arm,bolus arm,overall,os_median,11.0,months,,,,verified,The median survival of patients on the infusion arm is 11.0 months
+3514806,MMF,1986,first,,5-FU,,overall,os_median,10.3,months,,,,verified,compared with 10.3 months for patients receiving 5-FU
+3514806,MMF,1986,first,,MMF,,overall,os_median,9.5,months,,,,verified,The median survival for patients receiving MMF was 9.5 months
+2932908,ECOG,1985,first,,FU + HU,,overall,orr,19.0,percent,,,,verified,the response rate was 6/32 (19%) for FU + HU
+2932908,ECOG,1985,first,,FU + HU,MOF-Strep,overall,os_median,43.0,weeks,,,"estimated median survival, both treatments",verified,the estimated median survival is 43 weeks for both treatments
+2932908,ECOG,1985,first,,MOF-Strep,,overall,orr,16.0,percent,,,,verified,5/32 (16%) for MOF-Strep
+2932908,ECOG,1985,first,,MOF-Strep,FU + HU,overall,os_median,43.0,weeks,,,"estimated median survival, both treatments",verified,the estimated median survival is 43 weeks for both treatments
+2933492,,1985,first,,5-FU + PALA,5-FU alone,patients with measurable disease,orr,12.0,percent,,,,verified,Objective response rates among patients with measurable disease varied from 12% (5-FU plus PALA) to 34% (MOF-Strept)
+2933492,,1985,first,,MOF-Strept,5-FU alone,patients with measurable disease,orr,34.0,percent,,,,verified,varied from 12% (5-FU plus PALA) to 34% (MOF-Strept)
+2988774,ECOG,1985,mixed,,ICRF-159 (razoxane),,previously treated,os_median,23.0,weeks,,,median survival,verified,"ICRF-159, none of 38 (23 weeks)"
+2988774,ECOG,1985,mixed,,PZD (piperazinedione),,previously treated,os_median,17.0,weeks,,,median survival,verified,"PZD, one of 35 patients (17 weeks)"
+2988774,ECOG,1985,mixed,,Yoshi-864,,previously treated,os_median,19.0,weeks,,,median survival,verified,"Yoshi-864, one of 34 (19 weeks)"
+3880867,,1985,first,,High-dose vitamin C,,overall,n_randomized,100.0,count,,,,verified,100 patients with advanced colorectal cancer were randomly assigned to treatment with either high-dose vitamin C
+6239538,,1984,unclear,,High-dose chlorozotocin,,overall,orr,10.0,percent,,,,verified,and 10% in high-dose patients
+6239538,,1984,unclear,,Low-dose chlorozotocin,,overall,orr,5.0,percent,,,,verified,including 5% in low-dose patients
+6372981,SEG 79G1268,1984,unclear,,5-fluorouracil (5-FU),,overall,orr,8.0,percent,,,complete plus partial response rate,verified,The overall complete plus partial response rates were not different for 5-FU (8%) versus 6-TG (3%)
+6372981,SEG 79G1268,1984,unclear,,6-thioguanine (6-TG),,overall,orr,3.0,percent,,,complete plus partial response rate,verified,The overall complete plus partial response rates were not different for 5-FU (8%) versus 6-TG (3%)
+6217886,MOF-Strep,1983,unclear,,MOF,MOF-Strep,overall,orr,5.0,percent,,,complete and partial remission rate,verified,"The complete and partial remission rate with MOF-Strep was significantly better, 34 versus 5% with MOF"
+6217886,MOF-Strep,1983,unclear,,MOF-Strep,MOF,overall,orr,34.0,percent,,,complete and partial remission rate,verified,"The complete and partial remission rate with MOF-Strep was significantly better, 34 versus 5% with MOF"
+6402917,,1983,unclear,,5-Fluorouracil (5-Fu),,patients evaluable for response,orr,19.0,percent,,,partial responses 6/32,verified,"Partial responses were observed with 5-Fu, 6/32 (19%)"
+6402917,,1983,unclear,,Tegafur,,patients evaluable for response,orr,20.0,percent,,,partial responses 7/35,verified,"tegafur, 7/35 (20%)"
+6640551,,1983,unclear,,F,,overall,orr,13.0,percent,,,,verified,F--13% (four of 31 patients)
+6640551,,1983,unclear,,F,,overall,os_median,10.8,months,,,patients initially treated with 5-FU alone,verified,"patients initially treated with 5-FU alone had the most favorable experience (median, 10.8 mos)"
+6640551,,1983,unclear,,FI,,overall,orr,15.0,percent,,,,verified,FI--15% (four of 27)
+6640551,,1983,unclear,,FT,,overall,orr,13.0,percent,,,,verified,FT--13% (four of 31)
+6640551,,1983,unclear,,IT,,overall,orr,6.0,percent,,,,verified,IT--6% (one of 17)
+6640551,,1983,unclear,,MI,,overall,orr,13.0,percent,,,,verified,MI--13% (four of 32)
+6640551,,1983,unclear,,MT,,overall,orr,11.0,percent,,,,verified,MT--11% (three of 28)
+6829492,,1983,second,,A,,overall,orr,6.0,percent,,,partial response rate,verified,"Treatment A: 3/54 (6%), 19 weeks"
+6829492,,1983,second,,B,,overall,orr,16.0,percent,,,partial response rate,verified,"B: 9/59 (16%), 28 weeks"
+6829492,,1983,second,,C,,overall,orr,5.0,percent,,,partial response rate,verified,"C: 3/60 (5%), 25 weeks"
+6829492,,1983,second,,D,,overall,orr,4.0,percent,,,partial response rate,verified,"D: 2/59 (4%), 19 weeks"
+7039814,EST 4275,1982,first,,A,,overall,orr,9.0,percent,,,,verified,"(A) 9/103 = 9%, 26 weeks"
+7039814,EST 4275,1982,first,,A,,overall,os_median,26.0,weeks,,,,verified,"(A) 9/103 = 9%, 26 weeks"
+7039814,EST 4275,1982,first,,B,,overall,orr,11.0,percent,,,,verified,"(B) 10/92 = 11%, 28 weeks"
+7039814,EST 4275,1982,first,,B,,overall,os_median,28.0,weeks,,,,verified,"(B) 10/92 = 11%, 28 weeks"
+7039814,EST 4275,1982,first,,C,,overall,orr,15.0,percent,,,,verified,"(C) 15/101 = 15%, 37 weeks"
+7039814,EST 4275,1982,first,,C,,overall,os_median,37.0,weeks,,,,verified,"(C) 15/101 = 15%, 37 weeks"
+7039814,EST 4275,1982,first,,D,,overall,orr,12.0,percent,,,,verified,"(D) 11/91 = 12%, 27 weeks"
+7039814,EST 4275,1982,first,,D,,overall,os_median,27.0,weeks,,,,verified,"(D) 11/91 = 12%, 27 weeks"
+7039814,EST 4275,1982,first,,E,,overall,orr,18.0,percent,,,,verified,"(E) 15/85 = 18%, 38 weeks"
+7039814,EST 4275,1982,first,,E,,overall,os_median,38.0,weeks,,,,verified,"(E) 15/85 = 18%, 38 weeks"
+7273010,,1981,first,,5-day PALA + 5-FU,,overall,n_randomized,27.0,count,,,,verified,daily for 5 days every 4 weeks (27 patients)
+7273010,,1981,first,,Weekly PALA + 5-FU,,overall,n_randomized,24.0,count,,,,verified,randomized to receive single doses of PALA and 5-FU either weekly (24 patients)
+6991095,,1980,unclear,,5-FU alone,,overall,orr,11.0,percent,,,,verified,Response frequency was 11% for treatment with 5-FU alone
+6991095,,1980,unclear,,5-FU alone,,overall,os_median,8.4,months,,,,verified,"The median survival time was significantly greater in the 5-FU-alone arm (8.4 months vs. 5.6 months, P less than 0.05)"
+6991095,,1980,unclear,,Cyclophosphamide plus 5-FU,,overall,orr,10.0,percent,,,,verified,and 10% for treatment with combination therapy
+6991095,,1980,unclear,,Cyclophosphamide plus 5-FU,,overall,os_median,5.6,months,,,,verified,"The median survival time was significantly greater in the 5-FU-alone arm (8.4 months vs. 5.6 months, P less than 0.05)"
+7006805,,1980,first,,5-FU,ICRF-159,overall,orr,16.0,percent,,,partial response among patients initially treated with 5-FU,verified,Three of the 18 patients (16%) initially treated with 5-FU achieved a partial response
+367575,MOF,1979,unclear,,MOF A,,overall,orr,10.0,percent,,,partial response rate,verified,"In MOF A, there was a 10% partial response rate"
+367575,MOF,1979,unclear,,MOF B,,overall,orr,12.0,percent,,,partial response rate,verified,the partial response rate was 12%
+359121,SWOG,1978,unclear,,5FU infusion + Methyl-CCNU,,overall,orr,16.0,percent,,,,verified,as compared to 16% on the Methyl-CCNU arm
+359121,SWOG,1978,unclear,,5FU infusion + Mitomycin-C,,overall,orr,18.0,percent,,,,verified,A response rate of 18% was noted on the 5FU-Mitomycin limb
+365312,EST 4273,1978,mixed,,5-FU plus 6-thioguanine,,patients with no prior chemotherapy,orr,12.0,percent,,,,verified,12% to 5-FU and 6-thioguanine
+365312,EST 4273,1978,mixed,,5-FU plus cyclophosphamide,,patients with no prior chemotherapy,orr,5.0,percent,,,,verified,5% to cyclophosphamide and 5-FU
+365312,EST 4273,1978,mixed,,MeCCNU,,patients with no prior chemotherapy,orr,15.0,percent,,,,verified,15% to intravenous 5-FU and to MeCCNU
+365312,EST 4273,1978,mixed,,intravenous 5-FU,,patients with no prior chemotherapy,orr,15.0,percent,,,,verified,15% to intravenous 5-FU and to MeCCNU
+365312,EST 4273,1978,mixed,,oral 5-FU,,patients with no prior chemotherapy,orr,18.0,percent,,,,verified,Response rates among patients who had received no prior chemotherapy were 18% to oral 5-FU
+779949,,1976,unclear,,5-FU plus methyl-CCNU,5-FU weekly,colorectal cancer,orr,31.8,percent,,,,verified,the two-drug treatment produced a response of 31.8% (p=.009)
+779949,,1976,unclear,,5-FU weekly,,colorectal cancer,orr,9.5,percent,,,,verified,The response rate in colorectal cancer with 5-FU was 9.5%
+791472,,1976,unclear,,Combination,Fluorouracil alone,overall,orr,37.0,percent,,,,verified,"Of those treated with the three-drug combination, 37% responded"
+791472,,1976,unclear,,Combination,,overall,other_time_median,5.0,months,,,response duration,verified,Median response duration for patients treated with the combination method was 5.0 months
+791472,,1976,unclear,,Fluorouracil alone,Combination,overall,orr,22.0,percent,,,,verified,"of those treated with fluorouracil alone, 22% responded"
+791472,,1976,unclear,,Fluorouracil alone,Combination,overall,other_time_median,3.8,months,,,response duration,verified,"for those with fluorouracil alone, 3.8 months"
+1090358,,1975,unclear,,intravenous 5-FU,,overall,orr,26.0,percent,,,,verified,"14 of 53, or 26%, treated by the i.v. route"
+1090358,,1975,unclear,,oral 5-FU,,overall,orr,19.1,percent,,,,verified,"Nine of 47, or 19.1%, treated by the oral route have shown objective response"
+1117460,,1975,unclear,,5-FU + methyl-CCNU + vincristine,5-FU alone,overall,orr,43.5,percent,,,objective response rate at 10 weeks,verified,a positive objective response rate of 43.5% was observed with the three-drug combination
+1117460,,1975,unclear,,5-FU alone,5-FU + methyl-CCNU + vincristine,overall,orr,19.5,percent,,,objective response rate at 10 weeks,verified,compared to 19.5% with 5-FU alone
