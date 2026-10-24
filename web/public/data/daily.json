@@ -1,5 +1,1971 @@
 [
  {
+  "date": "2026-10-24",
+  "spend_usd": 0.6359,
+  "screened": 0,
+  "included": 0,
+  "secondary": 0,
+  "excluded": 0,
+  "extracted": [
+   {
+    "pmid": "12820485",
+    "name": "Biomodulation of cancer chemotherapy for metastatic colorectal cancer: a randomized stu\u2026",
+    "verified": 0,
+    "review": 6,
+    "headline": null
+   },
+   {
+    "pmid": "12610178",
+    "name": "Phase III comparison of two irinotecan dosing regimens in second-line therapy of metast\u2026",
+    "verified": 8,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "once every 3 weeks irinotecan",
+       "comparator": "weekly irinotecan",
+       "value": 9.9,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "weekly irinotecan",
+       "comparator": "once every 3 weeks irinotecan",
+       "value": 9.9,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "12583944",
+    "name": "Comparison of intermittent and continuous palliative chemotherapy for advanced colorect\u2026",
+    "verified": 3,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "intermittent chemotherapy",
+       "comparator": "continuous chemotherapy",
+       "value": 0.87,
+       "unit": "ratio",
+       "ci_low": 0.69,
+       "ci_high": 1.09,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "12576934",
+    "name": "Oral doxifluridine plus leucovorin in metastatic colorectal cancer: randomized phase II\u2026",
+    "verified": 6,
+    "review": 4,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "group A",
+       "comparator": null,
+       "value": 14.9,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "group B",
+       "comparator": null,
+       "value": 19.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "12565987",
+    "name": "EORTC GI Group",
+    "verified": 4,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "control",
+       "comparator": null,
+       "value": 13.1,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "experimental",
+       "comparator": null,
+       "value": 11.9,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "12506171",
+    "name": "Phase II, randomized trial comparing bevacizumab plus fluorouracil (FU)/leucovorin (LV)\u2026",
+    "verified": 11,
+    "review": 1,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "FU/LV + high-dose bevacizumab",
+       "comparator": null,
+       "value": 16.1,
+       "unit": "months",
+       "ci_low": 11.0,
+       "ci_high": 20.7,
+       "population": "overall"
+      },
+      {
+       "arm": "FU/LV alone",
+       "comparator": null,
+       "value": 13.8,
+       "unit": "months",
+       "ci_low": 9.1,
+       "ci_high": 23.0,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "12482334",
+    "name": "Randomized phase II trial of embolization therapy versus chemoembolization therapy in p\u2026",
+    "verified": 3,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "overall",
+       "comparator": null,
+       "value": 11.0,
+       "unit": "months",
+       "ci_low": 8.0,
+       "ci_high": 15.0,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "12377643",
+    "name": "Antitumour activity of three second-line treatment combinations in patients with metast\u2026",
+    "verified": 3,
+    "review": 3,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "irinotecan + LV/5-FU",
+       "comparator": null,
+       "value": 12.2,
+       "unit": "months",
+       "ci_low": 9.2,
+       "ci_high": 16.0,
+       "population": "overall"
+      },
+      {
+       "arm": "irinotecan + oxaliplatin",
+       "comparator": null,
+       "value": 11.0,
+       "unit": "months",
+       "ci_low": 8.1,
+       "ci_high": 12.2,
+       "population": "overall"
+      },
+      {
+       "arm": "oxaliplatin + LV/5-FU",
+       "comparator": null,
+       "value": 11.5,
+       "unit": "months",
+       "ci_low": 9.0,
+       "ci_high": 14.1,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "12202662",
+    "name": "Randomized comparative study of tegafur/uracil and oral leucovorin versus parenteral fl\u2026",
+    "verified": 2,
+    "review": 0,
+    "headline": null
+   },
+   {
+    "pmid": "12202661",
+    "name": "Multicenter phase III study of uracil/tegafur and oral leucovorin versus fluorouracil a\u2026",
+    "verified": 7,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "UFT/LV",
+       "comparator": "5-FU/LV",
+       "value": 0.964,
+       "unit": "ratio",
+       "ci_low": 0.826,
+       "ci_high": 1.125,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "12177109",
+    "name": "Neuroprotective effect of reduced glutathione on oxaliplatin-based chemotherapy in adva\u2026",
+    "verified": 2,
+    "review": 0,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "GSH",
+       "comparator": null,
+       "value": 26.9,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "placebo",
+       "comparator": null,
+       "value": 23.1,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "12123331",
+    "name": "IRIFAFU vs MTXFAFU",
+    "verified": 14,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "IRIFAFU",
+       "comparator": null,
+       "value": 14.7,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "MTXFAFU",
+       "comparator": null,
+       "value": 14.8,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "12047964",
+    "name": "Comparison of survival, palliation, and quality of life with three chemotherapy regimen\u2026",
+    "verified": 5,
+    "review": 4,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "de Gramont",
+       "comparator": "Lokich",
+       "value": 0.88,
+       "unit": "ratio",
+       "ci_low": 0.7,
+       "ci_high": 1.12,
+       "population": "overall"
+      },
+      {
+       "arm": "de Gramont",
+       "comparator": "raltitrexed",
+       "value": 0.99,
+       "unit": "ratio",
+       "ci_low": 0.79,
+       "ci_high": 1.25,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11896100",
+    "name": "FUMA3008",
+    "verified": 5,
+    "review": 4,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "EU/5-FU",
+       "comparator": "5-FU/LV",
+       "value": 0.88,
+       "unit": "ratio",
+       "ci_low": 0.75,
+       "ci_high": 1.03,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11896097",
+    "name": "Combined-modality treatment for resectable metastatic colorectal carcinoma to the liver\u2026",
+    "verified": 2,
+    "review": 8,
+    "headline": null
+   },
+   {
+    "pmid": "11823690",
+    "name": "HeCOG",
+    "verified": 12,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "arm I",
+       "comparator": null,
+       "value": 14.7,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "arm II",
+       "comparator": null,
+       "value": 12.4,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "arm III",
+       "comparator": null,
+       "value": 16.3,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "12546525",
+    "name": "Dose-effect relationship of bolus 5-fluorouracil in the treatment of advanced colorecta\u2026",
+    "verified": 6,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "group A",
+       "comparator": null,
+       "value": 10.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "group B",
+       "comparator": null,
+       "value": 12.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "group C",
+       "comparator": null,
+       "value": 10.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11865814",
+    "name": "TMTX",
+    "verified": 4,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "5-FU/LV",
+       "comparator": null,
+       "value": 10.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "TMTX/5-FU/LV",
+       "comparator": "5-FU/LV",
+       "value": 13.4,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11863117",
+    "name": "A double-blind placebo-controlled randomized phase III trial of 5-fluorouracil and leuc\u2026",
+    "verified": 6,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "Placebo/5-FU/LCV",
+       "comparator": null,
+       "value": 16.8,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "TMTX/5-FU/LCV",
+       "comparator": null,
+       "value": 15.8,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11853004",
+    "name": "Randomized phase II study of irinotecan plus mitomycin C vs. oxaliplatin plus mitomycin\u2026",
+    "verified": 8,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "arm A",
+       "comparator": null,
+       "value": 12.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "arm B",
+       "comparator": null,
+       "value": 11.2,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11773166",
+    "name": "Randomized multicenter phase II trial of oxaliplatin plus irinotecan versus raltitrexed\u2026",
+    "verified": 6,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "oxaliplatin/irinotecan",
+       "comparator": "raltitrexed",
+       "value": 16.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "raltitrexed",
+       "comparator": "oxaliplatin/irinotecan",
+       "value": 16.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11709562",
+    "name": "Randomized multicenter phase II study comparing a combination of fluorouracil and folin\u2026",
+    "verified": 14,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "FC/FO",
+       "comparator": null,
+       "value": 9.8,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "OC",
+       "comparator": null,
+       "value": 12.3,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11813601",
+    "name": "Metastatic liver disease of colorectal origin: the value of locoregional immunochemothe\u2026",
+    "verified": 1,
+    "review": 2,
+    "headline": null
+   },
+   {
+    "pmid": "11689577",
+    "name": "Oral capecitabine compared with intravenous fluorouracil plus leucovorin in patients wi\u2026",
+    "verified": 8,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "5-FU/LV",
+       "comparator": null,
+       "value": 12.1,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "capecitabine",
+       "comparator": null,
+       "value": 13.2,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11490806",
+    "name": "Regional chemoimmunotherapy for nonresectable metastatic liver disease of colorectal or\u2026",
+    "verified": 2,
+    "review": 4,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "Group A",
+       "comparator": null,
+       "value": 75.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "Group B",
+       "comparator": null,
+       "value": 52.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11384090",
+    "name": "Randomized double-blind phase II survival study comparing immunization with the anti-id\u2026",
+    "verified": 0,
+    "review": 4,
+    "headline": null
+   },
+   {
+    "pmid": "11334726",
+    "name": "A randomised phase II study of oxaliplatin alone versus oxaliplatin combined with 5-flu\u2026",
+    "verified": 7,
+    "review": 3,
+    "headline": {
+     "label": "Median PFS",
+     "items": [
+      {
+       "arm": "oxaliplatin alone",
+       "comparator": null,
+       "value": 2.0,
+       "unit": "months",
+       "ci_low": 1.7,
+       "ci_high": 2.4,
+       "population": "overall"
+      },
+      {
+       "arm": "oxaliplatin+5-FU/FA",
+       "comparator": null,
+       "value": 3.9,
+       "unit": "months",
+       "ci_low": 2.9,
+       "ci_high": 5.0,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11331320",
+    "name": "ECOG/CALGB 5-FU modulation trial",
+    "verified": 5,
+    "review": 5,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "A",
+       "comparator": null,
+       "value": 14.8,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "B",
+       "comparator": null,
+       "value": 11.9,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "C",
+       "comparator": null,
+       "value": 13.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11304782",
+    "name": "Comparison of oral capecitabine versus intravenous fluorouracil plus leucovorin as firs\u2026",
+    "verified": 8,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "5-FU/LV",
+       "comparator": "oral capecitabine",
+       "value": 13.3,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "oral capecitabine",
+       "comparator": "5-FU/LV",
+       "value": 12.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11251955",
+    "name": "Comparison of 5-fluorouracil alone, 5-fluorouracil with levamisole, and 5-fluorouracil \u2026",
+    "verified": 12,
+    "review": 3,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "Group B: 5-FU alone",
+       "comparator": null,
+       "value": 17.3,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "Group B"
+      },
+      {
+       "arm": "Group B: 5-FU with hepatic irradiation",
+       "comparator": null,
+       "value": 14.4,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "Group B"
+      },
+      {
+       "arm": "Group B: 5-FU with levamisole",
+       "comparator": null,
+       "value": 16.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "Group B"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11474245",
+    "name": "5-fluorouracil administered as a 48-hour chronomodulated infusion in combination with l\u2026",
+    "verified": 1,
+    "review": 2,
+    "headline": null
+   },
+   {
+    "pmid": "11367875",
+    "name": "Double-blind randomised placebo-controlled phase III study of an E. coli extract plus 5\u2026",
+    "verified": 0,
+    "review": 0,
+    "headline": null
+   },
+   {
+    "pmid": "11149011",
+    "name": "Randomized trial comparing weekly bolus 5-fluorouracil plus leucovorin versus monthly 5\u2026",
+    "verified": 7,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "monthly",
+       "comparator": null,
+       "value": 15.8,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "weekly",
+       "comparator": null,
+       "value": 18.4,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11142481",
+    "name": "GISCAD",
+    "verified": 4,
+    "review": 5,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "control",
+       "comparator": "experimental",
+       "value": 14.1,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "experimental",
+       "comparator": "control",
+       "value": 14.8,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11106123",
+    "name": "Biweekly irinotecan or raltitrexed plus 6S-leucovorin and bolus 5-fluorouracil in advan\u2026",
+    "verified": 6,
+    "review": 4,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "A",
+       "comparator": null,
+       "value": 34.0,
+       "unit": "percent",
+       "ci_low": 21.0,
+       "ci_high": 48.0,
+       "population": "overall"
+      },
+      {
+       "arm": "B",
+       "comparator": null,
+       "value": 24.0,
+       "unit": "percent",
+       "ci_low": 14.0,
+       "ci_high": 38.0,
+       "population": "overall"
+      },
+      {
+       "arm": "C",
+       "comparator": null,
+       "value": 24.0,
+       "unit": "percent",
+       "ci_low": 14.0,
+       "ci_high": 38.0,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11006366",
+    "name": "Irinotecan Study Group trial (IFL vs 5-FU/LV vs irinotecan)",
+    "verified": 9,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "FL",
+       "comparator": null,
+       "value": 12.6,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "IFL",
+       "comparator": "FL",
+       "value": 14.8,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "11038044",
+    "name": "5-Fluorouracil and folinic acid with or without CPT-11 in advanced colorectal cancer pa\u2026",
+    "verified": 2,
+    "review": 2,
+    "headline": null
+   },
+   {
+    "pmid": "10918156",
+    "name": "Microwave coagulation therapy for multiple hepatic metastases from colorectal carcinoma.",
+    "verified": 2,
+    "review": 4,
+    "headline": null
+   },
+   {
+    "pmid": "10939601",
+    "name": "5-fluorouracil plus folinic acid with or without ifosfamide in advanced colorectal canc\u2026",
+    "verified": 6,
+    "review": 3,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "arm A",
+       "comparator": null,
+       "value": 13.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "arm B",
+       "comparator": null,
+       "value": 16.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "10738212",
+    "name": "Limited but definite efficacy of prophylactic hepatic arterial infusion chemotherapy af\u2026",
+    "verified": 2,
+    "review": 4,
+    "headline": null
+   },
+   {
+    "pmid": "10744089",
+    "name": "Irinotecan combined with fluorouracil compared with fluorouracil alone as first-line tr\u2026",
+    "verified": 8,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "irinotecan group",
+       "comparator": "no-irinotecan group",
+       "value": 17.4,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "no-irinotecan group",
+       "comparator": null,
+       "value": 14.1,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "10715306",
+    "name": "Capecitabine, an oral fluoropyrimidine carbamate with substantial activity in advanced \u2026",
+    "verified": 0,
+    "review": 6,
+    "headline": null
+   },
+   {
+    "pmid": "10623704",
+    "name": "Phase III multicenter randomized trial of oxaliplatin added to chronomodulated fluorour\u2026",
+    "verified": 6,
+    "review": 1,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "chronomodulated 5-FU-LV",
+       "comparator": null,
+       "value": 19.9,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "chronomodulated 5-FU-LV plus oxaliplatin",
+       "comparator": null,
+       "value": 19.4,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "10570746",
+    "name": "SCV 106",
+    "verified": 2,
+    "review": 1,
+    "headline": null
+   },
+   {
+    "pmid": "10360656",
+    "name": "A randomized phase II trial of 5-fluorouracil, with or without human interferon-beta, f\u2026",
+    "verified": 6,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "5-FU alone",
+       "comparator": "5-FU plus IFN-beta",
+       "value": 7.2,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "5-FU plus IFN-beta",
+       "comparator": "5-FU alone",
+       "value": 15.9,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "10378673",
+    "name": "Continuous delivery of venous 5-fluorouracil and arterial 5-fluorodeoxyuridine for hepa\u2026",
+    "verified": 2,
+    "review": 3,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "schedule A",
+       "comparator": null,
+       "value": 48.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "schedule B",
+       "comparator": null,
+       "value": 38.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "10448286",
+    "name": "Biochemical modulation of 5-fluorouracil by leucovorin with or without interferon-alpha\u2026",
+    "verified": 3,
+    "review": 5,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "5-FU/LV",
+       "comparator": null,
+       "value": 12.6,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "5-FU/LV plus IFN-alpha-2c",
+       "comparator": null,
+       "value": 10.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "10213010",
+    "name": "V302",
+    "verified": 2,
+    "review": 2,
+    "headline": {
+     "label": "Median PFS",
+     "items": [
+      {
+       "arm": "infusional 5-FU",
+       "comparator": null,
+       "value": 2.9,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "irinotecan",
+       "comparator": "infusional 5-FU",
+       "value": 4.2,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "10213009",
+    "name": "V301",
+    "verified": 0,
+    "review": 2,
+    "headline": null
+   },
+   {
+    "pmid": "10091727",
+    "name": "5-fluorouracil and levofolinic acid with or without recombinant interferon-2b in patien\u2026",
+    "verified": 8,
+    "review": 1,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "5-FU + 1-FA + IFN-2b",
+       "comparator": null,
+       "value": 12.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "5-FU + levofolinic acid (1-FA)",
+       "comparator": null,
+       "value": 11.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9932161",
+    "name": "5-methyltetrahydrofolate for biochemical modulation of fluorouracil (FU) in patients wi\u2026",
+    "verified": 3,
+    "review": 5,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "FU bolus",
+       "comparator": null,
+       "value": 27.5,
+       "unit": "percent",
+       "ci_low": 15.0,
+       "ci_high": 44.0,
+       "population": "overall"
+      },
+      {
+       "arm": "FU two-hour infusion",
+       "comparator": null,
+       "value": 14.5,
+       "unit": "percent",
+       "ci_low": 5.0,
+       "ci_high": 28.0,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9807987",
+    "name": "Randomised trial of irinotecan plus supportive care versus supportive care alone after \u2026",
+    "verified": 2,
+    "review": 1,
+    "headline": null
+   },
+   {
+    "pmid": "9807986",
+    "name": "Randomised trial of irinotecan versus fluorouracil by continuous infusion after fluorou\u2026",
+    "verified": 8,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "fluorouracil",
+       "comparator": null,
+       "value": 8.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "irinotecan",
+       "comparator": null,
+       "value": 10.8,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9738562",
+    "name": "Tomudex Colorectal Cancer Study Group trial",
+    "verified": 7,
+    "review": 2,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "raltitrexed",
+       "comparator": "5-FU/LV",
+       "value": 1.15,
+       "unit": "ratio",
+       "ci_low": 0.93,
+       "ci_high": 1.42,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9708636",
+    "name": "High-dose folinic acid and 5-fluorouracil alone or combined with hydroxyurea in advance\u2026",
+    "verified": 2,
+    "review": 2,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "arm A",
+       "comparator": null,
+       "value": 22.0,
+       "unit": "percent",
+       "ci_low": 13.0,
+       "ci_high": 31.0,
+       "population": "evaluable for response"
+      },
+      {
+       "arm": "arm B",
+       "comparator": null,
+       "value": 30.0,
+       "unit": "percent",
+       "ci_low": 20.0,
+       "ci_high": 40.0,
+       "population": "evaluable for response"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9739438",
+    "name": "TTD study",
+    "verified": 4,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "CI arm",
+       "comparator": "modulated arm",
+       "value": 48.0,
+       "unit": "weeks",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "modulated arm",
+       "comparator": "CI arm",
+       "value": 42.5,
+       "unit": "weeks",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9626787",
+    "name": "A prospective randomized study comparing high- and low-dose leucovorin combined with sa\u2026",
+    "verified": 1,
+    "review": 3,
+    "headline": null
+   },
+   {
+    "pmid": "9653495",
+    "name": "SAKK",
+    "verified": 6,
+    "review": 1,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "FU alone",
+       "comparator": null,
+       "value": 10.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "FU plus LV",
+       "comparator": "FU alone",
+       "value": 12.4,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9713273",
+    "name": "Bolus injection (2-4 min) versus short-term (10-20 min) infusion of 5-fluorouracil in p\u2026",
+    "verified": 2,
+    "review": 0,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "Bolus injection (2-4 min)",
+       "comparator": "Short-term infusion (10-20 min)",
+       "value": 27.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "Short-term infusion (10-20 min)",
+       "comparator": "Bolus injection (2-4 min)",
+       "value": 13.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9563887",
+    "name": "HOG",
+    "verified": 2,
+    "review": 4,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "arm 1",
+       "comparator": null,
+       "value": 48.0,
+       "unit": "weeks",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "arm 2",
+       "comparator": null,
+       "value": 41.0,
+       "unit": "weeks",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9469324",
+    "name": "Effective biomodulation by leucovorin of high-dose infusion fluorouracil given as a wee\u2026",
+    "verified": 11,
+    "review": 3,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "FU24h/IFN",
+       "comparator": null,
+       "value": 12.7,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "FU24h/LV",
+       "comparator": null,
+       "value": 16.6,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "FU24h/LV/IFN",
+       "comparator": null,
+       "value": 19.6,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9619746",
+    "name": "5-Fluorouracil plus interferon alpha-2a compared to 5-fluorouracil alone in the treatme\u2026",
+    "verified": 4,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "5FU",
+       "comparator": null,
+       "value": 43.7,
+       "unit": "weeks",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "5FU + IFNalpha-2a",
+       "comparator": null,
+       "value": 48.5,
+       "unit": "weeks",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9363861",
+    "name": "NCCTG",
+    "verified": 0,
+    "review": 3,
+    "headline": null
+   },
+   {
+    "pmid": "9470834",
+    "name": "5-Fluorouracil (5-FU) continuous intravenous infusion compared with bolus administratio\u2026",
+    "verified": 6,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "Bolus 5-FU",
+       "comparator": "CVI 5-FU",
+       "value": 9.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "CVI 5-FU",
+       "comparator": "Bolus 5-FU",
+       "value": 10.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9402173",
+    "name": "A prospective randomised trial of protracted venous infusion 5-fluorouracil with or wit\u2026",
+    "verified": 4,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "PVI 5-FU + MMC",
+       "comparator": null,
+       "value": 14.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "PVI 5-FU alone",
+       "comparator": null,
+       "value": 15.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9291901",
+    "name": "Randomised multicentre trial of chronotherapy with oxaliplatin, fluorouracil, and folin\u2026",
+    "verified": 5,
+    "review": 5,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "chronotherapy",
+       "comparator": "constant-rate infusion",
+       "value": 51.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "constant-rate infusion",
+       "comparator": null,
+       "value": 29.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9060527",
+    "name": "Fluorouracil plus racemic leucovorin versus fluorouracil combined with the pure l-isome\u2026",
+    "verified": 6,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "FU/l-LV",
+       "comparator": "FU/racemic LV",
+       "value": 15.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "FU/racemic LV",
+       "comparator": "FU/l-LV",
+       "value": 14.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9093726",
+    "name": "GISCAD",
+    "verified": 2,
+    "review": 4,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "arm A",
+       "comparator": null,
+       "value": 9.3,
+       "unit": "percent",
+       "ci_low": 5.4,
+       "ci_high": 13.1,
+       "population": "overall"
+      },
+      {
+       "arm": "arm B",
+       "comparator": null,
+       "value": 10.7,
+       "unit": "percent",
+       "ci_low": 6.5,
+       "ci_high": 14.9,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "9053508",
+    "name": "French intergroup study",
+    "verified": 8,
+    "review": 6,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "A",
+       "comparator": null,
+       "value": 56.8,
+       "unit": "weeks",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "B",
+       "comparator": null,
+       "value": 62.0,
+       "unit": "weeks",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "8918401",
+    "name": "Randomized phase II noncomparative trial of oral and intravenous doxifluridine plus lev\u2026",
+    "verified": 4,
+    "review": 6,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "arm A",
+       "comparator": null,
+       "value": 11.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "arm B",
+       "comparator": null,
+       "value": 11.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "8874327",
+    "name": "Fluorouracil and leucovorin with or without interferon alfa-2b in advanced colorectal c\u2026",
+    "verified": 6,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "A",
+       "comparator": null,
+       "value": 10.1,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "B",
+       "comparator": null,
+       "value": 7.2,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "8874326",
+    "name": "Phase III randomized study to compare interferon alfa-2a in combination with fluorourac\u2026",
+    "verified": 6,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "5-FU",
+       "comparator": "IFN/5-FU",
+       "value": 13.2,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "IFN/5-FU",
+       "comparator": "5-FU",
+       "value": 13.9,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "8826868",
+    "name": "A phase II randomised trial of 5-fluorouracil with or without interferon alpha-2a in ad\u2026",
+    "verified": 4,
+    "review": 4,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "arm A",
+       "comparator": null,
+       "value": 12.5,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "arm B",
+       "comparator": null,
+       "value": 8.7,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "8879370",
+    "name": "5-Fluorouracil versus 5-fluorouracil plus alpha-interferon as treatment of metastatic c\u2026",
+    "verified": 8,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "A",
+       "comparator": null,
+       "value": 10.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "B",
+       "comparator": "A",
+       "value": 12.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "8708718",
+    "name": "Randomized trial assessing the addition of interferon alpha-2a to fluorouracil and leuc\u2026",
+    "verified": 4,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "FUra/LV alone",
+       "comparator": null,
+       "value": 10.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "FUra/LV plus IFN alpha",
+       "comparator": null,
+       "value": 10.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "8708717",
+    "name": "Study Protocol 1 (Study Group for Palliative Treatment of Metastatic Colorectal Cancer)",
+    "verified": 0,
+    "review": 12,
+    "headline": null
+   },
+   {
+    "pmid": "8708716",
+    "name": "EORTC GITCCG trial (5-FU with low-dose methotrexate)",
+    "verified": 4,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "5-FU alone",
+       "comparator": null,
+       "value": 9.3,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "5-FU plus MTX",
+       "comparator": "5-FU alone",
+       "value": 12.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "8692528",
+    "name": "Preoperative interleukin-2 subcutaneous immunotherapy may prolong the survival time in \u2026",
+    "verified": 0,
+    "review": 1,
+    "headline": null
+   },
+   {
+    "pmid": "8638546",
+    "name": "Randomized trial of 5-fluorouracil and high-dose folinic acid with or without alpha-2B \u2026",
+    "verified": 0,
+    "review": 8,
+    "headline": null
+   },
+   {
+    "pmid": "8627643",
+    "name": "Phase III study of bolus versus infusion fluorouracil with or without cisplatin in adva\u2026",
+    "verified": 7,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "A",
+       "comparator": null,
+       "value": 10.4,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   }
+  ],
+  "verified_numbers": 376,
+  "review_numbers": 190,
+  "held_because": [
+   {
+    "reason": "the two independent extractions disagreed",
+    "n": 174
+   },
+   {
+    "reason": "its unit did not fit the measure",
+    "n": 25
+   },
+   {
+    "reason": "the count was not stated as randomized",
+    "n": 19
+   },
+   {
+    "reason": "the number was not in its quote",
+    "n": 17
+   },
+   {
+    "reason": "its unit is not the one the source uses",
+    "n": 12
+   },
+   {
+    "reason": "the value was implausible",
+    "n": 9
+   },
+   {
+    "reason": "it described a non-standard endpoint",
+    "n": 8
+   },
+   {
+    "reason": "it was not stated as a disease control rate",
+    "n": 5
+   },
+   {
+    "reason": "the quote was not found word for word",
+    "n": 3
+   },
+   {
+    "reason": "it contradicted the trial's other numbers",
+    "n": 2
+   }
+  ],
+  "corrections": 0
+ },
+ {
   "date": "2026-10-23",
   "spend_usd": 1.1325,
   "screened": 313,
