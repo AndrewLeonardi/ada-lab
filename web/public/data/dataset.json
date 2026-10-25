@@ -1,14 +1,14 @@
 {
  "name": "Open Metastatic Colorectal Cancer Trial Outcomes",
  "version": "2026-10-25",
- "generated": "2026-10-25T13:34:34",
+ "generated": "2026-10-25T14:03:45",
  "counts": {
   "candidates": 3751,
   "screened": 3751,
   "included": 621,
   "trials": 621,
-  "verified_numbers": 3183,
-  "pending_numbers": 1631,
+  "verified_numbers": 3509,
+  "pending_numbers": 1305,
   "corrected_numbers": 20
  },
  "trials": [
@@ -42838,7 +42838,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "26406550:group-a|os-hr|overall|overall-survival-hazard-ratio-of-group-a-versus-group-b|group-b",
@@ -42878,7 +42878,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "26406550:group-b|n-randomized|overall||",
@@ -42920,7 +42920,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -43040,13 +43040,11 @@
      "population": "overall",
      "detail": null,
      "quote": "(HR 1.15; p = 0.153 and 0.672; p = 0.836)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26475356:q2w|pfs-median|overall||q3w",
@@ -43252,13 +43250,11 @@
      "population": "overall",
      "detail": "any grade 3/4 toxicity during maintenance",
      "quote": "28%/58%/18%/15% (wt-B/wt-BE/mut-B/mut-C)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26483047:mut-b|n-randomized|overall||",
@@ -43273,13 +43269,11 @@
      "population": "overall",
      "detail": null,
      "quote": "arms mut-B, N = 34 versus mut-C, N = 33",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26483047:mut-c|grade3plus-ae-rate|overall|any-grade-3-4-toxicity-during-maintenance|",
@@ -43294,13 +43288,11 @@
      "population": "overall",
      "detail": "any grade 3/4 toxicity during maintenance",
      "quote": "28%/58%/18%/15% (wt-B/wt-BE/mut-B/mut-C)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26483047:mut-c|n-randomized|overall||",
@@ -43315,13 +43307,11 @@
      "population": "overall",
      "detail": null,
      "quote": "arms mut-B, N = 34 versus mut-C, N = 33",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26483047:wt-b|grade3plus-ae-rate|overall|any-grade-3-4-toxicity-during-maintenance|",
@@ -43336,13 +43326,11 @@
      "population": "overall",
      "detail": "any grade 3/4 toxicity during maintenance",
      "quote": "The frequency of any grade 3/4 toxicities during mt was: 28%/58%/18%/15% (wt-B/wt-BE/mut-B/mut-C)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26483047:wt-b|n-randomized|overall||",
@@ -43357,13 +43345,11 @@
      "population": "overall",
      "detail": null,
      "quote": "KRAS wild-type (wt) patients were randomized to bev \u00b1 erlo (arms wt-BE, N = 36 versus wt-B, N = 35)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26483047:wt-b|other-time-median|overall|progression-free-survival-in-pooled-kras-wild-type-cohort-from-act-study|",
@@ -43384,7 +43370,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "26483047:wt-be|grade3plus-ae-rate|overall|any-grade-3-4-toxicity-during-maintenance|",
@@ -43399,13 +43385,11 @@
      "population": "overall",
      "detail": "any grade 3/4 toxicity during maintenance",
      "quote": "28%/58%/18%/15% (wt-B/wt-BE/mut-B/mut-C)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26483047:wt-be|n-randomized|overall||",
@@ -43420,13 +43404,11 @@
      "population": "overall",
      "detail": null,
      "quote": "arms wt-BE, N = 36 versus wt-B, N = 35)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26483047:wt-be|other-time-median|overall|progression-free-survival-in-pooled-kras-wild-type-cohort-from-act-study|wt-b",
@@ -43469,7 +43451,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     }
    ],
    "registry_checks": [],
@@ -43955,13 +43937,11 @@
      "population": "overall",
      "detail": "2-month response rate",
      "quote": "2-month RR response rate was observed in two (7.4%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26806397:fupep|grade3plus-ae-rate|overall|diarrhea|",
@@ -44052,13 +44032,11 @@
      "population": "overall",
      "detail": "2-month response rate",
      "quote": "three (10.7%) patients in the FOLFIRI and FUPEP arms",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -44102,13 +44080,11 @@
      "population": "overall",
      "detail": "progression-free survival, phase 2 randomized population",
      "quote": "8.3 months on tivantinib vs. 7.3 months on placebo",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26891420:tivantinib-+-cetiri|pfs-hr|overall|progression-free-survival-hazard-ratio-tivantinib-vs-placebo|placebo-+-cetiri",
@@ -44123,13 +44099,11 @@
      "population": "overall",
      "detail": "progression-free survival hazard ratio, tivantinib vs placebo",
      "quote": "HR, 0.85; 95% confidence interval, 0.55-1.33",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26891420:tivantinib-+-cetiri|pfs-median|overall|progression-free-survival-phase-2-randomized-population|placebo-+-cetiri",
@@ -44144,13 +44118,11 @@
      "population": "overall",
      "detail": "progression-free survival, phase 2 randomized population",
      "quote": "8.3 months on tivantinib vs. 7.3 months on placebo",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -44338,7 +44310,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "26903575:control|grade3plus-ae-rate|overall|grade-3-or-worse-adverse-events|",
@@ -44454,7 +44426,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -45112,13 +45084,11 @@
      "population": "overall",
      "detail": "proteinuria grade 3/4",
      "quote": "proteinuria (9.2% versus 0%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "27091810:aflibercept-mfolfox6|grade3plus-ae-rate|overall|deep-vein-thrombosis-grade-3-4|",
@@ -45133,13 +45103,11 @@
      "population": "overall",
      "detail": "deep vein thrombosis grade 3/4",
      "quote": "deep vein thrombosis (5.9% versus 0.9%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "27091810:aflibercept-mfolfox6|grade3plus-ae-rate|overall|pulmonary-embolism-grade-3-4|",
@@ -45154,13 +45122,11 @@
      "population": "overall",
      "detail": "pulmonary embolism grade 3/4",
      "quote": "pulmonary embolism (5.9% versus 5.2%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "27091810:aflibercept-mfolfox6|orr|overall|response-rate|",
@@ -45308,13 +45274,11 @@
      "population": "overall",
      "detail": "proteinuria grade 3/4",
      "quote": "proteinuria (9.2% versus 0%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "27091810:mfolfox6|grade3plus-ae-rate|overall|deep-vein-thrombosis-grade-3-4|",
@@ -45329,13 +45293,11 @@
      "population": "overall",
      "detail": "deep vein thrombosis grade 3/4",
      "quote": "deep vein thrombosis (5.9% versus 0.9%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "27091810:mfolfox6|grade3plus-ae-rate|overall|pulmonary-embolism-grade-3-4|",
@@ -47345,13 +47307,11 @@
      "population": "evaluable",
      "detail": "grade 3/4 diarrhea",
      "quote": "7 of 43 (16 %) on the CASAD arm compared to 3 of 32 (9 %) on the placebo arm experienced grade 3/4 diarrhea",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25160493:casad|n-randomized|overall||",
@@ -47372,7 +47332,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "25160493:casad|other-time-median|overall|any-diarrhea-rate|",
@@ -47409,13 +47369,11 @@
      "population": "evaluable",
      "detail": "grade 3/4 diarrhea",
      "quote": "3 of 32 (9 %) on the placebo arm experienced grade 3/4 diarrhea",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25160493:placebo|other-time-median|overall|any-diarrhea-rate|",
@@ -47606,13 +47564,11 @@
      "population": "overall",
      "detail": null,
      "quote": "71 (arm B)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25319061:arm-b|os-hr|overall|overall-survival|arm-c",
@@ -47703,13 +47659,11 @@
      "population": "overall",
      "detail": null,
      "quote": "72 (arm C) patients were randomised",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [
@@ -48202,7 +48156,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "25575764:sol|orr|overall||",
@@ -48413,7 +48367,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "25575764:mfolfox6|orr|overall||",
@@ -48705,7 +48659,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "25605741:bevacizumab-continuation|pfs-median|overall|time-to-progression|",
@@ -48726,7 +48680,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "25605741:no-continuation|os-median|overall||",
@@ -48766,7 +48720,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -48942,7 +48896,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "25790229:control-arm|n-randomized|overall||",
@@ -48984,7 +48938,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -49036,7 +48990,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "25862517:maintenance|n-randomized|overall||",
@@ -49095,7 +49049,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "25862517:observation|n-randomized|overall||",
@@ -49207,13 +49161,11 @@
      "population": "overall",
      "detail": null,
      "quote": "compared with patients who received FOLFIRI alone (29.4%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25873343:control-group|pfs-median|overall||",
@@ -49268,13 +49220,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Patients treated with FOLFIRI plus endostar experienced a obviously higher overall response rate (42.9%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25873343:tested-group|pfs-median|overall||",
@@ -49752,13 +49702,11 @@
      "population": "overall",
      "detail": "time to treatment failure",
      "quote": "median TTF was 5.2 versus 5.2 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25908603:bevacizumab-10-mg-kg|other-time-median|overall|hazard-ratio-for-time-to-treatment-failure|bevacizumab-5-mg-kg",
@@ -49813,13 +49761,11 @@
      "population": "overall",
      "detail": null,
      "quote": "The median PFS was 6.1 versus 6.4 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25908603:bevacizumab-5-mg-kg|n-randomized|overall||",
@@ -49856,13 +49802,11 @@
      "population": "overall",
      "detail": "time to treatment failure",
      "quote": "median TTF was 5.2 versus 5.2 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25908603:bevacizumab-5-mg-kg|pfs-median|overall||",
@@ -49877,13 +49821,11 @@
      "population": "overall",
      "detail": null,
      "quote": "The median PFS was 6.1 versus 6.4 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -49993,7 +49935,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "25970050:tas-102|grade3plus-ae-rate|overall|leukopenia|",
@@ -50014,7 +49956,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "25970050:tas-102|grade3plus-ae-rate|overall|febrile-neutropenia|",
@@ -50284,13 +50226,11 @@
      "population": "overall",
      "detail": "hypertension",
      "quote": "hypertension (15 [11%] vs two [3%] of 68 patients in the placebo group)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25981818:placebo|n-randomized|overall||",
@@ -50343,13 +50283,11 @@
      "population": "overall",
      "detail": "hand-foot skin reaction",
      "quote": "hand-foot skin reaction (22 [16%] of 136 patients in the regorafenib group",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25981818:regorafenib|grade3plus-ae-rate|overall|hypertension|",
@@ -50364,13 +50302,11 @@
      "population": "overall",
      "detail": "hypertension",
      "quote": "hypertension (15 [11%] vs two [3%] of 68 patients in the placebo group)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25981818:regorafenib|n-randomized|overall||",
@@ -50710,13 +50646,11 @@
      "population": "WT KRAS",
      "detail": null,
      "quote": "11.0 months (95% CI, 8.2-15.4 months) for FOLFIRI alone",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25999741:folfiri-alone|os-median|mu-kras||",
@@ -50731,13 +50665,11 @@
      "population": "MU KRAS",
      "detail": null,
      "quote": "10.5 months (95% CI, 6.1-15.3 months) for FOLFIRI alone",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25999741:folfiri-alone|pfs-median|wt-kras||",
@@ -50752,13 +50684,11 @@
      "population": "WT KRAS",
      "detail": null,
      "quote": "and 3.8 months (95% CI, 3.0-6.7 months) for FOLFIRI alone",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25999741:folfiri-alone|pfs-median|mu-kras||",
@@ -50773,13 +50703,11 @@
      "population": "MU KRAS",
      "detail": null,
      "quote": "and 4.1 months (95% CI, 2.5-8.4 months) for FOLFIRI alone",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25999741:panitumumab-+-bevacizumab-+-folfiri|n-randomized|overall||",
@@ -50813,13 +50741,11 @@
      "population": "WT KRAS",
      "detail": null,
      "quote": "median overall survival (OS) was 15.2 months (95% CI, 8.9-19.7 months) for panitumumab and bevacizumab plus FOLFIRI",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25999741:panitumumab-+-bevacizumab-+-folfiri|os-median|mu-kras||",
@@ -50834,13 +50760,11 @@
      "population": "MU KRAS",
      "detail": null,
      "quote": "median OS was 12.8 months (95% CI, 7.8-15.8 months) for panitumumab and bevacizumab plus FOLFIRI",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25999741:panitumumab-+-bevacizumab-+-folfiri|pfs-median|wt-kras||",
@@ -50855,13 +50779,11 @@
      "population": "WT KRAS",
      "detail": null,
      "quote": "the median progression-free survival (PFS) was 5.7 months (95% confidence interval [CI], 2.4-7.5 months) for panitumumab and bevacizumab plus FOLFIRI",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25999741:panitumumab-+-bevacizumab-+-folfiri|pfs-median|mu-kras||",
@@ -50876,13 +50798,11 @@
      "population": "MU KRAS",
      "detail": null,
      "quote": "median PFS was 5.1 months (95% CI, 2.7-10.2 months) for panitumumab and bevacizumab plus FOLFIRI",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -51488,7 +51408,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "26149602:folfox-bevacizumab|grade3plus-ae-rate|overall|grade-3-4-adverse-events|",
@@ -51654,7 +51574,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "26272806:bevacizumab-plus-mfolfox6|n-randomized|overall|received-treatment|",
@@ -51738,7 +51658,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "26272806:nintedanib-plus-mfolfox6|n-randomized|overall|patients-randomised-to-phase-ii-part-received-treatment-n-85|",
@@ -52448,13 +52368,11 @@
      "population": "IGF-1 mRNA high",
      "detail": null,
      "quote": "HR = 0.67, 95% CI = 0.31 to 1.45",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26405092:arm-a|os-median|overall||",
@@ -52488,13 +52406,11 @@
      "population": "IGF-1 mRNA high",
      "detail": null,
      "quote": "OS (17.9 vs 9.4 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26405092:arm-a|pfs-hr|overall||arm-c",
@@ -52528,13 +52444,11 @@
      "population": "IGF-1 mRNA high",
      "detail": null,
      "quote": "HR = 0.59, 95% CI = 0.28 to 1.23",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26405092:arm-a|pfs-median|overall||",
@@ -52568,13 +52482,11 @@
      "population": "IGF-1 mRNA high",
      "detail": null,
      "quote": "numerically better PFS (5.6 vs 3.6 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26405092:arm-b|n-randomized|overall||",
@@ -52709,13 +52621,11 @@
      "population": "IGF-1 mRNA high",
      "detail": null,
      "quote": "high IGF-1 mRNA expression predicted lower response rate (17.6% vs 37.3%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26405092:arm-c|orr|igf-1-mrna-low||",
@@ -52736,7 +52646,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "26405092:arm-c|os-median|overall||",
@@ -52770,13 +52680,11 @@
      "population": "IGF-1 mRNA high",
      "detail": null,
      "quote": "shorter OS (9.4 vs 15.5 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26405092:arm-c|os-median|igf-1-mrna-low||",
@@ -52797,7 +52705,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "26405092:arm-c|pfs-median|overall||",
@@ -52831,13 +52739,11 @@
      "population": "IGF-1 mRNA high",
      "detail": null,
      "quote": "shorter PFS (3.6 vs 6.6 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26405092:arm-c|pfs-median|igf-1-mrna-low||",
@@ -52858,7 +52764,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     }
    ],
    "registry_checks": [
@@ -53062,13 +52968,11 @@
      "population": "overall",
      "detail": "from maintenance, final analysis",
      "quote": "22\u00b71 months (19\u00b76-26\u00b77) in the bevacizumab group",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26474518:bevacizumab|pfs-median|overall|primary-analysis-pfs-from-randomisation|",
@@ -53083,13 +52987,11 @@
      "population": "overall",
      "detail": "primary analysis, PFS from randomisation",
      "quote": "6\u00b70 months (4\u00b76-7\u00b79) in the bevacizumab group",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26474518:bevacizumab|pfs-median|overall|final-analysis-pfs-from-randomisation|",
@@ -53104,13 +53006,11 @@
      "population": "overall",
      "detail": "final analysis, PFS from randomisation",
      "quote": "4\u00b79 months (4\u00b71-5\u00b77) in the bevacizumab group",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26474518:bevacizumab-plus-erlotinib|grade3plus-ae-rate|overall|skin-rash|",
@@ -53201,13 +53101,11 @@
      "population": "overall",
      "detail": "final analysis, stratified",
      "quote": "stratified HR 0\u00b779 [95% CI 0\u00b763-0\u00b799], p=0\u00b7036",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26474518:bevacizumab-plus-erlotinib|os-hr|overall|final-analysis-unstratified|bevacizumab",
@@ -53222,13 +53120,11 @@
      "population": "overall",
      "detail": "final analysis, unstratified",
      "quote": "unstratified HR 0\u00b779 [0\u00b764-0\u00b798], p=0\u00b7035",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26474518:bevacizumab-plus-erlotinib|os-median|overall|from-maintenance-final-analysis|bevacizumab",
@@ -53243,13 +53139,11 @@
      "population": "overall",
      "detail": "from maintenance, final analysis",
      "quote": "median overall survival from maintenance was 24\u00b79 months (95% CI 21\u00b74-28\u00b79) in the bevacizumab plus erlotinib group",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26474518:bevacizumab-plus-erlotinib|pfs-hr|overall|primary-analysis-stratified|bevacizumab",
@@ -53270,7 +53164,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "26474518:bevacizumab-plus-erlotinib|pfs-hr|overall|primary-analysis-unstratified|bevacizumab",
@@ -53291,7 +53185,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "26474518:bevacizumab-plus-erlotinib|pfs-hr|overall|final-analysis-stratified|bevacizumab",
@@ -53306,13 +53200,11 @@
      "population": "overall",
      "detail": "final analysis, stratified",
      "quote": "stratified HR 0\u00b781 [95% CI 0\u00b766-1\u00b701], p=0\u00b7059",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26474518:bevacizumab-plus-erlotinib|pfs-hr|overall|final-analysis-unstratified|bevacizumab",
@@ -53327,13 +53219,11 @@
      "population": "overall",
      "detail": "final analysis, unstratified",
      "quote": "unstratified HR 0\u00b778 [0\u00b768-0\u00b796], p=0\u00b7019",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26474518:bevacizumab-plus-erlotinib|pfs-median|overall|primary-analysis-pfs-from-randomisation|bevacizumab",
@@ -53348,13 +53238,11 @@
      "population": "overall",
      "detail": "primary analysis, PFS from randomisation",
      "quote": "median progression-free survival from randomisation was 5\u00b71 months (95% CI 4\u00b71-5\u00b79) in the bevacizumab plus erlotinib group",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "26474518:bevacizumab-plus-erlotinib|pfs-median|overall|final-analysis-pfs-from-randomisation|bevacizumab",
@@ -53369,13 +53257,11 @@
      "population": "overall",
      "detail": "final analysis, PFS from randomisation",
      "quote": "median progression-free survival from randomisation was 5\u00b74 months (95% CI 4\u00b73-6\u00b72) in the bevacizumab plus erlotinib group",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -54353,13 +54239,11 @@
      "population": "overall",
      "detail": "median overall survival, WT KRAS exon 2 ITT",
      "quote": "Median OS was 34.2 and 24.3 months in the panitumumab and bevacizumab arms, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24687833:bevacizumab-plus-mfolfox6|os-median|wt-ras-exons-2-3-4-of-kras-and-nras-|median-overall-survival-wt-ras-subgroup|panitum",
@@ -54374,13 +54258,11 @@
      "population": "WT RAS (exons 2, 3, 4 of KRAS and NRAS)",
      "detail": "median overall survival, WT RAS subgroup",
      "quote": "Median OS was 41.3 and 28.9 months (HR, 0.63; 95% CI, 0.39 to 1.02; P = .058) in the panitumumab and bevacizumab arms, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24687833:panitumumab-plus-mfolfox6|os-hr|overall|os-wt-kras-exon-2-itt|bevacizumab-plus-mfolfox6",
@@ -54395,13 +54277,11 @@
      "population": "overall",
      "detail": "OS, WT KRAS exon 2 ITT",
      "quote": "(HR, 0.62; 95% CI, 0.44 to 0.89; P = .009)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24687833:panitumumab-plus-mfolfox6|os-hr|wt-ras-exons-2-3-4-of-kras-and-nras-|os-wt-ras-subgroup|bevacizumab-plus-mfolfox6",
@@ -54416,13 +54296,11 @@
      "population": "WT RAS (exons 2, 3, 4 of KRAS and NRAS)",
      "detail": "OS, WT RAS subgroup",
      "quote": "(HR, 0.63; 95% CI, 0.39 to 1.02; P = .058)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24687833:panitumumab-plus-mfolfox6|os-median|overall|median-overall-survival-wt-kras-exon-2-itt|bevacizumab-plus-mfolfox6",
@@ -54437,13 +54315,11 @@
      "population": "overall",
      "detail": "median overall survival, WT KRAS exon 2 ITT",
      "quote": "Median OS was 34.2 and 24.3 months in the panitumumab and bevacizumab arms, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24687833:panitumumab-plus-mfolfox6|os-median|wt-ras-exons-2-3-4-of-kras-and-nras-|median-overall-survival-wt-ras-subgroup|bevaciz",
@@ -54458,13 +54334,11 @@
      "population": "WT RAS (exons 2, 3, 4 of KRAS and NRAS)",
      "detail": "median overall survival, WT RAS subgroup",
      "quote": "Median OS was 41.3 and 28.9 months (HR, 0.63; 95% CI, 0.39 to 1.02; P = .058) in the panitumumab and bevacizumab arms, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24687833:panitumumab-plus-mfolfox6|pfs-hr|overall|pfs-wt-kras-exon-2-intent-to-treat|bevacizumab-plus-mfolfox6",
@@ -54485,7 +54359,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "24687833:panitumumab-plus-mfolfox6|pfs-hr|wt-ras-exons-2-3-4-of-kras-and-nras-|pfs-wt-ras-subgroup|bevacizumab-plus-mfolfox6",
@@ -54500,13 +54374,11 @@
      "population": "WT RAS (exons 2, 3, 4 of KRAS and NRAS)",
      "detail": "PFS, WT RAS subgroup",
      "quote": "PFS favored the panitumumab arm (HR, 0.65; 95% CI, 0.44 to 0.96; P = .029)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [
@@ -54837,13 +54709,11 @@
      "population": "KRAS exon 2 wild-type",
      "detail": null,
      "quote": "128 KRAS exon 2 wild-type patients were randomised to chemotherapy alone",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24717919:chemotherapy-alone|pfs-median|overall||",
@@ -54877,13 +54747,11 @@
      "population": "overall",
      "detail": "skin rash, preoperative",
      "quote": "skin rash (two [1%] vs 21 [15%] preoperatively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24717919:chemotherapy-plus-cetuximab|n-randomized|kras-exon-2-wild-type||",
@@ -54898,13 +54766,11 @@
      "population": "KRAS exon 2 wild-type",
      "detail": null,
      "quote": "129 to chemotherapy with cetuximab",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24717919:chemotherapy-plus-cetuximab|pfs-hr|overall||chemotherapy-alone",
@@ -56162,13 +56028,11 @@
      "population": "overall",
      "detail": "haematotoxicity",
      "quote": "62 [21%] of 295 patients in the bevacizumab group",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25088940:folfiri-plus-bevacizumab|grade3plus-ae-rate|overall|skin-reactions|",
@@ -56183,13 +56047,11 @@
      "population": "overall",
      "detail": "skin reactions",
      "quote": "skin reactions (77 [26%] vs six [2%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25088940:folfiri-plus-bevacizumab|grade3plus-ae-rate|overall|diarrhoea|",
@@ -56204,13 +56066,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "diarrhoea (34 [11%] vs 40 [14%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25088940:folfiri-plus-bevacizumab|n-randomized|overall||",
@@ -56303,13 +56163,11 @@
      "population": "overall",
      "detail": "haematotoxicity",
      "quote": "haematotoxicity (73 [25%] of 297 patients in the cetuximab group",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25088940:folfiri-plus-cetuximab|grade3plus-ae-rate|overall|skin-reactions|",
@@ -56324,13 +56182,11 @@
      "population": "overall",
      "detail": "skin reactions",
      "quote": "skin reactions (77 [26%] vs six [2%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25088940:folfiri-plus-cetuximab|grade3plus-ae-rate|overall|diarrhoea|",
@@ -56345,13 +56201,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "diarrhoea (34 [11%] vs 40 [14%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25088940:folfiri-plus-cetuximab|n-randomized|overall||",
@@ -56544,13 +56398,11 @@
      "population": "overall",
      "detail": "adverse events at least grade 4",
      "quote": "The placebo group had a significantly higher incidence of adverse events at least grade 4 compared with the MB-6 group (28.9% vs 2.9%, respectively, P = .004)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25150117:mb-6|other-time-median|overall|disease-progression-rate-during-study-period-percent-reported-as-0-0-|placebo",
@@ -56588,13 +56440,11 @@
      "population": "overall",
      "detail": "adverse events at least grade 4",
      "quote": "The placebo group had a significantly higher incidence of adverse events at least grade 4 compared with the MB-6 group (28.9% vs 2.9%, respectively, P = .004)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25150117:placebo|other-time-median|overall|disease-progression-rate-during-study-period-percent-reported-as-15-8-|mb-6",
@@ -56932,13 +56782,11 @@
      "population": "KRAS-mutated",
      "detail": "confirmed disease control (stable disease)",
      "quote": "five (12%) patients achieved confirmed disease control (stable disease",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "25441408:afatinib|n-randomized|kras-wild-type||",
@@ -57469,13 +57317,11 @@
      "population": "overall",
      "detail": "bleeding or haemorrhage",
      "quote": "Grade 3-5 bleeding or haemorrhage (eight [2%] vs one [<1%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23168366:bevacizumab-plus-chemotherapy|grade3plus-ae-rate|overall|neutropenia|",
@@ -57490,13 +57336,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "neutropenia (65 [16%] in the bevacizumab and chemotherapy group vs 52 [13%] in the chemotherapy alone group)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23168366:bevacizumab-plus-chemotherapy|grade3plus-ae-rate|overall|diarrhoea|",
@@ -57511,13 +57355,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "diarrhoea (40 [10%] vs 34 [8%], respectively)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23168366:bevacizumab-plus-chemotherapy|grade3plus-ae-rate|overall|asthenia|",
@@ -57532,13 +57374,11 @@
      "population": "overall",
      "detail": "asthenia",
      "quote": "asthenia (23 [6%] vs 17 [4%], respectively)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23168366:bevacizumab-plus-chemotherapy|n-randomized|overall||",
@@ -57632,13 +57472,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "neutropenia (65 [16%] in the bevacizumab and chemotherapy group vs 52 [13%] in the chemotherapy alone group)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23168366:chemotherapy-alone|grade3plus-ae-rate|overall|diarrhoea|",
@@ -57653,13 +57491,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "diarrhoea (40 [10%] vs 34 [8%], respectively)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23168366:chemotherapy-alone|grade3plus-ae-rate|overall|asthenia|",
@@ -57674,13 +57510,11 @@
      "population": "overall",
      "detail": "asthenia",
      "quote": "asthenia (23 [6%] vs 17 [4%], respectively)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23168366:chemotherapy-alone|n-randomized|overall||",
@@ -57838,13 +57672,11 @@
      "population": "overall",
      "detail": "hand-foot skin reaction",
      "quote": "hand-foot skin reaction (83 patients, 17%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23177514:regorafenib|grade3plus-ae-rate|overall|fatigue|",
@@ -57859,13 +57691,11 @@
      "population": "overall",
      "detail": "fatigue",
      "quote": "fatigue (48, 10%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23177514:regorafenib|grade3plus-ae-rate|overall|diarrhoea|",
@@ -57880,13 +57710,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "diarrhoea (36, 7%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23177514:regorafenib|grade3plus-ae-rate|overall|hypertension|",
@@ -57901,13 +57729,11 @@
      "population": "overall",
      "detail": "hypertension",
      "quote": "hypertension (36, 7%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23177514:regorafenib|grade3plus-ae-rate|overall|rash-or-desquamation|",
@@ -57922,13 +57748,11 @@
      "population": "overall",
      "detail": "rash or desquamation",
      "quote": "rash or desquamation (29, 6%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23177514:regorafenib|n-randomized|overall||",
@@ -59026,7 +58850,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "23463625:capox-bevacizumab|os-median|overall||",
@@ -59104,7 +58928,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "23463625:mcapiri-bevacizumab|os-median|overall||",
@@ -59786,7 +59610,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "23559149:arm-1|grade3plus-ae-rate|overall|neutropenia|",
@@ -60704,7 +60528,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -60805,13 +60629,11 @@
      "population": "overall",
      "detail": null,
      "quote": "hazard ratio [HR], 0.88; 95% CI, 0.74 to 1.03",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23690424:arm-a|os-median|overall||",
@@ -60826,13 +60648,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Median OS in the intent-to-treat population was 8.8 months in arm A",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23690424:arm-a|pfs-hr|overall||arm-b",
@@ -60942,13 +60762,11 @@
      "population": "overall",
      "detail": null,
      "quote": "and 8.1 months in arm B",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23690424:arm-b|pfs-median|overall||",
@@ -61106,13 +60924,11 @@
      "population": "overall",
      "detail": null,
      "quote": "230 to IrPan",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23725851:irpan|orr|overall|responses|",
@@ -61127,13 +60943,11 @@
      "population": "overall",
      "detail": "responses",
      "quote": "a greater number of responses (79 [34%] patients vs 27 [12%]; p<0\u00b70001)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23725851:irpan|os-hr|overall|overall-survival-kras-wild-type-population|irinotecan-control-",
@@ -61148,13 +60962,11 @@
      "population": "overall",
      "detail": "overall survival, KRAS wild-type population",
      "quote": "There was no difference in overall survival between groups (HR 1\u00b701, 95% CI 0\u00b783-1\u00b723; p=0\u00b791)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23725851:irpan|pfs-hr|overall|progression-free-survival-kras-wild-type-population|irinotecan-control-",
@@ -61169,13 +60981,11 @@
      "population": "overall",
      "detail": "progression-free survival, KRAS wild-type population",
      "quote": "individuals in the IrPan group had longer progression-free survival (0\u00b778, 0\u00b764-0\u00b795; p=0\u00b7015)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23725851:irinotecan-control-|grade3plus-ae-rate|overall|diarrhoea|",
@@ -61266,13 +61076,11 @@
      "population": "overall",
      "detail": null,
      "quote": "230 patients were randomly allocated to irinotecan",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23725851:irinotecan-control-|orr|overall|responses|",
@@ -61287,13 +61095,11 @@
      "population": "overall",
      "detail": "responses",
      "quote": "a greater number of responses (79 [34%] patients vs 27 [12%]; p<0\u00b70001)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -61364,7 +61170,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "23788755:a|pfs-hr|overall||b",
@@ -61442,7 +61248,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "23788755:b|pfs-median|overall||",
@@ -61688,13 +61494,11 @@
      "population": "overall",
      "detail": "hand-foot syndrome",
      "quote": "hand-foot syndrome (21 [16%] vs nine [7%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24028813:bevacizumab-plus-capecitabine|grade3plus-ae-rate|overall|diarrhoea|",
@@ -61709,13 +61513,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "diarrhoea (nine [7%] vs nine [7%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24028813:bevacizumab-plus-capecitabine|grade3plus-ae-rate|overall|venous-thromboembolic-events|",
@@ -61730,13 +61532,11 @@
      "population": "overall",
      "detail": "venous thromboembolic events",
      "quote": "venous thromboembolic events (11 [8%] vs six [4%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24028813:bevacizumab-plus-capecitabine|n-randomized|overall||",
@@ -61827,13 +61627,11 @@
      "population": "overall",
      "detail": "hand-foot syndrome",
      "quote": "hand-foot syndrome (21 [16%] vs nine [7%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24028813:capecitabine-alone|grade3plus-ae-rate|overall|diarrhoea|",
@@ -61848,13 +61646,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "diarrhoea (nine [7%] vs nine [7%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24028813:capecitabine-alone|grade3plus-ae-rate|overall|venous-thromboembolic-events|",
@@ -61869,13 +61665,11 @@
      "population": "overall",
      "detail": "venous thromboembolic events",
      "quote": "venous thromboembolic events (11 [8%] vs six [4%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24028813:capecitabine-alone|n-randomized|overall||",
@@ -62247,13 +62041,11 @@
      "population": "safety analysis",
      "detail": "leucopenia",
      "quote": "six [2%] of 250 given SOX plus bevacizumab",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24225157:sox-plus-bevacizumab|grade3plus-ae-rate|safety-analysis|neutropenia|",
@@ -62268,13 +62060,11 @@
      "population": "safety analysis",
      "detail": "neutropenia",
      "quote": "neutropenia (84 [34%] vs 22 [9%]",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24225157:sox-plus-bevacizumab|grade3plus-ae-rate|safety-analysis|anorexia|",
@@ -62289,13 +62079,11 @@
      "population": "safety analysis",
      "detail": "anorexia",
      "quote": "Grade 3 or higher anorexia (13 [5%] vs three [1%]",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24225157:sox-plus-bevacizumab|grade3plus-ae-rate|safety-analysis|diarrhoea|",
@@ -62310,13 +62098,11 @@
      "population": "safety analysis",
      "detail": "diarrhoea",
      "quote": "diarrhoea (23 [9%] vs seven [3%]",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24225157:sox-plus-bevacizumab|n-randomized|overall|modified-intention-to-treat-analysis-population|",
@@ -62337,7 +62123,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "24225157:sox-plus-bevacizumab|pfs-hr|overall||mfolfox6-plus-bevacizumab",
@@ -62390,13 +62176,11 @@
      "population": "safety analysis",
      "detail": "leucopenia",
      "quote": "leucopenia (21 [8%] of 249 patients given mFOLFOX6 plus bevacizumab included in safety analysis",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24225157:mfolfox6-plus-bevacizumab|grade3plus-ae-rate|safety-analysis|neutropenia|",
@@ -62411,13 +62195,11 @@
      "population": "safety analysis",
      "detail": "neutropenia",
      "quote": "neutropenia (84 [34%] vs 22 [9%]",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24225157:mfolfox6-plus-bevacizumab|grade3plus-ae-rate|safety-analysis|anorexia|",
@@ -62432,13 +62214,11 @@
      "population": "safety analysis",
      "detail": "anorexia",
      "quote": "Grade 3 or higher anorexia (13 [5%] vs three [1%]",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24225157:mfolfox6-plus-bevacizumab|grade3plus-ae-rate|safety-analysis|diarrhoea|",
@@ -62453,13 +62233,11 @@
      "population": "safety analysis",
      "detail": "diarrhoea",
      "quote": "diarrhoea (23 [9%] vs seven [3%]",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "24225157:mfolfox6-plus-bevacizumab|n-randomized|overall|modified-intention-to-treat-analysis-population|",
@@ -62480,7 +62258,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "24225157:mfolfox6-plus-bevacizumab|pfs-median|overall||",
@@ -62865,7 +62643,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "24548447:control-group-random-chemotherapy-|os-median|overall|median-survival-time-units-days|",
@@ -62929,7 +62707,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "24548447:testing-group-individualized-chemotherapy-guided-by-ercc1-topo-i-expression-|os-median|overall|median-survival-time-unit",
@@ -63160,13 +62938,11 @@
      "population": "overall",
      "detail": "median PFS",
      "quote": "Median PFS was 10.2 versus 8.3 months, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "21828378:placebo-+-mfolfox6|pfs-median|overall|median-pfs|",
@@ -63181,13 +62957,11 @@
      "population": "overall",
      "detail": "median PFS",
      "quote": "Median PFS was 10.2 versus 8.3 months, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -63381,13 +63155,11 @@
      "population": "overall",
      "detail": "grade 3 fatigue",
      "quote": "as was grade 3 fatigue (12%/3%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22055112:a|grade3plus-ae-rate|overall|grade-3-neuropathy|",
@@ -63402,13 +63174,11 @@
      "population": "overall",
      "detail": "grade 3 neuropathy",
      "quote": "and grade 3 neuropathy (11%/< 1%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22055112:a|n-randomized|overall||",
@@ -63540,13 +63310,11 @@
      "population": "overall",
      "detail": "grade 3 fatigue",
      "quote": "as was grade 3 fatigue (12%/3%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22055112:b|n-randomized|overall||",
@@ -63774,7 +63542,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "22213153:placebo|grade3plus-ae-rate|overall|thrombosis-or-embolism|",
@@ -63852,7 +63620,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [
@@ -64091,7 +63859,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "22240792:arm-b|os-median|overall||",
@@ -64358,13 +64126,11 @@
      "population": "overall",
      "detail": null,
      "quote": "confirmed response rates were 41%, 49%, and 47%, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22473155:a|os-median|overall||",
@@ -64379,13 +64145,11 @@
      "population": "overall",
      "detail": null,
      "quote": "OS was almost identical for the three groups (20.4, 19.7, 20.3 months, respectively)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22473155:a|pfs-median|overall||",
@@ -64400,13 +64164,11 @@
      "population": "overall",
      "detail": null,
      "quote": "median PFS was 7.9, 8.3, and 7.3 months for the three arms, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22473155:b|orr|overall||",
@@ -64421,13 +64183,11 @@
      "population": "overall",
      "detail": null,
      "quote": "confirmed response rates were 41%, 49%, and 47%, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22473155:b|os-median|overall||",
@@ -64442,13 +64202,11 @@
      "population": "overall",
      "detail": null,
      "quote": "OS was almost identical for the three groups (20.4, 19.7, 20.3 months, respectively)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22473155:b|pfs-median|overall||",
@@ -64463,13 +64221,11 @@
      "population": "overall",
      "detail": null,
      "quote": "median PFS was 7.9, 8.3, and 7.3 months for the three arms, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22473155:c|orr|overall||",
@@ -64484,13 +64240,11 @@
      "population": "overall",
      "detail": null,
      "quote": "confirmed response rates were 41%, 49%, and 47%, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22473155:c|os-median|overall||",
@@ -64505,13 +64259,11 @@
      "population": "overall",
      "detail": null,
      "quote": "OS was almost identical for the three groups (20.4, 19.7, 20.3 months, respectively)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22473155:c|pfs-median|overall||",
@@ -64526,13 +64278,11 @@
      "population": "overall",
      "detail": null,
      "quote": "median PFS was 7.9, 8.3, and 7.3 months for the three arms, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -65318,7 +65068,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "22753904:group-a|n-randomized|overall|standard-dosing-arm|",
@@ -65398,7 +65148,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "22753904:group-b|n-randomized|overall|dose-escalation-arm|group-a",
@@ -65601,7 +65351,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "22855138:folfox4|orr|overall||tomox",
@@ -65616,13 +65366,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Overall response rate was 45.6 and 36.3 % (p = 0.003) for TOMOX and FOLFOX4, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22855138:folfox4|os-median|overall||tomox",
@@ -65637,13 +65385,11 @@
      "population": "overall",
      "detail": null,
      "quote": "No statistically significant differences were observed in overall survival (15.6 and 17.2 months; p = 0.475)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22855138:folfox4|other-time-median|overall|response-duration|tomox",
@@ -65658,13 +65404,11 @@
      "population": "overall",
      "detail": "response duration",
      "quote": "response duration (6.4 and 7.6 months; p = 0.372)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22855138:folfox4|pfs-median|overall||tomox",
@@ -65679,13 +65423,11 @@
      "population": "overall",
      "detail": null,
      "quote": "progression-free survival (7.7 and 8.7 months; p = 0.292)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22855138:tomox|n-randomized|overall||",
@@ -65706,7 +65448,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "22855138:tomox|orr|overall||folfox4",
@@ -65721,13 +65463,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Overall response rate was 45.6 and 36.3 % (p = 0.003) for TOMOX and FOLFOX4, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22855138:tomox|os-median|overall||folfox4",
@@ -65742,13 +65482,11 @@
      "population": "overall",
      "detail": null,
      "quote": "No statistically significant differences were observed in overall survival (15.6 and 17.2 months; p = 0.475)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22855138:tomox|other-time-median|overall|response-duration|folfox4",
@@ -65763,13 +65501,11 @@
      "population": "overall",
      "detail": "response duration",
      "quote": "response duration (6.4 and 7.6 months; p = 0.372)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22855138:tomox|pfs-median|overall||folfox4",
@@ -65784,13 +65520,11 @@
      "population": "overall",
      "detail": null,
      "quote": "progression-free survival (7.7 and 8.7 months; p = 0.292)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -66133,13 +65867,11 @@
      "population": "safety",
      "detail": "neutropenia",
      "quote": "57 (50%) of 113 patients given TAS-102 in the safety population had neutropenia of grade 3 or 4",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22951287:tas-102|grade3plus-ae-rate|safety|leucopenia|",
@@ -66154,13 +65886,11 @@
      "population": "safety",
      "detail": "leucopenia",
      "quote": "32 (28%) leucopenia",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22951287:tas-102|grade3plus-ae-rate|safety|anaemia|",
@@ -66175,13 +65905,11 @@
      "population": "safety",
      "detail": "anaemia",
      "quote": "19 (17%) anaemia",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22951287:tas-102|n-randomized|overall||",
@@ -66255,13 +65983,11 @@
      "population": "safety",
      "detail": "anaemia",
      "quote": "three (5%) of 57 had grade 3 or worse anaemia",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "22951287:placebo|n-randomized|overall||",
@@ -66753,13 +66479,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "higher incidence of grade 3-4 neutropenia (49 [29%] vs 24 [15%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23062232:capeox|grade3plus-ae-rate|overall|thrombocytopenia|",
@@ -66774,13 +66498,11 @@
      "population": "overall",
      "detail": "thrombocytopenia",
      "quote": "thrombocytopenia (37 [22%] vs 11 [7%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23062232:capeox|grade3plus-ae-rate|overall|diarrhoea|",
@@ -66795,13 +66517,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "diarrhoea (16 [10%] vs seven [4%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23062232:capeox|n-randomized|overall||",
@@ -66854,13 +66574,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "higher incidence of grade 3-4 neutropenia (49 [29%] vs 24 [15%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23062232:sox|grade3plus-ae-rate|overall|thrombocytopenia|",
@@ -66875,13 +66593,11 @@
      "population": "overall",
      "detail": "thrombocytopenia",
      "quote": "thrombocytopenia (37 [22%] vs 11 [7%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23062232:sox|grade3plus-ae-rate|overall|diarrhoea|",
@@ -66896,13 +66612,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "diarrhoea (16 [10%] vs seven [4%])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "23062232:sox|n-randomized|overall||",
@@ -67519,13 +67233,11 @@
      "population": "overall",
      "detail": "grade 3/4 thrombocytopenia",
      "quote": "grade 3/4 thrombocytopenia (12% vs. 5%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20473862:folfox-6|grade3plus-ae-rate|overall|grade-3-4-diarrhoea|",
@@ -67540,13 +67252,11 @@
      "population": "overall",
      "detail": "grade 3/4 diarrhoea",
      "quote": "diarrhoea (14% vs. 7%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20473862:folfox-6|grade3plus-ae-rate|overall|grade-3-4-neutropenia|",
@@ -67561,13 +67271,11 @@
      "population": "overall",
      "detail": "grade 3/4 neutropenia",
      "quote": "grade 3/4 neutropenia (5% vs. 47%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20473862:folfox-6|grade3plus-ae-rate|overall|grade-3-4-febrile-neutropenia|",
@@ -67582,13 +67290,11 @@
      "population": "overall",
      "detail": "grade 3/4 febrile neutropenia",
      "quote": "febrile neutropenia (0% vs. 6%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20473862:folfox-6|grade3plus-ae-rate|overall|grade-3-4-neuropathy|",
@@ -67603,13 +67309,11 @@
      "population": "overall",
      "detail": "grade 3/4 neuropathy",
      "quote": "neuropathy (11% vs. 26%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20473862:folfox-6|n-randomized|overall||",
@@ -67700,13 +67404,11 @@
      "population": "overall",
      "detail": "grade 3/4 thrombocytopenia",
      "quote": "XELOX patients had significantly more grade 3/4 thrombocytopenia (12% vs. 5%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20473862:xelox|grade3plus-ae-rate|overall|grade-3-4-diarrhoea|",
@@ -67721,13 +67423,11 @@
      "population": "overall",
      "detail": "grade 3/4 diarrhoea",
      "quote": "diarrhoea (14% vs. 7%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20473862:xelox|grade3plus-ae-rate|overall|grade-3-4-neutropenia|",
@@ -67742,13 +67442,11 @@
      "population": "overall",
      "detail": "grade 3/4 neutropenia",
      "quote": "significantly less grade 3/4 neutropenia (5% vs. 47%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20473862:xelox|grade3plus-ae-rate|overall|grade-3-4-febrile-neutropenia|",
@@ -67763,13 +67461,11 @@
      "population": "overall",
      "detail": "grade 3/4 febrile neutropenia",
      "quote": "febrile neutropenia (0% vs. 6%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20473862:xelox|grade3plus-ae-rate|overall|grade-3-4-neuropathy|",
@@ -67784,13 +67480,11 @@
      "population": "overall",
      "detail": "grade 3/4 neuropathy",
      "quote": "neuropathy (11% vs. 26%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20473862:xelox|n-randomized|overall||",
@@ -69207,7 +68901,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "21641636:a|os-median|kras-wild-type||",
@@ -69310,7 +69004,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "21641636:b|os-hr|kras-wild-type||a",
@@ -70122,7 +69816,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "21903473:combination|pfs-median|overall|progression-free-survival-after-two-lines|",
@@ -70143,7 +69837,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "21903473:sequential|n-randomized|overall||",
@@ -70183,7 +69877,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -71531,7 +71225,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -71604,7 +71298,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "20567019:arm-a|os-median|overall||",
@@ -71705,7 +71399,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "20567019:arm-b|os-hr|overall||arm-a",
@@ -72343,7 +72037,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "20798560:arm-a|n-randomized|overall||",
@@ -72505,13 +72199,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "response rate was improved to 35% versus 10%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921462:folfiri|os-median|kras-wild-type||",
@@ -72526,13 +72218,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "median OS was 14.5 months versus 12.5 months, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921462:folfiri|pfs-median|kras-wild-type||",
@@ -72547,13 +72237,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "median PFS was 5.9 months for panitumumab-FOLFIRI versus 3.9 months for FOLFIRI",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921462:panitumumab-+-folfiri|n-randomized|overall||",
@@ -72590,13 +72278,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "response rate was improved to 35% versus 10%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921462:panitumumab-+-folfiri|os-hr|kras-wild-type||folfiri",
@@ -72611,13 +72297,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "HR = 0.85, 95% CI, 0.70 to 1.04",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921462:panitumumab-+-folfiri|os-median|kras-wild-type||",
@@ -72632,13 +72316,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "median OS was 14.5 months versus 12.5 months, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921462:panitumumab-+-folfiri|pfs-hr|kras-wild-type||folfiri",
@@ -72653,13 +72335,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "hazard ratio [HR] = 0.73; 95% CI, 0.59 to 0.90",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921462:panitumumab-+-folfiri|pfs-median|kras-wild-type||",
@@ -72674,13 +72354,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "median PFS was 5.9 months for panitumumab-FOLFIRI versus 3.9 months for FOLFIRI",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -72724,13 +72402,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "median OS, 23.9 v 19.7 months, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921465:folfox4|os-median|kras-mutant||panitumumab-folfox4",
@@ -72745,13 +72421,11 @@
      "population": "KRAS mutant",
      "detail": null,
      "quote": "median OS was 15.5 months versus 19.3 months, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921465:folfox4|pfs-median|kras-wild-type||panitumumab-folfox4",
@@ -72766,13 +72440,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "median PFS, 9.6 v 8.0 months, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921465:panitumumab-folfox4|os-hr|kras-wild-type||folfox4",
@@ -72787,13 +72459,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "HR, 0.83; 95% CI, 0.67 to 1.02",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921465:panitumumab-folfox4|os-hr|kras-mutant||folfox4",
@@ -72808,13 +72478,11 @@
      "population": "KRAS mutant",
      "detail": null,
      "quote": "HR, 1.24; 95% CI, 0.98 to 1.57",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921465:panitumumab-folfox4|os-median|kras-wild-type||folfox4",
@@ -72829,13 +72497,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "median OS, 23.9 v 19.7 months, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921465:panitumumab-folfox4|os-median|kras-mutant||folfox4",
@@ -72850,13 +72516,11 @@
      "population": "KRAS mutant",
      "detail": null,
      "quote": "median OS was 15.5 months versus 19.3 months, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921465:panitumumab-folfox4|pfs-hr|kras-wild-type||folfox4",
@@ -72871,13 +72535,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "hazard ratio [HR], 0.80; 95% CI, 0.66 to 0.97",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921465:panitumumab-folfox4|pfs-hr|kras-mutant||folfox4",
@@ -72892,13 +72554,11 @@
      "population": "KRAS mutant",
      "detail": null,
      "quote": "HR, 1.29; 95% CI, 1.04 to 1.62",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "20921465:panitumumab-folfox4|pfs-median|kras-wild-type||folfox4",
@@ -72913,13 +72573,11 @@
      "population": "KRAS wild-type",
      "detail": null,
      "quote": "median PFS, 9.6 v 8.0 months, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -72969,7 +72627,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "18488223:vaccination|other-time-median|colon-cancer-subgroup|metastases-free-survival-intention-to-treat-hazard-ratio|control",
@@ -73258,13 +72916,11 @@
      "population": "overall",
      "detail": "severe adverse events",
      "quote": "Severe adverse events were less frequent (32 vs. 43%) with OXXEL",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18719941:oxafafu|grade3plus-ae-rate|overall|severe-neutropenia|oxxel",
@@ -73279,13 +72935,11 @@
      "population": "overall",
      "detail": "severe neutropenia",
      "quote": "reduced the occurrence of severe neutropenia (10 vs. 27%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18719941:oxafafu|orr|overall|response-rate-6-complete-and-48-partial-responses|oxxel",
@@ -73325,7 +72979,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "18719941:oxafafu|os-median|overall||oxxel",
@@ -73340,13 +72994,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Median overall survival was 16.0 and 17.1 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18719941:oxafafu|pfs-hr|overall||oxxel",
@@ -73399,13 +73051,11 @@
      "population": "overall",
      "detail": "severe adverse events",
      "quote": "Severe adverse events were less frequent (32 vs. 43%) with OXXEL",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18719941:oxxel|grade3plus-ae-rate|overall|severe-neutropenia|oxafafu",
@@ -73420,13 +73070,11 @@
      "population": "overall",
      "detail": "severe neutropenia",
      "quote": "reduced the occurrence of severe neutropenia (10 vs. 27%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18719941:oxxel|orr|overall|response-rate-11-complete-and-42-partial-responses|oxafafu",
@@ -73460,13 +73108,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Median overall survival was 16.0 and 17.1 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18719941:oxxel|pfs-median|overall||oxafafu",
@@ -73767,13 +73413,11 @@
      "population": "oxaliplatin cohort",
      "detail": "skin toxicity",
      "quote": "skin toxicity (36% v 1%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19114685:control-bevacizumab-+-chemotherapy|grade3plus-ae-rate|oxaliplatin-cohort|diarrhea|",
@@ -73788,13 +73432,11 @@
      "population": "oxaliplatin cohort",
      "detail": "diarrhea",
      "quote": "diarrhea (24% v 13%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19114685:control-bevacizumab-+-chemotherapy|grade3plus-ae-rate|oxaliplatin-cohort|infections|",
@@ -73809,13 +73451,11 @@
      "population": "oxaliplatin cohort",
      "detail": "infections",
      "quote": "infections (19% v 10%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19114685:control-bevacizumab-+-chemotherapy|grade3plus-ae-rate|oxaliplatin-cohort|pulmonary-embolism|",
@@ -73830,13 +73470,11 @@
      "population": "oxaliplatin cohort",
      "detail": "pulmonary embolism",
      "quote": "pulmonary embolism (6% v 4%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19114685:control-bevacizumab-+-chemotherapy|os-median|overall|oxaliplatin-cohort|",
@@ -73851,13 +73489,11 @@
      "population": "overall",
      "detail": "oxaliplatin cohort",
      "quote": "median survival was 19.4 months and 24.5 months for the panitumumab and control arms, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19114685:control-bevacizumab-+-chemotherapy|pfs-median|overall|final-analysis-oxaliplatin-cohort|",
@@ -73872,13 +73508,11 @@
      "population": "overall",
      "detail": "final analysis, oxaliplatin cohort",
      "quote": "median PFS was 10.0 and 11.4 months for the panitumumab and control arms, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19114685:panitumumab-+-bevacizumab-+-chemotherapy|grade3plus-ae-rate|oxaliplatin-cohort|skin-toxicity|",
@@ -73893,13 +73527,11 @@
      "population": "oxaliplatin cohort",
      "detail": "skin toxicity",
      "quote": "skin toxicity (36% v 1%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19114685:panitumumab-+-bevacizumab-+-chemotherapy|grade3plus-ae-rate|oxaliplatin-cohort|diarrhea|",
@@ -73914,13 +73546,11 @@
      "population": "oxaliplatin cohort",
      "detail": "diarrhea",
      "quote": "diarrhea (24% v 13%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19114685:panitumumab-+-bevacizumab-+-chemotherapy|grade3plus-ae-rate|oxaliplatin-cohort|infections|",
@@ -73935,13 +73565,11 @@
      "population": "oxaliplatin cohort",
      "detail": "infections",
      "quote": "infections (19% v 10%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19114685:panitumumab-+-bevacizumab-+-chemotherapy|grade3plus-ae-rate|oxaliplatin-cohort|pulmonary-embolism|",
@@ -73956,13 +73584,11 @@
      "population": "oxaliplatin cohort",
      "detail": "pulmonary embolism",
      "quote": "pulmonary embolism (6% v 4%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19114685:panitumumab-+-bevacizumab-+-chemotherapy|n-randomized|overall|oxaliplatin-cohort|",
@@ -73983,7 +73609,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "19114685:panitumumab-+-bevacizumab-+-chemotherapy|os-median|overall|oxaliplatin-cohort|",
@@ -73998,13 +73624,11 @@
      "population": "overall",
      "detail": "oxaliplatin cohort",
      "quote": "median survival was 19.4 months and 24.5 months for the panitumumab and control arms, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19114685:panitumumab-+-bevacizumab-+-chemotherapy|pfs-hr|overall|oxaliplatin-cohort|control-bevacizumab-+-chemotherapy",
@@ -74019,13 +73643,11 @@
      "population": "overall",
      "detail": "oxaliplatin cohort",
      "quote": "HR, 1.27; 95% CI, 1.06 to 1.52",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19114685:panitumumab-+-bevacizumab-+-chemotherapy|pfs-median|overall|final-analysis-oxaliplatin-cohort|",
@@ -74040,13 +73662,11 @@
      "population": "overall",
      "detail": "final analysis, oxaliplatin cohort",
      "quote": "median PFS was 10.0 and 11.4 months for the panitumumab and control arms, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -74686,13 +74306,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "diarrhoea 7% vs. 6%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19386096:folfiri|grade3plus-ae-rate|overall|neutropenia|xeliri",
@@ -74707,13 +74325,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "neutropenia 5% vs. 13%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19386096:folfiri|n-randomized|overall||xeliri",
@@ -74804,13 +74420,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "diarrhoea 7% vs. 6%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19386096:xeliri|grade3plus-ae-rate|overall|neutropenia|folfiri",
@@ -74825,13 +74439,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "neutropenia 5% vs. 13%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "19386096:xeliri|n-randomized|overall||folfiri",
@@ -75035,7 +74647,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "19598023:group-b|dcr|overall||",
@@ -75136,7 +74748,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -75754,7 +75366,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "18209013:fliri|pfs-median|overall|progression-free-survival-fliri-vs-lv5fu2-iri-no-difference-between-groups|lv5fu2-iri",
@@ -75775,7 +75387,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "18209013:lv5fu2-iri|grade3plus-ae-rate|overall|grade-3-4-neutropenia|fliri",
@@ -75834,7 +75446,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "18209013:lv5fu2-iri|pfs-median|overall|progression-free-survival-no-difference-between-groups|fliri",
@@ -75855,7 +75467,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     }
    ],
    "registry_checks": [],
@@ -76086,7 +75698,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "18386570:control-group-routine-treatment-|os-median|overall|median-survival-time|",
@@ -76128,7 +75740,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "18386570:treatment-group-routine-treatment-plus-quxie-capsule-|os-median|overall|median-survival-time|",
@@ -76959,13 +76571,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "grade 3/4 neutropenia (35% versus 5% with XELOX)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18550577:folfox-4|grade3plus-ae-rate|overall|diarrhea|",
@@ -76980,13 +76590,11 @@
      "population": "overall",
      "detail": "diarrhea",
      "quote": "grade 3/4 diarrhea (19% versus 5% with FOLFOX-4)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18550577:folfox-4|n-randomized|overall||",
@@ -77020,13 +76628,11 @@
      "population": "intention-to-treat",
      "detail": null,
      "quote": "versus 12.5 months with FOLFOX-4",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18550577:folfox-4|pfs-median|intention-to-treat||",
@@ -77041,13 +76647,11 @@
      "population": "intention-to-treat",
      "detail": null,
      "quote": "4.8 months with FOLFOX-4",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18550577:xelox|grade3plus-ae-rate|overall|treatment-related-grade-3-4-adverse-events|",
@@ -77081,13 +76685,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "grade 3/4 neutropenia (35% versus 5% with XELOX)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18550577:xelox|grade3plus-ae-rate|overall|diarrhea|",
@@ -77102,13 +76704,11 @@
      "population": "overall",
      "detail": "diarrhea",
      "quote": "grade 3/4 diarrhea (19% versus 5% with FOLFOX-4)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18550577:xelox|n-randomized|overall||",
@@ -77142,13 +76742,11 @@
      "population": "intention-to-treat",
      "detail": null,
      "quote": "(HR = 1.02; 95% CI 0.86-1.21)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18550577:xelox|os-median|intention-to-treat||",
@@ -77163,13 +76761,11 @@
      "population": "intention-to-treat",
      "detail": null,
      "quote": "Median overall survival in the ITT population was 11.9 months with XELOX",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18550577:xelox|pfs-hr|intention-to-treat||folfox-4",
@@ -77184,13 +76780,11 @@
      "population": "intention-to-treat",
      "detail": null,
      "quote": "hazard ratio (HR) = 0.97; 95% confidence interval (CI) 0.83-1.14",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18550577:xelox|pfs-median|intention-to-treat||",
@@ -77205,13 +76799,11 @@
      "population": "intention-to-treat",
      "detail": null,
      "quote": "Median PFS was 4.7 months with XELOX",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -77385,13 +76977,11 @@
      "population": "overall",
      "detail": "median OS for all treated patients, TREE-1",
      "quote": "For all treated patients, median OS was 18.2 months (95% CI, 14.5 to 21.6; TREE-1)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18640933:tree-2-all-treated-patients|os-median|overall|median-os-for-all-treated-patients-tree-2|",
@@ -77406,13 +76996,11 @@
      "population": "overall",
      "detail": "median OS for all treated patients, TREE-2",
      "quote": "and 23.7 months (95% CI, 21.3 to 26.8; TREE-2)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "18640933:bfol|grade3plus-ae-rate|overall|grade-3-4-treatment-related-adverse-events-during-the-first-12-weeks-tree-1|",
@@ -78696,7 +78284,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "17405895:glutamine-group|grade3plus-ae-rate|overall|grade-3-4-peripheral-neuropathy-after-four-cycles|control-group",
@@ -78711,13 +78299,11 @@
      "population": "overall",
      "detail": "grade 3-4 peripheral neuropathy after four cycles",
      "quote": "grade 3-4 neuropathy was noted in the glutamine group after four cycles (4.8% versus 18.2%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17405895:glutamine-group|grade3plus-ae-rate|overall|grade-3-4-peripheral-neuropathy-after-six-cycles|control-group",
@@ -78732,13 +78318,11 @@
      "population": "overall",
      "detail": "grade 3-4 peripheral neuropathy after six cycles",
      "quote": "and six cycles (11.9% versus 31.8%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17405895:glutamine-group|n-randomized|overall||",
@@ -79544,7 +79128,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "17496414:group-a|os-median|overall||",
@@ -79597,13 +79181,11 @@
      "population": "overall",
      "detail": "partial response to CPT-11",
      "quote": "and 33.3% for group B",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17496414:group-b|os-median|overall||",
@@ -80230,13 +79812,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "Main grade 3/4 toxic effects were, respectively, neutropenia 42.5% and 32.5%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17785765:a|grade3plus-ae-rate|overall|febrile-neutropenia|",
@@ -80251,13 +79831,11 @@
      "population": "overall",
      "detail": "febrile neutropenia",
      "quote": "febrile neutropenia 10% and 5%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17785765:a|grade3plus-ae-rate|overall|diarrhea|",
@@ -80272,13 +79850,11 @@
      "population": "overall",
      "detail": "diarrhea",
      "quote": "diarrhea 32.5% and 7.5%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17785765:a|grade3plus-ae-rate|overall|vomiting|",
@@ -80293,13 +79869,11 @@
      "population": "overall",
      "detail": "vomiting",
      "quote": "vomiting 10.0% and 5%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17785765:a|grade3plus-ae-rate|overall|neurosensory-toxicity|",
@@ -80314,13 +79888,11 @@
      "population": "overall",
      "detail": "neurosensory toxicity",
      "quote": "neurosensory toxicity 17.5% and 7.5%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17785765:a|n-randomized|overall||",
@@ -80395,13 +79967,11 @@
      "population": "overall",
      "detail": "duration of response",
      "quote": "Twenty-one partial responses (52.5%, median duration 7.2 months) were observed with the IRINOX arm",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17785765:a|pfs-median|overall||",
@@ -80435,13 +80005,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "Main grade 3/4 toxic effects were, respectively, neutropenia 42.5% and 32.5%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17785765:b|grade3plus-ae-rate|overall|febrile-neutropenia|",
@@ -80456,13 +80024,11 @@
      "population": "overall",
      "detail": "febrile neutropenia",
      "quote": "febrile neutropenia 10% and 5%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17785765:b|grade3plus-ae-rate|overall|diarrhea|",
@@ -80477,13 +80043,11 @@
      "population": "overall",
      "detail": "diarrhea",
      "quote": "diarrhea 32.5% and 7.5%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17785765:b|grade3plus-ae-rate|overall|vomiting|",
@@ -80498,13 +80062,11 @@
      "population": "overall",
      "detail": "vomiting",
      "quote": "vomiting 10.0% and 5%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17785765:b|grade3plus-ae-rate|overall|neurosensory-toxicity|",
@@ -80519,13 +80081,11 @@
      "population": "overall",
      "detail": "neurosensory toxicity",
      "quote": "neurosensory toxicity 17.5% and 7.5%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17785765:b|n-randomized|overall||",
@@ -80601,13 +80161,11 @@
      "population": "overall",
      "detail": "duration of response",
      "quote": "two complete and 20 partial responses (55%, median duration 6.4 months) with arm B",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "17785765:b|pfs-median|overall||",
@@ -81711,13 +81269,11 @@
      "population": "overall",
      "detail": null,
      "quote": "The same data in Arm A were 18.2%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "16246545:arm-a|os-median|overall||",
@@ -81732,13 +81288,11 @@
      "population": "overall",
      "detail": null,
      "quote": "The same data in Arm A were 18.2%, 4.5, 6.0 and 18 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "16246545:arm-a|pfs-median|overall||",
@@ -81759,7 +81313,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "16246545:arm-b|grade3plus-ae-rate|overall|diarrhoea|",
@@ -81834,13 +81388,11 @@
      "population": "overall",
      "detail": null,
      "quote": "a progression-free survival for 8.0 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -82573,13 +82125,11 @@
      "population": "overall",
      "detail": "assessable patients only",
      "quote": "overall response rate was 45% in arm A (95% CI 29% to 61%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "16760295:a|os-median|overall||",
@@ -82692,13 +82242,11 @@
      "population": "overall",
      "detail": "assessable patients only",
      "quote": "36% in arm B (95% CI 21% to 51%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "16760295:b|os-median|overall||",
@@ -85013,7 +84561,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "15837702:irifafu|grade3plus-ae-rate|overall|neutropenia|",
@@ -85028,13 +84576,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "Occurrence of grade > or =3 neutropenia with OXAFAFUld was similar to that for IRIFAFU (29% versus 31%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "15837702:irifafu|orr|overall||",
@@ -85175,7 +84721,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "15837702:oxafafu-low-dose|grade3plus-ae-rate|overall|neutropenia|irifafu",
@@ -85190,13 +84736,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "Occurrence of grade > or =3 neutropenia with OXAFAFUld was similar to that for IRIFAFU (29% versus 31%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -85703,7 +85247,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "15939922:a|orr|overall||",
@@ -85718,13 +85262,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Overall response rates (ORR) were 31% in arm A (95% CI, 24.6% to 38.3%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "15939922:a|os-median|overall||",
@@ -85796,13 +85338,11 @@
      "population": "overall",
      "detail": null,
      "quote": "34% in arm B (95% CI, 27.2% to 41.5%; P = .60)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "15939922:b|os-median|overall||",
@@ -86093,7 +85633,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "16020959:budesonide|other-time-median|overall|total-duration-of-diarrhea-days-per-patient|placebo",
@@ -86180,13 +85720,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Median survival for both groups was 13 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "16098253:ldci|n-randomized|overall||",
@@ -86222,13 +85760,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Median survival for both groups was 13 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -86615,13 +86151,11 @@
      "population": "overall",
      "detail": "hepatic toxicity",
      "quote": "was grade 3-4 in four (8%) and four (9%) patients, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "16265344:arm-a|grade3plus-ae-rate|overall|neurologic-toxicity|",
@@ -86636,13 +86170,11 @@
      "population": "overall",
      "detail": "neurologic toxicity",
      "quote": "and was grade 3-4 in five patients (10%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "16265344:arm-a|orr|overall||",
@@ -86657,13 +86189,11 @@
      "population": "overall",
      "detail": null,
      "quote": "overall response rate of 46% (95% CI, 29.5-57.7%) for arm A",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "16265344:arm-a|ttp-median|overall||",
@@ -86697,13 +86227,11 @@
      "population": "overall",
      "detail": "hepatic toxicity",
      "quote": "was grade 3-4 in four (8%) and four (9%) patients, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "16265344:arm-b|orr|overall||",
@@ -86718,13 +86246,11 @@
      "population": "overall",
      "detail": null,
      "quote": "34% (95% CI, 19.8-48.4%) for arm B",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "16265344:arm-b|ttp-median|overall||",
@@ -87142,7 +86668,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "14665611:ifl|orr|overall|response-rate|",
@@ -87157,13 +86683,11 @@
      "population": "overall",
      "detail": "response rate",
      "quote": "(6.9 months, 31%, and 15.0 months, respectively)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14665611:ifl|os-median|overall||",
@@ -87178,13 +86702,11 @@
      "population": "overall",
      "detail": null,
      "quote": "(6.9 months, 31%, and 15.0 months, respectively)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14665611:ifl|pfs-median|overall|time-to-progression|",
@@ -87205,7 +86727,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "14665611:irox|orr|overall|response-rate|",
@@ -87220,13 +86742,11 @@
      "population": "overall",
      "detail": "response rate",
      "quote": "(6.5 months, 35%, and 17.4 months, respectively)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14665611:irox|os-median|overall||",
@@ -87241,13 +86761,11 @@
      "population": "overall",
      "detail": null,
      "quote": "(6.5 months, 35%, and 17.4 months, respectively)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14665611:irox|pfs-median|overall|time-to-progression|",
@@ -87268,7 +86786,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -87312,13 +86830,11 @@
      "population": "overall",
      "detail": null,
      "quote": "including 47% in Arm A (9% CR; 38% partial response [PR])",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14716761:arm-a|pfs-median|overall||",
@@ -87352,13 +86868,11 @@
      "population": "overall",
      "detail": null,
      "quote": "and 44% in Arm B (8% CR; 36% PR)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14716761:arm-b|pfs-median|overall||",
@@ -87627,13 +87141,11 @@
      "population": "response-evaluable",
      "detail": null,
      "quote": "with response rate of 13 and 42%, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "15138363:mvpf|orr|overall|intent-to-treat|",
@@ -87648,13 +87160,11 @@
      "population": "overall",
      "detail": "intent-to-treat",
      "quote": "Intent-to-treat analysis showed a response rate of 12 and 32%, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "15138363:pf|n-randomized|overall||",
@@ -87690,13 +87200,11 @@
      "population": "response-evaluable",
      "detail": null,
      "quote": "with response rate of 13 and 42%, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "15138363:pf|orr|overall|intent-to-treat|",
@@ -87711,13 +87219,11 @@
      "population": "overall",
      "detail": "intent-to-treat",
      "quote": "Intent-to-treat analysis showed a response rate of 12 and 32%, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "15138363:overall|os-median|overall||",
@@ -87732,13 +87238,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Median survival for all patients was 9 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -87788,7 +87292,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "15170981:a|n-randomized|overall||",
@@ -87850,7 +87354,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "15170981:b|n-randomized|overall||",
@@ -89349,13 +88853,11 @@
      "population": "overall",
      "detail": null,
      "quote": "low-dose arm, 21.5 months, 95% CI, 17.3 to undetermined",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "12506171:fu-lv-+-low-dose-bevacizumab|ttp-median|overall|time-to-disease-progression|",
@@ -89662,13 +89164,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Response rates were 23.7% (95% CI, 11-42%) in group A",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "12576934:group-a|os-median|overall||",
@@ -89702,13 +89202,11 @@
      "population": "overall",
      "detail": "median response duration",
      "quote": "with 5.6 months in group A",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "12576934:group-a|pfs-median|overall||",
@@ -89761,13 +89259,11 @@
      "population": "overall",
      "detail": null,
      "quote": "15.4% (95% CI, 0-25%) in group B",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "12576934:group-b|os-median|overall||",
@@ -89801,13 +89297,11 @@
      "population": "overall",
      "detail": "median response duration",
      "quote": "5.6 months in group A and 5.5 months in group B",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "12576934:group-b|pfs-median|overall||",
@@ -90143,7 +89637,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "12663719:arm-a|grade3plus-ae-rate|overall|thrombocytopenia|",
@@ -90164,7 +89658,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "12663719:arm-a|orr|overall||arm-b",
@@ -90223,7 +89717,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "12663719:arm-b|grade3plus-ae-rate|overall|thrombocytopenia|",
@@ -90244,7 +89738,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "12663719:arm-b|orr|overall||arm-a",
@@ -91241,13 +90735,11 @@
      "population": "overall",
      "detail": "late-onset diarrhea",
      "quote": "grade 3/4 (group A 41%, group B 66%; P<0.0001)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14504920:group-a|grade3plus-ae-rate|overall|nausea-and-vomiting|",
@@ -91262,13 +90754,11 @@
      "population": "overall",
      "detail": "nausea and vomiting",
      "quote": "grade 3/4 (group A 30%, group B 12%; P<0.0001)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14504920:group-a|grade3plus-ae-rate|overall|neutropenia|",
@@ -91283,13 +90773,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "neutropenia grade 3/4 (group A 27%, group B 28%; P<0.03)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14504920:group-a|grade3plus-ae-rate|overall|anemia|",
@@ -91304,13 +90792,11 @@
      "population": "overall",
      "detail": "anemia",
      "quote": "anemia grade more than 2 (group A 28%, group B 12%; P<0.05)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14504920:group-a|grade3plus-ae-rate|overall|asthenia|",
@@ -91331,7 +90817,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "14504920:group-a|orr|overall||",
@@ -91365,13 +90851,11 @@
      "population": "overall",
      "detail": "late-onset diarrhea",
      "quote": "grade 3/4 (group A 41%, group B 66%; P<0.0001)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14504920:group-b|grade3plus-ae-rate|overall|nausea-and-vomiting|",
@@ -91386,13 +90870,11 @@
      "population": "overall",
      "detail": "nausea and vomiting",
      "quote": "grade 3/4 (group A 30%, group B 12%; P<0.0001)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14504920:group-b|grade3plus-ae-rate|overall|neutropenia|",
@@ -91407,13 +90889,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "neutropenia grade 3/4 (group A 27%, group B 28%; P<0.03)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14504920:group-b|grade3plus-ae-rate|overall|anemia|",
@@ -91428,13 +90908,11 @@
      "population": "overall",
      "detail": "anemia",
      "quote": "anemia grade more than 2 (group A 28%, group B 12%; P<0.05)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "14504920:group-b|grade3plus-ae-rate|overall|asthenia|",
@@ -91455,7 +90933,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "14504920:group-b|orr|overall||",
@@ -92475,13 +91953,11 @@
      "population": "assessable patients (n=75)",
      "detail": null,
      "quote": "and 63.7 months for the chemotherapy arm (P =.60)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11896097:chemotherapy|os-median|all-randomized-patients-n-109-||",
@@ -92496,13 +91972,11 @@
      "population": "all randomized patients (n=109)",
      "detail": null,
      "quote": "compared with 34 months for the chemotherapy arm (P =.19)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11896097:chemotherapy|other-time-median|overall|4-year-recurrence-free-rate|",
@@ -92580,13 +92054,11 @@
      "population": "assessable patients (n=75)",
      "detail": null,
      "quote": "The median survival of the 75 assessable patients was 49 months for the control arm",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11896097:control|os-median|all-randomized-patients-n-109-||chemotherapy",
@@ -92601,13 +92073,11 @@
      "population": "all randomized patients (n=109)",
      "detail": null,
      "quote": "The median survival of all 109 patients was 47 months for the control arm",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11896097:control|other-time-median|overall|4-year-recurrence-free-rate|chemotherapy",
@@ -92695,13 +92165,11 @@
      "population": "overall",
      "detail": "treatment-related diarrhea",
      "quote": "16% of patients receiving 5-FU/LV (P =.354)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11896100:5-fu-lv|grade3plus-ae-rate|overall|granulocytopenia|",
@@ -92716,13 +92184,11 @@
      "population": "overall",
      "detail": "granulocytopenia",
      "quote": "47% of 5-FU/LV patients",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11896100:5-fu-lv|os-median|overall||",
@@ -92775,13 +92241,11 @@
      "population": "overall",
      "detail": "treatment-related diarrhea",
      "quote": "treatment-related grade 3 or 4 diarrhea occurred in 19% of patients treated with EU/5-FU",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11896100:eu-5-fu|grade3plus-ae-rate|overall|granulocytopenia|",
@@ -92796,13 +92260,11 @@
      "population": "overall",
      "detail": "granulocytopenia",
      "quote": "Grade 3 or 4 granulocytopenia occurred in 5% of EU/5-FU patients",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11896100:eu-5-fu|os-hr|overall||5-fu-lv",
@@ -93757,13 +93219,11 @@
      "population": "overall",
      "detail": "intention-to-treat",
      "quote": "The intention-to-treat ORRs were 11.4% [95% confidence interval (CI) 3.2-26.7)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "12377643:irinotecan-+-lv-5-fu|os-median|overall||",
@@ -93797,13 +93257,11 @@
      "population": "overall",
      "detail": "intention-to-treat",
      "quote": "15.2% (95% CI 5.1-31.9)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "12377643:irinotecan-+-oxaliplatin|os-median|overall||",
@@ -93837,13 +93295,11 @@
      "population": "overall",
      "detail": "intention-to-treat",
      "quote": "21.2% (95% CI 9.0-38.9)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "12377643:oxaliplatin-+-lv-5-fu|os-median|overall||",
@@ -93963,13 +93419,11 @@
      "population": "extrahepatic disease",
      "detail": "patients with extrahepatic disease",
      "quote": "Survival in patients with extrahepatic disease was 8 months (95% CI, 6-10 months)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "12482334:overall|os-median|liver-only-metastases|patients-with-liver-only-metastases|",
@@ -93984,13 +93438,11 @@
      "population": "liver-only metastases",
      "detail": "patients with liver-only metastases",
      "quote": "Survival in patients with liver-only metastases was 15 months (95% CI, 10-17 months)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -94212,13 +93664,11 @@
      "population": "Group A",
      "detail": null,
      "quote": "The median survival (15.4 months and 15.3 months, respectively, for Groups A and B)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11251955:group-a-5-fu-alone|ttp-median|group-a|time-to-treatment-progression|",
@@ -94715,7 +94165,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "11331320:a|os-median|overall|median-survival|",
@@ -94755,7 +94205,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "11331320:b|os-median|overall|median-survival|",
@@ -94795,7 +94245,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "11331320:c|os-median|overall|median-survival|",
@@ -94835,7 +94285,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "11331320:d|os-median|overall|median-survival|",
@@ -94875,7 +94325,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "11331320:e|os-median|overall|median-survival|",
@@ -95014,13 +94464,11 @@
      "population": "overall",
      "detail": "severe diarrhoea",
      "quote": "severe diarrhoea, vomiting and stomatitis were seen in 34, 14 and 14% of the patients, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11334726:oxaliplatin+5-fu-fa|grade3plus-ae-rate|overall|severe-vomiting|",
@@ -95035,13 +94483,11 @@
      "population": "overall",
      "detail": "severe vomiting",
      "quote": "severe diarrhoea, vomiting and stomatitis were seen in 34, 14 and 14% of the patients, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11334726:oxaliplatin+5-fu-fa|grade3plus-ae-rate|overall|severe-stomatitis|",
@@ -95056,13 +94502,11 @@
      "population": "overall",
      "detail": "severe stomatitis",
      "quote": "severe diarrhoea, vomiting and stomatitis were seen in 34, 14 and 14% of the patients, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11334726:oxaliplatin+5-fu-fa|n-randomized|overall||",
@@ -95335,7 +94779,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "11474245:cddp-before-5-fu|n-randomized|overall||",
@@ -95446,7 +94890,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "11490806:group-b|n-randomized|overall||",
@@ -95507,7 +94951,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -96330,13 +95774,11 @@
      "population": "overall",
      "detail": "confirmed PR + CR",
      "quote": "Confirmed tumor responses (partial response [PR] + complete response [CR]) were reported for eight patients with two CRs (21%; 95% confidence interval [CI], 9% to 36%) in arm A",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "10715306:arm-a|ttp-median|overall|time-to-progression-reported-in-days|",
@@ -96373,13 +95815,11 @@
      "population": "overall",
      "detail": "confirmed PR + CR",
      "quote": "eight patients with one CR (24%; 95% CI, 11% to 41%) in arm B",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "10715306:arm-b|ttp-median|overall|time-to-progression-reported-in-days|",
@@ -96417,13 +95857,11 @@
      "population": "overall",
      "detail": "confirmed PR + CR",
      "quote": "eight patients with two CRs (23%; 95% CI, 10% to 40%) in arm C",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "10715306:arm-c|ttp-median|overall|time-to-progression-reported-in-days|",
@@ -96680,13 +96118,11 @@
      "population": "overall",
      "detail": "intention-to-treat population",
      "quote": "35 vs 22%, p<0.005 by intention to treat",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "10744089:irinotecan-group|os-median|overall||no-irinotecan-group",
@@ -96777,13 +96213,11 @@
      "population": "overall",
      "detail": "intention-to-treat population",
      "quote": "35 vs 22%, p<0.005 by intention to treat",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "10744089:no-irinotecan-group|os-median|overall||",
@@ -96890,7 +96324,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "10918156:hepatectomy|other-time-median|overall|intraoperative-blood-loss-in-ml-mean-not-a-time-to-event-endpoint-recorded-only-fo",
@@ -96953,7 +96387,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "10918156:microwave-coagulation|other-time-median|overall|intraoperative-blood-loss-in-ml-mean-not-a-time-to-event-endpoint-record",
@@ -97061,13 +96495,11 @@
      "population": "assessable for response",
      "detail": "5 partial responses",
      "quote": "in arm A, 5 patients achieved a partial response (overall response, 25%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "10939601:arm-a|os-median|overall||",
@@ -97139,13 +96571,11 @@
      "population": "assessable for response",
      "detail": "2 complete and 1 partial response",
      "quote": "in arm B, 2 patients achieved a complete and 1 a partial response (overall response, 12%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "10939601:arm-b|os-median|overall||",
@@ -97709,13 +97139,11 @@
      "population": "overall",
      "detail": null,
      "quote": "The overall response rate was 18% in arm A (95% CI: 7%-34%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11038044:arm-b|n-randomized|overall||",
@@ -97749,13 +97177,11 @@
      "population": "overall",
      "detail": null,
      "quote": "and 40% in arm B (95% CI: 28%-52%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -97803,13 +97229,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "WHO grade 3 or 4 neutropenia and diarrhoea affected 46% and 16%, respectively, of patients treated with CPT-11 + LFA 5-FU",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11106123:a|grade3plus-ae-rate|overall|diarrhoea|",
@@ -97824,13 +97248,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "WHO grade 3 or 4 neutropenia and diarrhoea affected 46% and 16%, respectively, of patients treated with CPT-11 + LFA 5-FU",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11106123:a|orr|overall||",
@@ -97883,13 +97305,11 @@
      "population": "overall",
      "detail": "neutropenia",
      "quote": "Severe toxicities of TOM + LFA-5-FU were neutropenia (16%) and diarrhoea (16%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11106123:b|grade3plus-ae-rate|overall|diarrhoea|",
@@ -97904,13 +97324,11 @@
      "population": "overall",
      "detail": "diarrhoea",
      "quote": "Severe toxicities of TOM + LFA-5-FU were neutropenia (16%) and diarrhoea (16%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11106123:b|orr|overall||",
@@ -98036,7 +97454,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "11142481:control|orr|overall|response-rate-among-evaluable-patients|experimental",
@@ -98051,13 +97469,11 @@
      "population": "overall",
      "detail": "response rate among evaluable patients",
      "quote": "RR = 13%, 95% CI: 7%-21%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11142481:control|os-median|overall||experimental",
@@ -98116,7 +97532,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "11142481:experimental|orr|overall|response-rate-among-evaluable-patients|control",
@@ -98131,13 +97547,11 @@
      "population": "overall",
      "detail": "response rate among evaluable patients",
      "quote": "RR = 32%, 95% confidence interval (95% CI): 24%-42%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "11142481:experimental|os-median|overall||control",
@@ -98177,7 +97591,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "11142481:experimental|pfs-median|overall||control",
@@ -98938,7 +98352,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "10378673:schedule-a|n-randomized|overall||",
@@ -99062,13 +98476,11 @@
      "population": "overall",
      "detail": null,
      "quote": "28 of 112 (25%) patients in the treatment arms with and without IFN",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "10448286:5-fu-lv|os-median|overall||",
@@ -99121,13 +98533,11 @@
      "population": "overall",
      "detail": "response duration",
      "quote": "response duration (median 8.4 versus 12.1 months)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "10448286:5-fu-lv-plus-ifn-alpha-2c|orr|overall||",
@@ -99142,13 +98552,11 @@
      "population": "overall",
      "detail": null,
      "quote": "An objective tumour response was observed in 38 of 107 (36%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "10448286:5-fu-lv-plus-ifn-alpha-2c|os-median|overall||",
@@ -99182,13 +98590,11 @@
      "population": "overall",
      "detail": "response duration",
      "quote": "response duration (median 8.4 versus 12.1 months)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "10448286:5-fu-lv-plus-ifn-alpha-2c|ttp-median|overall|time-to-treatment-failure|",
@@ -108968,13 +108374,11 @@
      "population": "overall",
      "detail": "2 complete response and 4 partial response out of 72 evaluable patients",
      "quote": "vs. 8% (2 complete response, 4 partial response) (P = 0.03) out of 70 and 72 evaluable patients, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1389519:5-fu-alone|os-median|overall|median-survival-both-groups|",
@@ -109046,13 +108450,11 @@
      "population": "overall",
      "detail": "5 complete response and 11 partial response out of 70 evaluable patients",
      "quote": "5-FU plus LV produced a higher response rate than 5-FU alone: 23% (5 complete response, 11 partial response)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1389519:5-fu-plus-lv|os-median|overall|median-survival-both-groups|",
@@ -109226,13 +108628,11 @@
      "population": "overall",
      "detail": "complete or partial response",
      "quote": "and in 17.6% of those receiving FU alone (p = 0.11)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1498074:mtx-fu-sequential|orr|overall|complete-or-partial-response|fu-alone",
@@ -109247,13 +108647,11 @@
      "population": "overall",
      "detail": "complete or partial response",
      "quote": "Complete or partial response has been seen in 25.3% of patients receiving sequential MTX and FU",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -109468,7 +108866,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "1588370:mfl|ttp-median|overall|time-to-disease-progression-difference-in-median|expectancy",
@@ -109489,7 +108887,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -109539,7 +108937,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "1616890:a|orr|overall|response-rate-cr+pr-|",
@@ -109554,13 +108952,11 @@
      "population": "overall",
      "detail": "response rate (CR+PR)",
      "quote": "The response rate (CR+PR) was 18% in the 5FU arm",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1616890:a|os-median|overall||",
@@ -109594,13 +108990,11 @@
      "population": "overall",
      "detail": "median duration of response",
      "quote": "Median duration of response was 56 weeks for 5FU alone",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1616890:a|other-time-median|overall|median-time-to-failure-ttf-|",
@@ -109640,7 +109034,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "1616890:b|orr|overall|response-rate-cr+pr-|",
@@ -109655,13 +109049,11 @@
      "population": "overall",
      "detail": "response rate (CR+PR)",
      "quote": "16% in the 5FU plus FA arm",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1616890:b|os-median|overall||",
@@ -109695,13 +109087,11 @@
      "population": "overall",
      "detail": "median duration of response",
      "quote": "42 weeks for the combination (p = 0.48)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1616890:b|other-time-median|overall|median-time-to-failure-ttf-|",
@@ -109951,13 +109341,11 @@
      "population": "overall",
      "detail": "duration of partial remission",
      "quote": "The median duration of PR in 5-FU + FA arm was 10 months (range: 6-17)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1622115:5-fu-+-fa|ttp-median|overall|time-to-progression|",
@@ -110096,13 +109484,11 @@
      "population": "overall",
      "detail": null,
      "quote": "overall survival (11.5 and 11 months)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1742223:arm-a|ttp-median|overall||",
@@ -110117,13 +109503,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Median time to progression (6 and 6 months)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1742223:arm-b|orr|overall||",
@@ -110157,13 +109541,11 @@
      "population": "overall",
      "detail": null,
      "quote": "overall survival (11.5 and 11 months)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1742223:arm-b|ttp-median|overall||",
@@ -110178,13 +109560,11 @@
      "population": "overall",
      "detail": null,
      "quote": "Median time to progression (6 and 6 months)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -110602,13 +109982,11 @@
      "population": "overall",
      "detail": "complete plus partial response",
      "quote": "The objective regression rate (complete plus partial response) was 12% (7 of 58) in arm A",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "2031508:a|os-median|overall||",
@@ -110642,13 +110020,11 @@
      "population": "overall",
      "detail": "complete plus partial response",
      "quote": "and 28% (17 of 60) in arm B (p = 0.049)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "2031508:b|os-median|overall||",
@@ -110921,7 +110297,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "2143063:intravenous-fluorouracil|orr|overall||",
@@ -110980,7 +110356,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "2143063:intravenous-fluorouracil|ttp-median|overall|time-to-hepatic-progression|",
@@ -111065,7 +110441,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "2146370:a2|other-time-median|overall|time-to-failure-group-a-arm-a2-versus-arm-a1-p-03-|a1",
@@ -111103,13 +110479,11 @@
      "population": "group A",
      "detail": "median survival",
      "quote": "was 37.3, 22.4, and 13.8 months for groups A, B, and C, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "2146370:overall|os-median|group-b|median-survival|",
@@ -111124,13 +110498,11 @@
      "population": "group B",
      "detail": "median survival",
      "quote": "was 37.3, 22.4, and 13.8 months for groups A, B, and C, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "2146370:overall|os-median|group-c|median-survival|",
@@ -111145,13 +110517,11 @@
      "population": "group C",
      "detail": "median survival",
      "quote": "was 37.3, 22.4, and 13.8 months for groups A, B, and C, respectively",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -111348,7 +110718,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     },
     {
      "id": "2205259:group-b|orr|overall||",
@@ -111445,7 +110815,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     }
    ],
    "registry_checks": [],
@@ -111546,7 +110916,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "2265371:5-fu-alone|orr|overall|6-partial-responses|",
@@ -111561,13 +110931,11 @@
      "population": "overall",
      "detail": "6 partial responses",
      "quote": "Six partial responses were seen in each treatment group (15%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "2265371:hpp-5-fu-ddp|orr|overall|6-partial-responses|",
@@ -111582,13 +110950,11 @@
      "population": "overall",
      "detail": "6 partial responses",
      "quote": "Six partial responses were seen in each treatment group (15%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "2265371:hpp-5-fu-ddp|os-median|overall||",
@@ -111609,7 +110975,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "unclear"
     }
    ],
    "registry_checks": [],
@@ -111716,7 +111082,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "2405107:fu|orr|overall|partial-response-rate|cddp-fu",
@@ -111775,7 +111141,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -111819,13 +111185,11 @@
      "population": "overall",
      "detail": "response rate, five of 40 patients",
      "quote": "Response rates were 16 of 36 (44%) versus five of 40 (13%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "2407810:fura-plus-leucovorin|orr|overall|response-rate-16-of-36-patients|fura-alone",
@@ -111840,13 +111204,11 @@
      "population": "overall",
      "detail": "response rate, 16 of 36 patients",
      "quote": "Response rates were 16 of 36 (44%) versus five of 40 (13%)",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "2407810:fura-plus-leucovorin|ttp-median|overall|median-time-to-progression-or-death-reported-in-days-164-days-|fura-alone",
@@ -111922,7 +111284,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "2465076:5-fu-with-low-dose-leucovorin|n-randomized|overall||5-fu-alone",
@@ -111943,7 +111305,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -112009,7 +111371,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "2476530:5-fu-plus-high-dose-mtx|os-median|overall|median-survival|",
@@ -112177,13 +111539,11 @@
      "population": "evaluable",
      "detail": null,
      "quote": "seven of 39 (18%) patients who received 5-fluorouracil had an objective response",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "2667324:epirubicin|orr|evaluable||",
@@ -112198,13 +111558,11 @@
      "population": "evaluable",
      "detail": null,
      "quote": "None of 38 (0%) evaluable patients who received epirubicin demonstrated a response",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -112481,7 +111839,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "2674332:5-fu|orr|all-randomized-patients|objective-response-rate-all-patients-considered|mfl",
@@ -112496,13 +111854,11 @@
      "population": "all randomized patients",
      "detail": "objective response rate, all patients considered",
      "quote": "If all patients were considered for objective response, the figures were lower, 17% v 2%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "2674332:5-fu|os-median|overall|survival-median|mfl",
@@ -112564,7 +111920,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "2674332:mfl|orr|all-randomized-patients|objective-response-rate-all-patients-considered|5-fu",
@@ -112579,13 +111935,11 @@
      "population": "all randomized patients",
      "detail": "objective response rate, all patients considered",
      "quote": "If all patients were considered for objective response, the figures were lower, 17% v 2%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "2674332:mfl|os-median|overall|survival-median|5-fu",
@@ -113026,7 +112380,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
@@ -113625,7 +112979,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "2443619:5-fu-and-leucovorin|orr|overall|combined-complete-and-partial-response-rate|",
@@ -113659,13 +113013,11 @@
      "population": "overall",
      "detail": "median duration of response",
      "quote": "The median duration of response in the 5-FU and Leucovorin regimen was 10 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -117316,13 +116668,11 @@
      "population": "patients with malignant hepatomegaly only",
      "detail": null,
      "quote": "7 of 22, or 31.8%, by the i.v. route",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1090358:intravenous-5-fu|other-time-median|overall|mean-duration-of-response|oral-5-fu",
@@ -117343,7 +116693,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     },
     {
      "id": "1090358:oral-5-fu|orr|overall||",
@@ -117377,13 +116727,11 @@
      "population": "patients with malignant hepatomegaly only",
      "detail": null,
      "quote": "8 of 23, or 34.8%, by the oral route",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "correct"
     },
     {
      "id": "1090358:oral-5-fu|other-time-median|overall|mean-duration-of-response|intravenous-5-fu",
@@ -117404,7 +116752,7 @@
      ],
      "audit_note": null,
      "consistency_note": null,
-     "third_reading": null
+     "third_reading": "wrong"
     }
    ],
    "registry_checks": [],
