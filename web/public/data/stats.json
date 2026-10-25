@@ -1,7 +1,7 @@
 {
  "version": "2026-10-25",
- "updated": "2026-10-25 19:47",
- "updated_at": 1792957637.882654,
+ "updated": "2026-10-25 20:07",
+ "updated_at": 1792958850.0431974,
  "counts": {
   "candidates": 3751,
   "screened": 3751,
@@ -17,7 +17,7 @@
  "spend_usd_today": 1.0251,
  "status": {
   "state": "resting",
-  "since": 1792956437.0152614,
+  "since": 1792957649.1741624,
   "profile": "balanced",
   "daily_usd": 1.5,
   "total_usd": 30
