@@ -129,6 +129,20 @@ pmid,trial,year,line,biomarker_selection,arm,comparator,population,measure,value
 42859101,,2026,third_or_later,RAS wild-type,Afatinib + cetuximab,,overall,os_median,13.6,months,7.7,18.5,,verified,"overall survival (OS) were 4.1 months (95% CI, 2.7-5.4) and 13.6 months (95% CI, 7.7-18.5) respectively"
 42859101,,2026,third_or_later,RAS wild-type,Afatinib + cetuximab,,overall,pfs_median,4.1,months,2.7,5.4,,verified,"Median PFS and overall survival (OS) were 4.1 months (95% CI, 2.7-5.4)"
 42859101,,2026,third_or_later,RAS wild-type,Cetuximab alone,,overall,grade3plus_ae_rate,64.0,percent,,,at least one grade 3 or higher toxicity,verified,16 patients (64%) in the control arm reported at least one severe (grade ≥ 3) toxicity
+42925880,PRABITAS,2026,third_or_later,,14-day schedule,28-day schedule,overall,os_hr,0.93,ratio,0.8,1.08,stratified hazard ratio,verified,stratified hazard ratio 0·93 [95% CI 0·80-1·08]
+42925880,PRABITAS,2026,third_or_later,,14-day schedule,,overall,os_median,11.3,months,10.2,12.5,,verified,11·3 months (10·2-12·5) in the 14-day group
+42925880,PRABITAS,2026,third_or_later,,28-day schedule,,overall,os_median,10.3,months,9.5,11.6,,verified,Median overall survival was 10·3 months (95% CI 9·5-11·6) in the 28-day group
+42926107,AndroMETa-560,2026,mixed,,FTD-TPI + Bev,,overall,orr,0.0,percent,,,,verified,and 0% with FTD-TPI + Bev
+42926107,AndroMETa-560,2026,mixed,,FTD-TPI + Bev,,overall,os_median,10.2,months,,,,verified,median overall survival was 11.2 (HR=0.75) and 14.7 months (HR=0.62) vs 10.2 months
+42926107,AndroMETa-560,2026,mixed,,FTD-TPI + Bev,,overall,pfs_median,4.2,months,,,,verified,median progression-free survival was 5.6 and 6.8 months vs 4.2 months
+42926107,AndroMETa-560,2026,mixed,,Temab-A 2.0 mg/kg + Bev,,overall,orr,19.0,percent,,,,verified,Objective response rate was 19% and 30% with Temab-A 2.0 and 2.4 + Bev
+42926107,AndroMETa-560,2026,mixed,,Temab-A 2.0 mg/kg + Bev,FTD-TPI + Bev,overall,os_hr,0.75,ratio,,,,verified,median overall survival was 11.2 (HR=0.75)
+42926107,AndroMETa-560,2026,mixed,,Temab-A 2.0 mg/kg + Bev,FTD-TPI + Bev,overall,os_median,11.2,months,,,,verified,median overall survival was 11.2 (HR=0.75) and 14.7 months (HR=0.62) vs 10.2 months
+42926107,AndroMETa-560,2026,mixed,,Temab-A 2.0 mg/kg + Bev,,overall,pfs_median,5.6,months,,,,verified,median progression-free survival was 5.6 and 6.8 months vs 4.2 months
+42926107,AndroMETa-560,2026,mixed,,Temab-A 2.4 mg/kg + Bev,,overall,orr,30.0,percent,,,,verified,Objective response rate was 19% and 30% with Temab-A 2.0 and 2.4 + Bev
+42926107,AndroMETa-560,2026,mixed,,Temab-A 2.4 mg/kg + Bev,FTD-TPI + Bev,overall,os_hr,0.62,ratio,,,,verified,14.7 months (HR=0.62)
+42926107,AndroMETa-560,2026,mixed,,Temab-A 2.4 mg/kg + Bev,FTD-TPI + Bev,overall,os_median,14.7,months,,,,verified,median overall survival was 11.2 (HR=0.75) and 14.7 months (HR=0.62) vs 10.2 months
+42926107,AndroMETa-560,2026,mixed,,Temab-A 2.4 mg/kg + Bev,,overall,pfs_median,6.8,months,,,,verified,median progression-free survival was 5.6 and 6.8 months vs 4.2 months
 39576946,IMPROVE,2025,first,RAS and BRAF wild-type,arm A,,overall,grade3plus_ae_rate,30.3,percent,,,grade >2 skin panitumumab-related adverse events,verified,The overall rate of grade >2 skin PAN-related adverse events was 30.3% in arm A and 17.9% in arm B.
 39576946,IMPROVE,2025,first,RAS and BRAF wild-type,arm A,,overall,n_randomized,69.0,count,,,,verified,69 patients were randomly assigned to arm A
 39576946,IMPROVE,2025,first,RAS and BRAF wild-type,arm A,,overall,orr,68.1,percent,,,overall response rate,verified,The overall response rates were 68.1% and 61.2%

@@ -1,5 +1,77 @@
 [
  {
+  "date": "2026-10-25",
+  "spend_usd": 1.0463,
+  "screened": 4,
+  "included": 2,
+  "secondary": 1,
+  "excluded": 1,
+  "extracted": [
+   {
+    "pmid": "42926107",
+    "name": "AndroMETa-560",
+    "verified": 11,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "Temab-A 2.0 mg/kg + Bev",
+       "comparator": "FTD-TPI + Bev",
+       "value": 0.75,
+       "unit": "ratio",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "Temab-A 2.4 mg/kg + Bev",
+       "comparator": "FTD-TPI + Bev",
+       "value": 0.62,
+       "unit": "ratio",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
+   },
+   {
+    "pmid": "42925880",
+    "name": "PRABITAS",
+    "verified": 3,
+    "review": 6,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "14-day schedule",
+       "comparator": "28-day schedule",
+       "value": 0.93,
+       "unit": "ratio",
+       "ci_low": 0.8,
+       "ci_high": 1.08,
+       "population": "overall"
+      }
+     ]
+    }
+   }
+  ],
+  "verified_numbers": 14,
+  "review_numbers": 6,
+  "held_because": [
+   {
+    "reason": "the two independent extractions disagreed",
+    "n": 6
+   },
+   {
+    "reason": "its unit did not fit the measure",
+    "n": 2
+   }
+  ],
+  "corrections": 0
+ },
+ {
   "date": "2026-10-24",
   "spend_usd": 1.3215,
   "screened": 0,
