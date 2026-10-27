@@ -39,8 +39,8 @@
    {
     "pmid": "42925880",
     "name": "PRABITAS",
-    "verified": 3,
-    "review": 6,
+    "verified": 5,
+    "review": 4,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -57,12 +57,12 @@
     }
    }
   ],
-  "verified_numbers": 14,
-  "review_numbers": 6,
+  "verified_numbers": 16,
+  "review_numbers": 4,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
-    "n": 6
+    "n": 4
    },
    {
     "reason": "its unit did not fit the measure",
@@ -1471,8 +1471,8 @@
    {
     "pmid": "9739438",
     "name": "TTD study",
-    "verified": 4,
-    "review": 2,
+    "verified": 6,
+    "review": 0,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -1565,8 +1565,8 @@
    {
     "pmid": "9563887",
     "name": "HOG",
-    "verified": 2,
-    "review": 4,
+    "verified": 6,
+    "review": 0,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -1661,9 +1661,40 @@
    {
     "pmid": "9363861",
     "name": "NCCTG",
-    "verified": 0,
-    "review": 3,
-    "headline": null
+    "verified": 3,
+    "review": 0,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "A",
+       "comparator": null,
+       "value": 28.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "B",
+       "comparator": null,
+       "value": 34.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "C",
+       "comparator": null,
+       "value": 34.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "9470834",
@@ -1726,16 +1757,16 @@
    {
     "pmid": "9291901",
     "name": "Randomised multicentre trial of chronotherapy with oxaliplatin, fluorouracil, and folin\u2026",
-    "verified": 5,
-    "review": 5,
+    "verified": 9,
+    "review": 1,
     "headline": {
-     "label": "Objective response rate",
+     "label": "Median OS",
      "items": [
       {
        "arm": "chronotherapy",
-       "comparator": "constant-rate infusion",
-       "value": 51.0,
-       "unit": "percent",
+       "comparator": null,
+       "value": 15.9,
+       "unit": "months",
        "ci_low": null,
        "ci_high": null,
        "population": "overall"
@@ -1743,8 +1774,8 @@
       {
        "arm": "constant-rate infusion",
        "comparator": null,
-       "value": 29.0,
-       "unit": "percent",
+       "value": 16.9,
+       "unit": "months",
        "ci_low": null,
        "ci_high": null,
        "population": "overall"
@@ -1755,8 +1786,8 @@
    {
     "pmid": "9060527",
     "name": "Fluorouracil plus racemic leucovorin versus fluorouracil combined with the pure l-isome\u2026",
-    "verified": 6,
-    "review": 2,
+    "verified": 8,
+    "review": 0,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -1784,27 +1815,27 @@
    {
     "pmid": "9093726",
     "name": "GISCAD",
-    "verified": 2,
-    "review": 4,
+    "verified": 4,
+    "review": 2,
     "headline": {
-     "label": "Objective response rate",
+     "label": "Median OS",
      "items": [
       {
        "arm": "arm A",
        "comparator": null,
-       "value": 9.3,
-       "unit": "percent",
-       "ci_low": 5.4,
-       "ci_high": 13.1,
+       "value": 11.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
        "population": "overall"
       },
       {
        "arm": "arm B",
        "comparator": null,
-       "value": 10.7,
-       "unit": "percent",
-       "ci_low": 6.5,
-       "ci_high": 14.9,
+       "value": 11.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
        "population": "overall"
       }
      ]
@@ -1813,8 +1844,8 @@
    {
     "pmid": "9053508",
     "name": "French intergroup study",
-    "verified": 8,
-    "review": 6,
+    "verified": 14,
+    "review": 0,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -1842,8 +1873,8 @@
    {
     "pmid": "8918401",
     "name": "Randomized phase II noncomparative trial of oral and intravenous doxifluridine plus lev\u2026",
-    "verified": 4,
-    "review": 6,
+    "verified": 8,
+    "review": 2,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -1900,8 +1931,8 @@
    {
     "pmid": "8874326",
     "name": "Phase III randomized study to compare interferon alfa-2a in combination with fluorourac\u2026",
-    "verified": 6,
-    "review": 2,
+    "verified": 8,
+    "review": 0,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -1929,16 +1960,16 @@
    {
     "pmid": "8826868",
     "name": "A phase II randomised trial of 5-fluorouracil with or without interferon alpha-2a in ad\u2026",
-    "verified": 4,
-    "review": 4,
+    "verified": 8,
+    "review": 0,
     "headline": {
-     "label": "Objective response rate",
+     "label": "Median OS",
      "items": [
       {
        "arm": "arm A",
        "comparator": null,
-       "value": 12.5,
-       "unit": "percent",
+       "value": 12.0,
+       "unit": "months",
        "ci_low": null,
        "ci_high": null,
        "population": "overall"
@@ -1946,8 +1977,8 @@
       {
        "arm": "arm B",
        "comparator": null,
-       "value": 8.7,
-       "unit": "percent",
+       "value": 12.0,
+       "unit": "months",
        "ci_low": null,
        "ci_high": null,
        "population": "overall"
@@ -2016,9 +2047,31 @@
    {
     "pmid": "8708717",
     "name": "Study Protocol 1 (Study Group for Palliative Treatment of Metastatic Colorectal Cancer)",
-    "verified": 0,
-    "review": 12,
-    "headline": null
+    "verified": 6,
+    "review": 6,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "group A",
+       "comparator": null,
+       "value": 55.1,
+       "unit": "weeks",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "group B",
+       "comparator": null,
+       "value": 54.1,
+       "unit": "weeks",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "8708716",
@@ -2059,9 +2112,22 @@
    {
     "pmid": "8638546",
     "name": "Randomized trial of 5-fluorouracil and high-dose folinic acid with or without alpha-2B \u2026",
-    "verified": 0,
-    "review": 8,
-    "headline": null
+    "verified": 5,
+    "review": 3,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "A",
+       "comparator": null,
+       "value": 13.3,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "8627643",
@@ -2173,9 +2239,31 @@
    {
     "pmid": "8625038",
     "name": "MFL",
-    "verified": 0,
-    "review": 6,
-    "headline": null
+    "verified": 2,
+    "review": 4,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "FL",
+       "comparator": null,
+       "value": 26.4,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "MFL",
+       "comparator": null,
+       "value": 21.9,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "8562173",
@@ -2245,9 +2333,31 @@
    {
     "pmid": "7574814",
     "name": "[A prospective randomized clinical trial comparing intra-arterial chemotherapy alone an\u2026",
-    "verified": 0,
-    "review": 4,
-    "headline": null
+    "verified": 2,
+    "review": 2,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "Intra-arterial chemotherapy alone",
+       "comparator": null,
+       "value": 7.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "Intra-arterial chemotherapy plus hyperthermia",
+       "comparator": null,
+       "value": 40.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "8625221",
@@ -2259,18 +2369,49 @@
    {
     "pmid": "7666089",
     "name": "Impact of protracted venous infusion fluorouracil with or without interferon alfa-2b on\u2026",
-    "verified": 0,
-    "review": 6,
-    "headline": null
+    "verified": 2,
+    "review": 4,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "PVI 5-FU alone",
+       "comparator": null,
+       "value": 33.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "PVI 5-FU plus IFN",
+       "comparator": null,
+       "value": 22.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "7611750",
     "name": "[Clinical evaluation of leucovorin and 5-fluorouracil].",
-    "verified": 3,
-    "review": 3,
+    "verified": 6,
+    "review": 0,
     "headline": {
      "label": "Objective response rate",
      "items": [
+      {
+       "arm": "Arm A",
+       "comparator": null,
+       "value": 35.7,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "gastric cancer"
+      },
       {
        "arm": "Arm A",
        "comparator": null,
@@ -2283,20 +2424,11 @@
       {
        "arm": "Arm B",
        "comparator": null,
-       "value": 20.0,
+       "value": 25.0,
        "unit": "percent",
        "ci_low": null,
        "ci_high": null,
-       "population": "colorectal cancer"
-      },
-      {
-       "arm": "Arm C",
-       "comparator": null,
-       "value": 11.1,
-       "unit": "percent",
-       "ci_low": null,
-       "ci_high": null,
-       "population": "colorectal cancer"
+       "population": "gastric cancer"
       }
      ]
     }
@@ -2380,9 +2512,31 @@
    {
     "pmid": "7669711",
     "name": "AIO",
-    "verified": 0,
-    "review": 5,
-    "headline": null
+    "verified": 5,
+    "review": 0,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "A",
+       "comparator": null,
+       "value": 39.0,
+       "unit": "percent",
+       "ci_low": 21.0,
+       "ci_high": 56.0,
+       "population": "evaluable interim analysis"
+      },
+      {
+       "arm": "C",
+       "comparator": null,
+       "value": 38.0,
+       "unit": "percent",
+       "ci_low": 20.0,
+       "ci_high": 56.0,
+       "population": "evaluable interim analysis"
+      }
+     ]
+    }
    },
    {
     "pmid": "7900703",
@@ -2528,9 +2682,31 @@
    {
     "pmid": "7882275",
     "name": "Sequential methotrexate, 5-fluorouracil (5-FU), and high dose leucovorin versus 5-FU an\u2026",
-    "verified": 0,
-    "review": 4,
-    "headline": null
+    "verified": 4,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "FL",
+       "comparator": null,
+       "value": 12.3,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "MFL",
+       "comparator": null,
+       "value": 14.3,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "7695972",
@@ -2593,8 +2769,8 @@
    {
     "pmid": "7840516",
     "name": "Biochemical modulation of fluorouracil with high dose methotrexate or folinic acid in a\u2026",
-    "verified": 2,
-    "review": 6,
+    "verified": 4,
+    "review": 4,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -2658,9 +2834,31 @@
    {
     "pmid": "8010718",
     "name": "High-dose folinic acid (FA) and fluorouracil (FU) plus or minus thymostimulin (TS) for \u2026",
-    "verified": 0,
-    "review": 2,
-    "headline": null
+    "verified": 2,
+    "review": 0,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "FA-FU",
+       "comparator": null,
+       "value": 18.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "FA-FU + TS",
+       "comparator": "FA-FU",
+       "value": 30.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "8306416",
@@ -2788,8 +2986,8 @@
    {
     "pmid": "8459266",
     "name": "Folinic acid does improve 5-fluorouracil activity in vivo. Results of a phase III study\u2026",
-    "verified": 2,
-    "review": 4,
+    "verified": 4,
+    "review": 2,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -2817,8 +3015,8 @@
    {
     "pmid": "8426211",
     "name": "Randomized trial of hepatic arterial floxuridine, mitomycin, and carmustine versus flox\u2026",
-    "verified": 4,
-    "review": 4,
+    "verified": 6,
+    "review": 2,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -3717,8 +3915,8 @@
    {
     "pmid": "3061823",
     "name": "Cisplatin + 5-fluorouracil versus 5-fluorouracil alone in advanced colorectal cancer: a\u2026",
-    "verified": 2,
-    "review": 3,
+    "verified": 4,
+    "review": 1,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -3746,9 +3944,31 @@
    {
     "pmid": "3282033",
     "name": "HOG",
-    "verified": 0,
-    "review": 5,
-    "headline": null
+    "verified": 4,
+    "review": 1,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "5-FU",
+       "comparator": null,
+       "value": 40.0,
+       "unit": "weeks",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "5-FU + cisplatin",
+       "comparator": null,
+       "value": 39.0,
+       "unit": "weeks",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "3280741",
@@ -3841,8 +4061,8 @@
    {
     "pmid": "3543246",
     "name": "SWOG",
-    "verified": 2,
-    "review": 4,
+    "verified": 6,
+    "review": 0,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -3870,9 +4090,31 @@
    {
     "pmid": "3027267",
     "name": "A randomized study of oral nutritional support versus ad lib nutritional intake during \u2026",
-    "verified": 0,
-    "review": 5,
-    "headline": null
+    "verified": 4,
+    "review": 1,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "overall",
+       "comparator": null,
+       "value": 20.4,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "NSCLC"
+      },
+      {
+       "arm": "overall",
+       "comparator": null,
+       "value": 14.8,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "colorectal"
+      }
+     ]
+    }
    },
    {
     "pmid": "3514806",
@@ -4016,8 +4258,8 @@
    {
     "pmid": "6239538",
     "name": "A phase II study of chlorozotocin in advanced large bowel carcinoma. A cooperative stud\u2026",
-    "verified": 2,
-    "review": 3,
+    "verified": 3,
+    "review": 2,
     "headline": {
      "label": "Objective response rate",
      "items": [
@@ -4038,6 +4280,15 @@
        "ci_low": null,
        "ci_high": null,
        "population": "overall"
+      },
+      {
+       "arm": "Overall",
+       "comparator": null,
+       "value": 8.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
       }
      ]
     }
@@ -4052,16 +4303,16 @@
    {
     "pmid": "6372981",
     "name": "SEG 79G1268",
-    "verified": 2,
-    "review": 2,
+    "verified": 4,
+    "review": 0,
     "headline": {
-     "label": "Objective response rate",
+     "label": "Median OS",
      "items": [
       {
        "arm": "5-fluorouracil (5-FU)",
        "comparator": null,
-       "value": 8.0,
-       "unit": "percent",
+       "value": 6.3,
+       "unit": "months",
        "ci_low": null,
        "ci_high": null,
        "population": "overall"
@@ -4069,8 +4320,8 @@
       {
        "arm": "6-thioguanine (6-TG)",
        "comparator": null,
-       "value": 3.0,
-       "unit": "percent",
+       "value": 7.9,
+       "unit": "months",
        "ci_low": null,
        "ci_high": null,
        "population": "overall"
@@ -4139,8 +4390,8 @@
    {
     "pmid": "6402917",
     "name": "A comparative study of oral tegafur and intravenous 5-fluorouracil in patients with met\u2026",
-    "verified": 2,
-    "review": 3,
+    "verified": 3,
+    "review": 2,
     "headline": {
      "label": "Objective response rate",
      "items": [
@@ -4161,6 +4412,15 @@
        "ci_low": null,
        "ci_high": null,
        "population": "patients evaluable for response"
+      },
+      {
+       "arm": "Tegafur",
+       "comparator": null,
+       "value": 5.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "patients who had been switched to tegafur after failing on 5-Fu"
       }
      ]
     }
@@ -4204,8 +4464,8 @@
    {
     "pmid": "7039814",
     "name": "EST 4275",
-    "verified": 10,
-    "review": 3,
+    "verified": 11,
+    "review": 2,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -4393,16 +4653,16 @@
    {
     "pmid": "359121",
     "name": "SWOG",
-    "verified": 2,
-    "review": 2,
+    "verified": 4,
+    "review": 0,
     "headline": {
-     "label": "Objective response rate",
+     "label": "Median OS",
      "items": [
       {
        "arm": "5FU infusion + Methyl-CCNU",
        "comparator": null,
-       "value": 16.0,
-       "unit": "percent",
+       "value": 43.0,
+       "unit": "weeks",
        "ci_low": null,
        "ci_high": null,
        "population": "overall"
@@ -4410,8 +4670,8 @@
       {
        "arm": "5FU infusion + Mitomycin-C",
        "comparator": null,
-       "value": 18.0,
-       "unit": "percent",
+       "value": 43.0,
+       "unit": "weeks",
        "ci_low": null,
        "ci_high": null,
        "population": "overall"
@@ -4458,28 +4718,28 @@
    {
     "pmid": "779949",
     "name": "SWOG weekly 5-FU vs methyl-CCNU plus 5-FU",
-    "verified": 2,
-    "review": 2,
+    "verified": 4,
+    "review": 0,
     "headline": {
      "label": "Objective response rate",
      "items": [
       {
        "arm": "5-FU plus methyl-CCNU",
        "comparator": "5-FU weekly",
-       "value": 31.8,
+       "value": 29.3,
        "unit": "percent",
        "ci_low": null,
        "ci_high": null,
-       "population": "colorectal cancer"
+       "population": "overall"
       },
       {
        "arm": "5-FU weekly",
        "comparator": null,
-       "value": 9.5,
+       "value": 10.6,
        "unit": "percent",
        "ci_low": null,
        "ci_high": null,
-       "population": "colorectal cancer"
+       "population": "overall"
       }
      ]
     }
@@ -4543,12 +4803,12 @@
     }
    }
   ],
-  "verified_numbers": 696,
-  "review_numbers": 353,
+  "verified_numbers": 789,
+  "review_numbers": 260,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
-    "n": 323
+    "n": 230
    },
    {
     "reason": "its unit did not fit the measure",
@@ -7836,9 +8096,22 @@
    {
     "pmid": "28103904",
     "name": "null",
-    "verified": 0,
-    "review": 9,
-    "headline": null
+    "verified": 8,
+    "review": 1,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "fruquintinib plus BSC",
+       "comparator": "placebo plus BSC",
+       "value": 0.71,
+       "unit": "ratio",
+       "ci_low": 0.38,
+       "ci_high": 1.34,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "28508838",
@@ -7964,9 +8237,22 @@
    {
     "pmid": "27736842",
     "name": "PRIME-like chemorefractory panitumumab trial",
-    "verified": 0,
-    "review": 7,
-    "headline": null
+    "verified": 7,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "panitumumab plus BSC",
+       "comparator": "BSC",
+       "value": 0.73,
+       "unit": "ratio",
+       "ci_low": 0.57,
+       "ci_high": 0.93,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "27401244",
@@ -7991,8 +8277,8 @@
    {
     "pmid": "27428073",
     "name": "Phase II randomised trial of autologous tumour lysate dendritic cell\u00a0plus best supporti\u2026",
-    "verified": 4,
-    "review": 6,
+    "verified": 6,
+    "review": 4,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -8069,15 +8355,28 @@
    {
     "pmid": "27177863",
     "name": "WJOG4407G",
-    "verified": 4,
-    "review": 18,
-    "headline": null
+    "verified": 20,
+    "review": 2,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "FOLFIRI + Bev",
+       "comparator": "mFOLFOX6 + Bev",
+       "value": 0.99,
+       "unit": "ratio",
+       "ci_low": 0.785,
+       "ci_high": 1.249,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "27114605",
     "name": "ICECREAM",
-    "verified": 1,
-    "review": 6,
+    "verified": 3,
+    "review": 4,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -9957,12 +10256,12 @@
     }
    }
   ],
-  "verified_numbers": 731,
-  "review_numbers": 237,
+  "verified_numbers": 766,
+  "review_numbers": 202,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
-    "n": 160
+    "n": 125
    },
    {
     "reason": "the count was not stated as randomized",
@@ -10071,8 +10370,8 @@
    {
     "pmid": "32334845",
     "name": "BE1040V",
-    "verified": 1,
-    "review": 3,
+    "verified": 3,
+    "review": 1,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -10120,8 +10419,8 @@
    {
     "pmid": "32164906",
     "name": "TRIBE2",
-    "verified": 2,
-    "review": 9,
+    "verified": 8,
+    "review": 3,
     "headline": null
    },
    {
@@ -10474,15 +10773,37 @@
    {
     "pmid": "31126331",
     "name": "CMAB009 plus irinotecan trial (NCT01550055)",
-    "verified": 0,
-    "review": 13,
-    "headline": null
+    "verified": 4,
+    "review": 9,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "CMAB009 plus irinotecan",
+       "comparator": "irinotecan-only",
+       "value": 33.2,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "KRAS wild-type"
+      },
+      {
+       "arm": "irinotecan-only",
+       "comparator": null,
+       "value": 12.8,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "KRAS wild-type"
+      }
+     ]
+    }
    },
    {
     "pmid": "30224341",
     "name": "MAVERICC",
-    "verified": 2,
-    "review": 4,
+    "verified": 4,
+    "review": 2,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -10501,8 +10822,8 @@
    {
     "pmid": "30852136",
     "name": "NORDIC9",
-    "verified": 5,
-    "review": 4,
+    "verified": 9,
+    "review": 0,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -10735,23 +11056,58 @@
    {
     "pmid": "30262136",
     "name": "BEVZ92",
-    "verified": 2,
-    "review": 8,
-    "headline": null
+    "verified": 8,
+    "review": 2,
+    "headline": {
+     "label": "Median PFS",
+     "items": [
+      {
+       "arm": "BEVZ92",
+       "comparator": "reference bevacizumab",
+       "value": 10.8,
+       "unit": "months",
+       "ci_low": 7.4,
+       "ci_high": 11.5,
+       "population": "overall"
+      },
+      {
+       "arm": "reference bevacizumab",
+       "comparator": null,
+       "value": 11.1,
+       "unit": "months",
+       "ci_low": 8.0,
+       "ci_high": 12.8,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "30123970",
     "name": "Randomized, double-blind, phase two study of ruxolitinib plus regorafenib in patients w\u2026",
-    "verified": 0,
-    "review": 8,
+    "verified": 4,
+    "review": 4,
     "headline": null
    },
    {
     "pmid": "30199311",
     "name": "TAILOR",
-    "verified": 0,
-    "review": 8,
-    "headline": null
+    "verified": 8,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "FOLFOX-4 plus cetuximab",
+       "comparator": "FOLFOX-4 alone",
+       "value": 0.76,
+       "unit": "ratio",
+       "ci_low": 0.61,
+       "ci_high": 0.96,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "30054049",
@@ -10905,9 +11261,40 @@
    {
     "pmid": "31331137",
     "name": "A Prospective, Randomized, Multiple-Dose, Multi-Center, Comparative Clinical Study to E\u2026",
-    "verified": 0,
-    "review": 8,
-    "headline": null
+    "verified": 4,
+    "review": 4,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "HB-MAB",
+       "comparator": "RB-MAB",
+       "value": 35.56,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "HB-MAB",
+       "comparator": "RB-MAB",
+       "value": 37.5,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "RB-MAB",
+       "comparator": "HB-MAB",
+       "value": 20.0,
+       "unit": "percent",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "29551560",
@@ -10959,9 +11346,31 @@
    {
     "pmid": "29423521",
     "name": "Sym004",
-    "verified": 0,
-    "review": 7,
-    "headline": null
+    "verified": 7,
+    "review": 0,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "A",
+       "comparator": "C",
+       "value": 1.31,
+       "unit": "ratio",
+       "ci_low": 0.92,
+       "ci_high": 1.87,
+       "population": "overall"
+      },
+      {
+       "arm": "B",
+       "comparator": "C",
+       "value": 0.97,
+       "unit": "ratio",
+       "ci_low": 0.68,
+       "ci_high": 1.4,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "29533115",
@@ -10973,15 +11382,28 @@
    {
     "pmid": "29450468",
     "name": "null",
-    "verified": 0,
-    "review": 9,
-    "headline": null
+    "verified": 7,
+    "review": 2,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "overall",
+       "comparator": null,
+       "value": 71.6,
+       "unit": "percent",
+       "ci_low": 62.4,
+       "ci_high": 79.5,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "29397354",
     "name": "NCT01830621",
-    "verified": 10,
-    "review": 2,
+    "verified": 12,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -11000,8 +11422,8 @@
    {
     "pmid": "29346040",
     "name": "PRODIGE 9",
-    "verified": 4,
-    "review": 8,
+    "verified": 12,
+    "review": 0,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -11049,8 +11471,8 @@
    {
     "pmid": "29254887",
     "name": "FOCUS4-D",
-    "verified": 5,
-    "review": 2,
+    "verified": 6,
+    "review": 1,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -11105,9 +11527,40 @@
    {
     "pmid": "29211295",
     "name": "E4203",
-    "verified": 0,
-    "review": 6,
-    "headline": null
+    "verified": 6,
+    "review": 0,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "FOLFOX/Bev (TS-H)",
+       "comparator": null,
+       "value": 21.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "FOLFOX/Bev (TS-L)",
+       "comparator": null,
+       "value": 32.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "IROX/Bev (TS-H)",
+       "comparator": null,
+       "value": 18.0,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "29215955",
@@ -11237,8 +11690,8 @@
    {
     "pmid": "29043412",
     "name": "Randomized study of etirinotecan pegol versus irinotecan as second-line treatment for m\u2026",
-    "verified": 14,
-    "review": 8,
+    "verified": 20,
+    "review": 2,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -11264,9 +11717,31 @@
    {
     "pmid": "28874797",
     "name": "ITACa",
-    "verified": 0,
-    "review": 8,
-    "headline": null
+    "verified": 6,
+    "review": 2,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "Study 2A: CT + Cet",
+       "comparator": "Study 2A: CT",
+       "value": 0.64,
+       "unit": "ratio",
+       "ci_low": 0.35,
+       "ci_high": 1.16,
+       "population": "KRAS wild-type"
+      },
+      {
+       "arm": "Study 2B: CT + Cet + Bev",
+       "comparator": "Study 2B: CT + Bev",
+       "value": 1.31,
+       "unit": "ratio",
+       "ci_low": 0.76,
+       "ci_high": 2.26,
+       "population": "KRAS wild-type"
+      }
+     ]
+    }
    },
    {
     "pmid": "28979818",
@@ -11378,12 +11853,12 @@
     }
    }
   ],
-  "verified_numbers": 402,
-  "review_numbers": 215,
+  "verified_numbers": 485,
+  "review_numbers": 132,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
-    "n": 173
+    "n": 90
    },
    {
     "reason": "its unit did not fit the measure",
@@ -11822,8 +12297,8 @@
    {
     "pmid": "42830449",
     "name": "REVERCE II",
-    "verified": 10,
-    "review": 4,
+    "verified": 12,
+    "review": 2,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -11851,9 +12326,22 @@
    {
     "pmid": "42777749",
     "name": "ASAC",
-    "verified": 0,
-    "review": 9,
-    "headline": null
+    "verified": 1,
+    "review": 8,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "aspirin",
+       "comparator": "placebo",
+       "value": 1.64,
+       "unit": "ratio",
+       "ci_low": 1.01,
+       "ci_high": 2.65,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "42859101",
@@ -11898,9 +12386,31 @@
    {
     "pmid": "42636835",
     "name": "Ifebemtinib plus garsorasib in previously treated metastatic colorectal cancer with KRA\u2026",
-    "verified": 0,
-    "review": 6,
-    "headline": null
+    "verified": 4,
+    "review": 2,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "garsorasib alone",
+       "comparator": null,
+       "value": 16.7,
+       "unit": "percent",
+       "ci_low": 3.6,
+       "ci_high": 41.4,
+       "population": "overall"
+      },
+      {
+       "arm": "ifebemtinib plus garsorasib",
+       "comparator": "garsorasib alone",
+       "value": 38.9,
+       "unit": "percent",
+       "ci_low": 17.3,
+       "ci_high": 64.3,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "42545685",
@@ -12003,9 +12513,31 @@
    {
     "pmid": "42022129",
     "name": "ELEVATE CRC",
-    "verified": 0,
-    "review": 7,
-    "headline": null
+    "verified": 6,
+    "review": 1,
+    "headline": {
+     "label": "Median PFS",
+     "items": [
+      {
+       "arm": "control",
+       "comparator": null,
+       "value": 6.7,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "magrolimab",
+       "comparator": null,
+       "value": 6.2,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "41905242",
@@ -12068,8 +12600,8 @@
    {
     "pmid": "41443411",
     "name": "CAVE-2 GOIM",
-    "verified": 8,
-    "review": 6,
+    "verified": 14,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -12135,8 +12667,8 @@
    {
     "pmid": "42079931",
     "name": "TSOG 103",
-    "verified": 0,
-    "review": 10,
+    "verified": 4,
+    "review": 6,
     "headline": null
    },
    {
@@ -12162,8 +12694,8 @@
    {
     "pmid": "41537257",
     "name": "BEVATOMOX",
-    "verified": 2,
-    "review": 6,
+    "verified": 4,
+    "review": 4,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -12191,8 +12723,8 @@
    {
     "pmid": "41115464",
     "name": "PARERE",
-    "verified": 4,
-    "review": 13,
+    "verified": 10,
+    "review": 7,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -12220,8 +12752,8 @@
    {
     "pmid": "41130252",
     "name": "STELLAR-303",
-    "verified": 7,
-    "review": 3,
+    "verified": 10,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -12254,9 +12786,22 @@
    {
     "pmid": "40815944",
     "name": "Qu-yu-jie-du decoction maintenance trial (ChiCTR2100053521)",
-    "verified": 0,
-    "review": 10,
-    "headline": null
+    "verified": 1,
+    "review": 9,
+    "headline": {
+     "label": "OS hazard ratio",
+     "items": [
+      {
+       "arm": "QYJD group",
+       "comparator": "control group",
+       "value": 0.407,
+       "unit": "ratio",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "40737898",
@@ -12408,8 +12953,8 @@
    {
     "pmid": "39579142",
     "name": "PRESERVE 1",
-    "verified": 8,
-    "review": 2,
+    "verified": 9,
+    "review": 1,
     "headline": {
      "label": "Median PFS",
      "items": [
@@ -12464,9 +13009,31 @@
    {
     "pmid": "39587053",
     "name": "DEEPER",
-    "verified": 0,
-    "review": 6,
-    "headline": null
+    "verified": 4,
+    "review": 2,
+    "headline": {
+     "label": "Median OS",
+     "items": [
+      {
+       "arm": "m-FOLFOXIRI plus bevacizumab",
+       "comparator": "m-FOLFOXIRI plus weekly cetuximab",
+       "value": 40.2,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "RAS/BRAF wild-type and left-sided (post-hoc exploratory)"
+      },
+      {
+       "arm": "m-FOLFOXIRI plus weekly cetuximab",
+       "comparator": "m-FOLFOXIRI plus bevacizumab",
+       "value": 53.6,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "RAS/BRAF wild-type and left-sided (post-hoc exploratory)"
+      }
+     ]
+    }
    },
    {
     "pmid": "39186709",
@@ -12520,9 +13087,31 @@
    {
     "pmid": "39048638",
     "name": "COLUMBIA-1",
-    "verified": 0,
-    "review": 6,
-    "headline": null
+    "verified": 6,
+    "review": 0,
+    "headline": {
+     "label": "Objective response rate",
+     "items": [
+      {
+       "arm": "control",
+       "comparator": null,
+       "value": 46.2,
+       "unit": "percent",
+       "ci_low": 26.6,
+       "ci_high": 66.6,
+       "population": "overall"
+      },
+      {
+       "arm": "experimental",
+       "comparator": "control",
+       "value": 61.5,
+       "unit": "percent",
+       "ci_low": 40.6,
+       "ci_high": 79.8,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "38901425",
@@ -12567,8 +13156,8 @@
    {
     "pmid": "39116902",
     "name": "DESTINY-CRC02",
-    "verified": 1,
-    "review": 3,
+    "verified": 3,
+    "review": 1,
     "headline": {
      "label": "Objective response rate",
      "items": [
@@ -12645,9 +13234,22 @@
    {
     "pmid": "38775718",
     "name": "ECOG-ACRIN E7208",
-    "verified": 0,
-    "review": 9,
-    "headline": null
+    "verified": 5,
+    "review": 4,
+    "headline": {
+     "label": "PFS hazard ratio",
+     "items": [
+      {
+       "arm": "ICR",
+       "comparator": "IC",
+       "value": 0.75,
+       "unit": "ratio",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      }
+     ]
+    }
    },
    {
     "pmid": "38749110",
@@ -12688,28 +13290,19 @@
    {
     "pmid": "38664577",
     "name": "METIMMOX",
-    "verified": 3,
-    "review": 3,
+    "verified": 4,
+    "review": 2,
     "headline": {
-     "label": "Median PFS",
+     "label": "PFS hazard ratio",
      "items": [
       {
-       "arm": "control group",
-       "comparator": null,
-       "value": 9.2,
-       "unit": "months",
-       "ci_low": 6.3,
-       "ci_high": 12.7,
-       "population": "overall"
-      },
-      {
        "arm": "experimental group",
-       "comparator": null,
-       "value": 9.2,
-       "unit": "months",
-       "ci_low": 4.5,
-       "ci_high": 15.0,
-       "population": "overall"
+       "comparator": "control group",
+       "value": 0.17,
+       "unit": "ratio",
+       "ci_low": 0.04,
+       "ci_high": 0.76,
+       "population": "age \u226560"
       }
      ]
     }
@@ -12757,8 +13350,8 @@
    {
     "pmid": "38438735",
     "name": "CAPability-01",
-    "verified": 6,
-    "review": 6,
+    "verified": 10,
+    "review": 2,
     "headline": {
      "label": "Median PFS",
      "items": [
@@ -12766,6 +13359,15 @@
        "arm": "doublet",
        "comparator": "triplet",
        "value": 1.5,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "overall",
+       "comparator": null,
+       "value": 3.7,
        "unit": "months",
        "ci_low": null,
        "ci_high": null,
@@ -12786,8 +13388,8 @@
    {
     "pmid": "38485190",
     "name": "CheckMate 9X8",
-    "verified": 9,
-    "review": 2,
+    "verified": 11,
+    "review": 0,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -12936,8 +13538,8 @@
    {
     "pmid": "37535388",
     "name": "SAMCO-PRODIGE 54",
-    "verified": 2,
-    "review": 6,
+    "verified": 4,
+    "review": 4,
     "headline": {
      "label": "Objective response rate",
      "items": [
@@ -12972,28 +13574,19 @@
    {
     "pmid": "37352476",
     "name": "FIRE-4.5",
-    "verified": 2,
-    "review": 9,
+    "verified": 8,
+    "review": 3,
     "headline": {
-     "label": "Objective response rate",
+     "label": "OS hazard ratio",
      "items": [
       {
-       "arm": "Control arm",
-       "comparator": null,
-       "value": 67.0,
-       "unit": "percent",
-       "ci_low": null,
-       "ci_high": null,
-       "population": "ATP population"
-      },
-      {
        "arm": "Experimental arm",
-       "comparator": null,
-       "value": 51.0,
-       "unit": "percent",
+       "comparator": "Control arm",
+       "value": 1.4,
+       "unit": "ratio",
        "ci_low": null,
        "ci_high": null,
-       "population": "ATP population"
+       "population": "overall"
       }
      ]
     }
@@ -13001,8 +13594,8 @@
    {
     "pmid": "37379692",
     "name": "GERCOR",
-    "verified": 6,
-    "review": 8,
+    "verified": 12,
+    "review": 2,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -13088,8 +13681,8 @@
    {
     "pmid": "37329889",
     "name": "CAIRO5",
-    "verified": 10,
-    "review": 13,
+    "verified": 23,
+    "review": 0,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -13157,8 +13750,8 @@
    {
     "pmid": "36871043",
     "name": "null",
-    "verified": 7,
-    "review": 3,
+    "verified": 10,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -13177,8 +13770,8 @@
    {
     "pmid": "37071094",
     "name": "PARADIGM",
-    "verified": 10,
-    "review": 13,
+    "verified": 19,
+    "review": 4,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -13226,8 +13819,8 @@
    {
     "pmid": "36503738",
     "name": "CanStem303C",
-    "verified": 5,
-    "review": 13,
+    "verified": 14,
+    "review": 4,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -13313,8 +13906,8 @@
    {
     "pmid": "36308367",
     "name": "Triplet (FOLFOXIRI) Versus Doublet (FOLFOX or FOLFIRI) Regimen as First Line Treatment \u2026",
-    "verified": 6,
-    "review": 1,
+    "verified": 7,
+    "review": 0,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -13342,8 +13935,8 @@
    {
     "pmid": "36029653",
     "name": "MODUL",
-    "verified": 0,
-    "review": 9,
+    "verified": 6,
+    "review": 3,
     "headline": null
    },
    {
@@ -13418,8 +14011,8 @@
    {
     "pmid": "35636444",
     "name": "AtezoTRIBE",
-    "verified": 1,
-    "review": 10,
+    "verified": 7,
+    "review": 4,
     "headline": {
      "label": "Median PFS",
      "items": [
@@ -13527,8 +14120,8 @@
    {
     "pmid": "35179586",
     "name": "ACCRU",
-    "verified": 13,
-    "review": 4,
+    "verified": 16,
+    "review": 1,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -13659,8 +14252,8 @@
    {
     "pmid": "34657055",
     "name": "OGSG1301",
-    "verified": 9,
-    "review": 3,
+    "verified": 12,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -13719,8 +14312,8 @@
    {
     "pmid": "34309665",
     "name": "Effect of Bevacizumab in Combination With Standard Oxaliplatin-Based Regimens in Patien\u2026",
-    "verified": 9,
-    "review": 2,
+    "verified": 11,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -13835,8 +14428,8 @@
    {
     "pmid": "34957976",
     "name": "Effect of pentoxifylline on colon cancer patients treated with chemotherapy (Part I).",
-    "verified": 1,
-    "review": 1,
+    "verified": 2,
+    "review": 0,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -13844,6 +14437,15 @@
        "arm": "Control",
        "comparator": null,
        "value": 13.2,
+       "unit": "months",
+       "ci_low": null,
+       "ci_high": null,
+       "population": "overall"
+      },
+      {
+       "arm": "Pentoxifylline (all patients)",
+       "comparator": null,
+       "value": 20.4,
        "unit": "months",
        "ci_low": null,
        "ci_high": null,
@@ -13953,8 +14555,8 @@
    {
     "pmid": "33105819",
     "name": "Combination Therapy of High-Dose Rabeprazole Plus Metronomic Capecitabine in Advanced G\u2026",
-    "verified": 4,
-    "review": 1,
+    "verified": 5,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -14036,8 +14638,8 @@
    {
     "pmid": "32923171",
     "name": "LICC",
-    "verified": 3,
-    "review": 5,
+    "verified": 4,
+    "review": 4,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -14081,12 +14683,12 @@
     }
    }
   ],
-  "verified_numbers": 814,
-  "review_numbers": 354,
+  "verified_numbers": 946,
+  "review_numbers": 222,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
-    "n": 300
+    "n": 168
    },
    {
     "reason": "its unit did not fit the measure",
