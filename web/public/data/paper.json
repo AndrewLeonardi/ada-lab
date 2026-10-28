@@ -21,13 +21,13 @@
   {
    "name": "Disagreements settled by a third reading",
    "status": "done",
-   "detail": "967 numbers judged by a third reading; 0 waiting (in 0 trials).",
+   "detail": "969 numbers judged by a third reading; 0 waiting (in 0 trials).",
    "progress": 1.0
   },
   {
    "name": "Review queue resolved or clearly flagged",
    "status": "doing",
-   "detail": "3,868 numbers verified; 966 in review (published flagged, not as verified).",
+   "detail": "3,881 numbers verified; 953 in review (published flagged, not as verified).",
    "progress": null
   },
   {
@@ -98,7 +98,7 @@
   "screened": 3756,
   "included": 623,
   "extracted": 623,
-  "verified": 3868,
-  "review": 966
+  "verified": 3881,
+  "review": 953
  }
 }

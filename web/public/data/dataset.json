@@ -1,14 +1,14 @@
 {
  "name": "Open Metastatic Colorectal Cancer Trial Outcomes",
  "version": "2026-10-28",
- "generated": "2026-10-28T16:54:16",
+ "generated": "2026-10-28T17:17:01",
  "counts": {
   "candidates": 3756,
   "screened": 3756,
   "included": 623,
   "trials": 623,
-  "verified_numbers": 3868,
-  "pending_numbers": 966,
+  "verified_numbers": 3881,
+  "pending_numbers": 953,
   "corrected_numbers": 20
  },
  "trials": [
@@ -2339,12 +2339,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The median OS was 40.4 months (95% CI, 32.4-51.1) in arm A",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "OS hazard ratio 1.3 says A did worse than B, but the medians say the opposite (40.4 vs 34.4 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -2461,7 +2459,7 @@
      "status": "corrected",
      "failed_checks": [],
      "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
-     "consistency_note": "OS hazard ratio 1.3 says A did worse than B, but the medians say the opposite (40.4 vs 34.4 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -2477,12 +2475,10 @@
      "population": "overall",
      "detail": null,
      "quote": "34.4 months (95% CI, 27.5-42.2) in arm B",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "OS hazard ratio 1.3 says A did worse than B, but the medians say the opposite (40.4 vs 34.4 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -3586,14 +3582,11 @@
      "population": "overall",
      "detail": null,
      "quote": "The objective response rate was 86.1% versus 46%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees",
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "Response rate (86.1%) is higher than disease control rate (64.7%) for FFX/bev/atezo.",
-     "third_reading": null
+     "consistency_note": null,
+     "third_reading": "correct"
     },
     {
      "id": "42525921:ffx-bev-atezo|pfs-hr|overall|progression-free-survival|atezo",
@@ -3690,14 +3683,11 @@
      "population": "overall",
      "detail": null,
      "quote": "The objective response rate was 86.1% versus 46%",
-     "status": "needs_review",
-     "failed_checks": [
-      "second_pass_agrees",
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "Response rate (46%) is higher than disease control rate (32.4%) for atezo.",
-     "third_reading": null
+     "consistency_note": null,
+     "third_reading": "correct"
     }
    ],
    "registry_checks": [],
@@ -4928,12 +4918,10 @@
      "population": "overall",
      "detail": null,
      "quote": "The objective response rate (ORR) was 26% (95% CI, 14-40)",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "Response rate (26%) is higher than disease control rate (18%) for Afatinib + cetuximab.",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -16375,11 +16363,9 @@
      "detail": "from randomization",
      "quote": "median progression-free survival (PFS) from randomization was 5.3 months (95% CI, 3.7-7.4 months) in the cetuximab group",
      "status": "verified",
-     "failed_checks": [
-      "consistent"
-     ],
+     "failed_checks": [],
      "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
-     "consistency_note": "PFS hazard ratio 1.63 says Cetuximab maintenance did worse than Observation, but the medians say the opposite (5.3 vs 2 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -16436,7 +16422,7 @@
      "status": "corrected",
      "failed_checks": [],
      "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
-     "consistency_note": "PFS hazard ratio 1.63 says Cetuximab maintenance did worse than Observation, but the medians say the opposite (5.3 vs 2 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -16453,11 +16439,9 @@
      "detail": "from randomization",
      "quote": "2.0 months (95% CI, 1.8-2.7 months) in the observation group",
      "status": "verified",
-     "failed_checks": [
-      "consistent"
-     ],
+     "failed_checks": [],
      "audit_note": "Matches the hand-verified value (research/gold_trials.yaml).",
-     "consistency_note": "PFS hazard ratio 1.63 says Cetuximab maintenance did worse than Observation, but the medians say the opposite (5.3 vs 2 months).",
+     "consistency_note": null,
      "third_reading": null
     }
    ],
@@ -19351,12 +19335,10 @@
      "population": "overall",
      "detail": "RECIST response",
      "quote": "165 (76%) patients treated with modified FOLFOX plus panitumumab achieved RECIST response",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "Response rate (76%) is higher than disease control rate (57%) for control group.",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -19455,12 +19437,10 @@
      "population": "overall",
      "detail": "RECIST response",
      "quote": "One hundred sixty (73%) patients treated with mFOLFOXIRI plus panitumumab",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "Response rate (73%) is higher than disease control rate (58%) for experimental group.",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -30849,7 +30829,7 @@
      "status": "corrected",
      "failed_checks": [],
      "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
-     "consistency_note": "OS hazard ratio 0.34 says FOLFOX did better than CUFOX, but the medians say the opposite (200 vs 502 weeks).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -30892,7 +30872,7 @@
      "status": "corrected",
      "failed_checks": [],
      "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
-     "consistency_note": "PFS hazard ratio 0.57 says FOLFOX did better than CUFOX, but the medians say the opposite (171 vs 291 weeks).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -31284,7 +31264,7 @@
      "status": "corrected",
      "failed_checks": [],
      "audit_note": "The hazard ratio 1.51 is arm B versus arm A (arm B was inferior).",
-     "consistency_note": "PFS hazard ratio 1.51 says arm A did worse than arm B, but the medians say the opposite (59.9 vs 49 percent).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -41031,12 +41011,10 @@
      "population": "overall",
      "detail": null,
      "quote": "median overall survival was 12.3 months in arm A and 18.6 months in arm B",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "OS hazard ratio 0.84 says A did better than B, but the medians say the opposite (12.3 vs 18.6 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -41112,7 +41090,7 @@
      "status": "corrected",
      "failed_checks": [],
      "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
-     "consistency_note": "OS hazard ratio 0.84 says A did better than B, but the medians say the opposite (12.3 vs 18.6 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -41128,12 +41106,10 @@
      "population": "overall",
      "detail": null,
      "quote": "median overall survival was 12.3 months in arm A and 18.6 months in arm B",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "OS hazard ratio 0.84 says A did better than B, but the medians say the opposite (12.3 vs 18.6 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -43661,12 +43637,10 @@
      "population": "overall",
      "detail": "progression-free survival",
      "quote": "FU 5.2 months versus IRI 7.3 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "PFS hazard ratio 0.84 says FU did better than IRI, but the medians say the opposite (5.2 vs 7.3 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -43742,7 +43716,7 @@
      "status": "corrected",
      "failed_checks": [],
      "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
-     "consistency_note": "PFS hazard ratio 0.84 says FU did better than IRI, but the medians say the opposite (5.2 vs 7.3 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -43758,12 +43732,10 @@
      "population": "overall",
      "detail": "progression-free survival",
      "quote": "FU 5.2 months versus IRI 7.3 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "PFS hazard ratio 0.84 says FU did better than IRI, but the medians say the opposite (5.2 vs 7.3 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -46687,7 +46659,7 @@
      "status": "corrected",
      "failed_checks": [],
      "audit_note": "Hazard ratio recorded the wrong way round: the medians show it is the other group versus this one.",
-     "consistency_note": "OS hazard ratio 1.16 says panitumumab plus FOLFIRI did worse than bevacizumab plus FOLFIRI, but the medians say the opposite (16.2 vs 13.4 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -46703,12 +46675,10 @@
      "population": "overall",
      "detail": "median overall survival",
      "quote": "Median overall survival (OS) for panitumumab plus FOLFIRI and bevacizumab plus FOLFIRI were 16.2 and 13.4 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "OS hazard ratio 1.16 says panitumumab plus FOLFIRI did worse than bevacizumab plus FOLFIRI, but the medians say the opposite (16.2 vs 13.4 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -46724,12 +46694,10 @@
      "population": "overall",
      "detail": "median overall survival",
      "quote": "Median overall survival (OS) for panitumumab plus FOLFIRI and bevacizumab plus FOLFIRI were 16.2 and 13.4 months",
-     "status": "needs_review",
-     "failed_checks": [
-      "consistent"
-     ],
+     "status": "verified",
+     "failed_checks": [],
      "audit_note": null,
-     "consistency_note": "OS hazard ratio 1.16 says panitumumab plus FOLFIRI did worse than bevacizumab plus FOLFIRI, but the medians say the opposite (16.2 vs 13.4 months).",
+     "consistency_note": null,
      "third_reading": null
     },
     {
@@ -47818,6 +47786,10 @@
    ],
    "registry_checks": [],
    "notices": [
+    {
+     "kind": "correction",
+     "pmid": "25900678"
+    },
     {
      "kind": "later_report",
      "pmid": "27310205"
@@ -49507,6 +49479,10 @@
     }
    ],
    "notices": [
+    {
+     "kind": "correction",
+     "pmid": "26065608"
+    },
     {
      "kind": "later_report",
      "pmid": "27573561"
@@ -51925,6 +51901,10 @@
    "registry_checks": [],
    "notices": [
     {
+     "kind": "correction",
+     "pmid": "26678210"
+    },
+    {
      "kind": "later_report",
      "pmid": "27753609"
     },
@@ -53215,7 +53195,12 @@
     }
    ],
    "registry_checks": [],
-   "notices": []
+   "notices": [
+    {
+     "kind": "correction",
+     "pmid": "26678211"
+    }
+   ]
   },
   {
    "pmid": "26505681",

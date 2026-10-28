@@ -8194,8 +8194,8 @@
    {
     "pmid": "27712015",
     "name": "WJOG 6210G",
-    "verified": 2,
-    "review": 2,
+    "verified": 4,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -8564,8 +8564,8 @@
    {
     "pmid": "26487578",
     "name": "FFCD 2001-02",
-    "verified": 15,
-    "review": 2,
+    "verified": 17,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -10269,8 +10269,8 @@
     }
    }
   ],
-  "verified_numbers": 766,
-  "review_numbers": 202,
+  "verified_numbers": 770,
+  "review_numbers": 198,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
@@ -10299,10 +10299,6 @@
    {
     "reason": "the value was implausible",
     "n": 5
-   },
-   {
-    "reason": "it contradicted the trial's other numbers",
-    "n": 4
    },
    {
     "reason": "the quote was not found word for word",
@@ -11779,8 +11775,8 @@
    {
     "pmid": "28735067",
     "name": "Italian Group for the Study of Gastrointestinal Cancer phase III trial",
-    "verified": 6,
-    "review": 2,
+    "verified": 8,
+    "review": 0,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -11866,8 +11862,8 @@
     }
    }
   ],
-  "verified_numbers": 485,
-  "review_numbers": 132,
+  "verified_numbers": 487,
+  "review_numbers": 130,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
@@ -11903,10 +11899,6 @@
    },
    {
     "reason": "the value was a bound, not exact",
-    "n": 2
-   },
-   {
-    "reason": "it contradicted the trial's other numbers",
     "n": 2
    },
    {
@@ -12290,8 +12282,8 @@
    {
     "pmid": "42525921",
     "name": "COMMIT",
-    "verified": 4,
-    "review": 4,
+    "verified": 6,
+    "review": 2,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -12359,8 +12351,8 @@
    {
     "pmid": "42859101",
     "name": "EGFR Targeting With Afatinib and Cetuximab Versus Cetuximab Alone in Chemorefractory Wi\u2026",
-    "verified": 4,
-    "review": 3,
+    "verified": 5,
+    "review": 2,
     "headline": {
      "label": "Median OS",
      "items": [
@@ -12660,8 +12652,8 @@
    {
     "pmid": "41980919",
     "name": "STRATEGIC-1",
-    "verified": 9,
-    "review": 3,
+    "verified": 11,
+    "review": 1,
     "headline": {
      "label": "OS hazard ratio",
      "items": [
@@ -14004,8 +13996,8 @@
    {
     "pmid": "35666229",
     "name": "TRIPLETE",
-    "verified": 5,
-    "review": 4,
+    "verified": 7,
+    "review": 2,
     "headline": {
      "label": "PFS hazard ratio",
      "items": [
@@ -14696,12 +14688,12 @@
     }
    }
   ],
-  "verified_numbers": 946,
-  "review_numbers": 222,
+  "verified_numbers": 953,
+  "review_numbers": 215,
   "held_because": [
    {
     "reason": "the two independent extractions disagreed",
-    "n": 168
+    "n": 166
    },
    {
     "reason": "its unit did not fit the measure",
@@ -14714,10 +14706,6 @@
    {
     "reason": "the number was not in its quote",
     "n": 18
-   },
-   {
-    "reason": "it contradicted the trial's other numbers",
-    "n": 10
    },
    {
     "reason": "its interval was not a 95% interval",
@@ -14734,6 +14722,10 @@
    {
     "reason": "it was not stated as a disease control rate",
     "n": 4
+   },
+   {
+    "reason": "it contradicted the trial's other numbers",
+    "n": 3
    },
    {
     "reason": "the quote was not found word for word",
