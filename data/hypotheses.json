@@ -9,7 +9,7 @@
    },
    "id": "H001",
    "spec_hash": "bd7f86305e31920d",
-   "tested": "2026-10-29"
+   "tested": "2026-10-30"
   },
   "history": [
    {
@@ -71,7 +71,7 @@
    "summary": "No results found for 24.6% of trials completed since the 2017 rule (29/118) vs 26.6% before (63/237); one-sided p = 0.393.",
    "id": "H002",
    "spec_hash": "1ecaca98e38d0bfb",
-   "tested": "2026-10-29"
+   "tested": "2026-10-30"
   },
   "history": [
    {
@@ -118,7 +118,7 @@
    "summary": "No results found for 14.8% of industry trials (24/162) vs 35.2% of others (68/193); two-sided p = 1.08e-05. Industry trials less often have no results.",
    "id": "H003",
    "spec_hash": "89b1df2fcff51dc2",
-   "tested": "2026-10-29"
+   "tested": "2026-10-30"
   },
   "history": [
    {
@@ -147,7 +147,7 @@
    "summary": "0 of 50 trials (0.0%, 95% CI 0.0% to 7.1%) report a different primary endpoint than they registered (code flagged none).",
    "id": "H004",
    "spec_hash": "3a695b9647bd8dd2",
-   "tested": "2026-10-29"
+   "tested": "2026-10-30"
   },
   "history": [
    {
