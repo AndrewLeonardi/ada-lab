@@ -1,5 +1,18 @@
 [
  {
+  "date": "2026-10-29",
+  "spend_usd": 0.0007,
+  "screened": 2,
+  "included": 0,
+  "secondary": 0,
+  "excluded": 2,
+  "extracted": [],
+  "verified_numbers": 0,
+  "review_numbers": 0,
+  "held_because": [],
+  "corrections": 0
+ },
+ {
   "date": "2026-10-26",
   "spend_usd": 1.1846,
   "screened": 1,
