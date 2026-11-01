@@ -9,7 +9,7 @@
   {
    "name": "Every candidate paper screened",
    "status": "done",
-   "detail": "3,758 of 3,758 PubMed records screened.",
+   "detail": "3,759 of 3,759 PubMed records screened.",
    "progress": 1.0
   },
   {
@@ -94,8 +94,8 @@
  "done": 4,
  "total": 15,
  "counts": {
-  "candidates": 3758,
-  "screened": 3758,
+  "candidates": 3759,
+  "screened": 3759,
   "included": 623,
   "extracted": 623,
   "verified": 3881,
