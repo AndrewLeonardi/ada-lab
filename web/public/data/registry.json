@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01 00:04",
+ "updated": "2026-11-01 00:25",
  "due_months": 24,
  "registered": 733,
  "due": 356,
@@ -8,9 +8,8 @@
   "linked": 22,
   "unclear": 3,
   "found_by_number": 67,
-  "posted": 168,
-  "found_by_search": 6,
-  "not_searched": 1
+  "posted": 169,
+  "found_by_search": 6
  },
  "missing_patients": 18169,
  "trials": [
@@ -5996,10 +5995,10 @@
    "enrollment": 325,
    "primary_completion": "2024-11-04",
    "months": 24,
-   "verdict": "not_searched",
+   "verdict": "posted",
    "pmids": [],
-   "detail": null,
-   "searched": null
+   "detail": "Results posted on ClinicalTrials.gov.",
+   "searched": "2026-11-01"
   }
  ],
  "crosscheck": {
