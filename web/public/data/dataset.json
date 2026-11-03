@@ -1,14 +1,14 @@
 {
  "name": "Open Metastatic Colorectal Cancer Trial Outcomes",
  "version": "2026-11-03",
- "generated": "2026-11-03T07:12:04",
+ "generated": "2026-11-03T07:37:28",
  "counts": {
   "candidates": 3763,
   "screened": 3763,
   "included": 624,
-  "trials": 623,
-  "verified_numbers": 3881,
-  "pending_numbers": 953,
+  "trials": 624,
+  "verified_numbers": 3883,
+  "pending_numbers": 955,
   "corrected_numbers": 20
  },
  "trials": [
@@ -5452,6 +5452,119 @@
      "quote": "median progression-free survival was 5.6 and 6.8 months vs 4.2 months",
      "status": "verified",
      "failed_checks": [],
+     "audit_note": null,
+     "consistency_note": null,
+     "third_reading": null
+    }
+   ],
+   "registry_checks": [],
+   "notices": []
+  },
+  {
+   "pmid": "42969685",
+   "title": "Spatial Acid-Associated Niches Inform Irinotecan-Based DEB-TACE in Colorectal Liver Metastases: A Multicentre Randomized Trial.",
+   "journal": "Liver Int",
+   "year": 2026,
+   "authors": "Weng S, Hu W, Tu J, et al.",
+   "doi": "10.1111/liv.70931",
+   "nct_ids": [
+    "NCT06021015"
+   ],
+   "acronym": null,
+   "phase": "unclear",
+   "line": "unclear",
+   "biomarker": null,
+   "n_randomized": 35,
+   "primary_endpoint": null,
+   "arms": [
+    {
+     "label": "UniPearls",
+     "regimen": "irinotecan-loaded UniPearls DEB-TACE"
+    },
+    {
+     "label": "HepaSphere",
+     "regimen": "irinotecan-loaded HepaSphere DEB-TACE"
+    }
+   ],
+   "records": [
+    {
+     "id": "42969685:hepasphere|dcr|per-protocol|disease-control-after-final-deb-tace|unipearls",
+     "arm": "HepaSphere",
+     "measure": "dcr",
+     "label": "Disease control rate",
+     "value": 68.75,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "UniPearls",
+     "population": "per-protocol",
+     "detail": "disease control after final DEB-TACE",
+     "quote": "Disease control after the final DEB-TACE was higher with UniPearls (per-protocol, 100% vs. 68.75%; p = 0.018)",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": null,
+     "consistency_note": null,
+     "third_reading": null
+    },
+    {
+     "id": "42969685:hepasphere|other-time-median|overall|final-technical-success|unipearls",
+     "arm": "HepaSphere",
+     "measure": "other_time_median",
+     "label": "Other median time",
+     "value": 76.47,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "UniPearls",
+     "population": "overall",
+     "detail": "final technical success",
+     "quote": "as was final technical success (100% vs. 76.47%; p = 0.046)",
+     "status": "needs_review",
+     "failed_checks": [
+      "unit_fits",
+      "second_pass_agrees"
+     ],
+     "audit_note": null,
+     "consistency_note": null,
+     "third_reading": null
+    },
+    {
+     "id": "42969685:unipearls|dcr|per-protocol|disease-control-after-final-deb-tace|hepasphere",
+     "arm": "UniPearls",
+     "measure": "dcr",
+     "label": "Disease control rate",
+     "value": 100.0,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "HepaSphere",
+     "population": "per-protocol",
+     "detail": "disease control after final DEB-TACE",
+     "quote": "Disease control after the final DEB-TACE was higher with UniPearls (per-protocol, 100% vs. 68.75%; p = 0.018)",
+     "status": "verified",
+     "failed_checks": [],
+     "audit_note": null,
+     "consistency_note": null,
+     "third_reading": null
+    },
+    {
+     "id": "42969685:unipearls|other-time-median|overall|final-technical-success|hepasphere",
+     "arm": "UniPearls",
+     "measure": "other_time_median",
+     "label": "Other median time",
+     "value": 100.0,
+     "unit": "percent",
+     "ci_low": null,
+     "ci_high": null,
+     "comparator": "HepaSphere",
+     "population": "overall",
+     "detail": "final technical success",
+     "quote": "as was final technical success (100% vs. 76.47%; p = 0.046)",
+     "status": "needs_review",
+     "failed_checks": [
+      "unit_fits",
+      "second_pass_agrees"
+     ],
      "audit_note": null,
      "consistency_note": null,
      "third_reading": null

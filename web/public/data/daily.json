@@ -1,15 +1,32 @@
 [
  {
   "date": "2026-11-02",
-  "spend_usd": 0.0009,
+  "spend_usd": 0.0069,
   "screened": 3,
   "included": 1,
   "secondary": 0,
   "excluded": 2,
-  "extracted": [],
-  "verified_numbers": 0,
-  "review_numbers": 0,
-  "held_because": [],
+  "extracted": [
+   {
+    "pmid": "42969685",
+    "name": "Spatial Acid-Associated Niches Inform Irinotecan-Based DEB-TACE in Colorectal Liver Met\u2026",
+    "verified": 2,
+    "review": 2,
+    "headline": null
+   }
+  ],
+  "verified_numbers": 2,
+  "review_numbers": 2,
+  "held_because": [
+   {
+    "reason": "its unit did not fit the measure",
+    "n": 2
+   },
+   {
+    "reason": "the two independent extractions disagreed",
+    "n": 2
+   }
+  ],
   "corrections": 0
  },
  {
