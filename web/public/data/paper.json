@@ -8,9 +8,9 @@
   },
   {
    "name": "Every candidate paper screened",
-   "status": "doing",
-   "detail": "3,771 of 3,772 PubMed records screened.",
-   "progress": 0.9997348886532343
+   "status": "done",
+   "detail": "3,772 of 3,772 PubMed records screened.",
+   "progress": 1.0
   },
   {
    "name": "Every included trial extracted",
@@ -91,11 +91,11 @@
    "progress": null
   }
  ],
- "done": 3,
+ "done": 4,
  "total": 15,
  "counts": {
   "candidates": 3772,
-  "screened": 3771,
+  "screened": 3772,
   "included": 624,
   "extracted": 624,
   "verified": 3883,
